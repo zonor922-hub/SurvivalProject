@@ -1,0 +1,21 @@
+# Generated Unreal Engine output; source assets and project configuration stay tracked.
+/Binaries/
+/DerivedDataCache/
+/Intermediate/
+/Saved/
+/.vs/
+/.idea/
+/.vscode/
+*.sln
+*.suo
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.opendb
+*.user
+*.pidb
+*.pdb
+Thumbs.db
+.DS_Store
+# Plugin binaries may be required for binary-only plugins: do not ignore them globally.
+
