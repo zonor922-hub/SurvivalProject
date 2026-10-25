@@ -1,0 +1,40 @@
+{
+  "errors": [],
+  "fixture_compile": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+  "map": "/Game/Survival/Maps/LV_SystemsTest",
+  "actors": [
+    {
+      "label": "Test_Floor",
+      "class": "/Script/Engine.StaticMeshActor"
+    },
+    {
+      "label": "Test_Wall",
+      "class": "/Script/Engine.StaticMeshActor"
+    },
+    {
+      "label": "Test_Slope20deg",
+      "class": "/Script/Engine.StaticMeshActor"
+    },
+    {
+      "label": "Test_PlayerStart",
+      "class": "/Script/Engine.PlayerStart"
+    },
+    {
+      "label": "Test_DataFixture",
+      "class": "/Game/Survival/Tests/BP_SystemsTestFixture.BP_SystemsTestFixture_C"
+    },
+    {
+      "label": "Test_Sun",
+      "class": "/Script/Engine.DirectionalLight"
+    },
+    {
+      "label": "Test_Atmosphere",
+      "class": "/Script/Engine.SkyAtmosphere"
+    },
+    {
+      "label": "Test_SkyLight",
+      "class": "/Script/Engine.SkyLight"
+    }
+  ],
+  "success": true
+}

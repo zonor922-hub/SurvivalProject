@@ -1,0 +1,552 @@
+{
+  "method": "Filesystem and ASCII package strings; references are candidates, not an AssetRegistry dependency graph. No Blueprint graph execution verified.",
+  "asset_count": 772,
+  "folders": {
+    "Characters": 128,
+    "Content": 12,
+    "Input": 9,
+    "LevelPrototyping": 29,
+    "StylizedEnvironment": 522,
+    "ThirdPerson": 5,
+    "__ExternalActors__": 65,
+    "__ExternalObjects__": 2
+  },
+  "maps": [
+    "Content\\Content\\Survival\\Maps\\LV_Survival.umap",
+    "Content\\Content\\Survival\\Maps\\LV_Survival_Backup_20261023.umap",
+    "Content\\Content\\Survival\\Maps\\LV_Survival_Nature.umap",
+    "Content\\StylizedEnvironment\\Demo\\AssetShowcase.umap",
+    "Content\\StylizedEnvironment\\Demo\\DemoLevel.umap",
+    "Content\\ThirdPerson\\Lvl_ThirdPerson.umap"
+  ],
+  "selected": [
+    {
+      "file": "Content\\Content\\Survival\\Maps\\LV_Survival_Nature.umap",
+      "sha256": "74d08965f7b308ae9d97b68b8817817f89c9ce862918328a623cc8eda1f223b7",
+      "package_reference_candidates": [
+        "/Game/Content/Survival/EnvironmentGenerated/FT_Auto_LargeRock1",
+        "/Game/Content/Survival/EnvironmentGenerated/FT_Auto_LargeRock2",
+        "/Game/Content/Survival/EnvironmentGenerated/FT_Auto_StylizedGrass",
+        "/Game/Content/Survival/EnvironmentGenerated/FT_Auto_Tree1",
+        "/Game/Content/Survival/EnvironmentGenerated/FT_Auto_Tree2",
+        "/Game/Content/Survival/EnvironmentGenerated/FT_Auto_Tree3",
+        "/Game/Content/Survival/Maps/LV_Survival_Nature",
+        "/Game/Content/Survival/Materials/Dirt_LayerInfo",
+        "/Game/Content/Survival/Materials/Grass_LayerInfo",
+        "/Game/Content/Survival/Materials/M_Grass/M_Grass",
+        "/Game/StylizedEnvironment/Meshes/LargeRock1",
+        "/Game/StylizedEnvironment/Meshes/LargeRock2",
+        "/Game/StylizedEnvironment/Meshes/StylizedGrass",
+        "/Game/StylizedEnvironment/Meshes/Tree1",
+        "/Game/StylizedEnvironment/Meshes/Tree2",
+        "/Game/StylizedEnvironment/Meshes/Tree3",
+        "/Script/CoreUObject",
+        "/Script/E",
+        "/Script/Engine",
+        "/Script/Engine.World",
+        "/Script/Foliage",
+        "/Script/Landscape",
+        "/Script/NavigationSystem",
+        "/Script/PhysicsCore",
+        "/Script/UnrealEd",
+        "/Script/Water",
+        "/Script/WaterEditor",
+        "/Water/Curves/FloatCurve",
+        "/Water/Icons/WaterBodyLakeSprite",
+        "/Water/Materials/Brushes/CanvasDrawing",
+        "/Water/Materials/Brushes/CompositeWaterBodyTexture",
+        "/Water/Materials/Brushes/MeshBrush_Angle",
+        "/Water/Materials/Brushes/MeshBrush_Island",
+        "/Water/Materials/Brushes/MeshBrush_Weightmap",
+        "/Water/Materials/Brushes/MeshBrush_Width",
+        "/Water/Materials/HLOD/HLODWater",
+        "/Water/Materials/PostProcessing/M_UnderWater_PostProcess_Volume",
+        "/Water/Materials/WaterInfo/DrawWaterInfo",
+        "/Water/Materials/WaterSurface/LODs/Water_Material_Lake_LOD",
+        "/Water/Materials/WaterSurface/Water_FarMesh",
+        "/Water/Materials/WaterSurface/Water_Material_Lake",
+        "/Water/Meshes/LakeMesh",
+        "/Water/Waves/GerstnerWaves_Lake"
+      ],
+      "gameplay_name_candidates": [
+        "Environment/LakeShore/Swimming"
+      ]
+    },
+    {
+      "file": "Content\\Input\\IMC_Default.uasset",
+      "sha256": "133bda6567aaeea1aae05c03597345e4b1d9ef24d868a0275203b3203a7aae98",
+      "package_reference_candidates": [
+        "/Game/Input/Actions/IA_Jump",
+        "/Game/Input/Actions/IA_Look",
+        "/Game/Input/Actions/IA_Move",
+        "/Game/Input/IMC_Default",
+        "/Script/CoreUObject",
+        "/Script/Engine",
+        "/Script/EnhancedInput",
+        "/Script/EnhancedInput.InputMappingContext",
+        "/Script/InputCore"
+      ],
+      "gameplay_name_candidates": []
+    },
+    {
+      "file": "Content\\Input\\IMC_MouseLook.uasset",
+      "sha256": "6a00157cd520edcf0b037d7091bfe188fa6eb7c48465f695981f7cbe5fb4cc80",
+      "package_reference_candidates": [
+        "/Game/Input/Actions/IA_MouseLook",
+        "/Game/Input/IMC_MouseLook",
+        "/Script/CoreUObject",
+        "/Script/Engine",
+        "/Script/EnhancedInput",
+        "/Script/EnhancedInput.InputMappingContext",
+        "/Script/InputCore"
+      ],
+      "gameplay_name_candidates": []
+    },
+    {
+      "file": "Content\\Input\\Actions\\IA_Jump.uasset",
+      "sha256": "73c14789fee45a6e1eff57f3304a0bafee23790cc8ea6a6a5bf0056e75d7b3e4",
+      "package_reference_candidates": [
+        "/Game/Input/Actions/IA_Jump",
+        "/Script/CoreUObject",
+        "/Script/Engine",
+        "/Script/EnhancedInput",
+        "/Script/EnhancedInput.InputAction"
+      ],
+      "gameplay_name_candidates": []
+    },
+    {
+      "file": "Content\\Input\\Actions\\IA_Look.uasset",
+      "sha256": "0d4a2cb59db11a0a080834e1b292207e530b8df217446afb46e382d9fa12f5a9",
+      "package_reference_candidates": [
+        "/Game/Input/Actions/IA_Look",
+        "/Script/CoreUObject",
+        "/Script/Engine",
+        "/Script/EnhancedInput",
+        "/Script/EnhancedInput.InputAction"
+      ],
+      "gameplay_name_candidates": []
+    },
+    {
+      "file": "Content\\Input\\Actions\\IA_MouseLook.uasset",
+      "sha256": "2901132a04ceb384e2693107b8f5455de48b7c325d6cc5ce07556c6425c19f48",
+      "package_reference_candidates": [
+        "/Game/Input/Actions/IA_MouseLook",
+        "/Script/CoreUObject",
+        "/Script/Engine",
+        "/Script/EnhancedInput",
+        "/Script/EnhancedInput.InputAction"
+      ],
+      "gameplay_name_candidates": []
+    },
+    {
+      "file": "Content\\Input\\Actions\\IA_Move.uasset",
+      "sha256": "85567b9d91ffd9f7106c3062557a6fa864a791233380353f63eb563470985add",
+      "package_reference_candidates": [
+        "/Game/Input/Actions/IA_Move",
+        "/Script/CoreUObject",
+        "/Script/Engine",
+        "/Script/EnhancedInput",
+        "/Script/EnhancedInput.InputAction"
+      ],
+      "gameplay_name_candidates": []
+    },
+    {
+      "file": "Content\\Input\\Touch\\BPI_TouchInterface.uasset",
+      "sha256": "e778ae087305a34cd6957fcf9b29670f0a2a01be96bad89c79b83286496ec45f",
+      "package_reference_candidates": [
+        "/Game/Input/Touch/BPI_TouchInterface",
+        "/Script/BlueprintGraph",
+        "/Script/CoreUObject",
+        "/Script/Engine",
+        "/Script/Engine.Blueprint",
+        "/Script/Engine.BlueprintGeneratedClass"
+      ],
+      "gameplay_name_candidates": []
+    },
+    {
+      "file": "Content\\Input\\Touch\\UI_Thumbstick.uasset",
+      "sha256": "49c8c04b2e8c88beb55935b05d9af72c35d89512ea6435f20d5e3123be139f8b",
+      "package_reference_candidates": [
+        "/Game/Input/Touch/UI_Thumbstick",
+        "/Script/BlueprintGraph",
+        "/Script/CoreUObject",
+        "/Script/Engine",
+        "/Script/InputCore",
+        "/Script/SlateCore",
+        "/Script/UMG",
+        "/Script/UMG.WidgetBlueprintGeneratedClass",
+        "/Script/UMGEditor",
+        "/Script/UMGEditor.WidgetBlueprint",
+        "/Script/UnrealEd"
+      ],
+      "gameplay_name_candidates": [
+        "CallFunc_GetPlayerController_ReturnValue",
+        "GetPlayerController",
+        "PlayerController"
+      ]
+    },
+    {
+      "file": "Content\\Input\\Touch\\UI_TouchSimple.uasset",
+      "sha256": "81f45f11e73180f0964ee3f59f77c8c55e61d355e5c69427e1de67e5aa5db77b",
+      "package_reference_candidates": [
+        "/Game/Input/Touch/BPI_TouchInterface",
+        "/Game/Input/Touch/UI_Thumbstick",
+        "/Game/Input/Touch/UI_TouchSimple",
+        "/Script/BlueprintGraph",
+        "/Script/CoreUObject",
+        "/Script/Engine",
+        "/Script/SlateCore",
+        "/Script/UMG",
+        "/Script/UMG.WidgetBlueprintGeneratedClass",
+        "/Script/UMGEditor",
+        "/Script/UMGEditor.WidgetBlueprint",
+        "/Script/UnrealEd"
+      ],
+      "gameplay_name_candidates": [
+        "PlayerController",
+        "PlayerController:bShowMouseCursor"
+      ]
+    },
+    {
+      "file": "Content\\StylizedEnvironment\\Blueprints\\ChestActor_Interface.uasset",
+      "sha256": "281014b48fe9279abcb6245ccaa4ab6a3cf1316f1c586a6af4c6852152cf99f0",
+      "package_reference_candidates": [
+        "/Game/StylizedEnvironment/Animations/ChestAnimated_Anim_ChestTop_Final_ChestClose",
+        "/Game/StylizedEnvironment/Animations/ChestAnimated_Anim_ChestTop_Final_ChestOpen",
+        "/Game/StylizedEnvironment/Blueprints/ChestActor_Interface",
+        "/Game/StylizedEnvironment/Blueprints/ChestActor_Interface.ChestActor_Interface",
+        "/Game/StylizedEnvironment/Blueprints/InteractInterface",
+        "/Game/StylizedEnvironment/Blueprints/InteractPromtWidget",
+        "/Game/StylizedEnvironment/Meshes/ChestAnimated",
+        "/Script/BlueprintGraph",
+        "/Script/ClothingSystemRuntimeNv",
+        "/Script/CoreUObject",
+        "/Script/Engine",
+        "/Script/UMG",
+        "/Script/UMGEditor",
+        "/Script/UnrealEd"
+      ],
+      "gameplay_name_candidates": [
+        "/Game/StylizedEnvironment/Blueprints/InteractInterface",
+        "/Game/StylizedEnvironment/Blueprints/InteractPromtWidget",
+        "Did Interact",
+        "DidInteract",
+        "Interact",
+        "InteractInterface_C",
+        "InteractPromtWidget_C",
+        "PlayerController"
+      ]
+    },
+    {
+      "file": "Content\\StylizedEnvironment\\Blueprints\\ChestActor_Trigger.uasset",
+      "sha256": "12836f52f300b89d30c2f5508d290c98f796964bed5562635291014220e78c3d",
+      "package_reference_candidates": [
+        "/Game/StylizedEnvironment/Animations/ChestAnimated_Anim_ChestTop_Final_ChestClose",
+        "/Game/StylizedEnvironment/Animations/ChestAnimated_Anim_ChestTop_Final_ChestOpen",
+        "/Game/StylizedEnvironment/Blueprints/ChestActor_Trigger",
+        "/Game/StylizedEnvironment/Blueprints/ChestActor_Trigger.ChestActor_Trigger",
+        "/Game/StylizedEnvironment/Blueprints/InteractPromtWidget",
+        "/Game/StylizedEnvironment/Demo/ThirdPerson/Blueprints/BP_ThirdPersonCharacter",
+        "/Game/StylizedEnvironment/Meshes/ChestAnimated",
+        "/Script/BlueprintGraph",
+        "/Script/ClothingSystemRuntimeNv",
+        "/Script/CoreUObject",
+        "/Script/Engine",
+        "/Script/InputCore",
+        "/Script/NavigationSystem",
+        "/Script/UMG",
+        "/Script/UMGEditor",
+        "/Script/UnrealEd"
+      ],
+      "gameplay_name_candidates": [
+        "/Game/StylizedEnvironment/Blueprints/InteractPromtWidget",
+        "CallFunc_GetPlayerController_ReturnValue",
+        "GetPlayerController",
+        "InpActEvt_Interact_K2Node_InputActionEvent",
+        "Interact",
+        "InteractPromtWidget_C",
+        "Interaction by 'E' key",
+        "PlayerController",
+        "The PlayerController whose input events we no longer want to receive. If null, this actor will stop receiving input from all PlayerControllers.",
+        "The PlayerController whose input events we want to receive."
+      ]
+    },
+    {
+      "file": "Content\\StylizedEnvironment\\Blueprints\\GateActor_Interface.uasset",
+      "sha256": "ced1025b50655583d170177d846777becbdf91a7ce1934ef752c4a232a15a8db",
+      "package_reference_candidates": [
+        "/Game/StylizedEnvironment/Animations/GateAnimated_Anim_Gate_GateClose",
+        "/Game/StylizedEnvironment/Animations/GateAnimated_Anim_Gate_GateOpen",
+        "/Game/StylizedEnvironment/Blueprints/GateActor_Interface",
+        "/Game/StylizedEnvironment/Blueprints/GateActor_Interface.GateActor_Interface",
+        "/Game/StylizedEnvironment/Blueprints/InteractInterface",
+        "/Game/StylizedEnvironment/Blueprints/InteractPromtWidget",
+        "/Game/StylizedEnvironment/Materials/WoodPhysics",
+        "/Game/StylizedEnvironment/Meshes/GateAnimated",
+        "/Script/BlueprintGraph",
+        "/Script/ClothingSystemRuntimeNv",
+        "/Script/CoreUObject",
+        "/Script/Engine",
+        "/Script/PhysicsCore",
+        "/Script/UMG",
+        "/Script/UMGEditor",
+        "/Script/UnrealEd"
+      ],
+      "gameplay_name_candidates": [
+        "/Game/StylizedEnvironment/Blueprints/InteractInterface",
+        "/Game/StylizedEnvironment/Blueprints/InteractPromtWidget",
+        "Did Interact",
+        "DidInteract",
+        "Interact",
+        "InteractInterface_C",
+        "InteractPromtWidget_C",
+        "PlayerController"
+      ]
+    },
+    {
+      "file": "Content\\StylizedEnvironment\\Blueprints\\GateActor_Trigger.uasset",
+      "sha256": "379e4c0c16fd4f93bca8543a043e643913f9f837d45b15e207b25c7e98b5ee9c",
+      "package_reference_candidates": [
+        "/Game/StylizedEnvironment/Animations/GateAnimated_Anim_Gate_GateClose",
+        "/Game/StylizedEnvironment/Animations/GateAnimated_Anim_Gate_GateOpen",
+        "/Game/StylizedEnvironment/Blueprints/GateActor_Trigger",
+        "/Game/StylizedEnvironment/Blueprints/GateActor_Trigger.GateActor_Trigger",
+        "/Game/StylizedEnvironment/Blueprints/InteractPromtWidget",
+        "/Game/StylizedEnvironment/Demo/ThirdPerson/Blueprints/BP_ThirdPersonCharacter",
+        "/Game/StylizedEnvironment/Materials/WoodPhysics",
+        "/Game/StylizedEnvironment/Meshes/GateAnimated",
+        "/Script/BlueprintGraph",
+        "/Script/ClothingSystemRuntimeNv",
+        "/Script/CoreUObject",
+        "/Script/Engine",
+        "/Script/InputCore",
+        "/Script/NavigationSystem",
+        "/Script/PhysicsCore",
+        "/Script/UMG",
+        "/Script/UMGEditor",
+        "/Script/UnrealEd"
+      ],
+      "gameplay_name_candidates": [
+        "/Game/StylizedEnvironment/Blueprints/InteractPromtWidget",
+        "CallFunc_GetPlayerController_ReturnValue",
+        "GetPlayerController",
+        "InpActEvt_Interact_K2Node_InputActionEvent",
+        "Interact",
+        "InteractPromtWidget_C",
+        "Interaction by 'E' key",
+        "PlayerController",
+        "The PlayerController whose input events we no longer want to receive. If null, this actor will stop receiving input from all PlayerControllers.",
+        "The PlayerController whose input events we want to receive."
+      ]
+    },
+    {
+      "file": "Content\\StylizedEnvironment\\Blueprints\\InteractInterface.uasset",
+      "sha256": "4ac29a19f39701407ad2fc9f6ce17b16f0f35cb15b390d5a9a27d4c568e549d3",
+      "package_reference_candidates": [
+        "/Game/StylizedEnvironment/Blueprints/InteractInterface",
+        "/Script/BlueprintGraph",
+        "/Script/CoreUObject",
+        "/Script/Engine",
+        "/Script/UnrealEd"
+      ],
+      "gameplay_name_candidates": [
+        "/Game/StylizedEnvironment/Blueprints/InteractInterface",
+        "BlueprintGeneratedClass'/Game/StylizedEnvironment/Blueprints/InteractInterface.InteractInterface_C'",
+        "Default__InteractInterface_C",
+        "DidInteract",
+        "Interact",
+        "InteractInterface",
+        "InteractInterface_C"
+      ]
+    },
+    {
+      "file": "Content\\StylizedEnvironment\\Blueprints\\InteractPromtWidget.uasset",
+      "sha256": "e499f7ad495a1399ab94c03abd5d7d449072b6ce7c91829e7f1162a0e50950be",
+      "package_reference_candidates": [
+        "/Game/StylizedEnvironment/Blueprints/InteractPromtWidget",
+        "/Game/StylizedEnvironment/Blueprints/InteractPromtWidget.InteractPromtWidget",
+        "/Script/BlueprintGraph",
+        "/Script/CoreUObject",
+        "/Script/Engine",
+        "/Script/SlateCore",
+        "/Script/UMG",
+        "/Script/UMGEditor"
+      ],
+      "gameplay_name_candidates": [
+        "/Game/StylizedEnvironment/Blueprints/InteractPromtWidget",
+        "/Game/StylizedEnvironment/Blueprints/InteractPromtWidget.InteractPromtWidget",
+        "Default__InteractPromtWidget_C",
+        "InteractPromtWidget",
+        "InteractPromtWidget_C",
+        "WidgetBlueprintGeneratedClass'/Game/StylizedEnvironment/Blueprints/InteractPromtWidget.InteractPromtWidget_C'"
+      ]
+    },
+    {
+      "file": "Content\\StylizedEnvironment\\Blueprints\\LeafsWind.uasset",
+      "sha256": "6bee1eabc37ec8f4ed9d277907d52c885ce9f9806484405b7c76f5798177f7f9",
+      "package_reference_candidates": [
+        "/Game/StylizedEnvironment/Blueprints/LeafsWind",
+        "/Game/StylizedEnvironment/Blueprints/LeafsWind.LeafsWind",
+        "/Game/StylizedEnvironment/Materials/WindProperties",
+        "/Game/StylizedEnvironment/Particles/FallingLeafsSystem",
+        "/Script/BlueprintGraph",
+        "/Script/CoreUObject",
+        "/Script/Engine",
+        "/Script/Niagara",
+        "/Script/UnrealEd"
+      ],
+      "gameplay_name_candidates": []
+    },
+    {
+      "file": "Content\\StylizedEnvironment\\Demo\\ThirdPerson\\Blueprints\\BP_ThirdPersonCharacter.uasset",
+      "sha256": "e50b468462504c1cbb388ec6fca8723985a18b3559af41657365597596c9c92a",
+      "package_reference_candidates": [
+        "/Game/StylizedEnvironment/Blueprints/InteractInterface",
+        "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Animations/ABP_Quinn",
+        "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Meshes/SKM_Quinn_Simple",
+        "/Game/StylizedEnvironment/Demo/ThirdPerson/Blueprints/BP_ThirdPersonCharacter",
+        "/Game/StylizedEnvironment/Demo/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.BP_ThirdPersonCharacter",
+        "/Script/BlueprintGraph",
+        "/Script/ClothingSystemRuntimeNv",
+        "/Script/CoreUObject",
+        "/Script/Engine",
+        "/Script/InputCore",
+        "/Script/NavigationSystem",
+        "/Script/PhysicsCore",
+        "/Script/UnrealEd"
+      ],
+      "gameplay_name_candidates": [
+        "/Game/StylizedEnvironment/Blueprints/InteractInterface",
+        "CallFunc_Interact_DidInteract",
+        "DidInteract",
+        "InpActEvt_Interact_K2Node_InputActionEvent",
+        "Interact",
+        "InteractInterface_C",
+        "K2Node_DynamicCast_AsInteract_Interface"
+      ]
+    },
+    {
+      "file": "Content\\StylizedEnvironment\\Demo\\ThirdPerson\\Blueprints\\BP_ThirdPersonGameMode.uasset",
+      "sha256": "bdf3013e25a8938630120cf81215b06b8db28e85693f959d46f84151c3b51a42",
+      "package_reference_candidates": [
+        "/Game/StylizedEnvironment/Demo/ThirdPerson/Blueprints/BP_ThirdPersonCharacter",
+        "/Game/StylizedEnvironment/Demo/ThirdPerson/Blueprints/BP_ThirdPersonGameMode",
+        "/Game/StylizedEnvironment/Demo/ThirdPerson/Blueprints/BP_ThirdPersonGameMode.BP_ThirdPersonGameMode",
+        "/Script/BlueprintGraph",
+        "/Script/CoreUObject",
+        "/Script/Engine",
+        "/Script/UnrealEd"
+      ],
+      "gameplay_name_candidates": [
+        "/Game/StylizedEnvironment/Demo/ThirdPerson/Blueprints/BP_ThirdPersonGameMode",
+        "/Game/StylizedEnvironment/Demo/ThirdPerson/Blueprints/BP_ThirdPersonGameMode.BP_ThirdPersonGameMode",
+        "BP_ThirdPersonGameMode",
+        "BP_ThirdPersonGameMode_C",
+        "BlueprintGeneratedClass'/Game/StylizedEnvironment/Demo/ThirdPerson/Blueprints/BP_ThirdPersonGameMode.BP_ThirdPersonGameMode_C'",
+        "Class'/Script/Engine.GameModeBase'",
+        "DefaultPawnClass",
+        "Default__BP_ThirdPersonGameMode_C",
+        "Default__GameModeBase",
+        "GameMode Blueprint that defines default pawn to use.",
+        "GameModeBase"
+      ]
+    },
+    {
+      "file": "Content\\ThirdPerson\\Blueprints\\BP_ThirdPersonCharacter.uasset",
+      "sha256": "5b2f02daf78ea15efc4e83fc78e7e30ccfe73b6540dc213d099ae72458e7d645",
+      "package_reference_candidates": [
+        "/Game/Characters/Mannequins/Anims/Unarmed/ABP_Unarmed",
+        "/Game/Characters/Mannequins/Meshes/SKM_Quinn_Simple",
+        "/Game/Input/Actions/IA_Jump",
+        "/Game/Input/Actions/IA_Look",
+        "/Game/Input/Actions/IA_MouseLook",
+        "/Game/Input/Actions/IA_Move",
+        "/Game/Input/Touch/BPI_TouchInterface",
+        "/Game/ThirdPerson/Blueprints/BP_ThirdPersonCharacter",
+        "/Script/BlueprintGraph",
+        "/Script/ClothingSystemRuntimeNv",
+        "/Script/CoreUObject",
+        "/Script/Engine",
+        "/Script/Engine.Blueprint",
+        "/Script/Engine.BlueprintGeneratedClass",
+        "/Script/Engine.Character",
+        "/Script/EnhancedInput",
+        "/Script/InputBlueprintNodes",
+        "/Script/NavigationSystem",
+        "/Script/SlateCore",
+        "/Script/UnrealEd"
+      ],
+      "gameplay_name_candidates": []
+    },
+    {
+      "file": "Content\\ThirdPerson\\Blueprints\\BP_ThirdPersonGameMode.uasset",
+      "sha256": "8e4355f6d7c091e0b77c330044b6059cb03637c2439d7ef4de102df2d365d2ee",
+      "package_reference_candidates": [
+        "/Game/ThirdPerson/Blueprints/BP_ThirdPersonCharacter",
+        "/Game/ThirdPerson/Blueprints/BP_ThirdPersonGameMode",
+        "/Game/ThirdPerson/Blueprints/BP_ThirdPersonPlayerController",
+        "/Script/BlueprintGraph",
+        "/Script/CoreUObject",
+        "/Script/Engine",
+        "/Script/Engine.Blueprint",
+        "/Script/Engine.BlueprintGeneratedClass",
+        "/Script/Engine.GameModeBase",
+        "/Script/SlateCore",
+        "/Script/UnrealEd"
+      ],
+      "gameplay_name_candidates": [
+        "/Game/ThirdPerson/Blueprints/BP_ThirdPersonGameMode",
+        "/Game/ThirdPerson/Blueprints/BP_ThirdPersonPlayerController",
+        "/Script/CoreUObject.Class'/Script/Engine.GameModeBase'",
+        "/Script/Engine.BlueprintGeneratedClass'/Game/ThirdPerson/Blueprints/BP_ThirdPersonGameMode.BP_ThirdPersonGameMode_C'",
+        "/Script/Engine.GameModeBase",
+        "BP_ThirdPersonGameMode",
+        "BP_ThirdPersonGameMode_C",
+        "BP_ThirdPersonPlayerController_C",
+        "DefaultPawnClass",
+        "Default__BP_ThirdPersonGameMode_C",
+        "Default__GameModeBase",
+        "GameMode Blueprint that defines default pawn to use.",
+        "GameModeBase",
+        "PlayerControllerClass",
+        "SKEL_BP_ThirdPersonGameMode_C"
+      ]
+    },
+    {
+      "file": "Content\\ThirdPerson\\Blueprints\\BP_ThirdPersonPlayerController.uasset",
+      "sha256": "1eea710b3f7975732b53dd245e375f39c59c1b8ca468ebacce4e31bc47e88592",
+      "package_reference_candidates": [
+        "/Game/Input/IMC_Default",
+        "/Game/Input/IMC_MouseLook",
+        "/Game/Input/Touch/UI_TouchSimple",
+        "/Game/ThirdPerson/Blueprints/BP_ThirdPersonPlayerController",
+        "/Script/BlueprintGraph",
+        "/Script/CoreUObject",
+        "/Script/Engine",
+        "/Script/Engine.Blueprint",
+        "/Script/Engine.BlueprintGeneratedClass",
+        "/Script/Engine.PlayerController",
+        "/Script/EnhancedInput",
+        "/Script/SlateCore",
+        "/Script/UMG",
+        "/Script/UMGEditor",
+        "/Script/UnrealEd"
+      ],
+      "gameplay_name_candidates": [
+        "/Game/ThirdPerson/Blueprints/BP_ThirdPersonPlayerController",
+        "/Script/CoreUObject.Class'/Script/Engine.PlayerController'",
+        "/Script/Engine.BlueprintGeneratedClass'/Game/ThirdPerson/Blueprints/BP_ThirdPersonPlayerController.BP_ThirdPersonPlayerController_C'",
+        "/Script/Engine.PlayerController",
+        "BP_ThirdPersonPlayerController",
+        "BP_ThirdPersonPlayerController_C",
+        "CallFunc_IsLocalPlayerController_ReturnValue",
+        "Default__BP_ThirdPersonPlayerController_C",
+        "Default__PlayerController",
+        "ExecuteUbergraph_BP_ThirdPersonPlayerController",
+        "IsLocalPlayerController",
+        "PlayerController",
+        "SKEL_BP_ThirdPersonPlayerController_C"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "task": "A01",
+  "status": "complete",
+  "project_assets_modified": false,
+  "pie_classes_verified": true,
+  "assets": 772,
+  "blueprints": 23,
+  "graphs": 86,
+  "nodes": 869,
+  "compilation": {
+    "<BlueprintStatus.BS_UP_TO_DATE: 3>": 20,
+    "<BlueprintStatus.BS_UP_TO_DATE_WITH_WARNINGS: 5>": 3
+  },
+  "local_document_links_valid": true,
+  "task_ids_valid": true,
+  "remaining_tasks": "A02-A44 not started",
+  "limitations": [
+    "No Windows cook/package verification",
+    "No lake swimming transition test",
+    "K2 pins exported; non-K2 graph nodes inventoried without their native pin links",
+    "LevelScriptBlueprint for current map not found among loaded objects"
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "mapping_contexts": [
+    {
+      "package": "/Game/Input/IMC_MouseLook",
+      "mappings": [
+        {
+          "action": "/Game/Input/Actions/IA_MouseLook.IA_MouseLook",
+          "key": "<Struct 'Key' (0x000001B29AE39EC8) {}>"
+        }
+      ]
+    },
+    {
+      "package": "/Game/Input/IMC_Default",
+      "mappings": [
+        {
+          "action": "/Game/Input/Actions/IA_Jump.IA_Jump",
+          "key": "<Struct 'Key' (0x000001B29AE32968) {}>"
+        },
+        {
+          "action": "/Game/Input/Actions/IA_Jump.IA_Jump",
+          "key": "<Struct 'Key' (0x000001B29AE35128) {}>"
+        },
+        {
+          "action": "/Game/Input/Actions/IA_Move.IA_Move",
+          "key": "<Struct 'Key' (0x000001B29AE3C4A8) {}>"
+        },
+        {
+          "action": "/Game/Input/Actions/IA_Move.IA_Move",
+          "key": "<Struct 'Key' (0x000001B29AE32488) {}>"
+        },
+        {
+          "action": "/Game/Input/Actions/IA_Move.IA_Move",
+          "key": "<Struct 'Key' (0x000001B29AE32B48) {}>"
+        },
+        {
+          "action": "/Game/Input/Actions/IA_Move.IA_Move",
+          "key": "<Struct 'Key' (0x000001B29AE3ABE8) {}>"
+        },
+        {
+          "action": "/Game/Input/Actions/IA_Move.IA_Move",
+          "key": "<Struct 'Key' (0x000001B29AE355A8) {}>"
+        },
+        {
+          "action": "/Game/Input/Actions/IA_Move.IA_Move",
+          "key": "<Struct 'Key' (0x000001B29AE358A8) {}>"
+        },
+        {
+          "action": "/Game/Input/Actions/IA_Move.IA_Move",
+          "key": "<Struct 'Key' (0x000001B29AE367A8) {}>"
+        },
+        {
+          "action": "/Game/Input/Actions/IA_Move.IA_Move",
+          "key": "<Struct 'Key' (0x000001B29AE330E8) {}>"
+        },
+        {
+          "action": "/Game/Input/Actions/IA_Move.IA_Move",
+          "key": "<Struct 'Key' (0x000001B29AE32248) {}>"
+        },
+        {
+          "action": "/Game/Input/Actions/IA_Look.IA_Look",
+          "key": "<Struct 'Key' (0x000001B29AE3BDE8) {}>"
+        }
+      ]
+    }
+  ],
+  "animation_widget_compile": [
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Unarmed/ABP_Unarmed",
+      "before": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+      "after": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+    },
+    {
+      "package": "/Game/Input/Touch/UI_Thumbstick",
+      "before": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+      "after": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+    },
+    {
+      "package": "/Game/Input/Touch/UI_TouchSimple",
+      "before": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+      "after": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Blueprints/InteractPromtWidget",
+      "before": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+      "after": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Animations/ABP_Manny",
+      "before": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+      "after": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Animations/ABP_Quinn",
+      "before": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+      "after": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/ABP_Manny_PostProcess",
+      "before": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+      "after": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/ABP_Quinn_PostProcess",
+      "before": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+      "after": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+    }
+  ],
+  "level_blueprints": []
+}

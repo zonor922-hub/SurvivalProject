@@ -1,0 +1,16 @@
+{
+  "task": "A02",
+  "status": "complete",
+  "backup_project": "<LOCAL_WORKSPACE>\\Backups\\A02_20261025_130415\\SurvivalProject",
+  "backup_files": 779,
+  "backup_bytes": 4315420643,
+  "baseline_commit": "04b7b9524d4170f045712440723f2efe4b4cd313",
+  "baseline_tag": "a02-baseline-2026-10-25",
+  "lfs_files": 773,
+  "original_bytes_unchanged": true,
+  "real_checkout_verified": true,
+  "copy_editor_open_verified": true,
+  "copy_editor_closed": true,
+  "documentation_links_valid": true,
+  "next_task": "A03 (not started)"
+}

@@ -1,0 +1,3764 @@
+{
+  "project": "<PROJECT_ROOT>/SurvivalProject.uproject",
+  "engine": "5.8.4-58902052+++UE5+Release-5.8",
+  "errors": [],
+  "assets": [
+    {
+      "package": "/Game/Characters/Mannequins/Rigs/CR_Mannequin_FootIK",
+      "class": "/Script/ControlRigDeveloper.ControlRigBlueprint"
+    },
+    {
+      "package": "/Game/Input/IMC_MouseLook",
+      "class": "/Script/EnhancedInput.InputMappingContext"
+    },
+    {
+      "package": "/Game/Input/IMC_Default",
+      "class": "/Script/EnhancedInput.InputMappingContext"
+    },
+    {
+      "package": "/Game/Input/Actions/IA_Move",
+      "class": "/Script/EnhancedInput.InputAction"
+    },
+    {
+      "package": "/Game/Input/Actions/IA_MouseLook",
+      "class": "/Script/EnhancedInput.InputAction"
+    },
+    {
+      "package": "/Game/Input/Actions/IA_Look",
+      "class": "/Script/EnhancedInput.InputAction"
+    },
+    {
+      "package": "/Game/Input/Actions/IA_Jump",
+      "class": "/Script/EnhancedInput.InputAction"
+    },
+    {
+      "package": "/Game/Input/Touch/BPI_TouchInterface",
+      "class": "/Script/Engine.Blueprint"
+    },
+    {
+      "package": "/Game/Content/Survival/Materials/M_Grass/M_Grass",
+      "class": "/Script/Engine.Material"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Meshes/SK_Mannequin",
+      "class": "/Script/Engine.Skeleton"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Rigs/PA_Mannequin",
+      "class": "/Script/Engine.PhysicsAsset"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Unarmed/Jump/MM_Fall_Loop",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Unarmed/Jump/MM_Jump",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Unarmed/Jump/MM_Land",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Unarmed/MM_Idle",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Unarmed/Jog/MF_Unarmed_Jog_Bwd",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Unarmed/Jog/MF_Unarmed_Jog_Bwd_Left",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Unarmed/Jog/MF_Unarmed_Jog_Bwd_Right",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Unarmed/Jog/MF_Unarmed_Jog_Fwd",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Unarmed/Jog/MF_Unarmed_Jog_Fwd_Left",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Unarmed/Jog/MF_Unarmed_Jog_Fwd_Right",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Unarmed/Jog/MF_Unarmed_Jog_Left",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Unarmed/Jog/MF_Unarmed_Jog_Right",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Unarmed/Walk/MF_Unarmed_Walk_Bwd",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Unarmed/Walk/MF_Unarmed_Walk_Bwd_Left",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Unarmed/Walk/MF_Unarmed_Walk_Bwd_Right",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Unarmed/Walk/MF_Unarmed_Walk_Fwd",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Unarmed/Walk/MF_Unarmed_Walk_Fwd_Left",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Unarmed/Walk/MF_Unarmed_Walk_Fwd_Right",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Unarmed/Walk/MF_Unarmed_Walk_Left",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Unarmed/Walk/MF_Unarmed_Walk_Right",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Unarmed/BS_Idle_Walk_Run",
+      "class": "/Script/Engine.BlendSpace"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Unarmed/ABP_Unarmed",
+      "class": "/Script/Engine.AnimBlueprint"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Textures/Quinn/T_Quinn_01_D",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Textures/Quinn/T_Quinn_01_MRA",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Textures/Quinn/T_Quinn_01_N",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Textures/Quinn/T_Quinn_02_D",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Textures/Quinn/T_Quinn_02_MRA",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Textures/Quinn/T_Quinn_02_N",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/Input/Touch/UI_Thumbstick",
+      "class": "/Script/UMGEditor.WidgetBlueprint"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Materials/Tree3_Bake1_baked_001",
+      "class": "/Script/Engine.Material"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Tree3_Bake1_pbr_specular",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Tree3_Bake1_pbr_roughness",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Tree3_Bake1_pbr_normal",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Tree3_Bake1_pbr_diffuse",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Materials/Tree2_Bake1_baked",
+      "class": "/Script/Engine.Material"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Tree2_Bake1_pbr_specular",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Tree2_Bake1_pbr_roughness",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Tree2_Bake1_pbr_normal",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Tree2_Bake1_pbr_diffuse",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Branch_Bake1_pbr_sss",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Branch_Bake1_pbr_specular",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Branch_Bake1_pbr_roughness",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Branch_Bake1_pbr_normal",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Branch_Bake1_pbr_diffuse",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/Input/Touch/UI_TouchSimple",
+      "class": "/Script/UMGEditor.WidgetBlueprint"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Branch_Bake1_pbr_alpha",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Materials/Tree1_Bake1_baked",
+      "class": "/Script/Engine.Material"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Tree1_Bake1_pbr_specular",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Tree1_Bake1_pbr_roughness",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Tree1_Bake1_pbr_normal",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Tree1_Bake1_pbr_diffuse",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Materials/WindProperties",
+      "class": "/Script/Engine.MaterialParameterCollection"
+    },
+    {
+      "package": "/Game/ThirdPerson/Blueprints/BP_ThirdPersonPlayerController",
+      "class": "/Script/Engine.Blueprint"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/WaveNoiseTexture",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/GrassVariation_Texture",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/Content/Survival/EnvironmentGenerated/FT_Auto_LargeRock2",
+      "class": "/Script/Foliage.FoliageType_InstancedStaticMesh"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Meshes/LargeRock2",
+      "class": "/Script/Engine.StaticMesh"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Materials/LargeRock2_Bake1_baked",
+      "class": "/Script/Engine.Material"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/LargeRock2_Bake1_pbr_specular",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/LargeRock2_Bake1_pbr_roughness",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/LargeRock2_Bake1_pbr_normal",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/LargeRock2_Bake1_pbr_diffuse",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/Content/Survival/EnvironmentGenerated/FT_Auto_LargeRock1",
+      "class": "/Script/Foliage.FoliageType_InstancedStaticMesh"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Meshes/LargeRock1",
+      "class": "/Script/Engine.StaticMesh"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Textures/Manny/T_Manny_01_BN",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Textures/Manny/T_Manny_01_D",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Textures/Manny/T_Manny_01_MRA",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Textures/Shared/T_UE_Logo_M",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Materials/M_Mannequin",
+      "class": "/Script/Engine.Material"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Materials/Quinn/MI_Quinn_01",
+      "class": "/Script/Engine.MaterialInstanceConstant"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Materials/Quinn/MI_Quinn_02",
+      "class": "/Script/Engine.MaterialInstanceConstant"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Meshes/SKM_Quinn_Simple",
+      "class": "/Script/Engine.SkeletalMesh"
+    },
+    {
+      "package": "/Game/ThirdPerson/Blueprints/BP_ThirdPersonCharacter",
+      "class": "/Script/Engine.Blueprint"
+    },
+    {
+      "package": "/Game/ThirdPerson/Blueprints/BP_ThirdPersonGameMode",
+      "class": "/Script/Engine.Blueprint"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/MaterialGrassMat_normal",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/MaterialGrassMat_diffuse",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/DirtMat-normal",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/DirtMat-diffuse",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/LevelPrototyping/Materials/M_FlatCol",
+      "class": "/Script/Engine.Material"
+    },
+    {
+      "package": "/Game/LevelPrototyping/Materials/MI_DefaultColorway",
+      "class": "/Script/Engine.MaterialInstanceConstant"
+    },
+    {
+      "package": "/Game/ThirdPerson/MI_ThirdPersonColWay",
+      "class": "/Script/Engine.MaterialInstanceConstant"
+    },
+    {
+      "package": "/Game/LevelPrototyping/Textures/T_GridChecker_A",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/LevelPrototyping/Materials/MF_ProcGrid",
+      "class": "/Script/Engine.MaterialFunction"
+    },
+    {
+      "package": "/Game/LevelPrototyping/Materials/M_PrototypeGrid",
+      "class": "/Script/Engine.Material"
+    },
+    {
+      "package": "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray",
+      "class": "/Script/Engine.MaterialInstanceConstant"
+    },
+    {
+      "package": "/Game/LevelPrototyping/Meshes/SM_Cube",
+      "class": "/Script/Engine.StaticMesh"
+    },
+    {
+      "package": "/Game/LevelPrototyping/Meshes/SM_Ramp",
+      "class": "/Script/Engine.StaticMesh"
+    },
+    {
+      "package": "/Game/LevelPrototyping/Meshes/SM_Cylinder",
+      "class": "/Script/Engine.StaticMesh"
+    },
+    {
+      "package": "/Game/LevelPrototyping/Meshes/SM_QuarterCylinder",
+      "class": "/Script/Engine.StaticMesh"
+    },
+    {
+      "package": "/Game/Content/Survival/Materials/Grass_LayerInfo",
+      "class": "/Script/Landscape.LandscapeLayerInfoObject"
+    },
+    {
+      "package": "/Game/Content/Survival/Materials/Dirt_LayerInfo",
+      "class": "/Script/Landscape.LandscapeLayerInfoObject"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Materials/LargeRock1_Bake1_baked",
+      "class": "/Script/Engine.Material"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/LargeRock1_Bake1_pbr_specular",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/LargeRock1_Bake1_pbr_roughness",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/LargeRock1_Bake1_pbr_normal",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/LargeRock1_Bake1_pbr_diffuse",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Materials/Branch_Bake1_baked",
+      "class": "/Script/Engine.Material"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Materials/BranchMatInstance",
+      "class": "/Script/Engine.MaterialInstanceConstant"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Meshes/Tree1",
+      "class": "/Script/Engine.StaticMesh"
+    },
+    {
+      "package": "/Game/Content/Survival/EnvironmentGenerated/FT_Auto_Tree1",
+      "class": "/Script/Foliage.FoliageType_InstancedStaticMesh"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Meshes/Tree2",
+      "class": "/Script/Engine.StaticMesh"
+    },
+    {
+      "package": "/Game/Content/Survival/EnvironmentGenerated/FT_Auto_Tree2",
+      "class": "/Script/Foliage.FoliageType_InstancedStaticMesh"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Meshes/Tree3",
+      "class": "/Script/Engine.StaticMesh"
+    },
+    {
+      "package": "/Game/Content/Survival/EnvironmentGenerated/FT_Auto_Tree3",
+      "class": "/Script/Foliage.FoliageType_InstancedStaticMesh"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Materials/GrassMaterial",
+      "class": "/Script/Engine.Material"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Materials/GrassMaterialInstance",
+      "class": "/Script/Engine.MaterialInstanceConstant"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Meshes/StylizedGrass",
+      "class": "/Script/Engine.StaticMesh"
+    },
+    {
+      "package": "/Game/Content/Survival/EnvironmentGenerated/FT_Auto_StylizedGrass",
+      "class": "/Script/Foliage.FoliageType_InstancedStaticMesh"
+    },
+    {
+      "package": "/Game/Content/Survival/Maps/LV_Survival_Nature",
+      "class": "/Script/Engine.World"
+    },
+    {
+      "package": "/Game/LevelPrototyping/Interactable/JumpPad/Assets/Meshes/SM_CircularBand",
+      "class": "/Script/Engine.StaticMesh"
+    },
+    {
+      "package": "/Game/LevelPrototyping/Interactable/JumpPad/Assets/Materials/MI_GlowNT",
+      "class": "/Script/Engine.MaterialInstanceConstant"
+    },
+    {
+      "package": "/Game/LevelPrototyping/Interactable/JumpPad/Assets/Materials/M_SimpleGlow",
+      "class": "/Script/Engine.Material"
+    },
+    {
+      "package": "/Game/LevelPrototyping/Interactable/Door/BP_DoorFrame",
+      "class": "/Script/Engine.Blueprint"
+    },
+    {
+      "package": "/Game/LevelPrototyping/Interactable/Door/Meshes/SM_DoorFrame_Edge",
+      "class": "/Script/Engine.StaticMesh"
+    },
+    {
+      "package": "/Game/LevelPrototyping/Interactable/Door/Meshes/SM_DoorFrame_Corner",
+      "class": "/Script/Engine.StaticMesh"
+    },
+    {
+      "package": "/Game/LevelPrototyping/Interactable/Door/Meshes/SM_Door",
+      "class": "/Script/Engine.StaticMesh"
+    },
+    {
+      "package": "/Game/LevelPrototyping/Interactable/JumpPad/Assets/Materials/M_GradientGlow",
+      "class": "/Script/Engine.Material"
+    },
+    {
+      "package": "/Game/LevelPrototyping/Interactable/JumpPad/Assets/Meshes/SM_CircularGlow",
+      "class": "/Script/Engine.StaticMesh"
+    },
+    {
+      "package": "/Game/LevelPrototyping/Interactable/JumpPad/Assets/NS_JumpPad",
+      "class": "/Script/Niagara.NiagaraSystem"
+    },
+    {
+      "package": "/Game/LevelPrototyping/Interactable/JumpPad/BP_JumpPad",
+      "class": "/Script/Engine.Blueprint"
+    },
+    {
+      "package": "/Game/LevelPrototyping/Interactable/Target/Assets/SM_TargetBaseMesh",
+      "class": "/Script/Engine.StaticMesh"
+    },
+    {
+      "package": "/Game/LevelPrototyping/Interactable/Target/BP_WobbleTarget",
+      "class": "/Script/Engine.Blueprint"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Blueprints/InteractInterface",
+      "class": "/Script/Engine.Blueprint"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Blueprints/InteractPromtWidget",
+      "class": "/Script/UMGEditor.WidgetBlueprint"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Meshes/ChestAnimated_Skeleton",
+      "class": "/Script/Engine.Skeleton"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Animations/ChestAnimated_Anim_ChestTop_Final_ChestClose",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Animations/ChestAnimated_Anim_ChestTop_Final_ChestOpen",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/ChestBottom_Bake1_pbr_diffuse",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/ChestBottom_Bake1_pbr_metalness",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/ChestBottom_Bake1_pbr_normal",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/ChestBottom_Bake1_pbr_roughness",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/ChestBottom_Bake1_pbr_specular",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Materials/ChestBottom_Bake1",
+      "class": "/Script/Engine.Material"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/ChestTop_Final_Bake1_pbr_diffuse",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/ChestTop_Final_Bake1_pbr_metalness",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/ChestTop_Final_Bake1_pbr_normal",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/ChestTop_Final_Bake1_pbr_roughness",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/ChestTop_Final_Bake1_pbr_specular",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Materials/ChestTop_Final_Bake1",
+      "class": "/Script/Engine.Material"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Materials/WoodPhysics",
+      "class": "/Script/PhysicsCore.PhysicalMaterial"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Meshes/ChestAnimated_Physics",
+      "class": "/Script/Engine.PhysicsAsset"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Meshes/ChestAnimated",
+      "class": "/Script/Engine.SkeletalMesh"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Blueprints/ChestActor_Interface",
+      "class": "/Script/Engine.Blueprint"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Meshes/SK_Mannequin",
+      "class": "/Script/Engine.Skeleton"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Animations/Quinn/MF_Idle",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/PA_Mannequin",
+      "class": "/Script/Engine.PhysicsAsset"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Animations/Manny/MM_Fall_Loop",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Animations/Manny/MM_Idle",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Animations/Manny/MM_Jump",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Animations/Manny/MM_Land",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Animations/Manny/MM_Walk_InPlace",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Animations/Quinn/MF_Run_Fwd",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Animations/Quinn/MF_Walk_Fwd",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Animations/Quinn/BS_MF_Unarmed_WalkRun",
+      "class": "/Script/Engine.BlendSpace1D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Textures/Quinn/T_Quinn_01_ASAOMASK_MSK",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Textures/Quinn/T_Quinn_01_CCRCCPlastic_MSK",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Textures/Quinn/T_Quinn_01ID_BN",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Textures/Quinn/T_Quinn_01ID_D",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Textures/Quinn/T_Quinn_01ID_MSR_MSK",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Textures/Quinn/T_Quinn_01ID_N",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Textures/Quinn/T_Quinn_01ID_Tan",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Textures/Quinn/T_Quinn_02_ASAOMASK_MSK",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Textures/Quinn/T_Quinn_02_CCRCCPlastic_MSK",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Textures/Quinn/T_Quinn_02ID_BN",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Textures/Quinn/T_Quinn_02ID_D",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Textures/Quinn/T_Quinn_02ID_MSR_MSK",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Textures/Quinn/T_Quinn_02ID_N",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Textures/Quinn/T_Quinn_02ID_Tan",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Animations/Manny/MM_Run_Fwd",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Animations/Manny/MM_Walk_Fwd",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Animations/Manny/BS_MM_WalkRun",
+      "class": "/Script/Engine.BlendSpace1D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/CR_Mannequin_BasicFootIK",
+      "class": "/Script/ControlRigDeveloper.ControlRigBlueprint"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Animations/ABP_Manny",
+      "class": "/Script/Engine.AnimBlueprint"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Animations/ABP_Quinn",
+      "class": "/Script/Engine.AnimBlueprint"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Materials/Functions/ML_BaseColorFallOff",
+      "class": "/Script/Engine.MaterialFunction"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Textures/Manny/T_Manny_01_ASAOPMASK_MSK",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Textures/Manny/T_Manny_01_BN",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Textures/Manny/T_Manny_01_CCRCCPlastic_MSK",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Textures/Manny/T_Manny_01_D",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Textures/Manny/T_Manny_01_MSR_MSK",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Textures/Manny/T_Manny_01_N",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Textures/Manny/T_Manny_01_Tan",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Materials/Functions/ChromaticCurve",
+      "class": "/Script/Engine.CurveLinearColor"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Materials/Functions/CA_Mannequin",
+      "class": "/Script/Engine.CurveLinearColorAtlas"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Materials/Functions/MF_Diffraction",
+      "class": "/Script/Engine.MaterialFunction"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Textures/Shared/T_UE_Logo_M",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Materials/Functions/MF_logo3layers",
+      "class": "/Script/Engine.MaterialFunction"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Materials/M_Mannequin",
+      "class": "/Script/Engine.Material"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Materials/Instances/Quinn/MI_Quinn_01",
+      "class": "/Script/Engine.MaterialInstanceConstant"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Materials/Instances/Quinn/MI_Quinn_02",
+      "class": "/Script/Engine.MaterialInstanceConstant"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Meshes/SKM_Quinn_Simple",
+      "class": "/Script/Engine.SkeletalMesh"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/ThirdPerson/Blueprints/BP_ThirdPersonCharacter",
+      "class": "/Script/Engine.Blueprint"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Blueprints/ChestActor_Trigger",
+      "class": "/Script/Engine.Blueprint"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Meshes/GateAnimated_Skeleton",
+      "class": "/Script/Engine.Skeleton"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Animations/GateAnimated_Anim_Gate_GateClose",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Animations/GateAnimated_Anim_Gate_GateOpen",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Meshes/GateAnimated_Physics",
+      "class": "/Script/Engine.PhysicsAsset"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/GateBaked_Bake1_pbr_diffuse",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/GateBaked_Bake1_pbr_metalness",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/GateBaked_Bake1_pbr_normal",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/GateBaked_Bake1_pbr_roughness",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/GateBaked_Bake1_pbr_specular",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Materials/GateBaked_Bake1",
+      "class": "/Script/Engine.Material"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Meshes/GateAnimated",
+      "class": "/Script/Engine.SkeletalMesh"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Blueprints/GateActor_Interface",
+      "class": "/Script/Engine.Blueprint"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Blueprints/GateActor_Trigger",
+      "class": "/Script/Engine.Blueprint"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Leaf1_Bake1_pbr_alpha",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Leaf1_Bake1_pbr_diffuse",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Leaf1_Bake1_pbr_normal",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Leaf1_Bake1_pbr_roughness",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Leaf1_Bake1_pbr_specular",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Leaf1SubSurface",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Materials/Leaf1_Bake1_baked_001",
+      "class": "/Script/Engine.Material"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Meshes/LeafBent",
+      "class": "/Script/Engine.StaticMesh"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Particles/FallingLeafsSystem",
+      "class": "/Script/Niagara.NiagaraSystem"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Blueprints/LeafsWind",
+      "class": "/Script/Engine.Blueprint"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/ThirdPerson/Blueprints/BP_ThirdPersonGameMode",
+      "class": "/Script/Engine.Blueprint"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Death/MM_Death_Back_01",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Death/MM_Death_Front_01",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Death/MM_Death_Front_02",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Death/MM_Death_Front_03",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Death/MM_Death_Left_01",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Death/MM_Death_Right_01",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Pistol/MF_Pistol_Idle_ADS",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Pistol/MM_Pistol_DryFire",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Pistol/MM_Pistol_Equip",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Pistol/MM_Pistol_Fire",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Pistol/MM_Pistol_Fire_Montage",
+      "class": "/Script/Engine.AnimMontage"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Pistol/MM_Pistol_Reload",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Pistol/Aim/AO_Pistol",
+      "class": "/Script/Engine.AimOffsetBlendSpace"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Pistol/Aim/MF_Pistol_Idle_ADS1",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Pistol/Aim/MF_Pistol_Idle_ADS_AO_CD",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Pistol/Aim/MF_Pistol_Idle_ADS_AO_CU",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Pistol/Jog/MF_Pistol_Jog_Bwd",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Pistol/Jog/MF_Pistol_Jog_Bwd_Left",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Pistol/Jog/MF_Pistol_Jog_Bwd_Right",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Pistol/Jog/MF_Pistol_Jog_Fwd",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Pistol/Jog/MF_Pistol_Jog_Fwd_Left",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Pistol/Jog/MF_Pistol_Jog_Fwd_Right",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Pistol/Jog/MF_Pistol_Jog_Left",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Pistol/Jog/MF_Pistol_Jog_Right",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Pistol/Jump/MM_Pistol_Jump_Fall_Loop",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Pistol/Jump/MM_Pistol_Jump_RecoveryAdditive",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Pistol/Jump/MM_Pistol_Jump_Start",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Pistol/Walk/MF_Pistol_Walk_Bwd",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Pistol/Walk/MF_Pistol_Walk_Bwd_Left",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Pistol/Walk/MF_Pistol_Walk_Bwd_Right",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Pistol/Walk/MF_Pistol_Walk_Fwd",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Pistol/Walk/MF_Pistol_Walk_Fwd_Left",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Pistol/Walk/MF_Pistol_Walk_Fwd_Right",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Pistol/Walk/MF_Pistol_Walk_Left",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Pistol/Walk/MF_Pistol_Walk_Right",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Rifle/MF_Rifle_Idle_ADS",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Rifle/MM_Rifle_DryFire",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Rifle/MM_Rifle_Equip",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Rifle/MM_Rifle_Fire",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Rifle/MM_Rifle_Reload",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Rifle/AIM/AO_Rifle",
+      "class": "/Script/Engine.AimOffsetBlendSpace"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Rifle/AIM/MM_Rifle_Idle_ADS_AO_CC",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Rifle/AIM/MM_Rifle_Idle_ADS_AO_CD",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Rifle/AIM/MM_Rifle_Idle_ADS_AO_CU",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Rifle/HitReact/MM_HitReact_Back_Med_01",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Rifle/HitReact/MM_HitReact_Front_Hvy_01",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Rifle/HitReact/MM_HitReact_Front_Lgt_01",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Rifle/HitReact/MM_HitReact_Front_Lgt_02",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Rifle/HitReact/MM_HitReact_Front_Lgt_03",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Rifle/HitReact/MM_HitReact_Front_Lgt_04",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Rifle/HitReact/MM_HitReact_Front_Med_01",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Rifle/HitReact/MM_HitReact_Front_Med_02",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Rifle/Jog/MF_Rifle_Jog_Bwd",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Rifle/Jog/MF_Rifle_Jog_Bwd_Left",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Rifle/Jog/MF_Rifle_Jog_Bwd_Right",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Rifle/Jog/MF_Rifle_Jog_Fwd",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Rifle/Jog/MF_Rifle_Jog_Fwd_Left",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Rifle/Jog/MF_Rifle_Jog_Fwd_Right",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Rifle/Jog/MF_Rifle_Jog_Left",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Rifle/Jog/MF_Rifle_Jog_Right",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Rifle/Jump/MM_Rifle_Jump_Apex",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Rifle/Jump/MM_Rifle_Jump_Fall_Land",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Rifle/Jump/MM_Rifle_Jump_Fall_Loop",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Rifle/Jump/MM_Rifle_Jump_RecoveryAdditive",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Rifle/Jump/MM_Rifle_Jump_Start",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Rifle/Jump/MM_Rifle_Jump_Start_Loop",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Rifle/Walk/MF_Rifle_Walk_Bwd",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Rifle/Walk/MF_Rifle_Walk_Bwd_Left",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Rifle/Walk/MF_Rifle_Walk_Bwd_Right",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Rifle/Walk/MF_Rifle_Walk_Fwd",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Rifle/Walk/MF_Rifle_Walk_Fwd_Left",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Rifle/Walk/MF_Rifle_Walk_Fwd_Right",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Rifle/Walk/MF_Rifle_Walk_Left",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Rifle/Walk/MF_Rifle_Walk_Right",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Unarmed/Attack/MM_Attack_01",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Unarmed/Attack/MM_Attack_02",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Unarmed/Attack/MM_Attack_03",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Unarmed/Attack/MM_ChargedAttack",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Unarmed/Jump/MM_Dash",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Anims/Unarmed/Jump/MM_WallJump",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Materials/Manny/MI_Manny_01_New",
+      "class": "/Script/Engine.MaterialInstanceConstant"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Materials/Manny/MI_Manny_02_New",
+      "class": "/Script/Engine.MaterialInstanceConstant"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Meshes/SKM_Manny_Simple",
+      "class": "/Script/Engine.SkeletalMesh"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Rigs/CR_Mannequin_Body",
+      "class": "/Script/ControlRigDeveloper.ControlRigBlueprint"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Rigs/CR_Mannequin_Procedural",
+      "class": "/Script/ControlRigDeveloper.ControlRigBlueprint"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Textures/Manny/T_Manny_02_BN",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Textures/Manny/T_Manny_02_D",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Textures/Manny/T_Manny_02_MRA",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/Characters/Mannequins/Textures/Manny/T_Manny_02_N",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/Content/Survival/Maps/LV_Survival",
+      "class": "/Script/Engine.World"
+    },
+    {
+      "package": "/Game/Content/Survival/Maps/LV_Survival_Backup_20261023",
+      "class": "/Script/Engine.World"
+    },
+    {
+      "package": "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02",
+      "class": "/Script/Engine.MaterialInstanceConstant"
+    },
+    {
+      "package": "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_Round",
+      "class": "/Script/Engine.MaterialInstanceConstant"
+    },
+    {
+      "package": "/Game/LevelPrototyping/Materials/MI_PrototypeGrid_TopDark",
+      "class": "/Script/Engine.MaterialInstanceConstant"
+    },
+    {
+      "package": "/Game/LevelPrototyping/Meshes/SM_ChamferCube",
+      "class": "/Script/Engine.StaticMesh"
+    },
+    {
+      "package": "/Game/LevelPrototyping/Meshes/SM_Plane",
+      "class": "/Script/Engine.StaticMesh"
+    },
+    {
+      "package": "/Game/LevelPrototyping/Meshes/SM_QuarterCylinderOuter",
+      "class": "/Script/Engine.StaticMesh"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/AssetShowcase_BuiltData",
+      "class": "/Script/Engine.MapBuildDataRegistry"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/DemoLevel_BuiltData",
+      "class": "/Script/Engine.MapBuildDataRegistry"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/AssetShowcase",
+      "class": "/Script/Engine.World"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/DemoLevel",
+      "class": "/Script/Engine.World"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Materials/Instances/Manny/MI_Manny_01",
+      "class": "/Script/Engine.MaterialInstanceConstant"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Materials/Instances/Manny/MI_Manny_02",
+      "class": "/Script/Engine.MaterialInstanceConstant"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Meshes/Mannequin_LODSettings",
+      "class": "/Script/Engine.SkeletalMeshLODSettings"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Meshes/SKM_Manny",
+      "class": "/Script/Engine.SkeletalMesh"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Meshes/SKM_Manny_Simple",
+      "class": "/Script/Engine.SkeletalMesh"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Meshes/SKM_Quinn",
+      "class": "/Script/Engine.SkeletalMesh"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/RTG_Mannequin",
+      "class": "/Script/IKRig.IKRetargeter"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/ABP_Manny_PostProcess",
+      "class": "/Script/Engine.AnimBlueprint"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/ABP_Quinn_PostProcess",
+      "class": "/Script/Engine.AnimBlueprint"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/CR_Mannequin_Body",
+      "class": "/Script/ControlRigDeveloper.ControlRigBlueprint"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/CR_Mannequin_Procedural",
+      "class": "/Script/ControlRigDeveloper.ControlRigBlueprint"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/IK_Mannequin",
+      "class": "/Script/IKRig.IKRigDefinition"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Manny/Manny_calf_l_anim",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Manny/Manny_calf_l_pose",
+      "class": "/Script/Engine.PoseAsset"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Manny/Manny_calf_r_anim",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Manny/Manny_calf_r_pose",
+      "class": "/Script/Engine.PoseAsset"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Manny/Manny_clavicle_l_anim",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Manny/Manny_clavicle_l_pose",
+      "class": "/Script/Engine.PoseAsset"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Manny/Manny_clavicle_r_anim",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Manny/Manny_clavicle_r_pose",
+      "class": "/Script/Engine.PoseAsset"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Manny/Manny_foot_l_anim",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Manny/Manny_foot_l_pose",
+      "class": "/Script/Engine.PoseAsset"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Manny/Manny_foot_r_anim",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Manny/Manny_foot_r_pose",
+      "class": "/Script/Engine.PoseAsset"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Manny/Manny_hand_l_anim",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Manny/Manny_hand_l_pose",
+      "class": "/Script/Engine.PoseAsset"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Manny/Manny_hand_r_anim",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Manny/Manny_hand_r_pose",
+      "class": "/Script/Engine.PoseAsset"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Manny/Manny_lowerarm_l_anim",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Manny/Manny_lowerarm_l_pose",
+      "class": "/Script/Engine.PoseAsset"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Manny/Manny_lowerarm_r_anim",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Manny/Manny_lowerarm_r_pose",
+      "class": "/Script/Engine.PoseAsset"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Manny/Manny_thigh_l_anim",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Manny/Manny_thigh_l_pose",
+      "class": "/Script/Engine.PoseAsset"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Manny/Manny_thigh_r_anim",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Manny/Manny_thigh_r_pose",
+      "class": "/Script/Engine.PoseAsset"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Manny/Manny_upperarm_l_anim",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Manny/Manny_upperarm_l_pose",
+      "class": "/Script/Engine.PoseAsset"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Manny/Manny_upperarm_r_anim",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Manny/Manny_upperarm_r_pose",
+      "class": "/Script/Engine.PoseAsset"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Quinn/Quinn_calf_l_anim",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Quinn/Quinn_calf_l_pose",
+      "class": "/Script/Engine.PoseAsset"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Quinn/Quinn_calf_r_anim",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Quinn/Quinn_calf_r_pose",
+      "class": "/Script/Engine.PoseAsset"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Quinn/Quinn_clavicle_l_anim",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Quinn/Quinn_clavicle_l_pose",
+      "class": "/Script/Engine.PoseAsset"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Quinn/Quinn_clavicle_r_anim",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Quinn/Quinn_clavicle_r_pose",
+      "class": "/Script/Engine.PoseAsset"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Quinn/Quinn_foot_l_anim",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Quinn/Quinn_foot_l_pose",
+      "class": "/Script/Engine.PoseAsset"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Quinn/Quinn_foot_r_anim",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Quinn/Quinn_foot_r_pose",
+      "class": "/Script/Engine.PoseAsset"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Quinn/Quinn_hand_l_anim",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Quinn/Quinn_hand_l_pose",
+      "class": "/Script/Engine.PoseAsset"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Quinn/Quinn_hand_r_anim",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Quinn/Quinn_hand_r_pose",
+      "class": "/Script/Engine.PoseAsset"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Quinn/Quinn_lowerarm_l_anim",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Quinn/Quinn_lowerarm_l_pose",
+      "class": "/Script/Engine.PoseAsset"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Quinn/Quinn_lowerarm_r_anim",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Quinn/Quinn_lowerarm_r_pose",
+      "class": "/Script/Engine.PoseAsset"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Quinn/Quinn_thigh_l_anim",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Quinn/Quinn_thigh_l_pose",
+      "class": "/Script/Engine.PoseAsset"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Quinn/Quinn_thigh_r_anim",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Quinn/Quinn_thigh_r_pose",
+      "class": "/Script/Engine.PoseAsset"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Quinn/Quinn_upperarm_l_anim",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Quinn/Quinn_upperarm_l_pose",
+      "class": "/Script/Engine.PoseAsset"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Quinn/Quinn_upperarm_r_anim",
+      "class": "/Script/Engine.AnimSequence"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Quinn/Quinn_upperarm_r_pose",
+      "class": "/Script/Engine.PoseAsset"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Textures/Manny/T_Manny_02_ASAOPMASK_MSK",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Textures/Manny/T_Manny_02_BN",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Textures/Manny/T_Manny_02_CCRCCPlastic_MSK",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Textures/Manny/T_Manny_02_D",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Textures/Manny/T_Manny_02_MSR_MSK",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Textures/Manny/T_Manny_02_N",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Textures/Manny/T_Manny_02_Tan",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Geometry/Meshes/CubeMaterial",
+      "class": "/Script/Engine.Material"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/Geometry/Meshes/TemplateFloor",
+      "class": "/Script/Engine.StaticMesh"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Foliage/StylizedGrassSmall_FoliageType",
+      "class": "/Script/Foliage.FoliageType_InstancedStaticMesh"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Foliage/StylizedGrass_FoliageType",
+      "class": "/Script/Foliage.FoliageType_InstancedStaticMesh"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/LandscapeLayer/Dirt_LayerInfo",
+      "class": "/Script/Landscape.LandscapeLayerInfoObject"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/LandscapeLayer/Rock_LayerInfo",
+      "class": "/Script/Landscape.LandscapeLayerInfoObject"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/LandscapeLayer/Sand_LayerInfo",
+      "class": "/Script/Landscape.LandscapeLayerInfoObject"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/LandscapeLayer/Woodland_LayerInfo",
+      "class": "/Script/Landscape.LandscapeLayerInfoObject"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Materials/Barrel_Low_Bake1_baked",
+      "class": "/Script/Engine.Material"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Materials/Box_Low_Bake1_baked_001",
+      "class": "/Script/Engine.Material"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Materials/BridgeBaked_Bake1",
+      "class": "/Script/Engine.Material"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Materials/Bush1_Bake1_baked_001",
+      "class": "/Script/Engine.Material"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Materials/Bush2_Bake2_baked",
+      "class": "/Script/Engine.Material"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Materials/Bush3_Bake3_baked",
+      "class": "/Script/Engine.Material"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Materials/BushMatInstance",
+      "class": "/Script/Engine.MaterialInstanceConstant"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Materials/BushPlane_Bake1_baked_001",
+      "class": "/Script/Engine.Material"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Materials/Campfire_Bake1_baked",
+      "class": "/Script/Engine.Material"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Materials/Coin_Bake1_baked",
+      "class": "/Script/Engine.Material"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Materials/Cup_Bake1_baked",
+      "class": "/Script/Engine.Material"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Materials/Fence_Var1_1_Bake1",
+      "class": "/Script/Engine.Material"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Materials/Fence_Var1_2_Bake1",
+      "class": "/Script/Engine.Material"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Materials/Fence_Var2_1_Bake1",
+      "class": "/Script/Engine.Material"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Materials/Fence_Var2_2_Bake1",
+      "class": "/Script/Engine.Material"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Materials/Fence_Var3_1_Bake1",
+      "class": "/Script/Engine.Material"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Materials/Fence_Var3_2_Bake1",
+      "class": "/Script/Engine.Material"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Materials/GrassMaterialInstanceSmall",
+      "class": "/Script/Engine.MaterialInstanceConstant"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Materials/Jewel_Bake1_baked",
+      "class": "/Script/Engine.Material"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Materials/LandscapeMapInst",
+      "class": "/Script/Engine.MaterialInstanceConstant"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Materials/LandscapeMat",
+      "class": "/Script/Engine.Material"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Materials/LeafMatInstance",
+      "class": "/Script/Engine.MaterialInstanceConstant"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Materials/Logpile_Bake1_baked",
+      "class": "/Script/Engine.Material"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Materials/Plank1_Bake1_baked_001",
+      "class": "/Script/Engine.Material"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Materials/Plank2_Bake1_baked_004",
+      "class": "/Script/Engine.Material"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Materials/Pole1_Bake1_baked_006",
+      "class": "/Script/Engine.Material"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Materials/Pole2_Bake1_baked_002",
+      "class": "/Script/Engine.Material"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Materials/RockMaterial",
+      "class": "/Script/Engine.Material"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Materials/RockMatInst",
+      "class": "/Script/Engine.MaterialInstanceConstant"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Materials/SingleLog1_Bake1_baked",
+      "class": "/Script/Engine.Material"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Materials/SingleLog2_Bake1_baked",
+      "class": "/Script/Engine.Material"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Materials/SingleLog3_Bake1_baked",
+      "class": "/Script/Engine.Material"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Materials/SingleRock1_Bake1_baked",
+      "class": "/Script/Engine.Material"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Materials/SingleRock2_Bake1_baked",
+      "class": "/Script/Engine.Material"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Materials/SingleRock3_Bake1_baked",
+      "class": "/Script/Engine.Material"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Materials/SingleRockSmall1_Bake1_baked",
+      "class": "/Script/Engine.Material"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Materials/SingleRockSmall2_Bake1_baked",
+      "class": "/Script/Engine.Material"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Materials/SingleRockSmall3_Bake1_baked",
+      "class": "/Script/Engine.Material"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Materials/Staircase_Bake1_004",
+      "class": "/Script/Engine.Material"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Materials/Stone1_Bake1_baked",
+      "class": "/Script/Engine.Material"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Materials/Stone2_Bake1_baked",
+      "class": "/Script/Engine.Material"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Materials/Stone3_Bake1_baked",
+      "class": "/Script/Engine.Material"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Materials/StoneWallBent_1_Bake1_baked",
+      "class": "/Script/Engine.Material"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Materials/StoneWallBent_2_Bake1_baked",
+      "class": "/Script/Engine.Material"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Materials/StoneWallStraight_1_Bake1_baked",
+      "class": "/Script/Engine.Material"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Materials/StoneWallStraight_2_Bake1_baked",
+      "class": "/Script/Engine.Material"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Materials/Winebarrel_Low_Bake1_baked",
+      "class": "/Script/Engine.Material"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Materials/WoodLog_Bake1_baked",
+      "class": "/Script/Engine.Material"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Materials/_CaseLow_Bake1_baked",
+      "class": "/Script/Engine.Material"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Meshes/BarrelTris",
+      "class": "/Script/Engine.StaticMesh"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Meshes/BridgeCol",
+      "class": "/Script/Engine.StaticMesh"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Meshes/Bush1",
+      "class": "/Script/Engine.StaticMesh"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Meshes/Bush2",
+      "class": "/Script/Engine.StaticMesh"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Meshes/Bush3",
+      "class": "/Script/Engine.StaticMesh"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Meshes/Campfire",
+      "class": "/Script/Engine.StaticMesh"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Meshes/CaseTris",
+      "class": "/Script/Engine.StaticMesh"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Meshes/Chest_Static",
+      "class": "/Script/Engine.StaticMesh"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Meshes/Coin",
+      "class": "/Script/Engine.StaticMesh"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Meshes/CrateLargeTris_Box_Tris",
+      "class": "/Script/Engine.StaticMesh"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Meshes/Cup",
+      "class": "/Script/Engine.StaticMesh"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Meshes/Fence_Var1_1",
+      "class": "/Script/Engine.StaticMesh"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Meshes/Fence_Var1_2",
+      "class": "/Script/Engine.StaticMesh"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Meshes/Fence_Var2_1",
+      "class": "/Script/Engine.StaticMesh"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Meshes/Fence_Var2_2",
+      "class": "/Script/Engine.StaticMesh"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Meshes/Fence_Var3_1",
+      "class": "/Script/Engine.StaticMesh"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Meshes/Fence_Var3_2",
+      "class": "/Script/Engine.StaticMesh"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Meshes/Jewel",
+      "class": "/Script/Engine.StaticMesh"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Meshes/Log1",
+      "class": "/Script/Engine.StaticMesh"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Meshes/Log2",
+      "class": "/Script/Engine.StaticMesh"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Meshes/Log3",
+      "class": "/Script/Engine.StaticMesh"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Meshes/Logpile",
+      "class": "/Script/Engine.StaticMesh"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Meshes/Plank1",
+      "class": "/Script/Engine.StaticMesh"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Meshes/Plank2",
+      "class": "/Script/Engine.StaticMesh"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Meshes/Pole1",
+      "class": "/Script/Engine.StaticMesh"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Meshes/Pole2",
+      "class": "/Script/Engine.StaticMesh"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Meshes/Rock",
+      "class": "/Script/Engine.StaticMesh"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Meshes/SingleRock1",
+      "class": "/Script/Engine.StaticMesh"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Meshes/SingleRock2",
+      "class": "/Script/Engine.StaticMesh"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Meshes/SingleRock3",
+      "class": "/Script/Engine.StaticMesh"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Meshes/SingleRockSmall1",
+      "class": "/Script/Engine.StaticMesh"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Meshes/SingleRockSmall2",
+      "class": "/Script/Engine.StaticMesh"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Meshes/SingleRockSmall3",
+      "class": "/Script/Engine.StaticMesh"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Meshes/Staircase",
+      "class": "/Script/Engine.StaticMesh"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Meshes/Stone1",
+      "class": "/Script/Engine.StaticMesh"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Meshes/Stone2",
+      "class": "/Script/Engine.StaticMesh"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Meshes/Stone3",
+      "class": "/Script/Engine.StaticMesh"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Meshes/StoneWallBent_1",
+      "class": "/Script/Engine.StaticMesh"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Meshes/StoneWallBent_2",
+      "class": "/Script/Engine.StaticMesh"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Meshes/StoneWallStraight_1",
+      "class": "/Script/Engine.StaticMesh"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Meshes/StoneWallStraight_2",
+      "class": "/Script/Engine.StaticMesh"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Meshes/StylizedGrassSmall",
+      "class": "/Script/Engine.StaticMesh"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Meshes/WineBarrelTris_Winebarrel_Low_Baked",
+      "class": "/Script/Engine.StaticMesh"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Meshes/WoodLog",
+      "class": "/Script/Engine.StaticMesh"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Barrel_Low_Bake1_pbr_diffuse",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Barrel_Low_Bake1_pbr_metalness",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Barrel_Low_Bake1_pbr_normal",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Barrel_Low_Bake1_pbr_roughness",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Barrel_Low_Bake1_pbr_specular",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Box_Low_Bake1_pbr_diffuse",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Box_Low_Bake1_pbr_metalness",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Box_Low_Bake1_pbr_normal",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Box_Low_Bake1_pbr_roughness",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Box_Low_Bake1_pbr_specular",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Branch_Bake1_pbr_ssscol",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/BridgeBaked_Bake1_pbr_diffuse",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/BridgeBaked_Bake1_pbr_normal",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/BridgeBaked_Bake1_pbr_roughness",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/BridgeBaked_Bake1_pbr_specular",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Bush1_Bake1_pbr_diffuse",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Bush1_Bake1_pbr_normal",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Bush1_Bake1_pbr_roughness",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Bush1_Bake1_pbr_specular",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Bush2_Bake2_pbr_diffuse",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Bush2_Bake2_pbr_normal",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Bush2_Bake2_pbr_roughness",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Bush2_Bake2_pbr_specular",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Bush3_Bake3_pbr_diffuse",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Bush3_Bake3_pbr_normal",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Bush3_Bake3_pbr_roughness",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Bush3_Bake3_pbr_specular",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/BushPlane_Bake1_pbrs2a_alpha",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/BushPlane_Bake1_pbrs2a_diffuse",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/BushPlane_Bake1_pbrs2a_normal",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/BushPlane_Bake1_pbrs2a_roughness",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/BushPlane_Bake1_pbrs2a_specular",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/BushPlane_Bake1_pbrs2a_sss",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/BushPlane_Bake1_pbrs2a_ssscol",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Campfire_Bake1_pbr_diffuse",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Campfire_Bake1_pbr_normal",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Campfire_Bake1_pbr_roughness",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Campfire_Bake1_pbr_specular",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/CaseLow_Bake1_pbr_diffuse",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/CaseLow_Bake1_pbr_metalness",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/CaseLow_Bake1_pbr_normal",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/CaseLow_Bake1_pbr_roughness",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/CaseLow_Bake1_pbr_specular",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Coin_Bake1_pbr_diffuse",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Coin_Bake1_pbr_metalness",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Coin_Bake1_pbr_normal",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Coin_Bake1_pbr_roughness",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Coin_Bake1_pbr_specular",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Cup_Bake1_pbr_diffuse",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Cup_Bake1_pbr_metalness",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Cup_Bake1_pbr_normal",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Cup_Bake1_pbr_roughness",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Cup_Bake1_pbr_specular",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/DirtMat-height",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/DirtMat-roughness",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Fence_Var1_1_Bake1_pbr_diffuse",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Fence_Var1_1_Bake1_pbr_normal",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Fence_Var1_1_Bake1_pbr_roughness",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Fence_Var1_1_Bake1_pbr_specular",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Fence_Var1_2_Bake1_pbr_diffuse",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Fence_Var1_2_Bake1_pbr_normal",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Fence_Var1_2_Bake1_pbr_roughness",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Fence_Var1_2_Bake1_pbr_specular",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Fence_Var2_1_Bake1_pbr_diffuse",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Fence_Var2_1_Bake1_pbr_normal",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Fence_Var2_1_Bake1_pbr_roughness",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Fence_Var2_1_Bake1_pbr_specular",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Fence_Var2_2_Bake1_pbr_diffuse",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Fence_Var2_2_Bake1_pbr_normal",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Fence_Var2_2_Bake1_pbr_roughness",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Fence_Var2_2_Bake1_pbr_specular",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Fence_Var3_1_Bake1_pbr_diffuse",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Fence_Var3_1_Bake1_pbr_metalness",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Fence_Var3_1_Bake1_pbr_normal",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Fence_Var3_1_Bake1_pbr_roughness",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Fence_Var3_1_Bake1_pbr_specular",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Fence_Var3_2_Bake1_pbr_diffuse",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Fence_Var3_2_Bake1_pbr_metalness",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Fence_Var3_2_Bake1_pbr_normal",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Fence_Var3_2_Bake1_pbr_roughness",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Fence_Var3_2_Bake1_pbr_specular",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Jewel_Bake1_pbr_diffuse",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Jewel_Bake1_pbr_metalness",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Jewel_Bake1_pbr_normal",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Jewel_Bake1_pbr_roughness",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Jewel_Bake1_pbr_specular",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Jewel_Bake1_pbr_transparency",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Jewel_Bake1_pbr_transparencyroughness",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Logpile_Bake1_pbr_diffuse",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Logpile_Bake1_pbr_normal",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Logpile_Bake1_pbr_roughness",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Logpile_Bake1_pbr_specular",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/MaterialGrassMat_height",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/MaterialGrassMat_roughness",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/MaterialRockMat_diffuse",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/MaterialRockMat_height",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/MaterialRockMat_normal",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/MaterialRockMat_roughness",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Plank1_Bake1_pbr_diffuse",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Plank1_Bake1_pbr_normal",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Plank1_Bake1_pbr_roughness",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Plank1_Bake1_pbr_specular",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Plank2_Bake1_pbr_diffuse",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Plank2_Bake1_pbr_normal",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Plank2_Bake1_pbr_roughness",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Plank2_Bake1_pbr_specular",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Pole1_Bake1_pbr_diffuse",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Pole1_Bake1_pbr_normal",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Pole1_Bake1_pbr_roughness",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Pole1_Bake1_pbr_specular",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Pole2_Bake1_pbr_diffuse",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Pole2_Bake1_pbr_normal",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Pole2_Bake1_pbr_roughness",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Pole2_Bake1_pbr_specular",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/SandMat-diffuse",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/SandMat-height",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/SandMat-normal",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/SandMat-roughness",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/SingleLog1_Bake1_pbr_diffuse",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/SingleLog1_Bake1_pbr_normal",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/SingleLog1_Bake1_pbr_roughness",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/SingleLog1_Bake1_pbr_specular",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/SingleLog2_Bake1_pbr_diffuse",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/SingleLog2_Bake1_pbr_normal",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/SingleLog2_Bake1_pbr_roughness",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/SingleLog2_Bake1_pbr_specular",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/SingleLog3_Bake1_pbr_diffuse",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/SingleLog3_Bake1_pbr_normal",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/SingleLog3_Bake1_pbr_roughness",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/SingleLog3_Bake1_pbr_specular",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/SingleRock1_Bake1_pbr_diffuse",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/SingleRock1_Bake1_pbr_normal",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/SingleRock1_Bake1_pbr_roughness",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/SingleRock1_Bake1_pbr_specular",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/SingleRock2_Bake1_pbr_diffuse",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/SingleRock2_Bake1_pbr_normal",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/SingleRock2_Bake1_pbr_roughness",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/SingleRock2_Bake1_pbr_specular",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/SingleRock3_Bake1_pbr_diffuse",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/SingleRock3_Bake1_pbr_normal",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/SingleRock3_Bake1_pbr_roughness",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/SingleRock3_Bake1_pbr_specular",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/SingleRockSmall1_Bake1_pbr_diffuse",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/SingleRockSmall1_Bake1_pbr_normal",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/SingleRockSmall1_Bake1_pbr_roughness",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/SingleRockSmall1_Bake1_pbr_specular",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/SingleRockSmall2_Bake1_pbr_diffuse",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/SingleRockSmall2_Bake1_pbr_normal",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/SingleRockSmall2_Bake1_pbr_roughness",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/SingleRockSmall2_Bake1_pbr_specular",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/SingleRockSmall3_Bake1_pbr_diffuse",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/SingleRockSmall3_Bake1_pbr_normal",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/SingleRockSmall3_Bake1_pbr_roughness",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/SingleRockSmall3_Bake1_pbr_specular",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Staircase_Bake1_pbr_diffuse",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Staircase_Bake1_pbr_normal",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Staircase_Bake1_pbr_roughness",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Staircase_Bake1_pbr_specular",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Stone1_Bake1_pbr_diffuse",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Stone1_Bake1_pbr_normal",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Stone1_Bake1_pbr_roughness",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Stone1_Bake1_pbr_specular",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Stone2_Bake1_pbr_diffuse",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Stone2_Bake1_pbr_normal",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Stone2_Bake1_pbr_roughness",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Stone2_Bake1_pbr_specular",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Stone3_Bake1_pbr_diffuse",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Stone3_Bake1_pbr_normal",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Stone3_Bake1_pbr_roughness",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Stone3_Bake1_pbr_specular",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/StoneWallBent_1_Bake1_pbr_diffuse",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/StoneWallBent_1_Bake1_pbr_normal",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/StoneWallBent_1_Bake1_pbr_roughness",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/StoneWallBent_1_Bake1_pbr_specular",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/StoneWallBent_2_Bake1_pbr_diffuse",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/StoneWallBent_2_Bake1_pbr_normal",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/StoneWallBent_2_Bake1_pbr_roughness",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/StoneWallBent_2_Bake1_pbr_specular",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/StoneWallStraight_1_Bake1_pbr_diffuse",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/StoneWallStraight_1_Bake1_pbr_normal",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/StoneWallStraight_1_Bake1_pbr_roughness",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/StoneWallStraight_1_Bake1_pbr_specular",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/StoneWallStraight_2_Bake1_pbr_diffuse",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/StoneWallStraight_2_Bake1_pbr_normal",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/StoneWallStraight_2_Bake1_pbr_roughness",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/StoneWallStraight_2_Bake1_pbr_specular",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Winebarrel_Low_Bake1_pbr_diffuse",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Winebarrel_Low_Bake1_pbr_metalness",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Winebarrel_Low_Bake1_pbr_normal",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Winebarrel_Low_Bake1_pbr_roughness",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/Winebarrel_Low_Bake1_pbr_specular",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/WoodlandMat_diffuse",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/WoodlandMat_height",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/WoodlandMat_normal",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/WoodlandMat_roughness",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/WoodLog_Bake1_pbr_diffuse",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/WoodLog_Bake1_pbr_normal",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/WoodLog_Bake1_pbr_roughness",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Textures/WoodLog_Bake1_pbr_specular",
+      "class": "/Script/Engine.Texture2D"
+    },
+    {
+      "package": "/Game/ThirdPerson/Lvl_ThirdPerson",
+      "class": "/Script/Engine.World"
+    },
+    {
+      "package": "/Game/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/0/9R/UKIMD8EYGPZFS8OC6GX24A",
+      "class": "/Script/Engine.StaticMeshActor"
+    },
+    {
+      "package": "/Game/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/1/EU/X5MT1GOX9C5UUGZAKRVC3R",
+      "class": "/Script/Engine.StaticMeshActor"
+    },
+    {
+      "package": "/Game/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/1/K3/79QZQ7KG2RXNWMD6RSPKUM",
+      "class": "/Script/Engine.StaticMeshActor"
+    },
+    {
+      "package": "/Game/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/1/KL/UYSRPQ5SOYIFVLEQINPH31",
+      "class": "/Script/Engine.StaticMeshActor"
+    },
+    {
+      "package": "/Game/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/1/MV/2U2IE6JXO1320Q32RJQKSE",
+      "class": "/Script/Engine.StaticMeshActor"
+    },
+    {
+      "package": "/Game/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/1/X5/JDOWWCJ7DZVSHT4Y29GQ4D",
+      "class": "/Script/Engine.StaticMeshActor"
+    },
+    {
+      "package": "/Game/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/2/AM/9YGDW7FMEY1CZD31VUYO11",
+      "class": "/Script/Engine.StaticMeshActor"
+    },
+    {
+      "package": "/Game/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/2/AX/QEPSHOMS1K2ANUR3LXWOJM",
+      "class": "/Script/Engine.StaticMeshActor"
+    },
+    {
+      "package": "/Game/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/2/TV/DYUIEBPX2N8UFXT326WX2O",
+      "class": "/Script/Engine.StaticMeshActor"
+    },
+    {
+      "package": "/Game/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/2/V0/9XTUAMN5S6UUCFB5K0ZGZM",
+      "class": "/Script/Engine.StaticMeshActor"
+    },
+    {
+      "package": "/Game/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/3/0N/NTRPN55OWWUSD03K29ZOSH",
+      "class": "/Script/Engine.VolumetricCloud"
+    },
+    {
+      "package": "/Game/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/3/C5/3LNK9WKCBL4YVMWIBXQZ1I",
+      "class": "/Script/Engine.StaticMeshActor"
+    },
+    {
+      "package": "/Game/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/3/D3/XWEMBL7KZTNQP83W1KTMXE",
+      "class": "/Script/Engine.StaticMeshActor"
+    },
+    {
+      "package": "/Game/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/3/E2/L159AMTR83MORHTF2GEOKE",
+      "class": "/Script/Engine.StaticMeshActor"
+    },
+    {
+      "package": "/Game/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/3/L5/790AP8RYBMX9YBLGTW6WE6",
+      "class": "/Script/Engine.StaticMeshActor"
+    },
+    {
+      "package": "/Game/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/4/CQ/I205QOSSXONYWBP69RVMVA",
+      "class": "/Script/Engine.StaticMeshActor"
+    },
+    {
+      "package": "/Game/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/5/25/3IO0LF8AOO4YLSEAEN2JO1",
+      "class": "/Script/Engine.StaticMeshActor"
+    },
+    {
+      "package": "/Game/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/5/9M/BJR5SDQDQW7QDFFPNUUMNX",
+      "class": "/Script/Engine.StaticMeshActor"
+    },
+    {
+      "package": "/Game/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/5/KG/ETKAO35ANVW90XFH3J8GJ2",
+      "class": "/Script/Engine.StaticMeshActor"
+    },
+    {
+      "package": "/Game/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/5/W9/ZAAGYIUQZ2W6WEO3HPXAX7",
+      "class": "/Script/Engine.StaticMeshActor"
+    },
+    {
+      "package": "/Game/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/6/3C/KAT90QYQLFOHNMOF9BEDZK",
+      "class": "/Script/Engine.StaticMeshActor"
+    },
+    {
+      "package": "/Game/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/6/8I/HFL05AWIVBP8M8UXTV4H5K",
+      "class": "/Script/Engine.StaticMeshActor"
+    },
+    {
+      "package": "/Game/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/6/G9/77SUGCMHUBU5E7FP1DLCVD",
+      "class": "/Script/Engine.StaticMeshActor"
+    },
+    {
+      "package": "/Game/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/6/UK/OT5UOZ3WBJ9P30TU3DBDEK",
+      "class": "/Script/Engine.StaticMeshActor"
+    },
+    {
+      "package": "/Game/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/6/XM/SN8KJL01L24VVIYC52MNFR",
+      "class": "/Script/Engine.StaticMeshActor"
+    },
+    {
+      "package": "/Game/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/6/YB/C5UDZYKFL5M0YW62JXMPIZ",
+      "class": "/Script/Engine.StaticMeshActor"
+    },
+    {
+      "package": "/Game/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/7/GV/W5DNM2FP1ON7VGU0C2BGMV",
+      "class": "/Script/Engine.StaticMeshActor"
+    },
+    {
+      "package": "/Game/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/7/JD/OCW0UZT4ANZZD9YHEAOMAP",
+      "class": "/Script/Engine.StaticMeshActor"
+    },
+    {
+      "package": "/Game/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/7/O7/IHUOIGG1MW1YZY097JJ8O7",
+      "class": "/Script/Engine.StaticMeshActor"
+    },
+    {
+      "package": "/Game/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/7/XU/RW3P9HUUCOCG5TL3TPG6XF",
+      "class": "/Script/Engine.StaticMeshActor"
+    },
+    {
+      "package": "/Game/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/8/0N/1OONKTGJMLVBN21M6JE59I",
+      "class": "/Script/Engine.StaticMeshActor"
+    },
+    {
+      "package": "/Game/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/8/7A/C0UVMH95QVQO1KMTVK7MSB",
+      "class": "/Script/Engine.StaticMeshActor"
+    },
+    {
+      "package": "/Game/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/8/HN/XXZLD30WH49IXWEHJXSVAR",
+      "class": "/Script/Engine.StaticMeshActor"
+    },
+    {
+      "package": "/Game/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/8/VS/XX060WNO6GEZU5BZQCLZPP",
+      "class": "/Script/Engine.DirectionalLight"
+    },
+    {
+      "package": "/Game/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/8/WI/FHUVUALB8C8XRJ0PY9XXTI",
+      "class": "/Script/Engine.StaticMeshActor"
+    },
+    {
+      "package": "/Game/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/8/XH/SKCKQTQDTE8ZNW6C0FCBRO",
+      "class": "/Script/Engine.StaticMeshActor"
+    },
+    {
+      "package": "/Game/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/9/5G/29Z6AXUGZPZ0CXHLK2DICG",
+      "class": "/Script/Engine.Actor"
+    },
+    {
+      "package": "/Game/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/9/6V/AV0JKCFBVPU58UEBGB0GC0",
+      "class": "/Script/Engine.StaticMeshActor"
+    },
+    {
+      "package": "/Game/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/9/EE/OCR348BHEJWLHO72TR249H",
+      "class": "/Script/Engine.StaticMeshActor"
+    },
+    {
+      "package": "/Game/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/9/LX/1K6D4FIEJMOF50LSVJKFMP",
+      "class": "/Script/Engine.WorldPartitionMiniMap"
+    },
+    {
+      "package": "/Game/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/9/UM/1F7R5WQFM2D9KH7A94JFBU",
+      "class": "/Script/Engine.StaticMeshActor"
+    },
+    {
+      "package": "/Game/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/A/3J/Q8CQM512VVS7UZZW0KQRSV",
+      "class": "/Script/Engine.StaticMeshActor"
+    },
+    {
+      "package": "/Game/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/A/8N/4L4W0MLV9WFUGRTMUBLBOP",
+      "class": "/Script/Engine.StaticMeshActor"
+    },
+    {
+      "package": "/Game/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/A/BN/LKN4IB4C3UPW62GHBEKTIW",
+      "class": "/Script/Engine.StaticMeshActor"
+    },
+    {
+      "package": "/Game/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/A/IP/MGVQPE8M923OBBJLZBI1PC",
+      "class": "/Script/Engine.StaticMeshActor"
+    },
+    {
+      "package": "/Game/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/B/0L/IL99N1JAI1J4A2DFQBQL53",
+      "class": "/Script/Engine.StaticMeshActor"
+    },
+    {
+      "package": "/Game/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/B/2F/XTDQUHCYJJV6JCH4OJSVLG",
+      "class": "/Script/Engine.StaticMeshActor"
+    },
+    {
+      "package": "/Game/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/B/HX/PES0ONLF01PSQTJCC5USD2",
+      "class": "/Script/Engine.StaticMeshActor"
+    },
+    {
+      "package": "/Game/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/B/P1/LRQT09TOYHOXK9DY22EIKE",
+      "class": "/Script/Engine.StaticMeshActor"
+    },
+    {
+      "package": "/Game/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/B/RX/297QBXCKTP06G7NIHIULK4",
+      "class": "/Script/Engine.StaticMeshActor"
+    },
+    {
+      "package": "/Game/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/C/27/6ZCCZ1F7ZO6DM3C8OLVGTF",
+      "class": "/Script/Engine.StaticMeshActor"
+    },
+    {
+      "package": "/Game/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/C/EE/HZ5WNBFZRJYQPUA6X8TVVT",
+      "class": "/Script/Engine.SkyAtmosphere"
+    },
+    {
+      "package": "/Game/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/C/HY/Q7CPP7VHOXBAMAJI90W626",
+      "class": "/Script/Engine.PlayerStart"
+    },
+    {
+      "package": "/Game/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/D/13/EPTYZCFZWXT7Z7XYKZ88XK",
+      "class": "/Script/Engine.StaticMeshActor"
+    },
+    {
+      "package": "/Game/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/D/50/395Y4QE4IIEWI3KSE3SB6L",
+      "class": "/Script/Engine.StaticMeshActor"
+    },
+    {
+      "package": "/Game/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/D/8U/VKFLMM0CV8ZCC0P3TQGTTM",
+      "class": "/Script/Engine.StaticMeshActor"
+    },
+    {
+      "package": "/Game/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/D/AY/KLCRMXKI9WR2P0GDY96C36",
+      "class": "/Script/Engine.SkyLight"
+    },
+    {
+      "package": "/Game/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/D/K5/NQBPXM7AM8N39CBW4ZT57P",
+      "class": "/Script/Engine.StaticMeshActor"
+    },
+    {
+      "package": "/Game/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/D/M3/6T1XG4EDG4ZEE1U9HMYL4C",
+      "class": "/Script/Engine.StaticMeshActor"
+    },
+    {
+      "package": "/Game/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/D/MG/EDRUPW3EOYDDSI6HNSIVT1",
+      "class": "/Script/Engine.StaticMeshActor"
+    },
+    {
+      "package": "/Game/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/D/RI/R8L7GQXCHQGMMKBPTBJTNA",
+      "class": "/Script/Engine.WorldDataLayers"
+    },
+    {
+      "package": "/Game/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/E/96/RFQP83S9K0LC7IW8CXS6C0",
+      "class": "/Script/Engine.ExponentialHeightFog"
+    },
+    {
+      "package": "/Game/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/E/JR/W7S9610Y7RWELGF93FZYAE",
+      "class": "/Script/Engine.StaticMeshActor"
+    },
+    {
+      "package": "/Game/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/E/SS/QXUZ4IXFNKHCYFWERA1HQA",
+      "class": "/Script/Engine.StaticMeshActor"
+    },
+    {
+      "package": "/Game/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/F/4G/TYFCMQ9MC435YW6FZBF5FS",
+      "class": "/Script/Engine.PostProcessVolume"
+    },
+    {
+      "package": "/Game/__ExternalObjects__/ThirdPerson/Lvl_ThirdPerson/0/TQ/1UP2MCOIYXC0GTW985R4K0",
+      "class": "/Script/Engine.ActorFolder"
+    },
+    {
+      "package": "/Game/__ExternalObjects__/ThirdPerson/Lvl_ThirdPerson/5/TX/O6OLZU4WSCI3YRJS922SWL",
+      "class": "/Script/Engine.ActorFolder"
+    }
+  ],
+  "selected": [
+    {
+      "package": "/Game/Input/IMC_MouseLook",
+      "class": "/Script/EnhancedInput.InputMappingContext",
+      "dependencies": [
+        "/Script/Engine",
+        "/Script/EnhancedInput",
+        "/Game/Input/Actions/IA_MouseLook"
+      ]
+    },
+    {
+      "package": "/Game/Input/IMC_Default",
+      "class": "/Script/EnhancedInput.InputMappingContext",
+      "dependencies": [
+        "/Script/Engine",
+        "/Script/EnhancedInput",
+        "/Game/Input/Actions/IA_Jump",
+        "/Game/Input/Actions/IA_Look",
+        "/Game/Input/Actions/IA_Move"
+      ]
+    },
+    {
+      "package": "/Game/Input/Actions/IA_Move",
+      "class": "/Script/EnhancedInput.InputAction",
+      "dependencies": [
+        "/Script/Engine",
+        "/Script/EnhancedInput"
+      ]
+    },
+    {
+      "package": "/Game/Input/Actions/IA_MouseLook",
+      "class": "/Script/EnhancedInput.InputAction",
+      "dependencies": [
+        "/Script/Engine",
+        "/Script/EnhancedInput"
+      ]
+    },
+    {
+      "package": "/Game/Input/Actions/IA_Look",
+      "class": "/Script/EnhancedInput.InputAction",
+      "dependencies": [
+        "/Script/Engine",
+        "/Script/EnhancedInput"
+      ]
+    },
+    {
+      "package": "/Game/Input/Actions/IA_Jump",
+      "class": "/Script/EnhancedInput.InputAction",
+      "dependencies": [
+        "/Script/Engine",
+        "/Script/EnhancedInput"
+      ]
+    },
+    {
+      "package": "/Game/Input/Touch/BPI_TouchInterface",
+      "class": "/Script/Engine.Blueprint",
+      "dependencies": [
+        "/Script/CoreUObject",
+        "/Script/Engine",
+        "/Script/BlueprintGraph"
+      ],
+      "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+      "parent": "/Script/CoreUObject.Class'/Script/CoreUObject.Interface'",
+      "defaults": {
+        "default_pawn_class": {
+          "error": "Interface: Failed to find property 'default_pawn_class' for attribute 'default_pawn_class' on 'BPI_TouchInterface_C'"
+        },
+        "player_controller_class": {
+          "error": "Interface: Failed to find property 'player_controller_class' for attribute 'player_controller_class' on 'BPI_TouchInterface_C'"
+        },
+        "player_state_class": {
+          "error": "Interface: Failed to find property 'player_state_class' for attribute 'player_state_class' on 'BPI_TouchInterface_C'"
+        },
+        "hud_class": {
+          "error": "Interface: Failed to find property 'hud_class' for attribute 'hud_class' on 'BPI_TouchInterface_C'"
+        },
+        "auto_possess_player": {
+          "error": "Interface: Failed to find property 'auto_possess_player' for attribute 'auto_possess_player' on 'BPI_TouchInterface_C'"
+        }
+      }
+    },
+    {
+      "package": "/Game/Input/Touch/UI_Thumbstick",
+      "class": "/Script/UMGEditor.WidgetBlueprint",
+      "dependencies": [
+        "/Script/CoreUObject",
+        "/Script/Engine",
+        "/Script/BlueprintGraph",
+        "/Script/UnrealEd",
+        "/Script/InputCore",
+        "/Script/SlateCore",
+        "/Script/UMG",
+        "/Script/UMGEditor",
+        "/Engine/MobileResources/HUD/VirtualJoystick_Background",
+        "/Engine/MobileResources/HUD/VirtualJoystick_Thumb"
+      ]
+    },
+    {
+      "package": "/Game/Input/Touch/UI_TouchSimple",
+      "class": "/Script/UMGEditor.WidgetBlueprint",
+      "dependencies": [
+        "/Script/CoreUObject",
+        "/Script/Engine",
+        "/Script/BlueprintGraph",
+        "/Script/UnrealEd",
+        "/Script/UMG",
+        "/Script/UMGEditor",
+        "/Game/Input/Touch/BPI_TouchInterface",
+        "/Game/Input/Touch/UI_Thumbstick",
+        "/Engine/MobileResources/HUD/VirtualJoystick_Thumb"
+      ]
+    },
+    {
+      "package": "/Game/ThirdPerson/Blueprints/BP_ThirdPersonPlayerController",
+      "class": "/Script/Engine.Blueprint",
+      "dependencies": [
+        "/Script/UMG",
+        "/Script/UMGEditor",
+        "/Game/Input/IMC_Default",
+        "/Script/EnhancedInput",
+        "/Game/Input/IMC_MouseLook",
+        "/Game/Input/Touch/UI_TouchSimple"
+      ],
+      "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+      "parent": "/Script/CoreUObject.Class'/Script/Engine.PlayerController'",
+      "defaults": {
+        "default_pawn_class": {
+          "error": "PlayerController: Failed to find property 'default_pawn_class' for attribute 'default_pawn_class' on 'BP_ThirdPersonPlayerController_C'"
+        },
+        "player_controller_class": {
+          "error": "PlayerController: Failed to find property 'player_controller_class' for attribute 'player_controller_class' on 'BP_ThirdPersonPlayerController_C'"
+        },
+        "player_state_class": {
+          "error": "PlayerController: Failed to find property 'player_state_class' for attribute 'player_state_class' on 'BP_ThirdPersonPlayerController_C'"
+        },
+        "hud_class": {
+          "error": "PlayerController: Failed to find property 'hud_class' for attribute 'hud_class' on 'BP_ThirdPersonPlayerController_C'"
+        },
+        "auto_possess_player": {
+          "error": "PlayerController: Failed to find property 'auto_possess_player' for attribute 'auto_possess_player' on 'BP_ThirdPersonPlayerController_C'"
+        }
+      },
+      "components": [
+        "<Object '/Script/Engine.SceneComponent' (0x00007FF393A15C70) Class 'Class'> TransformComponent0"
+      ]
+    },
+    {
+      "package": "/Game/ThirdPerson/Blueprints/BP_ThirdPersonCharacter",
+      "class": "/Script/Engine.Blueprint",
+      "dependencies": [
+        "/Script/NavigationSystem",
+        "/Script/EnhancedInput",
+        "/Game/Input/Actions/IA_Jump",
+        "/Game/Input/Actions/IA_Look",
+        "/Game/Input/Actions/IA_Move",
+        "/Game/Input/Actions/IA_MouseLook",
+        "/Game/Input/Touch/BPI_TouchInterface",
+        "/Script/ClothingSystemRuntimeNv",
+        "/Script/InputBlueprintNodes",
+        "/Game/Characters/Mannequins/Meshes/SKM_Quinn_Simple",
+        "/Game/Characters/Mannequins/Anims/Unarmed/ABP_Unarmed"
+      ],
+      "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+      "parent": "/Script/CoreUObject.Class'/Script/Engine.Character'",
+      "defaults": {
+        "default_pawn_class": {
+          "error": "Character: Failed to find property 'default_pawn_class' for attribute 'default_pawn_class' on 'BP_ThirdPersonCharacter_C'"
+        },
+        "player_controller_class": {
+          "error": "Character: Failed to find property 'player_controller_class' for attribute 'player_controller_class' on 'BP_ThirdPersonCharacter_C'"
+        },
+        "player_state_class": {
+          "error": "Character: Failed to find property 'player_state_class' for attribute 'player_state_class' on 'BP_ThirdPersonCharacter_C'"
+        },
+        "hud_class": {
+          "error": "Character: Failed to find property 'hud_class' for attribute 'hud_class' on 'BP_ThirdPersonCharacter_C'"
+        },
+        "auto_possess_player": "<AutoReceiveInput.DISABLED: 0>"
+      },
+      "movement": {
+        "max_walk_speed": "600.0",
+        "max_swim_speed": "300.0",
+        "buoyancy": "1.0",
+        "nav_agent_props": "<Struct 'NavAgentProperties' (0x000001B186D63D70) {can_crouch: False, can_jump: True, can_walk: True, can_swim: True, can_fly: False, agent_radius: 42.000000, agent_height: 192.000000, agent_step_height: -1.000000, nav_walking_search_height_scale: 0.500000, preferred_nav_data: {}}>"
+      },
+      "components": [
+        "<Object '/Script/Engine.CapsuleComponent' (0x00007FF393C0E270) Class 'Class'> CollisionCylinder",
+        "<Object '/Script/Engine.ArrowComponent' (0x00007FF393C0CE70) Class 'Class'> Arrow",
+        "<Object '/Script/Engine.CharacterMovementComponent' (0x00007FF393C0E4F0) Class 'Class'> CharMoveComp",
+        "<Object '/Script/Engine.SkeletalMeshComponent' (0x00007FF393AFCB70) Class 'Class'> CharacterMesh0"
+      ]
+    },
+    {
+      "package": "/Game/ThirdPerson/Blueprints/BP_ThirdPersonGameMode",
+      "class": "/Script/Engine.Blueprint",
+      "dependencies": [
+        "/Script/CoreUObject",
+        "/Script/Engine",
+        "/Script/BlueprintGraph",
+        "/Script/UnrealEd",
+        "/Game/ThirdPerson/Blueprints/BP_ThirdPersonCharacter",
+        "/Game/ThirdPerson/Blueprints/BP_ThirdPersonPlayerController"
+      ],
+      "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+      "parent": "/Script/CoreUObject.Class'/Script/Engine.GameModeBase'",
+      "defaults": {
+        "default_pawn_class": "<Object '/Game/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.BP_ThirdPersonCharacter_C' (0x000001B186CE1C00) Class 'BlueprintGeneratedClass'>",
+        "player_controller_class": "<Object '/Game/ThirdPerson/Blueprints/BP_ThirdPersonPlayerController.BP_ThirdPersonPlayerController_C' (0x000001B148ADEE00) Class 'BlueprintGeneratedClass'>",
+        "player_state_class": "<Object '/Script/Engine.PlayerState' (0x00007FF393C43970) Class 'Class'>",
+        "hud_class": "<Object '/Script/Engine.HUD' (0x00007FF393C18EF0) Class 'Class'>",
+        "auto_possess_player": {
+          "error": "GameModeBase: Failed to find property 'auto_possess_player' for attribute 'auto_possess_player' on 'BP_ThirdPersonGameMode_C'"
+        }
+      },
+      "components": []
+    },
+    {
+      "package": "/Game/Content/Survival/Maps/LV_Survival_Nature",
+      "class": "/Script/Engine.World",
+      "dependencies": [
+        "/Script/NavigationSystem",
+        "/Script/Foliage",
+        "/Script/Landscape",
+        "/Engine/EngineMaterials/WorldGridMaterial",
+        "/Engine/EngineMaterials/DefaultPhysicalMaterial",
+        "/Engine/EngineSky/SM_SkySphere",
+        "/Engine/EngineSky/M_SimpleSkyDome",
+        "/Script/Water",
+        "/Water/Curves/FloatCurve",
+        "/Script/WaterEditor",
+        "/Water/Meshes/LakeMesh",
+        "/Landmass/DistanceFields/Materials/BlurEdges",
+        "/Landmass/DistanceFields/Materials/DetectEdges",
+        "/Landmass/DistanceFields/Materials/JumpFloodStep",
+        "/Water/Materials/Brushes/CanvasDrawing",
+        "/Water/Materials/Brushes/CompositeWaterBodyTexture",
+        "/Water/Materials/Brushes/MeshBrush_Angle",
+        "/Water/Materials/Brushes/MeshBrush_Island",
+        "/Water/Materials/Brushes/MeshBrush_Weightmap",
+        "/Water/Materials/Brushes/MeshBrush_Width",
+        "/Water/Materials/PostProcessing/M_UnderWater_PostProcess_Volume",
+        "/Water/Materials/WaterSurface/Water_Material_Lake",
+        "/Landmass/Landscape/BlueprintBrushes/Materials/CacheDistanceField",
+        "/Landmass/Landscape/BlueprintBrushes/Materials/RenderSplineDepths",
+        "/Water/Icons/WaterBodyLakeSprite",
+        "/Water/Waves/GerstnerWaves_Lake",
+        "/Game/StylizedEnvironment/Meshes/LargeRock1",
+        "/Game/StylizedEnvironment/Meshes/LargeRock2",
+        "/Game/StylizedEnvironment/Meshes/StylizedGrass",
+        "/Game/StylizedEnvironment/Meshes/Tree1",
+        "/Game/StylizedEnvironment/Meshes/Tree2",
+        "/Game/StylizedEnvironment/Meshes/Tree3",
+        "/Engine/EditorResources/LightIcons/S_LightError",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud_Inst",
+        "/Water/Materials/HLOD/HLODWater",
+        "/Water/Materials/WaterSurface/Water_FarMesh",
+        "/Water/Materials/WaterInfo/DrawWaterInfo",
+        "/Game/Content/Survival/EnvironmentGenerated/FT_Auto_LargeRock1",
+        "/Game/Content/Survival/EnvironmentGenerated/FT_Auto_LargeRock2",
+        "/Game/Content/Survival/EnvironmentGenerated/FT_Auto_StylizedGrass",
+        "/Game/Content/Survival/EnvironmentGenerated/FT_Auto_Tree1",
+        "/Game/Content/Survival/EnvironmentGenerated/FT_Auto_Tree2",
+        "/Game/Content/Survival/EnvironmentGenerated/FT_Auto_Tree3",
+        "/Game/Content/Survival/Materials/Dirt_LayerInfo",
+        "/Game/Content/Survival/Materials/Grass_LayerInfo",
+        "/Game/Content/Survival/Materials/M_Grass/M_Grass",
+        "/Water/Materials/WaterSurface/LODs/Water_Material_Lake_LOD"
+      ]
+    },
+    {
+      "package": "/Game/LevelPrototyping/Interactable/Door/BP_DoorFrame",
+      "class": "/Script/Engine.Blueprint",
+      "dependencies": [
+        "/Script/NavigationSystem",
+        "/Engine/EditorBlueprintResources/StandardMacros",
+        "/Game/LevelPrototyping/Interactable/Door/Meshes/SM_Door",
+        "/Game/LevelPrototyping/Interactable/Door/Meshes/SM_DoorFrame_Corner",
+        "/Game/LevelPrototyping/Interactable/Door/Meshes/SM_DoorFrame_Edge"
+      ],
+      "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+      "parent": "/Script/CoreUObject.Class'/Script/Engine.Actor'",
+      "defaults": {
+        "default_pawn_class": {
+          "error": "Actor: Failed to find property 'default_pawn_class' for attribute 'default_pawn_class' on 'BP_DoorFrame_C'"
+        },
+        "player_controller_class": {
+          "error": "Actor: Failed to find property 'player_controller_class' for attribute 'player_controller_class' on 'BP_DoorFrame_C'"
+        },
+        "player_state_class": {
+          "error": "Actor: Failed to find property 'player_state_class' for attribute 'player_state_class' on 'BP_DoorFrame_C'"
+        },
+        "hud_class": {
+          "error": "Actor: Failed to find property 'hud_class' for attribute 'hud_class' on 'BP_DoorFrame_C'"
+        },
+        "auto_possess_player": {
+          "error": "Actor: Failed to find property 'auto_possess_player' for attribute 'auto_possess_player' on 'BP_DoorFrame_C'"
+        }
+      },
+      "components": []
+    },
+    {
+      "package": "/Game/LevelPrototyping/Interactable/JumpPad/BP_JumpPad",
+      "class": "/Script/Engine.Blueprint",
+      "dependencies": [
+        "/Script/NavigationSystem",
+        "/Engine/BasicShapes/BasicShapeMaterial",
+        "/Script/Niagara",
+        "/Game/LevelPrototyping/Meshes/SM_Cylinder",
+        "/Engine/EditorResources/LightIcons/S_LightError",
+        "/Game/LevelPrototyping/Interactable/JumpPad/Assets/NS_JumpPad",
+        "/Game/LevelPrototyping/Interactable/JumpPad/Assets/Materials/MI_GlowNT"
+      ],
+      "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+      "parent": "/Script/CoreUObject.Class'/Script/Engine.Actor'",
+      "defaults": {
+        "default_pawn_class": {
+          "error": "Actor: Failed to find property 'default_pawn_class' for attribute 'default_pawn_class' on 'BP_JumpPad_C'"
+        },
+        "player_controller_class": {
+          "error": "Actor: Failed to find property 'player_controller_class' for attribute 'player_controller_class' on 'BP_JumpPad_C'"
+        },
+        "player_state_class": {
+          "error": "Actor: Failed to find property 'player_state_class' for attribute 'player_state_class' on 'BP_JumpPad_C'"
+        },
+        "hud_class": {
+          "error": "Actor: Failed to find property 'hud_class' for attribute 'hud_class' on 'BP_JumpPad_C'"
+        },
+        "auto_possess_player": {
+          "error": "Actor: Failed to find property 'auto_possess_player' for attribute 'auto_possess_player' on 'BP_JumpPad_C'"
+        }
+      },
+      "components": []
+    },
+    {
+      "package": "/Game/LevelPrototyping/Interactable/Target/BP_WobbleTarget",
+      "class": "/Script/Engine.Blueprint",
+      "dependencies": [
+        "/Engine/EditorResources/S_KBSJoint",
+        "/Engine/EditorResources/S_KHinge",
+        "/Engine/EditorResources/S_KPrismatic",
+        "/Game/LevelPrototyping/Meshes/SM_Cylinder",
+        "/Game/LevelPrototyping/Interactable/Target/Assets/SM_TargetBaseMesh",
+        "/Game/DemoTemplate/_Core/MI_Intro_Colorway"
+      ],
+      "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+      "parent": "/Script/CoreUObject.Class'/Script/Engine.Actor'",
+      "defaults": {
+        "default_pawn_class": {
+          "error": "Actor: Failed to find property 'default_pawn_class' for attribute 'default_pawn_class' on 'BP_WobbleTarget_C'"
+        },
+        "player_controller_class": {
+          "error": "Actor: Failed to find property 'player_controller_class' for attribute 'player_controller_class' on 'BP_WobbleTarget_C'"
+        },
+        "player_state_class": {
+          "error": "Actor: Failed to find property 'player_state_class' for attribute 'player_state_class' on 'BP_WobbleTarget_C'"
+        },
+        "hud_class": {
+          "error": "Actor: Failed to find property 'hud_class' for attribute 'hud_class' on 'BP_WobbleTarget_C'"
+        },
+        "auto_possess_player": {
+          "error": "Actor: Failed to find property 'auto_possess_player' for attribute 'auto_possess_player' on 'BP_WobbleTarget_C'"
+        }
+      },
+      "components": []
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Blueprints/InteractInterface",
+      "class": "/Script/Engine.Blueprint",
+      "dependencies": [],
+      "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+      "parent": "/Script/CoreUObject.Class'/Script/CoreUObject.Interface'",
+      "defaults": {
+        "default_pawn_class": {
+          "error": "Interface: Failed to find property 'default_pawn_class' for attribute 'default_pawn_class' on 'InteractInterface_C'"
+        },
+        "player_controller_class": {
+          "error": "Interface: Failed to find property 'player_controller_class' for attribute 'player_controller_class' on 'InteractInterface_C'"
+        },
+        "player_state_class": {
+          "error": "Interface: Failed to find property 'player_state_class' for attribute 'player_state_class' on 'InteractInterface_C'"
+        },
+        "hud_class": {
+          "error": "Interface: Failed to find property 'hud_class' for attribute 'hud_class' on 'InteractInterface_C'"
+        },
+        "auto_possess_player": {
+          "error": "Interface: Failed to find property 'auto_possess_player' for attribute 'auto_possess_player' on 'InteractInterface_C'"
+        }
+      }
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Blueprints/InteractPromtWidget",
+      "class": "/Script/UMGEditor.WidgetBlueprint",
+      "dependencies": [
+        "/Script/SlateCore",
+        "/Script/UMG",
+        "/Script/UMGEditor"
+      ]
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Blueprints/ChestActor_Interface",
+      "class": "/Script/Engine.Blueprint",
+      "dependencies": [
+        "/Script/UMG",
+        "/Script/UMGEditor",
+        "/Game/StylizedEnvironment/Animations/ChestAnimated_Anim_ChestTop_Final_ChestClose",
+        "/Game/StylizedEnvironment/Animations/ChestAnimated_Anim_ChestTop_Final_ChestOpen",
+        "/Script/ClothingSystemRuntimeNv",
+        "/Game/StylizedEnvironment/Blueprints/InteractInterface",
+        "/Game/StylizedEnvironment/Blueprints/InteractPromtWidget",
+        "/Game/StylizedEnvironment/Meshes/ChestAnimated"
+      ],
+      "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+      "parent": "/Script/CoreUObject.Class'/Script/Engine.Actor'",
+      "defaults": {
+        "default_pawn_class": {
+          "error": "Actor: Failed to find property 'default_pawn_class' for attribute 'default_pawn_class' on 'ChestActor_Interface_C'"
+        },
+        "player_controller_class": {
+          "error": "Actor: Failed to find property 'player_controller_class' for attribute 'player_controller_class' on 'ChestActor_Interface_C'"
+        },
+        "player_state_class": {
+          "error": "Actor: Failed to find property 'player_state_class' for attribute 'player_state_class' on 'ChestActor_Interface_C'"
+        },
+        "hud_class": {
+          "error": "Actor: Failed to find property 'hud_class' for attribute 'hud_class' on 'ChestActor_Interface_C'"
+        },
+        "auto_possess_player": {
+          "error": "Actor: Failed to find property 'auto_possess_player' for attribute 'auto_possess_player' on 'ChestActor_Interface_C'"
+        }
+      },
+      "components": []
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/ThirdPerson/Blueprints/BP_ThirdPersonCharacter",
+      "class": "/Script/Engine.Blueprint",
+      "dependencies": [
+        "/Script/InputCore",
+        "/Script/PhysicsCore",
+        "/Script/NavigationSystem",
+        "/Script/ClothingSystemRuntimeNv",
+        "/Game/StylizedEnvironment/Blueprints/InteractInterface",
+        "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Animations/ABP_Quinn",
+        "/Game/StylizedEnvironment/Demo/Characters/Mannequins/Meshes/SKM_Quinn_Simple"
+      ],
+      "status": "<BlueprintStatus.BS_UP_TO_DATE_WITH_WARNINGS: 5>",
+      "parent": "/Script/CoreUObject.Class'/Script/Engine.Character'",
+      "defaults": {
+        "default_pawn_class": {
+          "error": "Character: Failed to find property 'default_pawn_class' for attribute 'default_pawn_class' on 'BP_ThirdPersonCharacter_C'"
+        },
+        "player_controller_class": {
+          "error": "Character: Failed to find property 'player_controller_class' for attribute 'player_controller_class' on 'BP_ThirdPersonCharacter_C'"
+        },
+        "player_state_class": {
+          "error": "Character: Failed to find property 'player_state_class' for attribute 'player_state_class' on 'BP_ThirdPersonCharacter_C'"
+        },
+        "hud_class": {
+          "error": "Character: Failed to find property 'hud_class' for attribute 'hud_class' on 'BP_ThirdPersonCharacter_C'"
+        },
+        "auto_possess_player": "<AutoReceiveInput.DISABLED: 0>"
+      },
+      "movement": {
+        "max_walk_speed": "500.0",
+        "max_swim_speed": "300.0",
+        "buoyancy": "1.0",
+        "nav_agent_props": "<Struct 'NavAgentProperties' (0x000001B238822970) {can_crouch: False, can_jump: True, can_walk: True, can_swim: True, can_fly: False, agent_radius: 42.000000, agent_height: 192.000000, agent_step_height: -1.000000, nav_walking_search_height_scale: 0.500000, preferred_nav_data: {}}>"
+      },
+      "components": [
+        "<Object '/Script/Engine.CapsuleComponent' (0x00007FF393C0E270) Class 'Class'> CollisionCylinder",
+        "<Object '/Script/Engine.ArrowComponent' (0x00007FF393C0CE70) Class 'Class'> Arrow",
+        "<Object '/Script/Engine.CharacterMovementComponent' (0x00007FF393C0E4F0) Class 'Class'> CharMoveComp",
+        "<Object '/Script/Engine.SkeletalMeshComponent' (0x00007FF393AFCB70) Class 'Class'> CharacterMesh0"
+      ]
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Blueprints/ChestActor_Trigger",
+      "class": "/Script/Engine.Blueprint",
+      "dependencies": [
+        "/Script/InputCore",
+        "/Script/NavigationSystem",
+        "/Script/UMG",
+        "/Script/UMGEditor",
+        "/Engine/EditorBlueprintResources/StandardMacros",
+        "/Game/StylizedEnvironment/Animations/ChestAnimated_Anim_ChestTop_Final_ChestClose",
+        "/Game/StylizedEnvironment/Animations/ChestAnimated_Anim_ChestTop_Final_ChestOpen",
+        "/Script/ClothingSystemRuntimeNv",
+        "/Game/StylizedEnvironment/Blueprints/InteractPromtWidget",
+        "/Game/StylizedEnvironment/Meshes/ChestAnimated",
+        "/Game/StylizedEnvironment/Demo/ThirdPerson/Blueprints/BP_ThirdPersonCharacter"
+      ],
+      "status": "<BlueprintStatus.BS_UP_TO_DATE_WITH_WARNINGS: 5>",
+      "parent": "/Script/CoreUObject.Class'/Script/Engine.Actor'",
+      "defaults": {
+        "default_pawn_class": {
+          "error": "Actor: Failed to find property 'default_pawn_class' for attribute 'default_pawn_class' on 'ChestActor_Trigger_C'"
+        },
+        "player_controller_class": {
+          "error": "Actor: Failed to find property 'player_controller_class' for attribute 'player_controller_class' on 'ChestActor_Trigger_C'"
+        },
+        "player_state_class": {
+          "error": "Actor: Failed to find property 'player_state_class' for attribute 'player_state_class' on 'ChestActor_Trigger_C'"
+        },
+        "hud_class": {
+          "error": "Actor: Failed to find property 'hud_class' for attribute 'hud_class' on 'ChestActor_Trigger_C'"
+        },
+        "auto_possess_player": {
+          "error": "Actor: Failed to find property 'auto_possess_player' for attribute 'auto_possess_player' on 'ChestActor_Trigger_C'"
+        }
+      },
+      "components": []
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Blueprints/GateActor_Interface",
+      "class": "/Script/Engine.Blueprint",
+      "dependencies": [
+        "/Script/UMG",
+        "/Script/UMGEditor",
+        "/Game/StylizedEnvironment/Animations/GateAnimated_Anim_Gate_GateClose",
+        "/Game/StylizedEnvironment/Animations/GateAnimated_Anim_Gate_GateOpen",
+        "/Script/ClothingSystemRuntimeNv",
+        "/Game/StylizedEnvironment/Blueprints/InteractInterface",
+        "/Game/StylizedEnvironment/Blueprints/InteractPromtWidget",
+        "/Game/StylizedEnvironment/Materials/WoodPhysics",
+        "/Game/StylizedEnvironment/Meshes/GateAnimated"
+      ],
+      "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+      "parent": "/Script/CoreUObject.Class'/Script/Engine.Actor'",
+      "defaults": {
+        "default_pawn_class": {
+          "error": "Actor: Failed to find property 'default_pawn_class' for attribute 'default_pawn_class' on 'GateActor_Interface_C'"
+        },
+        "player_controller_class": {
+          "error": "Actor: Failed to find property 'player_controller_class' for attribute 'player_controller_class' on 'GateActor_Interface_C'"
+        },
+        "player_state_class": {
+          "error": "Actor: Failed to find property 'player_state_class' for attribute 'player_state_class' on 'GateActor_Interface_C'"
+        },
+        "hud_class": {
+          "error": "Actor: Failed to find property 'hud_class' for attribute 'hud_class' on 'GateActor_Interface_C'"
+        },
+        "auto_possess_player": {
+          "error": "Actor: Failed to find property 'auto_possess_player' for attribute 'auto_possess_player' on 'GateActor_Interface_C'"
+        }
+      },
+      "components": []
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Blueprints/GateActor_Trigger",
+      "class": "/Script/Engine.Blueprint",
+      "dependencies": [
+        "/Script/InputCore",
+        "/Script/NavigationSystem",
+        "/Script/UMG",
+        "/Script/UMGEditor",
+        "/Engine/EditorBlueprintResources/StandardMacros",
+        "/Game/StylizedEnvironment/Animations/GateAnimated_Anim_Gate_GateClose",
+        "/Game/StylizedEnvironment/Animations/GateAnimated_Anim_Gate_GateOpen",
+        "/Script/ClothingSystemRuntimeNv",
+        "/Game/StylizedEnvironment/Blueprints/InteractPromtWidget",
+        "/Game/StylizedEnvironment/Demo/ThirdPerson/Blueprints/BP_ThirdPersonCharacter",
+        "/Game/StylizedEnvironment/Materials/WoodPhysics",
+        "/Game/StylizedEnvironment/Meshes/GateAnimated"
+      ],
+      "status": "<BlueprintStatus.BS_UP_TO_DATE_WITH_WARNINGS: 5>",
+      "parent": "/Script/CoreUObject.Class'/Script/Engine.Actor'",
+      "defaults": {
+        "default_pawn_class": {
+          "error": "Actor: Failed to find property 'default_pawn_class' for attribute 'default_pawn_class' on 'GateActor_Trigger_C'"
+        },
+        "player_controller_class": {
+          "error": "Actor: Failed to find property 'player_controller_class' for attribute 'player_controller_class' on 'GateActor_Trigger_C'"
+        },
+        "player_state_class": {
+          "error": "Actor: Failed to find property 'player_state_class' for attribute 'player_state_class' on 'GateActor_Trigger_C'"
+        },
+        "hud_class": {
+          "error": "Actor: Failed to find property 'hud_class' for attribute 'hud_class' on 'GateActor_Trigger_C'"
+        },
+        "auto_possess_player": {
+          "error": "Actor: Failed to find property 'auto_possess_player' for attribute 'auto_possess_player' on 'GateActor_Trigger_C'"
+        }
+      },
+      "components": []
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Blueprints/LeafsWind",
+      "class": "/Script/Engine.Blueprint",
+      "dependencies": [
+        "/Script/Niagara",
+        "/Game/StylizedEnvironment/Materials/WindProperties",
+        "/Game/StylizedEnvironment/Particles/FallingLeafsSystem"
+      ],
+      "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+      "parent": "/Script/CoreUObject.Class'/Script/Engine.Actor'",
+      "defaults": {
+        "default_pawn_class": {
+          "error": "Actor: Failed to find property 'default_pawn_class' for attribute 'default_pawn_class' on 'LeafsWind_C'"
+        },
+        "player_controller_class": {
+          "error": "Actor: Failed to find property 'player_controller_class' for attribute 'player_controller_class' on 'LeafsWind_C'"
+        },
+        "player_state_class": {
+          "error": "Actor: Failed to find property 'player_state_class' for attribute 'player_state_class' on 'LeafsWind_C'"
+        },
+        "hud_class": {
+          "error": "Actor: Failed to find property 'hud_class' for attribute 'hud_class' on 'LeafsWind_C'"
+        },
+        "auto_possess_player": {
+          "error": "Actor: Failed to find property 'auto_possess_player' for attribute 'auto_possess_player' on 'LeafsWind_C'"
+        }
+      },
+      "components": []
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/ThirdPerson/Blueprints/BP_ThirdPersonGameMode",
+      "class": "/Script/Engine.Blueprint",
+      "dependencies": [
+        "/Game/StylizedEnvironment/Demo/ThirdPerson/Blueprints/BP_ThirdPersonCharacter"
+      ],
+      "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+      "parent": "/Script/CoreUObject.Class'/Script/Engine.GameModeBase'",
+      "defaults": {
+        "default_pawn_class": "<Object '/Game/StylizedEnvironment/Demo/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.BP_ThirdPersonCharacter_C' (0x000001B239ECBD00) Class 'BlueprintGeneratedClass'>",
+        "player_controller_class": "<Object '/Script/Engine.PlayerController' (0x00007FF393C0BF70) Class 'Class'>",
+        "player_state_class": "<Object '/Script/Engine.PlayerState' (0x00007FF393C43970) Class 'Class'>",
+        "hud_class": "<Object '/Script/Engine.HUD' (0x00007FF393C18EF0) Class 'Class'>",
+        "auto_possess_player": {
+          "error": "GameModeBase: Failed to find property 'auto_possess_player' for attribute 'auto_possess_player' on 'BP_ThirdPersonGameMode_C'"
+        }
+      },
+      "components": []
+    }
+  ],
+  "world": "/Game/Content/Survival/Maps/LV_Survival_Nature.LV_Survival_Nature",
+  "world_settings": {
+    "default_game_mode": "None",
+    "world_partition": "None",
+    "enable_world_bounds_checks": "True"
+  },
+  "actor_classes": {
+    "/Script/Engine.DirectionalLight": 1,
+    "/Script/Engine.SkyAtmosphere": 1,
+    "/Script/Engine.SkyLight": 1,
+    "/Script/Engine.ExponentialHeightFog": 1,
+    "/Script/Engine.VolumetricCloud": 1,
+    "/Script/Engine.PlayerStart": 1,
+    "/Script/Engine.StaticMeshActor": 27,
+    "/Script/Landscape.Landscape": 1,
+    "/Script/Foliage.InstancedFoliageActor": 1,
+    "/Script/Engine.PostProcessVolume": 1,
+    "/Script/Water.WaterBodyLake": 1,
+    "/Script/WaterEditor.WaterBrushManager": 1,
+    "/Script/Water.WaterZone": 1,
+    "/Script/Engine.PhysicsVolume": 257
+  },
+  "water_actors": [
+    {
+      "path": "/Game/Content/Survival/Maps/LV_Survival_Nature.LV_Survival_Nature:PersistentLevel.WaterBodyLake_1",
+      "class": "/Script/Water.WaterBodyLake"
+    },
+    {
+      "path": "/Game/Content/Survival/Maps/LV_Survival_Nature.LV_Survival_Nature:PersistentLevel.Landscape_WaterBrushManager_0",
+      "class": "/Script/WaterEditor.WaterBrushManager"
+    },
+    {
+      "path": "/Game/Content/Survival/Maps/LV_Survival_Nature.LV_Survival_Nature:PersistentLevel.WaterZone_0",
+      "class": "/Script/Water.WaterZone"
+    }
+  ]
+}

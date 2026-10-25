@@ -1,0 +1,133 @@
+{
+  "phase": "final_end",
+  "frame": 1,
+  "runs": [
+    {
+      "run": 1,
+      "classes": {
+        "gi": "/Game/Survival/Core/BP_SurvivalGameInstance.BP_SurvivalGameInstance_C",
+        "gm": "/Game/Survival/Core/BP_SurvivalGameMode.BP_SurvivalGameMode_C",
+        "pc": "/Game/Survival/Core/BP_SurvivalPlayerController.BP_SurvivalPlayerController_C",
+        "ps": "/Game/Survival/Core/BP_SurvivalPlayerState.BP_SurvivalPlayerState_C",
+        "pawn": "/Game/Survival/Character/BP_SurvivalCharacter.BP_SurvivalCharacter_C"
+      },
+      "location_cm": [
+        -1000.0,
+        -800.0,
+        92.15
+      ],
+      "control_rotation": [
+        0.0,
+        30.0,
+        0.0
+      ],
+      "fixture_initial": {
+        "value": 0,
+        "flag": false
+      },
+      "reset_idempotent": true,
+      "initialize_counts": {
+        "gi": 1,
+        "gm": 1,
+        "pc": 1,
+        "ps": 1,
+        "pawn": 1
+      },
+      "pawn_count": 1
+    },
+    {
+      "run": 2,
+      "classes": {
+        "gi": "/Game/Survival/Core/BP_SurvivalGameInstance.BP_SurvivalGameInstance_C",
+        "gm": "/Game/Survival/Core/BP_SurvivalGameMode.BP_SurvivalGameMode_C",
+        "pc": "/Game/Survival/Core/BP_SurvivalPlayerController.BP_SurvivalPlayerController_C",
+        "ps": "/Game/Survival/Core/BP_SurvivalPlayerState.BP_SurvivalPlayerState_C",
+        "pawn": "/Game/Survival/Character/BP_SurvivalCharacter.BP_SurvivalCharacter_C"
+      },
+      "location_cm": [
+        -1000.0,
+        -800.0,
+        92.15
+      ],
+      "control_rotation": [
+        0.0,
+        30.0,
+        0.0
+      ],
+      "fixture_initial": {
+        "value": 0,
+        "flag": false
+      },
+      "reset_idempotent": true,
+      "initialize_counts": {
+        "gi": 1,
+        "gm": 1,
+        "pc": 1,
+        "ps": 1,
+        "pawn": 1
+      },
+      "pawn_count": 1
+    },
+    {
+      "run": 3,
+      "classes": {
+        "gi": "/Game/Survival/Core/BP_SurvivalGameInstance.BP_SurvivalGameInstance_C",
+        "gm": "/Game/Survival/Core/BP_SurvivalGameMode.BP_SurvivalGameMode_C",
+        "pc": "/Game/Survival/Core/BP_SurvivalPlayerController.BP_SurvivalPlayerController_C",
+        "ps": "/Game/Survival/Core/BP_SurvivalPlayerState.BP_SurvivalPlayerState_C",
+        "pawn": "/Game/Survival/Character/BP_SurvivalCharacter.BP_SurvivalCharacter_C"
+      },
+      "location_cm": [
+        -1000.0,
+        -800.0,
+        92.15
+      ],
+      "control_rotation": [
+        0.0,
+        30.0,
+        0.0
+      ],
+      "fixture_initial": {
+        "value": 0,
+        "flag": false
+      },
+      "reset_idempotent": true,
+      "initialize_counts": {
+        "gi": 1,
+        "gm": 1,
+        "pc": 1,
+        "ps": 1,
+        "pawn": 1
+      },
+      "pawn_count": 1
+    }
+  ],
+  "errors": [],
+  "three_identical_starts": true,
+  "conditions": {
+    "engine": "5.8.4-58902052+++UE5+Release-5.8",
+    "viewport": [
+      1201,
+      862
+    ],
+    "warmup_frames": 120,
+    "capture_frames": 300,
+    "camera": "ThirdPerson at unmodified PlayerStart; no input",
+    "cvars": {
+      "r.VSync": 0.0,
+      "t.MaxFPS": 0.0,
+      "r.ScreenPercentage": 0.0,
+      "sg.ViewDistanceQuality": 3.0,
+      "sg.ShadowQuality": 3.0,
+      "sg.GlobalIlluminationQuality": 3.0,
+      "sg.ReflectionQuality": 3.0,
+      "sg.PostProcessQuality": 3.0,
+      "sg.TextureQuality": 3.0,
+      "sg.EffectsQuality": 3.0,
+      "sg.FoliageQuality": 3.0,
+      "r.DynamicGlobalIlluminationMethod": 1.0,
+      "r.ReflectionMethod": 1.0
+    }
+  },
+  "success": true
+}

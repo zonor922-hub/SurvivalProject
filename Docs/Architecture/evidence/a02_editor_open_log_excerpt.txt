@@ -1,0 +1,3 @@
+[2026.10.25-10.17.58:598][565]LogPython: A02_COPY_OPEN_VERIFIED {"project": "<LOCAL_WORKSPACE>\RecoveryCheck\A02_20261025_130415\SurvivalProject\SurvivalProject.uproject", "expected_project": "<LOCAL_WORKSPACE>\RecoveryCheck\A02_20261025_130415\SurvivalProject\SurvivalProject.uproject", "project_path_verified": true, "engine": "5.8.4-58902052+++UE5+Release-5.8", "world": "/Game/Content/Survival/Maps/LV_Survival_Nature.LV_Survival_Nature", "actor_count": 296, "water_body_lakes": 1, "water_zones": 1, "physics_volumes": 257, "landscapes": 1, "map_opened": true, "save_functions_called": false, "expected_scene_verified": true}
+[2026.10.25-10.18.32:802][567]LogExit: Exiting.
+[2026.10.25-10.18.32:830][567]Log file closed, 10/25/26 13:18:32

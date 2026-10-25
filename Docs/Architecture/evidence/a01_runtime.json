@@ -1,0 +1,33 @@
+{
+  "errors": [],
+  "world": "/Game/Content/Survival/Maps/UEDPIE_0_LV_Survival_Nature.LV_Survival_Nature",
+  "game_mode": {
+    "object": "/Game/Content/Survival/Maps/UEDPIE_0_LV_Survival_Nature.LV_Survival_Nature:PersistentLevel.BP_ThirdPersonGameMode_C_0",
+    "class": "/Game/ThirdPerson/Blueprints/BP_ThirdPersonGameMode.BP_ThirdPersonGameMode_C"
+  },
+  "controller": {
+    "object": "/Game/Content/Survival/Maps/UEDPIE_0_LV_Survival_Nature.LV_Survival_Nature:PersistentLevel.BP_ThirdPersonPlayerController_C_0",
+    "class": "/Game/ThirdPerson/Blueprints/BP_ThirdPersonPlayerController.BP_ThirdPersonPlayerController_C"
+  },
+  "pawn": {
+    "object": "/Game/Content/Survival/Maps/UEDPIE_0_LV_Survival_Nature.LV_Survival_Nature:PersistentLevel.BP_ThirdPersonCharacter_C_0",
+    "class": "/Game/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.BP_ThirdPersonCharacter_C"
+  },
+  "player_state": {
+    "object": "/Game/Content/Survival/Maps/UEDPIE_0_LV_Survival_Nature.LV_Survival_Nature:PersistentLevel.PlayerState_0",
+    "class": "/Script/Engine.PlayerState"
+  },
+  "pawn_components": [
+    "/Script/Engine.CapsuleComponent",
+    "/Script/Engine.ArrowComponent",
+    "/Script/Engine.CharacterMovementComponent",
+    "/Script/Engine.SkeletalMeshComponent",
+    "/Script/Engine.SpringArmComponent",
+    "/Script/Engine.CameraComponent",
+    "/Script/Engine.CameraProxyMeshComponent",
+    "/Script/Engine.DrawFrustumComponent",
+    "/Script/EnhancedInput.EnhancedInputComponent"
+  ],
+  "movement_mode": "<MovementMode.MOVE_WALKING: 1>",
+  "location": "<Struct 'Vector' (0x000001B0954086F0) {x: 1380.000000, y: 1920.000000, z: 92.150000}>"
+}

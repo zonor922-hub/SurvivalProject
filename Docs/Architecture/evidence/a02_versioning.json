@@ -1,0 +1,14 @@
+{
+  "project": "<PROJECT_ROOT>",
+  "branch": "main",
+  "baseline_commit": "04b7b9524d4170f045712440723f2efe4b4cd313",
+  "baseline_tag": "a02-baseline-2026-10-25",
+  "author": "автоматический снимок (per-command; user identity not configured)",
+  "lfs_version": "git-lfs/3.7.1 (GitHub; windows amd64; go 1.25.1; git b84b3384)",
+  "tracked_file_count": 781,
+  "lfs_file_count": 773,
+  "status_porcelain": "",
+  "remotes": "",
+  "local_lfs_fsck": "Git LFS fsck OK",
+  "created_local": "2026-10-25T13:07:03.369759"
+}

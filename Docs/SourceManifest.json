@@ -1,0 +1,288 @@
+{
+  "date": "2026-10-25",
+  "policy": "Originals preserved; published text sanitized; local paths replaced with placeholders.",
+  "files": [
+    {
+      "source": "Architecture/01_PROJECT_AUDIT.md",
+      "destination": "Architecture/01_PROJECT_AUDIT.md",
+      "source_sha256": "715998306d91892468abdf08c379c014ae5d47f170ad81ec079cace89e6b5035",
+      "published_sha256": "04a35600cebe471bb10bc0d5002ea4f5c6bc7c4fae93e9d08ba973d2f7b6c915"
+    },
+    {
+      "source": "Architecture/02_GAMEPLAY_ARCHITECTURE.md",
+      "destination": "Architecture/02_GAMEPLAY_ARCHITECTURE.md",
+      "source_sha256": "feda7207e4de58678dc9541b49563653f5b329864500bb766193712c605f32ba",
+      "published_sha256": "2b643858c5363e9de77f57b365a88fa8b82cd61748322c7c4935c3ddd13bea7d"
+    },
+    {
+      "source": "Architecture/03_IMPLEMENTATION_BACKLOG.md",
+      "destination": "Architecture/03_IMPLEMENTATION_BACKLOG.md",
+      "source_sha256": "e394e7d140a830c362ffa4e0adef448c1dd921fc4989da3ab0c9e9b2a9ce4976",
+      "published_sha256": "0127b81907f1f412638c13d00b1a9eec27297ff7a4280a7107d2cdfb886e7f84"
+    },
+    {
+      "source": "Architecture/04_AI_HANDOFF.md",
+      "destination": "Architecture/04_AI_HANDOFF.md",
+      "source_sha256": "edf223860acd4871c39d36cc497ac2918ca859c102c4fc176c2f369cdfb54d3c",
+      "published_sha256": "da1239bf7b4a65092badd8e5002b1babd36b37897d1e57ee1b112f9c071c18d7"
+    },
+    {
+      "source": "Architecture/05_A01_EDITOR_AUDIT.md",
+      "destination": "Architecture/05_A01_EDITOR_AUDIT.md",
+      "source_sha256": "19ae6f1c5e707efa0315b30ea50a3f155e01e432762697f7c4212e78e22eb40b",
+      "published_sha256": "db46449e08d02172ab15b27df44489399a5e3e306615c1d0a95eb4351a9d7755"
+    },
+    {
+      "source": "Architecture/06_A02_BACKUP_AND_VERSIONING.md",
+      "destination": "Architecture/06_A02_BACKUP_AND_VERSIONING.md",
+      "source_sha256": "6f7f1ad3e5c14adeb537a548160505f16c04763f24c71a1fe7bc7023dbe4f18d",
+      "published_sha256": "c93f69e792f0479f0a0cec6dc85e2541e35b6861a9b5cc3e30566df0df986536"
+    },
+    {
+      "source": "Architecture/07_A03_GAMEPLAY_BOOTSTRAP.md",
+      "destination": "Architecture/07_A03_GAMEPLAY_BOOTSTRAP.md",
+      "source_sha256": "f92c2510899a0101d9a8e8a36536ac4f900d290ffde7ef7abd95775c3401238a",
+      "published_sha256": "49fe69ce599115cc0ab375a6657fd3c2f504ae7b82f814ad23b65017684a3fff"
+    },
+    {
+      "source": "Architecture/08_A04_SYSTEMS_TEST_MAP.md",
+      "destination": "Architecture/08_A04_SYSTEMS_TEST_MAP.md",
+      "source_sha256": "d0d593726af22d96cbc961d23cd6bb60928780220a6f95bff54c8cbcd137f668",
+      "published_sha256": "8f6280a9692794ad7fa59fb299ee42f0b6785ccb3159241002021bded7060a17"
+    },
+    {
+      "source": "Architecture/evidence/a01_compile_and_input.json",
+      "destination": "Architecture/evidence/a01_compile_and_input.json",
+      "source_sha256": "e2b697eb5a75281da9c974f6730f3df802921346deb718e5b832dd98fe8324d0",
+      "published_sha256": "4edce2190acf54f12cca18ad09fff32ad78d5f38b76d03c68aa4dd01f5a8a8e7"
+    },
+    {
+      "source": "Architecture/evidence/a01_dependencies.csv",
+      "destination": "Architecture/evidence/a01_dependencies.csv",
+      "source_sha256": "773e7c3c2242f0ac05583fe9afdd99f28e0f365c5630c4a47aa1ec0f979e8878",
+      "published_sha256": "98f0acd999914e83906a4705014f7f20802d7fece36d17916a50d32c172da709"
+    },
+    {
+      "source": "Architecture/evidence/a01_editor_audit.json",
+      "destination": "Architecture/evidence/a01_editor_audit.json",
+      "source_sha256": "b88240f10cd2b26811ee65dd9139258e77b018133f58cdfcd3959478bf3ce52d",
+      "published_sha256": "8a91ea0398b3f64829b8f92384433f6bb9a341b0a434a365bbb6d47df6eb1c5e"
+    },
+    {
+      "source": "Architecture/evidence/a01_file_integrity.json",
+      "destination": "Architecture/evidence/a01_file_integrity.json",
+      "source_sha256": "884976afdfb2f228d125b917f71eb2e7cea7edf3e4d7a0b702dd01be2facb616",
+      "published_sha256": "145acede04f060c6074ff6a79b1bf86b25a27f6ae126e642b7cc72b3e66b513a"
+    },
+    {
+      "source": "Architecture/evidence/a01_followup.json",
+      "destination": "Architecture/evidence/a01_followup.json",
+      "source_sha256": "52c594a06fdc4cd93fe14fabfea93741c4cca15e2c076125ccc6547f7c69ac8a",
+      "published_sha256": "a3e713126708e4262a6767b8b700ece82d72dab55090124832de523648212c54"
+    },
+    {
+      "source": "Architecture/evidence/a01_graphs.json",
+      "destination": "Architecture/evidence/a01_graphs.json",
+      "source_sha256": "074c8d8920221efbea744e48f4b49d554a067fd9f8ba814fd8083782af7057b3",
+      "published_sha256": "cb892eb3d5b5082120330c3a7fc92086679eeffa9742b5f895f6d830b9320796"
+    },
+    {
+      "source": "Architecture/evidence/a01_plugins.json",
+      "destination": "Architecture/evidence/a01_plugins.json",
+      "source_sha256": "fe3faaec243f2698d52e85bb237dfd30185b4c2c8f3840176f8946bd1a4032fa",
+      "published_sha256": "8072abec26a1ff6d0bb912a68f9731e83bf3cbe39c8599fab582c1bc0c145acb"
+    },
+    {
+      "source": "Architecture/evidence/a01_runtime.json",
+      "destination": "Architecture/evidence/a01_runtime.json",
+      "source_sha256": "7de878728c1ae17d1d6728e57f29f0d62505b198cb0e6e6a7bae74826a029134",
+      "published_sha256": "d2d70b1701e9a1b237bb48de21358dc314206c6e5a2f5465390b82d7c05f771d"
+    },
+    {
+      "source": "Architecture/evidence/a01_summary.json",
+      "destination": "Architecture/evidence/a01_summary.json",
+      "source_sha256": "fd8dc4400687973ba2105c67c61e63855270cdb0f29aef973995e969fc54a347",
+      "published_sha256": "f580d27aa5a594370f3404f1786e72692cbad4663290afaf656c0c3e24b39939"
+    },
+    {
+      "source": "Architecture/evidence/a01_water_dependents.json",
+      "destination": "Architecture/evidence/a01_water_dependents.json",
+      "source_sha256": "a9bd23e36410d76a6a4f5189a6fa120b5c034ae1a97d14f210f312bedc97750a",
+      "published_sha256": "d566450043c885e51e18dd86e9e3cefb1187296e0500b64b83a19d586dcea2a6"
+    },
+    {
+      "source": "Architecture/evidence/a01_water_enable_chain.json",
+      "destination": "Architecture/evidence/a01_water_enable_chain.json",
+      "source_sha256": "e4450c9734be6a36904065b5b15b6deace1771de6328066bdf4ba2e6922de9d8",
+      "published_sha256": "29667af2c5de56cf628b6a6551887369bd9e1df118c789f6cbf3eeedcf2e72bf"
+    },
+    {
+      "source": "Architecture/evidence/a02_backup_manifest.json",
+      "destination": "Architecture/evidence/a02_backup_manifest.json",
+      "source_sha256": "9d76bdeece23641d75fe268a5c77eb116e3a8d5aa076bc0493de662bea1b0c11",
+      "published_sha256": "e1a3d5b0bc5d11696f2f9991bb59a8a8e27e87fe942f4a800878ccd489355310"
+    },
+    {
+      "source": "Architecture/evidence/a02_checkout_verification.json",
+      "destination": "Architecture/evidence/a02_checkout_verification.json",
+      "source_sha256": "c7d557d6f4f09692882ef8468482a1e6c4bd8e4632acdb152b33c0b1b4602dc8",
+      "published_sha256": "3d7f8b04df3214d13839c63e61ecd4ba9a7381b40276dd6661f77639ad2dd577"
+    },
+    {
+      "source": "Architecture/evidence/a02_editor_open_log_excerpt.txt",
+      "destination": "Architecture/evidence/a02_editor_open_log_excerpt.txt",
+      "source_sha256": "657e79e1dcc8b8df8acff581f7fc4d6198507f0fd4dafc77387d42a3b53b5282",
+      "published_sha256": "40435b7fa9fac44613cb219af665c233ae36b78ed45c470a67aed6644e7d964f"
+    },
+    {
+      "source": "Architecture/evidence/a02_final_integrity.json",
+      "destination": "Architecture/evidence/a02_final_integrity.json",
+      "source_sha256": "5f8023806677ad189ea8a8356c7c24049e943018639afe552ac14d8ab2d4e1a1",
+      "published_sha256": "9f398f6983a3cb49fd1fb16aeea9ee4c0de369fbae3cedcee377662ebdcd66ab"
+    },
+    {
+      "source": "Architecture/evidence/a02_open_copy.json",
+      "destination": "Architecture/evidence/a02_open_copy.json",
+      "source_sha256": "32bfec612ce97cc157accfc133482cb679218798a7b8ad4d22e4f82cdf2ed2c6",
+      "published_sha256": "6548f7caaf578944714b0844b80f98e35497a42f510ac07c0a39d92bc0cd3982"
+    },
+    {
+      "source": "Architecture/evidence/a02_summary.json",
+      "destination": "Architecture/evidence/a02_summary.json",
+      "source_sha256": "1e63c1cead18dacf0df9004d156d7e4478ed2801dfa1140701c22afe7b1cc9b1",
+      "published_sha256": "e5ed8f15c1eb96009204d9d24fe626b1888fafe7957aa005bff6b7dece910f9e"
+    },
+    {
+      "source": "Architecture/evidence/a02_versioning.json",
+      "destination": "Architecture/evidence/a02_versioning.json",
+      "source_sha256": "274d023018968efc22de483ab6190972cc943e2bcda6fa393bae0047b9071813",
+      "published_sha256": "bb72617c4dcaec0033decf752e31cdf7605df603886f8414246874fa29072ce0"
+    },
+    {
+      "source": "Architecture/evidence/a03_assets.json",
+      "destination": "Architecture/evidence/a03_assets.json",
+      "source_sha256": "666aa0c4ebddf70978d68fce2e6de8b505e5e9c49dcadfe65f3b26fddad8107e",
+      "published_sha256": "0679f070bb9ba403adc22a3c548b826d20f86a8b594f78a4835d6ea64f418868"
+    },
+    {
+      "source": "Architecture/evidence/a03_build_result.json",
+      "destination": "Architecture/evidence/a03_build_result.json",
+      "source_sha256": "ebef6b85eebe362aaa2e8834cfee75968575eec5dfe04e3ed0cbe12ec2aa17de",
+      "published_sha256": "d26794e39160dea9e8ecc3c5707b91795fdbaa0ed4e7698f56b4b46d5c7a2be9"
+    },
+    {
+      "source": "Architecture/evidence/a03_git_result.json",
+      "destination": "Architecture/evidence/a03_git_result.json",
+      "source_sha256": "676c0f44b484a070b2816978689c7886f5d229d1b8971312da46f29edb1ceefc",
+      "published_sha256": "a0547b2e68ff200a60d0a0057923341328e7280a94424d190bc0c9de8f3c09e1"
+    },
+    {
+      "source": "Architecture/evidence/a03_runtime_result.json",
+      "destination": "Architecture/evidence/a03_runtime_result.json",
+      "source_sha256": "76212b957ee695797c5a07db03900eebd7479c865eb33baab1b314a47c2af47a",
+      "published_sha256": "e9d2de2f3c2fbe3564d52bd3f89c54d96e4404fddb1885aa0bffdee090f76bf5"
+    },
+    {
+      "source": "Architecture/evidence/a03_runtime_test.py",
+      "destination": "Architecture/evidence/a03_runtime_test.py",
+      "source_sha256": "5dcc02d7a9db58a5c68f398730fc1b56be17824df2a4f47fdb7e6148d25cd2e0",
+      "published_sha256": "b5469798ebad36661cc7720829835d285c5f2507e35f7dd1564cd233a03641a2"
+    },
+    {
+      "source": "Architecture/evidence/a03_scope_verification.json",
+      "destination": "Architecture/evidence/a03_scope_verification.json",
+      "source_sha256": "da264dd58f594fe21a76abf3019117e8c37195599c0bfed1fd5f36c549a9ec67",
+      "published_sha256": "5a7c408e4ade820cbaadc71e2bcdaf0b495f6d7ab19f6558a8d0893ee086f5b2"
+    },
+    {
+      "source": "Architecture/evidence/a04_baseline.json",
+      "destination": "Architecture/evidence/a04_baseline.json",
+      "source_sha256": "74858c1c34cdf7a58c869b0d9f883ab0b10daa6d4b55e2682397711d243ff1c8",
+      "published_sha256": "b520807a1b85d47b890ea5f8f1eaad640fce2e59b856f0b8afcc16b3cdf482f4"
+    },
+    {
+      "source": "Architecture/evidence/a04_baseline_timings.csv",
+      "destination": "Architecture/evidence/a04_baseline_timings.csv",
+      "source_sha256": "7e1c4a8519705d068856740b0761aeb5cb421d74b57a76fdc5d15f7077fb2d8e",
+      "published_sha256": "f02681ef707cc318061c1dae41156078eff2be7b22b658ee0e55a7010db8d4dc"
+    },
+    {
+      "source": "Architecture/evidence/a04_build_result.json",
+      "destination": "Architecture/evidence/a04_build_result.json",
+      "source_sha256": "4154d8a7d8e1ba721974e181dea800e002888a07a9c752ee7e42d3d02b8d3599",
+      "published_sha256": "15a25b838167df8717aadd8487d4a7945aef6a0c0abfd02a4784afb081b9211a"
+    },
+    {
+      "source": "Architecture/evidence/a04_final_assets.json",
+      "destination": "Architecture/evidence/a04_final_assets.json",
+      "source_sha256": "1a291e697e220bc86b645edc476afe1e2f12bcd5901e0a65cb6fdeb5219e6d91",
+      "published_sha256": "513347afa690c016b1b5bc1ce3915861214e2437706d7b3d0d23497ac41c817f"
+    },
+    {
+      "source": "Architecture/evidence/a04_git_result.json",
+      "destination": "Architecture/evidence/a04_git_result.json",
+      "source_sha256": "9310c18512576cda5b80f50df63e0525c60fb23b84834f3acfc9b43a7f1aba6c",
+      "published_sha256": "d74a8ebe83c0b796b484d9c4867a883f735494ca35a57ff4f3d32bb38d6fb919"
+    },
+    {
+      "source": "Architecture/evidence/a04_runtime_result.json",
+      "destination": "Architecture/evidence/a04_runtime_result.json",
+      "source_sha256": "fda2f770bce146d37eb94a46623e93248e673ecba5dfd2f877ae73e089599e39",
+      "published_sha256": "533b8283994d54cfb7a942e6b8219e57f10eeef2cf212270fb0cdfdfccce7d72"
+    },
+    {
+      "source": "Architecture/evidence/a04_scope.json",
+      "destination": "Architecture/evidence/a04_scope.json",
+      "source_sha256": "b02f29eb6793c5a79fe3ce07def178da9f235245d279d3854697d90454a63634",
+      "published_sha256": "191dfb37d0aa626e2d4eac1b29351b187da5e4ec84e303ad121a5e76700d4cbb"
+    },
+    {
+      "source": "Architecture/evidence/a04_verify.py",
+      "destination": "Architecture/evidence/a04_verify.py",
+      "source_sha256": "819556f082806dc585e3c593871b46e89151f0855cefba90e11c7730f0f0354f",
+      "published_sha256": "95ecda2d18fb399a22da00e7b39374e809a5b62fde763ae49a90ce92465032bf"
+    },
+    {
+      "source": "Architecture/evidence/a05_types_created.json",
+      "destination": "Architecture/evidence/a05_types_created.json",
+      "source_sha256": "7fc859f7c2e197b923d2df8ca0514a847e30b21c150100b62ce82afc058719c4",
+      "published_sha256": "94404688d69f030ea103e101d2d808487f6c4b7e1423c42b6b88763914995b19"
+    },
+    {
+      "source": "Architecture/evidence/filesystem_audit.json",
+      "destination": "Architecture/evidence/filesystem_audit.json",
+      "source_sha256": "45896263b2b283d53cf8374c1410dada900ea15f37b03ceba19b18d87a99a21a",
+      "published_sha256": "0349313e6f1fff3620b558bda40ed3ef0736607a90ffd65828cd9e8b1b58db15"
+    },
+    {
+      "source": "Architecture/README.md",
+      "destination": "Architecture/README.md",
+      "source_sha256": "76c66ccbf9aafd0f45252b6fd424c966028ddbfb92348c93b6c922b299ce237e",
+      "published_sha256": "39aec2b264ebec8648a7242729c8aa495ae8889156a65e673ad0853f3ed17c3f"
+    },
+    {
+      "source": "Architecture/versioning/project.gitattributes",
+      "destination": "Architecture/versioning/project.gitattributes",
+      "source_sha256": "8eb60d699a16e5835f44cc25abeedeeb68b8e6e4537bc784f75fc769f091d951",
+      "published_sha256": "8eb60d699a16e5835f44cc25abeedeeb68b8e6e4537bc784f75fc769f091d951"
+    },
+    {
+      "source": "Architecture/versioning/project.gitignore",
+      "destination": "Architecture/versioning/project.gitignore",
+      "source_sha256": "fb6359473b3b6dbafe1ae552d3028c829e9f9a1dd90812cc990e486f0e281f65",
+      "published_sha256": "4ad2e7674bbb0909a63f8e8adcdc32eb837c1a201579f0e23d75e01f349e9c59"
+    },
+    {
+      "source": "Architecture/versioning/RESTORE.md",
+      "destination": "Architecture/versioning/RESTORE.md",
+      "source_sha256": "dbc1fd25624690346fc1b524cc6f12bd7e528361a4530076f133d04e9c7dc132",
+      "published_sha256": "b0df448a90a371b9240550330165ffac3e790a25f052c17560bdc74dea7b9768"
+    },
+    {
+      "source": "Architecture/versioning/verify_backup.py",
+      "destination": "Architecture/versioning/verify_backup.py",
+      "source_sha256": "c3d3b03e70693a521dc4a8a8882a051b760f9daea0ac061fe2a94f04e7372b43",
+      "published_sha256": "c3d3b03e70693a521dc4a8a8882a051b760f9daea0ac061fe2a94f04e7372b43"
+    }
+  ]
+}

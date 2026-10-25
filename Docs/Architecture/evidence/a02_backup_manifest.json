@@ -1,0 +1,3913 @@
+{
+  "created_local": "2026-10-25T13:04:44.254401",
+  "source": "<PROJECT_ROOT>",
+  "backup_project": "<LOCAL_WORKSPACE>\\Backups\\A02_20261025_130415\\SurvivalProject",
+  "file_count": 779,
+  "total_bytes": 4315420643,
+  "excluded_root_directories": [
+    "Saved",
+    "Intermediate",
+    "DerivedDataCache",
+    ".git"
+  ],
+  "source_unchanged_during_copy": true,
+  "all_backup_hashes_match": true,
+  "failures": [],
+  "files": [
+    {
+      "path": "Config/DefaultEditor.ini",
+      "size": 58737,
+      "sha256": "229f1ca16b46bd879bb7c0526b6b115e777b022942c7f453de426d3723b18d2f"
+    },
+    {
+      "path": "Config/DefaultEditorPerProjectUserSettings.ini",
+      "size": 70,
+      "sha256": "8ec6963909ae5bbbb6f024029c007522f351b071c78495ab8f075bda5ee4c42c"
+    },
+    {
+      "path": "Config/DefaultEngine.ini",
+      "size": 9725,
+      "sha256": "4667f74dfbddccd6d5f541ed592cb21a89387e0b14743d881af47e2f32e242c1"
+    },
+    {
+      "path": "Config/DefaultGame.ini",
+      "size": 313,
+      "sha256": "b10e73aaab31eba150b91acc835abbd8e825b304db0fa15683d7ccf0e24145bf"
+    },
+    {
+      "path": "Config/DefaultInput.ini",
+      "size": 9107,
+      "sha256": "0e3ff7f7a074e29869cdbe583d37e2ba3e7ca99d7811510bf5d028d4b0182afd"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/0/9R/UKIMD8EYGPZFS8OC6GX24A.uasset",
+      "size": 4665,
+      "sha256": "fcc1060527c489fb8e33b8a3752fc86d65f7d3cdb9c4bbb044dfefccad6b124d"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/1/EU/X5MT1GOX9C5UUGZAKRVC3R.uasset",
+      "size": 4373,
+      "sha256": "50d947877d507c95b765d9b3a3abab19739d6d0f41e6c7fa35a67e223d189023"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/1/K3/79QZQ7KG2RXNWMD6RSPKUM.uasset",
+      "size": 4371,
+      "sha256": "c6c82f9d1fc5f5cbfc3e0ff029862e718a80cd9ff9f59e0c495f873f8d815219"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/1/KL/UYSRPQ5SOYIFVLEQINPH31.uasset",
+      "size": 4569,
+      "sha256": "67e1837f62649ac749d1ba75c4431602110aef8a648a4eb5b84f5f5490832d7c"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/1/MV/2U2IE6JXO1320Q32RJQKSE.uasset",
+      "size": 4727,
+      "sha256": "0517da9397218cf46cf5db73305b412848d3325b302ac11c4ecda325e6da6a92"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/1/X5/JDOWWCJ7DZVSHT4Y29GQ4D.uasset",
+      "size": 4373,
+      "sha256": "0041dd5c5f354e58fe0d681490fad5162013ced33e4856a33f86cb3daa0789f5"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/2/AM/9YGDW7FMEY1CZD31VUYO11.uasset",
+      "size": 5271,
+      "sha256": "4228732dd1d3826717b668980a23af543daec697e6b469ad9d0f88aa246324f4"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/2/AX/QEPSHOMS1K2ANUR3LXWOJM.uasset",
+      "size": 4665,
+      "sha256": "4602c5ff270ae3f56633b28275fd4430e9853d8b6d1c1b30f801b55db7df43ef"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/2/TV/DYUIEBPX2N8UFXT326WX2O.uasset",
+      "size": 4721,
+      "sha256": "b5d9e958280ea231d5f413eae02e1d00448f9e979c2715bbee865ba6adf2094b"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/2/V0/9XTUAMN5S6UUCFB5K0ZGZM.uasset",
+      "size": 4667,
+      "sha256": "0740b3c48e2a86ae0e6b8f2a57128b55d9a9150d3020c4cdd451edb69cd9bcd7"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/3/0N/NTRPN55OWWUSD03K29ZOSH.uasset",
+      "size": 3982,
+      "sha256": "7582c3a747bc6768a187ec5d99e000dc7aeb944b0cd0dfe73c203b17e5d84e5f"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/3/C5/3LNK9WKCBL4YVMWIBXQZ1I.uasset",
+      "size": 4699,
+      "sha256": "bad12184219cf6228a6c12dde934b3acd8bdf54ef2c3efd55629097907a9092d"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/3/D3/XWEMBL7KZTNQP83W1KTMXE.uasset",
+      "size": 4427,
+      "sha256": "1cbf22ea1591837bd98cad4630de112d1dd845c5ec17513dee07ae6b884147a7"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/3/E2/L159AMTR83MORHTF2GEOKE.uasset",
+      "size": 4699,
+      "sha256": "ecc364fc3ca8ac6be41fd6678969db9988c321b485fd2e9631fb4accef3a242a"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/3/L5/790AP8RYBMX9YBLGTW6WE6.uasset",
+      "size": 4373,
+      "sha256": "401926d52aa019c3ecf608045ecaf76a25bc3476b91edefe3934ae039ad93fe0"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/4/CQ/I205QOSSXONYWBP69RVMVA.uasset",
+      "size": 4585,
+      "sha256": "239c53042288f4b190cd736dd95a09c4d781ff0e6caa278c473b329c04d00869"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/5/25/3IO0LF8AOO4YLSEAEN2JO1.uasset",
+      "size": 4667,
+      "sha256": "fb301f5c7c1357068be1db6ac00e786d09d8d75f48d5247b6e5a8d71c25d005e"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/5/9M/BJR5SDQDQW7QDFFPNUUMNX.uasset",
+      "size": 4699,
+      "sha256": "cf8f07d3823652f9ccaa9a51a90437e459121c2b4bb3ab4f9e068d83c279c992"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/5/KG/ETKAO35ANVW90XFH3J8GJ2.uasset",
+      "size": 4257,
+      "sha256": "c46a9b87b994d4980b31ae98b17c43bdfad88ee012bf86381edcd3b097a9baa8"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/5/W9/ZAAGYIUQZ2W6WEO3HPXAX7.uasset",
+      "size": 4259,
+      "sha256": "9e271778dbd64a2415a3153b7876bd837aa8e8c5162346b566340d3b3851682f"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/6/3C/KAT90QYQLFOHNMOF9BEDZK.uasset",
+      "size": 4665,
+      "sha256": "a280012bb325b7138a87a9972d3a7cd296e86c11a3ac019fb0f2948356dd693f"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/6/8I/HFL05AWIVBP8M8UXTV4H5K.uasset",
+      "size": 4259,
+      "sha256": "13b40bea681cb7072c2b45cd7195a9086efd9feab31d168a47c3b71ce7c1a5fc"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/6/G9/77SUGCMHUBU5E7FP1DLCVD.uasset",
+      "size": 4727,
+      "sha256": "01e9ed1e1a92c8093e7d59b553b7bd63dd852044a4ace54aca2bda83e402ff6f"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/6/UK/OT5UOZ3WBJ9P30TU3DBDEK.uasset",
+      "size": 4665,
+      "sha256": "765234f9cf1fffc1fcf1869cf10020d12a151b44f62011168800d51820853a82"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/6/XM/SN8KJL01L24VVIYC52MNFR.uasset",
+      "size": 4665,
+      "sha256": "4ad373eaffb2ea7902d5490935cf3157178f469af5dae89d727357cd566750ea"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/6/YB/C5UDZYKFL5M0YW62JXMPIZ.uasset",
+      "size": 4665,
+      "sha256": "b045e31b99e0d6e4c161d5df031e778a48379970df98a9d09375336842bce36d"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/7/GV/W5DNM2FP1ON7VGU0C2BGMV.uasset",
+      "size": 4665,
+      "sha256": "990532545c8d3f95f46d757d5e3b213ffeeeec56a8d72faced411ed722e576a7"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/7/JD/OCW0UZT4ANZZD9YHEAOMAP.uasset",
+      "size": 4665,
+      "sha256": "a4e38728841b251774dc04a0cd449732d3658a95b3d878b3b37e038896b3c7f4"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/7/O7/IHUOIGG1MW1YZY097JJ8O7.uasset",
+      "size": 4427,
+      "sha256": "8996f954790c768ba172b9e23d93826ee3527e4510742821a6d5b7347fb13811"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/7/XU/RW3P9HUUCOCG5TL3TPG6XF.uasset",
+      "size": 4371,
+      "sha256": "3c9902b418c6e61ab3208906a24a61759b50b14eddde562be5de934829c0ea3d"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/8/0N/1OONKTGJMLVBN21M6JE59I.uasset",
+      "size": 4699,
+      "sha256": "200009c1fdc32c8dac2957472f868f53fcb9443f322327497ec71018c9f2530a"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/8/7A/C0UVMH95QVQO1KMTVK7MSB.uasset",
+      "size": 4373,
+      "sha256": "bb78f3ea599e5d0192c7dcf0a8e5a17a1201fc07385f45e040550e5d5418846b"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/8/HN/XXZLD30WH49IXWEHJXSVAR.uasset",
+      "size": 4373,
+      "sha256": "7e91d1cf1be0495280cfb1d81ca3ce780e3dda437ba9615e3320874a7b38bdaa"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/8/VS/XX060WNO6GEZU5BZQCLZPP.uasset",
+      "size": 5152,
+      "sha256": "2d46bb9f7cd67ba05478b0253eeca463f1d9c5c91d7a14dd7c31e442cd3c4d4f"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/8/WI/FHUVUALB8C8XRJ0PY9XXTI.uasset",
+      "size": 4727,
+      "sha256": "f2869c44a01b31617b0d4cfad8d6a0c91d67e25b15a33c7e14ce1755efda3fc7"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/8/XH/SKCKQTQDTE8ZNW6C0FCBRO.uasset",
+      "size": 4699,
+      "sha256": "1656426c30aaf8411663649dc131649fa75fe8d8f0fde5b502ff73b74b73d0fd"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/9/5G/29Z6AXUGZPZ0CXHLK2DICG.uasset",
+      "size": 3143,
+      "sha256": "be525ecb970386358b3ff94791f5dbe1a04eb58cbaf4a63ece318a8d0d101d33"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/9/6V/AV0JKCFBVPU58UEBGB0GC0.uasset",
+      "size": 4665,
+      "sha256": "fdd245925ceaf4b4c59d07f1aab5610db0450523e10afb118b3a56cddfa802fd"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/9/EE/OCR348BHEJWLHO72TR249H.uasset",
+      "size": 4427,
+      "sha256": "0de101b829a7fc08e4b66fd830209d2546bce035009bc86fa7077aef9f6f91cb"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/9/LX/1K6D4FIEJMOF50LSVJKFMP.uasset",
+      "size": 2530,
+      "sha256": "c54a64753205d3fdf3f097a72075c75e64bab20424be893332c354e8bec09f32"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/9/UM/1F7R5WQFM2D9KH7A94JFBU.uasset",
+      "size": 4721,
+      "sha256": "936a6f14ece57dd7c3050effb10720f86bab8268edb3b0fa67f780a1e8946cce"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/A/3J/Q8CQM512VVS7UZZW0KQRSV.uasset",
+      "size": 4721,
+      "sha256": "faa6fa198fa4804bf650764113c461a3d83912ad609f1837cc4b77353df96d03"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/A/8N/4L4W0MLV9WFUGRTMUBLBOP.uasset",
+      "size": 4373,
+      "sha256": "f412a0b400434b9cfe73c2f91f74b14db0d2bd7f4d5189bc3c7dae7b8ece10ae"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/A/BN/LKN4IB4C3UPW62GHBEKTIW.uasset",
+      "size": 4665,
+      "sha256": "26ddd5829ac624aef3e6d6e8e60daddb5937591d71b589f1dd96f6728a45c685"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/A/IP/MGVQPE8M923OBBJLZBI1PC.uasset",
+      "size": 4719,
+      "sha256": "9aa9365621fda8c4e6ec4d71896f6f20afc3692845448b121ed9314ce5f66084"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/B/0L/IL99N1JAI1J4A2DFQBQL53.uasset",
+      "size": 4667,
+      "sha256": "95f0f52f115330087f4550c1a75b40a0f89ca820626f040515d19ad10d6c4fa1"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/B/2F/XTDQUHCYJJV6JCH4OJSVLG.uasset",
+      "size": 4545,
+      "sha256": "84b421a0de897e34b06b211f13ba865a822cc34f35596f1f95bd18915d16e900"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/B/HX/PES0ONLF01PSQTJCC5USD2.uasset",
+      "size": 4259,
+      "sha256": "b797b10826ecda36e7e2a5dcd9db2f805eef1aa30ab7155f9994b7e7955399a3"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/B/P1/LRQT09TOYHOXK9DY22EIKE.uasset",
+      "size": 4551,
+      "sha256": "c11effe59153014dd5db0f65c7627309e99b262da486c73758c4c8a1f19a5d7b"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/B/RX/297QBXCKTP06G7NIHIULK4.uasset",
+      "size": 4427,
+      "sha256": "60f28c2a70beb6455f7c9dfb9c657e1ff2222d5d7b1544a0537e757902d10312"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/C/27/6ZCCZ1F7ZO6DM3C8OLVGTF.uasset",
+      "size": 4699,
+      "sha256": "5da67a33b962a06bfc798be0009c01e4cfdf371c1ac3a14e1d6f2e94e4ea4b67"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/C/EE/HZ5WNBFZRJYQPUA6X8TVVT.uasset",
+      "size": 3911,
+      "sha256": "713b84f11124e7aee44b370bd50bc5c0e2a6aa2596dc0a7830491c809310d99e"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/C/HY/Q7CPP7VHOXBAMAJI90W626.uasset",
+      "size": 4594,
+      "sha256": "0ef1995a35ce0f27ff11dc3b93062db63c9d41e8edd03a62870cb22ea4322cc2"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/D/13/EPTYZCFZWXT7Z7XYKZ88XK.uasset",
+      "size": 4699,
+      "sha256": "bf85d87c37ff35dfe1cb8a40c52a061314c44b57d422a472765264e39527cd4c"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/D/50/395Y4QE4IIEWI3KSE3SB6L.uasset",
+      "size": 4721,
+      "sha256": "cd2515bd223d6506801eab781774531dc243870c78562ca08df664aadf8b0c03"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/D/8U/VKFLMM0CV8ZCC0P3TQGTTM.uasset",
+      "size": 4373,
+      "sha256": "d5e84da0ce8e73b66a023e358033a8fd062b96abe1b33ee5b9973926608d2713"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/D/AY/KLCRMXKI9WR2P0GDY96C36.uasset",
+      "size": 3788,
+      "sha256": "5a5cd7edf92dd7d3e60de12fb2a735184096b504b4712ea8d807bc9ea22a2635"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/D/K5/NQBPXM7AM8N39CBW4ZT57P.uasset",
+      "size": 4824,
+      "sha256": "f50b777e76cd2aa8bd7b62c0fd87f812bb76d2953ffbaf51da9a881e8d1158b9"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/D/M3/6T1XG4EDG4ZEE1U9HMYL4C.uasset",
+      "size": 4371,
+      "sha256": "c7757663530e94239db0f4978938e39e2c20b85ecda00be7b00427f7767a9415"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/D/MG/EDRUPW3EOYDDSI6HNSIVT1.uasset",
+      "size": 4659,
+      "sha256": "6cf521a1730e4bf6d5f847271390917aaa219a7bee2ac9671c414e404d702f47"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/D/RI/R8L7GQXCHQGMMKBPTBJTNA.uasset",
+      "size": 2401,
+      "sha256": "bba4c777dd2fcd28b3f0157372f01f7de4f8e00f75a6b91a31bd3a02b33db291"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/E/96/RFQP83S9K0LC7IW8CXS6C0.uasset",
+      "size": 3690,
+      "sha256": "95cc1d9fb2b7bb54552bb44ddd8a8945dd4b30596fe40f3f9cf3d78e16433ad4"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/E/JR/W7S9610Y7RWELGF93FZYAE.uasset",
+      "size": 4373,
+      "sha256": "311c40dc59a935655b52c322a3693bbf826da5344270d3e6988c59973b004772"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/E/SS/QXUZ4IXFNKHCYFWERA1HQA.uasset",
+      "size": 4257,
+      "sha256": "c28022e47f1ba2f85951dac32b7c0e00fff99ec5d78bdc186c1070adcd00647b"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/F/4G/TYFCMQ9MC435YW6FZBF5FS.uasset",
+      "size": 11309,
+      "sha256": "558aafd26e2e204a85d7f4d570df7f8aa1620c135d33c47efbe43bc0256cbf52"
+    },
+    {
+      "path": "Content/__ExternalObjects__/ThirdPerson/Lvl_ThirdPerson/0/TQ/1UP2MCOIYXC0GTW985R4K0.uasset",
+      "size": 1867,
+      "sha256": "4bb0cff17e56dd734bbcb3f746f387f601ae46cf2e7c1bd2a3660d971590a65e"
+    },
+    {
+      "path": "Content/__ExternalObjects__/ThirdPerson/Lvl_ThirdPerson/5/TX/O6OLZU4WSCI3YRJS922SWL.uasset",
+      "size": 1863,
+      "sha256": "80c21c703b7747b2e849b7a39d9e354091d075737892398d581d0eca66c8fbac"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Death/MM_Death_Back_01.uasset",
+      "size": 308880,
+      "sha256": "fdee63c4a4dc23076dda04b32eb8505bcd41fb791e574a264026c43e700bf923"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Death/MM_Death_Front_01.uasset",
+      "size": 308516,
+      "sha256": "c9daa694dda4639b106a29401712b03376344b301b6161955a92ba64ea60ae6d"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Death/MM_Death_Front_02.uasset",
+      "size": 314751,
+      "sha256": "dda4f9d6a4c8fc3bf79458d4d2f490965ff01401256e90fdf98a938a58c61986"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Death/MM_Death_Front_03.uasset",
+      "size": 277478,
+      "sha256": "bf3a411d465002756eb1a19cdb2bef63b75a57a9fab7ce121ee71941e010d2cc"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Death/MM_Death_Left_01.uasset",
+      "size": 283231,
+      "sha256": "712a25024fe931bd518fff6c935b82bc0ee2070a77caef63edd0d6fc7ff66508"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Death/MM_Death_Right_01.uasset",
+      "size": 302339,
+      "sha256": "7968e7e1bc3d8e33c3f0d8479e6753d011ced0e05a831eb7f10e28ceb536b9a4"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Pistol/Aim/AO_Pistol.uasset",
+      "size": 8824,
+      "sha256": "a4f2fca2458488be2d05cb2188bd641293d06bdcc4e598feee59ba1b23156c24"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Pistol/Aim/MF_Pistol_Idle_ADS1.uasset",
+      "size": 2056489,
+      "sha256": "4d7113f1799219db01d8394c2984d5afd2957de07d66cfa463c9c33822e11d89"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Pistol/Aim/MF_Pistol_Idle_ADS_AO_CD.uasset",
+      "size": 170203,
+      "sha256": "2898b38d8ef305d1d2e285f519be72cde7e2b0106bb85657fda47e35dc27b15d"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Pistol/Aim/MF_Pistol_Idle_ADS_AO_CU.uasset",
+      "size": 173260,
+      "sha256": "e5c5855b58743d51bf1abe11b470749f50ae6074fac734da446d1c4a9b076650"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Pistol/Jog/MF_Pistol_Jog_Bwd.uasset",
+      "size": 365135,
+      "sha256": "f93aacabf40a36d906896e5c5998e4a63445749efa25c973092b9ae82ef1477f"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Pistol/Jog/MF_Pistol_Jog_Bwd_Left.uasset",
+      "size": 255387,
+      "sha256": "dc8a45c6259a8a51808ff3de4688302a65ce4988a05a5b0f70fbced01001ea6b"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Pistol/Jog/MF_Pistol_Jog_Bwd_Right.uasset",
+      "size": 255329,
+      "sha256": "e6f80eb946a12e3056a53d67b8134f5e9bd028eb66333a8a665c13d6cf14d1ee"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Pistol/Jog/MF_Pistol_Jog_Fwd.uasset",
+      "size": 432796,
+      "sha256": "caba32a2584600031bca7cec76875e50eb80e4c1d6fea3e249f2532388d4f221"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Pistol/Jog/MF_Pistol_Jog_Fwd_Left.uasset",
+      "size": 309345,
+      "sha256": "8ed2295bbfbbe7800395b2fc2023e082f6c9b2b7127dd6ceb5c7ec055486c39b"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Pistol/Jog/MF_Pistol_Jog_Fwd_Right.uasset",
+      "size": 309527,
+      "sha256": "d80c0c9bb0a8fae52095506f7f83c42bdd11b4d62ebfe57b1d9c7f40e8a9478a"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Pistol/Jog/MF_Pistol_Jog_Left.uasset",
+      "size": 310960,
+      "sha256": "4d8fcf3a8b6e581f4d06bc4fe2b307e1dcdcc7432cc114173c201a0115cad2c9"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Pistol/Jog/MF_Pistol_Jog_Right.uasset",
+      "size": 354844,
+      "sha256": "017f902b0a80b4fff2115c5c39f640b7622ad562a0ec137d25aae61d511d0b53"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Pistol/Jump/MM_Pistol_Jump_Fall_Loop.uasset",
+      "size": 255338,
+      "sha256": "7b01836fa36515fcb523644e82f2f130289a69a14314b6b939d5a580b3c5950e"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Pistol/Jump/MM_Pistol_Jump_RecoveryAdditive.uasset",
+      "size": 268356,
+      "sha256": "e9935321b5ee3fe9445cfa2a6c9f0d0391d888fbb9db71b1eaf76b3bc5345d6d"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Pistol/Jump/MM_Pistol_Jump_Start.uasset",
+      "size": 144542,
+      "sha256": "58c1e69b2690611740c465f92e3763fd9747b9a6e75fe6a7629b16c5fcc37e7a"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Pistol/MF_Pistol_Idle_ADS.uasset",
+      "size": 2068319,
+      "sha256": "766a02544f06604946d8c47c47c6bb877e14208904306188bc1f5b174fd7715b"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Pistol/MM_Pistol_DryFire.uasset",
+      "size": 250601,
+      "sha256": "64b3c6dc7357f8a1b380057ef76e1cbb984d69e7d0732eaefd70befe2be7b67f"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Pistol/MM_Pistol_Equip.uasset",
+      "size": 360966,
+      "sha256": "7f5a1ed2c1b72a9bb27b417cb0d5315440af2b22b7b846254fbce50e2fbb3d17"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Pistol/MM_Pistol_Fire.uasset",
+      "size": 186765,
+      "sha256": "ebd8467dbb3de5ba0e1b2eac0092352e270b37e616bc443872341cde2f5c22d8"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Pistol/MM_Pistol_Fire_Montage.uasset",
+      "size": 10119,
+      "sha256": "2eabacc1911be6c5b0dff7cf8a5c29c0506a25ffa6f3e7fa5946e76f992e38ee"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Pistol/MM_Pistol_Reload.uasset",
+      "size": 479562,
+      "sha256": "a821a774302ce5121efff744620da09587752290e35e4413b8e40db8ad9c0391"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Pistol/Walk/MF_Pistol_Walk_Bwd.uasset",
+      "size": 545138,
+      "sha256": "704dd7e116a755b086a8d685321f23e332bba6cb77dd6ae95542d38c462feb9b"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Pistol/Walk/MF_Pistol_Walk_Bwd_Left.uasset",
+      "size": 450957,
+      "sha256": "fff084ed3ca270a8d926f810f078a69347507851744cf399f3142c97e36e2fa6"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Pistol/Walk/MF_Pistol_Walk_Bwd_Right.uasset",
+      "size": 451022,
+      "sha256": "26a82255db90c0dc4e8c01d52a55f73b5f5a532ef161812faf63be65869f3504"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Pistol/Walk/MF_Pistol_Walk_Fwd.uasset",
+      "size": 474209,
+      "sha256": "7ac6171e3b841b09fff67dc4162b0c70f99f3107f549a20a213d5e05405dc69e"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Pistol/Walk/MF_Pistol_Walk_Fwd_Left.uasset",
+      "size": 374604,
+      "sha256": "bdd682c2a45cf6a73a34df6499f8bb4ccf8b68a42b8888c47b8532bfecb200d1"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Pistol/Walk/MF_Pistol_Walk_Fwd_Right.uasset",
+      "size": 374748,
+      "sha256": "b9b42e230d6fdf9f4f836592507c3f8a17dfd76d7b054b78b633a11722f94100"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Pistol/Walk/MF_Pistol_Walk_Left.uasset",
+      "size": 580040,
+      "sha256": "bc5f5b9f355e755023d1aa153070a073156f6d902b08e7cf78463f5e0bc8f629"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Pistol/Walk/MF_Pistol_Walk_Right.uasset",
+      "size": 498997,
+      "sha256": "e72f68c9a306ec44f7bc4f37e3533f2918ee19d99a1d8e60986036f2a4405d68"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Rifle/AIM/AO_Rifle.uasset",
+      "size": 10402,
+      "sha256": "a3cfb9e380d881fa8561df0515f4ff24d96af4d3e1430df829c7ede641a12b1d"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Rifle/AIM/MM_Rifle_Idle_ADS_AO_CC.uasset",
+      "size": 94995,
+      "sha256": "9521c1941980dc784cedb3df736d7c1edf56afaa0201f28b41c5ae9923e88bbb"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Rifle/AIM/MM_Rifle_Idle_ADS_AO_CD.uasset",
+      "size": 94882,
+      "sha256": "09b2c98aa7778b6a970b0d90882555cf920c03d761f1e50bb3feaf0e3c9a6fef"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Rifle/AIM/MM_Rifle_Idle_ADS_AO_CU.uasset",
+      "size": 95154,
+      "sha256": "60969c39ff3c1bd1e30e7c728a9dbe49c236857659b1ae8d20ae7605d8152324"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Rifle/HitReact/MM_HitReact_Back_Med_01.uasset",
+      "size": 252342,
+      "sha256": "ecb41ae9339d797408a7b9c0270dc1f917b680a21f1c189ac0e3890f41185e0b"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Rifle/HitReact/MM_HitReact_Front_Hvy_01.uasset",
+      "size": 247961,
+      "sha256": "e5caf5938c73d131c9254c1af09cb7fd4335516c9a406be77c17ad5e1f2cdebe"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Rifle/HitReact/MM_HitReact_Front_Lgt_01.uasset",
+      "size": 224756,
+      "sha256": "ae8728f698434dd1e63978d5d92c5984d086d7ee39ce618598122b6fa87dc820"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Rifle/HitReact/MM_HitReact_Front_Lgt_02.uasset",
+      "size": 238345,
+      "sha256": "dcb6c068d81d5be1d84c88895805eb29c2f3f345668a10884836f00759b0647b"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Rifle/HitReact/MM_HitReact_Front_Lgt_03.uasset",
+      "size": 281622,
+      "sha256": "3949df1228e6c14047477538424f9440216915a0637da33cf6c7298400128073"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Rifle/HitReact/MM_HitReact_Front_Lgt_04.uasset",
+      "size": 318893,
+      "sha256": "e0ed26de9c333968631cc040e82aebac289a2fd655a1f348a3b09ce3b40f1ef5"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Rifle/HitReact/MM_HitReact_Front_Med_01.uasset",
+      "size": 225043,
+      "sha256": "cca3c893d68d8270a9eec9eb7572f7ed6bfcfdf6ce6345dc8b2860d6135dbe00"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Rifle/HitReact/MM_HitReact_Front_Med_02.uasset",
+      "size": 234402,
+      "sha256": "3acb6956f9eb6512e386b575c4c3e390f7d0280b037ca52e0eef813fb1f729d6"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Rifle/Jog/MF_Rifle_Jog_Bwd.uasset",
+      "size": 582054,
+      "sha256": "0fd489f5c8d4d63e84f8a25c2db46c3ae54eae828212b2a32622726e593b5d3c"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Rifle/Jog/MF_Rifle_Jog_Bwd_Left.uasset",
+      "size": 458365,
+      "sha256": "c3939c4aa298e6be0834256ef6f642cff0465a40d676ec7e464aaf504b44f729"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Rifle/Jog/MF_Rifle_Jog_Bwd_Right.uasset",
+      "size": 458272,
+      "sha256": "907cb106c1c466aac0b38753b7551af73a09c082a652c82c43df5418eb33b089"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Rifle/Jog/MF_Rifle_Jog_Fwd.uasset",
+      "size": 516328,
+      "sha256": "287d39883a65ccf6f89d91c7ca13b23184f04ae6eb5cc3867dd7ef7cfb35ec1c"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Rifle/Jog/MF_Rifle_Jog_Fwd_Left.uasset",
+      "size": 384314,
+      "sha256": "4103ea6388d484e8f71cd30b955c3c954750d922a0c030bf3d902bdb3e02c13d"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Rifle/Jog/MF_Rifle_Jog_Fwd_Right.uasset",
+      "size": 384322,
+      "sha256": "2ca8d8ec88d086d4cb6027a2eefdde258142587bca40e98dee021abe9c8824f8"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Rifle/Jog/MF_Rifle_Jog_Left.uasset",
+      "size": 296415,
+      "sha256": "4feaf1bd5b370e28f5dce611b28d955bbf84bbeb72b7e22972a0e143022621a7"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Rifle/Jog/MF_Rifle_Jog_Right.uasset",
+      "size": 420984,
+      "sha256": "e3c5cae5448dbb8c4e3bda5406202a8e55b08247695082270e1fef3dbdd6e533"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Rifle/Jump/MM_Rifle_Jump_Apex.uasset",
+      "size": 228355,
+      "sha256": "39acbd6bcfc5ec2795ee2497bb353fbe954766bda545c3318c3cd6ee5f1ee008"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Rifle/Jump/MM_Rifle_Jump_Fall_Land.uasset",
+      "size": 179028,
+      "sha256": "ce74e83b9b88fa3722951c1c6b2cc36ae7159b8141f5347e5b47d760cee41c42"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Rifle/Jump/MM_Rifle_Jump_Fall_Loop.uasset",
+      "size": 645680,
+      "sha256": "d17c0a4fe1d9bb970b3208909e1c35b7183568c7968a0d6d0de391cca216b472"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Rifle/Jump/MM_Rifle_Jump_RecoveryAdditive.uasset",
+      "size": 294517,
+      "sha256": "9d663743ac0fd361303751c55688a34053fbed145aaa88a004abd7b02533d5e5"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Rifle/Jump/MM_Rifle_Jump_Start.uasset",
+      "size": 146783,
+      "sha256": "925f27182be45054a1bbb5d458cb53d38773b356dd61e18b82fa9a72880dc8e7"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Rifle/Jump/MM_Rifle_Jump_Start_Loop.uasset",
+      "size": 441727,
+      "sha256": "c2da3d291df2070e1aaa62a45e445a7979948489b9e811e0d17f94b3e627d14e"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Rifle/MF_Rifle_Idle_ADS.uasset",
+      "size": 1700234,
+      "sha256": "cfa32b19207a25546bb5bc2dde8454dc633cc27c3de45747e941756e23da5d4d"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Rifle/MM_Rifle_DryFire.uasset",
+      "size": 249623,
+      "sha256": "131e01f0a31f999e7fd09ef190b314314c851f39101412161dabdb00d2dda801"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Rifle/MM_Rifle_Equip.uasset",
+      "size": 416648,
+      "sha256": "136b19498b8bac4119dde48236d22127e8463c0becff775069e0b6399b7939d6"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Rifle/MM_Rifle_Fire.uasset",
+      "size": 184600,
+      "sha256": "1c5b983bd6c09431c83866f772ccf13871ad9626426c86cc08a0c87c150555f7"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Rifle/MM_Rifle_Reload.uasset",
+      "size": 547351,
+      "sha256": "ac1e17d2acb7e3cea6e4c9ca967400dc3052d5ec6514e155b33d8e4701e80784"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Rifle/Walk/MF_Rifle_Walk_Bwd.uasset",
+      "size": 449720,
+      "sha256": "e1400dc7a7bfca224e0aa7796e5c230236ad634c808b2a1540cbad8903fa897b"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Rifle/Walk/MF_Rifle_Walk_Bwd_Left.uasset",
+      "size": 332682,
+      "sha256": "8d535eb181e756f56974efae068f34da050747fd8836fe2bb5f0c693f51325c2"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Rifle/Walk/MF_Rifle_Walk_Bwd_Right.uasset",
+      "size": 332577,
+      "sha256": "6e0bd9b3ba2e982ac9ffd60a643dab78cf886d194a26af518170a02dc4f3eac0"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Rifle/Walk/MF_Rifle_Walk_Fwd.uasset",
+      "size": 490267,
+      "sha256": "540a6a77c48027e13be84d483c6afd18d82fb115b7532334597ebefe2249ecd0"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Rifle/Walk/MF_Rifle_Walk_Fwd_Left.uasset",
+      "size": 384794,
+      "sha256": "f7797a7841cb86c3dc9e68dcdf968e538c9a7335abb1b0d9db95e0983b2226d7"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Rifle/Walk/MF_Rifle_Walk_Fwd_Right.uasset",
+      "size": 384793,
+      "sha256": "787c7b69a054c6f2850503c016a2ef2fade7ad0941375c8e521c3534bf695d12"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Rifle/Walk/MF_Rifle_Walk_Left.uasset",
+      "size": 453120,
+      "sha256": "a99d18722e504801616e1c0c495711c43c2d82c4465f7f388cdae8a45502bd1e"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Rifle/Walk/MF_Rifle_Walk_Right.uasset",
+      "size": 510650,
+      "sha256": "2c2c12d6a959d69c96962ca340bdfe984942df621ee2ff7e7e955662ddaee52a"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Unarmed/ABP_Unarmed.uasset",
+      "size": 385911,
+      "sha256": "60ae8c970189979d9e070beb0fd8675f4afb2b04d8aaa8d11a0f03c5b7ebf4b2"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Unarmed/Attack/MM_Attack_01.uasset",
+      "size": 757637,
+      "sha256": "f796113f17c91eca7e48ef57bbadc4fc36245a86b127e75a34ca4771500639ed"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Unarmed/Attack/MM_Attack_02.uasset",
+      "size": 661409,
+      "sha256": "fb3c74b8e32fb5a88c6d659cae8717294af85d4eaa7f684b2a36c36d245559dc"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Unarmed/Attack/MM_Attack_03.uasset",
+      "size": 1036132,
+      "sha256": "1c66016fc3bd386453ac7fb1229a5f0644c6bd5f98ead29f6e6a1be80632ba1f"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Unarmed/Attack/MM_ChargedAttack.uasset",
+      "size": 1057890,
+      "sha256": "5d9b0fc6892519095cb6930aba5c0dd063acf647612a06e0f2f7e19c463223ee"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Unarmed/BS_Idle_Walk_Run.uasset",
+      "size": 52333,
+      "sha256": "bc71af8768b569695d4bcb69c79867f998e085693f5e8230854d228de359f5bb"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Unarmed/Jog/MF_Unarmed_Jog_Bwd.uasset",
+      "size": 483265,
+      "sha256": "1f6e9448f0e0737f506d9e8f11b8d661d6d65c818f0e3160938f1e24082b16c3"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Unarmed/Jog/MF_Unarmed_Jog_Bwd_Left.uasset",
+      "size": 417528,
+      "sha256": "e6e68e6cf4175f85c0e16a60f80335a1fab3f8c76a014d02bc0cd18aabe3314a"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Unarmed/Jog/MF_Unarmed_Jog_Bwd_Right.uasset",
+      "size": 417530,
+      "sha256": "ee3137ff2b7d2cb721c935e2de91d55479e20f030ff230e9f912f6b70658c399"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Unarmed/Jog/MF_Unarmed_Jog_Fwd.uasset",
+      "size": 531789,
+      "sha256": "0ccbe851f85a6d4cd7c6438c219cb6af8e281784107b5be8e9b052e4df3069cb"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Unarmed/Jog/MF_Unarmed_Jog_Fwd_Left.uasset",
+      "size": 466995,
+      "sha256": "12ee5a11f277af90429980f120026f430ae1e438f6eae42c10222e175f9dbe12"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Unarmed/Jog/MF_Unarmed_Jog_Fwd_Right.uasset",
+      "size": 467310,
+      "sha256": "66a7561d60453794864edd7e0c55487817068b6b66e31e179c98b9f2bab4c76b"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Unarmed/Jog/MF_Unarmed_Jog_Left.uasset",
+      "size": 487864,
+      "sha256": "f7842445f0c2b2f8d3cd9d43b9f58bc3ea888adeb1e161398b492097358431bd"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Unarmed/Jog/MF_Unarmed_Jog_Right.uasset",
+      "size": 521907,
+      "sha256": "208f642310d9627d12a5125889b480e051a1f1fc5397a10b83975903a0c59aea"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Unarmed/Jump/MM_Dash.uasset",
+      "size": 663135,
+      "sha256": "8a1c964403b7b1d9d9f5e0dd8c20c1ae809606c5e8021b2983edfc65ac0a66f0"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Unarmed/Jump/MM_Fall_Loop.uasset",
+      "size": 925351,
+      "sha256": "408be742c63adffe8c6c1d22442e99ea34a7618cd33c6e78e0eed3d7db877433"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Unarmed/Jump/MM_Jump.uasset",
+      "size": 403730,
+      "sha256": "252cbf69b07b797d3c3c6177d3ae9df17e9873f4872c4fa040c0d441dc3b3cef"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Unarmed/Jump/MM_Land.uasset",
+      "size": 410017,
+      "sha256": "a00de25a6beca56ff6d8077081531e5cef238c92825b6c184351d0aa99ef3fcb"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Unarmed/Jump/MM_WallJump.uasset",
+      "size": 409179,
+      "sha256": "e29af6dc13219cb813097e596c143d964a18c118caca138015574009e50859c0"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Unarmed/MM_Idle.uasset",
+      "size": 1436554,
+      "sha256": "11ee7fdeb84db89c1a66785b43b9bfc1415782122b8ac229517f4c5125d9cb0d"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Unarmed/Walk/MF_Unarmed_Walk_Bwd.uasset",
+      "size": 606821,
+      "sha256": "ae0c2ee1c1178fd1b9493f6c327e52d10a3d6bbde29eae54dcb07c13a27dcf46"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Unarmed/Walk/MF_Unarmed_Walk_Bwd_Left.uasset",
+      "size": 537758,
+      "sha256": "7c25a8eebb9883085ac8f82de3c83fc34fd19b02567f17fafde9dd60c09cf3e5"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Unarmed/Walk/MF_Unarmed_Walk_Bwd_Right.uasset",
+      "size": 537632,
+      "sha256": "8c71b9bbf7b15d75cacddbeb8827e22888cfa63a359ecbc0e017aec822d1a522"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Unarmed/Walk/MF_Unarmed_Walk_Fwd.uasset",
+      "size": 475783,
+      "sha256": "c74b2fc0cb651c4924804b364e534856a1b44dee818127c408dc055e4bda5ed9"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Unarmed/Walk/MF_Unarmed_Walk_Fwd_Left.uasset",
+      "size": 411535,
+      "sha256": "a7d8ff5a55eb0c445da2c74b2fd9460b6a3aff0db206be9e99aed319158d5770"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Unarmed/Walk/MF_Unarmed_Walk_Fwd_Right.uasset",
+      "size": 411529,
+      "sha256": "67d3d4fed066023a14220277f5598db83f19efee97de908b1397b0ae998e5599"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Unarmed/Walk/MF_Unarmed_Walk_Left.uasset",
+      "size": 486552,
+      "sha256": "81500e4fcdd9ae9aa6433e652e67dea8f9dd9fa7b9ef1714e29f6ab0a1bb9d97"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Anims/Unarmed/Walk/MF_Unarmed_Walk_Right.uasset",
+      "size": 491934,
+      "sha256": "f5922b4e632351353224b32f719af97e85512ab4f6553b15315cf14ad04f675f"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Materials/M_Mannequin.uasset",
+      "size": 59292,
+      "sha256": "d7ffe412d906380bd5bd4462f464b2a1fe48fdb79b9077f29bd0f958a782035c"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Materials/Manny/MI_Manny_01_New.uasset",
+      "size": 17963,
+      "sha256": "9f1e4ed382304d020b750c81505140fc1de4d339b0909430adb5380a6bb89b65"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Materials/Manny/MI_Manny_02_New.uasset",
+      "size": 18706,
+      "sha256": "26389db06f0b7928b487494bef3320d6b0e6bccd58193bccedd67c2c89132a46"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Materials/Quinn/MI_Quinn_01.uasset",
+      "size": 11184,
+      "sha256": "62a3050ef24b823f9fe84ac5d9c477099494982d35dafcc3d8078f32b0d4a865"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Materials/Quinn/MI_Quinn_02.uasset",
+      "size": 10718,
+      "sha256": "6aec77489fdfab0e1ea299de60fbd4f332face4495bbbd20b97fb0308bb9c5b4"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Meshes/SK_Mannequin.uasset",
+      "size": 191198,
+      "sha256": "22029d47455f24471195b26a0e04a1e1389f27d6a924e88c9f46a0f600c9a530"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Meshes/SKM_Manny_Simple.uasset",
+      "size": 15825101,
+      "sha256": "be9f011191ee1887b97cd13bce09886a6066c2fd62c619991070ec142184e1bf"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Meshes/SKM_Quinn_Simple.uasset",
+      "size": 16252577,
+      "sha256": "1ef45d92507a76d74a5e06737f94cad40eb7d5f5769dfbb63f7f74e784a178c6"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Rigs/CR_Mannequin_Body.uasset",
+      "size": 17057558,
+      "sha256": "57f84458a160c35b77f0442d2af41054e41e021ebbb496c2c76dea76d1d89580"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Rigs/CR_Mannequin_FootIK.uasset",
+      "size": 498698,
+      "sha256": "aa01be065d2efa2dfd3b258f60b94b09fcd5d351356d16bb52578ef5bcbfb5c5"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Rigs/CR_Mannequin_Procedural.uasset",
+      "size": 2575944,
+      "sha256": "057818dd3e0e16ff90c147e25a8fc5ab309c49c4c60360477cf4742e767d151e"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Rigs/PA_Mannequin.uasset",
+      "size": 301538,
+      "sha256": "c0ceaf003947088ff076555b81a46e5ccb11149c94025eb2a9e74263fbaa0d67"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Textures/Manny/T_Manny_01_BN.uasset",
+      "size": 1422785,
+      "sha256": "2f623209571ecbd8185b5b463786be033c3284190b4fc7b249e8d1d2ed995fd8"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Textures/Manny/T_Manny_01_D.uasset",
+      "size": 699555,
+      "sha256": "6ae0f4f9908c30ecc9aedf1ebb442e4983e526a7832ec791542064c7853f9999"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Textures/Manny/T_Manny_01_MRA.uasset",
+      "size": 712594,
+      "sha256": "3e42e888aed8aefff68da7d7dda4f177c5647b19473e4e913f61375c1319abd8"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Textures/Manny/T_Manny_02_BN.uasset",
+      "size": 20999487,
+      "sha256": "c9575d21c9e2872b3358c0efb9e202535ce2efce94c338b9d3bd04cb9831e353"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Textures/Manny/T_Manny_02_D.uasset",
+      "size": 1036712,
+      "sha256": "474728713232c6833f55c041548f555bc62c5c49e74082a5d16e68a5ce488cfe"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Textures/Manny/T_Manny_02_MRA.uasset",
+      "size": 1059559,
+      "sha256": "6697972eaf2dfe201923dba6a302f024b0ef4c4e46b4ecf578178717098e8277"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Textures/Manny/T_Manny_02_N.uasset",
+      "size": 1680197,
+      "sha256": "61a9db73f72fe2d7d8821b33a79f57f3f11df9da9455822392b84b199c78e8df"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Textures/Quinn/T_Quinn_01_D.uasset",
+      "size": 674768,
+      "sha256": "04e5ed207b7df0d2ad1bbc668916bcf170545fc2a72875e49ec99c6e2667002f"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Textures/Quinn/T_Quinn_01_MRA.uasset",
+      "size": 791597,
+      "sha256": "0988d4d9f25597224910e1043591cb2a089a8607a4fe4a63cbc68f3eb2ab473e"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Textures/Quinn/T_Quinn_01_N.uasset",
+      "size": 1263741,
+      "sha256": "10fbe9ac3e18e0a890d19756d3470ca372a1aeaffefbe9a22d6b0e6182293551"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Textures/Quinn/T_Quinn_02_D.uasset",
+      "size": 943331,
+      "sha256": "f0ccb2f465894c6f9ff4dd142351ed33186c5f861283a75f3e08d1531a253c49"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Textures/Quinn/T_Quinn_02_MRA.uasset",
+      "size": 974099,
+      "sha256": "9f7e495cbe0430aed7084b5508f87186f98346eb04f003734c9b378891da7887"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Textures/Quinn/T_Quinn_02_N.uasset",
+      "size": 1524635,
+      "sha256": "0bc26466e9fdc954cc276bb6ac1350e22c3dabbe1b54b6bf78ed5ae2e339d9fc"
+    },
+    {
+      "path": "Content/Characters/Mannequins/Textures/Shared/T_UE_Logo_M.uasset",
+      "size": 59927,
+      "sha256": "34e6fa3414c04a86b7a5287e5569ea9d6e53c319d6e7dbfc8b09dab5b70611a6"
+    },
+    {
+      "path": "Content/Content/Survival/EnvironmentGenerated/FT_Auto_LargeRock1.uasset",
+      "size": 2654,
+      "sha256": "58f0ed1640c6084b896fc69c3137d366628356b58c2b4d27714b3c8eadc6edc3"
+    },
+    {
+      "path": "Content/Content/Survival/EnvironmentGenerated/FT_Auto_LargeRock2.uasset",
+      "size": 2654,
+      "sha256": "a13a63a64ec30656a2d0f4281dc702ffc8bdabe2c4b190963d25967598c95970"
+    },
+    {
+      "path": "Content/Content/Survival/EnvironmentGenerated/FT_Auto_StylizedGrass.uasset",
+      "size": 2816,
+      "sha256": "7a630d99bcf70e7e10afeb0cf3127652526789b4b9d30b7eeeb0177df266ed7f"
+    },
+    {
+      "path": "Content/Content/Survival/EnvironmentGenerated/FT_Auto_Tree1.uasset",
+      "size": 2624,
+      "sha256": "80c61137a6f9efca857799c74724a22ef75c0058c64a7fb2ad0caecd66f6a903"
+    },
+    {
+      "path": "Content/Content/Survival/EnvironmentGenerated/FT_Auto_Tree2.uasset",
+      "size": 2624,
+      "sha256": "cc7f970b5bc3d768ca2c17fee98a50b1e1c6292099b946804647694dfcba836b"
+    },
+    {
+      "path": "Content/Content/Survival/EnvironmentGenerated/FT_Auto_Tree3.uasset",
+      "size": 2624,
+      "sha256": "198c0503d50ca0e60b69aa60df28ea5b85c72e48e5bf597a1a0e20514898b191"
+    },
+    {
+      "path": "Content/Content/Survival/Maps/LV_Survival.umap",
+      "size": 2113232,
+      "sha256": "7e10f471d37d0ba4f19f839c92276ab64d64d2b631d6eba1f8034424be764c33"
+    },
+    {
+      "path": "Content/Content/Survival/Maps/LV_Survival_Backup_20261023.umap",
+      "size": 2127164,
+      "sha256": "ce4c95950e5d2df2df75976832d9170db54c0c6af6d0877332e626d272d0b1cd"
+    },
+    {
+      "path": "Content/Content/Survival/Maps/LV_Survival_Nature.umap",
+      "size": 11377276,
+      "sha256": "74d08965f7b308ae9d97b68b8817817f89c9ce862918328a623cc8eda1f223b7"
+    },
+    {
+      "path": "Content/Content/Survival/Materials/Dirt_LayerInfo.uasset",
+      "size": 1404,
+      "sha256": "f604dc1e2fcc916c42b40e62ffd9104c7ba4efc7c06a851721205cb703d484e0"
+    },
+    {
+      "path": "Content/Content/Survival/Materials/Grass_LayerInfo.uasset",
+      "size": 1411,
+      "sha256": "7c28b829d3733c19bb363af1cf54c1a12bed6a4ad78348a4a78552b1142c86b4"
+    },
+    {
+      "path": "Content/Content/Survival/Materials/M_Grass/M_Grass.uasset",
+      "size": 16136,
+      "sha256": "adc733b779a2f55db59bc1825d8e7ee22e6d5dcb78df13173d4a1ffbae66b759"
+    },
+    {
+      "path": "Content/Input/Actions/IA_Jump.uasset",
+      "size": 1695,
+      "sha256": "73c14789fee45a6e1eff57f3304a0bafee23790cc8ea6a6a5bf0056e75d7b3e4"
+    },
+    {
+      "path": "Content/Input/Actions/IA_Look.uasset",
+      "size": 1385,
+      "sha256": "0d4a2cb59db11a0a080834e1b292207e530b8df217446afb46e382d9fa12f5a9"
+    },
+    {
+      "path": "Content/Input/Actions/IA_MouseLook.uasset",
+      "size": 1410,
+      "sha256": "2901132a04ceb384e2693107b8f5455de48b7c325d6cc5ce07556c6425c19f48"
+    },
+    {
+      "path": "Content/Input/Actions/IA_Move.uasset",
+      "size": 1385,
+      "sha256": "85567b9d91ffd9f7106c3062557a6fa864a791233380353f63eb563470985add"
+    },
+    {
+      "path": "Content/Input/IMC_Default.uasset",
+      "size": 7787,
+      "sha256": "133bda6567aaeea1aae05c03597345e4b1d9ef24d868a0275203b3203a7aae98"
+    },
+    {
+      "path": "Content/Input/IMC_MouseLook.uasset",
+      "size": 2521,
+      "sha256": "6a00157cd520edcf0b037d7091bfe188fa6eb7c48465f695981f7cbe5fb4cc80"
+    },
+    {
+      "path": "Content/Input/Touch/BPI_TouchInterface.uasset",
+      "size": 16393,
+      "sha256": "e778ae087305a34cd6957fcf9b29670f0a2a01be96bad89c79b83286496ec45f"
+    },
+    {
+      "path": "Content/Input/Touch/UI_Thumbstick.uasset",
+      "size": 223040,
+      "sha256": "49c8c04b2e8c88beb55935b05d9af72c35d89512ea6435f20d5e3123be139f8b"
+    },
+    {
+      "path": "Content/Input/Touch/UI_TouchSimple.uasset",
+      "size": 70301,
+      "sha256": "81f45f11e73180f0964ee3f59f77c8c55e61d355e5c69427e1de67e5aa5db77b"
+    },
+    {
+      "path": "Content/LevelPrototyping/Interactable/Door/BP_DoorFrame.uasset",
+      "size": 448616,
+      "sha256": "4386d7d71b8d5241fd8150aa47900711eb0d8bd069c00de25fce07f011d698fa"
+    },
+    {
+      "path": "Content/LevelPrototyping/Interactable/Door/Meshes/SM_Door.uasset",
+      "size": 59267,
+      "sha256": "fa98c4fc5083393e085d7b44d0b67a7e830922e2601a439167916616bbc29993"
+    },
+    {
+      "path": "Content/LevelPrototyping/Interactable/Door/Meshes/SM_DoorFrame_Corner.uasset",
+      "size": 86885,
+      "sha256": "383dea9555e76303d60d0011fae6651a4be07c24033c0aceeecd137c954ee3fc"
+    },
+    {
+      "path": "Content/LevelPrototyping/Interactable/Door/Meshes/SM_DoorFrame_Edge.uasset",
+      "size": 69088,
+      "sha256": "26eb76a2ce36be334bf0770561475a9e06be928e9ca75b4a31f5df3debb36592"
+    },
+    {
+      "path": "Content/LevelPrototyping/Interactable/JumpPad/Assets/Materials/M_GradientGlow.uasset",
+      "size": 17587,
+      "sha256": "c1b29ad29c2eac3dba6dd6a90aed9de8c6147a13b6288a42bd73fe14b78970a8"
+    },
+    {
+      "path": "Content/LevelPrototyping/Interactable/JumpPad/Assets/Materials/M_SimpleGlow.uasset",
+      "size": 15213,
+      "sha256": "e6098242541b34be6aba19ea1fbfa35107f891e8f55d30d4061aa11b065b8bd8"
+    },
+    {
+      "path": "Content/LevelPrototyping/Interactable/JumpPad/Assets/Materials/MI_GlowNT.uasset",
+      "size": 4145,
+      "sha256": "6fd40bc38bfea9418fa54fe365732a1219e615169542a0a4d2e1d518318c864b"
+    },
+    {
+      "path": "Content/LevelPrototyping/Interactable/JumpPad/Assets/Meshes/SM_CircularBand.uasset",
+      "size": 70608,
+      "sha256": "97fbe3da2d907279dcbfbbf285e1b111ceb8d5f4a1c9d6bd48fcb8defc86842b"
+    },
+    {
+      "path": "Content/LevelPrototyping/Interactable/JumpPad/Assets/Meshes/SM_CircularGlow.uasset",
+      "size": 71705,
+      "sha256": "6ddb27bf7020f4980d3f8435cb0928fb48b32c1ab3ea24bac7e253435081bf6b"
+    },
+    {
+      "path": "Content/LevelPrototyping/Interactable/JumpPad/Assets/NS_JumpPad.uasset",
+      "size": 795908,
+      "sha256": "2e76849cbb139160e5e73c226fe6aaa66a63fbf75cbd1213f871cca65e409817"
+    },
+    {
+      "path": "Content/LevelPrototyping/Interactable/JumpPad/BP_JumpPad.uasset",
+      "size": 92487,
+      "sha256": "42ba8262f07355cdf36e33977f3bb415810390cf210b75573d766bd819cf8401"
+    },
+    {
+      "path": "Content/LevelPrototyping/Interactable/Target/Assets/SM_TargetBaseMesh.uasset",
+      "size": 283425,
+      "sha256": "378ace355b8f5e71a12e459d9f8cf4958626884142fec34be8630db6d8412cad"
+    },
+    {
+      "path": "Content/LevelPrototyping/Interactable/Target/BP_WobbleTarget.uasset",
+      "size": 45551,
+      "sha256": "8bd8784bf03cb945d63deb2c4c22261a9a9ea2af1f84766805ca92ec7b521ab3"
+    },
+    {
+      "path": "Content/LevelPrototyping/Materials/M_FlatCol.uasset",
+      "size": 11771,
+      "sha256": "41dbbda4b463a224c29ee01765e1f52a8ae63f2f94f1440ee267fe7b1a481585"
+    },
+    {
+      "path": "Content/LevelPrototyping/Materials/M_PrototypeGrid.uasset",
+      "size": 79863,
+      "sha256": "bf8625ad5917cee705867038d8a590b25465e6b5d5818a738a584e515d7cbdfc"
+    },
+    {
+      "path": "Content/LevelPrototyping/Materials/MF_ProcGrid.uasset",
+      "size": 49820,
+      "sha256": "e5ee13abdb241d9811f6c1bcc0a607d229fa7adc5f46bfd5a9d5fedbfa279683"
+    },
+    {
+      "path": "Content/LevelPrototyping/Materials/MI_DefaultColorway.uasset",
+      "size": 9260,
+      "sha256": "786a4dfcaaa6f4daf459c77bda247c2c138140680a8246d521974d0cc4fc8a8e"
+    },
+    {
+      "path": "Content/LevelPrototyping/Materials/MI_PrototypeGrid_Gray.uasset",
+      "size": 13121,
+      "sha256": "084681bf680dad66b8c8ca803d927053cf46756f2f2e62d18fcc439e07de7263"
+    },
+    {
+      "path": "Content/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02.uasset",
+      "size": 11922,
+      "sha256": "fa0f2a06a7d937127d7d737c13bacb3f8fe88c8e0479f5e6b7cda81fd225d077"
+    },
+    {
+      "path": "Content/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_Round.uasset",
+      "size": 11413,
+      "sha256": "901ec868e81e7a73c9f3ad4814e1205af27abc772949e5a30550a00f31ce4437"
+    },
+    {
+      "path": "Content/LevelPrototyping/Materials/MI_PrototypeGrid_TopDark.uasset",
+      "size": 11957,
+      "sha256": "838034e5afc7ab3a70bfff6de2e1237aa02337fb423e95c1b536b3e30c61c982"
+    },
+    {
+      "path": "Content/LevelPrototyping/Meshes/SM_ChamferCube.uasset",
+      "size": 128849,
+      "sha256": "b20a3ae9668ec599db519af3f84b67952d0e31ac4427b80ee812232edde91f53"
+    },
+    {
+      "path": "Content/LevelPrototyping/Meshes/SM_Cube.uasset",
+      "size": 18279,
+      "sha256": "4680317a8c87f983e077f6c0a6b93ffaa0ba4dbddbc810960d4553e6ad380a89"
+    },
+    {
+      "path": "Content/LevelPrototyping/Meshes/SM_Cylinder.uasset",
+      "size": 193636,
+      "sha256": "76aaa3c2b812ff790fb57ae7736b748e4e1556afbb13466fd787d4bacd2c7dfe"
+    },
+    {
+      "path": "Content/LevelPrototyping/Meshes/SM_Plane.uasset",
+      "size": 15581,
+      "sha256": "39ab83dc57a9a27a80476711610f72e81c0685a05d4aa95413b3e4e7f6c4a3f2"
+    },
+    {
+      "path": "Content/LevelPrototyping/Meshes/SM_QuarterCylinder.uasset",
+      "size": 135087,
+      "sha256": "4087b3f85753d9ccbced7d00d42208dad4d21185f24a97b0c86db31be867b733"
+    },
+    {
+      "path": "Content/LevelPrototyping/Meshes/SM_QuarterCylinderOuter.uasset",
+      "size": 79741,
+      "sha256": "ab58a5224da57452f367c9d55ea4976466138fc2cb8ec9e2fa92748c86a07f11"
+    },
+    {
+      "path": "Content/LevelPrototyping/Meshes/SM_Ramp.uasset",
+      "size": 18690,
+      "sha256": "e5b472deb37a9956b9112dccee3d09498a456baeacc574db8c5d725463b73597"
+    },
+    {
+      "path": "Content/LevelPrototyping/Textures/T_GridChecker_A.uasset",
+      "size": 9600,
+      "sha256": "bb8334767064b107ec4f4407ef1365e8b9e2dfeff5984e66d4a6232254ddd02a"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Animations/ChestAnimated_Anim_ChestTop_Final_ChestClose.uasset",
+      "size": 88995,
+      "sha256": "fbe128bf9f23ea96260b794593aec9812d06d202d40d321490e08c2e63348aad"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Animations/ChestAnimated_Anim_ChestTop_Final_ChestOpen.uasset",
+      "size": 89322,
+      "sha256": "831b324f927c74c0b289451d06eced0c6609d4be2d04d8b4da402c6385c93c28"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Animations/GateAnimated_Anim_Gate_GateClose.uasset",
+      "size": 100829,
+      "sha256": "098bb5206e66ff7965721b45858d8fecdc5850795634f48accc2c05c5db62f1d"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Animations/GateAnimated_Anim_Gate_GateOpen.uasset",
+      "size": 100824,
+      "sha256": "8c0b5203bc78f1a757ff2501969203fba5d21847c41375f092f7b956c3544cfb"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Blueprints/ChestActor_Interface.uasset",
+      "size": 179629,
+      "sha256": "281014b48fe9279abcb6245ccaa4ab6a3cf1316f1c586a6af4c6852152cf99f0"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Blueprints/ChestActor_Trigger.uasset",
+      "size": 123121,
+      "sha256": "12836f52f300b89d30c2f5508d290c98f796964bed5562635291014220e78c3d"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Blueprints/GateActor_Interface.uasset",
+      "size": 186278,
+      "sha256": "ced1025b50655583d170177d846777becbdf91a7ce1934ef752c4a232a15a8db"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Blueprints/GateActor_Trigger.uasset",
+      "size": 122489,
+      "sha256": "379e4c0c16fd4f93bca8543a043e643913f9f837d45b15e207b25c7e98b5ee9c"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Blueprints/InteractInterface.uasset",
+      "size": 13982,
+      "sha256": "4ac29a19f39701407ad2fc9f6ce17b16f0f35cb15b390d5a9a27d4c568e549d3"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Blueprints/InteractPromtWidget.uasset",
+      "size": 22283,
+      "sha256": "e499f7ad495a1399ab94c03abd5d7d449072b6ce7c91829e7f1162a0e50950be"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Blueprints/LeafsWind.uasset",
+      "size": 45924,
+      "sha256": "6bee1eabc37ec8f4ed9d277907d52c885ce9f9806484405b7c76f5798177f7f9"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/AssetShowcase.umap",
+      "size": 871838,
+      "sha256": "70b166261736a0fadb6d379a0f75032dc3c339567c777abb8c2bc450972e52c9"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/AssetShowcase_BuiltData.uasset",
+      "size": 6121328,
+      "sha256": "3b8022883f4dc7e54890470eb41190572f913d2d239a2f3c45096ce19386c0e3"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Animations/ABP_Manny.uasset",
+      "size": 376626,
+      "sha256": "13f22c6cf3af1966016961f7fe9ffad85a72adc6f71642bd2745800746ebbc4f"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Animations/ABP_Quinn.uasset",
+      "size": 39566,
+      "sha256": "16338d96ad41f567343b96521c46d953b753e25ab92a77a052855a2f647f896e"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Animations/Manny/BS_MM_WalkRun.uasset",
+      "size": 9143,
+      "sha256": "de73d3f28a7c73c764bfe33e34c19939c8eb3a593194da045211371430b93413"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Animations/Manny/MM_Fall_Loop.uasset",
+      "size": 698284,
+      "sha256": "27744cf95de61d8a43a592c0bd09e161070a60544d52f9306e6640753137b775"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Animations/Manny/MM_Idle.uasset",
+      "size": 897709,
+      "sha256": "6fd60c3d94244a0af43c960fa9ade90dcb36f2242c8f6f04af64554e07a82677"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Animations/Manny/MM_Jump.uasset",
+      "size": 291037,
+      "sha256": "944069b3afed02d25f830e20ee308d4db31856340314c3086a1dd0449fc179a4"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Animations/Manny/MM_Land.uasset",
+      "size": 300410,
+      "sha256": "fb7b69660bf6dd454c468f18000ec92dbd5b74af39167229be35258d24308bda"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Animations/Manny/MM_Run_Fwd.uasset",
+      "size": 293312,
+      "sha256": "0e857fe1e10a5e83559b608c69220d69c310656d298addb2028555b2ee6580c4"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Animations/Manny/MM_Walk_Fwd.uasset",
+      "size": 382858,
+      "sha256": "b39d55227e183f0ef3e0800c1aa7e8b540df72737605fc5f4d5f4352a738fb0e"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Animations/Manny/MM_Walk_InPlace.uasset",
+      "size": 609313,
+      "sha256": "f5daeeb6e9bc5f5174dafe36b656c489b45334867959e87056abd9f9efdba7f0"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Animations/Quinn/BS_MF_Unarmed_WalkRun.uasset",
+      "size": 9175,
+      "sha256": "3dffdbad85090af22b39bdbf2809e09af2ea5d500599792574a98dd67f62e1f1"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Animations/Quinn/MF_Idle.uasset",
+      "size": 919428,
+      "sha256": "f2cfd53df7538561686dfd40a8ba9ba715db11697400a4a54a029bac106978fe"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Animations/Quinn/MF_Run_Fwd.uasset",
+      "size": 431190,
+      "sha256": "a286080803f8668e4ead389217a67f9441ba67148785134e00bc8a115e07de2e"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Animations/Quinn/MF_Walk_Fwd.uasset",
+      "size": 450056,
+      "sha256": "2dfba4526e0fcb10898b921b92754674e7589145a87f98a984bfbdf42a63d7f3"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Materials/Functions/CA_Mannequin.uasset",
+      "size": 4862,
+      "sha256": "e59c82ca75cc93f732a20cff259cf2298dacc664d6bb7532c1eae29575c04735"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Materials/Functions/ChromaticCurve.uasset",
+      "size": 6331,
+      "sha256": "26b6379a3a19a1b4966c5f293723274bb667e0e1e9924c8c16cae9bf7e94e1ad"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Materials/Functions/MF_Diffraction.uasset",
+      "size": 32258,
+      "sha256": "bc10e17b1cc68a34cc7d49a927fd86cefd65777270141b3dd3de9c618f69ecf5"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Materials/Functions/MF_logo3layers.uasset",
+      "size": 56653,
+      "sha256": "789250cc2bfc789aab446fcc506eaf5a6d2f6dd5fcef3d3047b2749014518502"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Materials/Functions/ML_BaseColorFallOff.uasset",
+      "size": 13462,
+      "sha256": "86f3a60a6abab1413e3b2503f61b3ed7e57ba9b5a7cfed83c6700de10e908df6"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Materials/Instances/Manny/MI_Manny_01.uasset",
+      "size": 22015,
+      "sha256": "7a73c92775502f536229a51d44d6ec2a24ef0e3c01513adb0954fd0521572967"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Materials/Instances/Manny/MI_Manny_02.uasset",
+      "size": 25328,
+      "sha256": "ba879ba1f0ec9295084902ffe264a66b1a223e60b515eeb5f8f01caccc2c82dc"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Materials/Instances/Quinn/MI_Quinn_01.uasset",
+      "size": 20092,
+      "sha256": "d014d8c00f31d3615e0d59d2f508904bf2e5eeeaf7b08c8527ce115ef0afbe6a"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Materials/Instances/Quinn/MI_Quinn_02.uasset",
+      "size": 25705,
+      "sha256": "c652e45ca0e9f18244c89eb391dc2c22bc21212ae4955327d80f2745c11f5b56"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Materials/M_Mannequin.uasset",
+      "size": 83754,
+      "sha256": "51d0eafec169c5cce713fa5a7bfb6031b6956872a997a532201534392f506119"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Meshes/Mannequin_LODSettings.uasset",
+      "size": 19021,
+      "sha256": "23aa8e3c34e92b8aafda02df5a1602f2e016d14d032a4beb8190c3fd27244859"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Meshes/SK_Mannequin.uasset",
+      "size": 161072,
+      "sha256": "be2e59bb50c1121d6f32e5f09eccdaf935d2477982ea4179d77a268268dba35b"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Meshes/SKM_Manny.uasset",
+      "size": 34535065,
+      "sha256": "c2d0ab3c0cd57ab61802f3645d883b8f4d8c625a3757a7a2fbfff5b437b6ae1d"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Meshes/SKM_Manny_Simple.uasset",
+      "size": 18527515,
+      "sha256": "f5c26ef945a06f4fcf5f2ea49e551859b8950fca6f71e30b1599d05ad90bf1ee"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Meshes/SKM_Quinn.uasset",
+      "size": 36495971,
+      "sha256": "c85a235c956ca22a6d2fce119cca6a59c573e92144d9caf8aba32314fbb996d5"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Meshes/SKM_Quinn_Simple.uasset",
+      "size": 19371587,
+      "sha256": "0032ad417fc55c5f19d1e571dc2b927af4f123b8f745c611d38a1300a7662c08"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/ABP_Manny_PostProcess.uasset",
+      "size": 464051,
+      "sha256": "e9aff67b206a22805f3d327c1d968104946d17496a87df1b27e38ff80dd5b8a0"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/ABP_Quinn_PostProcess.uasset",
+      "size": 463849,
+      "sha256": "db3a932d99c26faa861f3172d3e7fd021adc3bf4bb51534a49278421ade282ec"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/CR_Mannequin_BasicFootIK.uasset",
+      "size": 580880,
+      "sha256": "a20e9eec423778093b63365efbf738877cec56e1290e5ecc3f1d03fd3b4a4765"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/CR_Mannequin_Body.uasset",
+      "size": 7730894,
+      "sha256": "b8b823150e7961372754edbf52e626902dfe6ad4ba5af4f92ea664852c8dfa1f"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/CR_Mannequin_Procedural.uasset",
+      "size": 2265914,
+      "sha256": "3d8627aa18864cfdb08922fc3605a514a1e0500a914664ef09ac523407918030"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/IK_Mannequin.uasset",
+      "size": 143760,
+      "sha256": "57bae66ffd4d499e9c75bb94cf6085720abb9cde49815e223234a83ffd123c33"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/PA_Mannequin.uasset",
+      "size": 64297,
+      "sha256": "4024d649b737e9fd9e2a5e0035b73c5a100c57f631b3a44c140406ce967be2d4"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Manny/Manny_calf_l_anim.uasset",
+      "size": 141527,
+      "sha256": "6a0ac95465df19749db1370b1c84e5c0a0c3549e0507c26f52695981ac56f34d"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Manny/Manny_calf_l_pose.uasset",
+      "size": 207530,
+      "sha256": "85736f57b6109d21325eea45ed1ebeb470ec3e35028e73c539ab0296937b25f2"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Manny/Manny_calf_r_anim.uasset",
+      "size": 141537,
+      "sha256": "8b70bf88a85a2545af4d68f49d5b4c91d431c0ef3b25762455c559cabf16f66b"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Manny/Manny_calf_r_pose.uasset",
+      "size": 207530,
+      "sha256": "a983260b6786833d5d8c17f6895faaa805ceab2158663080cff3a40a41761b5c"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Manny/Manny_clavicle_l_anim.uasset",
+      "size": 141559,
+      "sha256": "ca2681e8e86e798e11168f50e4c77c0e0b091f5ffb905915750dd385aed0d397"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Manny/Manny_clavicle_l_pose.uasset",
+      "size": 205832,
+      "sha256": "ddcc5e3f2110fa419b85302df8919bbfd8f9a36d8e6d56d735ef9b5236823253"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Manny/Manny_clavicle_r_anim.uasset",
+      "size": 141561,
+      "sha256": "74d5a284180536683e5a106d4c0284f0cb0629980f030847d512d0d75de41caa"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Manny/Manny_clavicle_r_pose.uasset",
+      "size": 206434,
+      "sha256": "0f11ca630243c4ab0eac258fc4d6a9ef54d8f971246dc4b5d7d5c2fcbc66fbc8"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Manny/Manny_foot_l_anim.uasset",
+      "size": 129535,
+      "sha256": "1fc021f1f5f9667ab5f6706451875e37ca88fba0103400c287fba09befcb532c"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Manny/Manny_foot_l_pose.uasset",
+      "size": 132276,
+      "sha256": "c692431777bad3eccfb20d88419b225a5ba12eefb0fe44657bb3eb1795c27839"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Manny/Manny_foot_r_anim.uasset",
+      "size": 129537,
+      "sha256": "f9dee95dc8d3c028085c8eebb0c7c90ccfb325fe48008f5cb6eed1c5acffafe2"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Manny/Manny_foot_r_pose.uasset",
+      "size": 132276,
+      "sha256": "4b30539839c48508bbfc1ec11a1c82468c9f3a65746e6fb03bf82c0cf0e62212"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Manny/Manny_hand_l_anim.uasset",
+      "size": 135535,
+      "sha256": "e3e6135d00516d8716fc71ba8337888596c83fc8d6906f37a443bbc0df89ed53"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Manny/Manny_hand_l_pose.uasset",
+      "size": 169306,
+      "sha256": "989fd2c98ce2879c30dbdc6054a594105361e0352ee3f5145e79dfc2ae166428"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Manny/Manny_hand_r_anim.uasset",
+      "size": 135537,
+      "sha256": "cd05836e2f4741ecb3499c429f2a9ad4ed107b8587935b5a1fddf8b317dc804a"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Manny/Manny_hand_r_pose.uasset",
+      "size": 169306,
+      "sha256": "83192e9dd13fd6a2ba53ba8a8bce1c93a4df409542032f657d75aaacc5c25fe0"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Manny/Manny_lowerarm_l_anim.uasset",
+      "size": 166030,
+      "sha256": "04aeb945d4dce52df6a92152318b44cc62e1c273643914843cc129d3362174a9"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Manny/Manny_lowerarm_l_pose.uasset",
+      "size": 361744,
+      "sha256": "a0d034d554cdeab4f798138bc89d58fc881035879491e6eb6f1fceaa452b26c7"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Manny/Manny_lowerarm_r_anim.uasset",
+      "size": 165561,
+      "sha256": "9160f4c285383bb9996de790264ca496847c5dffce5b4736bcf2674c00d8ee84"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Manny/Manny_lowerarm_r_pose.uasset",
+      "size": 361744,
+      "sha256": "31c00c6792c19e71b0ed9af16694e95e60b1217e616368d90b5684139265e40b"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Manny/Manny_thigh_l_anim.uasset",
+      "size": 195543,
+      "sha256": "ae80ef3e2270c306688fc351aa157492ab6be531956d82dffa6586d3d5e0ba8e"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Manny/Manny_thigh_l_pose.uasset",
+      "size": 558072,
+      "sha256": "6eb258c722131e547dad3c45f2b440f73b55d1bdc80cc28f658b9772fbc7da83"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Manny/Manny_thigh_r_anim.uasset",
+      "size": 195545,
+      "sha256": "65e9fc86c0347bfc323f01daef91bd9d02233c151218ec1df9ef673e01d5e07e"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Manny/Manny_thigh_r_pose.uasset",
+      "size": 558072,
+      "sha256": "f4ca36a5b2aea46b7d84ec1d09e27065e26a7fb9406bf5b1e01a5bbb4ab0f8a3"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Manny/Manny_upperarm_l_anim.uasset",
+      "size": 207561,
+      "sha256": "4c925b46777e3bf6ce08556dd5705fc35c17bac9f9ecb78a0b73da812273e92b"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Manny/Manny_upperarm_l_pose.uasset",
+      "size": 641733,
+      "sha256": "1a80a44130b4dba573d0007ee38eb10433e41cee243c9901d2474a5257e269a6"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Manny/Manny_upperarm_r_anim.uasset",
+      "size": 207563,
+      "sha256": "60d5265de9bc232a76c52567293ccaefa4aa86fe1007b62a9894ae0d1997835e"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Manny/Manny_upperarm_r_pose.uasset",
+      "size": 630295,
+      "sha256": "5c650cfc688073c5d63d02c8663dfeeb4f64b355072c136a57181e9b416bc143"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Quinn/Quinn_calf_l_anim.uasset",
+      "size": 190105,
+      "sha256": "91034e1093bdb3d872c53478ee80d5b3e2a97c098908d4e79f32a931b7ceee3a"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Quinn/Quinn_calf_l_pose.uasset",
+      "size": 245363,
+      "sha256": "6630e71da3038dac149a4422dd517f6c5dd8ad84233c10e47fd70bb217377769"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Quinn/Quinn_calf_r_anim.uasset",
+      "size": 190188,
+      "sha256": "0d65ba59eee20dbe94af363e9bb513447e3759bbb0d9373e5e38f7bdc198ee8b"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Quinn/Quinn_calf_r_pose.uasset",
+      "size": 245444,
+      "sha256": "b61803995308a8df6f72a664a4adeff4781219f9d06190ddc9d72a4bf9d810fb"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Quinn/Quinn_clavicle_l_anim.uasset",
+      "size": 184152,
+      "sha256": "5b17bac6a4a9160fea53f1fbf8b2be4fcfa1593cd9e519a55e1ee194677df6c4"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Quinn/Quinn_clavicle_l_pose.uasset",
+      "size": 206111,
+      "sha256": "7aeaa5b32c66153ed7cb343b455906cc7f3555c6405550a86431e8b2e0f9370c"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Quinn/Quinn_clavicle_r_anim.uasset",
+      "size": 183809,
+      "sha256": "269b5bc79c7fa7257d1fbc0facef7fde32a853faeab4b6f5711bf52b8bb22504"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Quinn/Quinn_clavicle_r_pose.uasset",
+      "size": 206155,
+      "sha256": "d0efbb1298031ed995601fd1498eef49f16d0e79a03a425f4d6ee2411e0e76f3"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Quinn/Quinn_foot_l_anim.uasset",
+      "size": 171783,
+      "sha256": "c4ec605c92a1e380072ebba8fd32a4e2540dc4569c4f40c277168b3be7950779"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Quinn/Quinn_foot_l_pose.uasset",
+      "size": 132298,
+      "sha256": "9a2ea836c7ca8456485c547ee5414067c0eec59d0273d6dbf4094fffd82580a0"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Quinn/Quinn_foot_r_anim.uasset",
+      "size": 171785,
+      "sha256": "609c1ad99870f99b9a75a83643d9dc5361e2b481ec027793c62b03834eb119ae"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Quinn/Quinn_foot_r_pose.uasset",
+      "size": 132298,
+      "sha256": "5472173bf7ec8ce29d555e7eb2e2931b6d7e91d8c689b80e967bb28febba97d0"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Quinn/Quinn_hand_l_anim.uasset",
+      "size": 177783,
+      "sha256": "9036f450a5b55cc8232385b9c4d3f2858cf66edc5d5df3db9b5f5999e4053203"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Quinn/Quinn_hand_l_pose.uasset",
+      "size": 169328,
+      "sha256": "329739f0012a6bc89989460c1a018f6a5bf2697c81f60f7022c48c08151b3dff"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Quinn/Quinn_hand_r_anim.uasset",
+      "size": 158683,
+      "sha256": "06ed345cee130badfe271d37b1c049f74f51867b1992183d0562ebf2dd7a5e8c"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Quinn/Quinn_hand_r_pose.uasset",
+      "size": 169328,
+      "sha256": "80475611605b659a7acc3e09f28b37e438ed40445676a68a5d6e3be68cc2e89d"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Quinn/Quinn_lowerarm_l_anim.uasset",
+      "size": 194706,
+      "sha256": "dff0829ab79c26eca12c1d6cd88b9d81b29e7cb2967fb9d6dea94131a59fe815"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Quinn/Quinn_lowerarm_l_pose.uasset",
+      "size": 399704,
+      "sha256": "03a5e6b3b5f23681cfd0b41fb8c39d56b74243eebfc544e0ceeb559905338a26"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Quinn/Quinn_lowerarm_r_anim.uasset",
+      "size": 194708,
+      "sha256": "afc63930c21544fa79eb3b5275fe947000063103e5c38e72768a0e4b6f04d742"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Quinn/Quinn_lowerarm_r_pose.uasset",
+      "size": 399704,
+      "sha256": "7f3fec0c3cff5f568572568307e0cdf3075e99f82d1c839ef4619118f210be0f"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Quinn/Quinn_thigh_l_anim.uasset",
+      "size": 218689,
+      "sha256": "e0adb785eb3d10a86facc936411130db020edfdf4d53d72a307ec92e9fc82f24"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Quinn/Quinn_thigh_l_pose.uasset",
+      "size": 557793,
+      "sha256": "b4a23ae9e70f4f42618de61b0ecf77403ecea63f8a0152fcb92dbfa028c316b5"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Quinn/Quinn_thigh_r_anim.uasset",
+      "size": 218691,
+      "sha256": "a3dceb8b51474a3de60a885f2f4f9107e55f88cc81f0bb596ae99a475105b212"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Quinn/Quinn_thigh_r_pose.uasset",
+      "size": 557793,
+      "sha256": "e33531c620dbeb10981c62f78ff031308f2b6549b681299b11865f2c6c1698f1"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Quinn/Quinn_upperarm_l_anim.uasset",
+      "size": 206707,
+      "sha256": "c2e6d5739bbc4fb091ecab2499c76496068f5253ec2e15500dc403d640947bd0"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Quinn/Quinn_upperarm_l_pose.uasset",
+      "size": 485615,
+      "sha256": "0b7eb6c1856a05a0c09b42559506c5543d2337bed0e2808d026a53daab1fbcac"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Quinn/Quinn_upperarm_r_anim.uasset",
+      "size": 206709,
+      "sha256": "03973ad1ee4655f5fcdcccc0569a05c26d5869d427e178a4662be0b98855d10b"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/Poses/Quinn/Quinn_upperarm_r_pose.uasset",
+      "size": 488625,
+      "sha256": "50b9df13675b391aa270fb7cba25a5e8b5cfa506147d19cbc22da24a1882bb2e"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Rigs/RTG_Mannequin.uasset",
+      "size": 13120,
+      "sha256": "5638bd0c26b0b3e0799bbbbd60da78735a4cc9adb38612d0efa5a90bfb11120e"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Textures/Manny/T_Manny_01_ASAOPMASK_MSK.uasset",
+      "size": 3612630,
+      "sha256": "770444548402d7932b14bd2871384684001e0aa33580f60cc051fa3c1a8f4082"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Textures/Manny/T_Manny_01_BN.uasset",
+      "size": 18514193,
+      "sha256": "a59b8b0d65b02ead28211ce923ec5f543d7bb206eb2e43bcb87c0bcf1d1f7e4e"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Textures/Manny/T_Manny_01_CCRCCPlastic_MSK.uasset",
+      "size": 10271997,
+      "sha256": "8ed4467c5b6de00a84ec6657ac6c769f466a1d99ec3fd82f5d4268868101d5f9"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Textures/Manny/T_Manny_01_D.uasset",
+      "size": 5740401,
+      "sha256": "e519e96bdca894f83748044a787424370faae819241b56b04b1baa576c4d39a9"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Textures/Manny/T_Manny_01_MSR_MSK.uasset",
+      "size": 11038209,
+      "sha256": "0334792d2b5a8758d2b4f98eb46418c06eff3c72629a4fe01f5c3b157e16eb52"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Textures/Manny/T_Manny_01_N.uasset",
+      "size": 7198276,
+      "sha256": "1bdefc8e4df875e71e305d250d9a228beb25baf181218d045a9c516c20701138"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Textures/Manny/T_Manny_01_Tan.uasset",
+      "size": 1357795,
+      "sha256": "08e304dbb5ec00b650302d8c3e4182166976bcdf6815d5fd6e2d50c90f31a4eb"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Textures/Manny/T_Manny_02_ASAOPMASK_MSK.uasset",
+      "size": 8341406,
+      "sha256": "cb2184e606aa6c68e331a90c80b331565def370803e0069fba07525d3e413217"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Textures/Manny/T_Manny_02_BN.uasset",
+      "size": 21139552,
+      "sha256": "b22f861b2d172ae47d439ee46e02187af74f9fb7cc9a404d36f2191eead105d3"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Textures/Manny/T_Manny_02_CCRCCPlastic_MSK.uasset",
+      "size": 13144068,
+      "sha256": "7689ca1519ded14fb726fc4ecb9324c72937a995e6ae36b032696d0d4cf5dd32"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Textures/Manny/T_Manny_02_D.uasset",
+      "size": 9033569,
+      "sha256": "6e18573db0f9ae38eb4751ceb2c7bb61c8fa1d09148d41a53c866c7d4a3ed0c2"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Textures/Manny/T_Manny_02_MSR_MSK.uasset",
+      "size": 13677635,
+      "sha256": "b42fc036806ae485cdd1860ae51799e3934cfb699f5d8c23dc2928be60b816ef"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Textures/Manny/T_Manny_02_N.uasset",
+      "size": 7269360,
+      "sha256": "6f03122c710e09004e37ed7c63456bd984c37f9581e662e7013f5b1002fc44b9"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Textures/Manny/T_Manny_02_Tan.uasset",
+      "size": 2153815,
+      "sha256": "3d5969cd285a5817eb978d8523ca4e9df4327d714aafa84b8a722900b7738a71"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Textures/Quinn/T_Quinn_01_ASAOMASK_MSK.uasset",
+      "size": 5834859,
+      "sha256": "ad9fc215663f251d30b534bd163522441d44a10c0aaf3c1a409252ff9e8766ee"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Textures/Quinn/T_Quinn_01_CCRCCPlastic_MSK.uasset",
+      "size": 12399951,
+      "sha256": "e00b22fe05a737afd66fa7c35d493b95777c771facdb86f793544525519b2743"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Textures/Quinn/T_Quinn_01ID_BN.uasset",
+      "size": 16108624,
+      "sha256": "9656dc6a1d92446728bdbef5c18337eb0e28bd5f153ff4ed3797bc45286033c0"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Textures/Quinn/T_Quinn_01ID_D.uasset",
+      "size": 4711181,
+      "sha256": "73d776df6f6516718b89c067c9d9dc49fabf6256a17a868c5a51d856ecffb364"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Textures/Quinn/T_Quinn_01ID_MSR_MSK.uasset",
+      "size": 11656166,
+      "sha256": "2e2f2dea75c1678e3404fe86d77f14ae83c6a92c44f77fbbeaf070ae3fc40afa"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Textures/Quinn/T_Quinn_01ID_N.uasset",
+      "size": 5217701,
+      "sha256": "1a380a6217e95ce40d35438f1a5100a16ad32e2076a5f20192e6553598d05f41"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Textures/Quinn/T_Quinn_01ID_Tan.uasset",
+      "size": 1104652,
+      "sha256": "e84b0832bde1fc787a1f12454ca2f3b9f3cc9ccb93aa6a52c8296e832597faa0"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Textures/Quinn/T_Quinn_02_ASAOMASK_MSK.uasset",
+      "size": 6901998,
+      "sha256": "6ae0b5f5216f78c8d4501c77324885f169717662373d079ec2b8d86d8284554f"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Textures/Quinn/T_Quinn_02_CCRCCPlastic_MSK.uasset",
+      "size": 13427883,
+      "sha256": "63ac140e3d6b149a5e74d1f05c5d6d5ae65c5693e520dd4ce6ab9e3acbab136c"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Textures/Quinn/T_Quinn_02ID_BN.uasset",
+      "size": 19706908,
+      "sha256": "fd9059940bbcf4c8c2b6612a0abf42d40518cb71ac44608c78357a1dcf772c61"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Textures/Quinn/T_Quinn_02ID_D.uasset",
+      "size": 6732549,
+      "sha256": "0a4ecba0a90fec25fdbb902b0f0ca2706ffc475730ba846766675c25cc519e8e"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Textures/Quinn/T_Quinn_02ID_MSR_MSK.uasset",
+      "size": 13169796,
+      "sha256": "aaf73dfd4a4f3ab381d0018a84c2a166adf9cee59a28aefdd908a5a7b015a44d"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Textures/Quinn/T_Quinn_02ID_N.uasset",
+      "size": 5217701,
+      "sha256": "7283b69b40a0fe10580278631b48b4c7288300bdc0f270a7a50b8b494335d89e"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Textures/Quinn/T_Quinn_02ID_Tan.uasset",
+      "size": 1758519,
+      "sha256": "d5511fdd00c15c3acccc5993b69e18ae2f619ded6622bcc55760b6bbc471dc22"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Characters/Mannequins/Textures/Shared/T_UE_Logo_M.uasset",
+      "size": 69985,
+      "sha256": "b3044e6cf394db65138b65ad98ecd035d0b0c176086809179cc005a771c739a4"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/DemoLevel.umap",
+      "size": 38360209,
+      "sha256": "44c065b168ba6ee61016d963d1719a7b7ed8a9d1b2b0a4b3fd19e18d6f479d39"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/DemoLevel_BuiltData.uasset",
+      "size": 157619489,
+      "sha256": "918c3868761be4112e53c60a6a39a953350ada0c352575527647d756dce9c7df"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Geometry/Meshes/CubeMaterial.uasset",
+      "size": 81497,
+      "sha256": "a46672eced2f1f91a564cc62b2171022f0d0def892c12858cc6f8829df47737d"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/Geometry/Meshes/TemplateFloor.uasset",
+      "size": 95255,
+      "sha256": "00134541cbf8ab9d247f3ce914ecbd566a86dc97efb17730365d3481c2ec571d"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.uasset",
+      "size": 215517,
+      "sha256": "e50b468462504c1cbb388ec6fca8723985a18b3559af41657365597596c9c92a"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Demo/ThirdPerson/Blueprints/BP_ThirdPersonGameMode.uasset",
+      "size": 14214,
+      "sha256": "bdf3013e25a8938630120cf81215b06b8db28e85693f959d46f84151c3b51a42"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Foliage/StylizedGrass_FoliageType.uasset",
+      "size": 92514,
+      "sha256": "de875e374032599d2636f47a0c5a4fbde4c75cadc6d76f63764ad80322931fde"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Foliage/StylizedGrassSmall_FoliageType.uasset",
+      "size": 85307,
+      "sha256": "2a71a4e4fe39853338c2fa0fa48b1fee33e60ab4bfea0673d63aa42077c78590"
+    },
+    {
+      "path": "Content/StylizedEnvironment/LandscapeLayer/Dirt_LayerInfo.uasset",
+      "size": 1433,
+      "sha256": "c621c439e441623f9f2ec34cce011ee4916e50ca873935e18fc34b0308ed2a39"
+    },
+    {
+      "path": "Content/StylizedEnvironment/LandscapeLayer/Rock_LayerInfo.uasset",
+      "size": 1445,
+      "sha256": "2bd502891fb101e37bae21ee1c60b70dc07d157abe73d4a8cc83b32637db7638"
+    },
+    {
+      "path": "Content/StylizedEnvironment/LandscapeLayer/Sand_LayerInfo.uasset",
+      "size": 1433,
+      "sha256": "7709f198952793c739c78a82b907a41d15f6a469b36bf1cf1a560d3414e45b77"
+    },
+    {
+      "path": "Content/StylizedEnvironment/LandscapeLayer/Woodland_LayerInfo.uasset",
+      "size": 1457,
+      "sha256": "8fc97313d07ac913943c558c943e30b903282dfb3b81b500d19bde25fef53c33"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Materials/_CaseLow_Bake1_baked.uasset",
+      "size": 105283,
+      "sha256": "bfc456a645766400521246d9a84428f0a4f342ed1b380f3df5db0602818e012a"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Materials/Barrel_Low_Bake1_baked.uasset",
+      "size": 119689,
+      "sha256": "7b2674803f1650d7006083d97955fbaaeb5ab0fb60b39d1252de41aa21e9f0d1"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Materials/Box_Low_Bake1_baked_001.uasset",
+      "size": 106013,
+      "sha256": "1cc8e4f3b79ce3f60fddd2730e72e0e5ffced080d5dad49d255883fd496794eb"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Materials/Branch_Bake1_baked.uasset",
+      "size": 158132,
+      "sha256": "545cdf5f37364a82afc87a3ac3e6ed729235b59869a384ca98d728a8708d0081"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Materials/BranchMatInstance.uasset",
+      "size": 124404,
+      "sha256": "4bffd0cff7440701d97145d09931335735292a0cb07b1ac8e8bc892da2f26dd7"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Materials/BridgeBaked_Bake1.uasset",
+      "size": 128778,
+      "sha256": "eed0842834a73d54a8342310a7d8a71fa2d494c5504147c50bd8c161e95a89c7"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Materials/Bush1_Bake1_baked_001.uasset",
+      "size": 130937,
+      "sha256": "484ac6a0768a854f45332bb8f9379362d6cbd1acd51fc53dc5b919849e5f3e4b"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Materials/Bush2_Bake2_baked.uasset",
+      "size": 112968,
+      "sha256": "399e15ed94e068fc4e353eaa1fcef364899dd274e80853dccb35605464a78b75"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Materials/Bush3_Bake3_baked.uasset",
+      "size": 113493,
+      "sha256": "498f32ef5fc531c0c334fd8bb7bb80ddc250322c7a1986ad9c97dbb189add949"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Materials/BushMatInstance.uasset",
+      "size": 127829,
+      "sha256": "25ff75f47ce40df7fd206a497f6f20094f2468679606ddd2a0a39f6ddce11c93"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Materials/BushPlane_Bake1_baked_001.uasset",
+      "size": 161168,
+      "sha256": "7b54079805cff38dfc95d0776e6c2c41c79ec1ceb577230691d7417ef6681203"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Materials/Campfire_Bake1_baked.uasset",
+      "size": 125061,
+      "sha256": "a0fe7e17ae7b39637b891c1341aec90cc64090164491285b574c190e50493398"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Materials/ChestBottom_Bake1.uasset",
+      "size": 105764,
+      "sha256": "852cd913e58e96a05eccb8a061b3e93c33ccb43aec43ff5b2f7d81248e17560d"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Materials/ChestTop_Final_Bake1.uasset",
+      "size": 106856,
+      "sha256": "9d273a8d1e623f15c20827833540eea529514dcfcf39f3bb5eae6fb8a6394d63"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Materials/Coin_Bake1_baked.uasset",
+      "size": 108733,
+      "sha256": "c5dddc3c946f9f6670ec7a3473d378a02420a0692f0c885b9efff6d4353b372f"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Materials/Cup_Bake1_baked.uasset",
+      "size": 116415,
+      "sha256": "f641b91becfbc00e944129433f16cce0314cd0b9a78b56326f36935653233077"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Materials/Fence_Var1_1_Bake1.uasset",
+      "size": 118422,
+      "sha256": "6f7e8beeb70ff36b1a6c953e3e3ea4278577045c9f96912d9c1bacf68c1d9cb9"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Materials/Fence_Var1_2_Bake1.uasset",
+      "size": 118422,
+      "sha256": "672da1ae55162ba06be9f5563dad58a7281c50e0194c57214a5da960658e6658"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Materials/Fence_Var2_1_Bake1.uasset",
+      "size": 113386,
+      "sha256": "7385164bd9edc07ce1f0522aed1b963025d683f748548dbf4064a6d27610631f"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Materials/Fence_Var2_2_Bake1.uasset",
+      "size": 113386,
+      "sha256": "150705efbad2f6eab04366cda7b17430f2cb89775d220d7f2d3b3064ebb89e4f"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Materials/Fence_Var3_1_Bake1.uasset",
+      "size": 118703,
+      "sha256": "3446ff7d69b606cd1b48eb9fe04d53aea357dba7d028cc60d84ab8ce14448dc0"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Materials/Fence_Var3_2_Bake1.uasset",
+      "size": 118668,
+      "sha256": "c49a18116344e3a9f99ee7b055781522c18e4170bbcf7d560bf10309d91794bf"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Materials/GateBaked_Bake1.uasset",
+      "size": 108832,
+      "sha256": "487dbfefb2b5c225392164737f3ddfbd1862102238098473d51b32678cccca53"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Materials/GrassMaterial.uasset",
+      "size": 47850,
+      "sha256": "628c26ea945a06c439dea431a2a9dc6574bb7700178365482e5bc64bee3064ba"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Materials/GrassMaterialInstance.uasset",
+      "size": 91570,
+      "sha256": "bfa4d3abe056e76b97fe102fabdf2f6d4ada4da9da7d1fc881d0ee91cfdf89cd"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Materials/GrassMaterialInstanceSmall.uasset",
+      "size": 91079,
+      "sha256": "fa0d8f2df1e65de2d98a7902cf75731bb5da2c8b06bf5fb7955cd3c2124f5a81"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Materials/Jewel_Bake1_baked.uasset",
+      "size": 114948,
+      "sha256": "17be3b90f5442b579a51a4b1af1fe2e4d88e4a7d790f8c2dae071dca140d289d"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Materials/LandscapeMapInst.uasset",
+      "size": 129631,
+      "sha256": "ebfd95f0480120e5b1796442ad7756e1c0b2e359669327f24bbfd97a89d36948"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Materials/LandscapeMat.uasset",
+      "size": 141824,
+      "sha256": "6bb03dab39aa836d1f94589fb91de5af5a5bb6d26361f27b937456090b84f5e8"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Materials/LargeRock1_Bake1_baked.uasset",
+      "size": 19230,
+      "sha256": "f24a47cfc609843f43da71606d8852703606ae3480819bdfc0022e1dbaac47ac"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Materials/LargeRock2_Bake1_baked.uasset",
+      "size": 18003,
+      "sha256": "bc9c334302b79335539ed9a2d69de813190e011200d69bd543cdab712889541a"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Materials/Leaf1_Bake1_baked_001.uasset",
+      "size": 93691,
+      "sha256": "a6fb1e5a4fdef56411f4531a96185d8e6e289505ed514b310329dfafef2fc792"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Materials/LeafMatInstance.uasset",
+      "size": 90976,
+      "sha256": "8d9fb11f3cb10ef66a77b575e7813454ce0f751f3d3a6df375b14b626f1c9cdd"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Materials/Logpile_Bake1_baked.uasset",
+      "size": 124329,
+      "sha256": "0cf4fbd3bc1c6f4f113864db8f3466345dcabaff476429631650ed3371fb9faf"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Materials/Plank1_Bake1_baked_001.uasset",
+      "size": 88354,
+      "sha256": "1132310362d4f052fdc6a02565cdf3537f594fc77b3541017bf1aa3b48f60679"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Materials/Plank2_Bake1_baked_004.uasset",
+      "size": 88415,
+      "sha256": "cd7b3b78f7eb68f691f753d08a2cd4bd3948760b54d605ceebd9ab9b3ab10387"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Materials/Pole1_Bake1_baked_006.uasset",
+      "size": 88923,
+      "sha256": "d66b7438940e5de7f6e3bdd0f5e1185a52ed6cacf0a0c726e8d92fbca23b9967"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Materials/Pole2_Bake1_baked_002.uasset",
+      "size": 88532,
+      "sha256": "ed5b7d2e8f8196d55ac498a309e6a3e0abcfb62b2371f5536a028242abb8ec6f"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Materials/RockMaterial.uasset",
+      "size": 155560,
+      "sha256": "254b1f8a2424ea82a0042ef87d7975f2a0c0bb123658297e32fa176981aedc41"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Materials/RockMatInst.uasset",
+      "size": 153941,
+      "sha256": "8b0d10fbb5250eab933f1eb3d1ddc3c18bfdef60552c469f5cd57c1f857da09b"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Materials/SingleLog1_Bake1_baked.uasset",
+      "size": 121313,
+      "sha256": "ef8ee45437b9d1685c914464ad5f93597fecbacd7336ab1748d9a2d2e28dc698"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Materials/SingleLog2_Bake1_baked.uasset",
+      "size": 110893,
+      "sha256": "eba2b706e68efb80cc6d638537ef1177c71e5aa8c24ab3b9f9ab0c84439834d1"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Materials/SingleLog3_Bake1_baked.uasset",
+      "size": 115283,
+      "sha256": "111b45498384f93ce3eea1067d03ce31e4e5f1adfbe3bfef3a3efeb5a2346dfe"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Materials/SingleRock1_Bake1_baked.uasset",
+      "size": 105543,
+      "sha256": "184b5dd22b297c54ec014249219db03aeade1a5c668f156a8d2ec823f43de3bd"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Materials/SingleRock2_Bake1_baked.uasset",
+      "size": 106262,
+      "sha256": "decb4ffd5d5bdbe5350fe5f03e8a0ab4b3b3f41f4ebc939479a7f09df25dd949"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Materials/SingleRock3_Bake1_baked.uasset",
+      "size": 110182,
+      "sha256": "5e8f4a047531698c53cba8cc91466005c65a6ea1842d0ef3b28f9554bdca5f9c"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Materials/SingleRockSmall1_Bake1_baked.uasset",
+      "size": 110830,
+      "sha256": "7596d6a2c82b25c158fda743df202117d110a9691e93711a02cbb803d97e8021"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Materials/SingleRockSmall2_Bake1_baked.uasset",
+      "size": 106664,
+      "sha256": "8bd4eaae1a54082aa5af5623330b295f9140850e58f489d31c6c97e80a10609c"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Materials/SingleRockSmall3_Bake1_baked.uasset",
+      "size": 113154,
+      "sha256": "708a0e2eb1ab1381170f56660120d57ca9770358d975b5faabdc9eaff8e56d70"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Materials/Staircase_Bake1_004.uasset",
+      "size": 127482,
+      "sha256": "fe61793d8978293d96a175378633cabe5fc0f15b0cac52d82d27fcb1b446f577"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Materials/Stone1_Bake1_baked.uasset",
+      "size": 107777,
+      "sha256": "b77c84c4b02c99545ca9b106bb87e6e418b4c5e83954c89bf17a9848ed3d1e48"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Materials/Stone2_Bake1_baked.uasset",
+      "size": 110314,
+      "sha256": "8084d36378856e7556273b9147125ef0c8acc6220803ce9beef4a5c4d67ee80f"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Materials/Stone3_Bake1_baked.uasset",
+      "size": 111382,
+      "sha256": "dbfad880a8de59268da1e358aeb3970213dd976a8c6cee5bf47c00ec6a975e28"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Materials/StoneWallBent_1_Bake1_baked.uasset",
+      "size": 120696,
+      "sha256": "4399f663f74ade3d4801f446dcfebdec0178be866ed2f2ec83053ff107764478"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Materials/StoneWallBent_2_Bake1_baked.uasset",
+      "size": 119026,
+      "sha256": "43c29558d976eb0b359955b76e6ef2ca4387789a4b950e77d5536c4ef3f587a3"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Materials/StoneWallStraight_1_Bake1_baked.uasset",
+      "size": 121553,
+      "sha256": "144dd3a2f36596d0e572cdeed0be0e8f93dca3ec609264d3a0de49e068a8d142"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Materials/StoneWallStraight_2_Bake1_baked.uasset",
+      "size": 121859,
+      "sha256": "a2935c0ae5b79d6759091307205238feaed75322b0b37377b01ae1f4690a1977"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Materials/Tree1_Bake1_baked.uasset",
+      "size": 42818,
+      "sha256": "59301678916d96cef8c223c96cd3fffc31f412339ff99d7d468742f5f9e6e85f"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Materials/Tree2_Bake1_baked.uasset",
+      "size": 42415,
+      "sha256": "6023af83f3419bca45d18ff51d7244659403a3e2e1659babe0f0da59668f2fb8"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Materials/Tree3_Bake1_baked_001.uasset",
+      "size": 42177,
+      "sha256": "51ef6c755852c8ca444ebb8b20891e3c61db079430617b9b3679b9a82dd8ef37"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Materials/WindProperties.uasset",
+      "size": 2084,
+      "sha256": "d9b6a3ff232bfac673104b1c27d8a984d9ba14e42bd335e27478f786a557240e"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Materials/Winebarrel_Low_Bake1_baked.uasset",
+      "size": 117814,
+      "sha256": "aca2844ef0f6ebde347928c4520803e29d968cc1d59ed28034916c2f7ff92e23"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Materials/WoodLog_Bake1_baked.uasset",
+      "size": 121932,
+      "sha256": "49b79d6efb74ef70ceb228d9faeb9c0ce23a076233e75bc106da99f6e48354cd"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Materials/WoodPhysics.uasset",
+      "size": 1277,
+      "sha256": "9af4b12540d7136fad6038a836df1afb4e341df87eb2ea1750888e8b2d862bbe"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Meshes/BarrelTris.uasset",
+      "size": 257730,
+      "sha256": "2acb5d8ae37644f8c79632af985ab1683a13d0ce13ef59cc563edb8fba265aca"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Meshes/BridgeCol.uasset",
+      "size": 455272,
+      "sha256": "a30094eb44ce98938b3fda1466355af872aeb9ee2b525e3437abf4d25ba65b46"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Meshes/Bush1.uasset",
+      "size": 837813,
+      "sha256": "be15a328c3404f8312c82bf80abab7e2d66f45d8cf34cde90c0870b7021f00ce"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Meshes/Bush2.uasset",
+      "size": 660470,
+      "sha256": "16a0d44e127f4c7aea334885494d0d49f0459aad14d7416c25fe511cb38f9010"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Meshes/Bush3.uasset",
+      "size": 665205,
+      "sha256": "fc9f3012a47e870fb1a7b35c754f322b9ceeb2198714ea562bb029e309b4f0fe"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Meshes/Campfire.uasset",
+      "size": 270548,
+      "sha256": "7b6f62f399984d9728382cc4e93dea59ab5689d1c5b7744aa5bccdeb840bbfbf"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Meshes/CaseTris.uasset",
+      "size": 112605,
+      "sha256": "4a8661bf0a8a5b4df6ff30a9b0c5848416c6a491b3daa9fb122da489679b113f"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Meshes/Chest_Static.uasset",
+      "size": 277279,
+      "sha256": "a32e81ee5f44d393ac79cfc108d23d63698aa4d94f65dd2895ffa8c7fe86813c"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Meshes/ChestAnimated.uasset",
+      "size": 774995,
+      "sha256": "8070997b1a4a134a99273f4939543cdd4da4a4144f35a84483bfffb0e2e0d43b"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Meshes/ChestAnimated_Physics.uasset",
+      "size": 102942,
+      "sha256": "1e3a68d40764cd247b55f0bb6cab7473193cdad434479ad60b690e1ecde39c95"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Meshes/ChestAnimated_Skeleton.uasset",
+      "size": 2166,
+      "sha256": "0bdd3a6a4ae2a299d5fceda4540dee5a4dd641bc2e4332e5f1322fd70ea2a5d1"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Meshes/Coin.uasset",
+      "size": 117647,
+      "sha256": "06ce93847786a12f8a9f6b2bfb9bc6bf6c6270c0ebfd3f8ceb3f10ea018e1e6c"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Meshes/CrateLargeTris_Box_Tris.uasset",
+      "size": 112074,
+      "sha256": "0064192499c51e6d94efd3b3850d44a33cdcd343b4651d1100873a7574ec46de"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Meshes/Cup.uasset",
+      "size": 139714,
+      "sha256": "0a712b6245359312853d13733c7a8a864e8e1976ad7543d5380d348d93bcddc3"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Meshes/Fence_Var1_1.uasset",
+      "size": 124345,
+      "sha256": "f4106de4676117a194a0416e1d8ab006cbdfc95fbb4bde08f01d1dfefcb14218"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Meshes/Fence_Var1_2.uasset",
+      "size": 124350,
+      "sha256": "d54ebd97a225c4e410d129140bba8abbcec88a2fd1a76f8fdce1e16646c39e45"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Meshes/Fence_Var2_1.uasset",
+      "size": 131479,
+      "sha256": "c202f97426d7864f657692cb1aaaf7c3958ca48a9a6b1c10811c69b733e24aef"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Meshes/Fence_Var2_2.uasset",
+      "size": 131782,
+      "sha256": "7d1a9e6d55dead8dd4e47c488674c855c6d887c53d80349703eea85d9be01cee"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Meshes/Fence_Var3_1.uasset",
+      "size": 137429,
+      "sha256": "e0e23638d5435bda9af3e1a6cd8b59dfe1203f5aac8c6a1cbf75c25c53699719"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Meshes/Fence_Var3_2.uasset",
+      "size": 137038,
+      "sha256": "4c1a634c790356af328d9b76984a1b96b45cce877460c82aa66efb248a478b0a"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Meshes/GateAnimated.uasset",
+      "size": 392425,
+      "sha256": "6496866528b18505bda88f7c0ee2aba38e8392ca9e8e093ceec8557337200d1f"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Meshes/GateAnimated_Physics.uasset",
+      "size": 95713,
+      "sha256": "fa96a95be5dcbbb83af3f2d23c34e269b16315a1c681d1375555fb31d78933d3"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Meshes/GateAnimated_Skeleton.uasset",
+      "size": 1969,
+      "sha256": "f23316863ddb5f41fc46cd27a4d8baa1927d354fe7481f4ab2e22d98610b3242"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Meshes/Jewel.uasset",
+      "size": 102734,
+      "sha256": "947910d62654630536445ef9b17b9c8e5cd4c3f1014df818881f332fd0de1f27"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Meshes/LargeRock1.uasset",
+      "size": 140339,
+      "sha256": "2c6311419f6cd6c3f2b65d46be2cbc1b64158478f3a99d59287b342066c29464"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Meshes/LargeRock2.uasset",
+      "size": 145138,
+      "sha256": "624926c25ada36de0f6e4b42b0a5a98f13a65e5148fb3d6700d4f05de0993286"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Meshes/LeafBent.uasset",
+      "size": 74913,
+      "sha256": "ff5b84f36e966fdce84ab433f50e447f7830794f88419de3eae97b0568fa8429"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Meshes/Log1.uasset",
+      "size": 112721,
+      "sha256": "0719a1c7f119050f74d60360100b792c33b63681c8e752ffa0d1713c04460510"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Meshes/Log2.uasset",
+      "size": 113187,
+      "sha256": "491a15306722eb40f023225045a76a1a9a25000ffa5841fb447b4c48bba38a19"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Meshes/Log3.uasset",
+      "size": 113489,
+      "sha256": "30e9abd7d497ce88a9cfd1cc9d02aa2e9e97bfca2653daf3f774d354894e9fea"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Meshes/Logpile.uasset",
+      "size": 234372,
+      "sha256": "3b48cbbc7b609f78b94c123ddf2d81cc2250f989f3721ab2594def73a16d120c"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Meshes/Plank1.uasset",
+      "size": 95487,
+      "sha256": "c298a5d23901f881ec5de9e4b879ab549f968b616cf751849506e100a250eb85"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Meshes/Plank2.uasset",
+      "size": 95470,
+      "sha256": "a37f04fe1a38a93347d68adb7534d8c3bdfee03cf1fb02eec0abc16dde04e462"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Meshes/Pole1.uasset",
+      "size": 97426,
+      "sha256": "57fa50c13b139169e7c8fb0e71240b10d5ad861574c59d2d9574ebdb92d16ca6"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Meshes/Pole2.uasset",
+      "size": 97478,
+      "sha256": "de01b272702e52418b31ff2b7cf33bf345b175b300fabd5c4c0043da6bd170b7"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Meshes/Rock.uasset",
+      "size": 154581,
+      "sha256": "3fecaff86accc44ac9d5ed94bdb80c79fdfd8f146ca806ac6b468043f198163d"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Meshes/SingleRock1.uasset",
+      "size": 144664,
+      "sha256": "e0e6359285d8459fc0a3ecff651d3fc5d4d04fbae5da32dad86e110c085101f3"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Meshes/SingleRock2.uasset",
+      "size": 139368,
+      "sha256": "5140310659726258d609d93b687eeea776ab181014f498f4b9a925a1bd4a89f8"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Meshes/SingleRock3.uasset",
+      "size": 144525,
+      "sha256": "28d41b7b71b10694ce08447f3c63c30af82bdaa3f407f32808f186c3d7e73a5c"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Meshes/SingleRockSmall1.uasset",
+      "size": 135804,
+      "sha256": "4019c963ccc93611f100106ae3b2f00bef0475e2c7af54a2a5264e3134a86e1d"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Meshes/SingleRockSmall2.uasset",
+      "size": 126557,
+      "sha256": "444dfcfc9083995a4d1c901f95483283e64ca1c455547d5815b751db6f1a9c96"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Meshes/SingleRockSmall3.uasset",
+      "size": 135577,
+      "sha256": "bee4b66e0fd39fcf01635dd4341fe11d4a5b3f31cf0262f709850bafb577b6fa"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Meshes/Staircase.uasset",
+      "size": 195009,
+      "sha256": "954151bfc455bd2ebb40940498e33ec5996c6605bd0d768cbf65e45edb95c3c6"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Meshes/Stone1.uasset",
+      "size": 132483,
+      "sha256": "8b5133f4fc7e41024bcba791700c18e1e97a193bf45fdecb8f3e348de008fed0"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Meshes/Stone2.uasset",
+      "size": 136580,
+      "sha256": "8e208525fd62afa2abcde241904dffd7884299fd3f060f4f05ccf5fb0eb104d3"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Meshes/Stone3.uasset",
+      "size": 132319,
+      "sha256": "fde2d1909be11a29e4047ce0edf3ba70d8e84cf5dedb02c9fe26764e6ecf998f"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Meshes/StoneWallBent_1.uasset",
+      "size": 348978,
+      "sha256": "cff0c2a6c91d0659722294cd9ab8fd6c2c30242956e2478faec254ac06c1c964"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Meshes/StoneWallBent_2.uasset",
+      "size": 348186,
+      "sha256": "6535cc03718e2baf455ca9a0d61d39c824b60678be2e321ba1f132f69ecd1405"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Meshes/StoneWallStraight_1.uasset",
+      "size": 334711,
+      "sha256": "34f3fed4b4bd8d7e2e63a1e736da7c6928e264ccd58f132650eb9a837725eefd"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Meshes/StoneWallStraight_2.uasset",
+      "size": 334902,
+      "sha256": "17e21c1aac10bf528f18724b52f318905a786b16cdb5d134dbceb1416cf2f1c8"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Meshes/StylizedGrass.uasset",
+      "size": 118777,
+      "sha256": "14d5120d85156010f3abe02fd99f494419797c272988ce45c1cb02043a73553f"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Meshes/StylizedGrassSmall.uasset",
+      "size": 111261,
+      "sha256": "dbdc3b43acad07cbdeedf35a1ac42a29a02923148289d4d768f93564b4a6543f"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Meshes/Tree1.uasset",
+      "size": 1162265,
+      "sha256": "f2353dcb6439481e2ea5fca075904569f3983af6e5f140f446de70674c8808cc"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Meshes/Tree2.uasset",
+      "size": 1123831,
+      "sha256": "fc0acb8e498673a184f3d21c640c2511543156eafad9bab2e9de4e5acd44c76e"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Meshes/Tree3.uasset",
+      "size": 1133793,
+      "sha256": "db81397a7c82cacf81ed0710ead93428b59af9102c747e26364fde4970408d9b"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Meshes/WineBarrelTris_Winebarrel_Low_Baked.uasset",
+      "size": 293656,
+      "sha256": "153ddec08d9ebb7c0f23d64e673a78285bb1efee5898e6c2909ea55451032a8a"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Meshes/WoodLog.uasset",
+      "size": 106997,
+      "sha256": "7eca806d1811d05a471ea8a64a93cce94fbe336e0dda960ec30f4d5b2aa9657f"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Particles/FallingLeafsSystem.uasset",
+      "size": 717420,
+      "sha256": "60ab0149ddf54b28129fa48a139be1f588e36277e17ad9606d057dcda8f2603a"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Barrel_Low_Bake1_pbr_diffuse.uasset",
+      "size": 10823420,
+      "sha256": "88f0b2419d4658412a17b48dc9728b126b300137b9c047e40d9bf7c3d7611933"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Barrel_Low_Bake1_pbr_metalness.uasset",
+      "size": 3225940,
+      "sha256": "8008b791778358f1e887cf7472379653e135685c65f2f7827e86943b9e2888fd"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Barrel_Low_Bake1_pbr_normal.uasset",
+      "size": 9711614,
+      "sha256": "b49c03f66e176de32ab03cb933964c95a594f1c10cdf5489168a33e19e275b3f"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Barrel_Low_Bake1_pbr_roughness.uasset",
+      "size": 5275112,
+      "sha256": "d1e7a771722eacde48c1132d0cd23a8c8fdec20f5b1bbc3668ab3ed927e4b669"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Barrel_Low_Bake1_pbr_specular.uasset",
+      "size": 2805342,
+      "sha256": "b0f6fb11e5fb1047405b3e98c14af07a83682bc3c8d9feee9d774e5421771eb7"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Box_Low_Bake1_pbr_diffuse.uasset",
+      "size": 12113146,
+      "sha256": "733b10df50e9189cfcc44b852e556491f95a1c38a6246cd33d9d6aaffbe64c7e"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Box_Low_Bake1_pbr_metalness.uasset",
+      "size": 55085,
+      "sha256": "81c0760e1da83a0832bb2be07e3661e2f3fd7342ec63415e7e06b12dbe122856"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Box_Low_Bake1_pbr_normal.uasset",
+      "size": 6810301,
+      "sha256": "beaa51eae8382da42e3f6b50d6d864601e0c15961f57d357bdd1495d61beb899"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Box_Low_Bake1_pbr_roughness.uasset",
+      "size": 5376341,
+      "sha256": "81ee1f89d35ee0c9f6283c56614e2ef2b254e265f1db2ab5ee738ccb887386bf"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Box_Low_Bake1_pbr_specular.uasset",
+      "size": 3959887,
+      "sha256": "f8653469b23520dcdcf14165c96f746e0d50395efa323febdb6d6210cf11cef8"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Branch_Bake1_pbr_alpha.uasset",
+      "size": 223145,
+      "sha256": "647d0f229a4fc76e973fd62f981aa3850c2227eaa96c93b5c683ed6f2fdf5dff"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Branch_Bake1_pbr_diffuse.uasset",
+      "size": 1854422,
+      "sha256": "84805e8da663c9d1b51dca45b95601eb6c3d727e5a60270d3b406ec587466309"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Branch_Bake1_pbr_normal.uasset",
+      "size": 1940984,
+      "sha256": "5e5f746c032799dff4ba485bbbe3ad3139b21bbea5a2bc85372ec9802754f31e"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Branch_Bake1_pbr_roughness.uasset",
+      "size": 245328,
+      "sha256": "7c0604627c841d181deaed2f1140ed82ab6613ee714e953ecaa2541e980b5078"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Branch_Bake1_pbr_specular.uasset",
+      "size": 244893,
+      "sha256": "df7e56858e18c72951f79ede856f5a444c6b7ead3a1e7be7cc57a459840e3058"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Branch_Bake1_pbr_sss.uasset",
+      "size": 707847,
+      "sha256": "2c77541c7b2b24c46915f4777fbe65367e6216555fbbd484bbcc36bd4e350e93"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Branch_Bake1_pbr_ssscol.uasset",
+      "size": 1537315,
+      "sha256": "0bfc728d4c4a200ff6ce35c12c9e93fc0db792cd822adbdec916d6caa2a7449d"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/BridgeBaked_Bake1_pbr_diffuse.uasset",
+      "size": 16237399,
+      "sha256": "507eda77280cf1f1630221b64124339ee307da2c5d37ebf40b1e0f940717d3f4"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/BridgeBaked_Bake1_pbr_normal.uasset",
+      "size": 40138798,
+      "sha256": "e17ca2720858359c1b13ecbfb0fa22dce5915ffa011a0e7a617bcb80c421d90b"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/BridgeBaked_Bake1_pbr_roughness.uasset",
+      "size": 8336357,
+      "sha256": "1b2718ceff9fa581aa03fb0a549c63188a1dd4bb38ad1dbe2a92d35ea6f90bf8"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/BridgeBaked_Bake1_pbr_specular.uasset",
+      "size": 8334712,
+      "sha256": "2718b4329aafcc027b4ec61374f747a49f9e5bc58ca81d0f7356d4002823dbfc"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Bush1_Bake1_pbr_diffuse.uasset",
+      "size": 13495002,
+      "sha256": "d0f1d2d63a126789ed6d68276e78cf12eb75001c9b957fa999c3006ebbd29a8b"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Bush1_Bake1_pbr_normal.uasset",
+      "size": 31351225,
+      "sha256": "f2bb80db2dd95a565d4c2a96a4d035c5504e5d5f9bb74eac5fd9f05ad37ee7f2"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Bush1_Bake1_pbr_roughness.uasset",
+      "size": 8278686,
+      "sha256": "e596a759834879da94958aa67ab73bc64c474078ac0b46d4002a6e3917f950bb"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Bush1_Bake1_pbr_specular.uasset",
+      "size": 8269678,
+      "sha256": "28f99ad75ba5d42d6ba5d20355d8989a491ce44fca1f28b4c2b2e0d92a408134"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Bush2_Bake2_pbr_diffuse.uasset",
+      "size": 12054850,
+      "sha256": "79b1b66defe9fbb0d64e999d65477d94af1e0cfb572041e0b064bbd1c2bd1e32"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Bush2_Bake2_pbr_normal.uasset",
+      "size": 21068681,
+      "sha256": "c87006c68c145afc43e5bc5c068c148ce13ce7e61d9e63666cb7953a5a718616"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Bush2_Bake2_pbr_roughness.uasset",
+      "size": 8209639,
+      "sha256": "2fbfb812a30019e48bd02fa93e43e5f4fd0f66dbe145440ea4eca3306f320ba0"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Bush2_Bake2_pbr_specular.uasset",
+      "size": 8203671,
+      "sha256": "a913a5165f8037afdb7b3b463d83c92047bfd5629a8b35aa88da8a076fe56230"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Bush3_Bake3_pbr_diffuse.uasset",
+      "size": 12014894,
+      "sha256": "a027dbe1b5d25bdd3a67f774608993196f418d91ba7e77e8892775bce56407bb"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Bush3_Bake3_pbr_normal.uasset",
+      "size": 21098018,
+      "sha256": "3e300e5526d2e765f47b2e358c8830c66e4e8b483832769c137c9b3897e09b0d"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Bush3_Bake3_pbr_roughness.uasset",
+      "size": 8209653,
+      "sha256": "44dc66e9f04120c7ec389667ea269d519d8d1d1d28b612be12c55fe7bd66c5fe"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Bush3_Bake3_pbr_specular.uasset",
+      "size": 8203685,
+      "sha256": "d7f9ca1b863e6e9e38f8f335914b04eed7f80a8a3fa0815132b8ee08409d2438"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/BushPlane_Bake1_pbrs2a_alpha.uasset",
+      "size": 1840467,
+      "sha256": "5b20e843a05f0f9037407e0f23d8e7951e3abb1aa568b70b6b36521a661841c0"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/BushPlane_Bake1_pbrs2a_diffuse.uasset",
+      "size": 3502975,
+      "sha256": "93de6f0e15289839e1f5bde9262cdba50a5a33779c5abad237e34dc7d42a5be7"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/BushPlane_Bake1_pbrs2a_normal.uasset",
+      "size": 6395515,
+      "sha256": "647bcd44424e78bc7c120884337cfc1a2ff5cf979a52ec1052b982481787ee38"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/BushPlane_Bake1_pbrs2a_roughness.uasset",
+      "size": 2406055,
+      "sha256": "1044016930994a2385ab7e7f66d91a01bb3f48cf1635e7c90c06ded3b681d2fc"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/BushPlane_Bake1_pbrs2a_specular.uasset",
+      "size": 2404116,
+      "sha256": "befc187a5c7a91bad0935c85a4235fec8b41c57e5d8eb89dd7afab384095950f"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/BushPlane_Bake1_pbrs2a_sss.uasset",
+      "size": 2437302,
+      "sha256": "e97f0ba071fd694d95b819a8a6fec31025f02a224f5702353093a745b12c34ca"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/BushPlane_Bake1_pbrs2a_ssscol.uasset",
+      "size": 3229640,
+      "sha256": "85a44a84ce0d6f661188a05d30e2ff655de27aa3be8113db6bb528f499a1d52a"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Campfire_Bake1_pbr_diffuse.uasset",
+      "size": 27366974,
+      "sha256": "c23eb283194437ad37f9921fedd43df5b4772e9b130c35957ce7972870cf1a65"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Campfire_Bake1_pbr_normal.uasset",
+      "size": 70562799,
+      "sha256": "0ae5d49ecc341326566865b211d1e310c22e88c616f37cb302346d41f42752e2"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Campfire_Bake1_pbr_roughness.uasset",
+      "size": 12615007,
+      "sha256": "fa01f7147ea1a68ba30a381d8a7b5598d55b6e2ce5e149c68bd980de2ce0a975"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Campfire_Bake1_pbr_specular.uasset",
+      "size": 8419720,
+      "sha256": "a9276e8df6907e6a5b87292e5d6610d8330c61f64175d27527990c8a68c2ef89"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/CaseLow_Bake1_pbr_diffuse.uasset",
+      "size": 5757138,
+      "sha256": "b215aabff0a1d16482b93fca1bc86d3d8f5617587136f521c876d5e4bce4b4a8"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/CaseLow_Bake1_pbr_metalness.uasset",
+      "size": 1913480,
+      "sha256": "5cbfffcccb9438312b5b6b5ec90a7c2898095661f3aa6894bd451af1edbec4b3"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/CaseLow_Bake1_pbr_normal.uasset",
+      "size": 4667493,
+      "sha256": "c6577f56543a3bcb057595e1caac9798f49197a6b96daf84d9abae56bfb02ae1"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/CaseLow_Bake1_pbr_roughness.uasset",
+      "size": 2354417,
+      "sha256": "4671ba19c04986b89cff99b43b19c27f68004102ec21c1cd8db6e9ef142401ea"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/CaseLow_Bake1_pbr_specular.uasset",
+      "size": 2266719,
+      "sha256": "09464606e2b6eb8bfa1c8d4085081d1e2f72a9cfe79de14dc782cd1c9f94db57"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/ChestBottom_Bake1_pbr_diffuse.uasset",
+      "size": 8106869,
+      "sha256": "7744b4892025d13b7551ed09deab9446fa388e7ba51653bb6a136832b633a94a"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/ChestBottom_Bake1_pbr_metalness.uasset",
+      "size": 2434901,
+      "sha256": "b4bb510c541afacb48376f8a31b04315762c320974bf240fdbe45b72696a14f2"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/ChestBottom_Bake1_pbr_normal.uasset",
+      "size": 6332456,
+      "sha256": "a7a035c4bc38fbfa2ebcf8f4a04ab462dcf4e4e8164925b20f5fbb2b45e46d44"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/ChestBottom_Bake1_pbr_roughness.uasset",
+      "size": 3232945,
+      "sha256": "bd94a5d2c9c1af82d754b579a44b95ae4a2584b290b6c347f6af3f3dcbc49f52"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/ChestBottom_Bake1_pbr_specular.uasset",
+      "size": 3122384,
+      "sha256": "b010febacf43aaf0997e5ea86ff91c1b37afc91e56ba24fcb4124db05f434d22"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/ChestTop_Final_Bake1_pbr_diffuse.uasset",
+      "size": 8601239,
+      "sha256": "aa5fb868e9ae54ef8308aa020a1ee48236ba4ae05c9e7ba96ee5b66519a67b4c"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/ChestTop_Final_Bake1_pbr_metalness.uasset",
+      "size": 2554782,
+      "sha256": "17475c5252f6db383cc68ab9685f916434845c2afda6eddb5cdc2b6bf9c331c4"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/ChestTop_Final_Bake1_pbr_normal.uasset",
+      "size": 6706370,
+      "sha256": "9936c4a1bf009604dde46fd35748b9d4b4ca50162b9e4374e52ae1e2a793df44"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/ChestTop_Final_Bake1_pbr_roughness.uasset",
+      "size": 3645373,
+      "sha256": "a49f232f0d4630acdf1a2679c340ee9206b27d9bdebca6b52b6b3232a6670bab"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/ChestTop_Final_Bake1_pbr_specular.uasset",
+      "size": 3416411,
+      "sha256": "738342a4971df120a6fbd3287d053befe4c9941a6c2a726442dbd59f2e0c729b"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Coin_Bake1_pbr_diffuse.uasset",
+      "size": 6167704,
+      "sha256": "c869a5aa5d865f54c1a48bc241bb995c01b8646e3fe799921827db8b7d1ca119"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Coin_Bake1_pbr_metalness.uasset",
+      "size": 6173081,
+      "sha256": "b85214e4d876fd53447f08a9935e1a355e589afe68af751a351a8b7fef1a72c4"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Coin_Bake1_pbr_normal.uasset",
+      "size": 10102915,
+      "sha256": "998e71fb5421bc2a0b4b22e5208479fc6de80c8811f267d53677829a74b37613"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Coin_Bake1_pbr_roughness.uasset",
+      "size": 3126115,
+      "sha256": "e16f6e8751450b2e0204969ec1081646c062abb3304ceb7d76d228a4dda267ce"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Coin_Bake1_pbr_specular.uasset",
+      "size": 2094421,
+      "sha256": "bcda8358b8a0446b4aafb3b7875aaae637eca2b5dba75bdf170b0a1f6ad34c16"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Cup_Bake1_pbr_diffuse.uasset",
+      "size": 7268078,
+      "sha256": "8a5b7536715c3359a83e2634ee03c463dfbe7c5330e172cf853ab03cd04c3988"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Cup_Bake1_pbr_metalness.uasset",
+      "size": 7275258,
+      "sha256": "9f58a68b9bfb19822c5d84d24ffb7428cf29799336e2184368d48263e22f1213"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Cup_Bake1_pbr_normal.uasset",
+      "size": 13669892,
+      "sha256": "c0ef85ff114c58bde815f55bfe446af694d8e8daefef8858f5378878a2f82ee5"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Cup_Bake1_pbr_roughness.uasset",
+      "size": 3437783,
+      "sha256": "33d87baf474c9bd71a51fbbecd4132fe8bafe372141fa5cf833f3794840d721c"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Cup_Bake1_pbr_specular.uasset",
+      "size": 2104945,
+      "sha256": "56ffbf849b23ca53e29aef56423f322b03a9e1f68eace665f0dabab50df2332c"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/DirtMat-diffuse.uasset",
+      "size": 6165001,
+      "sha256": "0a5b3eeed505a3d35ebd788ad433ecd45d1d1fc653d785d1fb491abde3e53dfa"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/DirtMat-height.uasset",
+      "size": 733565,
+      "sha256": "e5884380ab7d7b9bb0fe038374d9c11468e08262a562125d1fd7e42640f5700b"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/DirtMat-normal.uasset",
+      "size": 12065602,
+      "sha256": "0fbd744d2e0b3f10df9df0639fdf2e13e8d6c4b2fbe50821b629d4dfeebe6fb5"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/DirtMat-roughness.uasset",
+      "size": 2928570,
+      "sha256": "c9e8e346fb6158ad4ee3957c4708919d231385933264965b7ba57485bd920a66"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Fence_Var1_1_Bake1_pbr_diffuse.uasset",
+      "size": 15190035,
+      "sha256": "cefd9b2e78d51f0acb51e3c446ebee000b0244d0fdfb23f2fcf03ddc9701471f"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Fence_Var1_1_Bake1_pbr_normal.uasset",
+      "size": 10175371,
+      "sha256": "1640879a728de0e09c8cda853d9732c1b019965ababbf3de56a93e54a1564c72"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Fence_Var1_1_Bake1_pbr_roughness.uasset",
+      "size": 4873308,
+      "sha256": "3a70a00b75090a3362e3e0bfb64c197855b6cf4035e74024d2e0dc2504b2f0f8"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Fence_Var1_1_Bake1_pbr_specular.uasset",
+      "size": 6836589,
+      "sha256": "ddb37fd056cd7fb9147f0641516df563c78e590a450de4e356979fb4349ccfca"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Fence_Var1_2_Bake1_pbr_diffuse.uasset",
+      "size": 15190216,
+      "sha256": "0351fc88141c07faf6e8251fc1e4bb78226204212420b28156dcfcfc1dd2d67d"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Fence_Var1_2_Bake1_pbr_normal.uasset",
+      "size": 10175326,
+      "sha256": "00badb4cdee54771fb1aa756a350060abd4a3e2ef63c307ba9fbc3930bef173f"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Fence_Var1_2_Bake1_pbr_roughness.uasset",
+      "size": 4873305,
+      "sha256": "a03589c533a842b2465c2f8ec2f55b1e2950c626f3e5edac6807050081712c41"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Fence_Var1_2_Bake1_pbr_specular.uasset",
+      "size": 6836742,
+      "sha256": "0b3d42dc7a03f79e485fb4d12001c7f095aa087590442a225da51685e0fbfbaa"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Fence_Var2_1_Bake1_pbr_diffuse.uasset",
+      "size": 13534264,
+      "sha256": "ca5e7107c8b2cda10b5ba9bdc63c40974be9481ac949c3645d4a06fc10f93c54"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Fence_Var2_1_Bake1_pbr_normal.uasset",
+      "size": 9626167,
+      "sha256": "e5595af986beca1058b1364f884f41c4f3fcf84ce5a19c4d7fc3850f844bd218"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Fence_Var2_1_Bake1_pbr_roughness.uasset",
+      "size": 4441698,
+      "sha256": "0abefdb684947e0aa9654ef6fa91a1dd88331a730a877d495421bfbb6e615c43"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Fence_Var2_1_Bake1_pbr_specular.uasset",
+      "size": 6146992,
+      "sha256": "9f0883064ef71f2e4557c1c7e02d5dc45755b3d28efff9556eb1272bbccd03c2"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Fence_Var2_2_Bake1_pbr_diffuse.uasset",
+      "size": 13534264,
+      "sha256": "8b2c1216a97a92538bacd307cf62e0c07807ef34734172a8f539638709c74d13"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Fence_Var2_2_Bake1_pbr_normal.uasset",
+      "size": 9625853,
+      "sha256": "a53f759fe60cffe5f2086b7389a2ffcbb8bedf332d1accbd921ab728866449ce"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Fence_Var2_2_Bake1_pbr_roughness.uasset",
+      "size": 4441698,
+      "sha256": "d13ccab4d2ddece7692f8ea711dde71537c047680703b3ad04779c7767c912d2"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Fence_Var2_2_Bake1_pbr_specular.uasset",
+      "size": 6146992,
+      "sha256": "8a178c616675e6385437b3926828217bb166a6d30782b6151490babff789c58b"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Fence_Var3_1_Bake1_pbr_diffuse.uasset",
+      "size": 13823976,
+      "sha256": "08455a7b29051be4db89fe87ea1d5ab44b3dca66de6a53bf5abf4536736edaad"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Fence_Var3_1_Bake1_pbr_metalness.uasset",
+      "size": 76613,
+      "sha256": "4a491ca43821ed6fb06e10385b42aac1092239fdcb7107ee83858f73aacc4acb"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Fence_Var3_1_Bake1_pbr_normal.uasset",
+      "size": 10063534,
+      "sha256": "107b88b6e4dfd2574c7908a472d1895111580b6798dcbb7052cfb1716b2182ea"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Fence_Var3_1_Bake1_pbr_roughness.uasset",
+      "size": 4525522,
+      "sha256": "a434419078319d6af473b5f52253f8b042e71ae9dc897864d2a0b352ea86ec9b"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Fence_Var3_1_Bake1_pbr_specular.uasset",
+      "size": 6187775,
+      "sha256": "9742309e8a4d687313638527b55aa0db46c29735e847deb959697df4882cca7c"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Fence_Var3_2_Bake1_pbr_diffuse.uasset",
+      "size": 13801439,
+      "sha256": "7b62b300a1be96183316c213dbe955e515a3bc75d846a508336268fadf1dcf62"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Fence_Var3_2_Bake1_pbr_metalness.uasset",
+      "size": 84648,
+      "sha256": "e394975851d1e6ea5ac28ec18453f7fc9275606e10e4b0a34eec3b4380ef7e7a"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Fence_Var3_2_Bake1_pbr_normal.uasset",
+      "size": 10047686,
+      "sha256": "d3edc2d6817c4ff848242850dbc065d48cb7630d2d00ae46062c214e7f11454a"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Fence_Var3_2_Bake1_pbr_roughness.uasset",
+      "size": 4523692,
+      "sha256": "55fd8358b8e761aa22d5a7b4ddba468af7c9dd820d2493912c03aec1ce608ea5"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Fence_Var3_2_Bake1_pbr_specular.uasset",
+      "size": 6178002,
+      "sha256": "42b1e3612ae41ecd0827054a6b137512aefd2fee676dcb9e945e0097fb3f9114"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/GateBaked_Bake1_pbr_diffuse.uasset",
+      "size": 11178340,
+      "sha256": "faa75b04c5ef79555d7e51a55dc321b02bc9a3fad37be69cbb38b9b970f3bc4a"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/GateBaked_Bake1_pbr_metalness.uasset",
+      "size": 453766,
+      "sha256": "4368653c58f0750b497e421552502971d901566fe9c490cf15f9d4ef7569d579"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/GateBaked_Bake1_pbr_normal.uasset",
+      "size": 43419461,
+      "sha256": "43ca30120136dfdb51cdbd2aa648a878732076ff402ea6c7e3d13bcac012cda9"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/GateBaked_Bake1_pbr_roughness.uasset",
+      "size": 3977917,
+      "sha256": "75ae999aa3029dcfd870581fad8a3f3547d2718790535bc29d772bad1fec5c31"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/GateBaked_Bake1_pbr_specular.uasset",
+      "size": 4931376,
+      "sha256": "f87c29561b54c4342c39eda151040d6a3f6f385ddee5cf68323e6bddeeb0f4f9"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/GrassVariation_Texture.uasset",
+      "size": 5677331,
+      "sha256": "0cbfe0ba38c0c9441cbb3e5730a9d8268ed2c079943543e8f710cf70062f14f7"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Jewel_Bake1_pbr_diffuse.uasset",
+      "size": 5271420,
+      "sha256": "3c2500b75dcebf947a2e14dd8c8fc51d2daf2624fc1d740f9b8f59d7f3d58881"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Jewel_Bake1_pbr_metalness.uasset",
+      "size": 5277354,
+      "sha256": "ccb02a15f128a095e534b2e8e9f0d2791627cd5b35c80ea8e720569c85568e75"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Jewel_Bake1_pbr_normal.uasset",
+      "size": 7714652,
+      "sha256": "e64f8c1f085970298f6b4a025296eb90d6ccb53e0be21cd514e1dc5e9185505c"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Jewel_Bake1_pbr_roughness.uasset",
+      "size": 2863549,
+      "sha256": "5c31ce33b5dd6055a1c528e6147526f5264d643e2fa70b4794ce9eb4ae15a7c1"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Jewel_Bake1_pbr_specular.uasset",
+      "size": 2092629,
+      "sha256": "ddd2e9a974c3e9a12d22f11cecae4d95f463046c9bc664f6cdd89ddb2900ffd3"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Jewel_Bake1_pbr_transparency.uasset",
+      "size": 2062322,
+      "sha256": "f1f9fa9dd03c63cce0ac6a2bac2ee384b0fb022eda73915dfc10b8627d662dce"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Jewel_Bake1_pbr_transparencyroughness.uasset",
+      "size": 2052744,
+      "sha256": "ea3a9f28066b3d81dbb7214b50f74e388fb78ebb7f6efc0adc4090238c20b089"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/LargeRock1_Bake1_pbr_diffuse.uasset",
+      "size": 28099301,
+      "sha256": "a3ff37f75a3ae3fca259e36cbb7c9877d19a6e717371346cc92ba91bde809f90"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/LargeRock1_Bake1_pbr_normal.uasset",
+      "size": 64165071,
+      "sha256": "84b1a9bece7c4547e7ab608e0973fb5e11e3c9431dd209ca72ae1c59f0875832"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/LargeRock1_Bake1_pbr_roughness.uasset",
+      "size": 11137896,
+      "sha256": "f9e9d5faf69d75e0c8f2d3949a447acd91fd440150cd18ef02474e2b16c05a52"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/LargeRock1_Bake1_pbr_specular.uasset",
+      "size": 7856691,
+      "sha256": "dde53846c5c2bcec38ff0b05c53dc6583d73d8ae9b1bdb2d08fd0c513021d5f0"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/LargeRock2_Bake1_pbr_diffuse.uasset",
+      "size": 26343302,
+      "sha256": "2c2235ecd0b62193f7c4d4a562341eadcb1cc2a913411002e7eaa23ea885b9cc"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/LargeRock2_Bake1_pbr_normal.uasset",
+      "size": 56538612,
+      "sha256": "5ae3b3ecec52a45d445839b1492c27da3019f587de68347295263b2ba1634763"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/LargeRock2_Bake1_pbr_roughness.uasset",
+      "size": 11307465,
+      "sha256": "51252d4bf27cac8d8c14caa5b7d32b4b883fb908b82ae55a0b0f3954fa8e0b32"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/LargeRock2_Bake1_pbr_specular.uasset",
+      "size": 7915212,
+      "sha256": "c07cd785d92c3b5dfca24658552ddb0ba7df550c3a896563cb3a8630012183ef"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Leaf1_Bake1_pbr_alpha.uasset",
+      "size": 33913,
+      "sha256": "a62cdb51c2454a7b22031ab66a310056823cbde87404c4d407953a849821a970"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Leaf1_Bake1_pbr_diffuse.uasset",
+      "size": 787094,
+      "sha256": "bf6aeb2d1b8f010a353974f9669691bffd3be40a2244d027f90e6c4af3f13fc3"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Leaf1_Bake1_pbr_normal.uasset",
+      "size": 700915,
+      "sha256": "4225de097c5cefd1b68e0902a412ebe74cf52c0f4de79c1f2bd86e8e83ce6bff"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Leaf1_Bake1_pbr_roughness.uasset",
+      "size": 32675,
+      "sha256": "260d7dd5d21287ed34a8a25c5fe6b67b2f1635e7194fac36be788d67b698e9ed"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Leaf1_Bake1_pbr_specular.uasset",
+      "size": 32669,
+      "sha256": "4e804e52c645ddc7fc50417c05a1bb6c386b68a869d284eb03cc4ee3db1ee3e6"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Leaf1SubSurface.uasset",
+      "size": 1398390,
+      "sha256": "d06247c5c09a584619900c715ca8e63827554906a925d739ed5f3ee2c7d1c002"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Logpile_Bake1_pbr_diffuse.uasset",
+      "size": 22807623,
+      "sha256": "d81f4829588d1d34bcfb0dc2d8fd5aae2b92a398b5e765a0c0eb22d934781671"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Logpile_Bake1_pbr_normal.uasset",
+      "size": 78948714,
+      "sha256": "55c419d5e5598e61638d9e5eaea3e5678dbad09a2e1cdd1ea0fcc083c5fbc215"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Logpile_Bake1_pbr_roughness.uasset",
+      "size": 8224231,
+      "sha256": "76cde2f483945c612e2aa1adcb148dbe073617340004f3840f85d139d3097571"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Logpile_Bake1_pbr_specular.uasset",
+      "size": 8221885,
+      "sha256": "1fbf87d30b6226fecc816816d2265275a7894e154b55585ab538cc1b3af29dec"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/MaterialGrassMat_diffuse.uasset",
+      "size": 27881091,
+      "sha256": "6f3d8245a43f9618e158eaab0351f7394d43bb558f758457493490f0c364bd94"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/MaterialGrassMat_height.uasset",
+      "size": 3869759,
+      "sha256": "1be096399ed222cb365e791e2e2c99db2df5fbe586298a3a298276c4da01df3d"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/MaterialGrassMat_normal.uasset",
+      "size": 51244748,
+      "sha256": "9c993cf4d0336ce32a38d686890a985db6e3101c2662df173682068e8595dcf8"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/MaterialGrassMat_roughness.uasset",
+      "size": 26375180,
+      "sha256": "d3e22b06ea7c612cf31fad1477c2c302c329a3e475250d7d70a3911a5cfe4e1b"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/MaterialRockMat_diffuse.uasset",
+      "size": 32638843,
+      "sha256": "495b863d4812805ace9fd84b11c2acbcf6e8c5ae80736b1bcfdc8137678c598d"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/MaterialRockMat_height.uasset",
+      "size": 4151931,
+      "sha256": "7a600528b3a519fa23761d4369af832728bf3512177f129b53de03af33887c9e"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/MaterialRockMat_normal.uasset",
+      "size": 38361836,
+      "sha256": "9440993d2b4fbd2b91c42e2ea476c156518c400bf68d10a171dc974caa10c3ab"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/MaterialRockMat_roughness.uasset",
+      "size": 10388239,
+      "sha256": "198ba6f0fddad29da6f27d817d7c058d061037dfe9158b04d1d081c5fcf93a4a"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Plank1_Bake1_pbr_diffuse.uasset",
+      "size": 1708059,
+      "sha256": "fe1d129e4e15b47f114f1a20b0056b99d4838ce188fe7f21ad5462e0e0e5ed1c"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Plank1_Bake1_pbr_normal.uasset",
+      "size": 1388937,
+      "sha256": "9045b8efd615109bf0c7a0b6bdd302d20c1ba2fed31a10936b2a36b20ef4c52e"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Plank1_Bake1_pbr_roughness.uasset",
+      "size": 672921,
+      "sha256": "c6aef0eb15b46424351104cf8751f6e74ac298d9396ecae64a34a2687337c195"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Plank1_Bake1_pbr_specular.uasset",
+      "size": 869559,
+      "sha256": "c26fab0d817807b20c97d030f73eb572cc5b7d477402378ab78193a9455bcf6e"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Plank2_Bake1_pbr_diffuse.uasset",
+      "size": 1727376,
+      "sha256": "57ea16b89f7503013392973e7452398564d075b4683d3392b04c6a86aba80f7e"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Plank2_Bake1_pbr_normal.uasset",
+      "size": 1453611,
+      "sha256": "0f3f35b557c28bb8814777039e48dcf3232616063a15282661df6701fe244dc1"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Plank2_Bake1_pbr_roughness.uasset",
+      "size": 678022,
+      "sha256": "b2f6555cca81f59a5664d5b99c5ed49061ea7e7398716e90d2e7a55bf9a0760c"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Plank2_Bake1_pbr_specular.uasset",
+      "size": 876213,
+      "sha256": "fb2ae25fbf4be6f103280551c72122b0d52a018a5bca87b3f479758e86098540"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Pole1_Bake1_pbr_diffuse.uasset",
+      "size": 1837077,
+      "sha256": "7148866f8f7c1bc444ce012f0a3e81e23c3db4c8bc42d6b5fa00f18a25d62176"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Pole1_Bake1_pbr_normal.uasset",
+      "size": 1395935,
+      "sha256": "21e6e75a3afea20b39a11d7faf78503993fa88e3417562a8d12697b62433a4aa"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Pole1_Bake1_pbr_roughness.uasset",
+      "size": 713100,
+      "sha256": "e27a37b3c275472704b4482f9020b79b1797b0ddb6cd940c9bf81acb61b0a533"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Pole1_Bake1_pbr_specular.uasset",
+      "size": 948608,
+      "sha256": "71b291bb81ceca6a9bb774cb931e352e964b882bcf64f28103758f840ea40691"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Pole2_Bake1_pbr_diffuse.uasset",
+      "size": 1842584,
+      "sha256": "2b359346ff0e84aebd691f5d48de13f391e4699fd38da6fa8ba8040225baed49"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Pole2_Bake1_pbr_normal.uasset",
+      "size": 1376069,
+      "sha256": "fc0e938a171c6b9738de8e81675cb33509b7f35cee584c3785f59c3baf11eccf"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Pole2_Bake1_pbr_roughness.uasset",
+      "size": 718529,
+      "sha256": "a8504964e5a091df390b33da9528e5c24989a6b469624f18fdb4e0241b629db2"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Pole2_Bake1_pbr_specular.uasset",
+      "size": 957127,
+      "sha256": "e75dc1f9c90f9b7c91170c2693713db00dc520273e5dac4dedca04f7667b33d2"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/SandMat-diffuse.uasset",
+      "size": 8541865,
+      "sha256": "89c9be45407b58f78cd4d6bb1fe0a242285d26cd82b23930b0dce8c84bd13284"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/SandMat-height.uasset",
+      "size": 641823,
+      "sha256": "c0457361d74cb53a22882b69a50b4b5580d7c6123bde45e1d507c1316205d6c0"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/SandMat-normal.uasset",
+      "size": 12847219,
+      "sha256": "9ba7d359c9764f827ce6a17e83958cef11a0105745eb65560a3df16b448e36fc"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/SandMat-roughness.uasset",
+      "size": 2658334,
+      "sha256": "722df2eef7328f78dcc01ccabbceda30cb701423b21f55032c5432d1145ad7e8"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/SingleLog1_Bake1_pbr_diffuse.uasset",
+      "size": 19038287,
+      "sha256": "76a1d6b853f91bb136b517e7fca148cd534bcc81a30908a62c720bf706027e48"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/SingleLog1_Bake1_pbr_normal.uasset",
+      "size": 57709113,
+      "sha256": "4c295314fa62ee0d47ad0e0d8b85544efc7281c220ecb7018cdbec408e3dd50c"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/SingleLog1_Bake1_pbr_roughness.uasset",
+      "size": 8215160,
+      "sha256": "a8877ce2376616f3ad777cabf9954bd8e01938ce53478aef5014e97fe88b261e"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/SingleLog1_Bake1_pbr_specular.uasset",
+      "size": 8214134,
+      "sha256": "78ab058a49ad5ffb216c321a887ea186f48220a4c4557ceec1ca9699d23823d8"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/SingleLog2_Bake1_pbr_diffuse.uasset",
+      "size": 18911462,
+      "sha256": "81cd99b5ee6a1cba1b5b3fe2783c43806dd17d9416dc069536d0ca1782f2a384"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/SingleLog2_Bake1_pbr_normal.uasset",
+      "size": 57957305,
+      "sha256": "e5ee24434554176fc403b6875cbaefedb59694f0dc6f0e56f3f1f3262722473d"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/SingleLog2_Bake1_pbr_roughness.uasset",
+      "size": 8214773,
+      "sha256": "f98e2647bf69e5755a611a4aa0aa98a3f7b5d7e99155ef9dbdf3180a06249c1b"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/SingleLog2_Bake1_pbr_specular.uasset",
+      "size": 8214543,
+      "sha256": "5f12a71301bc18cd3c40444f05f01ce07562045b32c58a254d3544c3858eb6a1"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/SingleLog3_Bake1_pbr_diffuse.uasset",
+      "size": 19081933,
+      "sha256": "4a24e5fa706fe31dcb8cad06c3605d7ad23fd92b0cdcddfe4ea46a7bbcda281b"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/SingleLog3_Bake1_pbr_normal.uasset",
+      "size": 57751180,
+      "sha256": "7b3f93a2e7cc887a52f0e622e9098401112605f3762e7df3f6ff19629a4e4e50"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/SingleLog3_Bake1_pbr_roughness.uasset",
+      "size": 8215880,
+      "sha256": "7ec2866baf69091fc1c289292572e76c78e1c00a8f15447d0c947bc37951cc84"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/SingleLog3_Bake1_pbr_specular.uasset",
+      "size": 8215053,
+      "sha256": "511cf02d9091e47f74cf70cb4499fd11668101d6b07aaeecea9f1116c202a99e"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/SingleRock1_Bake1_pbr_diffuse.uasset",
+      "size": 27440337,
+      "sha256": "91ff86b81630d9d4eefcdb8b16f15a622b73f1f7d5b351d9f1475c7871aba43f"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/SingleRock1_Bake1_pbr_normal.uasset",
+      "size": 58336043,
+      "sha256": "46b725dd2db985983433d83c8645a65275ad1a87ad900ef0034647bd24922419"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/SingleRock1_Bake1_pbr_roughness.uasset",
+      "size": 11491558,
+      "sha256": "334c5d2e64c3a2c725c4164cf3b1ff4fb0be945bc4382e7ad76bf88240e9edfa"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/SingleRock1_Bake1_pbr_specular.uasset",
+      "size": 7723638,
+      "sha256": "3b3ef53b6eaa645c4a1d3fdb29ba1e3f076ed2abd235d32d03e802aa56e26022"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/SingleRock2_Bake1_pbr_diffuse.uasset",
+      "size": 28314225,
+      "sha256": "ff478a9410c90836767d88b54c5a8e5b443183605aa4b384a3fab9c0eabbeddf"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/SingleRock2_Bake1_pbr_normal.uasset",
+      "size": 62632112,
+      "sha256": "be5667ae86c01ba182fc05c5393ae1d2b299541943645599fd96c3ee5794af92"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/SingleRock2_Bake1_pbr_roughness.uasset",
+      "size": 10946842,
+      "sha256": "38e5292242697921bc499ecc06166453535f4ac0549b82970e9bd38b0977cbda"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/SingleRock2_Bake1_pbr_specular.uasset",
+      "size": 7718279,
+      "sha256": "1aa09ad8b82a9c6c1946d9473145531b25ca243619de9e00316aa4e85330d885"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/SingleRock3_Bake1_pbr_diffuse.uasset",
+      "size": 28345538,
+      "sha256": "527ddf139c8325ca4e35201391a874cc06071eaa1a69a1fc4fca3f1f76d71110"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/SingleRock3_Bake1_pbr_normal.uasset",
+      "size": 59325762,
+      "sha256": "86efd4e60b4be0fe2230092166ca6ed64a2f40e542ad57f9d7068e5983c59ecc"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/SingleRock3_Bake1_pbr_roughness.uasset",
+      "size": 11805480,
+      "sha256": "656742bd6accdfc6af7fce2c4de44cd0c23ad75f835247630cee7f1751c5d29f"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/SingleRock3_Bake1_pbr_specular.uasset",
+      "size": 7833104,
+      "sha256": "c6b7acd3dcecd420c8c00c5256fdd8f35eca5923f2e83b96e24c9e407c97a2cc"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/SingleRockSmall1_Bake1_pbr_diffuse.uasset",
+      "size": 26278600,
+      "sha256": "0ecd44cac2f8dd22f4472e52ae24b14f64573134076bf6bceedbed24fb8a94a3"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/SingleRockSmall1_Bake1_pbr_normal.uasset",
+      "size": 54183148,
+      "sha256": "9d8c0e2a5e1882fabfb42dba826409962e949494d8733413f9b6f71e2f091ffe"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/SingleRockSmall1_Bake1_pbr_roughness.uasset",
+      "size": 9432044,
+      "sha256": "e2fe322b6f44cee6f19907724ac6ef204cf77af2f51f029636004f3e6c4c5375"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/SingleRockSmall1_Bake1_pbr_specular.uasset",
+      "size": 7723668,
+      "sha256": "fe060eeea19526201ae6ee57864ae1156836229a36fcd39f9cd7301d93670e20"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/SingleRockSmall2_Bake1_pbr_diffuse.uasset",
+      "size": 27852762,
+      "sha256": "dd8ed70e93e26a429bacd3facb7e884270b5e1749c8ba631805768a6cd059e44"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/SingleRockSmall2_Bake1_pbr_normal.uasset",
+      "size": 60512983,
+      "sha256": "c7bb2e1aced16c0c7444a8b346842192838a5729346d96cd90ab3aea5e5df338"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/SingleRockSmall2_Bake1_pbr_roughness.uasset",
+      "size": 9838563,
+      "sha256": "f6b84b4ace4e7d40caab8f98d24f98777deb40449d727efd3b2301bf499efe4f"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/SingleRockSmall2_Bake1_pbr_specular.uasset",
+      "size": 7718309,
+      "sha256": "cd29939095df672d0870b76361e1adb3eb828e31e213ef3f08af3cdc270896ec"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/SingleRockSmall3_Bake1_pbr_diffuse.uasset",
+      "size": 27384749,
+      "sha256": "154e90f6f97c221fcdf37875d77e4d27e9dd251f5c07cf0af680d44a00e233ad"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/SingleRockSmall3_Bake1_pbr_normal.uasset",
+      "size": 56314705,
+      "sha256": "36310100bb99f77b2a7a14827a134625cf25f50c7954335c0c08a3266ea83990"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/SingleRockSmall3_Bake1_pbr_roughness.uasset",
+      "size": 9705623,
+      "sha256": "32af6a7c13529b512f18788d5b68d927285a8e31f87f667944c2615b41ea3218"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/SingleRockSmall3_Bake1_pbr_specular.uasset",
+      "size": 7833134,
+      "sha256": "d261b96f296de38863b7cb9bbf68fd2d6522312c953b515b1a2422b6e5712606"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Staircase_Bake1_pbr_diffuse.uasset",
+      "size": 16298513,
+      "sha256": "d76547bd6c63b91102c1cd3599f5a48a7faf4c5f49b0efaf28e9a190c504284a"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Staircase_Bake1_pbr_normal.uasset",
+      "size": 47957008,
+      "sha256": "e4dac19901671f87668c55e89e3c69333139986e93a6d836faa08f652dd55c22"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Staircase_Bake1_pbr_roughness.uasset",
+      "size": 8830728,
+      "sha256": "febd7028ecdc43f8d2eab72e311e097aeed913885dea0200a622de5b7a5330aa"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Staircase_Bake1_pbr_specular.uasset",
+      "size": 8827126,
+      "sha256": "8c78f187b9b27f057bf2ac97cbf29183251c6293fb37cd322f0a133a32802a72"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Stone1_Bake1_pbr_diffuse.uasset",
+      "size": 8288785,
+      "sha256": "61954bea81a54d6ce7c1fbef5cfd370b5218116ddf444b306d03c5b362c01d8e"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Stone1_Bake1_pbr_normal.uasset",
+      "size": 18335277,
+      "sha256": "fb346d39d551899e43f166344b85c2ccbac06d32f0c7e92433a335425cd27940"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Stone1_Bake1_pbr_roughness.uasset",
+      "size": 3439220,
+      "sha256": "5515f785ec541d4d8fef0eb81cfed86654055d9d94ddeb49f8d8cc3ccc4a9e0b"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Stone1_Bake1_pbr_specular.uasset",
+      "size": 2063076,
+      "sha256": "f0e65f88ce8ef6346b46a30912226de9697d5e7df58ea785717cc29140f421ff"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Stone2_Bake1_pbr_diffuse.uasset",
+      "size": 8097449,
+      "sha256": "e8b42d86e6d2bee6340755f3de7f6441ae67e065956f8e4543cb3c0b4aedd045"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Stone2_Bake1_pbr_normal.uasset",
+      "size": 18173023,
+      "sha256": "23167d7e0c165a8bebafd23a075a30974ebf9207088f2033ef9052e104ee1761"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Stone2_Bake1_pbr_roughness.uasset",
+      "size": 3344775,
+      "sha256": "f17282b127c2493842b795eb6d9f00a218553e0e566712463fe8e2280f1838de"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Stone2_Bake1_pbr_specular.uasset",
+      "size": 2064360,
+      "sha256": "2212979bd26e9d810b36552fa070ac318546aeae1ced307433a4d2194f6534de"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Stone3_Bake1_pbr_diffuse.uasset",
+      "size": 9193800,
+      "sha256": "2b771efccb7df6e9adf36e6c971c937b9399d69e66322ee828ef19535c8f60f4"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Stone3_Bake1_pbr_normal.uasset",
+      "size": 21943346,
+      "sha256": "796b27ceaf26829e22bd26587186f84a4917de64560505b1e7ae4ee5172d708e"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Stone3_Bake1_pbr_roughness.uasset",
+      "size": 3574685,
+      "sha256": "5753d033d8034c9b9571ccbb7a25af9b4c74ad83aaf668e7027236d2a49a0513"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Stone3_Bake1_pbr_specular.uasset",
+      "size": 2070111,
+      "sha256": "04ac323567142d43e80a8584a9560ffbf63466f3a1a9149e658cd40143c1d8ea"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/StoneWallBent_1_Bake1_pbr_diffuse.uasset",
+      "size": 32558555,
+      "sha256": "505542141adb6ce4aa6dfba3a4348e426993bbd97efa089c64bd692a616ba92a"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/StoneWallBent_1_Bake1_pbr_normal.uasset",
+      "size": 79988419,
+      "sha256": "0bbc1702a55e3cb50ef7b40e5d7bf260d6e06d3bebffcdf44ae2e2ed139f3dd5"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/StoneWallBent_1_Bake1_pbr_roughness.uasset",
+      "size": 16110583,
+      "sha256": "6ca02222f946081892551343ae23436adb9e62e4435d2b6c534883ad33b8344f"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/StoneWallBent_1_Bake1_pbr_specular.uasset",
+      "size": 8365102,
+      "sha256": "31bb61974c6764495ab900cf6ef88e6e1ac1e3f6942eb0409eb2fb4b003e7c25"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/StoneWallBent_2_Bake1_pbr_diffuse.uasset",
+      "size": 32604028,
+      "sha256": "995f97462c23aec4a32cfee5a95eb3d2397f938875cc1f8bda1009dd68dce4ad"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/StoneWallBent_2_Bake1_pbr_normal.uasset",
+      "size": 81627628,
+      "sha256": "544008cb3c7ee7a96f842aa06b95ef5bd4e924cff258dc7329b00e0686ea73c6"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/StoneWallBent_2_Bake1_pbr_roughness.uasset",
+      "size": 15852019,
+      "sha256": "fda97b59f9b40bfcf9285996c660752219205a45895603053f874855be4e93a3"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/StoneWallBent_2_Bake1_pbr_specular.uasset",
+      "size": 8369963,
+      "sha256": "de23c121d845207e7205a11af56244ccac84356da53d180a4440916a76e44ce4"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/StoneWallStraight_1_Bake1_pbr_diffuse.uasset",
+      "size": 31760134,
+      "sha256": "eb178302fd630f844b59777815264478e675da46b9dde440ba3c1215c1f45227"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/StoneWallStraight_1_Bake1_pbr_normal.uasset",
+      "size": 78459308,
+      "sha256": "2ade9f9bd9277f0882cd4d0e0fd3ba1ad6ad543d446b0f0759fb30705255ec4d"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/StoneWallStraight_1_Bake1_pbr_roughness.uasset",
+      "size": 15634603,
+      "sha256": "5e1b30ee432a93da7c1598f812ca3311b8ed0ca034acde27f92955d6819d0c49"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/StoneWallStraight_1_Bake1_pbr_specular.uasset",
+      "size": 8372764,
+      "sha256": "f545f096bb330dfcd9145d50c60f5c13df21a78f1be2d2c87ffa03c1bc67b779"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/StoneWallStraight_2_Bake1_pbr_diffuse.uasset",
+      "size": 31819237,
+      "sha256": "7dd16064b340c07fa16cd81aca359b4ae8bab990536f2bec4a38e466b5f74a78"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/StoneWallStraight_2_Bake1_pbr_normal.uasset",
+      "size": 78564792,
+      "sha256": "0ab1985b0cea05dcfcf9e9cd12b42662e44647bd7ee8cdd7974d1f515b8db611"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/StoneWallStraight_2_Bake1_pbr_roughness.uasset",
+      "size": 15673661,
+      "sha256": "504313a7a8b77c9d4309b22a7836818ab38708a7c1fc1a7e7dac787d729110c9"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/StoneWallStraight_2_Bake1_pbr_specular.uasset",
+      "size": 8364494,
+      "sha256": "746e8078067ace1a88f4ca1c6e89e7defa1d863cca4ddb7cdf95a256ebff454d"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Tree1_Bake1_pbr_diffuse.uasset",
+      "size": 24469369,
+      "sha256": "11bb623aa8bd169d4e4da658929ba6a7e55065eeefc75fbdbdc7a1695c7667ff"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Tree1_Bake1_pbr_normal.uasset",
+      "size": 71774023,
+      "sha256": "36a0ccef9d1fa73307e7f6fb23676a951dd70026efb7df532ab5dfd07fc40d49"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Tree1_Bake1_pbr_roughness.uasset",
+      "size": 12678001,
+      "sha256": "f635b53331b927ea42e2a27bd88f54c54481be27fd6e2ffb084376892d66c40f"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Tree1_Bake1_pbr_specular.uasset",
+      "size": 9315754,
+      "sha256": "54e832aa73bd712e3898f67aac271b1a40e24eccd6b9b17935af8da52a8012ee"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Tree2_Bake1_pbr_diffuse.uasset",
+      "size": 24236252,
+      "sha256": "fb05dba20d0a0833d2dbc0621e95c82b45d9a86479125747b56aef2423e99a97"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Tree2_Bake1_pbr_normal.uasset",
+      "size": 70715653,
+      "sha256": "54f1f8b78b66aa98b0290af89f2fe3a7ad00ab99a589d3e24a97272250564e96"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Tree2_Bake1_pbr_roughness.uasset",
+      "size": 12558343,
+      "sha256": "adefb0e636c3a513afac197e33bb0c579520f4c7054b03c0e785bc324f29d78c"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Tree2_Bake1_pbr_specular.uasset",
+      "size": 9259174,
+      "sha256": "6d6c7c224b9d2665e036644b6cdf76952e9cb1f4483c2785d6845d11c3b87aa9"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Tree3_Bake1_pbr_diffuse.uasset",
+      "size": 24297786,
+      "sha256": "daffcb7c436ab822c1ca79453d4b4bc714ce45633f3439082af7b719ee6b610d"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Tree3_Bake1_pbr_normal.uasset",
+      "size": 71144869,
+      "sha256": "195198cac15d8f66180c1d08dcbf7ad797bc195df9f461bf946c2fbaa6712848"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Tree3_Bake1_pbr_roughness.uasset",
+      "size": 12604883,
+      "sha256": "d0d6e873e24161a383cb1a7daa233c2af3e1ac3471c98ec229a0eee340ef1500"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Tree3_Bake1_pbr_specular.uasset",
+      "size": 9360966,
+      "sha256": "f281de97b75b3254f035e5d1bd2e9f819202931b8e2262ba18337427f5c98f03"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/WaveNoiseTexture.uasset",
+      "size": 5326919,
+      "sha256": "3086cfd9faa510fbf235c486d75fc7cd6196e95815c24da43dfd30c0acc67335"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Winebarrel_Low_Bake1_pbr_diffuse.uasset",
+      "size": 10799513,
+      "sha256": "8aa5be7b64df8e4c417098eebb816c723e96747d4b2f9e5809ed08e33d754fbe"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Winebarrel_Low_Bake1_pbr_metalness.uasset",
+      "size": 2357418,
+      "sha256": "83342651e45322fb5a5aefff2be34eaa769e35e76bb8ea6f3b9b7c6bb6ed47a2"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Winebarrel_Low_Bake1_pbr_normal.uasset",
+      "size": 9481973,
+      "sha256": "54cd6c807c404ecadc97b76b81c8c9b359b054be7781fb3374b77db156c1a798"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Winebarrel_Low_Bake1_pbr_roughness.uasset",
+      "size": 5138068,
+      "sha256": "7d4c73a3ceade642378c811d6fd5224f8162d8059487d231898a8ca1de294c7b"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/Winebarrel_Low_Bake1_pbr_specular.uasset",
+      "size": 3102004,
+      "sha256": "ea4abadac41b6721615d1ff031c27c42dae5788c0914ca7865fc0c368d0e4d12"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/WoodlandMat_diffuse.uasset",
+      "size": 6264012,
+      "sha256": "6788448339a23ca78453ccf04f50a8a9d9356258935eec729588c6b6c37a20bf"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/WoodlandMat_height.uasset",
+      "size": 604461,
+      "sha256": "922764b3f0e2645fe494fee5bbf2912f45f79e523d413ae646be2b76a0a8369e"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/WoodlandMat_normal.uasset",
+      "size": 11763595,
+      "sha256": "3129c3765c7658d04083bedf791db7f7325a74b92ac1088c032583aa69fef190"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/WoodlandMat_roughness.uasset",
+      "size": 3366419,
+      "sha256": "98d0b775ac80666ba0c232b275e6002bb881afa340555928aa4f8811c7dafb84"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/WoodLog_Bake1_pbr_diffuse.uasset",
+      "size": 5707334,
+      "sha256": "289ccefcd0ff9e2dd1e92a889646a9693021ae8fbbde3ffc6195d977279c7b4b"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/WoodLog_Bake1_pbr_normal.uasset",
+      "size": 15978007,
+      "sha256": "8a47ae849d13c5fd28732df441948ca58eb449b1d58343655427434f3e4a43d3"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/WoodLog_Bake1_pbr_roughness.uasset",
+      "size": 2073404,
+      "sha256": "37d86456f5919f1f3271ce083f2b89481a2674fd79884a5e4ee8d700aff9b86a"
+    },
+    {
+      "path": "Content/StylizedEnvironment/Textures/WoodLog_Bake1_pbr_specular.uasset",
+      "size": 2072702,
+      "sha256": "8b883ddec134129b69952bae53bd9846d89684fd365bdc89c45291824d228881"
+    },
+    {
+      "path": "Content/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.uasset",
+      "size": 148667,
+      "sha256": "5b2f02daf78ea15efc4e83fc78e7e30ccfe73b6540dc213d099ae72458e7d645"
+    },
+    {
+      "path": "Content/ThirdPerson/Blueprints/BP_ThirdPersonGameMode.uasset",
+      "size": 16003,
+      "sha256": "8e4355f6d7c091e0b77c330044b6059cb03637c2439d7ef4de102df2d365d2ee"
+    },
+    {
+      "path": "Content/ThirdPerson/Blueprints/BP_ThirdPersonPlayerController.uasset",
+      "size": 83213,
+      "sha256": "1eea710b3f7975732b53dd245e375f39c59c1b8ca468ebacce4e31bc47e88592"
+    },
+    {
+      "path": "Content/ThirdPerson/Lvl_ThirdPerson.umap",
+      "size": 12330,
+      "sha256": "3e668a9b3098a76f49ce307759ab00662406c7fa0870eeee6e7a2dbf7f854386"
+    },
+    {
+      "path": "Content/ThirdPerson/MI_ThirdPersonColWay.uasset",
+      "size": 9301,
+      "sha256": "aa8b4a4115c11750c57dc94df7fb8ab3c7f0cfef71037b9d11e7639fab15c25e"
+    },
+    {
+      "path": "StylizedEnvironment.png",
+      "size": 53886,
+      "sha256": "7af00e29cfbff22c914aafebe28ef9f02ba36bff03533e40813fb88da3c343fd"
+    },
+    {
+      "path": "SurvivalProject.uproject",
+      "size": 291,
+      "sha256": "c9750069d7c1b056af0810f14ec72feeceb453756a516273f374670c219584b8"
+    }
+  ]
+}

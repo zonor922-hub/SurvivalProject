@@ -1,0 +1,89 @@
+{
+  "blueprints": [
+    {
+      "package": "/Game/Input/Touch/BPI_TouchInterface",
+      "before": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+      "after": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+    },
+    {
+      "package": "/Game/ThirdPerson/Blueprints/BP_ThirdPersonPlayerController",
+      "before": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+      "after": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+    },
+    {
+      "package": "/Game/ThirdPerson/Blueprints/BP_ThirdPersonCharacter",
+      "before": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+      "after": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+    },
+    {
+      "package": "/Game/ThirdPerson/Blueprints/BP_ThirdPersonGameMode",
+      "before": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+      "after": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+    },
+    {
+      "package": "/Game/LevelPrototyping/Interactable/Door/BP_DoorFrame",
+      "before": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+      "after": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+    },
+    {
+      "package": "/Game/LevelPrototyping/Interactable/JumpPad/BP_JumpPad",
+      "before": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+      "after": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+    },
+    {
+      "package": "/Game/LevelPrototyping/Interactable/Target/BP_WobbleTarget",
+      "before": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+      "after": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Blueprints/InteractInterface",
+      "before": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+      "after": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Blueprints/ChestActor_Interface",
+      "before": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+      "after": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/ThirdPerson/Blueprints/BP_ThirdPersonCharacter",
+      "before": "<BlueprintStatus.BS_UP_TO_DATE_WITH_WARNINGS: 5>",
+      "after": "<BlueprintStatus.BS_UP_TO_DATE_WITH_WARNINGS: 5>"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Blueprints/ChestActor_Trigger",
+      "before": "<BlueprintStatus.BS_UP_TO_DATE_WITH_WARNINGS: 5>",
+      "after": "<BlueprintStatus.BS_UP_TO_DATE_WITH_WARNINGS: 5>"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Blueprints/GateActor_Interface",
+      "before": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+      "after": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Blueprints/GateActor_Trigger",
+      "before": "<BlueprintStatus.BS_UP_TO_DATE_WITH_WARNINGS: 5>",
+      "after": "<BlueprintStatus.BS_UP_TO_DATE_WITH_WARNINGS: 5>"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Blueprints/LeafsWind",
+      "before": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+      "after": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+    },
+    {
+      "package": "/Game/StylizedEnvironment/Demo/ThirdPerson/Blueprints/BP_ThirdPersonGameMode",
+      "before": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+      "after": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+    }
+  ],
+  "mapping_contexts": [
+    {
+      "package": "/Game/Input/IMC_MouseLook",
+      "mappings": []
+    },
+    {
+      "package": "/Game/Input/IMC_Default",
+      "mappings": []
+    }
+  ]
+}

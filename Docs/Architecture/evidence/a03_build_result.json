@@ -1,0 +1,19 @@
+{
+  "created": [
+    "/Game/Survival/Core/BP_SurvivalGameInstance",
+    "/Game/Survival/Core/BP_SurvivalPlayerState",
+    "/Game/Survival/Character/BP_SurvivalCharacter",
+    "/Game/Survival/Core/BP_SurvivalPlayerController",
+    "/Game/Survival/Core/BP_SurvivalGameMode"
+  ],
+  "compile": {
+    "gi": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+    "ps": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+    "char": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+    "pc": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+    "gm": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+  },
+  "errors": [],
+  "game_instance_session_class": "/Game/Survival/Core/BP_SurvivalGameInstance.BP_SurvivalGameInstance_C",
+  "success": true
+}

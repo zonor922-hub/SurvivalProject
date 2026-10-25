@@ -1,0 +1,96 @@
+{
+  "checks": {
+    "unique_classes_and_ready": true,
+    "mapping_contexts_present": true,
+    "idempotent_initialize": true,
+    "enhanced_input_movement": true,
+    "enhanced_input_jump": true,
+    "unpossessed_negative_case": true,
+    "three_repossessions_no_extra_contexts": true,
+    "same_single_input_response_after_repossession": true,
+    "camera_inherited": true
+  },
+  "snapshots": [
+    {
+      "world": "/Game/Content/Survival/Maps/UEDPIE_0_LV_Survival_Nature.LV_Survival_Nature",
+      "classes": {
+        "game_instance": "/Game/Survival/Core/BP_SurvivalGameInstance.BP_SurvivalGameInstance_C",
+        "game_mode": "/Game/Survival/Core/BP_SurvivalGameMode.BP_SurvivalGameMode_C",
+        "controller": "/Game/Survival/Core/BP_SurvivalPlayerController.BP_SurvivalPlayerController_C",
+        "player_state": "/Game/Survival/Core/BP_SurvivalPlayerState.BP_SurvivalPlayerState_C",
+        "character": "/Game/Survival/Character/BP_SurvivalCharacter.BP_SurvivalCharacter_C"
+      },
+      "initialize_count": {
+        "game_instance": 1,
+        "game_mode": 1,
+        "controller": 1,
+        "player_state": 1,
+        "character": 1
+      },
+      "ready": {
+        "game_instance": true,
+        "game_mode": true,
+        "controller": true,
+        "player_state": true,
+        "character": true
+      },
+      "actor_counts": {
+        "game_mode": 1,
+        "controller": 1,
+        "player_state": 1,
+        "character": 1
+      },
+      "possession_generation": 1,
+      "enhanced_input_components": 1,
+      "bound_pawn_correct": true,
+      "bound_player_state_correct": true,
+      "bound_game_instance_correct": true
+    },
+    {
+      "world": "/Game/Content/Survival/Maps/UEDPIE_0_LV_Survival_Nature.LV_Survival_Nature",
+      "classes": {
+        "game_instance": "/Game/Survival/Core/BP_SurvivalGameInstance.BP_SurvivalGameInstance_C",
+        "game_mode": "/Game/Survival/Core/BP_SurvivalGameMode.BP_SurvivalGameMode_C",
+        "controller": "/Game/Survival/Core/BP_SurvivalPlayerController.BP_SurvivalPlayerController_C",
+        "player_state": "/Game/Survival/Core/BP_SurvivalPlayerState.BP_SurvivalPlayerState_C",
+        "character": "/Game/Survival/Character/BP_SurvivalCharacter.BP_SurvivalCharacter_C"
+      },
+      "initialize_count": {
+        "game_instance": 1,
+        "game_mode": 1,
+        "controller": 1,
+        "player_state": 1,
+        "character": 1
+      },
+      "ready": {
+        "game_instance": true,
+        "game_mode": true,
+        "controller": true,
+        "player_state": true,
+        "character": true
+      },
+      "actor_counts": {
+        "game_mode": 1,
+        "controller": 1,
+        "player_state": 1,
+        "character": 1
+      },
+      "possession_generation": 4,
+      "enhanced_input_components": 1,
+      "bound_pawn_correct": true,
+      "bound_player_state_correct": true,
+      "bound_game_instance_correct": true
+    }
+  ],
+  "errors": [],
+  "look_delta_before": 2.5,
+  "walk_distance_cm": 36.41140083586175,
+  "walk_peak_speed": 322.01744760920616,
+  "jump_height_cm": 124.45435634343855,
+  "look_delta_after": 2.5,
+  "camera_components": 1,
+  "spring_arms": 1,
+  "success": true,
+  "elapsed_seconds": 1.6559999999990396,
+  "mapping_context_additions_during_repossession": []
+}

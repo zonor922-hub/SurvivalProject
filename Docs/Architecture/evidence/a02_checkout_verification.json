@@ -1,0 +1,23 @@
+{
+  "created_local": "2026-10-25T13:10:58.290190",
+  "checkout_project": "<LOCAL_WORKSPACE>\\RecoveryCheck\\A02_20261025_130415\\SurvivalProject",
+  "commit": "04b7b9524d4170f045712440723f2efe4b4cd313",
+  "matches_baseline_commit": true,
+  "verified_source_files": 779,
+  "hash_mismatches": [],
+  "all_original_bytes_restored": true,
+  "lfs_file_count": 773,
+  "all_lfs_files_expanded": true,
+  "map_pointer_matches_original_sha256": true,
+  "map_sha256": "74d08965f7b308ae9d97b68b8817817f89c9ce862918328a623cc8eda1f223b7",
+  "lfs_fsck": "Git LFS fsck OK",
+  "ignored_generated_paths": [
+    "Saved/Logs/example.log",
+    "Intermediate/example.obj",
+    "DerivedDataCache/example.ddc",
+    "Binaries/Win64/example.exe",
+    ".vs/example"
+  ],
+  "status_porcelain": "",
+  "clone_mode": "--no-local; independent Git object database, LFS objects restored on C: from source on D:"
+}

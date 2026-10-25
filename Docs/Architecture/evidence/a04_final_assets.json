@@ -1,0 +1,27 @@
+{
+  "map": "/Game/Survival/Maps/LV_SystemsTest.LV_SystemsTest",
+  "game_mode": "/Game/Survival/Core/BP_SurvivalGameMode.BP_SurvivalGameMode_C",
+  "fixture_status": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+  "fixture_reset_nodes": [
+    "K2Node_FunctionEntry_0",
+    "K2Node_VariableSet_0",
+    "K2Node_VariableSet_1"
+  ],
+  "geometry": [
+    {
+      "label": "Test_Floor",
+      "collision_profile": "BlockAll",
+      "mesh": "/Engine/BasicShapes/Cube.Cube"
+    },
+    {
+      "label": "Test_Wall",
+      "collision_profile": "BlockAll",
+      "mesh": "/Engine/BasicShapes/Cube.Cube"
+    },
+    {
+      "label": "Test_Slope20deg",
+      "collision_profile": "BlockAll",
+      "mesh": "/Engine/BasicShapes/Cube.Cube"
+    }
+  ]
+}

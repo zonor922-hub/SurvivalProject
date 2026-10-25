@@ -1,0 +1,37 @@
+[
+  {
+    "name": "ChaosCloth",
+    "enabled_by_default": true,
+    "path": "F:\\UE_5.8\\Engine\\Plugins\\ChaosCloth\\ChaosCloth.uplugin"
+  },
+  {
+    "name": "Buoyancy",
+    "enabled_by_default": false,
+    "path": "F:\\UE_5.8\\Engine\\Plugins\\Experimental\\Buoyancy\\Buoyancy.uplugin"
+  },
+  {
+    "name": "MeshPartitionWater",
+    "enabled_by_default": "unspecified",
+    "path": "F:\\UE_5.8\\Engine\\Plugins\\Experimental\\MeshPartitionWater\\MeshPartitionWater.uplugin"
+  },
+  {
+    "name": "Mover",
+    "enabled_by_default": "unspecified",
+    "path": "F:\\UE_5.8\\Engine\\Plugins\\Experimental\\Mover\\Mover.uplugin"
+  },
+  {
+    "name": "PCGWaterInterop",
+    "enabled_by_default": false,
+    "path": "F:\\UE_5.8\\Engine\\Plugins\\Experimental\\PCGInterops\\PCGWaterInterop\\PCGWaterInterop.uplugin"
+  },
+  {
+    "name": "WaterAdvanced",
+    "enabled_by_default": false,
+    "path": "F:\\UE_5.8\\Engine\\Plugins\\Experimental\\WaterAdvanced\\WaterAdvanced.uplugin"
+  },
+  {
+    "name": "WaterExtras",
+    "enabled_by_default": false,
+    "path": "F:\\UE_5.8\\Engine\\Plugins\\Experimental\\WaterExtras\\WaterExtras.uplugin"
+  }
+]

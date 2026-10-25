@@ -1,0 +1,10 @@
+{
+  "name": "ChaosCloth",
+  "EnabledByDefault": true,
+  "WaterDependency": [
+    {
+      "Name": "Water",
+      "Enabled": true
+    }
+  ]
+}

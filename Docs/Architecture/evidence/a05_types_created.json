@@ -1,0 +1,11 @@
+{
+  "created": [
+    "/Game/Survival/Items/Types/EItemCategory.EItemCategory",
+    "/Game/Survival/Items/Types/EOperationError.EOperationError",
+    "/Game/Survival/Items/Types/FItemStack.FItemStack",
+    "/Game/Survival/Items/Types/FInventorySlot.FInventorySlot",
+    "/Game/Survival/Items/Types/FInventorySnapshot.FInventorySnapshot",
+    "/Game/Survival/Items/Types/FOperationResult.FOperationResult"
+  ],
+  "errors": []
+}

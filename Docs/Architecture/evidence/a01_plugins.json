@@ -1,0 +1,131 @@
+{
+  "Water": {
+    "path": "F:\\UE_5.8\\Engine\\Plugins\\Experimental\\Water\\Water.uplugin",
+    "EnabledByDefault": false,
+    "IsBetaVersion": null,
+    "IsExperimentalVersion": true,
+    "Modules": [
+      {
+        "Name": "Water",
+        "Type": "Runtime",
+        "LoadingPhase": "PostConfigInit"
+      },
+      {
+        "Name": "WaterEditor",
+        "Type": "Editor",
+        "LoadingPhase": "PostEngineInit"
+      }
+    ],
+    "Plugins": [
+      {
+        "Name": "Landmass",
+        "Enabled": true
+      },
+      {
+        "Name": "Niagara",
+        "Enabled": true
+      },
+      {
+        "Name": "GeometryProcessing",
+        "Enabled": true
+      },
+      {
+        "Name": "BlueprintMaterialTextureNodes",
+        "Enabled": true
+      }
+    ]
+  },
+  "EnhancedInput": {
+    "path": "F:\\UE_5.8\\Engine\\Plugins\\EnhancedInput\\EnhancedInput.uplugin",
+    "EnabledByDefault": true,
+    "IsBetaVersion": false,
+    "IsExperimentalVersion": null,
+    "Modules": [
+      {
+        "Name": "EnhancedInput",
+        "Type": "Runtime",
+        "LoadingPhase": "PreDefault"
+      },
+      {
+        "Name": "InputBlueprintNodes",
+        "Type": "UncookedOnly",
+        "LoadingPhase": "PreDefault"
+      },
+      {
+        "Name": "InputEditor",
+        "Type": "Editor",
+        "LoadingPhase": "Default"
+      }
+    ],
+    "Plugins": [
+      {
+        "Name": "DataValidation",
+        "Enabled": true
+      }
+    ]
+  },
+  "GameplayStateTree": {
+    "path": "F:\\UE_5.8\\Engine\\Plugins\\Runtime\\GameplayStateTree\\GameplayStateTree.uplugin",
+    "EnabledByDefault": false,
+    "IsBetaVersion": false,
+    "IsExperimentalVersion": null,
+    "Modules": [
+      {
+        "Name": "GameplayStateTreeModule",
+        "Type": "Runtime",
+        "LoadingPhase": "PreDefault"
+      }
+    ],
+    "Plugins": [
+      {
+        "Name": "StateTree",
+        "Enabled": true
+      }
+    ]
+  },
+  "StateTree": {
+    "path": "F:\\UE_5.8\\Engine\\Plugins\\Runtime\\StateTree\\StateTree.uplugin",
+    "EnabledByDefault": false,
+    "IsBetaVersion": false,
+    "IsExperimentalVersion": null,
+    "Modules": [
+      {
+        "Name": "StateTreeModule",
+        "Type": "Runtime",
+        "LoadingPhase": "PreDefault"
+      },
+      {
+        "Name": "StateTreeTestSuite",
+        "Type": "UncookedOnly",
+        "LoadingPhase": "PreDefault"
+      },
+      {
+        "Name": "StateTreeDeveloper",
+        "Type": "DeveloperTool",
+        "LoadingPhase": "Default"
+      },
+      {
+        "Name": "StateTreeEditorModule",
+        "Type": "UncookedOnly",
+        "LoadingPhase": "Default"
+      }
+    ],
+    "Plugins": [
+      {
+        "Name": "GameplayInsights",
+        "Enabled": true,
+        "TargetAllowList": [
+          "Editor"
+        ]
+      },
+      {
+        "Name": "PropertyAccessEditor",
+        "Enabled": true
+      },
+      {
+        "Name": "PropertyBindingUtils",
+        "Enabled": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "source": "Profile(20261025_161333).csv",
+  "frames": 300,
+  "hardware": {
+    "cpu": "AMD Ryzen 5 5600X 6-Core Processor",
+    "gpu": "NVIDIA GeForce RTX 3060",
+    "driver": "32.0.16.1742"
+  },
+  "metrics": {
+    "FrameTime": {
+      "mean_ms": 8.816,
+      "median_ms": 8.365,
+      "p95_ms": 10.332,
+      "max_ms": 22.246
+    },
+    "GameThreadTime": {
+      "mean_ms": 8.356,
+      "median_ms": 8.121,
+      "p95_ms": 10.171,
+      "max_ms": 19.201
+    },
+    "RenderThreadTime": {
+      "mean_ms": 6.976,
+      "median_ms": 6.788,
+      "p95_ms": 8.641,
+      "max_ms": 10.171
+    },
+    "GPUTime": {
+      "mean_ms": 5.053,
+      "median_ms": 4.889,
+      "p95_ms": 5.85,
+      "max_ms": 6.214
+    },
+    "GameThreadTime_CriticalPath": {
+      "mean_ms": 8.357,
+      "median_ms": 8.121,
+      "p95_ms": 10.171,
+      "max_ms": 19.201
+    },
+    "RenderThreadTime_CriticalPath": {
+      "mean_ms": 7.676,
+      "median_ms": 7.475,
+      "p95_ms": 9.433,
+      "max_ms": 17.753
+    }
+  },
+  "scope": "PIE in editor; Python monitoring and CSV profiler active. Not packaged-game performance."
+}
