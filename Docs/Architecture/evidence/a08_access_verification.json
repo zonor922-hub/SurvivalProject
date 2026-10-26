@@ -1,0 +1,33 @@
+{
+  "tests": [
+    {
+      "test": "external setter rejected Slots",
+      "passed": true
+    },
+    {
+      "test": "external setter rejected Revision",
+      "passed": true
+    },
+    {
+      "test": "external setter rejected InventoryId",
+      "passed": true
+    },
+    {
+      "test": "external setter rejected MaxWeight",
+      "passed": true
+    },
+    {
+      "test": "external setter rejected Initialized",
+      "passed": true
+    },
+    {
+      "test": "external setter rejected CatalogGameInstance",
+      "passed": true
+    },
+    {
+      "test": "external public readiness compiles",
+      "passed": true
+    }
+  ],
+  "passed": true
+}

@@ -19,3 +19,6 @@ Thumbs.db
 .DS_Store
 # Plugin binaries may be required for binary-only plugins: do not ignore them globally.
 
+
+# Generated Python cache for editor verification scripts.
+/Docs/Architecture/evidence/__pycache__/

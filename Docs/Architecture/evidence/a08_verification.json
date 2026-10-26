@@ -1,0 +1,116 @@
+{
+  "tests": [
+    {
+      "test": "uninitialized public readiness",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "uninitialized defaults empty and zero GUID",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "uninitialized weight invalid",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "initialized",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "four empty indexed slots",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "empty weight zero",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "capacity and revision",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "nonzero inventory GUID",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "distinct inventories get unique GUIDs",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "public readiness after init",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "snapshot detached copy",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "snapshot metadata detached",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "derived weight wood x2",
+      "passed": true,
+      "detail": "(1.0, True) (InventoryId_2_26A428304D039DE2EA403F9BB07F81E0=254101B14FDA32A8FA6442A6132252A2,Revision_5_7A6A954549FA4AEE39A982AD787160D2=7,Slots_10_9053D0EE480F8FBA655F689183B061D9=((ItemStack_5_779DD7EE429A896B44C7BDB5BD86E483=(StackId_2_0D9551B3432E557343037D9F83EACD2E=04844040482D23E5B7FD0EB2D439871A,ItemId_5_0EBB58F84F513100A99F31938FDDB627=\"item.wood\",Quantity_8_ED3667F84EB2BC62FEA5CBAC3A2B4FAA=2),HasItem_8_D040C6944C2BC036FE49499973A601D5=True),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=1),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=2),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=3)),MaxWeight_12_D58D5FDB4818ADCB25DC5BB8839661A3=10.000000)"
+    },
+    {
+      "test": "repeat init preserves items and identity",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "unknown stored item invalid weight",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "invalid stored quantity 0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "invalid stored quantity -1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "bad capacity rejected (0, 10.0)",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "bad capacity rejected (4, -1.0)",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "missing catalog owner rejected",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "unready catalog leaves state unchanged",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "retry with zero weight capacity",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "passed": true,
+  "fixture_removed": true
+}
