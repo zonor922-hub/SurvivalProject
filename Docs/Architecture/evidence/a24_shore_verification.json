@@ -1,0 +1,109 @@
+{
+  "phase": "end",
+  "frame": 2973,
+  "shore": 3,
+  "leg": 1,
+  "runs": [
+    {
+      "shore": "west",
+      "leg": "entry",
+      "mode": "<MovementMode.MOVE_SWIMMING: 4>",
+      "changes": [
+        "<MovementMode.MOVE_WALKING: 1>",
+        "<MovementMode.MOVE_SWIMMING: 4>"
+      ],
+      "swim_animation": true,
+      "location": [
+        7700.974696154803,
+        17190.09747113666,
+        -101.46767671509653
+      ]
+    },
+    {
+      "shore": "west",
+      "leg": "exit",
+      "mode": "<MovementMode.MOVE_WALKING: 1>",
+      "changes": [
+        "<MovementMode.MOVE_SWIMMING: 4>",
+        "<MovementMode.MOVE_FALLING: 3>",
+        "<MovementMode.MOVE_WALKING: 1>"
+      ],
+      "swim_animation": false,
+      "location": [
+        5899.020344410825,
+        17008.182675245145,
+        92.93121325975646
+      ]
+    },
+    {
+      "shore": "east",
+      "leg": "entry",
+      "mode": "<MovementMode.MOVE_SWIMMING: 4>",
+      "changes": [
+        "<MovementMode.MOVE_WALKING: 1>",
+        "<MovementMode.MOVE_SWIMMING: 4>"
+      ],
+      "swim_animation": true,
+      "location": [
+        12598.276534129283,
+        18000.0,
+        -77.23758360913224
+      ]
+    },
+    {
+      "shore": "east",
+      "leg": "exit",
+      "mode": "<MovementMode.MOVE_WALKING: 1>",
+      "changes": [
+        "<MovementMode.MOVE_SWIMMING: 4>",
+        "<MovementMode.MOVE_FALLING: 3>",
+        "<MovementMode.MOVE_WALKING: 1>"
+      ],
+      "swim_animation": false,
+      "location": [
+        14000.53124895682,
+        18000.0,
+        93.12182597204549
+      ]
+    },
+    {
+      "shore": "south",
+      "leg": "entry",
+      "mode": "<MovementMode.MOVE_SWIMMING: 4>",
+      "changes": [
+        "<MovementMode.MOVE_WALKING: 1>",
+        "<MovementMode.MOVE_SWIMMING: 4>"
+      ],
+      "swim_animation": true,
+      "location": [
+        11300.0,
+        15003.481622246643,
+        -90.18825119433647
+      ]
+    },
+    {
+      "shore": "south",
+      "leg": "exit",
+      "mode": "<MovementMode.MOVE_WALKING: 1>",
+      "changes": [
+        "<MovementMode.MOVE_SWIMMING: 4>",
+        "<MovementMode.MOVE_FALLING: 3>",
+        "<MovementMode.MOVE_WALKING: 1>"
+      ],
+      "swim_animation": false,
+      "location": [
+        11300.638033144738,
+        13096.248845566073,
+        92.31446977364975
+      ]
+    }
+  ],
+  "changes": [
+    "<MovementMode.MOVE_SWIMMING: 4>",
+    "<MovementMode.MOVE_FALLING: 3>",
+    "<MovementMode.MOVE_WALKING: 1>"
+  ],
+  "since": 20.49522929266095,
+  "last_mode": "<MovementMode.MOVE_WALKING: 1>",
+  "passed": true
+}
