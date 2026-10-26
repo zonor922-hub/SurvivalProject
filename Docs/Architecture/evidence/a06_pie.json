@@ -1,0 +1,25 @@
+{
+  "phase": "end",
+  "frame": 61,
+  "runs": [
+    {
+      "catalog_ready": true,
+      "pc_ready": true,
+      "count": 4,
+      "gi_initialize_count": 1
+    },
+    {
+      "catalog_ready": true,
+      "pc_ready": true,
+      "count": 4,
+      "gi_initialize_count": 1
+    },
+    {
+      "catalog_ready": true,
+      "pc_ready": true,
+      "count": 4,
+      "gi_initialize_count": 1
+    }
+  ],
+  "passed": true
+}
