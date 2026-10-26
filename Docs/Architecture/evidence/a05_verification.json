@@ -1,0 +1,377 @@
+{
+  "tests": [
+    {
+      "test": "valid Wood",
+      "passed": true,
+      "result": "(Success_1_2A80304A4EA00C576412AD8566A6FA88=True,ErrorCode_4_A39592FC42717FE0DDAEE2BAFFC5DACE=NewEnumerator1,ActualQuantity_7_379D907F4B3C15B2AA2297B7E278E2BE=0,NewRevision_9_CAD0A43D4531954479F79C882B90A3C6=0)"
+    },
+    {
+      "test": "valid Stone",
+      "passed": true,
+      "result": "(Success_1_2A80304A4EA00C576412AD8566A6FA88=True,ErrorCode_4_A39592FC42717FE0DDAEE2BAFFC5DACE=NewEnumerator1,ActualQuantity_7_379D907F4B3C15B2AA2297B7E278E2BE=0,NewRevision_9_CAD0A43D4531954479F79C882B90A3C6=0)"
+    },
+    {
+      "test": "valid Berry",
+      "passed": true,
+      "result": "(Success_1_2A80304A4EA00C576412AD8566A6FA88=True,ErrorCode_4_A39592FC42717FE0DDAEE2BAFFC5DACE=NewEnumerator1,ActualQuantity_7_379D907F4B3C15B2AA2297B7E278E2BE=0,NewRevision_9_CAD0A43D4531954479F79C882B90A3C6=0)"
+    },
+    {
+      "test": "valid Plank",
+      "passed": true,
+      "result": "(Success_1_2A80304A4EA00C576412AD8566A6FA88=True,ErrorCode_4_A39592FC42717FE0DDAEE2BAFFC5DACE=NewEnumerator1,ActualQuantity_7_379D907F4B3C15B2AA2297B7E278E2BE=0,NewRevision_9_CAD0A43D4531954479F79C882B90A3C6=0)"
+    },
+    {
+      "test": "empty ID",
+      "passed": true,
+      "result": "(Success_1_2A80304A4EA00C576412AD8566A6FA88=False,ErrorCode_4_A39592FC42717FE0DDAEE2BAFFC5DACE=NewEnumerator2,ActualQuantity_7_379D907F4B3C15B2AA2297B7E278E2BE=0,NewRevision_9_CAD0A43D4531954479F79C882B90A3C6=0)"
+    },
+    {
+      "test": "zero stack",
+      "passed": true,
+      "result": "(Success_1_2A80304A4EA00C576412AD8566A6FA88=False,ErrorCode_4_A39592FC42717FE0DDAEE2BAFFC5DACE=NewEnumerator3,ActualQuantity_7_379D907F4B3C15B2AA2297B7E278E2BE=0,NewRevision_9_CAD0A43D4531954479F79C882B90A3C6=0)"
+    },
+    {
+      "test": "negative stack",
+      "passed": true,
+      "result": "(Success_1_2A80304A4EA00C576412AD8566A6FA88=False,ErrorCode_4_A39592FC42717FE0DDAEE2BAFFC5DACE=NewEnumerator3,ActualQuantity_7_379D907F4B3C15B2AA2297B7E278E2BE=0,NewRevision_9_CAD0A43D4531954479F79C882B90A3C6=0)"
+    },
+    {
+      "test": "negative weight",
+      "passed": true,
+      "result": "(Success_1_2A80304A4EA00C576412AD8566A6FA88=False,ErrorCode_4_A39592FC42717FE0DDAEE2BAFFC5DACE=NewEnumerator4,ActualQuantity_7_379D907F4B3C15B2AA2297B7E278E2BE=0,NewRevision_9_CAD0A43D4531954479F79C882B90A3C6=0)"
+    },
+    {
+      "test": "zero durability",
+      "passed": true,
+      "result": "(Success_1_2A80304A4EA00C576412AD8566A6FA88=False,ErrorCode_4_A39592FC42717FE0DDAEE2BAFFC5DACE=NewEnumerator5,ActualQuantity_7_379D907F4B3C15B2AA2297B7E278E2BE=0,NewRevision_9_CAD0A43D4531954479F79C882B90A3C6=0)"
+    },
+    {
+      "test": "durable stack",
+      "passed": true,
+      "result": "(Success_1_2A80304A4EA00C576412AD8566A6FA88=False,ErrorCode_4_A39592FC42717FE0DDAEE2BAFFC5DACE=NewEnumerator5,ActualQuantity_7_379D907F4B3C15B2AA2297B7E278E2BE=0,NewRevision_9_CAD0A43D4531954479F79C882B90A3C6=0)"
+    },
+    {
+      "test": "zero weight allowed",
+      "passed": true,
+      "result": "(Success_1_2A80304A4EA00C576412AD8566A6FA88=True,ErrorCode_4_A39592FC42717FE0DDAEE2BAFFC5DACE=NewEnumerator1,ActualQuantity_7_379D907F4B3C15B2AA2297B7E278E2BE=0,NewRevision_9_CAD0A43D4531954479F79C882B90A3C6=0)"
+    },
+    {
+      "test": "valid durability",
+      "passed": true,
+      "result": "(Success_1_2A80304A4EA00C576412AD8566A6FA88=True,ErrorCode_4_A39592FC42717FE0DDAEE2BAFFC5DACE=NewEnumerator1,ActualQuantity_7_379D907F4B3C15B2AA2297B7E278E2BE=0,NewRevision_9_CAD0A43D4531954479F79C882B90A3C6=0)"
+    },
+    {
+      "test": "rename preserves ID",
+      "passed": true,
+      "result": "(Success_1_2A80304A4EA00C576412AD8566A6FA88=True,ErrorCode_4_A39592FC42717FE0DDAEE2BAFFC5DACE=NewEnumerator1,ActualQuantity_7_379D907F4B3C15B2AA2297B7E278E2BE=0,NewRevision_9_CAD0A43D4531954479F79C882B90A3C6=0)"
+    }
+  ],
+  "schemas": {
+    "FItemStack": {
+      "title": "FItemStack",
+      "type": "object",
+      "properties": {
+        "stackId": {
+          "title": "Guid",
+          "type": "object",
+          "properties": {
+            "a": {
+              "type": "integer"
+            },
+            "b": {
+              "type": "integer"
+            },
+            "c": {
+              "type": "integer"
+            },
+            "d": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ]
+        },
+        "itemId": {
+          "type": "string"
+        },
+        "quantity": {
+          "type": "integer"
+        },
+        "durability": {
+          "type": "number"
+        },
+        "hasDurability": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "stackId",
+        "itemId",
+        "quantity",
+        "durability",
+        "hasDurability"
+      ]
+    },
+    "FInventorySlot": {
+      "title": "FInventorySlot",
+      "type": "object",
+      "properties": {
+        "slotIndex": {
+          "type": "integer"
+        },
+        "itemStack": {
+          "title": "FItemStack",
+          "type": "object",
+          "properties": {
+            "stackId": {
+              "title": "Guid",
+              "type": "object",
+              "properties": {
+                "a": {
+                  "type": "integer"
+                },
+                "b": {
+                  "type": "integer"
+                },
+                "c": {
+                  "type": "integer"
+                },
+                "d": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "a",
+                "b",
+                "c",
+                "d"
+              ]
+            },
+            "itemId": {
+              "type": "string"
+            },
+            "quantity": {
+              "type": "integer"
+            },
+            "durability": {
+              "type": "number"
+            },
+            "hasDurability": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "stackId",
+            "itemId",
+            "quantity",
+            "durability",
+            "hasDurability"
+          ]
+        },
+        "hasItem": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "slotIndex",
+        "itemStack",
+        "hasItem"
+      ]
+    },
+    "FInventorySnapshot": {
+      "title": "FInventorySnapshot",
+      "type": "object",
+      "properties": {
+        "inventoryId": {
+          "title": "Guid",
+          "type": "object",
+          "properties": {
+            "a": {
+              "type": "integer"
+            },
+            "b": {
+              "type": "integer"
+            },
+            "c": {
+              "type": "integer"
+            },
+            "d": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ]
+        },
+        "revision": {
+          "type": "integer"
+        },
+        "slots": {
+          "type": "array",
+          "items": {
+            "title": "FInventorySlot",
+            "type": "object",
+            "properties": {
+              "slotIndex": {
+                "type": "integer"
+              },
+              "itemStack": {
+                "title": "FItemStack",
+                "type": "object",
+                "properties": {
+                  "stackId": {
+                    "title": "Guid",
+                    "type": "object",
+                    "properties": {
+                      "a": {
+                        "type": "integer"
+                      },
+                      "b": {
+                        "type": "integer"
+                      },
+                      "c": {
+                        "type": "integer"
+                      },
+                      "d": {
+                        "type": "integer"
+                      }
+                    },
+                    "required": [
+                      "a",
+                      "b",
+                      "c",
+                      "d"
+                    ]
+                  },
+                  "itemId": {
+                    "type": "string"
+                  },
+                  "quantity": {
+                    "type": "integer"
+                  },
+                  "durability": {
+                    "type": "number"
+                  },
+                  "hasDurability": {
+                    "type": "boolean"
+                  }
+                },
+                "required": [
+                  "stackId",
+                  "itemId",
+                  "quantity",
+                  "durability",
+                  "hasDurability"
+                ]
+              },
+              "hasItem": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "slotIndex",
+              "itemStack",
+              "hasItem"
+            ]
+          }
+        },
+        "maxWeight": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "inventoryId",
+        "revision",
+        "slots",
+        "maxWeight"
+      ]
+    },
+    "FOperationResult": {
+      "title": "FOperationResult",
+      "type": "object",
+      "properties": {
+        "success": {
+          "type": "boolean"
+        },
+        "errorCode": {
+          "type": "string",
+          "title": "EOperationError",
+          "enum": [
+            "NotReady",
+            "None",
+            "InvalidItemId",
+            "InvalidMaxStack",
+            "InvalidUnitWeight",
+            "InvalidDurability"
+          ]
+        },
+        "actualQuantity": {
+          "type": "integer"
+        },
+        "newRevision": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "success",
+        "errorCode",
+        "actualQuantity",
+        "newRevision"
+      ]
+    }
+  },
+  "items": [
+    {
+      "path": "/Game/Survival/Items/Definitions/DA_Item_Wood.DA_Item_Wood",
+      "id": "item.wood",
+      "max_stack": 20,
+      "unit_weight": 0.5,
+      "category": "<ItemCategory.RESOURCE: 1>"
+    },
+    {
+      "path": "/Game/Survival/Items/Definitions/DA_Item_Stone.DA_Item_Stone",
+      "id": "item.stone",
+      "max_stack": 20,
+      "unit_weight": 1,
+      "category": "<ItemCategory.RESOURCE: 1>"
+    },
+    {
+      "path": "/Game/Survival/Items/Definitions/DA_Item_Berry.DA_Item_Berry",
+      "id": "item.berry",
+      "max_stack": 10,
+      "unit_weight": 0.1,
+      "category": "<ItemCategory.FOOD: 2>"
+    },
+    {
+      "path": "/Game/Survival/Items/Definitions/DA_Item_Plank.DA_Item_Plank",
+      "id": "item.plank",
+      "max_stack": 20,
+      "unit_weight": 0.4,
+      "category": "<ItemCategory.MATERIAL: 3>"
+    }
+  ],
+  "engine_version": "5.8.4-58902052+++UE5+Release-5.8",
+  "project_directory": "C:/Users/Denis/Documents/ChatGPT/SurvivalProject/A05PublicationWorktree/",
+  "definition_types": {
+    "ItemId": "(PinCategory=\"name\",PinSubCategory=\"\",PinSubCategoryObject=None,PinSubCategoryMemberReference=(MemberParent=None,MemberName=\"\",MemberGuid=00000000000000000000000000000000),PinValueType=(TerminalCategory=\"\",TerminalSubCategory=\"\",TerminalSubCategoryObject=None,bTerminalIsConst=False,bTerminalIsWeakPointer=False,bTerminalIsUObjectWrapper=False),ContainerType=None,bIsReference=False,bIsConst=False,bIsWeakPointer=False,bIsUObjectWrapper=False,bSerializeAsSinglePrecisionFloat=False)",
+    "DisplayName": "(PinCategory=\"text\",PinSubCategory=\"\",PinSubCategoryObject=None,PinSubCategoryMemberReference=(MemberParent=None,MemberName=\"\",MemberGuid=00000000000000000000000000000000),PinValueType=(TerminalCategory=\"\",TerminalSubCategory=\"\",TerminalSubCategoryObject=None,bTerminalIsConst=False,bTerminalIsWeakPointer=False,bTerminalIsUObjectWrapper=False),ContainerType=None,bIsReference=False,bIsConst=False,bIsWeakPointer=False,bIsUObjectWrapper=False,bSerializeAsSinglePrecisionFloat=False)",
+    "Description": "(PinCategory=\"text\",PinSubCategory=\"\",PinSubCategoryObject=None,PinSubCategoryMemberReference=(MemberParent=None,MemberName=\"\",MemberGuid=00000000000000000000000000000000),PinValueType=(TerminalCategory=\"\",TerminalSubCategory=\"\",TerminalSubCategoryObject=None,bTerminalIsConst=False,bTerminalIsWeakPointer=False,bTerminalIsUObjectWrapper=False),ContainerType=None,bIsReference=False,bIsConst=False,bIsWeakPointer=False,bIsUObjectWrapper=False,bSerializeAsSinglePrecisionFloat=False)",
+    "Icon": "(PinCategory=\"softobject\",PinSubCategory=\"\",PinSubCategoryObject=\"/Script/CoreUObject.Class'/Script/Engine.Texture2D'\",PinSubCategoryMemberReference=(MemberParent=None,MemberName=\"\",MemberGuid=00000000000000000000000000000000),PinValueType=(TerminalCategory=\"\",TerminalSubCategory=\"\",TerminalSubCategoryObject=None,bTerminalIsConst=False,bTerminalIsWeakPointer=False,bTerminalIsUObjectWrapper=False),ContainerType=None,bIsReference=False,bIsConst=False,bIsWeakPointer=False,bIsUObjectWrapper=False,bSerializeAsSinglePrecisionFloat=False)",
+    "WorldMesh": "(PinCategory=\"softobject\",PinSubCategory=\"\",PinSubCategoryObject=\"/Script/CoreUObject.Class'/Script/Engine.StaticMesh'\",PinSubCategoryMemberReference=(MemberParent=None,MemberName=\"\",MemberGuid=00000000000000000000000000000000),PinValueType=(TerminalCategory=\"\",TerminalSubCategory=\"\",TerminalSubCategoryObject=None,bTerminalIsConst=False,bTerminalIsWeakPointer=False,bTerminalIsUObjectWrapper=False),ContainerType=None,bIsReference=False,bIsConst=False,bIsWeakPointer=False,bIsUObjectWrapper=False,bSerializeAsSinglePrecisionFloat=False)",
+    "MaxStack": "(PinCategory=\"int\",PinSubCategory=\"\",PinSubCategoryObject=None,PinSubCategoryMemberReference=(MemberParent=None,MemberName=\"\",MemberGuid=00000000000000000000000000000000),PinValueType=(TerminalCategory=\"\",TerminalSubCategory=\"\",TerminalSubCategoryObject=None,bTerminalIsConst=False,bTerminalIsWeakPointer=False,bTerminalIsUObjectWrapper=False),ContainerType=None,bIsReference=False,bIsConst=False,bIsWeakPointer=False,bIsUObjectWrapper=False,bSerializeAsSinglePrecisionFloat=False)",
+    "UnitWeight": "(PinCategory=\"real\",PinSubCategory=\"double\",PinSubCategoryObject=None,PinSubCategoryMemberReference=(MemberParent=None,MemberName=\"\",MemberGuid=00000000000000000000000000000000),PinValueType=(TerminalCategory=\"\",TerminalSubCategory=\"\",TerminalSubCategoryObject=None,bTerminalIsConst=False,bTerminalIsWeakPointer=False,bTerminalIsUObjectWrapper=False),ContainerType=None,bIsReference=False,bIsConst=False,bIsWeakPointer=False,bIsUObjectWrapper=False,bSerializeAsSinglePrecisionFloat=False)",
+    "Category": "(PinCategory=\"byte\",PinSubCategory=\"\",PinSubCategoryObject=\"/Script/Engine.UserDefinedEnum'/Game/Survival/Items/Types/EItemCategory.EItemCategory'\",PinSubCategoryMemberReference=(MemberParent=None,MemberName=\"\",MemberGuid=00000000000000000000000000000000),PinValueType=(TerminalCategory=\"\",TerminalSubCategory=\"\",TerminalSubCategoryObject=None,bTerminalIsConst=False,bTerminalIsWeakPointer=False,bTerminalIsUObjectWrapper=False),ContainerType=None,bIsReference=False,bIsConst=False,bIsWeakPointer=False,bIsUObjectWrapper=False,bSerializeAsSinglePrecisionFloat=False)",
+    "ConsumableEffectId": "(PinCategory=\"name\",PinSubCategory=\"\",PinSubCategoryObject=None,PinSubCategoryMemberReference=(MemberParent=None,MemberName=\"\",MemberGuid=00000000000000000000000000000000),PinValueType=(TerminalCategory=\"\",TerminalSubCategory=\"\",TerminalSubCategoryObject=None,bTerminalIsConst=False,bTerminalIsWeakPointer=False,bTerminalIsUObjectWrapper=False),ContainerType=None,bIsReference=False,bIsConst=False,bIsWeakPointer=False,bIsUObjectWrapper=False,bSerializeAsSinglePrecisionFloat=False)",
+    "HasDurability": "(PinCategory=\"bool\",PinSubCategory=\"\",PinSubCategoryObject=None,PinSubCategoryMemberReference=(MemberParent=None,MemberName=\"\",MemberGuid=00000000000000000000000000000000),PinValueType=(TerminalCategory=\"\",TerminalSubCategory=\"\",TerminalSubCategoryObject=None,bTerminalIsConst=False,bTerminalIsWeakPointer=False,bTerminalIsUObjectWrapper=False),ContainerType=None,bIsReference=False,bIsConst=False,bIsWeakPointer=False,bIsUObjectWrapper=False,bSerializeAsSinglePrecisionFloat=False)",
+    "DurabilityMax": "(PinCategory=\"real\",PinSubCategory=\"double\",PinSubCategoryObject=None,PinSubCategoryMemberReference=(MemberParent=None,MemberName=\"\",MemberGuid=00000000000000000000000000000000),PinValueType=(TerminalCategory=\"\",TerminalSubCategory=\"\",TerminalSubCategoryObject=None,bTerminalIsConst=False,bTerminalIsWeakPointer=False,bTerminalIsUObjectWrapper=False),ContainerType=None,bIsReference=False,bIsConst=False,bIsWeakPointer=False,bIsUObjectWrapper=False,bSerializeAsSinglePrecisionFloat=False)"
+  },
+  "compile": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+  "passed": true
+}
