@@ -1,0 +1,76 @@
+{
+  "phase": "end",
+  "frame": 214,
+  "tests": [
+    {
+      "test": "swim ascend",
+      "passed": true,
+      "pending_input": [
+        0.7071067811865476,
+        0.0,
+        0.7071067811865476
+      ],
+      "mode": "<MovementMode.MOVE_SWIMMING: 4>",
+      "control_rotation": "<Struct 'Rotator' (0x000002669CDE2040) {pitch: 45.000000, yaw: 0.000000, roll: 0.000000}>",
+      "pawn_control_rotation": "<Struct 'Rotator' (0x000002669CDE2040) {pitch: 45.000000, yaw: 0.000000, roll: 0.000000}>"
+    },
+    {
+      "test": "swim descend",
+      "passed": true,
+      "pending_input": [
+        0.7071067811865476,
+        0.0,
+        -0.7071067811865476
+      ],
+      "mode": "<MovementMode.MOVE_SWIMMING: 4>",
+      "control_rotation": "<Struct 'Rotator' (0x000002669CDE21D0) {pitch: -45.000000, yaw: 0.000000, roll: 0.000000}>",
+      "pawn_control_rotation": "<Struct 'Rotator' (0x000002669CDE21D0) {pitch: -45.000000, yaw: 0.000000, roll: 0.000000}>"
+    },
+    {
+      "test": "dry pitch ignored",
+      "passed": true,
+      "pending_input": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "mode": "<MovementMode.MOVE_WALKING: 1>",
+      "control_rotation": "<Struct 'Rotator' (0x000002669CDE1E60) {pitch: 45.000000, yaw: 0.000000, roll: 0.000000}>",
+      "pawn_control_rotation": "<Struct 'Rotator' (0x000002669CDE1E60) {pitch: 45.000000, yaw: 0.000000, roll: 0.000000}>"
+    },
+    {
+      "test": "swim strafe",
+      "passed": true,
+      "pending_input": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "mode": "<MovementMode.MOVE_SWIMMING: 4>",
+      "control_rotation": "<Struct 'Rotator' (0x000002669CDE1F50) {pitch: 45.000000, yaw: 0.000000, roll: 0.000000}>",
+      "pawn_control_rotation": "<Struct 'Rotator' (0x000002669CDE1F50) {pitch: 45.000000, yaw: 0.000000, roll: 0.000000}>"
+    },
+    {
+      "test": "physical dry walking",
+      "passed": true,
+      "distance_cm": 177.50715920680523
+    },
+    {
+      "test": "physical dry jump",
+      "passed": true,
+      "rise_cm": 105.91711538010995
+    },
+    {
+      "test": "jump returns to walking",
+      "passed": true
+    }
+  ],
+  "walk_start": [
+    -1000.0,
+    -800.0,
+    92.15000200271606
+  ],
+  "since": 1.1473363041877747,
+  "jump_z": 92.15000200271606,
+  "passed": true
+}
