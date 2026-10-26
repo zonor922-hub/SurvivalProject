@@ -1,0 +1,8 @@
+LogInit: Engine Version: 5.8.4-58902052+++UE5+Release-5.8
+[2026.10.26-06.17.47:848][  0]LogWorld: Bringing World /Game/Survival/Maps/LV_SystemsTest.LV_SystemsTest up for play (max tick rate 0) at 2026.10.26-09.17.47
+[2026.10.26-06.17.47:855][  0]LogBlueprintUserMessages: [BP_CatalogCookProbe_C_0] A07 ITEM PASS item.wood
+[2026.10.26-06.17.47:855][  0]LogBlueprintUserMessages: [BP_CatalogCookProbe_C_0] A07 ITEM PASS item.stone
+[2026.10.26-06.17.47:855][  0]LogBlueprintUserMessages: [BP_CatalogCookProbe_C_0] A07 ITEM PASS item.berry
+[2026.10.26-06.17.47:856][  0]LogBlueprintUserMessages: [BP_CatalogCookProbe_C_0] A07 ITEM PASS item.plank
+[2026.10.26-06.17.47:856][  0]LogBlueprintUserMessages: [BP_CatalogCookProbe_C_0] A07 PASS 4 IDs and 8 soft assets
+[2026.10.26-06.18.00:782][498]LogExit: Exiting.

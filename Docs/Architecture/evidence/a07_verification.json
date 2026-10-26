@@ -1,0 +1,46 @@
+{
+  "passed": true,
+  "build_success": true,
+  "build_exit_code": 0,
+  "standalone_exit_code": 0,
+  "build_directory": "D:/Project/SurvivalProjectBuilds/A07Publication_20261026/Windows",
+  "source_branch": "task/a07-catalog-delivery",
+  "source_implementation": "87a2958",
+  "base": "945bb46",
+  "item_ids": [
+    "item.wood",
+    "item.stone",
+    "item.berry",
+    "item.plank"
+  ],
+  "item_pass_count": 4,
+  "visual_reference_count": 8,
+  "unique_visual_assets": [
+    "/Engine/BasicShapes/Cube",
+    "/Engine/EngineResources/WhiteSquareTexture"
+  ],
+  "load_errors": [],
+  "build_summary": [
+    "BuildCookRun time: 29.51 s",
+    "BUILD SUCCESSFUL",
+    "AutomationTool exiting with ExitCode=0 (Success)"
+  ],
+  "warnings": [
+    "LogBlueprint: Warning: Node '/Game/Survival/Core/BP_SurvivalPlayerState.BP_SurvivalPlayerState:InitializeBootstrap.EdGraphNode_Comment_0' missing NodeGuid, this can cause deterministic cooking issues please resave package.",
+    "LogBlueprint: Warning: Node '/Game/Survival/Tests/BP_SystemsTestFixture.BP_SystemsTestFixture:ResetTestData.EdGraphNode_Comment_0' missing NodeGuid, this can cause deterministic cooking issues please resave package.",
+    "LogBlueprint: Warning: Node '/Game/Survival/Items/Definitions/PDA_ItemDefinition.PDA_ItemDefinition:ValidateDefinition.EdGraphNode_Comment_0' missing NodeGuid, this can cause deterministic cooking issues please resave package.",
+    "LogBlueprint: Warning: Node '/Game/Survival/Items/Definitions/PDA_ItemDefinition.PDA_ItemDefinition:ValidateDefinition.EdGraphNode_Comment_1' missing NodeGuid, this can cause deterministic cooking issues please resave package.",
+    "LogBlueprint: Warning: Node '/Game/Survival/Core/BP_SurvivalGameInstance.BP_SurvivalGameInstance:InitializeBootstrap.EdGraphNode_Comment_0' missing NodeGuid, this can cause deterministic cooking issues please resave package.",
+    "LogBlueprint: Warning: Node '/Game/Survival/Core/BP_SurvivalGameInstance.BP_SurvivalGameInstance:InitializeCatalog.EdGraphNode_Comment_0' missing NodeGuid, this can cause deterministic cooking issues please resave package.",
+    "LogBlueprint: Warning: Node '/Game/Survival/Character/BP_SurvivalCharacter.BP_SurvivalCharacter:InitializeBootstrap.EdGraphNode_Comment_0' missing NodeGuid, this can cause deterministic cooking issues please resave package.",
+    "LogBlueprint: Warning: Node '/Game/Survival/Core/BP_SurvivalPlayerController.BP_SurvivalPlayerController:InitializeBootstrap.EdGraphNode_Comment_0' missing NodeGuid, this can cause deterministic cooking issues please resave package.",
+    "LogBlueprint: Warning: Node '/Game/Survival/Core/BP_SurvivalPlayerController.BP_SurvivalPlayerController:TryInitialize.EdGraphNode_Comment_0' missing NodeGuid, this can cause deterministic cooking issues please resave package.",
+    "LogBlueprint: Warning: Node '/Game/Survival/Core/BP_SurvivalGameMode.BP_SurvivalGameMode:InitializeBootstrap.EdGraphNode_Comment_0' missing NodeGuid, this can cause deterministic cooking issues please resave package."
+  ],
+  "environment_notes": [
+    "Optional profiler DLLs aqProf/Vtune/WinPix not installed; not game assets.",
+    "No default SoundConcurrencyObject configured; no catalog load failure.",
+    "PlatformFileJournal unavailable on F:; discovery runs uncached."
+  ],
+  "scope": "LV_SystemsTest only; production nature map and A08/A24 excluded"
+}
