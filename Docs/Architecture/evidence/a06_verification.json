@@ -1,0 +1,133 @@
+{
+  "tests": [
+    {
+      "test": "bootstrap catalog ready",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "four definitions",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "resolve item.wood",
+      "passed": true,
+      "detail": "(<Object '/Game/Survival/Items/Definitions/DA_Item_Wood.DA_Item_Wood' (0x000002F167D86200) Class 'PDA_ItemDefinition_C'>, True)"
+    },
+    {
+      "test": "resolve item.stone",
+      "passed": true,
+      "detail": "(<Object '/Game/Survival/Items/Definitions/DA_Item_Stone.DA_Item_Stone' (0x000002F167D86F00) Class 'PDA_ItemDefinition_C'>, True)"
+    },
+    {
+      "test": "resolve item.berry",
+      "passed": true,
+      "detail": "(<Object '/Game/Survival/Items/Definitions/DA_Item_Berry.DA_Item_Berry' (0x000002F167D88800) Class 'PDA_ItemDefinition_C'>, True)"
+    },
+    {
+      "test": "resolve item.plank",
+      "passed": true,
+      "detail": "(<Object '/Game/Survival/Items/Definitions/DA_Item_Plank.DA_Item_Plank' (0x000002F167D83300) Class 'PDA_ItemDefinition_C'>, True)"
+    },
+    {
+      "test": "unknown safe",
+      "passed": true,
+      "detail": "(None, False)"
+    },
+    {
+      "test": "idempotent init",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "duplicate blocks readiness",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "duplicate clears partial lookup",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "duplicate diagnostic",
+      "passed": true,
+      "detail": "DuplicateItemId: item.wood"
+    },
+    {
+      "test": "duplicate lookup safe",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "duplicate explicit retry",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "missing blocks readiness",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "missing clears partial lookup",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "missing diagnostic",
+      "passed": true,
+      "detail": "DefinitionMissing"
+    },
+    {
+      "test": "missing lookup safe",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "missing explicit retry",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "invalid blocks readiness",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "invalid clears partial lookup",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "invalid diagnostic",
+      "passed": true,
+      "detail": "InvalidDefinition: item.bad"
+    },
+    {
+      "test": "invalid lookup safe",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "invalid explicit retry",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "missing catalog rejected",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "engine_version": "5.8.4-58902052+++UE5+Release-5.8",
+  "project_directory": "C:/Users/Denis/Documents/ChatGPT/SurvivalProject/A06PublicationWorktree/",
+  "compile": {
+    "/Game/Survival/Core/BP_SurvivalGameInstance": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+    "/Game/Survival/Core/BP_SurvivalPlayerController": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+    "/Game/Survival/Items/Catalog/PDA_GameCatalog": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+    "/Game/Survival/Items/Definitions/PDA_ItemDefinition": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+  },
+  "passed": true
+}
