@@ -45,4 +45,3 @@ try:
  r['compile']=str(bp.get_editor_property('status'));r['passed']=True
 except Exception:r['error']=traceback.format_exc();r['passed']=False
 out.write_text(json.dumps(r,ensure_ascii=False,indent=2),encoding='utf-8')
-
