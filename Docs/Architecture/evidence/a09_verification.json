@@ -1,0 +1,335 @@
+{
+  "tests": [
+    {
+      "test": "add 21 wood -> 20+1",
+      "passed": true,
+      "detail": "((True, 1, 21, 1), [20, 1])"
+    },
+    {
+      "test": "weight 10.5",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "new stacks unique nonzero GUID",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "remove 2 exact",
+      "passed": true,
+      "detail": "((True, 1, 2, 2), [18, 1])"
+    },
+    {
+      "test": "remove preserves remaining GUIDs",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "remove across distributed stacks",
+      "passed": true,
+      "detail": "(True, 1, 19, 3)"
+    },
+    {
+      "test": "empty slots canonical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "reject add qty 0",
+      "passed": true,
+      "detail": "(False, 6, 0, 3)"
+    },
+    {
+      "test": "reject add qty 0 releases guard",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "reject remove qty 0",
+      "passed": true,
+      "detail": "(False, 6, 0, 3)"
+    },
+    {
+      "test": "reject remove qty 0 releases guard",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "reject add qty -1",
+      "passed": true,
+      "detail": "(False, 6, 0, 3)"
+    },
+    {
+      "test": "reject add qty -1 releases guard",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "reject remove qty -1",
+      "passed": true,
+      "detail": "(False, 6, 0, 3)"
+    },
+    {
+      "test": "reject remove qty -1 releases guard",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "reject add qty -2147483648",
+      "passed": true,
+      "detail": "(False, 6, 0, 3)"
+    },
+    {
+      "test": "reject add qty -2147483648 releases guard",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "reject remove qty -2147483648",
+      "passed": true,
+      "detail": "(False, 6, 0, 3)"
+    },
+    {
+      "test": "reject remove qty -2147483648 releases guard",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "reject unknown add",
+      "passed": true,
+      "detail": "(False, 2, 0, 3)"
+    },
+    {
+      "test": "reject unknown add releases guard",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "reject unknown remove",
+      "passed": true,
+      "detail": "(False, 2, 0, 3)"
+    },
+    {
+      "test": "reject unknown remove releases guard",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "reject empty ID",
+      "passed": true,
+      "detail": "(False, 2, 0, 3)"
+    },
+    {
+      "test": "reject empty ID releases guard",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "reject weight overflow",
+      "passed": true,
+      "detail": "(False, 8, 0, 0)"
+    },
+    {
+      "test": "reject weight overflow releases guard",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "reject slot overflow after simulation",
+      "passed": true,
+      "detail": "(False, 9, 0, 0)"
+    },
+    {
+      "test": "reject slot overflow after simulation releases guard",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "reject partial merge plus no slot",
+      "passed": true,
+      "detail": "(False, 9, 0, 1)"
+    },
+    {
+      "test": "reject partial merge plus no slot releases guard",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "reject insufficient removal after simulation",
+      "passed": true,
+      "detail": "(False, 10, 0, 1)"
+    },
+    {
+      "test": "reject insufficient removal after simulation releases guard",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "reject absent known item",
+      "passed": true,
+      "detail": "(False, 10, 0, 1)"
+    },
+    {
+      "test": "reject absent known item releases guard",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "merge retains target GUID and MaxStack",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "reject durability flag mismatch",
+      "passed": true,
+      "detail": "(False, 5, 0, 3)"
+    },
+    {
+      "test": "reject durability flag mismatch releases guard",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "reject uninitialized add",
+      "passed": true,
+      "detail": "(False, 0, 0, 0)"
+    },
+    {
+      "test": "reject uninitialized add releases guard",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "reject uninitialized remove",
+      "passed": true,
+      "detail": "(False, 0, 0, 0)"
+    },
+    {
+      "test": "reject uninitialized remove releases guard",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "guard blocks add",
+      "passed": true,
+      "detail": "(False, 7, 0, 3)"
+    },
+    {
+      "test": "guard blocks remove",
+      "passed": true,
+      "detail": "(False, 7, 0, 3)"
+    },
+    {
+      "test": "reinit preserves committed items",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "caller GUID never duplicates inventory IDs",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "success emits exactly one event",
+      "passed": true,
+      "detail": "((True, 1, 21, 1), 1, <Object '/Engine/Transient.BPC_Inventory_C_158' (0x000001C76C1D3480) Class 'BPC_Inventory_C'>)"
+    },
+    {
+      "test": "event observes committed revision",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "event reports exact changed indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "event failure leaves state",
+      "passed": true,
+      "detail": "(False, 10, 0, 1)"
+    },
+    {
+      "test": "event failure leaves state releases guard",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "failure emits no event",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "removal emits one event",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "listener can issue subsequent command after guard release",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "outer result retains own committed revision",
+      "passed": true,
+      "detail": "(True, 1, 1, 3)"
+    },
+    {
+      "test": "subsequent command guard cleared",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "reject malformed state zero GUID",
+      "passed": true,
+      "detail": "(False, 0, 0, 1)"
+    },
+    {
+      "test": "reject malformed state zero GUID releases guard",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "reject malformed state duplicate GUID",
+      "passed": true,
+      "detail": "(False, 0, 0, 1)"
+    },
+    {
+      "test": "reject malformed state duplicate GUID releases guard",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "reject malformed state over MaxStack",
+      "passed": true,
+      "detail": "(False, 0, 0, 1)"
+    },
+    {
+      "test": "reject malformed state over MaxStack releases guard",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "reject malformed state wrong index",
+      "passed": true,
+      "detail": "(False, 0, 0, 1)"
+    },
+    {
+      "test": "reject malformed state wrong index releases guard",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "reject malformed state wrong durability",
+      "passed": true,
+      "detail": "(False, 0, 0, 1)"
+    },
+    {
+      "test": "reject malformed state wrong durability releases guard",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "passed": true
+}

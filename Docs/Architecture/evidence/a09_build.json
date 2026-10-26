@@ -1,0 +1,11 @@
+{
+  "compiled": true,
+  "functions": [
+    "TryAddExact",
+    "TryRemoveExact",
+    "SimulateAddExact",
+    "SimulateRemoveExact",
+    "CommitInventory"
+  ],
+  "private_guard_requires_ui_verification": true
+}
