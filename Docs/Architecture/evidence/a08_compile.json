@@ -1,0 +1,13 @@
+{
+  "/Game/Survival/Items/Definitions/PDA_ItemDefinition.PDA_ItemDefinition": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+  "/Game/Survival/Items/Catalog/PDA_GameCatalog.PDA_GameCatalog": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+  "/Game/Survival/Core/BP_SurvivalGameInstance.BP_SurvivalGameInstance": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+  "/Game/Survival/Inventory/BPC_Inventory.BPC_Inventory": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+  "/Game/Survival/Character/BP_SurvivalCharacter.BP_SurvivalCharacter": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+  "/Game/Survival/Character/Animations/ABP_Survival.ABP_Survival": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+  "/Game/Survival/Core/BP_SurvivalGameMode.BP_SurvivalGameMode": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+  "/Game/Survival/Core/BP_SurvivalPlayerController.BP_SurvivalPlayerController": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+  "/Game/Survival/Core/BP_SurvivalPlayerState.BP_SurvivalPlayerState": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+  "/Game/Survival/Tests/BP_CatalogCookProbe.BP_CatalogCookProbe": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+  "/Game/Survival/Tests/BP_SystemsTestFixture.BP_SystemsTestFixture": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+}

@@ -1,0 +1,34 @@
+{
+  "phase": "end",
+  "frame": 61,
+  "runs": [
+    {
+      "catalog_ready": true,
+      "pc_ready": true,
+      "count": 4,
+      "inventory_initialized": true,
+      "inventory_weight": 0,
+      "inventory_tick_enabled": false,
+      "gi_initialize_count": 1
+    },
+    {
+      "catalog_ready": true,
+      "pc_ready": true,
+      "count": 4,
+      "inventory_initialized": true,
+      "inventory_weight": 0,
+      "inventory_tick_enabled": false,
+      "gi_initialize_count": 1
+    },
+    {
+      "catalog_ready": true,
+      "pc_ready": true,
+      "count": 4,
+      "inventory_initialized": true,
+      "inventory_weight": 0,
+      "inventory_tick_enabled": false,
+      "gi_initialize_count": 1
+    }
+  ],
+  "passed": true
+}
