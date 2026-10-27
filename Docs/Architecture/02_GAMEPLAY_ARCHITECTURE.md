@@ -101,7 +101,7 @@ WorldPickup запрашивает TryAddExact. При полном инвент
 - GetSnapshot; CanApply(ChangeSet) без мутации;
 - TryAddExact(ItemStack), TryRemoveExact(ItemId, Quantity);
 - TrySplit(StackId, Quantity, TargetSlot), TryMerge(SourceStackId, TargetStackId);
-- TryTransferExact(Source, Destination, StackId, Quantity, ExpectedRevisions);
+- TryTransferExact(Source, Destination, StackId, Quantity, ExpectedRevisions) — уточнение A11 ([проект](17_A11_DESIGN_PROPOSAL.md) §3.2): вызывается на источнике (Source = self) как `TryTransferExact(Destination, StackId, Quantity, ExpectedSourceRevision, ExpectedDestinationRevision)`, возвращает FOperationResult (ревизия источника) и отдельный DestinationNewRevision; слот приёмника выбирается автоматически (D8), TargetSlot нет;
 - TryApplyRecipe(RecipeId), ConsumeItem(StackId), запрос стоимости строительства через общий координатор.
 
 `Exact` означает «всё или ничего». Частичный подбор сознательно отсутствует в MVP. Сначала объединять совместимые стеки, затем занимать пустые слоты в порядке индексов. Для merge сохранить GUID принимающего стека; для split создать новый. Перенос целого стека сохраняет GUID, частичного — создаёт новый. Не должно быть одного StackId одновременно в двух inventories.
