@@ -101,6 +101,18 @@ DTO хранится в SaveCoordinator как pending-данные на вре�
 
 Повторная загрузка того же DTO полностью пересоздаёт мир через OpenLevel; применение DTO к уже восстановленному миру без перезагрузки карты запрещено (так исключается удвоение динамических actors).
 
+### 4.4. Разделение ответственности A36–A40
+
+| Задача | Входит | Не входит |
+|---|---|---|
+| A36 | Типы DTO, `SG_SurvivalSave`, `SG_SaveManifest` (только тип), enum ошибок, чистые функции `BPFL_SaveSchema`; тестовый harness, который в отдельном процессе редактора записывает fixture во **временный изолированный слот** и читает его обратно (T03) для проверки сериализуемости схемы | SaveCoordinator, запись по команде игрока, выбор слотов A/B, запись или чтение manifest, fallback, сбор мира, восстановление, UI. В игровых Blueprint нет вызовов `Save Game to Slot`/`Load Game from Slot` |
+| A37 | SaveCoordinator: блокировки, синхронный сбор snapshot из компонентов, реестр сущностей, authored EntityId на карте | Файловый IO |
+| A38 | Игровая запись и чтение: слоты A/B, проверочное чтение, manifest, выбор поколения и fallback, ошибки пользователю, MapId → карта | Восстановление мира |
+| A39 | Порядок восстановления §4.3, API восстановления inventory, фаза Restore в bootstrap | Миграции контента |
+| A40 | Golden-файлы, миграционные fixtures, совместимость каталога, проверка после перезапуска | — |
+
+Round-trip T03 в A36 проверяет только то, что тип `SG_SurvivalSave` записывается и читается движком без потери полей. Он не является прототипом конвейера §4.2 и не проверяет атомарность, manifest или fallback.
+
 ## 5. Схема данных SaveVersion = 1
 
 Типы — Blueprint-типы. `Int64` поддерживается Blueprint. Все Float-поля обязаны быть конечными (урок F02).
@@ -234,7 +246,7 @@ EntityId уникален во всём сохранении: authored ∪ dynam
 - Один ID не может одновременно быть tombstone и иметь запись.
 - Tombstone на ID, отсутствующий на карте: предупреждение, загрузка продолжается, tombstone сохраняется в следующем сохранении (защита от повторного появления, если ID вернут в контент).
 - Запись authored-сущности, отсутствующей на карте: `UnknownAuthoredEntity`, загрузка отклоняется (иначе будет молча потеряно содержимое контейнера).
-- Связи опор: родитель существует среди BuildPieces, нет циклов, пара (SupportParentId, SupportSocketId) уникальна, совместимость сокета проверяется по BuildDefinition. Ошибка — `BrokenSupportLink`.
+- Связи опор: родитель существует среди BuildPieces, нет циклов, пара (SupportParentId, SupportSocketId) уникальна; совместимость сокета с BuildDefinition — после появления определений построек (§10.2 п. 6b). Ошибка — `BrokenSupportLink`.
 
 ## 8. Что запрещено сохранять
 
@@ -242,43 +254,71 @@ EntityId уникален во всём сохранении: authored ∪ dynam
 
 Разрешённые типы полей DTO: Boolean, Integer, Integer64, Float/Double, Name, String, Guid, Vector, Rotator, DateTime, Enum и вложенные `FSave_*` структуры/массивы этих типов.
 
-Проверка автоматизирована (§13, T01): рекурсивный обход свойств `SG_SurvivalSave` и `SG_SaveManifest` через reflection в тестовом harness отклоняет любой запрещённый тип.
+Проверка автоматизирована (§12, T01): рекурсивный обход свойств `SG_SurvivalSave` и `SG_SaveManifest` через reflection в тестовом harness отклоняет любой запрещённый тип.
 
 ## 9. Версионирование и миграции
 
 - `CurrentSaveVersion = 1` — константа в `BPFL_SaveSchema`.
-- `CheckSaveVersion(V)`: V ≤ 0 → `CorruptVersion`; V > Current → `NewerVersion`; V < минимальной поддерживаемой → `UnsupportedOldVersion`; иначе OK.
+- `CheckSaveVersion(V)`: V ≤ 0 → `CorruptVersion`; V > Current → `NewerVersion`; V < минимальной поддерживаемой → `UnsupportedOldVersion`; иначе `None`.
 - Файл с `NewerVersion` не загружается и **не перезаписывается**. Если хоть один слот или manifest имеет версию новее, запись в этот профиль блокируется (`ProtectedNewerSave`) до явного выбора пользователя.
 - Миграция: отдельная чистая функция `Migrate_V{n}_To_V{n+1}` на DTO в памяти с собственным fixture; цепочка выполняется до Current, затем `ValidateSaveData`. Исходный файл не переписывается при загрузке; новая версия появится только при следующем ручном сохранении в другой слот, старый остаётся fallback.
 - Схема v1 «замораживается» с первой сборкой, которая даёт пользователю сохранять (A38/A42). До этого изменение v1 допускается только обновлением этого документа и fixtures. После — любое изменение формата = новая SaveVersion.
 - Правила эволюции Blueprint-структур: не удалять и не пересоздавать поля, не менять их тип; новые поля добавлять с безопасным значением по умолчанию; ненужные поля оставлять как устаревшие. Тегированная сериализация SaveGame пропускает неизвестные поля и подставляет значения по умолчанию для новых — поэтому смена типа или пересоздание поля может **молча** обнулить данные. Это ловится только golden-fixture тестом (T20).
 - **Гипотеза для проверки при реализации:** внутреннее имя поля пользовательской структуры содержит GUID поля, и переименование в редакторе не ломает чтение старых файлов. До теста T21 переименование полей DTO запрещено.
 
-## 10. Атомарность, целостность и восстановление
+## 10. Надёжность записи, целостность и восстановление
 
-### 10.1. Двухслотовая запись
+### 10.1. Двухслотовая запись: что гарантируется и что нет
 
-Обычная перезапись одного файла не считается атомарной; атомарность конкретной реализации `Save Game to Slot` в UE 5.8.4 не проверялась и не используется как гарантия. Атомарность обеспечивается переключением manifest:
+**Непроверенные свойства платформы.** Как `Save Game to Slot` в UE 5.8.4 пишет файл на Windows (прямая перезапись или временный файл с переименованием), сбрасывается ли кэш записи на диск до возврата `true` и может ли после сбоя остаться частично записанный файл, — не проверялось. Поэтому **ни запись слота, ни запись manifest не считаются атомарными файловыми операциями**. Manifest — такой же файл SaveGame, и его перезапись может прерваться так же, как запись слота.
 
-- Новое поколение пишется только в слот, который **не** активен в manifest.
-- Активный слот не изменяется ни при какой ошибке записи.
-- Manifest переключается только после успешного проверочного чтения нового слота.
-- Сбой между записью слота и manifest оставляет прежнее активное поколение; новый слот считается кандидатом и может быть выбран при сканировании, только если он полностью валиден и его Generation больше.
+Переключение manifest — **логическая отметка подтверждённого поколения**, а не атомарная операция. Схема даёт следующие свойства только при условии, что файл, который не открывался на запись, не повреждается при сбое:
+
+- Новое поколение пишется только в слот, который **не** активен в manifest; файл активного слота в цикле сохранения не открывается на запись.
+- Manifest записывается только после успешного проверочного чтения нового слота.
+- Valid manifest — источник истины. Неактивный слот с бо́льшим Generation при валидном manifest не выбирается автоматически: он не подтверждён. Это записывается в журнал как предупреждение.
+- Если manifest отсутствует или повреждён, выбирается валидный слот с наибольшим Generation (§10.3).
+
+**Отключение питания или аварийное завершение процесса:**
+
+| Момент сбоя | Возможное состояние файлов | Результат загрузки | Потеря |
+|---|---|---|---|
+| Во время записи неактивного слота | Слот пуст, обрезан, содержит мусор или прежнее поколение; manifest и активный слот не трогались | Manifest → активный слот, поколение N | Прогресс после N |
+| После записи слота, до начала записи manifest | Новый слот может быть валиден, manifest старый | Поколение N по manifest; N+1 игнорируется с предупреждением | Прогресс после N |
+| Во время записи manifest | Manifest старый, новый или повреждён | Старый → N; новый → N+1; повреждён → сканирование, наибольший валидный (обычно N+1, иначе N) | Не больше прогресса после N |
+| После «Сохранено», но до сброса кэша ОС на диск (не проверено) | Новый слот и/или manifest могут быть неполными, хотя проверочное чтение прошло (оно могло читать из кэша) | Manifest повреждён → сканирование; manifest указывает на повреждённый слот → другой слот (§10.3 п. 2) | Прогресс после N |
+
+**Ограничения восстановления:**
+
+- Хранятся только два поколения. Несколько сбоев подряд, повреждение диска, антивирус, ручное удаление или две быстрые записи подряд, ни одна из которых не дошла до диска, могут оставить оба слота невалидными → `NoValidSave`.
+- Максимальная гарантированная потеря — прогресс после последнего поколения, файл которого гарантированно дошёл до диска. Из Blueprint это определить нельзя.
+- L1 обнаруживает только повреждения, которые нарушают структуру, инварианты или Summary. Данные, которые десериализовались в правдоподобные значения, L1 может не заметить; это закрывает только L2.
+- Поведение движка при чтении обрезанного файла не проверено (K02); если десериализация может завершить процесс, fallback не сработает, пока нет L2.
+- Резервных копий вне двух слотов, облачного хранилища и истории поколений нет.
+
+**Что проверить до объявления A38 завершённой:** по исходному коду UE 5.8.4 и тестам — способ записи файла сохранения на Windows; T51 (принудительное завершение процесса во время записи слота и manifest); по возможности T52 (жёсткий сброс виртуальной машины во время записи). Принудительное завершение процесса не эквивалентно отключению питания: оно не проверяет кэш ОС. По итогам — либо подтвердить таблицу выше, либо принять решение L2 / запись через временный файл в C++.
 
 ### 10.2. Проверка целостности
 
-Уровень L1 (обязателен, только Blueprint):
+Уровень L1 (обязателен, только Blueprint). Колонка «Где» показывает задачу, в которой проверка реализуется; A36 реализует только проверки над DTO в памяти.
 
-1. Чтение: объект не None, класс `SG_SurvivalSave`, `SaveMagic`, `IsComplete=true`, `SaveSlotName` совпадает с фактическим слотом.
-2. Версия: `CheckSaveVersion`, затем миграция.
-3. Структура: обязательные поля заполнены, нет нулевых GUID, все Float конечны, Quantity > 0, SlotIndex в диапазоне и без повторов, MaxWeight ≥ 0.
-4. Уникальность: EntityId, StackId, InventoryId, tombstones; конфликт tombstone/запись.
-5. Каталог: все ItemId/BuildId/ResourceId известны; Quantity ≤ MaxStack; прочность согласована с определением; вес inventory ≤ MaxWeight с допуском A09. Нарушение — `Incompatible*` с выбором предыдущего сохранения, без молчаливого удаления вещей.
-6. Связи опор (§7).
-7. `Summary` пересчитывается и сравнивается: число записей каждого вида, число стеков, сумма Quantity по каждому ItemId, число tombstones. Несовпадение — `SummaryMismatch`.
-8. Manifest: `ActiveGeneration` равен Generation слота, Summary слота в manifest равна Summary файла.
+| № | Проверка | Ошибка | Где |
+|---|---|---|---|
+| 1a | Объект не None, `SaveMagic`, `IsComplete=true` | WrongClass / WrongMagic / Incomplete | A36 (`ValidateSaveData`) |
+| 1b | Класс прочитанного объекта `SG_SurvivalSave`, `SaveSlotName` совпадает с фактическим слотом | WrongClass / SlotCorrupt | A38 (после чтения файла) |
+| 2 | Версия: `CheckSaveVersion`, затем `MigrateToCurrent` | CorruptVersion / NewerVersion / UnsupportedOldVersion / MigrationFailed | A36 (функции), A38 (вызов при загрузке) |
+| 3 | Структура: обязательные поля (в т. ч. MapId) не пусты, нет нулевых GUID, все Float конечны, Quantity > 0, SlotIndex в диапазоне и без повторов, MaxWeight ≥ 0 | MissingField / ZeroGuid / InvalidNumber / InvalidQuantity / InvalidSlotIndex | A36 |
+| 4 | Уникальность EntityId, StackId, InventoryId, tombstones; конфликт tombstone/запись | DuplicateEntityId / DuplicateStackId / DuplicateInventoryId / TombstoneConflict | A36 |
+| 5a | Каталог предметов (A06): ItemId известен, Quantity ≤ MaxStack, прочность согласована с определением, вес ≤ MaxWeight с допуском A09 | UnknownItemId / StackLimitExceeded / InvalidDurability / WeightLimitExceeded | A36 |
+| 5b | BuildId, ResourceId, MapId известны | UnknownBuildId / UnknownResourceId / UnknownMapId | Каталоги появятся в A29/A28/A38; до этого A36 проверяет только непустое значение (п. 3) |
+| 6a | Связи опор: родитель существует среди BuildPieces, нет циклов, пара (SupportParentId, SupportSocketId) уникальна | BrokenSupportLink | A36 |
+| 6b | Сокет совместим с BuildDefinition родителя | BrokenSupportLink | После A29/A33, проверяется в A40 |
+| 7 | `Summary` пересчитывается и сравнивается: число записей каждого вида, число стеков, сумма Quantity по каждому ItemId, число tombstones | SummaryMismatch | A36 (`ComputeSummary` + сравнение) |
+| 8 | Manifest: `ActiveGeneration` равен Generation слота, Summary слота в manifest равна Summary файла | ManifestCorrupt | A38 |
 
-Уровень L2 (решение владельца проекта, вне A36–A38 MVP): CRC32/хеш сериализованных байтов **до** десериализации. Blueprint не даёт доступа к байтам SaveGame, поэтому L2 требует минимального C++-модуля (функции SaveGameToMemory/LoadGameFromMemory и FCrc доступны только из C++). Архитектура §1 разрешает пересмотр Blueprint-first, если этого требует тестирование. Решение принимать по результатам T10–T13.
+Любое нарушение п. 5 — ошибка совместимости с предложением выбрать предыдущее сохранение, без молчаливого удаления вещей.
+
+Уровень L2 (решение владельца проекта, вне A36–A38 MVP): CRC32/хеш сериализованных байтов **до** десериализации. Blueprint не даёт доступа к байтам SaveGame, поэтому L2 требует минимального C++-модуля (функции SaveGameToMemory/LoadGameFromMemory и FCrc доступны только из C++). Архитектура §1 разрешает пересмотр Blueprint-first, если этого требует тестирование. Решение принимать по результатам T10–T13 и T51/T52.
 
 ### 10.3. Выбор поколения при загрузке
 
@@ -291,7 +331,7 @@ EntityId уникален во всём сохранении: authored ∪ dynam
 
 ### 10.4. Коды ошибок `ESaveLoadError`
 
-None, Busy, NotReady, NoValidSave, ManifestMissing, ManifestCorrupt, SlotMissing, SlotCorrupt, WrongClass, WrongMagic, Incomplete, CorruptVersion, NewerVersion, UnsupportedOldVersion, MigrationFailed, ProtectedNewerSave, UnknownMapId, UnknownItemId, UnknownBuildId, UnknownResourceId, UnknownAuthoredEntity, DuplicateEntityId, DuplicateStackId, DuplicateInventoryId, ZeroGuid, InvalidQuantity, InvalidNumber, InvalidSlotIndex, StackLimitExceeded, WeightLimitExceeded, TombstoneConflict, BrokenSupportLink, SummaryMismatch, WriteFailed, VerifyFailed, ManifestWriteFailed.
+None, Busy, NotReady, NoValidSave, ManifestMissing, ManifestCorrupt, SlotMissing, SlotCorrupt, WrongClass, WrongMagic, Incomplete, CorruptVersion, NewerVersion, UnsupportedOldVersion, MigrationFailed, ProtectedNewerSave, UnknownMapId, UnknownItemId, UnknownBuildId, UnknownResourceId, UnknownAuthoredEntity, DuplicateEntityId, DuplicateStackId, DuplicateInventoryId, ZeroGuid, MissingField, InvalidQuantity, InvalidNumber, InvalidDurability, InvalidSlotIndex, StackLimitExceeded, WeightLimitExceeded, TombstoneConflict, BrokenSupportLink, SummaryMismatch, WriteFailed, VerifyFailed, ManifestWriteFailed.
 
 Каждая ошибка возвращается вместе с кратким контекстом (поле/ID) для журнала; пользователю показывается понятное сообщение без технического стека.
 
@@ -304,29 +344,31 @@ None, Busy, NotReady, NoValidSave, ManifestMissing, ManifestCorrupt, SlotMissing
 | K03 | Копирование authored-актора копирует EntityId | Две сущности с одним ID, потеря tombstone | Валидатор карты и шаг 2 загрузки |
 | K04 | BeginPlay authored-контейнера выдаёт стартовый loot до восстановления | Дублирование предметов | Стартовый loot только по команде координатора |
 | K05 | Порядок BeginPlay акторов не гарантирован | Восстановление до готовности сущностей | Явная фаза Restore после BeginPlay мира, без Delay |
-| K06 | Изменение каталога (MaxStack, вес, удалённый ID) | Невалидный inventory после загрузки | `Incompatible*` с fallback; миграция контента отдельной функцией |
+| K06 | Изменение каталога (MaxStack, вес, удалённый ID) | Невалидный inventory после загрузки | Ошибки совместимости §10.2 п. 5 с выбором предыдущего сохранения; миграция контента отдельной функцией |
 | K07 | Сохранение во время операции inventory/постройки | Несогласованный snapshot | Блокировка по mutation guard и состоянию Ready |
 | K08 | Отсутствие API восстановления A08 | A39 потребует изменения BPC_Inventory | Делается в A39 с полной регрессией F01/F02; A36 не трогает |
 | K09 | Даунгрейд игры | Перезапись более нового сохранения | `ProtectedNewerSave` |
-| K10 | Атомарность Save Game to Slot не подтверждена | Повреждение слота при сбое питания | Двухслотовая запись; активный слот не изменяется |
+| K10 | Атомарность и сброс на диск у Save Game to Slot и записи manifest не подтверждены | Повреждение нового слота или manifest при сбое питания; потеря прогресса после последнего дошедшего до диска поколения | Двухслотовая запись, активный слот не открывается на запись, сканирование при повреждённом manifest; T51/T52 и проверка исходного кода в A38 (§10.1) |
 | K11 | Загрузка у/в воде | Неверный MovementMode после transform | Тест T33 после A24/A39 |
 | K12 | Сеть и мультиплеер | Схема одного игрока | Вне объёма; до кооператива — новая схема и миграция |
 
 ## 12. Сценарии тестирования
 
-Все тесты используют временные слоты с префиксом `__test_` и удаляют их в finally; игровые ресурсы и пользовательские сохранения не сохраняются и не изменяются. «A36» в колонке — тест входит в реализацию A36; остальные выполняются в указанной задаче.
+Колонка «Задача» указывает, где тест реализуется и становится критерием приёмки; A36 отвечает только за тесты с пометкой A36. Тесты с файлами используют временные слоты с префиксом `__test_` и удаляют их в finally; игровые ресурсы и пользовательские сохранения (`survival_profile*`) не сохраняются и не изменяются. Тесты A36 работают с DTO в памяти, кроме T03.
 
 ### 12.1. Схема и fixture
 
 | ID | Задача | Сценарий | Ожидание |
 |---|---|---|---|
 | T01 | A36 | Рекурсивный обход типов свойств SG_SurvivalSave и SG_SaveManifest | Только разрешённые типы §8 |
-| T02 | A36 | Эталонный fixture F-A36: игрок с 2 стеками (wood 20, wood 1), authored контейнер со stone 5, фундамент + стена с SupportParentId, tombstone authored pickup | `ValidateSaveData` = None |
-| T03 | A36 | Fixture → `Save Game to Slot` → `Load Game from Slot` | Глубокое равенство всех полей, ID, количеств |
-| T04 | A36 | `CheckSaveVersion` для 1, 2, 0, −1 | OK, NewerVersion, CorruptVersion, CorruptVersion |
+| T02 | A36 | Эталонный fixture F-A36: inventory игрока SlotCount=4, MaxWeight=20 со стеками wood 20 и wood 1 (вес 10.5); authored контейнер SlotCount=4, MaxWeight=50 со stone 5; фундамент + стена с SupportParentId (BuildId проверяется только на непустоту, §10.2 п. 5b); tombstone authored pickup | `ValidateSaveData` = None |
+| T03 | A36 | Только тестовый harness в отдельном процессе редактора: fixture → `Save Game to Slot` в слот `__test_a36_roundtrip_<timestamp>` → `Load Game from Slot` → удаление слота в finally. Без manifest, без слотов A/B, без игровых Blueprint-вызовов | Глубокое равенство всех полей, ID, количеств; после теста файла слота нет, пользовательские слоты не изменены |
+| T04 | A36 | `CheckSaveVersion` для 1, 2, 0, −1 | None, NewerVersion, CorruptVersion, CorruptVersion |
 | T05 | A36 | `MigrateToCurrent` на v1 | Тождественно, без изменения данных |
 
-### 12.2. Повреждённые файлы (A36 для чистых функций, A38 для IO)
+### 12.2. Повреждённые файлы и данные
+
+T10–T13 повреждают файл и требуют IO → A38. T14–T19 портят DTO в памяти и проверяют `ValidateSaveData` → A36.
 
 | ID | Сценарий | Ожидание |
 |---|---|---|
@@ -355,8 +397,8 @@ None, Busy, NotReady, NoValidSave, ManifestMissing, ManifestCorrupt, SlotMissing
 
 | ID | Задача | Сценарий | Ожидание |
 |---|---|---|---|
-| T30 | A36 | IsComplete=false, пустой MapId | Incomplete / UnknownMapId |
-| T31 | A36 | SupportParentId на отсутствующую постройку; цикл опор; два потомка в одном сокете | BrokenSupportLink |
+| T30 | A36 | IsComplete=false; пустой MapId (неизвестный непустой MapId проверяется в A38) | Incomplete / MissingField |
+| T31 | A36 | SupportParentId на отсутствующую постройку; цикл опор; два потомка в одном сокете (совместимость сокета — позже, §10.2 п. 6b) | BrokenSupportLink |
 | T32 | A36 | Один ID одновременно в tombstones и записях | TombstoneConflict |
 | T33 | A39 | Сохранение у берега и в воде, загрузка | Transform в допуске 1 cm/0.1°, MovementMode корректный |
 | T34 | A38 | Manifest отсутствует; manifest указывает на отсутствующий слот; ActiveGeneration ≠ Generation | Выбор валидного слота с максимальным Generation |
@@ -380,6 +422,8 @@ None, Busy, NotReady, NoValidSave, ManifestMissing, ManifestCorrupt, SlotMissing
 | T48 | Повторный snapshot без изменений | Эквивалентен, кроме Generation/CreatedUtc/SaveSlotName |
 | T49 | Команда inventory с Revision, полученной до загрузки | Отклонена (stale revision) |
 | T50 | Save/load после перезапуска приложения и в Windows Development-сборке | Совпадение по ID/Quantity/state (A40/A42) |
+| T51 | A38: принудительное завершение процесса (TerminateProcess) во время записи неактивного слота и во время записи manifest, по 3 повтора | Загрузка выбирает поколение по таблице §10.1; процесс загрузки не падает; фактический результат записан. Не заменяет проверку отключения питания |
+| T52 | A42, по возможности: жёсткий сброс виртуальной машины с Windows во время записи | Результат записан фактически; при расхождении с §10.1 — решение L2 / запись через временный файл |
 
 ## 13. Техническое задание для Sol: реализация A36
 
@@ -392,12 +436,12 @@ None, Busy, NotReady, NoValidSave, ManifestMissing, ManifestCorrupt, SlotMissing
 1. `Types/ESaveLoadError`, `Types/ESaveEntityOrigin`, `Types/ESaveEntityKind`.
 2. `DTO/FSave_ItemStack`, `FSave_Slot`, `FSave_Inventory`, `FSave_SurvivalStats`, `FSave_Player`, `FSave_EntityHeader`, `FSave_ItemAmount`, `FSave_ContainerRecord`, `FSave_BuildPieceRecord`, `FSave_ResourceNodeRecord`, `FSave_PickupRecord`, `FSave_Summary`, `FSave_SlotInfo` — точно по §5.
 3. `SG_SurvivalSave`, `SG_SaveManifest` (родитель SaveGame).
-4. `BPFL_SaveSchema`: `GetCurrentSaveVersion() → 1`; `CheckSaveVersion(Integer) → ESaveLoadError`; `ComputeSummary(SG_SurvivalSave) → FSave_Summary`; `ValidateSaveData(SG_SurvivalSave, GameInstance) → ESaveLoadError + контекст` по §10.2 пп. 1, 3–7 (кроме сравнения с фактическим именем слота и manifest — это A38); `MigrateToCurrent(SG_SurvivalSave) → ESaveLoadError` (v1 — тождественно).
+4. `BPFL_SaveSchema`: `GetCurrentSaveVersion() → 1`; `CheckSaveVersion(Integer) → ESaveLoadError`; `ComputeSummary(SG_SurvivalSave) → FSave_Summary`; `ValidateSaveData(SG_SurvivalSave, GameInstance) → ESaveLoadError + контекст` — строки §10.2 с пометкой «A36» (1a, 3, 4, 5a, 6a, 7); `MigrateToCurrent(SG_SurvivalSave) → ESaveLoadError` (v1 — тождественно).
 5. Тесты: `Docs/Architecture/evidence/a36_verify.py` и запуск через существующий runner-подход F01 (отдельный UnrealEditor-Cmd, хеши Content/Config/uproject до/после, новый каталог `Saved/Verification/A36/<timestamp>`). Fixture F-A36 строится скриптом в памяти; файлы `.sav` в репозиторий не добавляются (golden-файлы — A40, с добавлением правила LFS для `*.sav` отдельным решением).
 
-**Обязательные тесты:** T01–T05, T14–T19 (в памяти, без файловых повреждений), T30–T32; плюс регрессия F01/F02 (211 assertions) без изменений результата.
+**Обязательные тесты:** T01–T05, T14–T19, T30–T32 — все с пометкой A36 в §12; плюс регрессия F01/F02 (211 assertions) без изменений результата. T03 выполняется только из harness во временном слоте (§4.4). T10–T13 и T20+ в A36 не реализуются.
 
-**Не делать:** SaveCoordinator, запись по команде игрока, manifest IO, реестр сущностей, EntityId на карте, API восстановления inventory, изменения BPC_Inventory, GameInstance, GameMode, PlayerState, Controller, карт, A10/A11, Config и `.uproject`; не включать PythonScriptPlugin постоянно; не добавлять C++.
+**Не делать:** SaveCoordinator, запись по команде игрока, вызовы `Save Game to Slot`/`Load Game from Slot` в игровых Blueprint (они допустимы только в тестовом harness T03), слоты A/B, запись или чтение manifest, fallback, проверки L1 п. 1b и 8, реестр сущностей, EntityId на карте, API восстановления inventory, изменения BPC_Inventory, GameInstance, GameMode, PlayerState, Controller, карт, A10/A11, Config и `.uproject`; не включать PythonScriptPlugin постоянно; не добавлять C++.
 
 **Отчёт:** `Docs/Architecture/16_A36_SAVE_SCHEMA.md` (или следующий свободный номер) и строка в ProjectStatus.md: изменённые ассеты, компиляция, статусы BS_UP_TO_DATE, результаты тестов, ограничения. Статус «завершена» — только после всех тестов.
 
@@ -409,20 +453,23 @@ None, Busy, NotReady, NoValidSave, ManifestMissing, ManifestCorrupt, SlotMissing
 - [x] Описаны DTO игрока, inventory, контейнеров, построек, ресурсных узлов, pickups, tombstones, manifest.
 - [x] Правила GUID/EntityId/StackId/InventoryId/MapId; SaveVersion=1 и миграции.
 - [x] Запрет Actor/Widget/временных объектов и способ автоматической проверки.
-- [x] Атомарная запись, проверка целостности, fallback, коды ошибок.
+- [x] Двухслотовая запись без заявления о файловой атомарности, поведение при сбое питания и ограничения восстановления (§10.1), проверка целостности, fallback, коды ошибок.
+- [x] Ответственность A36–A40 разделена (§4.4); тесты §12, ТЗ §13 и критерии §14 ссылаются на одни и те же проверки §10.2.
 - [x] Сценарии повреждённых, устаревших и неполных сохранений; риски; ТЗ для Sol.
 
 Реализации A36 (будущая задача):
 
 1. Все новые ассеты компилируются (BS_UP_TO_DATE), нет новых Accessed None.
-2. T01–T05, T14–T19, T30–T32 проходят в отдельном процессе редактора; результат записан в новый каталог Verification.
+2. T01–T05, T14–T19, T30–T32 проходят в отдельном процессе редактора; результат записан в новый каталог Verification. После T03 временного слота нет, файлы `Saved/SaveGames/survival_profile*` (если есть) не изменены по SHA256.
 3. Регрессия F01/F02 — 211/0 без изменения.
 4. SHA256 существующих Content/Config/uproject вне `/Game/Survival/Persistence/` не изменились.
 5. В DTO нет запрещённых типов (T01); fixture F-A36 содержит stack, container, build support link и удалённый authored pickup (R11).
 6. Версия 2 даёт `NewerVersion` (критерий плана A36).
+7. В игровых Blueprint нет вызовов записи/чтения SaveGame; SaveCoordinator и manifest IO отсутствуют (граница §4.4).
 
 ## 15. Проверка этого документа
 
 - Объём изменений: только Markdown в `Docs/` — этот отчёт, ProjectStatus.md, ссылка в README архитектуры и строка статуса A36 в плане. Blueprint, карты, Config, `.uproject`, A10, A11 не изменялись.
 - Ссылки на соседние документы проверены на существование файлов.
+- Ревизия 2 (по замечаниям PR №10): разделена ответственность A36–A40 и ограничен T03 тестовым harness (§4.4); снято утверждение об атомарности manifest, добавлены сценарии сбоя питания и ограничения восстановления (§10.1, T51/T52); проверки §10.2 разнесены по задачам, а §12–§14 согласованы с ними (коды ошибок, fixture F-A36 в пределах MaxWeight, проверки BuildId/MapId/сокетов перенесены в задачи с соответствующими каталогами).
 - Unreal не запускался; ни одно утверждение о поведении SaveGame в UE 5.8.4 не объявлено проверенным: такие места помечены как гипотеза или риск.
