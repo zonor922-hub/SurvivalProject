@@ -4,7 +4,7 @@
   "date": "2026-10-27",
   "base_sha": "c7f02030c99b3105bd3f5c395222155eae2dbd1e",
   "engine_version": "5.8.4-58902052+++UE5+Release-5.8",
-  "tested_state": "base plus scoped changes, before commit; clean commit verification follows",
+  "tested_state": "clean committed worktree; no untracked dependencies",
   "contracts": [
     {
       "script": "a05_verify.py",
@@ -152,5 +152,315 @@
     "editor_exit_code": 0
   },
   "new_package_built": false,
-  "remote_empty_cache_clone_tested": false
+  "remote_empty_cache_clone_tested": false,
+  "tested_commit": "d9051d27c01c5f96e861b501e67efb7bd41f06b0",
+  "started_utc": "2026-10-27T05:15:17.9288747Z",
+  "working_tree": [],
+  "timed_out": false,
+  "numeric_cases": [
+    {
+      "test": "UnitWeight NaN validation",
+      "passed": true,
+      "detail": "(False, 4, 0, 0)"
+    },
+    {
+      "test": "UnitWeight NaN catalog readiness",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "UnitWeight NaN clears partial lookup",
+      "passed": true,
+      "detail": "InvalidDefinition: item.audit"
+    },
+    {
+      "test": "UnitWeight NaN corrected retry",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "UnitWeight +Infinity validation",
+      "passed": true,
+      "detail": "(False, 4, 0, 0)"
+    },
+    {
+      "test": "UnitWeight +Infinity catalog readiness",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "UnitWeight +Infinity clears partial lookup",
+      "passed": true,
+      "detail": "InvalidDefinition: item.audit"
+    },
+    {
+      "test": "UnitWeight +Infinity corrected retry",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "UnitWeight -Infinity validation",
+      "passed": true,
+      "detail": "(False, 4, 0, 0)"
+    },
+    {
+      "test": "UnitWeight -Infinity catalog readiness",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "UnitWeight -Infinity clears partial lookup",
+      "passed": true,
+      "detail": "InvalidDefinition: item.audit"
+    },
+    {
+      "test": "UnitWeight -Infinity corrected retry",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "UnitWeight negative validation",
+      "passed": true,
+      "detail": "(False, 4, 0, 0)"
+    },
+    {
+      "test": "UnitWeight negative catalog readiness",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "UnitWeight negative clears partial lookup",
+      "passed": true,
+      "detail": "InvalidDefinition: item.audit"
+    },
+    {
+      "test": "UnitWeight negative corrected retry",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "UnitWeight zero validation",
+      "passed": true,
+      "detail": "(True, 1, 0, 0)"
+    },
+    {
+      "test": "UnitWeight zero catalog readiness",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "UnitWeight positive validation",
+      "passed": true,
+      "detail": "(True, 1, 0, 0)"
+    },
+    {
+      "test": "UnitWeight positive catalog readiness",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "DurabilityMax NaN validation",
+      "passed": true,
+      "detail": "(False, 5, 0, 0)"
+    },
+    {
+      "test": "DurabilityMax NaN catalog readiness",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "DurabilityMax NaN clears partial lookup",
+      "passed": true,
+      "detail": "InvalidDefinition: item.audit"
+    },
+    {
+      "test": "DurabilityMax NaN corrected retry",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "DurabilityMax +Infinity validation",
+      "passed": true,
+      "detail": "(False, 5, 0, 0)"
+    },
+    {
+      "test": "DurabilityMax +Infinity catalog readiness",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "DurabilityMax +Infinity clears partial lookup",
+      "passed": true,
+      "detail": "InvalidDefinition: item.audit"
+    },
+    {
+      "test": "DurabilityMax +Infinity corrected retry",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "DurabilityMax -Infinity validation",
+      "passed": true,
+      "detail": "(False, 5, 0, 0)"
+    },
+    {
+      "test": "DurabilityMax -Infinity catalog readiness",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "DurabilityMax -Infinity clears partial lookup",
+      "passed": true,
+      "detail": "InvalidDefinition: item.audit"
+    },
+    {
+      "test": "DurabilityMax -Infinity corrected retry",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "DurabilityMax negative validation",
+      "passed": true,
+      "detail": "(False, 5, 0, 0)"
+    },
+    {
+      "test": "DurabilityMax negative catalog readiness",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "DurabilityMax negative clears partial lookup",
+      "passed": true,
+      "detail": "InvalidDefinition: item.audit"
+    },
+    {
+      "test": "DurabilityMax negative corrected retry",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "DurabilityMax zero validation",
+      "passed": true,
+      "detail": "(False, 5, 0, 0)"
+    },
+    {
+      "test": "DurabilityMax zero catalog readiness",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "DurabilityMax zero clears partial lookup",
+      "passed": true,
+      "detail": "InvalidDefinition: item.audit"
+    },
+    {
+      "test": "DurabilityMax zero corrected retry",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "DurabilityMax positive validation",
+      "passed": true,
+      "detail": "(True, 1, 0, 0)"
+    },
+    {
+      "test": "DurabilityMax positive catalog readiness",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "inactive durability ignored",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "WeightLimit NaN",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "WeightLimit NaN valid retry",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "WeightLimit +Infinity",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "WeightLimit +Infinity valid retry",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "WeightLimit -Infinity",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "WeightLimit -Infinity valid retry",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "WeightLimit negative",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "WeightLimit negative valid retry",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "WeightLimit zero",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "WeightLimit positive",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "active stack durability NaN",
+      "passed": true,
+      "detail": "(False, 5, 0, 0)"
+    },
+    {
+      "test": "active stack durability +Infinity",
+      "passed": true,
+      "detail": "(False, 5, 0, 0)"
+    },
+    {
+      "test": "active stack durability -Infinity",
+      "passed": true,
+      "detail": "(False, 5, 0, 0)"
+    },
+    {
+      "test": "active stack durability negative",
+      "passed": true,
+      "detail": "(False, 5, 0, 0)"
+    },
+    {
+      "test": "active stack durability zero",
+      "passed": true,
+      "detail": "(True, 1, 1, 1)"
+    },
+    {
+      "test": "active stack durability maximum",
+      "passed": true,
+      "detail": "(True, 1, 1, 1)"
+    },
+    {
+      "test": "active stack durability above maximum",
+      "passed": true,
+      "detail": "(False, 5, 0, 0)"
+    }
+  ],
+  "tested_runtime_sha256": {
+    "BPC_Inventory": "8B2E5FF35A1CF74BC9C236D32AD4DE485048CD6832C2105B3BCAC3794ED856B5",
+    "PDA_ItemDefinition": "AED834F0A193860F5C29484AB52D596547ABFDFDABCB45B5091E33B004DDB6B9"
+  }
 }

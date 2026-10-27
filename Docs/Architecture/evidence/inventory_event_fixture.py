@@ -26,4 +26,3 @@ def listener_class(inventory_bp):
     assert len(outs)==1;wire(outs[0],dp);B.set_create_delegate_function(delegate,'OnChanged')
     assert B.compile_blueprint(bp)
     return bp
-

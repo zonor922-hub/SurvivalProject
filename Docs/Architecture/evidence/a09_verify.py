@@ -102,5 +102,3 @@ if __name__=='__main__':
         except Exception:r['cleanup_error']=traceback.format_exc();r['passed']=False
     pathlib.Path(__file__).with_name('a09_verification.json').write_text(json.dumps(r,ensure_ascii=False,indent=2),encoding='utf-8')
     assert r['passed'],r.get('error')
-
-
