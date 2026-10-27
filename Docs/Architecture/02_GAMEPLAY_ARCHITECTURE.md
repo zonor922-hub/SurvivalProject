@@ -101,10 +101,12 @@ WorldPickup запрашивает TryAddExact. При полном инвент
 - GetSnapshot; CanApply(ChangeSet) без мутации;
 - TryAddExact(ItemStack), TryRemoveExact(ItemId, Quantity);
 - TrySplit(StackId, Quantity, TargetSlot), TryMerge(SourceStackId, TargetStackId);
-- TryTransferExact(Source, Destination, StackId, Quantity, ExpectedRevisions);
+- TryTransferExact(Source, Destination, StackId, Quantity, ExpectedRevisions) — уточнение A11 ([проект](17_A11_DESIGN_PROPOSAL.md) §3.2): вызывается на источнике (Source = self) как `TryTransferExact(Destination, StackId, Quantity, ExpectedSourceRevision, ExpectedDestinationRevision)`, возвращает FOperationResult (ревизия источника) и отдельный DestinationNewRevision; слот приёмника выбирается автоматически (D8), TargetSlot нет;
 - TryApplyRecipe(RecipeId), ConsumeItem(StackId), запрос стоимости строительства через общий координатор.
 
 `Exact` означает «всё или ничего». Частичный подбор сознательно отсутствует в MVP. Сначала объединять совместимые стеки, затем занимать пустые слоты в порядке индексов. Для merge сохранить GUID принимающего стека; для split создать новый. Перенос целого стека сохраняет GUID, частичного — создаёт новый. Не должно быть одного StackId одновременно в двух inventories.
+
+> Уточнение D2 (утверждено пользователем 27.10.2026, [проект A11](17_A11_DESIGN_PROPOSAL.md) §3.5): целый стек сохраняет свой GUID, только если по правилу «сначала совместимые стеки» он целиком помещается в один пустой слот приёмника. Если хотя бы часть сливается с совместимыми стеками приёмника, приоритет у правила merge: принимающие стеки сохраняют GUID, исходный GUID исчезает, а остаток в пустом слоте получает новый GUID. При частичном переносе источник сохраняет свой GUID, новые стеки приёмника получают новые GUID.
 
 Каждая команда: проверить положительность/ID/ревизии → поставить mutation guard → рассчитать копии затронутых inventories → проверить слоты, стеки и вес результата → применить все копии → увеличить ревизии → снять guard → отправить события. До commit никаких UI/event callbacks. В критической секции нет Delay, asynchronous load или latent nodes. Все definitions загружены заранее.
 
