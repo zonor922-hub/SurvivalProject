@@ -4,19 +4,19 @@
   "date": "2026-10-27",
   "base_sha": "a8b45663be759bcd7c2fedda06504a4baf3ac09d",
   "previous_a10_tested_commit": "c242f36c6433dba91b5221e83ca3a32b76c3a648",
-  "tested_commit": "366e472ee4c3d8a0625804ab1cb553998ef8c53e",
+  "tested_commit": "92e7d12f2d8afe761e9727758312d76b5c809b50",
   "tested_state": "Clean committed state; standard run without IncludeA10",
   "clean_commit_run": {
     "context": {
-      "commit": "366e472ee4c3d8a0625804ab1cb553998ef8c53e",
+      "commit": "92e7d12f2d8afe761e9727758312d76b5c809b50",
       "working_tree": [],
       "project_root": "C:\\Users\\Denis\\Documents\\ChatGPT\\SurvivalProject\\A10Worktree",
       "source": "C:\\Users\\Denis\\Documents\\ChatGPT\\SurvivalProject\\A10Worktree\\Docs\\Architecture\\evidence",
-      "output": "C:\\Users\\Denis\\Documents\\ChatGPT\\SurvivalProject\\A10Local\\F1AcceptanceRun",
+      "output": "C:\\Users\\Denis\\Documents\\ChatGPT\\SurvivalProject\\A10Local\\F1FinalCanonicalRun",
       "skip_swimming": false,
       "inject_failure": false,
       "include_a10": true,
-      "started_utc": "2026-10-27T17:01:25.5068381Z"
+      "started_utc": "2026-10-27T17:22:28.1733865Z"
     },
     "include_a10": true,
     "engine_version": "5.8.4-58902052+++UE5+Release-5.8",
@@ -594,22 +594,22 @@
         {
           "test": "resolve item.wood",
           "passed": true,
-          "detail": "(<Object '/Game/Survival/Items/Definitions/DA_Item_Wood.DA_Item_Wood' (0x0000026720E9C000) Class 'PDA_ItemDefinition_C'>, True)"
+          "detail": "(<Object '/Game/Survival/Items/Definitions/DA_Item_Wood.DA_Item_Wood' (0x000001928FF01300) Class 'PDA_ItemDefinition_C'>, True)"
         },
         {
           "test": "resolve item.stone",
           "passed": true,
-          "detail": "(<Object '/Game/Survival/Items/Definitions/DA_Item_Stone.DA_Item_Stone' (0x0000026720E9C100) Class 'PDA_ItemDefinition_C'>, True)"
+          "detail": "(<Object '/Game/Survival/Items/Definitions/DA_Item_Stone.DA_Item_Stone' (0x000001928FF00D00) Class 'PDA_ItemDefinition_C'>, True)"
         },
         {
           "test": "resolve item.berry",
           "passed": true,
-          "detail": "(<Object '/Game/Survival/Items/Definitions/DA_Item_Berry.DA_Item_Berry' (0x0000026720E9B000) Class 'PDA_ItemDefinition_C'>, True)"
+          "detail": "(<Object '/Game/Survival/Items/Definitions/DA_Item_Berry.DA_Item_Berry' (0x000001928FF00900) Class 'PDA_ItemDefinition_C'>, True)"
         },
         {
           "test": "resolve item.plank",
           "passed": true,
-          "detail": "(<Object '/Game/Survival/Items/Definitions/DA_Item_Plank.DA_Item_Plank' (0x0000026720E9F900) Class 'PDA_ItemDefinition_C'>, True)"
+          "detail": "(<Object '/Game/Survival/Items/Definitions/DA_Item_Plank.DA_Item_Plank' (0x000001928FF07700) Class 'PDA_ItemDefinition_C'>, True)"
         },
         {
           "test": "unknown safe",
@@ -810,7 +810,7 @@
         {
           "test": "derived weight wood x2",
           "passed": true,
-          "detail": "(1.0, True) (InventoryId_2_26A428304D039DE2EA403F9BB07F81E0=2661C47E478BED647EE34CAEB0D260F4,Revision_5_7A6A954549FA4AEE39A982AD787160D2=7,Slots_10_9053D0EE480F8FBA655F689183B061D9=((ItemStack_5_779DD7EE429A896B44C7BDB5BD86E483=(StackId_2_0D9551B3432E557343037D9F83EACD2E=97FF3D5A45D25558B7A34D9FF655BCB4,ItemId_5_0EBB58F84F513100A99F31938FDDB627=\"item.wood\",Quantity_8_ED3667F84EB2BC62FEA5CBAC3A2B4FAA=2),HasItem_8_D040C6944C2BC036FE49499973A601D5=True),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=1),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=2),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=3)),MaxWeight_12_D58D5FDB4818ADCB25DC5BB8839661A3=10.000000)"
+          "detail": "(1.0, True) (InventoryId_2_26A428304D039DE2EA403F9BB07F81E0=15DFD3554C0A5FF43826BDA7ED027C93,Revision_5_7A6A954549FA4AEE39A982AD787160D2=7,Slots_10_9053D0EE480F8FBA655F689183B061D9=((ItemStack_5_779DD7EE429A896B44C7BDB5BD86E483=(StackId_2_0D9551B3432E557343037D9F83EACD2E=EBE3CF254064A17B534D6C833AA95427,ItemId_5_0EBB58F84F513100A99F31938FDDB627=\"item.wood\",Quantity_8_ED3667F84EB2BC62FEA5CBAC3A2B4FAA=2),HasItem_8_D040C6944C2BC036FE49499973A601D5=True),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=1),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=2),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=3)),MaxWeight_12_D58D5FDB4818ADCB25DC5BB8839661A3=10.000000)"
         },
         {
           "test": "repeat init preserves items and identity",
@@ -1153,7 +1153,7 @@
         {
           "test": "success emits exactly one event",
           "passed": true,
-          "detail": "((True, 1, 21, 1), 1, <Object '/Engine/Transient.BPC_Inventory_C_31' (0x00000267442CA800) Class 'BPC_Inventory_C'>)"
+          "detail": "((True, 1, 21, 1), 1, <Object '/Engine/Transient.BPC_Inventory_C_31' (0x00000192A3827200) Class 'BPC_Inventory_C'>)"
         },
         {
           "test": "event observes committed revision",
@@ -3908,7 +3908,7 @@
           "errors": []
         },
         "roundtrip_pairs": 100,
-        "roundtrip_elapsed_seconds": 0.052058500001294306,
+        "roundtrip_elapsed_seconds": 0.0558803000003536,
         "independent_model_operations": 200,
         "fractional_inequivalent_pairs": [
           [
@@ -4151,8 +4151,8 @@
             0.7071067811865476
           ],
           "mode": "<MovementMode.MOVE_SWIMMING: 4>",
-          "control_rotation": "<Struct 'Rotator' (0x000002672F302B80) {pitch: 45.000000, yaw: 0.000000, roll: 0.000000}>",
-          "pawn_control_rotation": "<Struct 'Rotator' (0x000002672F302B80) {pitch: 45.000000, yaw: 0.000000, roll: 0.000000}>"
+          "control_rotation": "<Struct 'Rotator' (0x0000019291AB2BD0) {pitch: 45.000000, yaw: 0.000000, roll: 0.000000}>",
+          "pawn_control_rotation": "<Struct 'Rotator' (0x0000019291AB2BD0) {pitch: 45.000000, yaw: 0.000000, roll: 0.000000}>"
         },
         {
           "test": "swim descend",
@@ -4163,8 +4163,8 @@
             -0.7071067811865476
           ],
           "mode": "<MovementMode.MOVE_SWIMMING: 4>",
-          "control_rotation": "<Struct 'Rotator' (0x000002672F3020E0) {pitch: -45.000000, yaw: 0.000000, roll: 0.000000}>",
-          "pawn_control_rotation": "<Struct 'Rotator' (0x000002672F3020E0) {pitch: -45.000000, yaw: 0.000000, roll: 0.000000}>"
+          "control_rotation": "<Struct 'Rotator' (0x0000019291AB11E0) {pitch: -45.000000, yaw: 0.000000, roll: 0.000000}>",
+          "pawn_control_rotation": "<Struct 'Rotator' (0x0000019291AB11E0) {pitch: -45.000000, yaw: 0.000000, roll: 0.000000}>"
         },
         {
           "test": "dry pitch ignored",
@@ -4175,8 +4175,8 @@
             0.0
           ],
           "mode": "<MovementMode.MOVE_WALKING: 1>",
-          "control_rotation": "<Struct 'Rotator' (0x000002672F302D60) {pitch: 45.000000, yaw: 0.000000, roll: 0.000000}>",
-          "pawn_control_rotation": "<Struct 'Rotator' (0x000002672F302D60) {pitch: 45.000000, yaw: 0.000000, roll: 0.000000}>"
+          "control_rotation": "<Struct 'Rotator' (0x0000019291AB2DB0) {pitch: 45.000000, yaw: 0.000000, roll: 0.000000}>",
+          "pawn_control_rotation": "<Struct 'Rotator' (0x0000019291AB2DB0) {pitch: 45.000000, yaw: 0.000000, roll: 0.000000}>"
         },
         {
           "test": "swim strafe",
@@ -4187,18 +4187,18 @@
             0.0
           ],
           "mode": "<MovementMode.MOVE_SWIMMING: 4>",
-          "control_rotation": "<Struct 'Rotator' (0x000002672F302C70) {pitch: 45.000000, yaw: 0.000000, roll: 0.000000}>",
-          "pawn_control_rotation": "<Struct 'Rotator' (0x000002672F302C70) {pitch: 45.000000, yaw: 0.000000, roll: 0.000000}>"
+          "control_rotation": "<Struct 'Rotator' (0x0000019291AB2CC0) {pitch: 45.000000, yaw: 0.000000, roll: 0.000000}>",
+          "pawn_control_rotation": "<Struct 'Rotator' (0x0000019291AB2CC0) {pitch: 45.000000, yaw: 0.000000, roll: 0.000000}>"
         },
         {
           "test": "physical dry walking",
           "passed": true,
-          "distance_cm": 177.71620999667937
+          "distance_cm": 177.5084206229916
         },
         {
           "test": "physical dry jump",
           "passed": true,
-          "rise_cm": 105.91738309942173
+          "rise_cm": 105.90939299788513
         },
         {
           "test": "jump returns to walking",
@@ -4210,7 +4210,7 @@
         -800.0,
         92.15000200271606
       ],
-      "since": 1.1131781004369259,
+      "since": 1.113468300551176,
       "jump_z": 92.15000200271606,
       "passed": true
     },
@@ -4220,36 +4220,36 @@
       "samples": [
         {
           "phase": "rise",
-          "delta_z": 184.63552834210924,
+          "delta_z": 184.61492788184742,
           "location": [
-            11364.932481828517,
+            11364.873239628867,
             18000.0,
-            4.635528342109251
+            4.614927881847412
           ],
           "mode": "<MovementMode.MOVE_FALLING: 3>"
         },
         {
           "phase": "descend",
-          "delta_z": -263.06542003536265,
+          "delta_z": -263.04481649801323,
           "location": [
-            11668.492960613026,
+            11668.430002921428,
             18000.0,
-            -258.4298916932534
+            -258.42988861616584
           ],
           "mode": "<MovementMode.MOVE_SWIMMING: 4>"
         },
         {
           "phase": "above water",
           "location": [
-            11000.05156159113,
+            11000.051561625705,
             18000.0,
-            149.86388513261136
+            149.86388507176412
           ],
           "mode": "<MovementMode.MOVE_FALLING: 3>"
         }
       ],
-      "since": 1.8541897051036358,
-      "initial_z": 4.635528342109251,
+      "since": 1.8574959002435207,
+      "initial_z": 4.614927881847412,
       "success": true
     },
     "a24_shore_verification.json": {
@@ -4268,9 +4268,9 @@
           ],
           "swim_animation": true,
           "location": [
-            7700.9488540713855,
-            17190.094886928895,
-            -101.46787457865827
+            7700.9821031027195,
+            17190.098211831446,
+            -101.46325034999265
           ]
         },
         {
@@ -4284,9 +4284,9 @@
           ],
           "swim_animation": false,
           "location": [
-            5898.931590873912,
-            17008.174775485935,
-            92.93121667637111
+            5899.12190532537,
+            17008.191645351275,
+            92.9312138029365
           ]
         },
         {
@@ -4299,9 +4299,9 @@
           ],
           "swim_animation": true,
           "location": [
-            12598.273916724538,
+            12598.27821093623,
             18000.0,
-            -77.23746786041316
+            -77.23744770264997
           ]
         },
         {
@@ -4315,9 +4315,9 @@
           ],
           "swim_animation": false,
           "location": [
-            14000.537705493285,
+            14000.537308596246,
             18000.0,
-            93.1217753049941
+            93.12177295687468
           ]
         },
         {
@@ -4331,8 +4331,8 @@
           "swim_animation": true,
           "location": [
             11300.0,
-            15003.485250672476,
-            -90.18814929728357
+            15003.481203217387,
+            -90.1882606698609
           ]
         },
         {
@@ -4346,9 +4346,9 @@
           ],
           "swim_animation": false,
           "location": [
-            11300.639999870218,
-            13096.565870793722,
-            92.3169064391432
+            11300.640074416571,
+            13096.569889779012,
+            92.31693452455275
           ]
         }
       ],
@@ -4357,7 +4357,7 @@
         "<MovementMode.MOVE_FALLING: 3>",
         "<MovementMode.MOVE_WALKING: 1>"
       ],
-      "since": 20.489094108343124,
+      "since": 20.49196909368038,
       "last_mode": "<MovementMode.MOVE_WALKING: 1>",
       "passed": true
     }
@@ -4885,7 +4885,7 @@
     "Docs/Architecture/evidence/a10_event_fixture.py": "F7115DE64DB848BBF9885383619A6DD7837CB2E0E987AFEC81414FC9D1494A77",
     "Docs/Architecture/evidence/a10_pie.py": "F1BFD71A19516B3DF3EA7936B2BA794A73990FC7450EE34CD69E7055257B9E27",
     "Docs/Architecture/evidence/f01_f02_runner.py": "97D774CD95ED1A5EB8F7C362895602788685668635EC61B1094CF2DA0475E15E",
-    "Docs/Architecture/evidence/run_f01_f02.ps1": "799F2660268A3B1446645FC385F5FBDC179CEC7557EE54DF114D497729CB06C4"
+    "Docs/Architecture/evidence/run_f01_f02.ps1": "9EB2E8B15455252CBEAC81FAF3E1B661A836A9618702ED8E17C78C9AFB88A60A"
   },
   "sensitivity": {
     "status": "NOT RUN — нет безопасной изоляции",
@@ -4895,5 +4895,6 @@
   "overweight_contract": "WeightLimit=8, existing A09 capacity contract; A10 unchanged",
   "graph_review": "AUTOMATED: all 8 TrySplit and 9 TryMerge failure returns after guard acquisition",
   "new_package_built": false,
-  "empty_network_lfs_cache_clone_tested": false
+  "empty_network_lfs_cache_clone_tested": false,
+  "correction": "User authorized a fifth ordinary commit: mixed CRLF/LF working runner had a different raw SHA256 from the LF Git blob under text=auto. Only working line endings were normalized and stat cache refreshed; Git runner content did not change. Full default acceptance repeated on clean HEAD 92e7d12. All eight SHA256 verified against HEAD scripts or LFS OIDs. No amend/rebase/force push."
 }
