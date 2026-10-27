@@ -4,9 +4,13 @@ param(
     [ValidateRange(30,1800)][int]$TimeoutSeconds=900,
     [switch]$SkipSwimming,
     [switch]$InjectFailureForRunnerTest,
-    [switch]$IncludeA10
+    [switch]$IncludeA10,
+    [switch]$ExcludeA10
 )
 $ErrorActionPreference='Stop'
+if ($IncludeA10 -and $ExcludeA10) {throw '-IncludeA10 and -ExcludeA10 are mutually exclusive'}
+if ($IncludeA10) {Write-Output '-IncludeA10 is now the default'}
+if ($ExcludeA10) {Write-Output 'A10 excluded: this run is not a full acceptance run'}
 $projectRoot=(Resolve-Path (Join-Path $PSScriptRoot '../../..')).Path
 if (-not $OutputDirectory) {$OutputDirectory=Join-Path $projectRoot ('Saved/Verification/F01F02/'+(Get-Date -Format 'yyyyMMdd_HHmmss'))}
 $null=New-Item -ItemType Directory -Path $OutputDirectory -Force
@@ -30,7 +34,7 @@ $sha=(& git -C $projectRoot rev-parse HEAD).Trim()
 if ($LASTEXITCODE -ne 0) {throw 'Unable to identify tested commit'}
 $dirty=@(& git -C $projectRoot status --porcelain=v1)
 if ($LASTEXITCODE -ne 0) {throw 'Unable to inspect tested working tree'}
-$context=[ordered]@{commit=$sha;working_tree=$dirty;project_root=$projectRoot;source=$PSScriptRoot;output=$OutputDirectory;skip_swimming=[bool]$SkipSwimming;inject_failure=[bool]$InjectFailureForRunnerTest;include_a10=[bool]$IncludeA10;started_utc=(Get-Date).ToUniversalTime().ToString('o')}
+$context=[ordered]@{commit=$sha;working_tree=$dirty;project_root=$projectRoot;source=$PSScriptRoot;output=$OutputDirectory;skip_swimming=[bool]$SkipSwimming;inject_failure=[bool]$InjectFailureForRunnerTest;include_a10=(-not [bool]$ExcludeA10);started_utc=(Get-Date).ToUniversalTime().ToString('o')}
 $contextPath=Join-Path $OutputDirectory 'context.json'
 $context | ConvertTo-Json -Depth 8 | Set-Content -LiteralPath $contextPath -Encoding utf8
 $bootstrap=Join-Path $OutputDirectory 'bootstrap.py'

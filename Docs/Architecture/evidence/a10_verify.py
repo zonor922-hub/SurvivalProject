@@ -1,14 +1,66 @@
 """A10 contracts against compiled Blueprint; trusted fixtures exist only in memory."""
-import unreal,pathlib,json,sys,traceback,time,random
+import unreal,pathlib,json,sys,traceback,time,random,hashlib
 from a09_verify import read,write,snapshot,items,result
 from inventory_graph_helpers import *
 from a10_event_fixture import listener_class
+
+def guard_paths(bp,name):
+    """Conservative exhaustive exec traversal of the actual saved command graph."""
+    ed=G.get_graph_editor_by_name(bp,name);nodes=list(ed.list_all_nodes())
+    entry=next(n for n in nodes if n.get_class().get_name()=='K2Node_FunctionEntry')
+    visited=set();returns={};errors=[]
+    def walk(node,held=False,acquired=False,released=False,committed=False,path=()):
+        key=(node.get_name(),held,acquired,released,committed)
+        if key in visited:return
+        visited.add(key);path=path+(node.get_name(),)
+        cls=node.get_class().get_name()
+        if cls=='K2Node_VariableSet':
+            guards=[p for p in B.list_all_pins(node) if str(P.get_pin_name(p))=='MutationInProgress']
+            if guards:
+                assert not P.list_connected_pins(guards[0]),'Dynamic guard assignment needs explicit review'
+                held=str(P.get_pin_value(guards[0])).lower()=='true'
+                acquired=acquired or held;released=released or not held
+        if cls=='K2Node_CallFunction' and str(B.get_node_title(node))=='CommitInventory':
+            committed=True;held=False
+        if cls=='K2Node_FunctionResult':
+            data=list(P.list_connected_pins(pin(node,'Result','INPUT')))
+            assert len(data)==1,(name,node.get_name(),'unclassified return')
+            producer=P.get_owning_node(data[0]);kind=producer.get_class().get_name()
+            if kind=='K2Node_MakeStruct':
+                success=pin(producer,'Success','INPUT')
+                assert not P.list_connected_pins(success),'Dynamic success needs explicit review'
+                assert str(P.get_pin_value(success)).lower()=='false','Unexpected literal success return'
+                ok=not acquired or (not held and released)
+                label='failure_after_guard' if acquired else 'failure_before_guard'
+            else:
+                ok=committed and str(B.get_node_title(producer))=='CommitInventory'
+                label='commit_result'
+            returns[node.get_name()]={'kind':label,'released':released,'ok':ok,'path':list(path)}
+            if not ok:errors.append(node.get_name())
+            return
+        exits=[p for p in B.list_all_pins(node) if 'OUTPUT' in str(P.get_pin_direction(p)) and str(P.get_pin_name(p)) in ('then','else')]
+        assert exits,(name,node.get_name(),'Unsupported execution node')
+        for p in exits:
+            links=list(P.list_connected_pins(p));assert links,(name,node.get_name(),'Unterminated execution path')
+            for linked in links:
+                assert str(P.get_pin_name(linked))=='execute',(name,node.get_name(),'Non-exec edge')
+                walk(P.get_owning_node(linked),held,acquired,released,committed,path)
+    walk(entry)
+    unreachable=[]
+    for n in nodes:
+        if n.get_class().get_name()=='K2Node_FunctionResult' and n.get_name() not in returns:
+            assert not P.list_connected_pins(pin(n,'execute','INPUT')),'Missed reachable return'
+            assert not P.list_connected_pins(pin(n,'Result','INPUT')),'Unreviewed data-connected return'
+            unreachable.append(n.get_name())
+    after=[r for r in returns.values() if r['kind']=='failure_after_guard']
+    assert after and any(r['kind']=='commit_result' for r in returns.values()),'Vacuous graph test'
+    return {'passed':not errors,'checked_failure_returns_after_guard':len(after),'returns':returns,'unreachable_empty_default_returns':unreachable,'errors':errors}
 
 def run_suite(gi,bp,tests,metrics):
     def check(name,condition,detail='',category='positive'):
         tests.append({'test':name,'passed':bool(condition),'category':category,'detail':str(detail)});assert condition,(name,detail)
     # Fixture bypasses are temporary, private storage remains closed to gameplay callers.
-    for name,field,typ in [('A10SeedSlots','Slots',B.get_array_type(type_asset('FInventorySlot'))),('A10SeedGuard','MutationInProgress',basic('bool')),('A10SeedRevision','Revision',basic('int'))]:
+    for name,field,typ in [('A10SeedSlots','Slots',B.get_array_type(type_asset('FInventorySlot'))),('A10SeedGuard','MutationInProgress',basic('bool')),('A10SeedRevision','Revision',basic('int')),('A10SeedWeightLimit','MaxWeight',basic('real'))]:
         assert not B.find_graph(bp,name);ed=graph(bp,name);v=ed.add_graph_input_parameter('Value',typ);member(ed,field,v,ed.find_graph_entry_pin())
     assert B.compile_blueprint(bp)
     receiver_bp=listener_class(bp)
@@ -61,6 +113,18 @@ def run_suite(gi,bp,tests,metrics):
     # Check both commands in a pre-existing critical section; never clear another owner's guard.
     o.call_method('A10SeedGuard',(True,));fail('busy split',o,lambda:split(o),7,busy=True);fail('busy merge',o,lambda:merge(o),7,busy=True);o.call_method('A10SeedGuard',(False,))
     check('owner releases guard after busy tests',not o.get_editor_property('MutationInProgress'))
+    # WeightLimit=8 is the established capacity error (A09 add overflow contract).
+    overweight=new();add(overweight,10);overweight.call_method('A10SeedWeightLimit',(4.,))
+    fail('overweight state split',overweight,lambda:split(overweight),8)
+    overweight_merge=new();add(overweight_merge,10);assert result(split(overweight_merge))[0]
+    overweight_merge.call_method('A10SeedWeightLimit',(4.,));fail('overweight state merge',overweight_merge,lambda:merge(overweight_merge),8)
+    tolerance=new();add(tolerance,10);tolerance.call_method('A10SeedWeightLimit',(5.-1.e-6,));observer=receiver(tolerance)
+    assert abs(read(snapshot(tolerance),'MaxWeight')-(5.-1.e-6))<1.e-12,'Weight fixture must preserve double precision'
+    check('overweight within tolerance split',result(split(tolerance))==(True,1,4,2) and total(tolerance)==10 and observer.get_editor_property('EventCount')==1 and not tolerance.get_editor_property('MutationInProgress'))
+    beyond=new();add(beyond,10);beyond.call_method('A10SeedWeightLimit',(5.-1.e-3,));fail('overweight beyond tolerance split',beyond,lambda:split(beyond),8)
+    for command in ('TrySplit','TryMerge'):
+        analysis=guard_paths(bp,command);metrics[command+'_guard_paths']=analysis
+        check(command+' failure returns release guard',analysis['passed'],analysis['checked_failure_returns_after_guard'])
     raw=unreal.new_object(bp.generated_class());fail('uninitialized split',raw,lambda:raw.call_method('TrySplit',(unreal.GuidLibrary.new_guid(),1,1)),0)
     fail('uninitialized merge',raw,lambda:raw.call_method('TryMerge',(unreal.GuidLibrary.new_guid(),unreal.GuidLibrary.new_guid())),0)
     # Preserve inactive payload exactly on split (inactive durability is not a merge discriminator).
@@ -158,7 +222,7 @@ def run_suite(gi,bp,tests,metrics):
         assert observer.get_editor_property('EventCount')==model_events,step
         assert not modeled.get_editor_property('MutationInProgress'),step
     metrics['independent_model_operations']=200
-    check('200 mixed commands match independent quantity GUID revision event model',True)
+    check('200 mixed commands match independent quantity GUID revision event model',model_events==observer.get_editor_property('EventCount') and model_revision==read(snapshot(modeled),'Revision'))
     # Non-binary fractional weight exercises tolerance rather than only exact halves.
     fractional_def=unreal.new_object(dbp.generated_class())
     for k,v in [('ItemId','item.audit.fractional'),('MaxStack',20),('UnitWeight',0.1),('HasDurability',False)]:fractional_def.set_editor_property(k,v)
@@ -167,9 +231,33 @@ def run_suite(gi,bp,tests,metrics):
     fractional=new(catalog=fractional_gi);add(fractional,7,'item.audit.fractional');initial_weight=fractional.call_method('GetCurrentWeight')[0]
     check('fractional 0.1 weight split conserves seven items',result(split(fractional,3))[0] and total(fractional)==7 and abs(fractional.call_method('GetCurrentWeight')[0]-initial_weight)<1.e-5)
     check('fractional 0.1 weight merge conserves seven items',result(merge(fractional))[0] and total(fractional)==7 and abs(fractional.call_method('GetCurrentWeight')[0]-initial_weight)<1.e-5)
+    unequal=[(n,q) for n in range(2,21) for q in range(1,n) if 0.1*n != 0.1*(n-q)+0.1*q]
+    metrics['fractional_inequivalent_pairs']=unequal
+    assert len(unequal)>=30,('Float sweep does not exercise rounding',len(unequal))
+    check('fractional sweep inequivalent float sums present',len(unequal)>=30,len(unequal))
+    split_failures=[];merge_failures=[];swept=0
+    for n in range(2,21):
+        for q in range(1,n):
+            exact=new(weight=n*0.1,catalog=fractional_gi)
+            add(exact,n,'item.audit.fractional') # A09 failure must not be bypassed.
+            receiver_exact=receiver(exact);original=ident(exact,0).export_text();weight=exact.call_method('GetCurrentWeight')[0]
+            revision=read(snapshot(exact),'Revision');response=result(split(exact,q))
+            good=response==(True,1,q,revision+1) and [read(s,'Quantity') for s in items(exact)]==[n-q,q] and abs(exact.call_method('GetCurrentWeight')[0]-weight)<=1.e-5 and not exact.get_editor_property('MutationInProgress') and receiver_exact.get_editor_property('EventCount')==1
+            if not good:split_failures.append((n,q,response))
+            if response[0]:
+                response=result(merge(exact))
+                good=response==(True,1,q,revision+2) and total(exact)==n and len(items(exact))==1 and ident(exact,0).export_text()==original and abs(exact.call_method('GetCurrentWeight')[0]-weight)<=1.e-5 and not exact.get_editor_property('MutationInProgress') and receiver_exact.get_editor_property('EventCount')==2
+                if not good:merge_failures.append((n,q,response))
+            else:merge_failures.append((n,q,'split rejected; merge not possible'))
+            swept+=1
+    metrics['fractional_sweep_pairs']=swept
+    check('fractional sweep split at exact limit',swept==190 and not split_failures,split_failures)
+    check('fractional sweep merge at exact limit',swept==190 and not merge_failures,merge_failures)
 
 if __name__=='__main__':
-    r={'tests':[],'metrics':{}};bp=None
+    asset_file=pathlib.Path(unreal.Paths.project_dir())/'Content/Survival/Inventory/BPC_Inventory.uasset'
+    initial_asset_hash=hashlib.sha256(asset_file.read_bytes()).hexdigest()
+    r={'tests':[],'metrics':{'sensitivity':{'status':'NOT RUN — нет безопасной изоляции','reason':'UE Python exposes no transient Blueprint/graph duplication in BlueprintEditorLibrary/BlueprintGraphEditor. EditorAssetLibrary.duplicate_loaded_asset targets a Content Browser asset path and checks out a file; safe in-memory isolation is not guaranteed. No source connections were modified. Acceptance of this residual risk requires a separate decision.'}}};bp=None
     try:
         bp=unreal.load_asset('/Game/Survival/Inventory/BPC_Inventory');gi=unreal.new_object(unreal.load_asset('/Game/Survival/Core/BP_SurvivalGameInstance').generated_class());gi.call_method('InitializeCatalog')
         run_suite(gi,bp,r['tests'],r['metrics']);r['passed']=True
@@ -177,8 +265,12 @@ if __name__=='__main__':
     finally:
         try:
             if bp:
-                for name in ('A10SeedSlots','A10SeedGuard','A10SeedRevision'):B.remove_function_graph(bp,name)
+                for name in ('A10SeedSlots','A10SeedGuard','A10SeedRevision','A10SeedWeightLimit'):B.remove_function_graph(bp,name)
                 assert B.compile_blueprint(bp)
         except Exception:r['passed']=False;r['cleanup_error']=traceback.format_exc()
+        final_asset_hash=hashlib.sha256(asset_file.read_bytes()).hexdigest()
+        r['metrics']['source_blueprint_sha256_before']=initial_asset_hash
+        r['metrics']['source_blueprint_sha256_after']=final_asset_hash
+        if initial_asset_hash!=final_asset_hash:r['passed']=False;r['source_changed_error']='Source Blueprint file changed during unsaved fixture checks'
     pathlib.Path(__file__).with_name('a10_verification.json').write_text(json.dumps(r,ensure_ascii=False,indent=2),encoding='utf-8')
     assert r['passed'],r.get('error',r.get('cleanup_error'))
