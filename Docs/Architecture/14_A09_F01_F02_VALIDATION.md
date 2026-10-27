@@ -55,7 +55,7 @@ F02 включает NaN/+Infinity/-Infinity, отрицательные, нол
 & './Docs/Architecture/evidence/run_f01_f02.ps1' -EngineRoot 'F:/UE_5.8'
 ```
 
-Заменить только путь установки UE. Все пути проекта вычисляются относительно runner; пробелы в пути допустимы. Итог находится в напечатанном каталоге `Saved/Verification/F01F02/<timestamp>/summary.json`, полный лог — Unreal.log. Нужны passed=true, process_exit_code=0, timed_out=false и пустой changed_source_files. При failed-case просмотреть соответствующий JSON и error, не объявлять успех по одному exit коду Unreal.
+A10 входит в стандартный запуск; -ExcludeA10 означает неполную приёмку. Заменить только путь установки UE. Все пути проекта вычисляются относительно runner; пробелы в пути допустимы. Итог находится в напечатанном каталоге `Saved/Verification/F01F02/<timestamp>/summary.json`, полный лог — Unreal.log. Нужны passed=true, process_exit_code=0, timed_out=false и пустой changed_source_files. При failed-case просмотреть соответствующий JSON и error, не объявлять успех по одному exit коду Unreal.
 
 Дополнительно проверить отрицательный путь harness:
 
