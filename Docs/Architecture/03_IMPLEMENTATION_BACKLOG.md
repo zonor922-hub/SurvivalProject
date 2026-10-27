@@ -245,6 +245,8 @@
 
 ### A36 — Зафиксировать схему Save DTO и версии
 
+**Статус: в работе — технический проект подготовлен 27.10.2026, реализация не начата.** [Проект и ТЗ](15_A36_SAVEGAME_ARCHITECTURE.md).
+
 - **Зависимости:** A05.
 - **Результат:** SG_SurvivalSave/DTO типов из архитектуры, правила EntityId/tombstones, SaveVersion=1, MapId и документ порядка восстановления.
 - **Проверка:** DTO представим без Actor/UI references; один fixture содержит stack, container, build support link и удалённый authored pickup; версия новее поддерживаемой имеет явную ошибку.
