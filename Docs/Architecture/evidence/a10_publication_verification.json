@@ -1,0 +1,1723 @@
+{
+  "schema_version": 2,
+  "task": "A10",
+  "date": "2026-10-27",
+  "base_sha": "a8b45663be759bcd7c2fedda06504a4baf3ac09d",
+  "tested_state": "PostPowerRun on working state; clean committed verification follows",
+  "post_power_run": {
+    "context": {
+      "commit": "a8b45663be759bcd7c2fedda06504a4baf3ac09d",
+      "working_tree": [
+        "M  Content/Survival/Inventory/BPC_Inventory.uasset",
+        "M  Content/Survival/Items/Types/EOperationError.uasset",
+        "MM Docs/Architecture/README.md",
+        "M  Docs/Architecture/evidence/f01_f02_runner.py",
+        "M  Docs/Architecture/evidence/run_f01_f02.ps1",
+        "M  Docs/ProjectStatus.md",
+        "?? Docs/Architecture/16_A10_SPLIT_MERGE.md",
+        "?? Docs/Architecture/evidence/a10_access_verify.py",
+        "?? Docs/Architecture/evidence/a10_event_fixture.py",
+        "?? Docs/Architecture/evidence/a10_pie.py",
+        "?? Docs/Architecture/evidence/a10_publication_verification.json",
+        "?? Docs/Architecture/evidence/a10_verify.py"
+      ],
+      "project_root": "C:\\Users\\Denis\\Documents\\ChatGPT\\SurvivalProject\\A10Worktree",
+      "source": "C:\\Users\\Denis\\Documents\\ChatGPT\\SurvivalProject\\A10Worktree\\Docs\\Architecture\\evidence",
+      "output": "C:\\Users\\Denis\\Documents\\ChatGPT\\SurvivalProject\\A10Local\\PostPowerRun",
+      "skip_swimming": false,
+      "inject_failure": false,
+      "include_a10": true,
+      "started_utc": "2026-10-27T15:28:52.144514Z"
+    },
+    "engine_version": "5.8.4-58902052+++UE5+Release-5.8",
+    "contracts": [
+      {
+        "script": "a05_verify.py",
+        "result": "a05_verification.json",
+        "passed": true,
+        "tests": 13,
+        "model_operations": 0,
+        "error": null
+      },
+      {
+        "script": "a06_verify.py",
+        "result": "a06_verification.json",
+        "passed": true,
+        "tests": 24,
+        "model_operations": 0,
+        "error": null
+      },
+      {
+        "script": "a08_access_verify.py",
+        "result": "a08_access_verification.json",
+        "passed": true,
+        "tests": 7,
+        "model_operations": 0,
+        "error": null
+      },
+      {
+        "script": "a08_verify.py",
+        "result": "a08_verification.json",
+        "passed": true,
+        "tests": 22,
+        "model_operations": 0,
+        "error": null
+      },
+      {
+        "script": "a09_access_verify.py",
+        "result": "a09_access_verification.json",
+        "passed": true,
+        "tests": 13,
+        "model_operations": 0,
+        "error": null
+      },
+      {
+        "script": "a09_verify.py",
+        "result": "a09_verification.json",
+        "passed": true,
+        "tests": 69,
+        "model_operations": 0,
+        "error": null
+      },
+      {
+        "script": "a09_model_verify.py",
+        "result": "a09_model_verification.json",
+        "passed": true,
+        "tests": 3,
+        "model_operations": 600,
+        "error": null
+      },
+      {
+        "script": "f02_verify.py",
+        "result": "f02_verification.json",
+        "passed": true,
+        "tests": 60,
+        "model_operations": 0,
+        "error": null
+      },
+      {
+        "script": "a10_access_verify.py",
+        "result": "a10_access_verification.json",
+        "passed": true,
+        "tests": 3,
+        "model_operations": 0,
+        "error": null
+      },
+      {
+        "script": "a10_verify.py",
+        "result": "a10_verification.json",
+        "passed": true,
+        "tests": 251,
+        "model_operations": 0,
+        "error": null
+      }
+    ],
+    "integration": [
+      {
+        "script": "a09_pie.py",
+        "passed": true
+      },
+      {
+        "script": "a10_pie.py",
+        "passed": true
+      },
+      {
+        "script": "a24_move_verify.py",
+        "passed": true
+      },
+      {
+        "script": "a24_physics_after.py",
+        "passed": true
+      },
+      {
+        "script": "a24_shore_verify.py",
+        "passed": true
+      }
+    ],
+    "compile": {
+      "/Game/Survival/Character/Animations/ABP_Survival.ABP_Survival": {
+        "success": true,
+        "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+      },
+      "/Game/Survival/Core/BP_SurvivalPlayerState.BP_SurvivalPlayerState": {
+        "success": true,
+        "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+      },
+      "/Game/Survival/Core/BP_SurvivalGameInstance.BP_SurvivalGameInstance": {
+        "success": true,
+        "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+      },
+      "/Game/Survival/Items/Catalog/PDA_GameCatalog.PDA_GameCatalog": {
+        "success": true,
+        "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+      },
+      "/Game/Survival/Items/Definitions/PDA_ItemDefinition.PDA_ItemDefinition": {
+        "success": true,
+        "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+      },
+      "/Game/Survival/Inventory/BPC_Inventory.BPC_Inventory": {
+        "success": true,
+        "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+      },
+      "/Game/Survival/Character/BP_SurvivalCharacter.BP_SurvivalCharacter": {
+        "success": true,
+        "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+      },
+      "/Game/Survival/Core/BP_SurvivalPlayerController.BP_SurvivalPlayerController": {
+        "success": true,
+        "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+      },
+      "/Game/Survival/Core/BP_SurvivalGameMode.BP_SurvivalGameMode": {
+        "success": true,
+        "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+      },
+      "/Game/Survival/Tests/BP_CatalogCookProbe.BP_CatalogCookProbe": {
+        "success": true,
+        "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+      },
+      "/Game/Survival/Tests/BP_SystemsTestFixture.BP_SystemsTestFixture": {
+        "success": true,
+        "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+      },
+      "/Game/__A09Test/Listener.Listener": {
+        "success": true,
+        "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+      }
+    },
+    "diagnostics": [
+      {
+        "asset": "/Game/Survival/Inventory/BPC_Inventory.BPC_Inventory",
+        "graph": "CommitInventory",
+        "message": "По ссылке не будет возвращено значение. Параметр 'ChangedSlots'. Узел:  Call On Inventory Changed"
+      },
+      {
+        "asset": "/Game/__A09Test/Listener.Listener",
+        "graph": "EventGraph",
+        "message": "По ссылке не будет возвращено значение. Параметр 'ChangedSlots'. Узел:  Assign On Inventory Changed"
+      }
+    ],
+    "passed": true,
+    "water_volumes": 257,
+    "process_exit_code": 0,
+    "timed_out": false,
+    "changed_source_files": []
+  },
+  "a10_tests": {
+    "tests": [
+      {
+        "test": "10 wood split 6+4",
+        "passed": true,
+        "category": "positive",
+        "detail": "(True, 1, 4, 2)"
+      },
+      {
+        "test": "split conserves weight and count",
+        "passed": true,
+        "category": "positive",
+        "detail": ""
+      },
+      {
+        "test": "split keeps source GUID",
+        "passed": true,
+        "category": "positive",
+        "detail": ""
+      },
+      {
+        "test": "split mints unique nonzero GUID",
+        "passed": true,
+        "category": "positive",
+        "detail": ""
+      },
+      {
+        "test": "split event exactly once after commit",
+        "passed": true,
+        "category": "positive",
+        "detail": ""
+      },
+      {
+        "test": "split changed slots exact order",
+        "passed": true,
+        "category": "positive",
+        "detail": ""
+      },
+      {
+        "test": "merge 6+4 back to 10",
+        "passed": true,
+        "category": "positive",
+        "detail": "(True, 1, 4, 3)"
+      },
+      {
+        "test": "merge target GUID retained, source absent",
+        "passed": true,
+        "category": "positive",
+        "detail": ""
+      },
+      {
+        "test": "merge empty slot canonical",
+        "passed": true,
+        "category": "positive",
+        "detail": ""
+      },
+      {
+        "test": "merge conserves weight",
+        "passed": true,
+        "category": "positive",
+        "detail": ""
+      },
+      {
+        "test": "merge one event and committed revision",
+        "passed": true,
+        "category": "positive",
+        "detail": ""
+      },
+      {
+        "test": "merge changed slots source then target",
+        "passed": true,
+        "category": "positive",
+        "detail": ""
+      },
+      {
+        "test": "success releases guard",
+        "passed": true,
+        "category": "positive",
+        "detail": ""
+      },
+      {
+        "test": "removed source GUID result",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 11, 0, 3)"
+      },
+      {
+        "test": "removed source GUID snapshot/quantity/GUID/slots/revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "removed source GUID result revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 11, 0, 3)"
+      },
+      {
+        "test": "removed source GUID no event",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "removed source GUID guard ownership",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "split quantity 0 result",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 6, 0, 3)"
+      },
+      {
+        "test": "split quantity 0 snapshot/quantity/GUID/slots/revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "split quantity 0 result revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 6, 0, 3)"
+      },
+      {
+        "test": "split quantity 0 no event",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "split quantity 0 guard ownership",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "split quantity -1 result",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 6, 0, 3)"
+      },
+      {
+        "test": "split quantity -1 snapshot/quantity/GUID/slots/revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "split quantity -1 result revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 6, 0, 3)"
+      },
+      {
+        "test": "split quantity -1 no event",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "split quantity -1 guard ownership",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "split quantity 10 result",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 6, 0, 3)"
+      },
+      {
+        "test": "split quantity 10 snapshot/quantity/GUID/slots/revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "split quantity 10 result revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 6, 0, 3)"
+      },
+      {
+        "test": "split quantity 10 no event",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "split quantity 10 guard ownership",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "split quantity 11 result",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 6, 0, 3)"
+      },
+      {
+        "test": "split quantity 11 snapshot/quantity/GUID/slots/revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "split quantity 11 result revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 6, 0, 3)"
+      },
+      {
+        "test": "split quantity 11 no event",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "split quantity 11 guard ownership",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "split quantity 2147483647 result",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 6, 0, 3)"
+      },
+      {
+        "test": "split quantity 2147483647 snapshot/quantity/GUID/slots/revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "split quantity 2147483647 result revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 6, 0, 3)"
+      },
+      {
+        "test": "split quantity 2147483647 no event",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "split quantity 2147483647 guard ownership",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "split zero GUID result",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 11, 0, 3)"
+      },
+      {
+        "test": "split zero GUID snapshot/quantity/GUID/slots/revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "split zero GUID result revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 11, 0, 3)"
+      },
+      {
+        "test": "split zero GUID no event",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "split zero GUID guard ownership",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "merge zero source result",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 11, 0, 3)"
+      },
+      {
+        "test": "merge zero source snapshot/quantity/GUID/slots/revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "merge zero source result revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 11, 0, 3)"
+      },
+      {
+        "test": "merge zero source no event",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "merge zero source guard ownership",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "merge zero target result",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 11, 0, 3)"
+      },
+      {
+        "test": "merge zero target snapshot/quantity/GUID/slots/revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "merge zero target result revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 11, 0, 3)"
+      },
+      {
+        "test": "merge zero target no event",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "merge zero target guard ownership",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "split unknown GUID result",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 11, 0, 3)"
+      },
+      {
+        "test": "split unknown GUID snapshot/quantity/GUID/slots/revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "split unknown GUID result revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 11, 0, 3)"
+      },
+      {
+        "test": "split unknown GUID no event",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "split unknown GUID guard ownership",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "merge unknown source result",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 11, 0, 3)"
+      },
+      {
+        "test": "merge unknown source snapshot/quantity/GUID/slots/revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "merge unknown source result revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 11, 0, 3)"
+      },
+      {
+        "test": "merge unknown source no event",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "merge unknown source guard ownership",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "merge unknown target result",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 11, 0, 3)"
+      },
+      {
+        "test": "merge unknown target snapshot/quantity/GUID/slots/revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "merge unknown target result revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 11, 0, 3)"
+      },
+      {
+        "test": "merge unknown target no event",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "merge unknown target guard ownership",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "split invalid slot -1 result",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 12, 0, 3)"
+      },
+      {
+        "test": "split invalid slot -1 snapshot/quantity/GUID/slots/revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "split invalid slot -1 result revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 12, 0, 3)"
+      },
+      {
+        "test": "split invalid slot -1 no event",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "split invalid slot -1 guard ownership",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "split invalid slot 4 result",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 12, 0, 3)"
+      },
+      {
+        "test": "split invalid slot 4 snapshot/quantity/GUID/slots/revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "split invalid slot 4 result revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 12, 0, 3)"
+      },
+      {
+        "test": "split invalid slot 4 no event",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "split invalid slot 4 guard ownership",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "split invalid slot 2147483647 result",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 12, 0, 3)"
+      },
+      {
+        "test": "split invalid slot 2147483647 snapshot/quantity/GUID/slots/revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "split invalid slot 2147483647 result revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 12, 0, 3)"
+      },
+      {
+        "test": "split invalid slot 2147483647 no event",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "split invalid slot 2147483647 guard ownership",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "split source slot occupied result",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 9, 0, 3)"
+      },
+      {
+        "test": "split source slot occupied snapshot/quantity/GUID/slots/revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "split source slot occupied result revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 9, 0, 3)"
+      },
+      {
+        "test": "split source slot occupied no event",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "split source slot occupied guard ownership",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "split occupied other slot result",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 9, 0, 4)"
+      },
+      {
+        "test": "split occupied other slot snapshot/quantity/GUID/slots/revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "split occupied other slot result revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 9, 0, 4)"
+      },
+      {
+        "test": "split occupied other slot no event",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "split occupied other slot guard ownership",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "merge different ItemId result",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 13, 0, 4)"
+      },
+      {
+        "test": "merge different ItemId snapshot/quantity/GUID/slots/revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "merge different ItemId result revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 13, 0, 4)"
+      },
+      {
+        "test": "merge different ItemId no event",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "merge different ItemId guard ownership",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "merge self result",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 11, 0, 4)"
+      },
+      {
+        "test": "merge self snapshot/quantity/GUID/slots/revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "merge self result revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 11, 0, 4)"
+      },
+      {
+        "test": "merge self no event",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "merge self guard ownership",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "split no free slot result",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 9, 0, 1)"
+      },
+      {
+        "test": "split no free slot snapshot/quantity/GUID/slots/revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "split no free slot result revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 9, 0, 1)"
+      },
+      {
+        "test": "split no free slot no event",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "split no free slot guard ownership",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "merge above MaxStack exact rejection result",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 14, 0, 1)"
+      },
+      {
+        "test": "merge above MaxStack exact rejection snapshot/quantity/GUID/slots/revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "merge above MaxStack exact rejection result revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 14, 0, 1)"
+      },
+      {
+        "test": "merge above MaxStack exact rejection no event",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "merge above MaxStack exact rejection guard ownership",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "busy split result",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 7, 0, 4)"
+      },
+      {
+        "test": "busy split snapshot/quantity/GUID/slots/revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "busy split result revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 7, 0, 4)"
+      },
+      {
+        "test": "busy split no event",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "busy split guard ownership",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "busy merge result",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 7, 0, 4)"
+      },
+      {
+        "test": "busy merge snapshot/quantity/GUID/slots/revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "busy merge result revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 7, 0, 4)"
+      },
+      {
+        "test": "busy merge no event",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "busy merge guard ownership",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "owner releases guard after busy tests",
+        "passed": true,
+        "category": "positive",
+        "detail": ""
+      },
+      {
+        "test": "uninitialized split result",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 0, 0, 0)"
+      },
+      {
+        "test": "uninitialized split snapshot/quantity/GUID/slots/revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "uninitialized split result revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 0, 0, 0)"
+      },
+      {
+        "test": "uninitialized split no event",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "uninitialized split guard ownership",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "uninitialized merge result",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 0, 0, 0)"
+      },
+      {
+        "test": "uninitialized merge snapshot/quantity/GUID/slots/revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "uninitialized merge result revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 0, 0, 0)"
+      },
+      {
+        "test": "uninitialized merge no event",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "uninitialized merge guard ownership",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "split copies ItemId, durability and flag",
+        "passed": true,
+        "category": "positive",
+        "detail": ""
+      },
+      {
+        "test": "merge incompatible active durability result",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 13, 0, 0)"
+      },
+      {
+        "test": "merge incompatible active durability snapshot/quantity/GUID/slots/revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "merge incompatible active durability result revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 13, 0, 0)"
+      },
+      {
+        "test": "merge incompatible active durability no event",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "merge incompatible active durability guard ownership",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "durable MaxStack one result",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 14, 0, 0)"
+      },
+      {
+        "test": "durable MaxStack one snapshot/quantity/GUID/slots/revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "durable MaxStack one result revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 14, 0, 0)"
+      },
+      {
+        "test": "durable MaxStack one no event",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "durable MaxStack one guard ownership",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "durable split cannot divide a single item result",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 6, 0, 0)"
+      },
+      {
+        "test": "durable split cannot divide a single item snapshot/quantity/GUID/slots/revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "durable split cannot divide a single item result revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 6, 0, 0)"
+      },
+      {
+        "test": "durable split cannot divide a single item no event",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "durable split cannot divide a single item guard ownership",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "int32 merge overflow rejected result",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 14, 0, 0)"
+      },
+      {
+        "test": "int32 merge overflow rejected snapshot/quantity/GUID/slots/revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "int32 merge overflow rejected result revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 14, 0, 0)"
+      },
+      {
+        "test": "int32 merge overflow rejected no event",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "int32 merge overflow rejected guard ownership",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "merge exactly int32 MaxStack",
+        "passed": true,
+        "category": "positive",
+        "detail": ""
+      },
+      {
+        "test": "corrupt duplicate GUID split result",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 0, 0, 1)"
+      },
+      {
+        "test": "corrupt duplicate GUID split snapshot/quantity/GUID/slots/revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "corrupt duplicate GUID split result revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 0, 0, 1)"
+      },
+      {
+        "test": "corrupt duplicate GUID split no event",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "corrupt duplicate GUID split guard ownership",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "corrupt duplicate GUID merge result",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 0, 0, 1)"
+      },
+      {
+        "test": "corrupt duplicate GUID merge snapshot/quantity/GUID/slots/revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "corrupt duplicate GUID merge result revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 0, 0, 1)"
+      },
+      {
+        "test": "corrupt duplicate GUID merge no event",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "corrupt duplicate GUID merge guard ownership",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "corrupt zero GUID split result",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 0, 0, 1)"
+      },
+      {
+        "test": "corrupt zero GUID split snapshot/quantity/GUID/slots/revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "corrupt zero GUID split result revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 0, 0, 1)"
+      },
+      {
+        "test": "corrupt zero GUID split no event",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "corrupt zero GUID split guard ownership",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "corrupt zero GUID merge result",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 0, 0, 1)"
+      },
+      {
+        "test": "corrupt zero GUID merge snapshot/quantity/GUID/slots/revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "corrupt zero GUID merge result revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 0, 0, 1)"
+      },
+      {
+        "test": "corrupt zero GUID merge no event",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "corrupt zero GUID merge guard ownership",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "corrupt zero quantity split result",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 0, 0, 1)"
+      },
+      {
+        "test": "corrupt zero quantity split snapshot/quantity/GUID/slots/revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "corrupt zero quantity split result revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 0, 0, 1)"
+      },
+      {
+        "test": "corrupt zero quantity split no event",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "corrupt zero quantity split guard ownership",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "corrupt zero quantity merge result",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 0, 0, 1)"
+      },
+      {
+        "test": "corrupt zero quantity merge snapshot/quantity/GUID/slots/revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "corrupt zero quantity merge result revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 0, 0, 1)"
+      },
+      {
+        "test": "corrupt zero quantity merge no event",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "corrupt zero quantity merge guard ownership",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "corrupt over MaxStack split result",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 0, 0, 1)"
+      },
+      {
+        "test": "corrupt over MaxStack split snapshot/quantity/GUID/slots/revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "corrupt over MaxStack split result revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 0, 0, 1)"
+      },
+      {
+        "test": "corrupt over MaxStack split no event",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "corrupt over MaxStack split guard ownership",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "corrupt over MaxStack merge result",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 0, 0, 1)"
+      },
+      {
+        "test": "corrupt over MaxStack merge snapshot/quantity/GUID/slots/revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "corrupt over MaxStack merge result revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 0, 0, 1)"
+      },
+      {
+        "test": "corrupt over MaxStack merge no event",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "corrupt over MaxStack merge guard ownership",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "corrupt wrong slot index split result",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 0, 0, 1)"
+      },
+      {
+        "test": "corrupt wrong slot index split snapshot/quantity/GUID/slots/revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "corrupt wrong slot index split result revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 0, 0, 1)"
+      },
+      {
+        "test": "corrupt wrong slot index split no event",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "corrupt wrong slot index split guard ownership",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "corrupt wrong slot index merge result",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 0, 0, 1)"
+      },
+      {
+        "test": "corrupt wrong slot index merge snapshot/quantity/GUID/slots/revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "corrupt wrong slot index merge result revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 0, 0, 1)"
+      },
+      {
+        "test": "corrupt wrong slot index merge no event",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "corrupt wrong slot index merge guard ownership",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "corrupt unknown item split result",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 0, 0, 1)"
+      },
+      {
+        "test": "corrupt unknown item split snapshot/quantity/GUID/slots/revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "corrupt unknown item split result revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 0, 0, 1)"
+      },
+      {
+        "test": "corrupt unknown item split no event",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "corrupt unknown item split guard ownership",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "corrupt unknown item merge result",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 0, 0, 1)"
+      },
+      {
+        "test": "corrupt unknown item merge snapshot/quantity/GUID/slots/revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "corrupt unknown item merge result revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 0, 0, 1)"
+      },
+      {
+        "test": "corrupt unknown item merge no event",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "corrupt unknown item merge guard ownership",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "corrupt wrong HasDurability split result",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 0, 0, 1)"
+      },
+      {
+        "test": "corrupt wrong HasDurability split snapshot/quantity/GUID/slots/revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "corrupt wrong HasDurability split result revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 0, 0, 1)"
+      },
+      {
+        "test": "corrupt wrong HasDurability split no event",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "corrupt wrong HasDurability split guard ownership",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "corrupt wrong HasDurability merge result",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 0, 0, 1)"
+      },
+      {
+        "test": "corrupt wrong HasDurability merge snapshot/quantity/GUID/slots/revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "corrupt wrong HasDurability merge result revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 0, 0, 1)"
+      },
+      {
+        "test": "corrupt wrong HasDurability merge no event",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "corrupt wrong HasDurability merge guard ownership",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "reentrant 1 outer result revision",
+        "passed": true,
+        "category": "positive",
+        "detail": ""
+      },
+      {
+        "test": "reentrant 1 two commits and no loss",
+        "passed": true,
+        "category": "positive",
+        "detail": ""
+      },
+      {
+        "test": "reentrant 1 both subscribers exactly two events",
+        "passed": true,
+        "category": "positive",
+        "detail": ""
+      },
+      {
+        "test": "reentrant 1 guard clear",
+        "passed": true,
+        "category": "positive",
+        "detail": ""
+      },
+      {
+        "test": "reentrant 2 outer result revision",
+        "passed": true,
+        "category": "positive",
+        "detail": ""
+      },
+      {
+        "test": "reentrant 2 two commits and no loss",
+        "passed": true,
+        "category": "positive",
+        "detail": ""
+      },
+      {
+        "test": "reentrant 2 both subscribers exactly two events",
+        "passed": true,
+        "category": "positive",
+        "detail": ""
+      },
+      {
+        "test": "reentrant 2 guard clear",
+        "passed": true,
+        "category": "positive",
+        "detail": ""
+      },
+      {
+        "test": "revision reaches int32 ceiling without wrap",
+        "passed": true,
+        "category": "positive",
+        "detail": ""
+      },
+      {
+        "test": "revision overflow rejected result",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 0, 0, 2147483647)"
+      },
+      {
+        "test": "revision overflow rejected snapshot/quantity/GUID/slots/revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "revision overflow rejected result revision unchanged",
+        "passed": true,
+        "category": "negative",
+        "detail": "(False, 0, 0, 2147483647)"
+      },
+      {
+        "test": "revision overflow rejected no event",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "revision overflow rejected guard ownership",
+        "passed": true,
+        "category": "negative",
+        "detail": ""
+      },
+      {
+        "test": "100 split/merge pairs no GUID reuse or loss",
+        "passed": true,
+        "category": "positive",
+        "detail": ""
+      },
+      {
+        "test": "100 pairs emit 200 events and revisions",
+        "passed": true,
+        "category": "positive",
+        "detail": ""
+      },
+      {
+        "test": "inventory tick disabled",
+        "passed": true,
+        "category": "positive",
+        "detail": ""
+      },
+      {
+        "test": "200 mixed commands match independent quantity GUID revision event model",
+        "passed": true,
+        "category": "positive",
+        "detail": ""
+      },
+      {
+        "test": "fractional 0.1 weight split conserves seven items",
+        "passed": true,
+        "category": "positive",
+        "detail": ""
+      },
+      {
+        "test": "fractional 0.1 weight merge conserves seven items",
+        "passed": true,
+        "category": "positive",
+        "detail": ""
+      }
+    ],
+    "metrics": {
+      "roundtrip_pairs": 100,
+      "roundtrip_elapsed_seconds": 0.07672389999970619,
+      "independent_model_operations": 200
+    },
+    "passed": true
+  },
+  "new_package_built": false,
+  "empty_network_lfs_cache_clone_tested": false
+}
