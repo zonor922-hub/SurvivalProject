@@ -2,6 +2,8 @@
 
 Начните с [текущего статуса](ProjectStatus.md).
 
+**Концепция игры:** [Game Design Document — «Земли Отголосков»](GAME_DESIGN_DOCUMENT.md). GDD описывает желаемый игровой опыт и планы развития; техническая реализация и статусы задач отражаются в архитектуре и ProjectStatus.
+
 - [Архитектура и навигация по отчётам](Architecture/README.md).
 - [Архитектура игровых систем](Architecture/02_GAMEPLAY_ARCHITECTURE.md).
 - [План из 44 задач](Architecture/03_IMPLEMENTATION_BACKLOG.md).
