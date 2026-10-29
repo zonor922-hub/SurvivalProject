@@ -1,6 +1,6 @@
 # A12 — инварианты inventory: гибридная приёмка и финальный аудит
 
-29.10.2026, Europe/Moscow. **Завершена в отдельной ветке; Ready for PR. Не объединена в main.**
+29.10.2026, Europe/Moscow. **Завершена / Merged / Closed.** [PR №18](https://github.com/zonor922-hub/SurvivalProject/pull/18) объединён обычным merge commit `fa74e69536d0ff4339fa41bfa3badd9a6d0bb93c`.
 База: `origin/main` = `79bb0fcbaa478f658d913e613be1ca00faf3fd5a`, fetch выполнен.
 Ветка `codex/a12-inventory-tests`; изолированный worktree:
 `C:/Users/Denis/.codex/worktrees/a12-inventory-tests/SurvivalProject`.
@@ -242,5 +242,16 @@ Implementation/test-коммит указан в clean summary. Последую
 проверенным коммитом и публикуемым HEAD должны быть идентичны; это проверяется
 перед push. Три оригинальных отчёта в Git проверены по SHA-256 manifest.
 
-Результат аудита: **Ready for PR**, блокирующих замечаний нет. Риски и границы
-проверки перечислены выше; merge не выполняется.
+Результат аудита **на момент публикации**: **Ready for PR**, блокирующих замечаний нет. Риски и границы
+проверки перечислены выше; на том этапе merge не выполнялся.
+
+
+## Итог после объединения (29.10.2026)
+
+**A12 завершена.** [PR №18](https://github.com/zonor922-hub/SurvivalProject/pull/18) — **Merged / Closed** обычным merge, SHA `fa74e69536d0ff4339fa41bfa3badd9a6d0bb93c`.
+Аудированный HEAD `c6c19f0739e972929f3d58d8dc27945e78c6502c` включён в main.
+Проверенные до merge результаты: A12 **1644 PASS / 0 FAIL** (9 запусков), ручные PIE **545 PASS / 0 FAIL**,
+регрессия **15093 PASS / 0 FAIL**, 12 Blueprint, A09/A10/A11 PIE 3/3, A24 PASS;
+отрицательный runner — ожидаемый exit 1. Независимый аудит, представленный пользователем,
+вынес вердикт **READY FOR MERGE**, без блокирующих замечаний.
+Новый прогон Unreal Engine после merge **не выполнялся**. Принятые низкие риски и задачи вне A12 перечислены выше.
