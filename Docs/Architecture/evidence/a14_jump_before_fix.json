@@ -1,0 +1,16 @@
+{
+  "tests": [
+    {
+      "name": "Jump policy mode 0",
+      "passed": true,
+      "detail": 127.53055538252602
+    },
+    {
+      "name": "Jump policy mode 1",
+      "passed": false,
+      "detail": 127.530555382526
+    }
+  ],
+  "classification": "Confirmed product failure before fix, retained separately from final acceptance",
+  "error": "Traceback (most recent call last):\n  File \"D:/Project/SurvivalProject_A14/Saved/a14_regression.py\", line 37, in tick\n    next(gen)\n  File \"D:/Project/SurvivalProject_A14/Saved/a14_regression.py\", line 29, in run\n    check('Jump policy mode '+str(mode),peak<1 if mode==1 else peak>10,peak)\n  File \"D:/Project/SurvivalProject_A14/Saved/a14_regression.py\", line 5, in check\n    r['tests'].append({'name':n,'passed':bool(v),'detail':d});assert v,(n,d)\n                                                              ^^^^^^^^^^^^^^\nAssertionError: ('Jump policy mode 1', 127.530555382526)\n"
+}
