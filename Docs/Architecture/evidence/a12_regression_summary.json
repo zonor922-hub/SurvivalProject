@@ -1,0 +1,240 @@
+{
+  "context": {
+    "commit": "79bb0fcbaa478f658d913e613be1ca00faf3fd5a",
+    "working_tree": [
+      " M Docs/ProjectStatus.md",
+      "?? Docs/Architecture/22_A12_INVENTORY_TESTS.md",
+      "?? Docs/Architecture/evidence/a12_automatic_summary.json",
+      "?? Docs/Architecture/evidence/a12_manual/",
+      "?? Docs/Architecture/evidence/a12_manual_manifest.json",
+      "?? Docs/Architecture/evidence/a12_negative_summary.json",
+      "?? Docs/Architecture/evidence/a12_pie.py",
+      "?? Docs/Architecture/evidence/a12_regression_summary.json",
+      "?? Docs/Architecture/evidence/a12_runner.py",
+      "?? Docs/Architecture/evidence/a12_suite.py",
+      "?? Docs/Architecture/evidence/run_a12.ps1"
+    ],
+    "project_root": "C:\\Users\\Denis\\.codex\\worktrees\\a12-inventory-tests\\SurvivalProject",
+    "source": "C:\\Users\\Denis\\.codex\\worktrees\\a12-inventory-tests\\SurvivalProject\\Docs\\Architecture\\evidence",
+    "output": "C:\\Users\\Denis\\.codex\\worktrees\\a12-inventory-tests\\SurvivalProject\\Saved\\Verification\\A12\\FinalAudit\\Regression",
+    "skip_swimming": false,
+    "inject_failure": false,
+    "include_a10": true,
+    "started_utc": "2026-10-29T06:27:25.2691541Z"
+  },
+  "include_a10": true,
+  "include_a11": true,
+  "engine_version": "5.8.4-58902052+++UE5+Release-5.8",
+  "contracts": [
+    {
+      "script": "a05_verify.py",
+      "result": "a05_verification.json",
+      "passed": true,
+      "tests": 13,
+      "model_operations": 0,
+      "error": null
+    },
+    {
+      "script": "a06_verify.py",
+      "result": "a06_verification.json",
+      "passed": true,
+      "tests": 24,
+      "model_operations": 0,
+      "error": null
+    },
+    {
+      "script": "a08_access_verify.py",
+      "result": "a08_access_verification.json",
+      "passed": true,
+      "tests": 7,
+      "model_operations": 0,
+      "error": null
+    },
+    {
+      "script": "a08_verify.py",
+      "result": "a08_verification.json",
+      "passed": true,
+      "tests": 22,
+      "model_operations": 0,
+      "error": null
+    },
+    {
+      "script": "a09_access_verify.py",
+      "result": "a09_access_verification.json",
+      "passed": true,
+      "tests": 13,
+      "model_operations": 0,
+      "error": null
+    },
+    {
+      "script": "a09_verify.py",
+      "result": "a09_verification.json",
+      "passed": true,
+      "tests": 69,
+      "model_operations": 0,
+      "error": null
+    },
+    {
+      "script": "a09_model_verify.py",
+      "result": "a09_model_verification.json",
+      "passed": true,
+      "tests": 3,
+      "model_operations": 600,
+      "error": null
+    },
+    {
+      "script": "f02_verify.py",
+      "result": "f02_verification.json",
+      "passed": true,
+      "tests": 60,
+      "model_operations": 0,
+      "error": null
+    },
+    {
+      "script": "a10_access_verify.py",
+      "result": "a10_access_verification.json",
+      "passed": true,
+      "tests": 3,
+      "model_operations": 0,
+      "error": null
+    },
+    {
+      "script": "a10_verify.py",
+      "result": "a10_verification.json",
+      "passed": true,
+      "tests": 272,
+      "model_operations": 0,
+      "error": null
+    },
+    {
+      "script": "a11_access_verify.py",
+      "result": "a11_access_verification.json",
+      "passed": true,
+      "tests": 9,
+      "model_operations": 0,
+      "error": null
+    },
+    {
+      "script": "a11_graph_verify.py",
+      "result": "a11_graph_verification.json",
+      "passed": true,
+      "tests": 2,
+      "model_operations": 0,
+      "error": null
+    },
+    {
+      "script": "a11_verify.py",
+      "result": "a11_verification.json",
+      "passed": true,
+      "tests": 14594,
+      "model_operations": 0,
+      "error": null
+    },
+    {
+      "script": "a11_model_verify.py",
+      "result": "a11_model_verification.json",
+      "passed": true,
+      "tests": 2,
+      "model_operations": 0,
+      "error": null
+    }
+  ],
+  "integration": [
+    {
+      "script": "a09_pie.py",
+      "passed": true
+    },
+    {
+      "script": "a10_pie.py",
+      "passed": true
+    },
+    {
+      "script": "a11_pie.py",
+      "passed": true
+    },
+    {
+      "script": "a24_move_verify.py",
+      "passed": true
+    },
+    {
+      "script": "a24_physics_after.py",
+      "passed": true
+    },
+    {
+      "script": "a24_shore_verify.py",
+      "passed": true
+    }
+  ],
+  "compile": {
+    "/Game/Survival/Core/BP_SurvivalGameInstance.BP_SurvivalGameInstance": {
+      "success": true,
+      "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+    },
+    "/Game/Survival/Items/Catalog/PDA_GameCatalog.PDA_GameCatalog": {
+      "success": true,
+      "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+    },
+    "/Game/Survival/Items/Definitions/PDA_ItemDefinition.PDA_ItemDefinition": {
+      "success": true,
+      "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+    },
+    "/Game/Survival/Inventory/BPC_Inventory.BPC_Inventory": {
+      "success": true,
+      "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+    },
+    "/Game/Survival/Core/BP_SurvivalPlayerState.BP_SurvivalPlayerState": {
+      "success": true,
+      "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+    },
+    "/Game/Survival/Character/Animations/ABP_Survival.ABP_Survival": {
+      "success": true,
+      "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+    },
+    "/Game/Survival/Character/BP_SurvivalCharacter.BP_SurvivalCharacter": {
+      "success": true,
+      "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+    },
+    "/Game/Survival/Core/BP_SurvivalPlayerController.BP_SurvivalPlayerController": {
+      "success": true,
+      "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+    },
+    "/Game/Survival/Core/BP_SurvivalGameMode.BP_SurvivalGameMode": {
+      "success": true,
+      "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+    },
+    "/Game/Survival/Tests/BP_CatalogCookProbe.BP_CatalogCookProbe": {
+      "success": true,
+      "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+    },
+    "/Game/Survival/Tests/BP_SystemsTestFixture.BP_SystemsTestFixture": {
+      "success": true,
+      "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+    },
+    "/Game/__A09Test/Listener.Listener": {
+      "success": true,
+      "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+    }
+  },
+  "diagnostics": [
+    {
+      "asset": "/Game/Survival/Inventory/BPC_Inventory.BPC_Inventory",
+      "graph": "CommitInventory",
+      "message": "По ссылке не будет возвращено значение. Параметр 'ChangedSlots'. Узел:  Call On Inventory Changed"
+    },
+    {
+      "asset": "/Game/Survival/Inventory/BPC_Inventory.BPC_Inventory",
+      "graph": "BroadcastChange",
+      "message": "По ссылке не будет возвращено значение. Параметр 'ChangedSlots'. Узел:  Call On Inventory Changed"
+    },
+    {
+      "asset": "/Game/__A09Test/Listener.Listener",
+      "graph": "EventGraph",
+      "message": "По ссылке не будет возвращено значение. Параметр 'ChangedSlots'. Узел:  Assign On Inventory Changed"
+    }
+  ],
+  "passed": true,
+  "water_volumes": 257,
+  "process_exit_code": 0,
+  "timed_out": false,
+  "changed_source_files": []
+}

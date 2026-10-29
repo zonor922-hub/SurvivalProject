@@ -1,0 +1,45 @@
+{
+  "verified_utc": "2026-10-29T06:26:45.8411200Z",
+  "reports": [
+    {
+      "source": "C:\\Users\\Denis\\.codex\\worktrees\\a12-inventory-tests\\SurvivalProject\\Saved\\Verification\\A12\\Manual\\20261029T061819_903866Z_scenario1.json",
+      "repository_copy": "Docs/Architecture/evidence/a12_manual/20261029T061819_903866Z_scenario1.json",
+      "sha256": "7BC3CD2632CFF6931F2372DEB3F228AFF2FA5BCDC653D97834A6E7C39102A865",
+      "scenario": 1,
+      "mode": "user-started PIE",
+      "engine_version": "5.8.4-58902052+++UE5+Release-5.8",
+      "pass_assertions": 166,
+      "fail_assertions": 0,
+      "passed": true,
+      "assertion_labels_match_automatic": true
+    },
+    {
+      "source": "C:\\Users\\Denis\\.codex\\worktrees\\a12-inventory-tests\\SurvivalProject\\Saved\\Verification\\A12\\Manual\\20261029T062205_068223Z_scenario2.json",
+      "repository_copy": "Docs/Architecture/evidence/a12_manual/20261029T062205_068223Z_scenario2.json",
+      "sha256": "1DBF2E4FE877FE475CC3344A7867CFD489FFE4B38E8342D7B23D95FB579E9E10",
+      "scenario": 2,
+      "mode": "user-started PIE",
+      "engine_version": "5.8.4-58902052+++UE5+Release-5.8",
+      "pass_assertions": 153,
+      "fail_assertions": 0,
+      "passed": true,
+      "assertion_labels_match_automatic": true
+    },
+    {
+      "source": "C:\\Users\\Denis\\.codex\\worktrees\\a12-inventory-tests\\SurvivalProject\\Saved\\Verification\\A12\\Manual\\20261029T062253_752995Z_scenario3.json",
+      "repository_copy": "Docs/Architecture/evidence/a12_manual/20261029T062253_752995Z_scenario3.json",
+      "sha256": "D480360CFAF29AEE218411ACB09FE46EB6E5CE39CA9769CECF54B1BF1FAFE038",
+      "scenario": 3,
+      "mode": "user-started PIE",
+      "engine_version": "5.8.4-58902052+++UE5+Release-5.8",
+      "pass_assertions": 226,
+      "fail_assertions": 0,
+      "passed": true,
+      "assertion_labels_match_automatic": true
+    }
+  ],
+  "total_pass": 545,
+  "total_fail": 0,
+  "copies_byte_identical": true,
+  "provenance_limit": "Original reports contain mode/version/assertions but no embedded source SHA; copied without modification from user PIE output. User confirms these sessions."
+}
