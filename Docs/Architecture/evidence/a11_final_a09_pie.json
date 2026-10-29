@@ -1,0 +1,28 @@
+{
+  "phase": "end",
+  "frames": 41,
+  "runs": [
+    {
+      "passed": true,
+      "revision": 2,
+      "weight": 9.0,
+      "events": 2,
+      "catalog_entries": 4
+    },
+    {
+      "passed": true,
+      "revision": 2,
+      "weight": 9.0,
+      "events": 2,
+      "catalog_entries": 4
+    },
+    {
+      "passed": true,
+      "revision": 2,
+      "weight": 9.0,
+      "events": 2,
+      "catalog_entries": 4
+    }
+  ],
+  "passed": true
+}

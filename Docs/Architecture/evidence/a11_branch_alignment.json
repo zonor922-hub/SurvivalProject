@@ -1,0 +1,12 @@
+{
+  "fetched": true,
+  "origin_main": "02fe8a8586e15642f75d0691779fbf9a0c98cf44",
+  "base": "02fe8a8586e15642f75d0691779fbf9a0c98cf44",
+  "pr13_merge": "20b70584c3c720c7f533301af38b9de58a0c8a2f",
+  "pr13_is_ancestor": true,
+  "main": "1e3c750025cdb4379110b98c5d2fd7099c91b278",
+  "backup_branches": [
+    "backup/main-before-sync-20261028 1e3c750025cdb4379110b98c5d2fd7099c91b278",
+    "backup/pre-safe-publication-20261026 1e3c750025cdb4379110b98c5d2fd7099c91b278"
+  ]
+}

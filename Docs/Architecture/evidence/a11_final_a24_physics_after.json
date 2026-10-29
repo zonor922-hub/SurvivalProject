@@ -1,0 +1,38 @@
+{
+  "phase": "end",
+  "frame": 3,
+  "samples": [
+    {
+      "phase": "rise",
+      "delta_z": 184.6171668273536,
+      "location": [
+        11364.879736007018,
+        18000.0,
+        4.617166827353604
+      ],
+      "mode": "<MovementMode.MOVE_FALLING: 3>"
+    },
+    {
+      "phase": "descend",
+      "delta_z": -263.0470566499836,
+      "location": [
+        11668.443860278283,
+        18000.0,
+        -258.42988982262995
+      ],
+      "mode": "<MovementMode.MOVE_SWIMMING: 4>"
+    },
+    {
+      "phase": "above water",
+      "location": [
+        11000.051562524635,
+        18000.0,
+        149.8638834897307
+      ],
+      "mode": "<MovementMode.MOVE_FALLING: 3>"
+    }
+  ],
+  "since": 1.868215698748827,
+  "initial_z": 4.617166827353604,
+  "success": true
+}

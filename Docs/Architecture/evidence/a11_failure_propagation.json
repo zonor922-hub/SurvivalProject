@@ -1,0 +1,256 @@
+{
+  "expected_shell_exit": 1,
+  "observed_shell_exit": 1,
+  "expected_failure": true,
+  "summary": {
+    "context": {
+      "commit": "02fe8a8586e15642f75d0691779fbf9a0c98cf44",
+      "working_tree": [
+        " M Content/Survival/Inventory/BPC_Inventory.uasset",
+        " M Content/Survival/Items/Types/EOperationError.uasset",
+        " M Docs/Architecture/17_A11_DESIGN_PROPOSAL.md",
+        " M Docs/Architecture/README.md",
+        " M Docs/Architecture/evidence/f01_f02_runner.py",
+        " M Docs/ProjectStatus.md",
+        "?? Docs/Architecture/19_A11_TRANSFER_BLOCKER.md",
+        "?? Docs/Architecture/20_A11_IMPLEMENTATION_STATUS.md",
+        "?? Docs/Architecture/evidence/a11_access_verify.py",
+        "?? Docs/Architecture/evidence/a11_blocker_inspection.json",
+        "?? Docs/Architecture/evidence/a11_current_regression.json",
+        "?? Docs/Architecture/evidence/a11_event_fixture.py",
+        "?? Docs/Architecture/evidence/a11_graph_verify.py",
+        "?? Docs/Architecture/evidence/a11_inactive_durability_conflict.json",
+        "?? Docs/Architecture/evidence/a11_inspect.py",
+        "?? Docs/Architecture/evidence/a11_model_verify.py",
+        "?? Docs/Architecture/evidence/a11_partial_verification.json",
+        "?? Docs/Architecture/evidence/a11_pie.py",
+        "?? Docs/Architecture/evidence/a11_probe_inactive_durability.py",
+        "?? Docs/Architecture/evidence/a11_scope_integrity.json",
+        "?? Docs/Architecture/evidence/a11_verify.py"
+      ],
+      "project_root": "D:\\Project\\SurvivalProject_A11",
+      "source": "D:\\Project\\SurvivalProject_A11\\Docs\\Architecture\\evidence",
+      "output": "D:\\Project\\SurvivalProject_A11\\Saved\\Verification\\A11\\ApprovedDurability\\FailurePropagation",
+      "skip_swimming": false,
+      "inject_failure": true,
+      "include_a10": true,
+      "started_utc": "2026-10-28T22:46:50.2426742Z"
+    },
+    "include_a10": true,
+    "include_a11": true,
+    "engine_version": "5.8.4-58902052+++UE5+Release-5.8",
+    "contracts": [
+      {
+        "script": "a05_verify.py",
+        "result": "a05_verification.json",
+        "passed": true,
+        "tests": 13,
+        "model_operations": 0,
+        "error": null
+      },
+      {
+        "script": "a06_verify.py",
+        "result": "a06_verification.json",
+        "passed": true,
+        "tests": 24,
+        "model_operations": 0,
+        "error": null
+      },
+      {
+        "script": "a08_access_verify.py",
+        "result": "a08_access_verification.json",
+        "passed": true,
+        "tests": 7,
+        "model_operations": 0,
+        "error": null
+      },
+      {
+        "script": "a08_verify.py",
+        "result": "a08_verification.json",
+        "passed": true,
+        "tests": 22,
+        "model_operations": 0,
+        "error": null
+      },
+      {
+        "script": "a09_access_verify.py",
+        "result": "a09_access_verification.json",
+        "passed": true,
+        "tests": 13,
+        "model_operations": 0,
+        "error": null
+      },
+      {
+        "script": "a09_verify.py",
+        "result": "a09_verification.json",
+        "passed": true,
+        "tests": 69,
+        "model_operations": 0,
+        "error": null
+      },
+      {
+        "script": "a09_model_verify.py",
+        "result": "a09_model_verification.json",
+        "passed": true,
+        "tests": 3,
+        "model_operations": 600,
+        "error": null
+      },
+      {
+        "script": "f02_verify.py",
+        "result": "f02_verification.json",
+        "passed": true,
+        "tests": 60,
+        "model_operations": 0,
+        "error": null
+      },
+      {
+        "script": "a10_access_verify.py",
+        "result": "a10_access_verification.json",
+        "passed": true,
+        "tests": 3,
+        "model_operations": 0,
+        "error": null
+      },
+      {
+        "script": "a10_verify.py",
+        "result": "a10_verification.json",
+        "passed": true,
+        "tests": 272,
+        "model_operations": 0,
+        "error": null
+      },
+      {
+        "script": "a11_access_verify.py",
+        "result": "a11_access_verification.json",
+        "passed": true,
+        "tests": 9,
+        "model_operations": 0,
+        "error": null
+      },
+      {
+        "script": "a11_graph_verify.py",
+        "result": "a11_graph_verification.json",
+        "passed": true,
+        "tests": 2,
+        "model_operations": 0,
+        "error": null
+      },
+      {
+        "script": "a11_verify.py",
+        "result": "a11_verification.json",
+        "passed": true,
+        "tests": 6683,
+        "model_operations": 0,
+        "error": null
+      },
+      {
+        "script": "a11_model_verify.py",
+        "result": "a11_model_verification.json",
+        "passed": true,
+        "tests": 2,
+        "model_operations": 0,
+        "error": null
+      }
+    ],
+    "integration": [
+      {
+        "script": "a09_pie.py",
+        "passed": true
+      },
+      {
+        "script": "a10_pie.py",
+        "passed": true
+      },
+      {
+        "script": "a11_pie.py",
+        "passed": true
+      },
+      {
+        "script": "a24_move_verify.py",
+        "passed": true
+      },
+      {
+        "script": "a24_physics_after.py",
+        "passed": true
+      },
+      {
+        "script": "a24_shore_verify.py",
+        "passed": true
+      }
+    ],
+    "compile": {
+      "/Game/Survival/Core/BP_SurvivalGameInstance.BP_SurvivalGameInstance": {
+        "success": true,
+        "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+      },
+      "/Game/Survival/Items/Catalog/PDA_GameCatalog.PDA_GameCatalog": {
+        "success": true,
+        "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+      },
+      "/Game/Survival/Items/Definitions/PDA_ItemDefinition.PDA_ItemDefinition": {
+        "success": true,
+        "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+      },
+      "/Game/Survival/Inventory/BPC_Inventory.BPC_Inventory": {
+        "success": true,
+        "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+      },
+      "/Game/Survival/Core/BP_SurvivalPlayerState.BP_SurvivalPlayerState": {
+        "success": true,
+        "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+      },
+      "/Game/Survival/Character/Animations/ABP_Survival.ABP_Survival": {
+        "success": true,
+        "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+      },
+      "/Game/Survival/Character/BP_SurvivalCharacter.BP_SurvivalCharacter": {
+        "success": true,
+        "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+      },
+      "/Game/Survival/Core/BP_SurvivalPlayerController.BP_SurvivalPlayerController": {
+        "success": true,
+        "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+      },
+      "/Game/Survival/Core/BP_SurvivalGameMode.BP_SurvivalGameMode": {
+        "success": true,
+        "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+      },
+      "/Game/Survival/Tests/BP_CatalogCookProbe.BP_CatalogCookProbe": {
+        "success": true,
+        "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+      },
+      "/Game/Survival/Tests/BP_SystemsTestFixture.BP_SystemsTestFixture": {
+        "success": true,
+        "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+      },
+      "/Game/__A09Test/Listener.Listener": {
+        "success": true,
+        "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+      }
+    },
+    "diagnostics": [
+      {
+        "asset": "/Game/Survival/Inventory/BPC_Inventory.BPC_Inventory",
+        "graph": "CommitInventory",
+        "message": "По ссылке не будет возвращено значение. Параметр 'ChangedSlots'. Узел:  Call On Inventory Changed"
+      },
+      {
+        "asset": "/Game/Survival/Inventory/BPC_Inventory.BPC_Inventory",
+        "graph": "BroadcastChange",
+        "message": "По ссылке не будет возвращено значение. Параметр 'ChangedSlots'. Узел:  Call On Inventory Changed"
+      },
+      {
+        "asset": "/Game/__A09Test/Listener.Listener",
+        "graph": "EventGraph",
+        "message": "По ссылке не будет возвращено значение. Параметр 'ChangedSlots'. Узел:  Assign On Inventory Changed"
+      }
+    ],
+    "passed": false,
+    "water_volumes": 257,
+    "error": "Traceback (most recent call last):\n  File \"D:\\Project\\SurvivalProject_A11\\Docs\\Architecture\\evidence\\f01_f02_runner.py\", line 68, in tick\n    assert not context.get('inject_failure'), 'Intentional runner failure propagation test'\nAssertionError: Intentional runner failure propagation test\n",
+    "process_exit_code": 0,
+    "timed_out": false,
+    "changed_source_files": []
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "tests": [
+    {
+      "test": "SimulateTakeStack",
+      "passed": true,
+      "status": "<BlueprintStatus.BS_ERROR: 2>",
+      "messages": [
+        "Функция ' SimulateTakeStack ' является частной и недоступна вне определённого класса ' BPC Inventory '."
+      ]
+    },
+    {
+      "test": "SimulateReceiveStack",
+      "passed": true,
+      "status": "<BlueprintStatus.BS_ERROR: 2>",
+      "messages": [
+        "Функция ' SimulateReceiveStack ' является частной и недоступна вне определённого класса ' BPC Inventory '."
+      ]
+    },
+    {
+      "test": "ApplyCandidate",
+      "passed": true,
+      "status": "<BlueprintStatus.BS_ERROR: 2>",
+      "messages": [
+        "Функция ' ApplyCandidate ' является частной и недоступна вне определённого класса ' BPC Inventory '."
+      ]
+    },
+    {
+      "test": "BroadcastChange",
+      "passed": true,
+      "status": "<BlueprintStatus.BS_ERROR: 2>",
+      "messages": [
+        "Функция ' BroadcastChange ' является частной и недоступна вне определённого класса ' BPC Inventory '."
+      ]
+    },
+    {
+      "test": "FindStackIndex",
+      "passed": true,
+      "status": "<BlueprintStatus.BS_ERROR: 2>",
+      "messages": [
+        "Функция ' FindStackIndex ' является частной и недоступна вне определённого класса ' BPC Inventory '."
+      ]
+    },
+    {
+      "test": "CheckTransferInvariants",
+      "passed": true,
+      "status": "<BlueprintStatus.BS_ERROR: 2>",
+      "messages": [
+        "Функция ' CheckTransferInvariants ' является частной и недоступна вне определённого класса ' BPC Inventory '."
+      ]
+    },
+    {
+      "test": "CheckStackIdsUnique",
+      "passed": true,
+      "status": "<BlueprintStatus.BS_ERROR: 2>",
+      "messages": [
+        "Функция ' CheckStackIdsUnique ' является частной и недоступна вне определённого класса ' BPC Inventory '."
+      ]
+    },
+    {
+      "test": "CheckReceiveExact",
+      "passed": true,
+      "status": "<BlueprintStatus.BS_ERROR: 2>",
+      "messages": [
+        "Функция ' CheckReceiveExact ' является частной и недоступна вне определённого класса ' BPC Inventory '."
+      ]
+    },
+    {
+      "test": "TryTransferExact",
+      "passed": true,
+      "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+      "messages": []
+    }
+  ],
+  "passed": true
+}

@@ -1,0 +1,17 @@
+{
+  "saved": true,
+  "engine": "5.8.4-58902052+++UE5+Release-5.8",
+  "unchanged_graphs": {
+    "TryAddExact": true,
+    "TryRemoveExact": true,
+    "TrySplit": true,
+    "TryMerge": true,
+    "SimulateAddExact": true,
+    "SimulateRemoveExact": true,
+    "ValidateSlots": true,
+    "FindStackIndex": true,
+    "CommitInventory": true,
+    "CheckReceiveExact": true
+  },
+  "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+}
