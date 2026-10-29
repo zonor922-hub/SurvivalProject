@@ -55,7 +55,7 @@
     "run_a12.ps1": "ec2f148023598f3fcc84367d39b2c788fd53547305ea4ee75644da873b7b33a0"
   },
   "blocking_findings": [],
-  "review_result": "Ready for clean HEAD verification before publication",
+  "review_result": "Ready for PR; no blocking findings",
   "final_audit_assertions": {
     "a12_pass": 1644,
     "regression_pass": 15093,
@@ -64,5 +64,10 @@
   },
   "negative_runner_shell_exit": 1,
   "diagnostics_identical_to_accepted_a11": true,
-  "post_manual_source_adjustment": "Removed trailing blank lines only from a12_suite.py and run_a12.ps1 for git diff --check; no semantic changes. Full suite will run on clean committed files."
+  "post_manual_source_adjustment": "Removed trailing blank lines only from a12_suite.py and run_a12.ps1 for git diff --check; no semantic changes. Full suite will run on clean committed files.",
+  "clean_tested_commit": "eeb32f801cc6abd5bd040245b342d5e1e39e5038",
+  "clean_head_verified": true,
+  "manual_git_blobs_byte_identical_to_originals": true,
+  "protected_refs_unchanged": true,
+  "evidence_packaging": "a12_manual/*.json -text whitespace=cr-at-eol preserves original CRLF bytes and treats CR as line ending for diff checks."
 }

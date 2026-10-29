@@ -1,26 +1,14 @@
 {
   "context": {
-    "commit": "79bb0fcbaa478f658d913e613be1ca00faf3fd5a",
-    "working_tree": [
-      " M Docs/ProjectStatus.md",
-      "?? Docs/Architecture/22_A12_INVENTORY_TESTS.md",
-      "?? Docs/Architecture/evidence/a12_automatic_summary.json",
-      "?? Docs/Architecture/evidence/a12_manual/",
-      "?? Docs/Architecture/evidence/a12_manual_manifest.json",
-      "?? Docs/Architecture/evidence/a12_negative_summary.json",
-      "?? Docs/Architecture/evidence/a12_pie.py",
-      "?? Docs/Architecture/evidence/a12_regression_summary.json",
-      "?? Docs/Architecture/evidence/a12_runner.py",
-      "?? Docs/Architecture/evidence/a12_suite.py",
-      "?? Docs/Architecture/evidence/run_a12.ps1"
-    ],
+    "commit": "eeb32f801cc6abd5bd040245b342d5e1e39e5038",
+    "working_tree": [],
     "project_root": "C:\\Users\\Denis\\.codex\\worktrees\\a12-inventory-tests\\SurvivalProject",
     "source": "C:\\Users\\Denis\\.codex\\worktrees\\a12-inventory-tests\\SurvivalProject\\Docs\\Architecture\\evidence",
-    "output": "C:\\Users\\Denis\\.codex\\worktrees\\a12-inventory-tests\\SurvivalProject\\Saved\\Verification\\A12\\FinalAudit\\Regression",
+    "output": "C:\\Users\\Denis\\.codex\\worktrees\\a12-inventory-tests\\SurvivalProject\\Saved\\Verification\\A12\\CleanHead\\Regression",
     "skip_swimming": false,
     "inject_failure": false,
     "include_a10": true,
-    "started_utc": "2026-10-29T06:27:25.2691541Z"
+    "started_utc": "2026-10-29T06:31:11.7117004Z"
   },
   "include_a10": true,
   "include_a11": true,

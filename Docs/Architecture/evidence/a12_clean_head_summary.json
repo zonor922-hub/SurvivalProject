@@ -1,0 +1,121 @@
+{
+  "tested_commit": "eeb32f801cc6abd5bd040245b342d5e1e39e5038",
+  "working_tree": [],
+  "engine_version": "5.8.4-58902052+++UE5+Release-5.8",
+  "a12": {
+    "passed": true,
+    "assertions_pass": 1644,
+    "assertions_fail": 0,
+    "runs": [
+      {
+        "repeat": 1,
+        "scenario": 1,
+        "assertions": 167,
+        "passed": true
+      },
+      {
+        "repeat": 1,
+        "scenario": 2,
+        "assertions": 154,
+        "passed": true
+      },
+      {
+        "repeat": 1,
+        "scenario": 3,
+        "assertions": 227,
+        "passed": true
+      },
+      {
+        "repeat": 2,
+        "scenario": 1,
+        "assertions": 167,
+        "passed": true
+      },
+      {
+        "repeat": 2,
+        "scenario": 2,
+        "assertions": 154,
+        "passed": true
+      },
+      {
+        "repeat": 2,
+        "scenario": 3,
+        "assertions": 227,
+        "passed": true
+      },
+      {
+        "repeat": 3,
+        "scenario": 1,
+        "assertions": 167,
+        "passed": true
+      },
+      {
+        "repeat": 3,
+        "scenario": 2,
+        "assertions": 154,
+        "passed": true
+      },
+      {
+        "repeat": 3,
+        "scenario": 3,
+        "assertions": 227,
+        "passed": true
+      }
+    ],
+    "shell_exit": 0
+  },
+  "regression": {
+    "passed": true,
+    "assertions_pass": 15093,
+    "assertions_fail": 0,
+    "blueprints": 12,
+    "integration": [
+      {
+        "script": "a09_pie.py",
+        "passed": true
+      },
+      {
+        "script": "a10_pie.py",
+        "passed": true
+      },
+      {
+        "script": "a11_pie.py",
+        "passed": true
+      },
+      {
+        "script": "a24_move_verify.py",
+        "passed": true
+      },
+      {
+        "script": "a24_physics_after.py",
+        "passed": true
+      },
+      {
+        "script": "a24_shore_verify.py",
+        "passed": true
+      }
+    ],
+    "shell_exit": 0,
+    "diagnostics_identical_to_accepted_a11": true
+  },
+  "negative_runner": {
+    "expected_shell_exit": 1,
+    "observed_shell_exit": 1,
+    "summary_passed": false,
+    "intentional_error": "Traceback (most recent call last):\n  File \"C:\\Users\\Denis\\.codex\\worktrees\\a12-inventory-tests\\SurvivalProject\\Docs\\Architecture\\evidence\\a12_runner.py\", line 21, in <module>\n    assert not context.get('inject_failure'), 'Intentional runner failure propagation test'\nAssertionError: Intentional runner failure propagation test\n",
+    "all_game_assertions_passed": true
+  },
+  "manual": {
+    "reports": 3,
+    "assertions_pass": 545,
+    "assertions_fail": 0,
+    "git_blob_sha256_equal_originals": true
+  },
+  "integrity": {
+    "source_file_count": 803,
+    "all_three_source_hash_maps_equal_preparation": true,
+    "changed_source_files": [],
+    "protected_refs_unchanged": true
+  },
+  "passed": true
+}

@@ -1,6 +1,6 @@
 # A12 — инварианты inventory: гибридная приёмка и финальный аудит
 
-29.10.2026, Europe/Moscow. **Приёмка и финальный аудит пройдены; проверка чистого HEAD перед PR.**
+29.10.2026, Europe/Moscow. **Завершена в отдельной ветке; Ready for PR. Не объединена в main.**
 База: `origin/main` = `79bb0fcbaa478f658d913e613be1ca00faf3fd5a`, fetch выполнен.
 Ветка `codex/a12-inventory-tests`; изолированный worktree:
 `C:/Users/Denis/.codex/worktrees/a12-inventory-tests/SurvivalProject`.
@@ -66,8 +66,10 @@ summary.passed=false, shell exit 1, editor exit 0, хеши неизменны �
 [Отрицательный summary](evidence/a12_negative_summary.json).
 Финальный аудит повторил все три команды в Saved/Verification/A12/FinalAudit:
 1644/0 A12, 15093/0 регрессия, отрицательный shell exit 1. Diagnostics побуквенно
-совпадают с принятой A11. Блокирующих замечаний нет. Далее выполняется тот же набор
-на чистом implementation HEAD; автоматические PIE учитываются отдельно от ручной приёмки.
+совпадают с принятой A11. Блокирующих замечаний нет. Тот же набор повторён на чистом
+`eeb32f801cc6abd5bd040245b342d5e1e39e5038`: context.working_tree=[], все результаты совпали;
+автоматические PIE учитываются отдельно от ручной приёмки.
+[Итог чистого HEAD](evidence/a12_clean_head_summary.json).
 
 Первая подготовительная попытка имела синтаксическую ошибку harness, исправленную
 до успешного прогона. Следующая выявила LFS pointers в новом worktree вместо
@@ -219,8 +221,26 @@ runtime assertions; source-level аудит uasset не заявляется. И
 - Docs/Architecture/evidence/a12_manual/ — три неизменных оригинальных JSON-копии и .gitattributes (*.json -text), сохраняющий исходные окончания строк
 - Docs/Architecture/evidence/a12_manual_manifest.json
 - Docs/Architecture/evidence/a12_audit.json
+- Docs/Architecture/evidence/a12_clean_head_summary.json
 
 Изменён: Docs/ProjectStatus.md. Игровые ассеты, Config и uproject не изменены.
 Восстановление LFS материализовало отслеживаемые бинарные файлы без изменения их содержимого.
 Локальные логи/хеши/контексты находятся в игнорируемом Saved/Verification,
 не предназначены для добавления в Git целиком.
+
+## Итог публикационного аудита
+
+Приёмка A12 выполнена: 1644/0 автоматических assertions, 545/0 пользовательских PIE,
+15093/0 полной регрессии, 12 Blueprint, автоматические PIE A09/A10/A11 по 3/3,
+A24 PASS. Отрицательный runner подтверждён shell exit 1. Все три чистых процесса:
+editor exit 0, timeout=false, changed_source_files=[]. Хеши 803 игровых файлов
+равны этапу подготовки. Git LFS fsck OK; локальная main и обе backup refs неизменны.
+
+Implementation/test-коммит указан в clean summary. Последующий коммит добавляет
+результаты чистого прогона, итоговую документацию и атрибут whitespace=cr-at-eol
+для неизменных CRLF JSON-доказательств. Исполняемые тесты и игровые blobs между
+проверенным коммитом и публикуемым HEAD должны быть идентичны; это проверяется
+перед push. Три оригинальных отчёта в Git проверены по SHA-256 manifest.
+
+Результат аудита: **Ready for PR**, блокирующих замечаний нет. Риски и границы
+проверки перечислены выше; merge не выполняется.
