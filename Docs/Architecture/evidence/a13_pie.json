@@ -1,0 +1,713 @@
+{
+  "engine": "5.8.4-58902052+++UE5+Release-5.8",
+  "map": "/Game/Survival/Maps/LV_SystemsTest",
+  "mode": "actual PIE",
+  "runs": [
+    {
+      "run": 1,
+      "world": "/Game/Survival/Maps/UEDPIE_0_LV_SystemsTest.LV_SystemsTest",
+      "tests": [
+        {
+          "test": "inventory fixture contains quantity",
+          "passed": true
+        },
+        {
+          "test": "timer started automatically by BeginPlay",
+          "passed": true
+        },
+        {
+          "test": "component tick disabled",
+          "passed": true
+        },
+        {
+          "test": "exactly one controller interaction component",
+          "passed": true
+        },
+        {
+          "test": "within 250cm receives Focus",
+          "passed": true
+        },
+        {
+          "test": "inventory unchanged after near",
+          "passed": true
+        },
+        {
+          "test": "600cm camera trace reaches valid Pawn-near target",
+          "passed": true
+        },
+        {
+          "test": "inventory unchanged after third person camera",
+          "passed": true
+        },
+        {
+          "test": "target beyond camera TraceDistance clears",
+          "passed": true
+        },
+        {
+          "test": "inventory unchanged after trace limit",
+          "passed": true
+        },
+        {
+          "test": "camera restore reacquires",
+          "passed": true
+        },
+        {
+          "test": "inventory unchanged after camera restore",
+          "passed": true
+        },
+        {
+          "test": "stable focus emits no repeated events",
+          "passed": true
+        },
+        {
+          "test": "inventory unchanged after stable",
+          "passed": true
+        },
+        {
+          "test": "wall blocks target",
+          "passed": true
+        },
+        {
+          "test": "inventory unchanged after wall",
+          "passed": true
+        },
+        {
+          "test": "focus recovers after wall removal",
+          "passed": true
+        },
+        {
+          "test": "inventory unchanged after wall removed",
+          "passed": true
+        },
+        {
+          "test": "noninterface actor ignored",
+          "passed": true
+        },
+        {
+          "test": "inventory unchanged after noninterface",
+          "passed": true
+        },
+        {
+          "test": "focus recovers",
+          "passed": true
+        },
+        {
+          "test": "inventory unchanged after restore",
+          "passed": true
+        },
+        {
+          "test": "Pawn impact distance 300cm clears despite camera trace hit",
+          "passed": true
+        },
+        {
+          "test": "inventory unchanged after far",
+          "passed": true
+        },
+        {
+          "test": "exact 250cm accepted",
+          "passed": true
+        },
+        {
+          "test": "inventory unchanged after boundary",
+          "passed": true
+        },
+        {
+          "test": "250.5cm rejected",
+          "passed": true
+        },
+        {
+          "test": "inventory unchanged after boundary outside",
+          "passed": true
+        },
+        {
+          "test": "near reacquires",
+          "passed": true
+        },
+        {
+          "test": "inventory unchanged after near again",
+          "passed": true
+        },
+        {
+          "test": "trace miss clears",
+          "passed": true
+        },
+        {
+          "test": "inventory unchanged after miss",
+          "passed": true
+        },
+        {
+          "test": "look back reacquires",
+          "passed": true
+        },
+        {
+          "test": "inventory unchanged after look back",
+          "passed": true
+        },
+        {
+          "test": "destroyed target clears safely",
+          "passed": true
+        },
+        {
+          "test": "inventory unchanged after destroy",
+          "passed": true
+        },
+        {
+          "test": "replacement target focused",
+          "passed": true
+        },
+        {
+          "test": "inventory unchanged after new target",
+          "passed": true
+        },
+        {
+          "test": "unpossessed Controller clears focus",
+          "passed": true
+        },
+        {
+          "test": "inventory unchanged after no Pawn",
+          "passed": true
+        },
+        {
+          "test": "repossession recovers focus",
+          "passed": true
+        },
+        {
+          "test": "inventory unchanged after repossess",
+          "passed": true
+        },
+        {
+          "test": "possession uses current Pawn distance",
+          "passed": true
+        },
+        {
+          "test": "inventory unchanged after new possession",
+          "passed": true
+        },
+        {
+          "test": "new possessed Pawn reacquires",
+          "passed": true
+        },
+        {
+          "test": "inventory unchanged after new Pawn near",
+          "passed": true
+        },
+        {
+          "test": "ten restarts invalidate all previous timer handles",
+          "passed": true
+        },
+        {
+          "test": "one current timer remains active",
+          "passed": true
+        },
+        {
+          "test": "restart preserves stable focus without extra events",
+          "passed": true
+        },
+        {
+          "test": "inventory unchanged after restart",
+          "passed": true
+        },
+        {
+          "test": "component with no Controller clears safely",
+          "passed": true
+        },
+        {
+          "test": "owner EndPlay removes timer",
+          "passed": true
+        },
+        {
+          "test": "inventory unchanged after wrong owner",
+          "passed": true
+        },
+        {
+          "test": "component EndPlay removes timer",
+          "passed": true
+        },
+        {
+          "test": "component EndPlay clears focus exactly once",
+          "passed": true
+        },
+        {
+          "test": "Inventory Quantity Revision unchanged by Focus",
+          "passed": true
+        },
+        {
+          "test": "inventory unchanged after endplay",
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "run": 2,
+      "world": "/Game/Survival/Maps/UEDPIE_0_LV_SystemsTest.LV_SystemsTest",
+      "tests": [
+        {
+          "test": "inventory fixture contains quantity",
+          "passed": true
+        },
+        {
+          "test": "timer started automatically by BeginPlay",
+          "passed": true
+        },
+        {
+          "test": "component tick disabled",
+          "passed": true
+        },
+        {
+          "test": "exactly one controller interaction component",
+          "passed": true
+        },
+        {
+          "test": "within 250cm receives Focus",
+          "passed": true
+        },
+        {
+          "test": "inventory unchanged after near",
+          "passed": true
+        },
+        {
+          "test": "600cm camera trace reaches valid Pawn-near target",
+          "passed": true
+        },
+        {
+          "test": "inventory unchanged after third person camera",
+          "passed": true
+        },
+        {
+          "test": "target beyond camera TraceDistance clears",
+          "passed": true
+        },
+        {
+          "test": "inventory unchanged after trace limit",
+          "passed": true
+        },
+        {
+          "test": "camera restore reacquires",
+          "passed": true
+        },
+        {
+          "test": "inventory unchanged after camera restore",
+          "passed": true
+        },
+        {
+          "test": "stable focus emits no repeated events",
+          "passed": true
+        },
+        {
+          "test": "inventory unchanged after stable",
+          "passed": true
+        },
+        {
+          "test": "wall blocks target",
+          "passed": true
+        },
+        {
+          "test": "inventory unchanged after wall",
+          "passed": true
+        },
+        {
+          "test": "focus recovers after wall removal",
+          "passed": true
+        },
+        {
+          "test": "inventory unchanged after wall removed",
+          "passed": true
+        },
+        {
+          "test": "noninterface actor ignored",
+          "passed": true
+        },
+        {
+          "test": "inventory unchanged after noninterface",
+          "passed": true
+        },
+        {
+          "test": "focus recovers",
+          "passed": true
+        },
+        {
+          "test": "inventory unchanged after restore",
+          "passed": true
+        },
+        {
+          "test": "Pawn impact distance 300cm clears despite camera trace hit",
+          "passed": true
+        },
+        {
+          "test": "inventory unchanged after far",
+          "passed": true
+        },
+        {
+          "test": "exact 250cm accepted",
+          "passed": true
+        },
+        {
+          "test": "inventory unchanged after boundary",
+          "passed": true
+        },
+        {
+          "test": "250.5cm rejected",
+          "passed": true
+        },
+        {
+          "test": "inventory unchanged after boundary outside",
+          "passed": true
+        },
+        {
+          "test": "near reacquires",
+          "passed": true
+        },
+        {
+          "test": "inventory unchanged after near again",
+          "passed": true
+        },
+        {
+          "test": "trace miss clears",
+          "passed": true
+        },
+        {
+          "test": "inventory unchanged after miss",
+          "passed": true
+        },
+        {
+          "test": "look back reacquires",
+          "passed": true
+        },
+        {
+          "test": "inventory unchanged after look back",
+          "passed": true
+        },
+        {
+          "test": "destroyed target clears safely",
+          "passed": true
+        },
+        {
+          "test": "inventory unchanged after destroy",
+          "passed": true
+        },
+        {
+          "test": "replacement target focused",
+          "passed": true
+        },
+        {
+          "test": "inventory unchanged after new target",
+          "passed": true
+        },
+        {
+          "test": "unpossessed Controller clears focus",
+          "passed": true
+        },
+        {
+          "test": "inventory unchanged after no Pawn",
+          "passed": true
+        },
+        {
+          "test": "repossession recovers focus",
+          "passed": true
+        },
+        {
+          "test": "inventory unchanged after repossess",
+          "passed": true
+        },
+        {
+          "test": "possession uses current Pawn distance",
+          "passed": true
+        },
+        {
+          "test": "inventory unchanged after new possession",
+          "passed": true
+        },
+        {
+          "test": "new possessed Pawn reacquires",
+          "passed": true
+        },
+        {
+          "test": "inventory unchanged after new Pawn near",
+          "passed": true
+        },
+        {
+          "test": "ten restarts invalidate all previous timer handles",
+          "passed": true
+        },
+        {
+          "test": "one current timer remains active",
+          "passed": true
+        },
+        {
+          "test": "restart preserves stable focus without extra events",
+          "passed": true
+        },
+        {
+          "test": "inventory unchanged after restart",
+          "passed": true
+        },
+        {
+          "test": "component with no Controller clears safely",
+          "passed": true
+        },
+        {
+          "test": "owner EndPlay removes timer",
+          "passed": true
+        },
+        {
+          "test": "inventory unchanged after wrong owner",
+          "passed": true
+        },
+        {
+          "test": "component EndPlay removes timer",
+          "passed": true
+        },
+        {
+          "test": "component EndPlay clears focus exactly once",
+          "passed": true
+        },
+        {
+          "test": "Inventory Quantity Revision unchanged by Focus",
+          "passed": true
+        },
+        {
+          "test": "inventory unchanged after endplay",
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "run": 3,
+      "world": "/Game/Survival/Maps/UEDPIE_0_LV_SystemsTest.LV_SystemsTest",
+      "tests": [
+        {
+          "test": "inventory fixture contains quantity",
+          "passed": true
+        },
+        {
+          "test": "timer started automatically by BeginPlay",
+          "passed": true
+        },
+        {
+          "test": "component tick disabled",
+          "passed": true
+        },
+        {
+          "test": "exactly one controller interaction component",
+          "passed": true
+        },
+        {
+          "test": "within 250cm receives Focus",
+          "passed": true
+        },
+        {
+          "test": "inventory unchanged after near",
+          "passed": true
+        },
+        {
+          "test": "600cm camera trace reaches valid Pawn-near target",
+          "passed": true
+        },
+        {
+          "test": "inventory unchanged after third person camera",
+          "passed": true
+        },
+        {
+          "test": "target beyond camera TraceDistance clears",
+          "passed": true
+        },
+        {
+          "test": "inventory unchanged after trace limit",
+          "passed": true
+        },
+        {
+          "test": "camera restore reacquires",
+          "passed": true
+        },
+        {
+          "test": "inventory unchanged after camera restore",
+          "passed": true
+        },
+        {
+          "test": "stable focus emits no repeated events",
+          "passed": true
+        },
+        {
+          "test": "inventory unchanged after stable",
+          "passed": true
+        },
+        {
+          "test": "wall blocks target",
+          "passed": true
+        },
+        {
+          "test": "inventory unchanged after wall",
+          "passed": true
+        },
+        {
+          "test": "focus recovers after wall removal",
+          "passed": true
+        },
+        {
+          "test": "inventory unchanged after wall removed",
+          "passed": true
+        },
+        {
+          "test": "noninterface actor ignored",
+          "passed": true
+        },
+        {
+          "test": "inventory unchanged after noninterface",
+          "passed": true
+        },
+        {
+          "test": "focus recovers",
+          "passed": true
+        },
+        {
+          "test": "inventory unchanged after restore",
+          "passed": true
+        },
+        {
+          "test": "Pawn impact distance 300cm clears despite camera trace hit",
+          "passed": true
+        },
+        {
+          "test": "inventory unchanged after far",
+          "passed": true
+        },
+        {
+          "test": "exact 250cm accepted",
+          "passed": true
+        },
+        {
+          "test": "inventory unchanged after boundary",
+          "passed": true
+        },
+        {
+          "test": "250.5cm rejected",
+          "passed": true
+        },
+        {
+          "test": "inventory unchanged after boundary outside",
+          "passed": true
+        },
+        {
+          "test": "near reacquires",
+          "passed": true
+        },
+        {
+          "test": "inventory unchanged after near again",
+          "passed": true
+        },
+        {
+          "test": "trace miss clears",
+          "passed": true
+        },
+        {
+          "test": "inventory unchanged after miss",
+          "passed": true
+        },
+        {
+          "test": "look back reacquires",
+          "passed": true
+        },
+        {
+          "test": "inventory unchanged after look back",
+          "passed": true
+        },
+        {
+          "test": "destroyed target clears safely",
+          "passed": true
+        },
+        {
+          "test": "inventory unchanged after destroy",
+          "passed": true
+        },
+        {
+          "test": "replacement target focused",
+          "passed": true
+        },
+        {
+          "test": "inventory unchanged after new target",
+          "passed": true
+        },
+        {
+          "test": "unpossessed Controller clears focus",
+          "passed": true
+        },
+        {
+          "test": "inventory unchanged after no Pawn",
+          "passed": true
+        },
+        {
+          "test": "repossession recovers focus",
+          "passed": true
+        },
+        {
+          "test": "inventory unchanged after repossess",
+          "passed": true
+        },
+        {
+          "test": "possession uses current Pawn distance",
+          "passed": true
+        },
+        {
+          "test": "inventory unchanged after new possession",
+          "passed": true
+        },
+        {
+          "test": "new possessed Pawn reacquires",
+          "passed": true
+        },
+        {
+          "test": "inventory unchanged after new Pawn near",
+          "passed": true
+        },
+        {
+          "test": "ten restarts invalidate all previous timer handles",
+          "passed": true
+        },
+        {
+          "test": "one current timer remains active",
+          "passed": true
+        },
+        {
+          "test": "restart preserves stable focus without extra events",
+          "passed": true
+        },
+        {
+          "test": "inventory unchanged after restart",
+          "passed": true
+        },
+        {
+          "test": "component with no Controller clears safely",
+          "passed": true
+        },
+        {
+          "test": "owner EndPlay removes timer",
+          "passed": true
+        },
+        {
+          "test": "inventory unchanged after wrong owner",
+          "passed": true
+        },
+        {
+          "test": "component EndPlay removes timer",
+          "passed": true
+        },
+        {
+          "test": "component EndPlay clears focus exactly once",
+          "passed": true
+        },
+        {
+          "test": "Inventory Quantity Revision unchanged by Focus",
+          "passed": true
+        },
+        {
+          "test": "inventory unchanged after endplay",
+          "passed": true
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "passed": true
+}
