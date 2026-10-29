@@ -1,0 +1,73 @@
+{
+  "scope": "A12 final static and provenance audit",
+  "base": "79bb0fcbaa478f658d913e613be1ca00faf3fd5a",
+  "static_python_parse": true,
+  "inventory_calls": [
+    "GetCurrentWeight",
+    "InitializeCatalog",
+    "InitializeInventory",
+    "IsInitialized",
+    "TryAddExact",
+    "TryMerge",
+    "TryRemoveExact",
+    "TrySplit",
+    "TryTransferExact"
+  ],
+  "no_asset_save_calls": true,
+  "business_logic": "Public Blueprint commands; fixed wood fixture expected values and snapshot/balance assertions; no simulator copied into A12. Imported A09 serialization helpers have no suite side effects on import.",
+  "repeat_independence": "Nine calls: each allocates new primary and fixture inventories with Revision=0/quantity=0 asserted; shared GameInstance is catalog-only and not mutated by A12. GUIDs are generated; semantic inputs repeat identically.",
+  "manual_reports": {
+    "pass": 545,
+    "fail": 0,
+    "byte_identical_copies": true,
+    "labels_match": true
+  },
+  "protected_refs": [
+    "refs/heads/backup/main-before-sync-20261028 1e3c750025cdb4379110b98c5d2fd7099c91b278",
+    "refs/heads/backup/pre-safe-publication-20261026 1e3c750025cdb4379110b98c5d2fd7099c91b278",
+    "refs/heads/main 1e3c750025cdb4379110b98c5d2fd7099c91b278"
+  ],
+  "game_source_files_compared": 803,
+  "game_hashes_equal_preparation": true,
+  "lfs_fsck": "OK",
+  "risks": [
+    {
+      "severity": "Minor",
+      "item": "ChangedSlots reference write-back warning; unchanged existing delegate sites, exact event payload/callback regression required."
+    },
+    {
+      "severity": "Minor",
+      "item": "Manual JSON has no embedded source SHA; originals and byte-identical copies hashed at audit; user attests session origin."
+    },
+    {
+      "severity": "Known limitation",
+      "item": "Binary Blueprint review relies on UE API/runtime assertions; A10 guard sensitivity historical accepted risk."
+    },
+    {
+      "severity": "Out of A12 scope",
+      "item": "F04 cook/package, A39 load/epoch invalidation, A36/T15 world-global GUID collision coordination."
+    }
+  ],
+  "source_sha256": {
+    "a12_suite.py": "6ac0d1b1a1e65c6e5d85cc4d6ebd29a24f73b9a86fc0533395d9040d4c22461f",
+    "a12_runner.py": "82eb9abd00c5a17d26efa1ecba1c8462eeba1013b74c74806a98506dce7ccbaa",
+    "a12_pie.py": "b4e416147b9cbe42ff32ace9e7fa774a553b0cc22bc436b73a92d256be474736",
+    "run_a12.ps1": "ec2f148023598f3fcc84367d39b2c788fd53547305ea4ee75644da873b7b33a0"
+  },
+  "blocking_findings": [],
+  "review_result": "Ready for PR; no blocking findings",
+  "final_audit_assertions": {
+    "a12_pass": 1644,
+    "regression_pass": 15093,
+    "manual_pass": 545,
+    "fail": 0
+  },
+  "negative_runner_shell_exit": 1,
+  "diagnostics_identical_to_accepted_a11": true,
+  "post_manual_source_adjustment": "Removed trailing blank lines only from a12_suite.py and run_a12.ps1 for git diff --check; no semantic changes. Full suite will run on clean committed files.",
+  "clean_tested_commit": "eeb32f801cc6abd5bd040245b342d5e1e39e5038",
+  "clean_head_verified": true,
+  "manual_git_blobs_byte_identical_to_originals": true,
+  "protected_refs_unchanged": true,
+  "evidence_packaging": "a12_manual/*.json -text whitespace=cr-at-eol preserves original CRLF bytes and treats CR as line ending for diff checks."
+}
