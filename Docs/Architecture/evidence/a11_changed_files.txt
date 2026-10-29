@@ -10,6 +10,7 @@ Docs/Architecture/evidence/a11_access_verify.py
 Docs/Architecture/evidence/a11_blocker_inspection.json
 Docs/Architecture/evidence/a11_branch_alignment.json
 Docs/Architecture/evidence/a11_changed_files.txt
+Docs/Architecture/evidence/a11_clean_head_summary.json
 Docs/Architecture/evidence/a11_current_regression.json
 Docs/Architecture/evidence/a11_durability_implementation.json
 Docs/Architecture/evidence/a11_event_fixture.py
