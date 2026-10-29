@@ -108,3 +108,7 @@ T0 остаётся PASS по Issue #14. Реализация A11 останов
 ## A11 — итог локальной приёмки (29.10.2026)
 
 **Ready for PR.** Реализация `1acdb0c3f5bc60d5c7d0872b4de81867a402173c`: полный стандартный прогон на чистом HEAD —15011 PASS/0 FAIL,12 Blueprint, PIE A09/A10/A11 по3/3 и A24 PASS; context.working_tree=[], exit0, timed_out=false, changed_source_files=[].25c/40 полностью закрыты; обязательных NOT RUN A11 нет.38a–d отложены по ТЗ в A39, T0 — исторический PASS. [Матрица/риски/SHA](Architecture/21_A11_TRANSFER.md), [clean summary](Architecture/evidence/a11_clean_head_summary.json). Только два игровых ассета плюс тесты/документация; main/backup сохранены. Push/PR/merge не выполнялись.
+
+## A11 — усиление40 для отказов
+
+Последний полный предкоммитный прогон15093 PASS/0 FAIL: добавлены82 прямые побитовые проверки Durability на отказах. Production не менялась. Следующий этап — чистый HEAD нового тестового набора; предыдущие чистые1acdb0c/53cdc0d успешно прошли15011/0. Push/PR/merge запрещены.

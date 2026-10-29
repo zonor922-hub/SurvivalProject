@@ -1,14 +1,16 @@
 {
   "context": {
-    "commit": "1acdb0c3f5bc60d5c7d0872b4de81867a402173c",
-    "working_tree": [],
+    "commit": "53cdc0d34c82cd2c0451379c9d593861f0231170",
+    "working_tree": [
+      " M Docs/Architecture/evidence/a11_verify.py"
+    ],
     "project_root": "D:\\Project\\SurvivalProject_A11",
     "source": "D:\\Project\\SurvivalProject_A11\\Docs\\Architecture\\evidence",
-    "output": "D:\\Project\\SurvivalProject_A11\\Saved\\Verification\\A11\\Acceptance\\CleanImplementationHead",
+    "output": "D:\\Project\\SurvivalProject_A11\\Saved\\Verification\\A11\\Acceptance\\StrictRefusalPrecommit",
     "skip_swimming": false,
     "inject_failure": false,
     "include_a10": true,
-    "started_utc": "2026-10-29T05:04:26.821267Z"
+    "started_utc": "2026-10-29T05:09:54.388081Z"
   },
   "include_a10": true,
   "include_a11": true,
@@ -114,7 +116,7 @@
       "script": "a11_verify.py",
       "result": "a11_verification.json",
       "passed": true,
-      "tests": 14512,
+      "tests": 14594,
       "model_operations": 0,
       "error": null
     },

@@ -1,6 +1,6 @@
 # A11 — атомарный перенос: приёмка
 
-29.10.2026, Europe/Moscow. **Ready for PR. Обязательные проверки A11 прошли до коммита и на чистом закоммиченном HEAD.25c и40 закрыты без изменения игровых ассетов. Локальный коммит создан по разрешению пользователя; push, PR и merge запрещены и не выполнялись.**
+29.10.2026, Europe/Moscow. **Pending clean HEAD для последнего усиления40. Полная регрессия15093/0 до коммита прошла; ранее15011/0 проверены на чистых1acdb0c и53cdc0d. Production не изменялась. Push/PR/merge запрещены.**
 
 Worktree `D:/Project/SurvivalProject_A11`, ветка `task/a11-atomic-transfer`, база `02fe8a8586e15642f75d0691779fbf9a0c98cf44`. Основная main `1e3c750025cdb4379110b98c5d2fd7099c91b278` и обе backup-ветки сохранены. Выполнен новый fetch: origin/main по-прежнему02fe8a8; merge PR13 `20b7058` входит в её историю. Расхождения базы нет, main/backup не менялись. [Сверка веток](evidence/a11_branch_alignment.json). Предкоммитный прогон проверял незакоммиченное состояние по SHA; чистый HEAD проверен после локального коммита: `1acdb0c3f5bc60d5c7d0872b4de81867a402173c`.
 
@@ -16,7 +16,7 @@ TryTransferExact переносит количество целиком либо
 
 ## Компиляция и регрессия
 
-Реальный движок **5.8.4-58902052+++UE5+Release-5.8**, headless Editor/PIE. Стандартный запуск `run_f01_f02.ps1 -EngineRoot F:/UE_5.8 -OutputDirectory .../Acceptance/CleanImplementationHead`, без исключения A10/A11/A24. **15011 PASS assertions, 0 FAIL** в итоговом запуске; assertions не равны числу сценариев ТЗ. Базовые486 сохранены. [Summary](evidence/a11_final_summary.json): include_a10/include_a11=true, skip_swimming=false, exit0, timed_out=false, changed_source_files=[]. На чистом HEAD `1acdb0c3f5bc60d5c7d0872b4de81867a402173c` context.working_tree=[]; exit0, timed_out=false, changed_source_files=[]. [Предкоммитный summary](evidence/a11_precommit_summary.json) сохранён отдельно. Детальные assertions по ссылкам ниже относятся к предкоммитному прогону; тот же набор повторён на чистом HEAD, итог — [clean summary](evidence/a11_clean_head_summary.json).
+Реальный движок **5.8.4-58902052+++UE5+Release-5.8**, headless Editor/PIE. Последний предкоммитный запуск: `run_f01_f02.ps1 -EngineRoot F:/UE_5.8 -OutputDirectory .../Acceptance/StrictRefusalPrecommit`, без исключений. **15093 PASS assertions/0 FAIL**,486 baseline сохранены. [Summary](evidence/a11_precommit_summary.json): exit0, timed_out=false, changed_source_files=[]. Новый набор включает82 прямых bitwise-проверки Durability на отказах; для него clean HEAD следует после локального коммита. [Предыдущая чистая проверка15011/0](evidence/a11_clean_head_summary.json) сохранена как история.
 
 | Контракт | Результат | Assertions |
 |---|---|---|
@@ -32,7 +32,7 @@ TryTransferExact переносит количество целиком либо
 | a10_verify.py | PASS | 272 |
 | a11_access_verify.py | PASS | 9 |
 | a11_graph_verify.py | PASS | 2 |
-| a11_verify.py | PASS | 14512 |
+| a11_verify.py | PASS | 14594 |
 | a11_model_verify.py | PASS | 2 |
 
 Все12 Blueprint из summary скомпилированы. Отрицательные access-тесты намеренно получают compiler errors на временных графах. Три диагностических сообщения о ChangedSlots по ссылке находятся в CommitInventory, BroadcastChange и временном Listener; production compile успешна, контракт делегата не менялся. PIE A09/A10/A11 — по3/3. A24:257 водных объёмов, движение/прыжок, физическое плавание, три берега — PASS. Карты не сохранялись.
@@ -63,7 +63,7 @@ PASS относится к указанным выполненным assertions.
 |30,30a–e|PASS|[2,1], монотонный mirror, snapshot новее event, два mirror, отказ без обновления|
 |31-M|PASS|Независимые переходы,1000 Python property-операций, forced GUID collision rollback|
 |31-U|PASS|3×600 случайных операций seed20261027–29 + directed coverage; третья серия начинается с перегруженного источника|
-|32|PASS|На чистом коммите `1acdb0c3f5bc60d5c7d0872b4de81867a402173c`:15011/0, working_tree=[], include_a10/include_a11=true, skip_swimming=false, exit0, timed_out=false, changed_source_files=[]; отрицательный exit проверен отдельно|
+|32|Pending clean HEAD нового набора15093|Предыдущие чистые1acdb0c/53cdc0d:15011/0; новый строгий аудит отказов до коммита:15093/0. Полный запуск нового чистого HEAD выполняется после фиксации|
 |33|PASS|8 private helpers недоступны внешнему BP, public TryTransferExact доступен|
 |33a|PASS|21 путь: P1=9/P2=10/P3=1/P4=1; происхождение guard, обе записи до событий, whitelist|
 |33b|PASS|Все10 реальных мутаций unsaved-копий отклонены; SHA рабочего ассета неизменен|
@@ -93,7 +93,7 @@ BPC до последней нормализации:155980848409442D9734B274721
 
 Игровые файлы: BPC_Inventory.uasset/EOperationError.uasset. Документация:09_A05_ITEM_TYPES,17_A11_DESIGN_PROPOSAL,19/20(история),21(этот отчёт),Architecture/README,ProjectStatus. Тесты:a11_access_verify/a11_event_fixture/a11_graph_verify/a11_model_verify/a11_pie/a11_verify, диагностические a11_inspect/a11_probe_inactive_durability и подключение f01_f02_runner. JSON и полный список: [изменённые файлы](evidence/a11_changed_files.txt).
 
-**Оставшиеся NOT RUN/отложено:** только загрузочные38a–d(A39), исключённые из приёмки A11 самим ТЗ. T0 — ранее выполненный PASS, повтор не требовался. Обязательных незавершённых тестов A11 нет. Новая package/cook и ручная художественная оценка PIE не запускались. Аудит ещё не выполнен.
+**Оставшиеся проверки:** clean HEAD нового набора15093 после коммита. NOT RUN/отложено: загрузочные38a–d(A39), исключённые из приёмки A11 самим ТЗ. T0 — ранее выполненный PASS, повтор не требовался. Окончательная приёмка нового набора требует чистого HEAD. Новая package/cook и ручная художественная оценка PIE не запускались. Аудит ещё не выполнен.
 
 A11 проверяет GUID только участвующей пары; глобальные конфликты с третьим инвентарём относятся к валидатору A36(T15); A11 не заявляет такую защиту. Вложенные события могут прийти с Revision2 раньше1: слушатель применяет свежий snapshot и игнорирует старые события. GUID-коллизия отклоняется до записи без автоматического повтора. K21/инвалидирование после загрузки остаётся A39; A36 не меняется. Публикация требует отдельного разрешения. Чистый HEAD подтверждён, фактический summary сохранён. Следующий этап — независимый аудит и отдельно разрешённая публикация.
 
@@ -108,3 +108,7 @@ A11 проверяет GUID только участвующей пары; гло
 ## Результат на чистом закоммиченном HEAD
 
 Локальный коммит реализации: `1acdb0c3f5bc60d5c7d0872b4de81867a402173c`. Стандартный полный запуск на нём:15011 PASS assertions/0 FAIL,12 Blueprint, PIE A09/A10/A11 по3/3, A24 PASS. Контекст чистый, файловые SHA не изменились. [Фактический summary](evidence/a11_clean_head_summary.json). Фиксация этого результата отдельным документационным коммитом не меняет implementation/test sources; после него финальный чистый HEAD повторно проверяется стандартным runner, результаты сохраняются в `Saved/Verification/A11/Acceptance/FinalCleanHead` и сообщаются пользователю. Загружаемые проверки38a–d остаются отложенными в A39 без PASS.
+
+## Дополнительная строгость40 на отказах
+
+Для каждого из82 отказов дополнительно сравниваются `struct.pack("<d", Durability)` каждого слота обеих сторон, включая пустые слоты. Проверка не полагается на точность export_text и не допускает изменения неактивной Durability при ошибке. Новый предкоммитный полный результат15093/0. Производственные ассеты и архитектурные контракты не менялись.

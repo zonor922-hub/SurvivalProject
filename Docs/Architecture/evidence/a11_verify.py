@@ -68,6 +68,7 @@ def suite(gi,bp,tests,metrics):
   if not ok:
    after=[snapshot(s)]+([snapshot(d)] if valid and d!=s else [])
    check(label+' refusal exact snapshots',[sn.export_text() for sn in before]==[sn.export_text() for sn in after]);check(label+' refusal no events',all(x.get_editor_property('EventCount')==count for own,other,x,count,reenter,mode in tracked))
+   check(label+' refusal bitwise Durability',all(binary.pack('<d',read(read(a,'ItemStack'),'Durability'))==binary.pack('<d',read(read(b,'ItemStack'),'Durability')) for pre,post in zip(before,after) for a,b in zip(read(pre,'Slots'),read(post,'Slots'))))
    check(label+' refusal guards',guard==[o.get_editor_property('MutationInProgress') for o in ([s,d] if valid and d!=s else [s])]);return raw
   own=list(observer.get_editor_property('AuditOwnSnapshots'));other=list(observer.get_editor_property('AuditOtherSnapshots'));check(label+' committed pair observed',len(own)>index and len(other)>other_index,[index,other_index,len(own),len(other)])
   committed=[own[index],other[other_index]];oldtot=snap_totals(before[0])+snap_totals(before[1]);newtot=snap_totals(committed[0])+snap_totals(committed[1]);key=(str(read(selected,'ItemId')),read(selected,'HasDurability'),read(selected,'Durability') if read(selected,'HasDurability') else None)
