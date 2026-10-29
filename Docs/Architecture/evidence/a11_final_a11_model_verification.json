@@ -1,0 +1,94 @@
+{
+  "tests": [
+    {
+      "test": "31-M independent model laws",
+      "passed": true
+    },
+    {
+      "test": "31-U real UE differential replay and coverage thresholds",
+      "passed": true
+    }
+  ],
+  "metrics": {
+    "random_pairs": [
+      {
+        "seed": 20261027,
+        "capacities": [
+          4,
+          4
+        ],
+        "limits": [
+          10.0,
+          10.0
+        ],
+        "operations": 600,
+        "transfer": 300,
+        "add": 180,
+        "remove": 120,
+        "initially_overweight_source": false
+      },
+      {
+        "seed": 20261028,
+        "capacities": [
+          4,
+          1
+        ],
+        "limits": [
+          20.0,
+          5.0
+        ],
+        "operations": 600,
+        "transfer": 300,
+        "add": 180,
+        "remove": 120,
+        "initially_overweight_source": false
+      },
+      {
+        "seed": 20261029,
+        "capacities": [
+          8,
+          2
+        ],
+        "limits": [
+          40.0,
+          8.0
+        ],
+        "operations": 600,
+        "transfer": 300,
+        "add": 180,
+        "remove": 120,
+        "initially_overweight_source": true
+      }
+    ],
+    "operations": 2511,
+    "counts": {
+      "add_success": 371,
+      "remove_failure": 267,
+      "remove_success": 215,
+      "transfer_success": 614,
+      "transfer_failure": 641,
+      "add_failure": 403
+    },
+    "transfer_errors": {
+      "0": 5,
+      "16": 47,
+      "7": 42,
+      "15": 81,
+      "6": 117,
+      "11": 116,
+      "10": 108,
+      "9": 28,
+      "8": 97
+    },
+    "overweight_successes": 34,
+    "large_quantity_states": 1282,
+    "external_balance": {
+      "('item.wood', False, None)": 2223,
+      "('item.a11.model.big', False, None)": 12884902218,
+      "('item.a11.model.durable', True, 80.0)": 0,
+      "('item.a11.model.durable', True, 0.0)": 0,
+      "('item.berry', False, None)": 32
+    }
+  },
+  "passed": true
+}

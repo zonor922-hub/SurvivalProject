@@ -1,0 +1,40 @@
+{
+  "phase": "end",
+  "frames": 41,
+  "runs": [
+    {
+      "passed": true,
+      "split": [
+        6,
+        4
+      ],
+      "merged": 10,
+      "weight": 5.0,
+      "revision": 3,
+      "events": 2
+    },
+    {
+      "passed": true,
+      "split": [
+        6,
+        4
+      ],
+      "merged": 10,
+      "weight": 5.0,
+      "revision": 3,
+      "events": 2
+    },
+    {
+      "passed": true,
+      "split": [
+        6,
+        4
+      ],
+      "merged": 10,
+      "weight": 5.0,
+      "revision": 3,
+      "events": 2
+    }
+  ],
+  "passed": true
+}

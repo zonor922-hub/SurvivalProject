@@ -1,0 +1,16 @@
+{
+  "after": {
+    "enum": "25556AF5170CBC7353D4D34B7A705B47D2DB6674761495AA1AE09F863ED9B5E6",
+    "inventory": "155980848409442D9734B274721FECB505385F4A8982147907A8646690110B01"
+  },
+  "changed": [
+    "Content\\Survival\\Inventory\\BPC_Inventory.uasset",
+    "Content\\Survival\\Items\\Types\\EOperationError.uasset"
+  ],
+  "before": {
+    "enum": "9D08154C12AD6D04928E793471E7312381F3F79CB3C759B9D2766CE79AEEF6EB",
+    "inventory": "C21D04A4974CAC1A3BAEB35BBFDEE96F0A6AB977F134135178E3A64E469D931B"
+  },
+  "before_count": 803,
+  "after_count": 803
+}

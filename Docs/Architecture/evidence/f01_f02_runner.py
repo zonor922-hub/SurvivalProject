@@ -2,7 +2,7 @@
 import unreal,pathlib,json,sys,os,time,traceback
 context=json.loads(pathlib.Path(os.environ['SURVIVAL_TEST_CONTEXT']).read_text(encoding='utf-8-sig'))
 source=pathlib.Path(context['source']);output=pathlib.Path(context['output']);sys.path.insert(0,str(source))
-summary={'context':context,'include_a10':context.get('include_a10',True),'engine_version':unreal.SystemLibrary.get_engine_version(),'contracts':[],'integration':[],'compile':{},'diagnostics':[],'passed':False}
+summary={'context':context,'include_a10':context.get('include_a10',True),'include_a11':True,'engine_version':unreal.SystemLibrary.get_engine_version(),'contracts':[],'integration':[],'compile':{},'diagnostics':[],'passed':False}
 def save(): (output/'summary.json').write_text(json.dumps(summary,ensure_ascii=False,indent=2),encoding='utf-8')
 def execute(name,namespace=None):
     namespace=namespace if namespace is not None else {}
@@ -16,6 +16,7 @@ state={'index':0,'active':False,'started':time.monotonic()}
 try:
     contracts=[('a05_verify.py','a05_verification.json'),('a06_verify.py','a06_verification.json'),('a08_access_verify.py','a08_access_verification.json'),('a08_verify.py','a08_verification.json'),('a09_access_verify.py','a09_access_verification.json'),('a09_verify.py','a09_verification.json'),('a09_model_verify.py','a09_model_verification.json'),('f02_verify.py','f02_verification.json')]
     if summary['include_a10']:contracts += [('a10_access_verify.py','a10_access_verification.json'),('a10_verify.py','a10_verification.json')]
+    contracts += [('a11_access_verify.py','a11_access_verification.json'),('a11_graph_verify.py','a11_graph_verification.json'),('a11_verify.py','a11_verification.json'),('a11_model_verify.py','a11_model_verification.json')]
     for script,result_name in contracts:
         error=None
         try:execute(script)
@@ -39,9 +40,10 @@ try:
                     except Exception:message=''
                     if message:summary['diagnostics'].append({'asset':bp.get_path_name(),'graph':str(name),'message':message})
     inv=unreal.load_asset('/Game/Survival/Inventory/BPC_Inventory')
-    assert all(unreal.BlueprintEditorLibrary.find_graph(inv,name) is None for name in ('A09TestSetGuard','A09TestSetSlots','A10SeedSlots','A10SeedGuard','A10SeedRevision','A10SeedWeightLimit')),'Fixture functions left behind'
+    assert all(unreal.BlueprintEditorLibrary.find_graph(inv,name) is None for name in ('A09TestSetGuard','A09TestSetSlots','A10SeedSlots','A10SeedGuard','A10SeedRevision','A10SeedWeightLimit','A11SeedSlots','A11SeedGuard','A11SeedRevision','A11SeedWeight','A11SeedInventoryId','A11CheckInvariants','A11CheckReceive','A11EmitEvent','A11ModelGuard','A11ModelWeight')),'Fixture functions left behind'
     jobs=['a09_pie.py']
     if summary['include_a10']:jobs.append('a10_pie.py')
+    jobs.append('a11_pie.py')
     if not context['skip_swimming']:
         levels=unreal.get_editor_subsystem(unreal.LevelEditorSubsystem)
         assert levels.load_level('/Game/Content/Survival/Maps/LV_Survival_Nature')
@@ -66,7 +68,7 @@ try:
                 assert not context.get('inject_failure'), 'Intentional runner failure propagation test'
                 finish(all(x['passed'] for x in summary['contracts']));return
             name=jobs[state['index']]
-            if name not in ('a09_pie.py','a10_pie.py'):
+            if name not in ('a09_pie.py','a10_pie.py','a11_pie.py'):
                 levels=unreal.get_editor_subsystem(unreal.LevelEditorSubsystem)
                 assert levels.load_level('/Game/Survival/Maps/LV_SystemsTest' if name=='a24_move_verify.py' else '/Game/Content/Survival/Maps/LV_Survival_Nature')
             state['active']=True;execute(name,globals())
