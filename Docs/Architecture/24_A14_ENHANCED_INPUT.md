@@ -1,6 +1,6 @@
 # A14 — Enhanced Input
 
-Статус: **реализована и проверена в task/a14-enhanced-input; готова к отдельному PR, не merged**. 29 октября 2026, Europe/Moscow. База: `7bb77eb`. Зависимости A03/A13. Рабочая папка `D:\Project\SurvivalProject_A14`, UE `5.8.4-58902052+++UE5+Release-5.8`.
+Статус: **реализована и проверена в task/a14-enhanced-input; [PR №20](https://github.com/zonor922-hub/SurvivalProject/pull/20) открыт, не merged**. 29 октября 2026, Europe/Moscow. База: `7bb77eb`. Зависимости A03/A13. Рабочая папка `D:\Project\SurvivalProject_A14`, UE `5.8.4-58902052+++UE5+Release-5.8`.
 
 ## Сохранённая реализация и контракты
 
@@ -54,3 +54,7 @@ PIE настоящий, ввод подаётся через Enhanced Input acti
 ## Область изменений и ограничения
 
 Игровых ресурсов пять: существующий BP_SurvivalPlayerController и четыре новых ручных Input assets. Остальное — отчёт, ProjectStatus, evidence и runners. Карты, Config, Inventory, A13 и vendor assets без изменений. Политика input locks принадлежит контроллеру; будущим системам следует пользоваться SetSurvivalInputMode, а не независимо накапливать ignore counters. A15–A17 остаются отдельными задачами. PR не объединять автоматически.
+
+## Публикация
+
+[PR №20](https://github.com/zonor922-hub/SurvivalProject/pull/20) открыт в main из task/a14-enhanced-input. Проверенный игровой commit `5209f56b186245590f0298140ad9774abedb816d`, база `7bb77ebe92d3537444b11aea8cb07fe6ee933b24`. Git LFS загрузил 5/5 ресурсов. GitHub подтвердил 16 файлов, один игровой commit; последующее изменение этого раздела и ProjectStatus только документирует публикацию. Merge не выполнялся.
