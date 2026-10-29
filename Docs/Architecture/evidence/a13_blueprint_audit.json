@@ -1,0 +1,1970 @@
+{
+  "engine": "5.8.4-58902052+++UE5+Release-5.8",
+  "compile": {
+    "/Game/Survival/Interaction/BPI_Interactable.BPI_Interactable": {
+      "passed": true,
+      "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+    },
+    "/Game/Survival/Interaction/BPC_Interaction.BPC_Interaction": {
+      "passed": true,
+      "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+    },
+    "/Game/Survival/Core/BP_SurvivalPlayerController.BP_SurvivalPlayerController": {
+      "passed": true,
+      "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+    }
+  },
+  "graphs": {
+    "UpdateFocus": [
+      {
+        "node": "K2Node_FunctionEntry_0",
+        "class": "K2Node_FunctionEntry",
+        "title": "UpdateFocus",
+        "pins": {
+          "then": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "",
+            "links": [
+              "K2Node_DynamicCast_0:execute"
+            ]
+          }
+        }
+      },
+      {
+        "node": "K2Node_CallFunction_1",
+        "class": "K2Node_CallFunction",
+        "title": "GetOwner",
+        "pins": {
+          "self": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": []
+          },
+          "ReturnValue": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "",
+            "links": [
+              "K2Node_DynamicCast_0:Object"
+            ]
+          }
+        }
+      },
+      {
+        "node": "K2Node_DynamicCast_0",
+        "class": "K2Node_DynamicCast",
+        "title": "Cast To PlayerController",
+        "pins": {
+          "execute": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": [
+              "K2Node_FunctionEntry_0:then"
+            ]
+          },
+          "Object": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": [
+              "K2Node_CallFunction_1:ReturnValue"
+            ]
+          },
+          "then": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "",
+            "links": [
+              "K2Node_IfThenElse_3:execute"
+            ]
+          },
+          "CastFailed": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "",
+            "links": [
+              "K2Node_CallFunction_14:execute"
+            ]
+          },
+          "AsPlayer Controller": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "",
+            "links": [
+              "K2Node_CallFunction_2:self",
+              "K2Node_CallFunction_8:self",
+              "K2Node_CallFunction_19:Object"
+            ]
+          }
+        }
+      },
+      {
+        "node": "K2Node_CallFunction_2",
+        "class": "K2Node_CallFunction",
+        "title": "GetPlayerViewPoint",
+        "pins": {
+          "self": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": [
+              "K2Node_DynamicCast_0:AsPlayer Controller"
+            ]
+          },
+          "Location": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "0, 0, 0",
+            "links": [
+              "K2Node_PromotableOperator_2:B",
+              "K2Node_CallFunction_7:Start"
+            ]
+          },
+          "Rotation": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "0, 0, 0",
+            "links": [
+              "K2Node_CallFunction_3:InRot"
+            ]
+          }
+        }
+      },
+      {
+        "node": "K2Node_CallFunction_3",
+        "class": "K2Node_CallFunction",
+        "title": "GetForwardVector",
+        "pins": {
+          "InRot": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "0, 0, 0",
+            "links": [
+              "K2Node_CallFunction_2:Rotation"
+            ]
+          },
+          "ReturnValue": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "0, 0, 0",
+            "links": [
+              "K2Node_PromotableOperator_1:A"
+            ]
+          }
+        }
+      },
+      {
+        "node": "K2Node_PromotableOperator_1",
+        "class": "K2Node_PromotableOperator",
+        "title": "vector * vector",
+        "pins": {
+          "A": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": [
+              "K2Node_CallFunction_3:ReturnValue"
+            ]
+          },
+          "B": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": [
+              "K2Node_VariableGet_0:TraceDistance"
+            ]
+          },
+          "ReturnValue": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "",
+            "links": [
+              "K2Node_PromotableOperator_2:A"
+            ]
+          }
+        }
+      },
+      {
+        "node": "K2Node_VariableGet_0",
+        "class": "K2Node_VariableGet",
+        "title": "Get TraceDistance",
+        "pins": {
+          "TraceDistance": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "0.0",
+            "links": [
+              "K2Node_PromotableOperator_1:B"
+            ]
+          }
+        }
+      },
+      {
+        "node": "K2Node_PromotableOperator_2",
+        "class": "K2Node_PromotableOperator",
+        "title": "vector + vector",
+        "pins": {
+          "A": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": [
+              "K2Node_PromotableOperator_1:ReturnValue"
+            ]
+          },
+          "B": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": [
+              "K2Node_CallFunction_2:Location"
+            ]
+          },
+          "ReturnValue": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "",
+            "links": [
+              "K2Node_CallFunction_7:End"
+            ]
+          }
+        }
+      },
+      {
+        "node": "K2Node_CallFunction_7",
+        "class": "K2Node_CallFunction",
+        "title": "Line Trace By Channel",
+        "pins": {
+          "execute": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": [
+              "K2Node_MacroInstance_0:Is Valid"
+            ]
+          },
+          "Start": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "0, 0, 0",
+            "links": [
+              "K2Node_CallFunction_2:Location"
+            ]
+          },
+          "End": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "0, 0, 0",
+            "links": [
+              "K2Node_PromotableOperator_2:ReturnValue"
+            ]
+          },
+          "TraceChannel": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "TraceTypeQuery1",
+            "links": []
+          },
+          "bTraceComplex": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "false",
+            "links": []
+          },
+          "ActorsToIgnore": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": [
+              "K2Node_MakeArray_0:Array"
+            ]
+          },
+          "DrawDebugType": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "None",
+            "links": []
+          },
+          "bIgnoreSelf": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "true",
+            "links": []
+          },
+          "TraceColor": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "(R=1.000000,G=0.000000,B=0.000000,A=1.000000)",
+            "links": []
+          },
+          "TraceHitColor": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "(R=0.000000,G=1.000000,B=0.000000,A=1.000000)",
+            "links": []
+          },
+          "DrawTime": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "5.000000",
+            "links": []
+          },
+          "then": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "",
+            "links": [
+              "K2Node_IfThenElse_0:execute"
+            ]
+          },
+          "OutHit": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "",
+            "links": [
+              "K2Node_CallFunction_9:Hit"
+            ]
+          },
+          "ReturnValue": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "false",
+            "links": [
+              "K2Node_IfThenElse_0:Condition"
+            ]
+          }
+        }
+      },
+      {
+        "node": "K2Node_CallFunction_8",
+        "class": "K2Node_CallFunction",
+        "title": "Get Controlled Pawn",
+        "pins": {
+          "self": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": [
+              "K2Node_DynamicCast_0:AsPlayer Controller"
+            ]
+          },
+          "ReturnValue": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "",
+            "links": [
+              "K2Node_MakeArray_0:[0]",
+              "K2Node_CallFunction_11:self",
+              "K2Node_MacroInstance_0:InputObject"
+            ]
+          }
+        }
+      },
+      {
+        "node": "K2Node_MakeArray_0",
+        "class": "K2Node_MakeArray",
+        "title": "\u0421\u0434\u0435\u043b\u0430\u0442\u044c \u043c\u0430\u0441\u0441\u0438\u0432",
+        "pins": {
+          "[0]": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": [
+              "K2Node_CallFunction_8:ReturnValue"
+            ]
+          },
+          "Array": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "",
+            "links": [
+              "K2Node_CallFunction_7:ActorsToIgnore",
+              "K2Node_CallFunction_21:ActorsToIgnore"
+            ]
+          }
+        }
+      },
+      {
+        "node": "K2Node_IfThenElse_0",
+        "class": "K2Node_IfThenElse",
+        "title": "\u041e\u0442\u0432\u0435\u0442\u0432\u043b\u0435\u043d\u0438\u0435",
+        "pins": {
+          "execute": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": [
+              "K2Node_CallFunction_7:then"
+            ]
+          },
+          "Condition": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "true",
+            "links": [
+              "K2Node_CallFunction_7:ReturnValue"
+            ]
+          },
+          "then": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "",
+            "links": [
+              "K2Node_IfThenElse_1:execute"
+            ]
+          },
+          "else": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "",
+            "links": [
+              "K2Node_CallFunction_16:execute"
+            ]
+          }
+        }
+      },
+      {
+        "node": "K2Node_CallFunction_9",
+        "class": "K2Node_CallFunction",
+        "title": "BreakHitResult",
+        "pins": {
+          "Hit": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": [
+              "K2Node_CallFunction_7:OutHit"
+            ]
+          },
+          "bBlockingHit": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "false",
+            "links": []
+          },
+          "bInitialOverlap": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "false",
+            "links": []
+          },
+          "Time": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "0.0",
+            "links": []
+          },
+          "Distance": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "0.0",
+            "links": []
+          },
+          "Location": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "0, 0, 0",
+            "links": []
+          },
+          "ImpactPoint": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "0, 0, 0",
+            "links": [
+              "K2Node_CallFunction_12:V2",
+              "K2Node_CallFunction_21:End"
+            ]
+          },
+          "Normal": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "0, 0, 0",
+            "links": []
+          },
+          "ImpactNormal": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "0, 0, 0",
+            "links": []
+          },
+          "PhysMat": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "",
+            "links": []
+          },
+          "HitActor": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "",
+            "links": [
+              "K2Node_CallFunction_10:TestObject",
+              "K2Node_PromotableOperator_5:B",
+              "K2Node_CallFunction_24:Object",
+              "K2Node_CallFunction_25:NewFocus"
+            ]
+          },
+          "HitComponent": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "",
+            "links": []
+          },
+          "HitBoneName": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "None",
+            "links": []
+          },
+          "BoneName": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "None",
+            "links": []
+          },
+          "HitItem": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "0",
+            "links": []
+          },
+          "ElementIndex": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "0",
+            "links": []
+          },
+          "FaceIndex": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "0",
+            "links": []
+          },
+          "TraceStart": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "0, 0, 0",
+            "links": []
+          },
+          "TraceEnd": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "0, 0, 0",
+            "links": []
+          }
+        }
+      },
+      {
+        "node": "K2Node_CallFunction_10",
+        "class": "K2Node_CallFunction",
+        "title": "Does Object Implement Interface",
+        "pins": {
+          "TestObject": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": [
+              "K2Node_CallFunction_9:HitActor"
+            ]
+          },
+          "Interface": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "/Game/Survival/Interaction/BPI_Interactable.BPI_Interactable_C",
+            "links": []
+          },
+          "ReturnValue": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "false",
+            "links": [
+              "K2Node_IfThenElse_1:Condition"
+            ]
+          }
+        }
+      },
+      {
+        "node": "K2Node_IfThenElse_1",
+        "class": "K2Node_IfThenElse",
+        "title": "\u041e\u0442\u0432\u0435\u0442\u0432\u043b\u0435\u043d\u0438\u0435",
+        "pins": {
+          "execute": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": [
+              "K2Node_IfThenElse_0:then"
+            ]
+          },
+          "Condition": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "true",
+            "links": [
+              "K2Node_CallFunction_10:ReturnValue"
+            ]
+          },
+          "then": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "",
+            "links": [
+              "K2Node_IfThenElse_2:execute"
+            ]
+          },
+          "else": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "",
+            "links": [
+              "K2Node_CallFunction_17:execute"
+            ]
+          }
+        }
+      },
+      {
+        "node": "K2Node_CallFunction_11",
+        "class": "K2Node_CallFunction",
+        "title": "Get Actor Location",
+        "pins": {
+          "self": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": [
+              "K2Node_CallFunction_8:ReturnValue"
+            ]
+          },
+          "ReturnValue": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "0, 0, 0",
+            "links": [
+              "K2Node_CallFunction_12:V1",
+              "K2Node_CallFunction_21:Start"
+            ]
+          }
+        }
+      },
+      {
+        "node": "K2Node_CallFunction_12",
+        "class": "K2Node_CallFunction",
+        "title": "Distance (Vector)",
+        "pins": {
+          "V1": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "0, 0, 0",
+            "links": [
+              "K2Node_CallFunction_11:ReturnValue"
+            ]
+          },
+          "V2": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "0, 0, 0",
+            "links": [
+              "K2Node_CallFunction_9:ImpactPoint"
+            ]
+          },
+          "ReturnValue": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "0.0",
+            "links": [
+              "K2Node_PromotableOperator_4:A"
+            ]
+          }
+        }
+      },
+      {
+        "node": "K2Node_MacroInstance_0",
+        "class": "K2Node_MacroInstance",
+        "title": "Is Valid",
+        "pins": {
+          "exec": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": [
+              "K2Node_IfThenElse_3:then"
+            ]
+          },
+          "InputObject": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": [
+              "K2Node_CallFunction_8:ReturnValue"
+            ]
+          },
+          "Is Valid": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "",
+            "links": [
+              "K2Node_CallFunction_7:execute"
+            ]
+          },
+          "Is Not Valid": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "",
+            "links": [
+              "K2Node_CallFunction_15:execute"
+            ]
+          }
+        }
+      },
+      {
+        "node": "K2Node_PromotableOperator_4",
+        "class": "K2Node_PromotableOperator",
+        "title": "float <= float",
+        "pins": {
+          "A": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": [
+              "K2Node_CallFunction_12:ReturnValue"
+            ]
+          },
+          "B": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": [
+              "K2Node_VariableGet_1:InteractionDistance"
+            ]
+          },
+          "ReturnValue": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "",
+            "links": [
+              "K2Node_IfThenElse_2:Condition"
+            ]
+          }
+        }
+      },
+      {
+        "node": "K2Node_VariableGet_1",
+        "class": "K2Node_VariableGet",
+        "title": "Get InteractionDistance",
+        "pins": {
+          "InteractionDistance": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "0.0",
+            "links": [
+              "K2Node_PromotableOperator_4:B"
+            ]
+          }
+        }
+      },
+      {
+        "node": "K2Node_IfThenElse_2",
+        "class": "K2Node_IfThenElse",
+        "title": "\u041e\u0442\u0432\u0435\u0442\u0432\u043b\u0435\u043d\u0438\u0435",
+        "pins": {
+          "execute": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": [
+              "K2Node_IfThenElse_1:then"
+            ]
+          },
+          "Condition": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "true",
+            "links": [
+              "K2Node_PromotableOperator_4:ReturnValue"
+            ]
+          },
+          "then": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "",
+            "links": [
+              "K2Node_CallFunction_21:execute"
+            ]
+          },
+          "else": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "",
+            "links": [
+              "K2Node_CallFunction_18:execute"
+            ]
+          }
+        }
+      },
+      {
+        "node": "K2Node_CallFunction_14",
+        "class": "K2Node_CallFunction",
+        "title": "ApplyFocus",
+        "pins": {
+          "execute": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": [
+              "K2Node_DynamicCast_0:CastFailed"
+            ]
+          },
+          "self": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": []
+          },
+          "NewFocus": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": []
+          },
+          "then": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "",
+            "links": []
+          }
+        }
+      },
+      {
+        "node": "K2Node_CallFunction_15",
+        "class": "K2Node_CallFunction",
+        "title": "ApplyFocus",
+        "pins": {
+          "execute": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": [
+              "K2Node_MacroInstance_0:Is Not Valid"
+            ]
+          },
+          "self": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": []
+          },
+          "NewFocus": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": []
+          },
+          "then": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "",
+            "links": []
+          }
+        }
+      },
+      {
+        "node": "K2Node_CallFunction_16",
+        "class": "K2Node_CallFunction",
+        "title": "ApplyFocus",
+        "pins": {
+          "execute": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": [
+              "K2Node_IfThenElse_0:else"
+            ]
+          },
+          "self": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": []
+          },
+          "NewFocus": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": []
+          },
+          "then": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "",
+            "links": []
+          }
+        }
+      },
+      {
+        "node": "K2Node_CallFunction_17",
+        "class": "K2Node_CallFunction",
+        "title": "ApplyFocus",
+        "pins": {
+          "execute": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": [
+              "K2Node_IfThenElse_1:else"
+            ]
+          },
+          "self": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": []
+          },
+          "NewFocus": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": []
+          },
+          "then": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "",
+            "links": []
+          }
+        }
+      },
+      {
+        "node": "K2Node_CallFunction_18",
+        "class": "K2Node_CallFunction",
+        "title": "ApplyFocus",
+        "pins": {
+          "execute": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": [
+              "K2Node_IfThenElse_2:else"
+            ]
+          },
+          "self": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": []
+          },
+          "NewFocus": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": []
+          },
+          "then": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "",
+            "links": []
+          }
+        }
+      },
+      {
+        "node": "K2Node_CallFunction_19",
+        "class": "K2Node_CallFunction",
+        "title": "IsValid",
+        "pins": {
+          "Object": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": [
+              "K2Node_DynamicCast_0:AsPlayer Controller"
+            ]
+          },
+          "ReturnValue": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "false",
+            "links": [
+              "K2Node_IfThenElse_3:Condition"
+            ]
+          }
+        }
+      },
+      {
+        "node": "K2Node_IfThenElse_3",
+        "class": "K2Node_IfThenElse",
+        "title": "\u041e\u0442\u0432\u0435\u0442\u0432\u043b\u0435\u043d\u0438\u0435",
+        "pins": {
+          "execute": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": [
+              "K2Node_DynamicCast_0:then"
+            ]
+          },
+          "Condition": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "true",
+            "links": [
+              "K2Node_CallFunction_19:ReturnValue"
+            ]
+          },
+          "then": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "",
+            "links": [
+              "K2Node_MacroInstance_0:exec"
+            ]
+          },
+          "else": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "",
+            "links": [
+              "K2Node_CallFunction_20:execute"
+            ]
+          }
+        }
+      },
+      {
+        "node": "K2Node_CallFunction_20",
+        "class": "K2Node_CallFunction",
+        "title": "ApplyFocus",
+        "pins": {
+          "execute": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": [
+              "K2Node_IfThenElse_3:else"
+            ]
+          },
+          "self": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": []
+          },
+          "NewFocus": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": []
+          },
+          "then": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "",
+            "links": []
+          }
+        }
+      },
+      {
+        "node": "K2Node_CallFunction_21",
+        "class": "K2Node_CallFunction",
+        "title": "Line Trace By Channel",
+        "pins": {
+          "execute": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": [
+              "K2Node_IfThenElse_2:then"
+            ]
+          },
+          "Start": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "0, 0, 0",
+            "links": [
+              "K2Node_CallFunction_11:ReturnValue"
+            ]
+          },
+          "End": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "0, 0, 0",
+            "links": [
+              "K2Node_CallFunction_9:ImpactPoint"
+            ]
+          },
+          "TraceChannel": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "TraceTypeQuery1",
+            "links": []
+          },
+          "bTraceComplex": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "false",
+            "links": []
+          },
+          "ActorsToIgnore": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": [
+              "K2Node_MakeArray_0:Array"
+            ]
+          },
+          "DrawDebugType": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "None",
+            "links": []
+          },
+          "bIgnoreSelf": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "true",
+            "links": []
+          },
+          "TraceColor": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "(R=1.000000,G=0.000000,B=0.000000,A=1.000000)",
+            "links": []
+          },
+          "TraceHitColor": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "(R=0.000000,G=1.000000,B=0.000000,A=1.000000)",
+            "links": []
+          },
+          "DrawTime": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "5.000000",
+            "links": []
+          },
+          "then": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "",
+            "links": [
+              "K2Node_IfThenElse_4:execute"
+            ]
+          },
+          "OutHit": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "",
+            "links": [
+              "K2Node_CallFunction_22:Hit"
+            ]
+          },
+          "ReturnValue": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "false",
+            "links": [
+              "K2Node_CallFunction_23:A"
+            ]
+          }
+        }
+      },
+      {
+        "node": "K2Node_CallFunction_22",
+        "class": "K2Node_CallFunction",
+        "title": "BreakHitResult",
+        "pins": {
+          "Hit": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": [
+              "K2Node_CallFunction_21:OutHit"
+            ]
+          },
+          "bBlockingHit": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "false",
+            "links": []
+          },
+          "bInitialOverlap": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "false",
+            "links": []
+          },
+          "Time": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "0.0",
+            "links": []
+          },
+          "Distance": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "0.0",
+            "links": []
+          },
+          "Location": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "0, 0, 0",
+            "links": []
+          },
+          "ImpactPoint": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "0, 0, 0",
+            "links": []
+          },
+          "Normal": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "0, 0, 0",
+            "links": []
+          },
+          "ImpactNormal": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "0, 0, 0",
+            "links": []
+          },
+          "PhysMat": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "",
+            "links": []
+          },
+          "HitActor": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "",
+            "links": [
+              "K2Node_PromotableOperator_5:A"
+            ]
+          },
+          "HitComponent": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "",
+            "links": []
+          },
+          "HitBoneName": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "None",
+            "links": []
+          },
+          "BoneName": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "None",
+            "links": []
+          },
+          "HitItem": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "0",
+            "links": []
+          },
+          "ElementIndex": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "0",
+            "links": []
+          },
+          "FaceIndex": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "0",
+            "links": []
+          },
+          "TraceStart": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "0, 0, 0",
+            "links": []
+          },
+          "TraceEnd": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "0, 0, 0",
+            "links": []
+          }
+        }
+      },
+      {
+        "node": "K2Node_CallFunction_23",
+        "class": "K2Node_CallFunction",
+        "title": "NOT Boolean",
+        "pins": {
+          "A": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "false",
+            "links": [
+              "K2Node_CallFunction_21:ReturnValue"
+            ]
+          },
+          "ReturnValue": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "false",
+            "links": [
+              "K2Node_CommutativeAssociativeBinaryOperator_0:A"
+            ]
+          }
+        }
+      },
+      {
+        "node": "K2Node_PromotableOperator_5",
+        "class": "K2Node_PromotableOperator",
+        "title": "Equal (Object)",
+        "pins": {
+          "A": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": [
+              "K2Node_CallFunction_22:HitActor"
+            ]
+          },
+          "B": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": [
+              "K2Node_CallFunction_9:HitActor"
+            ]
+          },
+          "ReturnValue": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "",
+            "links": [
+              "K2Node_CommutativeAssociativeBinaryOperator_0:B"
+            ]
+          }
+        }
+      },
+      {
+        "node": "K2Node_CommutativeAssociativeBinaryOperator_0",
+        "class": "K2Node_CommutativeAssociativeBinaryOperator",
+        "title": "OR Boolean",
+        "pins": {
+          "A": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "false",
+            "links": [
+              "K2Node_CallFunction_23:ReturnValue"
+            ]
+          },
+          "B": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "false",
+            "links": [
+              "K2Node_PromotableOperator_5:ReturnValue"
+            ]
+          },
+          "ReturnValue": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "false",
+            "links": [
+              "K2Node_IfThenElse_4:Condition"
+            ]
+          }
+        }
+      },
+      {
+        "node": "K2Node_IfThenElse_4",
+        "class": "K2Node_IfThenElse",
+        "title": "\u041e\u0442\u0432\u0435\u0442\u0432\u043b\u0435\u043d\u0438\u0435",
+        "pins": {
+          "execute": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": [
+              "K2Node_CallFunction_21:then"
+            ]
+          },
+          "Condition": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "true",
+            "links": [
+              "K2Node_CommutativeAssociativeBinaryOperator_0:ReturnValue"
+            ]
+          },
+          "then": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "",
+            "links": [
+              "K2Node_IfThenElse_5:execute"
+            ]
+          },
+          "else": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "",
+            "links": [
+              "K2Node_CallFunction_26:execute"
+            ]
+          }
+        }
+      },
+      {
+        "node": "K2Node_CallFunction_24",
+        "class": "K2Node_CallFunction",
+        "title": "IsValid",
+        "pins": {
+          "Object": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": [
+              "K2Node_CallFunction_9:HitActor"
+            ]
+          },
+          "ReturnValue": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "false",
+            "links": [
+              "K2Node_IfThenElse_5:Condition"
+            ]
+          }
+        }
+      },
+      {
+        "node": "K2Node_IfThenElse_5",
+        "class": "K2Node_IfThenElse",
+        "title": "\u041e\u0442\u0432\u0435\u0442\u0432\u043b\u0435\u043d\u0438\u0435",
+        "pins": {
+          "execute": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": [
+              "K2Node_IfThenElse_4:then"
+            ]
+          },
+          "Condition": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "true",
+            "links": [
+              "K2Node_CallFunction_24:ReturnValue"
+            ]
+          },
+          "then": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "",
+            "links": [
+              "K2Node_CallFunction_25:execute"
+            ]
+          },
+          "else": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "",
+            "links": [
+              "K2Node_CallFunction_27:execute"
+            ]
+          }
+        }
+      },
+      {
+        "node": "K2Node_CallFunction_25",
+        "class": "K2Node_CallFunction",
+        "title": "ApplyFocus",
+        "pins": {
+          "execute": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": [
+              "K2Node_IfThenElse_5:then"
+            ]
+          },
+          "self": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": []
+          },
+          "NewFocus": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": [
+              "K2Node_CallFunction_9:HitActor"
+            ]
+          },
+          "then": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "",
+            "links": []
+          }
+        }
+      },
+      {
+        "node": "K2Node_CallFunction_26",
+        "class": "K2Node_CallFunction",
+        "title": "ApplyFocus",
+        "pins": {
+          "execute": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": [
+              "K2Node_IfThenElse_4:else"
+            ]
+          },
+          "self": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": []
+          },
+          "NewFocus": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": []
+          },
+          "then": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "",
+            "links": []
+          }
+        }
+      },
+      {
+        "node": "K2Node_CallFunction_27",
+        "class": "K2Node_CallFunction",
+        "title": "ApplyFocus",
+        "pins": {
+          "execute": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": [
+              "K2Node_IfThenElse_5:else"
+            ]
+          },
+          "self": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": []
+          },
+          "NewFocus": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": []
+          },
+          "then": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "",
+            "links": []
+          }
+        }
+      }
+    ],
+    "ApplyFocus": [
+      {
+        "node": "K2Node_FunctionEntry_0",
+        "class": "K2Node_FunctionEntry",
+        "title": "ApplyFocus",
+        "pins": {
+          "then": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "",
+            "links": [
+              "K2Node_IfThenElse_0:execute"
+            ]
+          },
+          "NewFocus": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "",
+            "links": [
+              "K2Node_PromotableOperator_0:B",
+              "K2Node_VariableSet_0:FocusedActor",
+              "K2Node_CallDelegate_0:NewFocus"
+            ]
+          }
+        }
+      },
+      {
+        "node": "K2Node_VariableGet_0",
+        "class": "K2Node_VariableGet",
+        "title": "Get FocusedActor",
+        "pins": {
+          "FocusedActor": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "",
+            "links": [
+              "K2Node_PromotableOperator_0:A"
+            ]
+          }
+        }
+      },
+      {
+        "node": "K2Node_PromotableOperator_0",
+        "class": "K2Node_PromotableOperator",
+        "title": "Not Equal (Object)",
+        "pins": {
+          "A": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": [
+              "K2Node_VariableGet_0:FocusedActor"
+            ]
+          },
+          "B": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": [
+              "K2Node_FunctionEntry_0:NewFocus"
+            ]
+          },
+          "ReturnValue": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "",
+            "links": [
+              "K2Node_IfThenElse_0:Condition"
+            ]
+          }
+        }
+      },
+      {
+        "node": "K2Node_IfThenElse_0",
+        "class": "K2Node_IfThenElse",
+        "title": "\u041e\u0442\u0432\u0435\u0442\u0432\u043b\u0435\u043d\u0438\u0435",
+        "pins": {
+          "execute": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": [
+              "K2Node_FunctionEntry_0:then"
+            ]
+          },
+          "Condition": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "true",
+            "links": [
+              "K2Node_PromotableOperator_0:ReturnValue"
+            ]
+          },
+          "then": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "",
+            "links": [
+              "K2Node_VariableSet_0:execute"
+            ]
+          },
+          "else": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "",
+            "links": []
+          }
+        }
+      },
+      {
+        "node": "K2Node_VariableSet_0",
+        "class": "K2Node_VariableSet",
+        "title": "Set FocusedActor",
+        "pins": {
+          "execute": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": [
+              "K2Node_IfThenElse_0:then"
+            ]
+          },
+          "FocusedActor": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": [
+              "K2Node_FunctionEntry_0:NewFocus"
+            ]
+          },
+          "then": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "",
+            "links": [
+              "K2Node_CallDelegate_0:execute"
+            ]
+          },
+          "Output_Get": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "",
+            "links": []
+          }
+        }
+      },
+      {
+        "node": "K2Node_CallDelegate_0",
+        "class": "K2Node_CallDelegate",
+        "title": "Call On Focus Changed",
+        "pins": {
+          "execute": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": [
+              "K2Node_VariableSet_0:then"
+            ]
+          },
+          "self": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": []
+          },
+          "NewFocus": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": [
+              "K2Node_FunctionEntry_0:NewFocus"
+            ]
+          },
+          "then": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "",
+            "links": []
+          }
+        }
+      }
+    ],
+    "StartFocusSearch": [
+      {
+        "node": "K2Node_FunctionEntry_0",
+        "class": "K2Node_FunctionEntry",
+        "title": "StartFocusSearch",
+        "pins": {
+          "then": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "",
+            "links": [
+              "K2Node_CallFunction_1:execute"
+            ]
+          }
+        }
+      },
+      {
+        "node": "K2Node_CallFunction_0",
+        "class": "K2Node_CallFunction",
+        "title": "Set Timer by Function Name",
+        "pins": {
+          "execute": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": [
+              "K2Node_CallFunction_1:then"
+            ]
+          },
+          "Object": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": []
+          },
+          "FunctionName": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "UpdateFocus",
+            "links": []
+          },
+          "Time": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "0.0",
+            "links": [
+              "K2Node_VariableGet_0:FocusInterval"
+            ]
+          },
+          "bLooping": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "true",
+            "links": []
+          },
+          "bMaxOncePerFrame": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "false",
+            "links": []
+          },
+          "InitialStartDelay": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "0.000000",
+            "links": []
+          },
+          "InitialStartDelayVariance": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "0.000000",
+            "links": []
+          },
+          "then": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "",
+            "links": [
+              "K2Node_VariableSet_0:execute"
+            ]
+          },
+          "ReturnValue": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "",
+            "links": [
+              "K2Node_VariableSet_0:FocusTimerHandle"
+            ]
+          }
+        }
+      },
+      {
+        "node": "K2Node_VariableGet_0",
+        "class": "K2Node_VariableGet",
+        "title": "Get FocusInterval",
+        "pins": {
+          "FocusInterval": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "0.0",
+            "links": [
+              "K2Node_CallFunction_0:Time"
+            ]
+          }
+        }
+      },
+      {
+        "node": "K2Node_CallFunction_1",
+        "class": "K2Node_CallFunction",
+        "title": "Clear and Invalidate Timer by Handle",
+        "pins": {
+          "execute": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": [
+              "K2Node_FunctionEntry_0:then"
+            ]
+          },
+          "Handle": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": [
+              "K2Node_VariableGet_1:FocusTimerHandle"
+            ]
+          },
+          "then": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "",
+            "links": [
+              "K2Node_CallFunction_0:execute"
+            ]
+          }
+        }
+      },
+      {
+        "node": "K2Node_VariableGet_1",
+        "class": "K2Node_VariableGet",
+        "title": "Get FocusTimerHandle",
+        "pins": {
+          "FocusTimerHandle": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "",
+            "links": [
+              "K2Node_CallFunction_1:Handle"
+            ]
+          }
+        }
+      },
+      {
+        "node": "K2Node_VariableSet_0",
+        "class": "K2Node_VariableSet",
+        "title": "Set FocusTimerHandle",
+        "pins": {
+          "execute": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": [
+              "K2Node_CallFunction_0:then"
+            ]
+          },
+          "FocusTimerHandle": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": [
+              "K2Node_CallFunction_0:ReturnValue"
+            ]
+          },
+          "then": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "",
+            "links": [
+              "K2Node_CallFunction_2:execute"
+            ]
+          },
+          "Output_Get": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "",
+            "links": []
+          }
+        }
+      },
+      {
+        "node": "K2Node_CallFunction_2",
+        "class": "K2Node_CallFunction",
+        "title": "UpdateFocus",
+        "pins": {
+          "execute": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": [
+              "K2Node_VariableSet_0:then"
+            ]
+          },
+          "self": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": []
+          },
+          "then": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "",
+            "links": []
+          }
+        }
+      }
+    ],
+    "StopFocusSearch": [
+      {
+        "node": "K2Node_FunctionEntry_0",
+        "class": "K2Node_FunctionEntry",
+        "title": "StopFocusSearch",
+        "pins": {
+          "then": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "",
+            "links": [
+              "K2Node_CallFunction_0:execute"
+            ]
+          }
+        }
+      },
+      {
+        "node": "K2Node_CallFunction_0",
+        "class": "K2Node_CallFunction",
+        "title": "Clear and Invalidate Timer by Handle",
+        "pins": {
+          "execute": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": [
+              "K2Node_FunctionEntry_0:then"
+            ]
+          },
+          "Handle": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": [
+              "K2Node_VariableGet_0:FocusTimerHandle"
+            ]
+          },
+          "then": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "",
+            "links": [
+              "K2Node_CallFunction_1:execute"
+            ]
+          }
+        }
+      },
+      {
+        "node": "K2Node_VariableGet_0",
+        "class": "K2Node_VariableGet",
+        "title": "Get FocusTimerHandle",
+        "pins": {
+          "FocusTimerHandle": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "",
+            "links": [
+              "K2Node_CallFunction_0:Handle"
+            ]
+          }
+        }
+      },
+      {
+        "node": "K2Node_CallFunction_1",
+        "class": "K2Node_CallFunction",
+        "title": "ApplyFocus",
+        "pins": {
+          "execute": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": [
+              "K2Node_CallFunction_0:then"
+            ]
+          },
+          "self": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": []
+          },
+          "NewFocus": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": []
+          },
+          "then": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "",
+            "links": []
+          }
+        }
+      }
+    ],
+    "EventGraph": [
+      {
+        "node": "K2Node_Event_0",
+        "class": "K2Node_Event",
+        "title": "\u0421\u043e\u0431\u044b\u0442\u0438\u0435 Begin Play",
+        "pins": {
+          "OutputDelegate": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "",
+            "links": []
+          },
+          "then": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "",
+            "links": [
+              "K2Node_CallFunction_0:execute"
+            ]
+          }
+        }
+      },
+      {
+        "node": "K2Node_CallFunction_0",
+        "class": "K2Node_CallFunction",
+        "title": "StartFocusSearch",
+        "pins": {
+          "execute": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": [
+              "K2Node_Event_0:then"
+            ]
+          },
+          "self": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": []
+          },
+          "then": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "",
+            "links": []
+          }
+        }
+      },
+      {
+        "node": "K2Node_Event_2",
+        "class": "K2Node_Event",
+        "title": "\u0421\u043e\u0431\u044b\u0442\u0438\u0435 End Play",
+        "pins": {
+          "OutputDelegate": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "",
+            "links": []
+          },
+          "then": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "",
+            "links": [
+              "K2Node_CallFunction_1:execute"
+            ]
+          },
+          "EndPlayReason": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "Destroyed",
+            "links": []
+          }
+        }
+      },
+      {
+        "node": "K2Node_CallFunction_1",
+        "class": "K2Node_CallFunction",
+        "title": "StopFocusSearch",
+        "pins": {
+          "execute": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": [
+              "K2Node_Event_2:then"
+            ]
+          },
+          "self": {
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "default": "",
+            "links": []
+          },
+          "then": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "",
+            "links": []
+          }
+        }
+      }
+    ],
+    "OnFocusChanged": [
+      {
+        "node": "K2Node_FunctionEntry_0",
+        "class": "K2Node_FunctionEntry",
+        "title": "OnFocusChanged",
+        "pins": {
+          "then": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "",
+            "links": []
+          },
+          "NewFocus": {
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "default": "",
+            "links": []
+          }
+        }
+      }
+    ]
+  },
+  "defaults": {
+    "InteractionDistance": "250.0",
+    "TraceDistance": "600.0",
+    "FocusInterval": "0.1"
+  }
+}
