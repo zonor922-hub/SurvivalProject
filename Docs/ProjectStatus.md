@@ -19,7 +19,7 @@
 | F01/F02 — исправления аудита | Проверены, PR №8 объединён | [Runner, результаты и ограничения](Architecture/14_A09_F01_F02_VALIDATION.md): 211 проверок; nonfinite definitions и WeightLimit отклоняются |
 | A10 — разделение и объединение стопок | **Завершена, PR №12 объединён в main** (`513b33870990a9db31e32dc98326ec584e9b69fa`); остаточный риск явно принят | [Отчёт](Architecture/16_A10_SPLIT_MERGE.md): A10-F1, 486 PASS / 0 FAIL на чистом проверенном коммите; 190 дробных split/merge, 17 путей отказа; 12 Blueprint, PIE A09/A10 и A24; 8 SHA-256. Эксперимент чувствительности Mutation Guard — **NOT RUN**, в PASS не входит; [решение о риске в PR](https://github.com/zonor922-hub/SurvivalProject/pull/12#issuecomment-6449528324) |
 | A36 — схема SaveGame, DTO и версии | Технический проект принят как документация через PR №10; реализация не начата | [Проект и ТЗ](Architecture/15_A36_SAVEGAME_ARCHITECTURE.md): схема v1, ID, tombstones, двухслотовая запись без заявления о файловой атомарности, 42 сценария тестов; Unreal не запускался |
-| A11 — перенос между инвентарями | Локально Ready for PR; в main ещё не опубликована | [Отчёт/матрица](Architecture/21_A11_TRANSFER.md);15011 PASS/0 FAIL на чистом `1acdb0c`;25c/40 PASS;38a–d отложены в A39; push/PR/merge запрещены |
+| A11 — перенос между инвентарями | Локально Ready for PR; в main не опубликована | [Матрица/отчёт](Architecture/21_A11_TRANSFER.md):15093 PASS/0 FAIL на чистом c858e93,25c/40/32 PASS;12 BP/PIE/A24 PASS.38a–d отложены в A39, push/PR/merge запрещены |
 | A12–A23, A25–A35, A37–A44 | Не реализованы в main | [План и критерии](Architecture/03_IMPLEMENTATION_BACKLOG.md) |
 
 В main реализованы и проверены 11 из 44 задач (A01–A10 и A24). F01/F02 — исправления существующих задач, не новые пункты из 44. Это не процент готовности игры. Свежий package A09 не проверен; историческая A07 проверяла каталог отдельно.
@@ -105,10 +105,14 @@ T0 остаётся PASS по Issue #14. Реализация A11 останов
 
 Предкоммитный стандартный UE5.8.4 runner: 15011 PASS/0 FAIL,486 baseline сохранены;12 Blueprint, PIE A09/A10/A11 по3/3, A24 PASS.25c:40 двусторонних переносов с неизменным C;40:562 вызова с полным аудитором. Игровые ассеты не менялись после ранее утверждённой реализации. Разрешён локальный коммит с последующей проверкой чистого HEAD. [Текущая матрица](Architecture/21_A11_TRANSFER.md).
 
-## A11 — итог локальной приёмки (29.10.2026)
+## A11 — история приёмки15011 (29.10.2026)
 
 **Ready for PR.** Реализация `1acdb0c3f5bc60d5c7d0872b4de81867a402173c`: полный стандартный прогон на чистом HEAD —15011 PASS/0 FAIL,12 Blueprint, PIE A09/A10/A11 по3/3 и A24 PASS; context.working_tree=[], exit0, timed_out=false, changed_source_files=[].25c/40 полностью закрыты; обязательных NOT RUN A11 нет.38a–d отложены по ТЗ в A39, T0 — исторический PASS. [Матрица/риски/SHA](Architecture/21_A11_TRANSFER.md), [clean summary](Architecture/evidence/a11_clean_head_summary.json). Только два игровых ассета плюс тесты/документация; main/backup сохранены. Push/PR/merge не выполнялись.
 
-## A11 — усиление40 для отказов
+## A11 — история предкоммитного усиления40 для отказов
 
 Последний полный предкоммитный прогон15093 PASS/0 FAIL: добавлены82 прямые побитовые проверки Durability на отказах. Production не менялась. Следующий этап — чистый HEAD нового тестового набора; предыдущие чистые1acdb0c/53cdc0d успешно прошли15011/0. Push/PR/merge запрещены.
+
+## A11 — актуальный итог (29.10.2026)
+
+**Ready for PR.** Протестированный чистый коммит `c858e932306c7dd7d9419562a00572da96e3927c`:15093 PASS/0 FAIL, context.working_tree=[],12 Blueprint, PIE A09/A10/A11 по3/3, A24 PASS, exit0, timed_out=false, changed_source_files=[].25c/40/32 полностью закрыты, включая82 прямые bitwise-проверки на отказах.38a–d остаются отложенными в A39; T0 ранее PASS. [Отчёт/риски/SHA](Architecture/21_A11_TRANSFER.md), [фактический clean summary](Architecture/evidence/a11_clean_head_summary.json). После коммита только итоговой документации проверяются чистота и идентичность runtime/test blobs этому проверенному коммиту. Main/backup сохранены; push/PR/merge не выполнялись.
