@@ -1,0 +1,3966 @@
+{
+  "engine": "5.8.4-58902052+++UE5+Release-5.8",
+  "assets": {
+    "/Game/Survival/Core/BP_SurvivalPlayerController": {
+      "loaded": true,
+      "class": "Blueprint",
+      "compiled": true,
+      "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+    },
+    "/Game/Survival/Input/Actions/IA_Interact": {
+      "loaded": true,
+      "class": "InputAction"
+    },
+    "/Game/Survival/Input/Actions/IA_Inventory": {
+      "loaded": true,
+      "class": "InputAction"
+    },
+    "/Game/Survival/Input/IMC_Survival": {
+      "loaded": true,
+      "class": "InputMappingContext"
+    },
+    "/Game/Survival/Input/ESurvivalInputMode": {
+      "loaded": true,
+      "class": "UserDefinedEnum"
+    }
+  },
+  "graphs": {
+    "UserConstructionScript": [
+      {
+        "name": "K2Node_FunctionEntry_0",
+        "class": "K2Node_FunctionEntry",
+        "title": "Construction Script",
+        "pins": [
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_CallParentFunction_0:execute"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "K2Node_CallParentFunction_0",
+        "class": "K2Node_CallParentFunction",
+        "title": "Родитель: Construction Script",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_FunctionEntry_0:then"
+            ]
+          },
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": []
+          }
+        ]
+      }
+    ],
+    "TryInitialize": [
+      {
+        "name": "K2Node_FunctionEntry_0",
+        "class": "K2Node_FunctionEntry",
+        "title": "TryInitialize",
+        "pins": [
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_IfThenElse_0:execute"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "K2Node_CallFunction_0",
+        "class": "K2Node_CallFunction",
+        "title": "Get Controlled Pawn",
+        "pins": [
+          {
+            "name": "self",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": []
+          },
+          {
+            "name": "ReturnValue",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_PromotableOperator_0:A",
+              "K2Node_DynamicCast_2:Object"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "K2Node_VariableGet_0",
+        "class": "K2Node_VariableGet",
+        "title": "Get BoundPawn",
+        "pins": [
+          {
+            "name": "BoundPawn",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_PromotableOperator_0:B"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "K2Node_PromotableOperator_0",
+        "class": "K2Node_PromotableOperator",
+        "title": "Equal (Object)",
+        "pins": [
+          {
+            "name": "A",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_CallFunction_0:ReturnValue"
+            ]
+          },
+          {
+            "name": "B",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_VariableGet_0:BoundPawn"
+            ]
+          },
+          {
+            "name": "ReturnValue",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_CommutativeAssociativeBinaryOperator_0:B"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "K2Node_VariableGet_1",
+        "class": "K2Node_VariableGet",
+        "title": "Get BootstrapReady",
+        "pins": [
+          {
+            "name": "BootstrapReady",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "false",
+            "links": [
+              "K2Node_CommutativeAssociativeBinaryOperator_0:A"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "K2Node_CommutativeAssociativeBinaryOperator_0",
+        "class": "K2Node_CommutativeAssociativeBinaryOperator",
+        "title": "AND Boolean",
+        "pins": [
+          {
+            "name": "A",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "false",
+            "links": [
+              "K2Node_VariableGet_1:BootstrapReady"
+            ]
+          },
+          {
+            "name": "B",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "false",
+            "links": [
+              "K2Node_PromotableOperator_0:ReturnValue"
+            ]
+          },
+          {
+            "name": "ReturnValue",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "false",
+            "links": [
+              "K2Node_IfThenElse_0:Condition"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "K2Node_IfThenElse_0",
+        "class": "K2Node_IfThenElse",
+        "title": "Ответвление",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_FunctionEntry_0:then"
+            ]
+          },
+          {
+            "name": "Condition",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "true",
+            "links": [
+              "K2Node_CommutativeAssociativeBinaryOperator_0:ReturnValue"
+            ]
+          },
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": []
+          },
+          {
+            "name": "else",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_VariableSet_0:execute"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "K2Node_VariableSet_0",
+        "class": "K2Node_VariableSet",
+        "title": "Set BootstrapReady",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_IfThenElse_0:else"
+            ]
+          },
+          {
+            "name": "BootstrapReady",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "false",
+            "links": []
+          },
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_VariableSet_1:execute"
+            ]
+          },
+          {
+            "name": "Output_Get",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "false",
+            "links": []
+          }
+        ]
+      },
+      {
+        "name": "K2Node_VariableSet_1",
+        "class": "K2Node_VariableSet",
+        "title": "Set BoundPawn",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_VariableSet_0:then"
+            ]
+          },
+          {
+            "name": "BoundPawn",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": []
+          },
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_VariableSet_2:execute"
+            ]
+          },
+          {
+            "name": "Output_Get",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": []
+          }
+        ]
+      },
+      {
+        "name": "K2Node_VariableSet_2",
+        "class": "K2Node_VariableSet",
+        "title": "Set BoundPlayerState",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_VariableSet_1:then"
+            ]
+          },
+          {
+            "name": "BoundPlayerState",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": []
+          },
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_VariableSet_3:execute"
+            ]
+          },
+          {
+            "name": "Output_Get",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": []
+          }
+        ]
+      },
+      {
+        "name": "K2Node_VariableSet_3",
+        "class": "K2Node_VariableSet",
+        "title": "Set BoundGameInstance",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_VariableSet_2:then"
+            ]
+          },
+          {
+            "name": "BoundGameInstance",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": []
+          },
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_DynamicCast_0:execute"
+            ]
+          },
+          {
+            "name": "Output_Get",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": []
+          }
+        ]
+      },
+      {
+        "name": "K2Node_CallFunction_1",
+        "class": "K2Node_CallFunction",
+        "title": "GetGameInstance",
+        "pins": [
+          {
+            "name": "ReturnValue",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_DynamicCast_0:Object"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "K2Node_DynamicCast_0",
+        "class": "K2Node_DynamicCast",
+        "title": "Cast To BP_SurvivalGameInstance",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_VariableSet_3:then"
+            ]
+          },
+          {
+            "name": "Object",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_CallFunction_1:ReturnValue"
+            ]
+          },
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_DynamicCast_1:execute"
+            ]
+          },
+          {
+            "name": "CastFailed",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": []
+          },
+          {
+            "name": "AsBP Survival Game Instance",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_CallFunction_2:self",
+              "K2Node_VariableSet_4:BoundGameInstance",
+              "K2Node_VariableGet_4:self"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "K2Node_VariableGet_2",
+        "class": "K2Node_VariableGet",
+        "title": "Get PlayerState",
+        "pins": [
+          {
+            "name": "PlayerState",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_DynamicCast_1:Object"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "K2Node_DynamicCast_1",
+        "class": "K2Node_DynamicCast",
+        "title": "Cast To BP_SurvivalPlayerState",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_DynamicCast_0:then"
+            ]
+          },
+          {
+            "name": "Object",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_VariableGet_2:PlayerState"
+            ]
+          },
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_DynamicCast_2:execute"
+            ]
+          },
+          {
+            "name": "CastFailed",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": []
+          },
+          {
+            "name": "AsBP Survival Player State",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_CallFunction_3:self",
+              "K2Node_VariableSet_5:BoundPlayerState"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "K2Node_DynamicCast_2",
+        "class": "K2Node_DynamicCast",
+        "title": "Cast To BP_SurvivalCharacter",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_DynamicCast_1:then"
+            ]
+          },
+          {
+            "name": "Object",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_CallFunction_0:ReturnValue"
+            ]
+          },
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_CallFunction_2:execute"
+            ]
+          },
+          {
+            "name": "CastFailed",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": []
+          },
+          {
+            "name": "AsBP Survival Character",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_CallFunction_4:self",
+              "K2Node_VariableSet_6:BoundPawn"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "K2Node_CallFunction_2",
+        "class": "K2Node_CallFunction",
+        "title": "InitializeBootstrap",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_DynamicCast_2:then"
+            ]
+          },
+          {
+            "name": "self",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_DynamicCast_0:AsBP Survival Game Instance"
+            ]
+          },
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_CallFunction_3:execute"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "K2Node_CallFunction_3",
+        "class": "K2Node_CallFunction",
+        "title": "InitializeBootstrap",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_CallFunction_2:then"
+            ]
+          },
+          {
+            "name": "self",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_DynamicCast_1:AsBP Survival Player State"
+            ]
+          },
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_CallFunction_4:execute"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "K2Node_CallFunction_4",
+        "class": "K2Node_CallFunction",
+        "title": "InitializeBootstrap",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_CallFunction_3:then"
+            ]
+          },
+          {
+            "name": "self",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_DynamicCast_2:AsBP Survival Character"
+            ]
+          },
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_CallFunction_5:execute"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "K2Node_CallFunction_5",
+        "class": "K2Node_CallFunction",
+        "title": "InitializeBootstrap",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_CallFunction_4:then"
+            ]
+          },
+          {
+            "name": "self",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": []
+          },
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_VariableSet_4:execute"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "K2Node_VariableSet_4",
+        "class": "K2Node_VariableSet",
+        "title": "Set BoundGameInstance",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_CallFunction_5:then"
+            ]
+          },
+          {
+            "name": "BoundGameInstance",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_DynamicCast_0:AsBP Survival Game Instance"
+            ]
+          },
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_VariableSet_5:execute"
+            ]
+          },
+          {
+            "name": "Output_Get",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": []
+          }
+        ]
+      },
+      {
+        "name": "K2Node_VariableSet_5",
+        "class": "K2Node_VariableSet",
+        "title": "Set BoundPlayerState",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_VariableSet_4:then"
+            ]
+          },
+          {
+            "name": "BoundPlayerState",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_DynamicCast_1:AsBP Survival Player State"
+            ]
+          },
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_VariableSet_6:execute"
+            ]
+          },
+          {
+            "name": "Output_Get",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": []
+          }
+        ]
+      },
+      {
+        "name": "K2Node_VariableSet_6",
+        "class": "K2Node_VariableSet",
+        "title": "Set BoundPawn",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_VariableSet_5:then"
+            ]
+          },
+          {
+            "name": "BoundPawn",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_DynamicCast_2:AsBP Survival Character"
+            ]
+          },
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_VariableSet_7:execute"
+            ]
+          },
+          {
+            "name": "Output_Get",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": []
+          }
+        ]
+      },
+      {
+        "name": "K2Node_VariableGet_3",
+        "class": "K2Node_VariableGet",
+        "title": "Get PossessionGeneration",
+        "pins": [
+          {
+            "name": "PossessionGeneration",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "0",
+            "links": [
+              "K2Node_PromotableOperator_1:A"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "K2Node_PromotableOperator_1",
+        "class": "K2Node_PromotableOperator",
+        "title": "int + int",
+        "pins": [
+          {
+            "name": "A",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_VariableGet_3:PossessionGeneration"
+            ]
+          },
+          {
+            "name": "B",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "1",
+            "links": []
+          },
+          {
+            "name": "ReturnValue",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_VariableSet_7:PossessionGeneration"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "K2Node_VariableSet_7",
+        "class": "K2Node_VariableSet",
+        "title": "Set PossessionGeneration",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_VariableSet_6:then"
+            ]
+          },
+          {
+            "name": "PossessionGeneration",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "0",
+            "links": [
+              "K2Node_PromotableOperator_1:ReturnValue"
+            ]
+          },
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_IfThenElse_1:execute"
+            ]
+          },
+          {
+            "name": "Output_Get",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "0",
+            "links": []
+          }
+        ]
+      },
+      {
+        "name": "K2Node_VariableSet_8",
+        "class": "K2Node_VariableSet",
+        "title": "Set BootstrapReady",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_IfThenElse_1:then"
+            ]
+          },
+          {
+            "name": "BootstrapReady",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "true",
+            "links": []
+          },
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": []
+          },
+          {
+            "name": "Output_Get",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "false",
+            "links": []
+          }
+        ]
+      },
+      {
+        "name": "K2Node_IfThenElse_1",
+        "class": "K2Node_IfThenElse",
+        "title": "Ответвление",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_VariableSet_7:then"
+            ]
+          },
+          {
+            "name": "Condition",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "true",
+            "links": [
+              "K2Node_VariableGet_4:CatalogReady"
+            ]
+          },
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_VariableSet_8:execute"
+            ]
+          },
+          {
+            "name": "else",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": []
+          }
+        ]
+      },
+      {
+        "name": "K2Node_VariableGet_4",
+        "class": "K2Node_VariableGet",
+        "title": "Get CatalogReady",
+        "pins": [
+          {
+            "name": "self",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_DynamicCast_0:AsBP Survival Game Instance"
+            ]
+          },
+          {
+            "name": "CatalogReady",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "false",
+            "links": [
+              "K2Node_IfThenElse_1:Condition"
+            ]
+          }
+        ]
+      }
+    ],
+    "InitializeBootstrap": [
+      {
+        "name": "K2Node_FunctionEntry_0",
+        "class": "K2Node_FunctionEntry",
+        "title": "InitializeBootstrap",
+        "pins": [
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_IfThenElse_0:execute"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "K2Node_IfThenElse_0",
+        "class": "K2Node_IfThenElse",
+        "title": "Ответвление",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_FunctionEntry_0:then"
+            ]
+          },
+          {
+            "name": "Condition",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "true",
+            "links": [
+              "K2Node_VariableGet_0:BootstrapInitialized"
+            ]
+          },
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": []
+          },
+          {
+            "name": "else",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_VariableSet_0:execute"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "K2Node_VariableGet_0",
+        "class": "K2Node_VariableGet",
+        "title": "Get BootstrapInitialized",
+        "pins": [
+          {
+            "name": "BootstrapInitialized",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "false",
+            "links": [
+              "K2Node_IfThenElse_0:Condition"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "K2Node_VariableSet_0",
+        "class": "K2Node_VariableSet",
+        "title": "Set BootstrapInitialized",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_IfThenElse_0:else"
+            ]
+          },
+          {
+            "name": "BootstrapInitialized",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "true",
+            "links": []
+          },
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_VariableSet_1:execute"
+            ]
+          },
+          {
+            "name": "Output_Get",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "false",
+            "links": []
+          }
+        ]
+      },
+      {
+        "name": "K2Node_VariableGet_1",
+        "class": "K2Node_VariableGet",
+        "title": "Get InitializeCount",
+        "pins": [
+          {
+            "name": "InitializeCount",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "0",
+            "links": [
+              "K2Node_PromotableOperator_0:A"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "K2Node_PromotableOperator_0",
+        "class": "K2Node_PromotableOperator",
+        "title": "int + int",
+        "pins": [
+          {
+            "name": "A",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_VariableGet_1:InitializeCount"
+            ]
+          },
+          {
+            "name": "B",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "1",
+            "links": []
+          },
+          {
+            "name": "ReturnValue",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_VariableSet_1:InitializeCount"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "K2Node_VariableSet_1",
+        "class": "K2Node_VariableSet",
+        "title": "Set InitializeCount",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_VariableSet_0:then"
+            ]
+          },
+          {
+            "name": "InitializeCount",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "0",
+            "links": [
+              "K2Node_PromotableOperator_0:ReturnValue"
+            ]
+          },
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_VariableSet_2:execute"
+            ]
+          },
+          {
+            "name": "Output_Get",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "0",
+            "links": []
+          }
+        ]
+      },
+      {
+        "name": "K2Node_VariableSet_2",
+        "class": "K2Node_VariableSet",
+        "title": "Set BootstrapReady",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_VariableSet_1:then"
+            ]
+          },
+          {
+            "name": "BootstrapReady",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "true",
+            "links": []
+          },
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": []
+          },
+          {
+            "name": "Output_Get",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "false",
+            "links": []
+          }
+        ]
+      }
+    ],
+    "EnsureSurvivalInput": [
+      {
+        "name": "K2Node_FunctionEntry_0",
+        "class": "K2Node_FunctionEntry",
+        "title": "EnsureSurvivalInput",
+        "pins": [
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_MacroInstance_0:exec"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "K2Node_GetSubsystemFromPC_0",
+        "class": "K2Node_GetSubsystemFromPC",
+        "title": "Получить EnhancedInputLocalPlayerSubsystem",
+        "pins": [
+          {
+            "name": "PlayerController",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_Self_0:self"
+            ]
+          },
+          {
+            "name": "ReturnValue",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_MacroInstance_0:InputObject",
+              "K2Node_CallFunction_0:self",
+              "K2Node_CallFunction_1:self"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "K2Node_Self_0",
+        "class": "K2Node_Self",
+        "title": "Ссылка на себя",
+        "pins": [
+          {
+            "name": "self",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_GetSubsystemFromPC_0:PlayerController"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "K2Node_MacroInstance_0",
+        "class": "K2Node_MacroInstance",
+        "title": "Is Valid",
+        "pins": [
+          {
+            "name": "exec",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_FunctionEntry_0:then"
+            ]
+          },
+          {
+            "name": "InputObject",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_GetSubsystemFromPC_0:ReturnValue"
+            ]
+          },
+          {
+            "name": "Is Valid",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_IfThenElse_0:execute"
+            ]
+          },
+          {
+            "name": "Is Not Valid",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": []
+          }
+        ]
+      },
+      {
+        "name": "K2Node_CallFunction_0",
+        "class": "K2Node_CallFunction",
+        "title": "HasMappingContext",
+        "pins": [
+          {
+            "name": "self",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_GetSubsystemFromPC_0:ReturnValue"
+            ]
+          },
+          {
+            "name": "MappingContext",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "/Game/Survival/Input/IMC_Survival.IMC_Survival",
+            "links": []
+          },
+          {
+            "name": "OutFoundPriority",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "0",
+            "links": []
+          },
+          {
+            "name": "ReturnValue",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "false",
+            "links": [
+              "K2Node_IfThenElse_0:Condition"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "K2Node_IfThenElse_0",
+        "class": "K2Node_IfThenElse",
+        "title": "Ответвление",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_MacroInstance_0:Is Valid"
+            ]
+          },
+          {
+            "name": "Condition",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "true",
+            "links": [
+              "K2Node_CallFunction_0:ReturnValue"
+            ]
+          },
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": []
+          },
+          {
+            "name": "else",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_CallFunction_1:execute"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "K2Node_CallFunction_1",
+        "class": "K2Node_CallFunction",
+        "title": "AddMappingContext",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_IfThenElse_0:else"
+            ]
+          },
+          {
+            "name": "self",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_GetSubsystemFromPC_0:ReturnValue"
+            ]
+          },
+          {
+            "name": "MappingContext",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "/Game/Survival/Input/IMC_Survival.IMC_Survival",
+            "links": []
+          },
+          {
+            "name": "Priority",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "1",
+            "links": []
+          },
+          {
+            "name": "Options",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "(bIgnoreAllPressedKeysUntilRelease=True,bForceImmediately=False,bNotifyUserSettings=False)",
+            "links": []
+          },
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": []
+          }
+        ]
+      }
+    ],
+    "SetSurvivalInputMode": [
+      {
+        "name": "K2Node_FunctionEntry_0",
+        "class": "K2Node_FunctionEntry",
+        "title": "SetSurvivalInputMode",
+        "pins": [
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_IfThenElse_0:execute"
+            ]
+          },
+          {
+            "name": "NewMode",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "NewEnumerator0",
+            "links": [
+              "K2Node_EnumInequality_0:B",
+              "K2Node_VariableSet_0:CurrentInputMode",
+              "K2Node_SwitchEnum_0:Selection"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "K2Node_VariableGet_0",
+        "class": "K2Node_VariableGet",
+        "title": "Get CurrentInputMode",
+        "pins": [
+          {
+            "name": "CurrentInputMode",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "NewEnumerator0",
+            "links": [
+              "K2Node_EnumInequality_0:A"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "K2Node_IfThenElse_0",
+        "class": "K2Node_IfThenElse",
+        "title": "Ответвление",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_FunctionEntry_0:then"
+            ]
+          },
+          {
+            "name": "Condition",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "true",
+            "links": [
+              "K2Node_EnumInequality_0:ReturnValue"
+            ]
+          },
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_VariableSet_0:execute"
+            ]
+          },
+          {
+            "name": "else",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": []
+          }
+        ]
+      },
+      {
+        "name": "K2Node_VariableSet_0",
+        "class": "K2Node_VariableSet",
+        "title": "Set CurrentInputMode",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_IfThenElse_0:then"
+            ]
+          },
+          {
+            "name": "CurrentInputMode",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "NewEnumerator0",
+            "links": [
+              "K2Node_FunctionEntry_0:NewMode"
+            ]
+          },
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_SwitchEnum_0:execute"
+            ]
+          },
+          {
+            "name": "Output_Get",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "NewEnumerator0",
+            "links": []
+          }
+        ]
+      },
+      {
+        "name": "K2Node_SwitchEnum_0",
+        "class": "K2Node_SwitchEnum",
+        "title": "Switch on ESurvivalInputMode",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_VariableSet_0:then"
+            ]
+          },
+          {
+            "name": "Selection",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "NewEnumerator0",
+            "links": [
+              "K2Node_FunctionEntry_0:NewMode"
+            ]
+          },
+          {
+            "name": "NewEnumerator0",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_CallFunction_0:execute"
+            ]
+          },
+          {
+            "name": "NewEnumerator1",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_CallFunction_3:execute"
+            ]
+          },
+          {
+            "name": "NewEnumerator2",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_CallFunction_6:execute"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "K2Node_EnumInequality_0",
+        "class": "K2Node_EnumInequality",
+        "title": "Не равно (перечисление)",
+        "pins": [
+          {
+            "name": "A",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_VariableGet_0:CurrentInputMode"
+            ]
+          },
+          {
+            "name": "B",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "NewEnumerator0",
+            "links": [
+              "K2Node_FunctionEntry_0:NewMode"
+            ]
+          },
+          {
+            "name": "ReturnValue",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_IfThenElse_0:Condition"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "K2Node_CallFunction_0",
+        "class": "K2Node_CallFunction",
+        "title": "SetInputMode_GameOnly",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_SwitchEnum_0:NewEnumerator0"
+            ]
+          },
+          {
+            "name": "PlayerController",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_Self_0:self"
+            ]
+          },
+          {
+            "name": "bFlushInput",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "true",
+            "links": []
+          },
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_VariableSet_1:execute"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "K2Node_VariableSet_1",
+        "class": "K2Node_VariableSet",
+        "title": "Set bShowMouseCursor",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_CallFunction_0:then"
+            ]
+          },
+          {
+            "name": "bShowMouseCursor",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "false",
+            "links": []
+          },
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_CallFunction_1:execute"
+            ]
+          },
+          {
+            "name": "Output_Get",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "false",
+            "links": []
+          }
+        ]
+      },
+      {
+        "name": "K2Node_CallFunction_1",
+        "class": "K2Node_CallFunction",
+        "title": "ResetIgnoreMoveInput",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_VariableSet_1:then"
+            ]
+          },
+          {
+            "name": "self",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": []
+          },
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_CallFunction_2:execute"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "K2Node_CallFunction_2",
+        "class": "K2Node_CallFunction",
+        "title": "ResetIgnoreLookInput",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_CallFunction_1:then"
+            ]
+          },
+          {
+            "name": "self",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": []
+          },
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_CallFunction_9:execute"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "K2Node_CallFunction_3",
+        "class": "K2Node_CallFunction",
+        "title": "Set Input Mode Game And UI",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_SwitchEnum_0:NewEnumerator1"
+            ]
+          },
+          {
+            "name": "PlayerController",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_Self_0:self"
+            ]
+          },
+          {
+            "name": "InWidgetToFocus",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": []
+          },
+          {
+            "name": "InMouseLockMode",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "DoNotLock",
+            "links": []
+          },
+          {
+            "name": "bHideCursorDuringCapture",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "false",
+            "links": []
+          },
+          {
+            "name": "bFlushInput",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "true",
+            "links": []
+          },
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_VariableSet_2:execute"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "K2Node_VariableSet_2",
+        "class": "K2Node_VariableSet",
+        "title": "Set bShowMouseCursor",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_CallFunction_3:then"
+            ]
+          },
+          {
+            "name": "bShowMouseCursor",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "true",
+            "links": []
+          },
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_CallFunction_4:execute"
+            ]
+          },
+          {
+            "name": "Output_Get",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "false",
+            "links": []
+          }
+        ]
+      },
+      {
+        "name": "K2Node_CallFunction_4",
+        "class": "K2Node_CallFunction",
+        "title": "SetIgnoreMoveInput",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_VariableSet_2:then"
+            ]
+          },
+          {
+            "name": "self",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": []
+          },
+          {
+            "name": "bNewMoveInput",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "true",
+            "links": []
+          },
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_CallFunction_5:execute"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "K2Node_CallFunction_5",
+        "class": "K2Node_CallFunction",
+        "title": "SetIgnoreLookInput",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_CallFunction_4:then"
+            ]
+          },
+          {
+            "name": "self",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": []
+          },
+          {
+            "name": "bNewLookInput",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "true",
+            "links": []
+          },
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_CallFunction_10:execute"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "K2Node_CallFunction_6",
+        "class": "K2Node_CallFunction",
+        "title": "SetInputMode_GameOnly",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_SwitchEnum_0:NewEnumerator2"
+            ]
+          },
+          {
+            "name": "PlayerController",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_Self_0:self"
+            ]
+          },
+          {
+            "name": "bFlushInput",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "true",
+            "links": []
+          },
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_VariableSet_3:execute"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "K2Node_VariableSet_3",
+        "class": "K2Node_VariableSet",
+        "title": "Set bShowMouseCursor",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_CallFunction_6:then"
+            ]
+          },
+          {
+            "name": "bShowMouseCursor",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "false",
+            "links": []
+          },
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_CallFunction_7:execute"
+            ]
+          },
+          {
+            "name": "Output_Get",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "false",
+            "links": []
+          }
+        ]
+      },
+      {
+        "name": "K2Node_CallFunction_7",
+        "class": "K2Node_CallFunction",
+        "title": "ResetIgnoreMoveInput",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_VariableSet_3:then"
+            ]
+          },
+          {
+            "name": "self",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": []
+          },
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_CallFunction_8:execute"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "K2Node_CallFunction_8",
+        "class": "K2Node_CallFunction",
+        "title": "ResetIgnoreLookInput",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_CallFunction_7:then"
+            ]
+          },
+          {
+            "name": "self",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": []
+          },
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_CallFunction_11:execute"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "K2Node_Self_0",
+        "class": "K2Node_Self",
+        "title": "Ссылка на себя",
+        "pins": [
+          {
+            "name": "self",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_CallFunction_0:PlayerController",
+              "K2Node_CallFunction_3:PlayerController",
+              "K2Node_CallFunction_6:PlayerController"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "K2Node_CallDelegate_0",
+        "class": "K2Node_CallDelegate",
+        "title": "Call On Survival Input Mode Changed",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_CallFunction_9:then"
+            ]
+          },
+          {
+            "name": "self",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": []
+          },
+          {
+            "name": "Mode",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "NewEnumerator0",
+            "links": [
+              "K2Node_VariableGet_1:CurrentInputMode"
+            ]
+          },
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": []
+          }
+        ]
+      },
+      {
+        "name": "K2Node_VariableGet_1",
+        "class": "K2Node_VariableGet",
+        "title": "Get CurrentInputMode",
+        "pins": [
+          {
+            "name": "CurrentInputMode",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "NewEnumerator0",
+            "links": [
+              "K2Node_CallDelegate_0:Mode"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "K2Node_CallDelegate_1",
+        "class": "K2Node_CallDelegate",
+        "title": "Call On Survival Input Mode Changed",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_CallFunction_10:then"
+            ]
+          },
+          {
+            "name": "self",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": []
+          },
+          {
+            "name": "Mode",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "NewEnumerator0",
+            "links": [
+              "K2Node_VariableGet_2:CurrentInputMode"
+            ]
+          },
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": []
+          }
+        ]
+      },
+      {
+        "name": "K2Node_VariableGet_2",
+        "class": "K2Node_VariableGet",
+        "title": "Get CurrentInputMode",
+        "pins": [
+          {
+            "name": "CurrentInputMode",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "NewEnumerator0",
+            "links": [
+              "K2Node_CallDelegate_1:Mode"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "K2Node_CallDelegate_2",
+        "class": "K2Node_CallDelegate",
+        "title": "Call On Survival Input Mode Changed",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_CallFunction_11:then"
+            ]
+          },
+          {
+            "name": "self",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": []
+          },
+          {
+            "name": "Mode",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "NewEnumerator0",
+            "links": [
+              "K2Node_VariableGet_3:CurrentInputMode"
+            ]
+          },
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": []
+          }
+        ]
+      },
+      {
+        "name": "K2Node_VariableGet_3",
+        "class": "K2Node_VariableGet",
+        "title": "Get CurrentInputMode",
+        "pins": [
+          {
+            "name": "CurrentInputMode",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "NewEnumerator0",
+            "links": [
+              "K2Node_CallDelegate_2:Mode"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "K2Node_CallFunction_9",
+        "class": "K2Node_CallFunction",
+        "title": "ApplySurvivalPawnInput",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_CallFunction_2:then"
+            ]
+          },
+          {
+            "name": "self",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": []
+          },
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_CallDelegate_0:execute"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "K2Node_CallFunction_10",
+        "class": "K2Node_CallFunction",
+        "title": "ApplySurvivalPawnInput",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_CallFunction_5:then"
+            ]
+          },
+          {
+            "name": "self",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": []
+          },
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_CallDelegate_1:execute"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "K2Node_CallFunction_11",
+        "class": "K2Node_CallFunction",
+        "title": "ApplySurvivalPawnInput",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_CallFunction_8:then"
+            ]
+          },
+          {
+            "name": "self",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": []
+          },
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_CallDelegate_2:execute"
+            ]
+          }
+        ]
+      }
+    ],
+    "ResetSurvivalInputState": [
+      {
+        "name": "K2Node_FunctionEntry_0",
+        "class": "K2Node_FunctionEntry",
+        "title": "ResetSurvivalInputState",
+        "pins": [
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_VariableSet_3:execute"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "K2Node_VariableSet_0",
+        "class": "K2Node_VariableSet",
+        "title": "Set CurrentInputMode",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_VariableSet_3:then"
+            ]
+          },
+          {
+            "name": "CurrentInputMode",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "NewEnumerator0",
+            "links": []
+          },
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_VariableSet_1:execute"
+            ]
+          },
+          {
+            "name": "Output_Get",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "NewEnumerator0",
+            "links": []
+          }
+        ]
+      },
+      {
+        "name": "K2Node_VariableSet_1",
+        "class": "K2Node_VariableSet",
+        "title": "Set PreviousInputMode",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_VariableSet_0:then"
+            ]
+          },
+          {
+            "name": "PreviousInputMode",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "NewEnumerator0",
+            "links": []
+          },
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_CallFunction_0:execute"
+            ]
+          },
+          {
+            "name": "Output_Get",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "NewEnumerator0",
+            "links": []
+          }
+        ]
+      },
+      {
+        "name": "K2Node_CallFunction_0",
+        "class": "K2Node_CallFunction",
+        "title": "SetInputMode_GameOnly",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_VariableSet_1:then"
+            ]
+          },
+          {
+            "name": "PlayerController",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_Self_0:self"
+            ]
+          },
+          {
+            "name": "bFlushInput",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "true",
+            "links": []
+          },
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_VariableSet_2:execute"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "K2Node_Self_0",
+        "class": "K2Node_Self",
+        "title": "Ссылка на себя",
+        "pins": [
+          {
+            "name": "self",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_CallFunction_0:PlayerController"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "K2Node_VariableSet_2",
+        "class": "K2Node_VariableSet",
+        "title": "Set bShowMouseCursor",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_CallFunction_0:then"
+            ]
+          },
+          {
+            "name": "bShowMouseCursor",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "false",
+            "links": []
+          },
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_CallFunction_1:execute"
+            ]
+          },
+          {
+            "name": "Output_Get",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "false",
+            "links": []
+          }
+        ]
+      },
+      {
+        "name": "K2Node_CallFunction_1",
+        "class": "K2Node_CallFunction",
+        "title": "ResetIgnoreMoveInput",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_VariableSet_2:then"
+            ]
+          },
+          {
+            "name": "self",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": []
+          },
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_CallFunction_2:execute"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "K2Node_CallFunction_2",
+        "class": "K2Node_CallFunction",
+        "title": "ResetIgnoreLookInput",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_CallFunction_1:then"
+            ]
+          },
+          {
+            "name": "self",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": []
+          },
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_CallFunction_3:execute"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "K2Node_PromotableOperator_0",
+        "class": "K2Node_PromotableOperator",
+        "title": "Not Equal (Byte)",
+        "pins": [
+          {
+            "name": "A",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_VariableGet_0:CurrentInputMode"
+            ]
+          },
+          {
+            "name": "B",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": []
+          },
+          {
+            "name": "ReturnValue",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_VariableSet_3:ModeChanged"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "K2Node_VariableGet_0",
+        "class": "K2Node_VariableGet",
+        "title": "Get CurrentInputMode",
+        "pins": [
+          {
+            "name": "CurrentInputMode",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "NewEnumerator0",
+            "links": [
+              "K2Node_PromotableOperator_0:A"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "K2Node_VariableSet_3",
+        "class": "K2Node_VariableSet",
+        "title": "Set ModeChanged",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_FunctionEntry_0:then"
+            ]
+          },
+          {
+            "name": "ModeChanged",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "false",
+            "links": [
+              "K2Node_PromotableOperator_0:ReturnValue"
+            ]
+          },
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_VariableSet_0:execute"
+            ]
+          },
+          {
+            "name": "Output_Get",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "false",
+            "links": []
+          }
+        ]
+      },
+      {
+        "name": "K2Node_VariableGet_1",
+        "class": "K2Node_VariableGet",
+        "title": "Get ModeChanged",
+        "pins": [
+          {
+            "name": "ModeChanged",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "false",
+            "links": [
+              "K2Node_IfThenElse_0:Condition"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "K2Node_IfThenElse_0",
+        "class": "K2Node_IfThenElse",
+        "title": "Ответвление",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_CallFunction_3:then"
+            ]
+          },
+          {
+            "name": "Condition",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "true",
+            "links": [
+              "K2Node_VariableGet_1:ModeChanged"
+            ]
+          },
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_CallDelegate_0:execute"
+            ]
+          },
+          {
+            "name": "else",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": []
+          }
+        ]
+      },
+      {
+        "name": "K2Node_CallDelegate_0",
+        "class": "K2Node_CallDelegate",
+        "title": "Call On Survival Input Mode Changed",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_IfThenElse_0:then"
+            ]
+          },
+          {
+            "name": "self",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": []
+          },
+          {
+            "name": "Mode",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "NewEnumerator0",
+            "links": [
+              "K2Node_VariableGet_2:CurrentInputMode"
+            ]
+          },
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": []
+          }
+        ]
+      },
+      {
+        "name": "K2Node_VariableGet_2",
+        "class": "K2Node_VariableGet",
+        "title": "Get CurrentInputMode",
+        "pins": [
+          {
+            "name": "CurrentInputMode",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "NewEnumerator0",
+            "links": [
+              "K2Node_CallDelegate_0:Mode"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "K2Node_CallFunction_3",
+        "class": "K2Node_CallFunction",
+        "title": "ApplySurvivalPawnInput",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_CallFunction_2:then"
+            ]
+          },
+          {
+            "name": "self",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": []
+          },
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_IfThenElse_0:execute"
+            ]
+          }
+        ]
+      }
+    ],
+    "ApplySurvivalPawnInput": [
+      {
+        "name": "K2Node_FunctionEntry_0",
+        "class": "K2Node_FunctionEntry",
+        "title": "ApplySurvivalPawnInput",
+        "pins": [
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_IfThenElse_0:execute"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "K2Node_CallFunction_0",
+        "class": "K2Node_CallFunction",
+        "title": "Get Controlled Pawn",
+        "pins": [
+          {
+            "name": "self",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": []
+          },
+          {
+            "name": "ReturnValue",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_CallFunction_1:Object",
+              "K2Node_CallFunction_2:self",
+              "K2Node_CallFunction_3:self"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "K2Node_CallFunction_1",
+        "class": "K2Node_CallFunction",
+        "title": "IsValid",
+        "pins": [
+          {
+            "name": "Object",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_CallFunction_0:ReturnValue"
+            ]
+          },
+          {
+            "name": "ReturnValue",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "false",
+            "links": [
+              "K2Node_IfThenElse_0:Condition"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "K2Node_IfThenElse_0",
+        "class": "K2Node_IfThenElse",
+        "title": "Ответвление",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_FunctionEntry_0:then"
+            ]
+          },
+          {
+            "name": "Condition",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "true",
+            "links": [
+              "K2Node_CallFunction_1:ReturnValue"
+            ]
+          },
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_IfThenElse_1:execute"
+            ]
+          },
+          {
+            "name": "else",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": []
+          }
+        ]
+      },
+      {
+        "name": "K2Node_PromotableOperator_0",
+        "class": "K2Node_PromotableOperator",
+        "title": "Equal (Byte)",
+        "pins": [
+          {
+            "name": "A",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_VariableGet_0:CurrentInputMode"
+            ]
+          },
+          {
+            "name": "B",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "1",
+            "links": []
+          },
+          {
+            "name": "ReturnValue",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_IfThenElse_1:Condition"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "K2Node_VariableGet_0",
+        "class": "K2Node_VariableGet",
+        "title": "Get CurrentInputMode",
+        "pins": [
+          {
+            "name": "CurrentInputMode",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "NewEnumerator0",
+            "links": [
+              "K2Node_PromotableOperator_0:A"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "K2Node_IfThenElse_1",
+        "class": "K2Node_IfThenElse",
+        "title": "Ответвление",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_IfThenElse_0:then"
+            ]
+          },
+          {
+            "name": "Condition",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "true",
+            "links": [
+              "K2Node_PromotableOperator_0:ReturnValue"
+            ]
+          },
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_CallFunction_2:execute"
+            ]
+          },
+          {
+            "name": "else",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_CallFunction_3:execute"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "K2Node_CallFunction_2",
+        "class": "K2Node_CallFunction",
+        "title": "DisableInput",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_IfThenElse_1:then"
+            ]
+          },
+          {
+            "name": "self",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_CallFunction_0:ReturnValue"
+            ]
+          },
+          {
+            "name": "PlayerController",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_Self_0:self"
+            ]
+          },
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": []
+          }
+        ]
+      },
+      {
+        "name": "K2Node_Self_0",
+        "class": "K2Node_Self",
+        "title": "Ссылка на себя",
+        "pins": [
+          {
+            "name": "self",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_CallFunction_2:PlayerController"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "K2Node_CallFunction_3",
+        "class": "K2Node_CallFunction",
+        "title": "EnableInput",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_IfThenElse_1:else"
+            ]
+          },
+          {
+            "name": "self",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_CallFunction_0:ReturnValue"
+            ]
+          },
+          {
+            "name": "PlayerController",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_Self_1:self"
+            ]
+          },
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": []
+          }
+        ]
+      },
+      {
+        "name": "K2Node_Self_1",
+        "class": "K2Node_Self",
+        "title": "Ссылка на себя",
+        "pins": [
+          {
+            "name": "self",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_CallFunction_3:PlayerController"
+            ]
+          }
+        ]
+      }
+    ],
+    "EventGraph": [
+      {
+        "name": "K2Node_Event_2",
+        "class": "K2Node_Event",
+        "title": "Событие On Possess",
+        "pins": [
+          {
+            "name": "OutputDelegate",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": []
+          },
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_CallFunction_0:execute"
+            ]
+          },
+          {
+            "name": "PossessedPawn",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": []
+          }
+        ]
+      },
+      {
+        "name": "K2Node_CallFunction_0",
+        "class": "K2Node_CallFunction",
+        "title": "TryInitialize",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_Event_2:then"
+            ]
+          },
+          {
+            "name": "self",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": []
+          },
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_CallFunction_1:execute"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "K2Node_Event_3",
+        "class": "K2Node_Event",
+        "title": "Событие On UnPossess",
+        "pins": [
+          {
+            "name": "OutputDelegate",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": []
+          },
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_VariableSet_0:execute"
+            ]
+          },
+          {
+            "name": "UnpossessedPawn",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": []
+          }
+        ]
+      },
+      {
+        "name": "K2Node_VariableSet_0",
+        "class": "K2Node_VariableSet",
+        "title": "Set BootstrapReady",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_Event_3:then"
+            ]
+          },
+          {
+            "name": "BootstrapReady",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "false",
+            "links": []
+          },
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_VariableSet_1:execute"
+            ]
+          },
+          {
+            "name": "Output_Get",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "false",
+            "links": []
+          }
+        ]
+      },
+      {
+        "name": "K2Node_VariableSet_1",
+        "class": "K2Node_VariableSet",
+        "title": "Set BoundPawn",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_VariableSet_0:then"
+            ]
+          },
+          {
+            "name": "BoundPawn",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": []
+          },
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_CallFunction_8:execute"
+            ]
+          },
+          {
+            "name": "Output_Get",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": []
+          }
+        ]
+      },
+      {
+        "name": "K2Node_CallFunction_1",
+        "class": "K2Node_CallFunction",
+        "title": "EnsureSurvivalInput",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_CallFunction_0:then"
+            ]
+          },
+          {
+            "name": "self",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": []
+          },
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_CallFunction_7:execute"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "K2Node_EnhancedInputAction_0",
+        "class": "K2Node_EnhancedInputAction",
+        "title": "EnhancedInputAction IA_Interact",
+        "pins": [
+          {
+            "name": "Triggered",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": []
+          },
+          {
+            "name": "Started",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_SwitchEnum_1:execute"
+            ]
+          },
+          {
+            "name": "Ongoing",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": []
+          },
+          {
+            "name": "Canceled",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": []
+          },
+          {
+            "name": "Completed",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": []
+          },
+          {
+            "name": "ActionValue",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "false",
+            "links": []
+          },
+          {
+            "name": "ElapsedSeconds",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": []
+          },
+          {
+            "name": "TriggeredSeconds",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": []
+          },
+          {
+            "name": "InputAction",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "/Game/Survival/Input/Actions/IA_Interact.IA_Interact",
+            "links": []
+          }
+        ]
+      },
+      {
+        "name": "K2Node_EnhancedInputAction_1",
+        "class": "K2Node_EnhancedInputAction",
+        "title": "EnhancedInputAction IA_Inventory",
+        "pins": [
+          {
+            "name": "Triggered",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": []
+          },
+          {
+            "name": "Started",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_IfThenElse_1:execute"
+            ]
+          },
+          {
+            "name": "Ongoing",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": []
+          },
+          {
+            "name": "Canceled",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": []
+          },
+          {
+            "name": "Completed",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": []
+          },
+          {
+            "name": "ActionValue",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "false",
+            "links": []
+          },
+          {
+            "name": "ElapsedSeconds",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": []
+          },
+          {
+            "name": "TriggeredSeconds",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": []
+          },
+          {
+            "name": "InputAction",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "/Game/Survival/Input/Actions/IA_Inventory.IA_Inventory",
+            "links": []
+          }
+        ]
+      },
+      {
+        "name": "K2Node_VariableGet_0",
+        "class": "K2Node_VariableGet",
+        "title": "Get CurrentInputMode",
+        "pins": [
+          {
+            "name": "CurrentInputMode",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "NewEnumerator0",
+            "links": [
+              "K2Node_SwitchEnum_0:Selection"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "K2Node_SwitchEnum_0",
+        "class": "K2Node_SwitchEnum",
+        "title": "Switch on ESurvivalInputMode",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_MacroInstance_0:Is Valid"
+            ]
+          },
+          {
+            "name": "Selection",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "NewEnumerator0",
+            "links": [
+              "K2Node_VariableGet_0:CurrentInputMode"
+            ]
+          },
+          {
+            "name": "NewEnumerator0",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_VariableSet_2:execute"
+            ]
+          },
+          {
+            "name": "NewEnumerator1",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_CallFunction_6:execute"
+            ]
+          },
+          {
+            "name": "NewEnumerator2",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_VariableSet_3:execute"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "K2Node_VariableSet_2",
+        "class": "K2Node_VariableSet",
+        "title": "Set PreviousInputMode",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_SwitchEnum_0:NewEnumerator0"
+            ]
+          },
+          {
+            "name": "PreviousInputMode",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "NewEnumerator0",
+            "links": []
+          },
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_CallFunction_4:execute"
+            ]
+          },
+          {
+            "name": "Output_Get",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "NewEnumerator0",
+            "links": []
+          }
+        ]
+      },
+      {
+        "name": "K2Node_CallFunction_4",
+        "class": "K2Node_CallFunction",
+        "title": "SetSurvivalInputMode",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_VariableSet_2:then"
+            ]
+          },
+          {
+            "name": "self",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": []
+          },
+          {
+            "name": "NewMode",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "NewEnumerator1",
+            "links": []
+          },
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": []
+          }
+        ]
+      },
+      {
+        "name": "K2Node_VariableSet_3",
+        "class": "K2Node_VariableSet",
+        "title": "Set PreviousInputMode",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_SwitchEnum_0:NewEnumerator2"
+            ]
+          },
+          {
+            "name": "PreviousInputMode",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "NewEnumerator2",
+            "links": []
+          },
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_CallFunction_5:execute"
+            ]
+          },
+          {
+            "name": "Output_Get",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "NewEnumerator0",
+            "links": []
+          }
+        ]
+      },
+      {
+        "name": "K2Node_CallFunction_5",
+        "class": "K2Node_CallFunction",
+        "title": "SetSurvivalInputMode",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_VariableSet_3:then"
+            ]
+          },
+          {
+            "name": "self",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": []
+          },
+          {
+            "name": "NewMode",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "NewEnumerator1",
+            "links": []
+          },
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": []
+          }
+        ]
+      },
+      {
+        "name": "K2Node_CallFunction_6",
+        "class": "K2Node_CallFunction",
+        "title": "SetSurvivalInputMode",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_SwitchEnum_0:NewEnumerator1"
+            ]
+          },
+          {
+            "name": "self",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": []
+          },
+          {
+            "name": "NewMode",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "NewEnumerator0",
+            "links": [
+              "K2Node_VariableGet_1:PreviousInputMode"
+            ]
+          },
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": []
+          }
+        ]
+      },
+      {
+        "name": "K2Node_VariableGet_1",
+        "class": "K2Node_VariableGet",
+        "title": "Get PreviousInputMode",
+        "pins": [
+          {
+            "name": "PreviousInputMode",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "NewEnumerator0",
+            "links": [
+              "K2Node_CallFunction_6:NewMode"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "K2Node_SwitchEnum_1",
+        "class": "K2Node_SwitchEnum",
+        "title": "Switch on ESurvivalInputMode",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_EnhancedInputAction_0:Started"
+            ]
+          },
+          {
+            "name": "Selection",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "NewEnumerator0",
+            "links": [
+              "K2Node_VariableGet_2:CurrentInputMode"
+            ]
+          },
+          {
+            "name": "NewEnumerator0",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_IfThenElse_0:execute"
+            ]
+          },
+          {
+            "name": "NewEnumerator1",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": []
+          },
+          {
+            "name": "NewEnumerator2",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": []
+          }
+        ]
+      },
+      {
+        "name": "K2Node_VariableGet_2",
+        "class": "K2Node_VariableGet",
+        "title": "Get CurrentInputMode",
+        "pins": [
+          {
+            "name": "CurrentInputMode",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "NewEnumerator0",
+            "links": [
+              "K2Node_SwitchEnum_1:Selection"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "K2Node_CallFunction_7",
+        "class": "K2Node_CallFunction",
+        "title": "ResetSurvivalInputState",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_CallFunction_1:then"
+            ]
+          },
+          {
+            "name": "self",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": []
+          },
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": []
+          }
+        ]
+      },
+      {
+        "name": "K2Node_CallFunction_8",
+        "class": "K2Node_CallFunction",
+        "title": "ResetSurvivalInputState",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_VariableSet_1:then"
+            ]
+          },
+          {
+            "name": "self",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": []
+          },
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": []
+          }
+        ]
+      },
+      {
+        "name": "K2Node_IfThenElse_0",
+        "class": "K2Node_IfThenElse",
+        "title": "Ответвление",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_SwitchEnum_1:NewEnumerator0"
+            ]
+          },
+          {
+            "name": "Condition",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "true",
+            "links": [
+              "K2Node_VariableGet_3:BootstrapReady"
+            ]
+          },
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_MacroInstance_1:exec"
+            ]
+          },
+          {
+            "name": "else",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": []
+          }
+        ]
+      },
+      {
+        "name": "K2Node_VariableGet_3",
+        "class": "K2Node_VariableGet",
+        "title": "Get BootstrapReady",
+        "pins": [
+          {
+            "name": "BootstrapReady",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "false",
+            "links": [
+              "K2Node_IfThenElse_0:Condition"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "K2Node_MacroInstance_1",
+        "class": "K2Node_MacroInstance",
+        "title": "Is Valid",
+        "pins": [
+          {
+            "name": "exec",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_IfThenElse_0:then"
+            ]
+          },
+          {
+            "name": "InputObject",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_CallFunction_13:ReturnValue"
+            ]
+          },
+          {
+            "name": "Is Valid",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_CallDelegate_0:execute"
+            ]
+          },
+          {
+            "name": "Is Not Valid",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": []
+          }
+        ]
+      },
+      {
+        "name": "K2Node_Self_0",
+        "class": "K2Node_Self",
+        "title": "Ссылка на себя",
+        "pins": [
+          {
+            "name": "self",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_CallFunction_13:self"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "K2Node_CallFunction_13",
+        "class": "K2Node_CallFunction",
+        "title": "Get Controlled Pawn",
+        "pins": [
+          {
+            "name": "self",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_Self_0:self"
+            ]
+          },
+          {
+            "name": "ReturnValue",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_MacroInstance_1:InputObject",
+              "K2Node_CallDelegate_0:Pawn"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "K2Node_IfThenElse_1",
+        "class": "K2Node_IfThenElse",
+        "title": "Ответвление",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_EnhancedInputAction_1:Started"
+            ]
+          },
+          {
+            "name": "Condition",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "true",
+            "links": [
+              "K2Node_VariableGet_4:BootstrapReady"
+            ]
+          },
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_MacroInstance_0:exec"
+            ]
+          },
+          {
+            "name": "else",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": []
+          }
+        ]
+      },
+      {
+        "name": "K2Node_VariableGet_4",
+        "class": "K2Node_VariableGet",
+        "title": "Get BootstrapReady",
+        "pins": [
+          {
+            "name": "BootstrapReady",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "false",
+            "links": [
+              "K2Node_IfThenElse_1:Condition"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "K2Node_MacroInstance_0",
+        "class": "K2Node_MacroInstance",
+        "title": "Is Valid",
+        "pins": [
+          {
+            "name": "exec",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_IfThenElse_1:then"
+            ]
+          },
+          {
+            "name": "InputObject",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_CallFunction_12:ReturnValue"
+            ]
+          },
+          {
+            "name": "Is Valid",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_SwitchEnum_0:execute"
+            ]
+          },
+          {
+            "name": "Is Not Valid",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": []
+          }
+        ]
+      },
+      {
+        "name": "K2Node_CallFunction_12",
+        "class": "K2Node_CallFunction",
+        "title": "Get Controlled Pawn",
+        "pins": [
+          {
+            "name": "self",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": []
+          },
+          {
+            "name": "ReturnValue",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": [
+              "K2Node_MacroInstance_0:InputObject"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "K2Node_CallDelegate_0",
+        "class": "K2Node_CallDelegate",
+        "title": "Call On Interact Requested",
+        "pins": [
+          {
+            "name": "execute",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_MacroInstance_1:Is Valid"
+            ]
+          },
+          {
+            "name": "self",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": []
+          },
+          {
+            "name": "Pawn",
+            "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+            "value": "",
+            "links": [
+              "K2Node_CallFunction_13:ReturnValue"
+            ]
+          },
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": []
+          }
+        ]
+      }
+    ],
+    "OnInteractRequested": [
+      {
+        "name": "K2Node_FunctionEntry_0",
+        "class": "K2Node_FunctionEntry",
+        "title": "OnInteractRequested",
+        "pins": [
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": []
+          },
+          {
+            "name": "Pawn",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": []
+          }
+        ]
+      }
+    ],
+    "OnSurvivalInputModeChanged": [
+      {
+        "name": "K2Node_FunctionEntry_0",
+        "class": "K2Node_FunctionEntry",
+        "title": "OnSurvivalInputModeChanged",
+        "pins": [
+          {
+            "name": "then",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "",
+            "links": []
+          },
+          {
+            "name": "Mode",
+            "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+            "value": "NewEnumerator0",
+            "links": []
+          }
+        ]
+      }
+    ]
+  }
+}

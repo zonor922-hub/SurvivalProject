@@ -1,0 +1,30 @@
+{
+  "gameplay_files": [
+    "Content/Survival/Core/BP_SurvivalPlayerController.uasset",
+    "Content/Survival/Input/Actions/IA_Interact.uasset",
+    "Content/Survival/Input/Actions/IA_Inventory.uasset",
+    "Content/Survival/Input/ESurvivalInputMode.uasset",
+    "Content/Survival/Input/IMC_Survival.uasset"
+  ],
+  "preexisting_startup_condition_errors": 17,
+  "base": "7bb77ebe92d3537444b11aea8cb07fe6ee933b24",
+  "manual_physical_key_retest": "NOT RUN",
+  "pie_process_exit_code": 0,
+  "sha256": {
+    "Content/Survival/Input/IMC_Survival.uasset": "761274D82F174D045DA3B66041906AA38BC16E94C12136E943A9B96C47C095AB",
+    "Content/Survival/Input/ESurvivalInputMode.uasset": "21A0834575DA41CE095E0A2731850A8EFD67D294F546E248C00F4528B365DBC1",
+    "Content/Survival/Core/BP_SurvivalPlayerController.uasset": "206D33C9CEEF14E9BBCCAE84314BD82B39BB84B4F4197D17738700A8EEAF2A79",
+    "Content/Survival/Input/Actions/IA_Interact.uasset": "8299BA2BD8A5137E0D33B3C65195C2FF1845D43997710A72C53176B01186E1FD",
+    "Content/Survival/Input/Actions/IA_Inventory.uasset": "B2EE9F3B4593A4E18B01F0CE0B18CEEAECA7CFC66B1ABA599B03849B219EB4CD"
+  },
+  "branch": "task/a14-enhanced-input",
+  "jump_process_exit_code": 0,
+  "final_logs": [
+    "a14_pie_published_runner_final.log",
+    "a14_regression_final.log"
+  ],
+  "blueprint_runtime_errors": 0,
+  "packaged_build": "NOT RUN",
+  "vendor_config_maps_inventory_a13_unchanged": true,
+  "multiplayer": "NOT RUN"
+}

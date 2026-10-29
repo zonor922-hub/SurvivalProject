@@ -1,0 +1,1452 @@
+{
+  "engine": "5.8.4-58902052+++UE5+Release-5.8",
+  "tests": [
+    {
+      "name": "PIE 0 bootstrap ready",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "PIE 0 default policy",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "survival context present",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "held Interact emits once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Interact carries current Pawn",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "base mode policy 0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab opens UI base0 cycle0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "held Tab changes mode once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "repeated UI mode is idempotent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UI blocks Interact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab restores previous mode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab opens UI base0 cycle1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "held Tab changes mode once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "repeated UI mode is idempotent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UI blocks Interact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab restores previous mode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab opens UI base0 cycle2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "held Tab changes mode once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "repeated UI mode is idempotent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UI blocks Interact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab restores previous mode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab opens UI base0 cycle3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "held Tab changes mode once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "repeated UI mode is idempotent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UI blocks Interact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab restores previous mode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab opens UI base0 cycle4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "held Tab changes mode once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "repeated UI mode is idempotent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UI blocks Interact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab restores previous mode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab opens UI base0 cycle5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "held Tab changes mode once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "repeated UI mode is idempotent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UI blocks Interact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab restores previous mode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab opens UI base0 cycle6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "held Tab changes mode once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "repeated UI mode is idempotent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UI blocks Interact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab restores previous mode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab opens UI base0 cycle7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "held Tab changes mode once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "repeated UI mode is idempotent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UI blocks Interact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab restores previous mode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab opens UI base0 cycle8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "held Tab changes mode once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "repeated UI mode is idempotent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UI blocks Interact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab restores previous mode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab opens UI base0 cycle9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "held Tab changes mode once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "repeated UI mode is idempotent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UI blocks Interact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab restores previous mode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mode Interact policy 0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "base mode policy 2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab opens UI base2 cycle0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "held Tab changes mode once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "repeated UI mode is idempotent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UI blocks Interact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab restores previous mode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab opens UI base2 cycle1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "held Tab changes mode once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "repeated UI mode is idempotent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UI blocks Interact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab restores previous mode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab opens UI base2 cycle2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "held Tab changes mode once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "repeated UI mode is idempotent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UI blocks Interact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab restores previous mode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab opens UI base2 cycle3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "held Tab changes mode once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "repeated UI mode is idempotent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UI blocks Interact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab restores previous mode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab opens UI base2 cycle4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "held Tab changes mode once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "repeated UI mode is idempotent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UI blocks Interact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab restores previous mode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab opens UI base2 cycle5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "held Tab changes mode once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "repeated UI mode is idempotent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UI blocks Interact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab restores previous mode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab opens UI base2 cycle6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "held Tab changes mode once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "repeated UI mode is idempotent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UI blocks Interact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab restores previous mode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab opens UI base2 cycle7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "held Tab changes mode once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "repeated UI mode is idempotent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UI blocks Interact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab restores previous mode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab opens UI base2 cycle8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "held Tab changes mode once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "repeated UI mode is idempotent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UI blocks Interact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab restores previous mode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab opens UI base2 cycle9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "held Tab changes mode once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "repeated UI mode is idempotent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UI blocks Interact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab restores previous mode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mode Interact policy 2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "direct transition 2->1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "direct transition 1->2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "direct transition 2->0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "direct transition 0->1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "direct transition 1->0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "direct transition 0->2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "unpossessed commands blocked",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "swap 0 resets policy",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "swap 0 bootstrap rebound",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "PlayerState and inventory survive",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "swap 0 one command, new Pawn",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "swap 0 no mapping additions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "unpossessed commands blocked",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "swap 1 resets policy",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "swap 1 bootstrap rebound",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "PlayerState and inventory survive",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "swap 1 one command, new Pawn",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "swap 1 no mapping additions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "unpossessed commands blocked",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "swap 2 resets policy",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "swap 2 bootstrap rebound",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "PlayerState and inventory survive",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "swap 2 one command, new Pawn",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "swap 2 no mapping additions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "template context /Game/Input/IMC_Default",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "template context /Game/Input/IMC_MouseLook",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "template movement restored",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "template camera restored",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "PIE 1 bootstrap ready",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "PIE 1 default policy",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "survival context present",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "held Interact emits once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Interact carries current Pawn",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "base mode policy 0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab opens UI base0 cycle0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "held Tab changes mode once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "repeated UI mode is idempotent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UI blocks Interact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab restores previous mode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab opens UI base0 cycle1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "held Tab changes mode once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "repeated UI mode is idempotent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UI blocks Interact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab restores previous mode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab opens UI base0 cycle2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "held Tab changes mode once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "repeated UI mode is idempotent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UI blocks Interact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab restores previous mode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab opens UI base0 cycle3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "held Tab changes mode once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "repeated UI mode is idempotent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UI blocks Interact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab restores previous mode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab opens UI base0 cycle4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "held Tab changes mode once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "repeated UI mode is idempotent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UI blocks Interact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab restores previous mode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab opens UI base0 cycle5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "held Tab changes mode once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "repeated UI mode is idempotent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UI blocks Interact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab restores previous mode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab opens UI base0 cycle6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "held Tab changes mode once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "repeated UI mode is idempotent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UI blocks Interact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab restores previous mode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab opens UI base0 cycle7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "held Tab changes mode once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "repeated UI mode is idempotent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UI blocks Interact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab restores previous mode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab opens UI base0 cycle8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "held Tab changes mode once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "repeated UI mode is idempotent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UI blocks Interact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab restores previous mode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab opens UI base0 cycle9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "held Tab changes mode once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "repeated UI mode is idempotent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UI blocks Interact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab restores previous mode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mode Interact policy 0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "base mode policy 2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab opens UI base2 cycle0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "held Tab changes mode once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "repeated UI mode is idempotent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UI blocks Interact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab restores previous mode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab opens UI base2 cycle1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "held Tab changes mode once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "repeated UI mode is idempotent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UI blocks Interact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab restores previous mode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab opens UI base2 cycle2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "held Tab changes mode once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "repeated UI mode is idempotent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UI blocks Interact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab restores previous mode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab opens UI base2 cycle3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "held Tab changes mode once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "repeated UI mode is idempotent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UI blocks Interact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab restores previous mode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab opens UI base2 cycle4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "held Tab changes mode once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "repeated UI mode is idempotent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UI blocks Interact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab restores previous mode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab opens UI base2 cycle5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "held Tab changes mode once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "repeated UI mode is idempotent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UI blocks Interact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab restores previous mode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab opens UI base2 cycle6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "held Tab changes mode once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "repeated UI mode is idempotent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UI blocks Interact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab restores previous mode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab opens UI base2 cycle7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "held Tab changes mode once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "repeated UI mode is idempotent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UI blocks Interact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab restores previous mode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab opens UI base2 cycle8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "held Tab changes mode once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "repeated UI mode is idempotent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UI blocks Interact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab restores previous mode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab opens UI base2 cycle9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "held Tab changes mode once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "repeated UI mode is idempotent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UI blocks Interact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tab restores previous mode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mode Interact policy 2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "direct transition 2->1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "direct transition 1->2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "direct transition 2->0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "direct transition 0->1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "direct transition 1->0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "direct transition 0->2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "unpossessed commands blocked",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "swap 0 resets policy",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "swap 0 bootstrap rebound",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "PlayerState and inventory survive",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "swap 0 one command, new Pawn",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "swap 0 no mapping additions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "unpossessed commands blocked",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "swap 1 resets policy",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "swap 1 bootstrap rebound",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "PlayerState and inventory survive",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "swap 1 one command, new Pawn",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "swap 1 no mapping additions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "unpossessed commands blocked",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "swap 2 resets policy",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "swap 2 bootstrap rebound",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "PlayerState and inventory survive",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "swap 2 one command, new Pawn",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "swap 2 no mapping additions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "template context /Game/Input/IMC_Default",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "template context /Game/Input/IMC_MouseLook",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "template movement restored",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "template camera restored",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "compile": {
+    "/Game/Survival/Core/BP_SurvivalPlayerController": {
+      "passed": true,
+      "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+    },
+    "/Game/Survival/Core/BP_SurvivalGameMode": {
+      "passed": true,
+      "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+    },
+    "/Game/Survival/Core/BP_SurvivalGameInstance": {
+      "passed": true,
+      "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+    },
+    "/Game/Survival/Core/BP_SurvivalPlayerState": {
+      "passed": true,
+      "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+    },
+    "/Game/Survival/Character/BP_SurvivalCharacter": {
+      "passed": true,
+      "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+    },
+    "/Game/Survival/Interaction/BPC_Interaction": {
+      "passed": true,
+      "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+    },
+    "/Game/Survival/Interaction/BPI_Interactable": {
+      "passed": true,
+      "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+    },
+    "/Game/Survival/Inventory/BPC_Inventory": {
+      "passed": true,
+      "status": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+    }
+  },
+  "passed": true,
+  "mode": "real PIE with Enhanced Input action injection",
+  "mappings": [
+    {
+      "action": "IA_Interact",
+      "key": "E"
+    },
+    {
+      "action": "IA_Inventory",
+      "key": "Tab"
+    }
+  ],
+  "enum_values": {
+    "2": "<SurvivalInputMode.BUILD: 2>",
+    "0": "<SurvivalInputMode.GAMEPLAY: 0>",
+    "1": "<SurvivalInputMode.UI: 1>"
+  },
+  "context_results": [
+    {
+      "context": "IMC_Survival",
+      "raw": "1"
+    },
+    {
+      "context": "/Game/Input/IMC_Default",
+      "raw": "0"
+    },
+    {
+      "context": "/Game/Input/IMC_MouseLook",
+      "raw": "0"
+    },
+    {
+      "context": "IMC_Survival",
+      "raw": "1"
+    },
+    {
+      "context": "/Game/Input/IMC_Default",
+      "raw": "0"
+    },
+    {
+      "context": "/Game/Input/IMC_MouseLook",
+      "raw": "0"
+    }
+  ]
+}

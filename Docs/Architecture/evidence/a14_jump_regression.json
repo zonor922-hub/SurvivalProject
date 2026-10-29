@@ -1,0 +1,27 @@
+{
+  "tests": [
+    {
+      "name": "Jump policy mode 0",
+      "passed": true,
+      "detail": 127.53055538252602
+    },
+    {
+      "name": "Jump policy mode 1",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "name": "Jump policy mode 2",
+      "passed": true,
+      "detail": 127.530555382526
+    },
+    {
+      "name": "Jump policy mode 0",
+      "passed": true,
+      "detail": 127.530555382526
+    }
+  ],
+  "passed": true,
+  "a12_tests": [],
+  "a12_prior_evidence": "a14_regression_before_fix.json; 548 PASS, no Inventory changes since then"
+}

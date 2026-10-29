@@ -1,0 +1,2748 @@
+{
+  "timing": "Before controller UI Jump fix; Inventory assets unchanged afterward",
+  "tests": [
+    {
+      "scenario": 1,
+      "test": "initialized fixture",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "fresh primary inventory",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "success result and one revision increment",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "valid inventory GUID",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "positive quantity within wood MaxStack",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "valid stack GUID",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "derived wood weight",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "weight within capacity",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "unique live stack GUIDs across inventories",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "unique inventory GUIDs",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "exact upper weight boundary accepted",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "reads do not mutate state",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "nested snapshot copy detached",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "expected rejection and zero actual quantity",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "failure preserves complete snapshots",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "valid inventory GUID",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "positive quantity within wood MaxStack",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "valid stack GUID",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "derived wood weight",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "weight within capacity",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "unique live stack GUIDs across inventories",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "unique inventory GUIDs",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "expected rejection and zero actual quantity",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "failure preserves complete snapshots",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "valid inventory GUID",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "positive quantity within wood MaxStack",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "valid stack GUID",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "derived wood weight",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "weight within capacity",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "unique live stack GUIDs across inventories",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "unique inventory GUIDs",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "expected rejection and zero actual quantity",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "failure preserves complete snapshots",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "valid inventory GUID",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "positive quantity within wood MaxStack",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "valid stack GUID",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "derived wood weight",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "weight within capacity",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "unique live stack GUIDs across inventories",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "unique inventory GUIDs",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "success result and one revision increment",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "valid inventory GUID",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "derived wood weight",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "weight within capacity",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "unique live stack GUIDs across inventories",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "unique inventory GUIDs",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "empty lower weight boundary",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "expected rejection and zero actual quantity",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "failure preserves complete snapshots",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "valid inventory GUID",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "derived wood weight",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "weight within capacity",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "unique live stack GUIDs across inventories",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "unique inventory GUIDs",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "initialized fixture",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "expected rejection and zero actual quantity",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "failure preserves complete snapshots",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "valid inventory GUID",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "derived wood weight",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "weight within capacity",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "unique live stack GUIDs across inventories",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "unique inventory GUIDs",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "initialized fixture",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "success result and one revision increment",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "valid inventory GUID",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "positive quantity within wood MaxStack",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "valid stack GUID",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "derived wood weight",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "weight within capacity",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "unique live stack GUIDs across inventories",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "unique inventory GUIDs",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "expected rejection and zero actual quantity",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "failure preserves complete snapshots",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "valid inventory GUID",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "positive quantity within wood MaxStack",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "valid stack GUID",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "derived wood weight",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "weight within capacity",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "unique live stack GUIDs across inventories",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "unique inventory GUIDs",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "initialized fixture",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "success result and one revision increment",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "valid inventory GUID",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "positive quantity within wood MaxStack",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "valid stack GUID",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "positive quantity within wood MaxStack",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "valid stack GUID",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "derived wood weight",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "weight within capacity",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "unique live stack GUIDs across inventories",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "unique inventory GUIDs",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "21 wood distributed over two stacks",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "success result and one revision increment",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "valid inventory GUID",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "derived wood weight",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "weight within capacity",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "unique live stack GUIDs across inventories",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "unique inventory GUIDs",
+      "passed": true
+    },
+    {
+      "scenario": 1,
+      "test": "multi-stack removal leaves empty inventory",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "initialized fixture",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "fresh primary inventory",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "success result and one revision increment",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "valid inventory GUID",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "positive quantity within wood MaxStack",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "valid stack GUID",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "derived wood weight",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "weight within capacity",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "unique live stack GUIDs across inventories",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "unique inventory GUIDs",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "success result and one revision increment",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "valid inventory GUID",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "positive quantity within wood MaxStack",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "valid stack GUID",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "positive quantity within wood MaxStack",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "valid stack GUID",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "derived wood weight",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "weight within capacity",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "unique live stack GUIDs across inventories",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "unique inventory GUIDs",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "split quantities, GUID and conserved weight",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "expected rejection and zero actual quantity",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "failure preserves complete snapshots",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "valid inventory GUID",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "positive quantity within wood MaxStack",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "valid stack GUID",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "positive quantity within wood MaxStack",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "valid stack GUID",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "derived wood weight",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "weight within capacity",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "unique live stack GUIDs across inventories",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "unique inventory GUIDs",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "expected rejection and zero actual quantity",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "failure preserves complete snapshots",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "valid inventory GUID",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "positive quantity within wood MaxStack",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "valid stack GUID",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "positive quantity within wood MaxStack",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "valid stack GUID",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "derived wood weight",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "weight within capacity",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "unique live stack GUIDs across inventories",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "unique inventory GUIDs",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "success result and one revision increment",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "valid inventory GUID",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "positive quantity within wood MaxStack",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "valid stack GUID",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "derived wood weight",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "weight within capacity",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "unique live stack GUIDs across inventories",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "unique inventory GUIDs",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "merge preserves receiving GUID and quantity",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "expected rejection and zero actual quantity",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "failure preserves complete snapshots",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "valid inventory GUID",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "positive quantity within wood MaxStack",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "valid stack GUID",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "derived wood weight",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "weight within capacity",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "unique live stack GUIDs across inventories",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "unique inventory GUIDs",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "initialized fixture",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "success result and one revision increment",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "valid inventory GUID",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "positive quantity within wood MaxStack",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "valid stack GUID",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "derived wood weight",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "weight within capacity",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "unique live stack GUIDs across inventories",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "unique inventory GUIDs",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "expected rejection and zero actual quantity",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "failure preserves complete snapshots",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "valid inventory GUID",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "positive quantity within wood MaxStack",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "valid stack GUID",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "derived wood weight",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "weight within capacity",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "unique live stack GUIDs across inventories",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "unique inventory GUIDs",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "initialized fixture",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "success result and one revision increment",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "valid inventory GUID",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "positive quantity within wood MaxStack",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "valid stack GUID",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "positive quantity within wood MaxStack",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "valid stack GUID",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "derived wood weight",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "weight within capacity",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "unique live stack GUIDs across inventories",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "unique inventory GUIDs",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "expected rejection and zero actual quantity",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "failure preserves complete snapshots",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "valid inventory GUID",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "positive quantity within wood MaxStack",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "valid stack GUID",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "positive quantity within wood MaxStack",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "valid stack GUID",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "derived wood weight",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "weight within capacity",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "unique live stack GUIDs across inventories",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "test": "unique inventory GUIDs",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "initialized fixture",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "fresh primary inventory",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "initialized fixture",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "success result and one revision increment",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "valid inventory GUID",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "positive quantity within wood MaxStack",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "valid stack GUID",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "derived wood weight",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "weight within capacity",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "unique live stack GUIDs across inventories",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "unique inventory GUIDs",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "transfer commits both revisions",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "transfer conserves pair quantities",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "partial transfer identity",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "valid inventory GUID",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "positive quantity within wood MaxStack",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "valid stack GUID",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "derived wood weight",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "weight within capacity",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "valid inventory GUID",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "positive quantity within wood MaxStack",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "valid stack GUID",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "derived wood weight",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "weight within capacity",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "unique live stack GUIDs across inventories",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "unique inventory GUIDs",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "expected rejection and zero actual quantity",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "destination revision unchanged in result",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "failure preserves complete snapshots",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "valid inventory GUID",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "positive quantity within wood MaxStack",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "valid stack GUID",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "derived wood weight",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "weight within capacity",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "valid inventory GUID",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "positive quantity within wood MaxStack",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "valid stack GUID",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "derived wood weight",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "weight within capacity",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "unique live stack GUIDs across inventories",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "unique inventory GUIDs",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "expected rejection and zero actual quantity",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "destination revision unchanged in result",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "failure preserves complete snapshots",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "valid inventory GUID",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "positive quantity within wood MaxStack",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "valid stack GUID",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "derived wood weight",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "weight within capacity",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "valid inventory GUID",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "positive quantity within wood MaxStack",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "valid stack GUID",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "derived wood weight",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "weight within capacity",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "unique live stack GUIDs across inventories",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "unique inventory GUIDs",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "expected rejection and zero actual quantity",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "destination revision unchanged in result",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "failure preserves complete snapshots",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "valid inventory GUID",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "positive quantity within wood MaxStack",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "valid stack GUID",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "derived wood weight",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "weight within capacity",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "unique live stack GUIDs across inventories",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "unique inventory GUIDs",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "initialized fixture",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "success result and one revision increment",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "valid inventory GUID",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "positive quantity within wood MaxStack",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "valid stack GUID",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "derived wood weight",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "weight within capacity",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "unique live stack GUIDs across inventories",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "unique inventory GUIDs",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "expected rejection and zero actual quantity",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "destination revision unchanged in result",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "failure preserves complete snapshots",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "valid inventory GUID",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "positive quantity within wood MaxStack",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "valid stack GUID",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "derived wood weight",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "weight within capacity",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "valid inventory GUID",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "positive quantity within wood MaxStack",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "valid stack GUID",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "derived wood weight",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "weight within capacity",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "unique live stack GUIDs across inventories",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "unique inventory GUIDs",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "initialized fixture",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "success result and one revision increment",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "valid inventory GUID",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "positive quantity within wood MaxStack",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "valid stack GUID",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "derived wood weight",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "weight within capacity",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "unique live stack GUIDs across inventories",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "unique inventory GUIDs",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "expected rejection and zero actual quantity",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "destination revision unchanged in result",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "failure preserves complete snapshots",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "valid inventory GUID",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "positive quantity within wood MaxStack",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "valid stack GUID",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "derived wood weight",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "weight within capacity",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "valid inventory GUID",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "positive quantity within wood MaxStack",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "valid stack GUID",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "derived wood weight",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "weight within capacity",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "unique live stack GUIDs across inventories",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "unique inventory GUIDs",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "initialized fixture",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "full transfer preserves GUID and both revisions",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "valid inventory GUID",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "derived wood weight",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "weight within capacity",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "valid inventory GUID",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "positive quantity within wood MaxStack",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "valid stack GUID",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "derived wood weight",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "weight within capacity",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "valid inventory GUID",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "positive quantity within wood MaxStack",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "valid stack GUID",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "stable slot index",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "empty slot canonical GUID",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "derived wood weight",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "weight within capacity",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "unique live stack GUIDs across inventories",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "test": "unique inventory GUIDs",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "pass_assertions": 548,
+  "engine": "5.8.4-58902052+++UE5+Release-5.8"
+}
