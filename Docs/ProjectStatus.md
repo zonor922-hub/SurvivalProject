@@ -172,3 +172,11 @@ T0 остаётся PASS по Issue #14. Реализация A11 останов
 Подробности: Architecture/25_A15_WORLD_PICKUP.md.
 
 Следующее действие: публикация PR A15, независимый аудит. Merge не выполнять.
+
+## A15 — независимая проверка 31.10.2026: NOT READY
+
+Camera trace A13/A15 исправлен локально с геометрически обоснованной дальностью. Целевые PIE-проверки границы, rollback, слотов, reentry, E, препятствий и смены Pawn выполнены. Новый BLOCKER: HandleWorldPickupRequest вызывает ExecuteInteraction на уничтоженной цели (PIE runtime error). Работа остановлена; локальные изменения не закоммичены и не отправлены. Следующее действие — IsValid цели до чтения GUID/вызова, затем только затронутые проверки. См. Architecture/25_A15_WORLD_PICKUP.md и evidence/a15_followup_results.json. Merge PR #22 запрещён.
+
+## A15 — lifecycle BLOCKER закрыт 31.10.2026: READY
+
+В ветке PR #22 сохранены camera reach A13/A15 и IsValid(FocusedActor) до чтения GUID/ExecuteInteraction. Целевой lifecycle PIE: 10 PASS / 0 FAIL, UE exit 0, полный лог без Blueprint Runtime Error/Accessed None. Полный Snapshot при командах по уничтоженной цели неизменен; успешный pickup, повторные E и callback reentry проверены. Предыдущие проверки границ/rollback/слотов/стены/Pawn переиспользованы; полная регрессия, package, multiplayer и новая физическая E — NOT RUN. Подробности: Architecture/25_A15_WORLD_PICKUP.md и Architecture/evidence/a15_lifecycle_results.json. Merge не выполняется.

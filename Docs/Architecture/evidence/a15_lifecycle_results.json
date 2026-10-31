@@ -1,0 +1,77 @@
+{
+  "engine": "5.8.4-58902052+++UE5+Release-5.8",
+  "tests": [
+    {
+      "name": "actual PR controller ready",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "target focused before destruction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "target is pending kill/invalid",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "pending-kill commands preserve complete Snapshot and notifications",
+      "passed": true,
+      "detail": {
+        "before": "(InventoryId_2_26A428304D039DE2EA403F9BB07F81E0=2EF8AB2144277406E9956EBF247A8AF2,Revision_5_7A6A954549FA4AEE39A982AD787160D2=0,Slots_10_9053D0EE480F8FBA655F689183B061D9=((),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=1),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=2),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=3)),MaxWeight_12_D58D5FDB4818ADCB25DC5BB8839661A3=10.000000)",
+        "after": "(InventoryId_2_26A428304D039DE2EA403F9BB07F81E0=2EF8AB2144277406E9956EBF247A8AF2,Revision_5_7A6A954549FA4AEE39A982AD787160D2=0,Slots_10_9053D0EE480F8FBA655F689183B061D9=((),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=1),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=2),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=3)),MaxWeight_12_D58D5FDB4818ADCB25DC5BB8839661A3=10.000000)"
+      }
+    },
+    {
+      "name": "E after target destruction preserves Snapshot",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "live pickup focused",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "E live pickup commits exact quantity once and destroys",
+      "passed": true,
+      "detail": {
+        "snapshot": "(InventoryId_2_26A428304D039DE2EA403F9BB07F81E0=2EF8AB2144277406E9956EBF247A8AF2,Revision_5_7A6A954549FA4AEE39A982AD787160D2=1,Slots_10_9053D0EE480F8FBA655F689183B061D9=((ItemStack_5_779DD7EE429A896B44C7BDB5BD86E483=(StackId_2_0D9551B3432E557343037D9F83EACD2E=8759D77A465A2687798D858D07F3F9DB,ItemId_5_0EBB58F84F513100A99F31938FDDB627=\"item.wood\",Quantity_8_ED3667F84EB2BC62FEA5CBAC3A2B4FAA=3),HasItem_8_D040C6944C2BC036FE49499973A601D5=True),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=1),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=2),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=3)),MaxWeight_12_D58D5FDB4818ADCB25DC5BB8839661A3=10.000000)"
+      }
+    },
+    {
+      "name": "repeated commands after success cannot duplicate",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "inventory callback reentry remains guarded and one commit",
+      "passed": true,
+      "detail": {
+        "snapshot": "(InventoryId_2_26A428304D039DE2EA403F9BB07F81E0=2EF8AB2144277406E9956EBF247A8AF2,Revision_5_7A6A954549FA4AEE39A982AD787160D2=2,Slots_10_9053D0EE480F8FBA655F689183B061D9=((ItemStack_5_779DD7EE429A896B44C7BDB5BD86E483=(StackId_2_0D9551B3432E557343037D9F83EACD2E=8759D77A465A2687798D858D07F3F9DB,ItemId_5_0EBB58F84F513100A99F31938FDDB627=\"item.wood\",Quantity_8_ED3667F84EB2BC62FEA5CBAC3A2B4FAA=5),HasItem_8_D040C6944C2BC036FE49499973A601D5=True),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=1),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=2),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=3)),MaxWeight_12_D58D5FDB4818ADCB25DC5BB8839661A3=10.000000)"
+      }
+    },
+    {
+      "name": "no PIE Blueprint Runtime Error or Accessed None",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "passed": true,
+  "guard": {
+    "object": "BPC_Interaction.FocusedActor",
+    "execution": "component cast success -> IsValid branch -> pickup cast -> GUID/context/ExecuteInteraction",
+    "invalid_path": "unconnected false execution output safely terminates void command"
+  },
+  "saved_asset": "/Game/Survival/Core/BP_SurvivalPlayerController.BP_SurvivalPlayerController",
+  "process_exit_code": 0,
+  "full_log_runtime_error_count": 0,
+  "verdict": "READY",
+  "scope": "Targeted lifecycle follow-up only; camera range/rollback/capacity/Pawn evidence reused from a15_followup_results.json. That earlier overall failure is superseded by this passing lifecycle run.",
+  "unchanged_assets_sha256": {
+    "BPC_Inventory": "d766c69cd3069f3b538d2dd1c3472effea00313a707eaa5139280e4e729fa73a",
+    "BP_WorldPickup": "5dad4a5344f79bed305cb5000342b1041c63706bf6915d33891ed74bbd61fca9"
+  }
+}
