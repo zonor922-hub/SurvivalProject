@@ -148,3 +148,35 @@ T0 остаётся PASS по Issue #14. Реализация A11 останов
 **Приёмка до merge:** 8 Blueprint BS_UP_TO_DATE; 274 PASS / 0 FAIL в двух PIE с action injection (в каждом по три смены Pawn); 4 PASS / 0 FAIL исправленного UI Jump; 548 PASS / 0 FAIL A12 до исправления Jump (Inventory после него не менялся). Реальный UI Jump FAIL до исправления задокументирован отдельно. **Ручная проверка пользователя после merge:** Tab открывает/закрывает UI, движение, камера и прыжок блокируются, управление восстанавливается; физическая E дошла до `IA_Interact` (подтверждено breakpoint), но полноценного действия в мире ещё нет, поскольку A15 не реализована. Ручная проверка не равна повторному полному автоматическому прогону UE после merge.
 
 **Ограничения:** полная A13 (171 assertions), A24, package, multiplayer, визуальная QA — NOT RUN в A14; input injection не заменяет все физические сценарии ввода. Предсуществующие 17 startup `Condition failed` задокументированы без установления причины; в финальных PIE Blueprint Runtime Error / Accessed None не обнаружено. [Технический отчёт и evidence](Architecture/24_A14_ENHANCED_INPUT.md). Следующий шаг — отдельная A15 по [backlog](Architecture/03_IMPLEMENTATION_BACKLOG.md).
+
+## A15 — World Pickup (30.10.2026)
+
+Статус: локальная реализация завершена, ожидает PR и независимого аудита. В main пока не объединена.
+
+Реализованы BP_WorldPickup и подключение взаимодействия в BP_SurvivalPlayerController.
+
+Ручные PIE-проверки:
+- Успешный подбор, итоговый Inventory Snapshot 3 -> 5: PASS.
+- WeightLimit, неизвестный ItemId: PASS.
+- Дистанция, Visibility/стена: PASS.
+- UI, Consumed, PickupInProgress, повторные E: PASS.
+- Ошибок Blueprint Runtime Error / Accessed None не обнаружено.
+
+Регрессия:
+- A14 Full PIE: 274 PASS / 0 FAIL, UE exit 0.
+- A14 regression: Jump 4/0, A12 548/0, UE exit 0.
+- A12 runner: 1644 assertions PASS / 0 FAIL; итог runner false из-за неопределённого exit code.
+
+Не подтверждены: точная граница 250 см, полный Snapshot при отказе pickup, заполнение слотов, reentrant callback, lifecycle после смены Pawn, уничтожение цели между focus и execute, package и multiplayer.
+
+Подробности: Architecture/25_A15_WORLD_PICKUP.md.
+
+Следующее действие: публикация PR A15, независимый аудит. Merge не выполнять.
+
+## A15 — независимая проверка 31.10.2026: NOT READY
+
+Camera trace A13/A15 исправлен локально с геометрически обоснованной дальностью. Целевые PIE-проверки границы, rollback, слотов, reentry, E, препятствий и смены Pawn выполнены. Новый BLOCKER: HandleWorldPickupRequest вызывает ExecuteInteraction на уничтоженной цели (PIE runtime error). Работа остановлена; локальные изменения не закоммичены и не отправлены. Следующее действие — IsValid цели до чтения GUID/вызова, затем только затронутые проверки. См. Architecture/25_A15_WORLD_PICKUP.md и evidence/a15_followup_results.json. Merge PR #22 запрещён.
+
+## A15 — lifecycle BLOCKER закрыт 31.10.2026: READY
+
+В ветке PR #22 сохранены camera reach A13/A15 и IsValid(FocusedActor) до чтения GUID/ExecuteInteraction. Целевой lifecycle PIE: 10 PASS / 0 FAIL, UE exit 0, полный лог без Blueprint Runtime Error/Accessed None. Полный Snapshot при командах по уничтоженной цели неизменен; успешный pickup, повторные E и callback reentry проверены. Предыдущие проверки границ/rollback/слотов/стены/Pawn переиспользованы; полная регрессия, package, multiplayer и новая физическая E — NOT RUN. Подробности: Architecture/25_A15_WORLD_PICKUP.md и Architecture/evidence/a15_lifecycle_results.json. Merge не выполняется.

@@ -1,0 +1,389 @@
+{
+  "engine": "5.8.4-58902052+++UE5+Release-5.8",
+  "tests": [
+    {
+      "name": "range 249.9",
+      "passed": true,
+      "detail": {
+        "measured": 249.9,
+        "focus": true,
+        "valid": true
+      }
+    },
+    {
+      "name": "boundary pickup 249.9",
+      "passed": true,
+      "detail": "(Success_1_B3A3A1D1491343D588CE508FA0E86D19=True,ErrorCode_4_F38364794D0AF487EEC2BF97EE151CA5=\"EOperationError::NewEnumerator1\",Message_7_AD3A48DD4C9CC4B9326676B69EFC5913=\"\")"
+    },
+    {
+      "name": "range 250.0",
+      "passed": true,
+      "detail": {
+        "measured": 249.99999999999997,
+        "focus": true,
+        "valid": true
+      }
+    },
+    {
+      "name": "boundary pickup 250.0",
+      "passed": true,
+      "detail": "(Success_1_B3A3A1D1491343D588CE508FA0E86D19=True,ErrorCode_4_F38364794D0AF487EEC2BF97EE151CA5=\"EOperationError::NewEnumerator1\",Message_7_AD3A48DD4C9CC4B9326676B69EFC5913=\"\")"
+    },
+    {
+      "name": "range 250.1",
+      "passed": true,
+      "detail": {
+        "measured": 250.1,
+        "focus": false,
+        "valid": false
+      }
+    },
+    {
+      "name": "out-of-range complete rollback",
+      "passed": true,
+      "detail": {
+        "before": {
+          "snapshot": "(InventoryId_2_26A428304D039DE2EA403F9BB07F81E0=AF3D99B8473DADB6B37B6F95A4A94CCE,Revision_5_7A6A954549FA4AEE39A982AD787160D2=2,Slots_10_9053D0EE480F8FBA655F689183B061D9=((ItemStack_5_779DD7EE429A896B44C7BDB5BD86E483=(StackId_2_0D9551B3432E557343037D9F83EACD2E=9989715740350BC677876786F4086DF9,ItemId_5_0EBB58F84F513100A99F31938FDDB627=\"item.wood\",Quantity_8_ED3667F84EB2BC62FEA5CBAC3A2B4FAA=2),HasItem_8_D040C6944C2BC036FE49499973A601D5=True),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=1),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=2),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=3)),MaxWeight_12_D58D5FDB4818ADCB25DC5BB8839661A3=10.000000)",
+          "stack": "(StackId_2_0D9551B3432E557343037D9F83EACD2E=9989715740350BC677876786F4086DF9,ItemId_5_0EBB58F84F513100A99F31938FDDB627=\"item.wood\",Quantity_8_ED3667F84EB2BC62FEA5CBAC3A2B4FAA=1,Durability_15_C5C55D564D4F0A63A3249ABD5A8DE175=0.000000,HasDurability_14_04B85ED44388002FE9EFC0A54CF893C9=False)",
+          "entity_id": "4FEA0E3444F11FBDCE619CA6FCECDAD4",
+          "consumed": false,
+          "guard": false,
+          "events": 0,
+          "alive": true
+        },
+        "after": {
+          "snapshot": "(InventoryId_2_26A428304D039DE2EA403F9BB07F81E0=AF3D99B8473DADB6B37B6F95A4A94CCE,Revision_5_7A6A954549FA4AEE39A982AD787160D2=2,Slots_10_9053D0EE480F8FBA655F689183B061D9=((ItemStack_5_779DD7EE429A896B44C7BDB5BD86E483=(StackId_2_0D9551B3432E557343037D9F83EACD2E=9989715740350BC677876786F4086DF9,ItemId_5_0EBB58F84F513100A99F31938FDDB627=\"item.wood\",Quantity_8_ED3667F84EB2BC62FEA5CBAC3A2B4FAA=2),HasItem_8_D040C6944C2BC036FE49499973A601D5=True),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=1),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=2),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=3)),MaxWeight_12_D58D5FDB4818ADCB25DC5BB8839661A3=10.000000)",
+          "stack": "(StackId_2_0D9551B3432E557343037D9F83EACD2E=9989715740350BC677876786F4086DF9,ItemId_5_0EBB58F84F513100A99F31938FDDB627=\"item.wood\",Quantity_8_ED3667F84EB2BC62FEA5CBAC3A2B4FAA=1,Durability_15_C5C55D564D4F0A63A3249ABD5A8DE175=0.000000,HasDurability_14_04B85ED44388002FE9EFC0A54CF893C9=False)",
+          "entity_id": "4FEA0E3444F11FBDCE619CA6FCECDAD4",
+          "consumed": false,
+          "guard": false,
+          "events": 0,
+          "alive": true
+        },
+        "result": "(Success_1_B3A3A1D1491343D588CE508FA0E86D19=False,ErrorCode_4_F38364794D0AF487EEC2BF97EE151CA5=\"\",Message_7_AD3A48DD4C9CC4B9326676B69EFC5913=NSLOCTEXT(\"\", \"E33B61794FD6A1EEDAF200911CDE040A\", \"Stale interaction\"))"
+      }
+    },
+    {
+      "name": "WeightLimit full rollback",
+      "passed": true,
+      "detail": {
+        "before": {
+          "snapshot": "(InventoryId_2_26A428304D039DE2EA403F9BB07F81E0=DABFBD714F0E5A6E0BC589B53D872914,Revision_5_7A6A954549FA4AEE39A982AD787160D2=0,Slots_10_9053D0EE480F8FBA655F689183B061D9=(()),MaxWeight_12_D58D5FDB4818ADCB25DC5BB8839661A3=100.000000)",
+          "stack": "(StackId_2_0D9551B3432E557343037D9F83EACD2E=00000000000000000000000000000000,ItemId_5_0EBB58F84F513100A99F31938FDDB627=\"item.wood\",Quantity_8_ED3667F84EB2BC62FEA5CBAC3A2B4FAA=201,Durability_15_C5C55D564D4F0A63A3249ABD5A8DE175=0.000000,HasDurability_14_04B85ED44388002FE9EFC0A54CF893C9=False)",
+          "entity_id": "CE8D04D4425AFE838DF37080EC2CA654",
+          "consumed": false,
+          "guard": false,
+          "events": 0,
+          "alive": true
+        },
+        "after": {
+          "snapshot": "(InventoryId_2_26A428304D039DE2EA403F9BB07F81E0=DABFBD714F0E5A6E0BC589B53D872914,Revision_5_7A6A954549FA4AEE39A982AD787160D2=0,Slots_10_9053D0EE480F8FBA655F689183B061D9=(()),MaxWeight_12_D58D5FDB4818ADCB25DC5BB8839661A3=100.000000)",
+          "stack": "(StackId_2_0D9551B3432E557343037D9F83EACD2E=00000000000000000000000000000000,ItemId_5_0EBB58F84F513100A99F31938FDDB627=\"item.wood\",Quantity_8_ED3667F84EB2BC62FEA5CBAC3A2B4FAA=201,Durability_15_C5C55D564D4F0A63A3249ABD5A8DE175=0.000000,HasDurability_14_04B85ED44388002FE9EFC0A54CF893C9=False)",
+          "entity_id": "CE8D04D4425AFE838DF37080EC2CA654",
+          "consumed": false,
+          "guard": false,
+          "events": 0,
+          "alive": true
+        },
+        "result": "(Success_1_B3A3A1D1491343D588CE508FA0E86D19=False,ErrorCode_4_F38364794D0AF487EEC2BF97EE151CA5=\"EOperationError::NewEnumerator8\",Message_7_AD3A48DD4C9CC4B9326676B69EFC5913=NSLOCTEXT(\"\", \"D555458743A7DC92D218C29D87E7B2E9\", \"Inventory rejected pickup\"))"
+      }
+    },
+    {
+      "name": "full slots setup",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "full slots rollback",
+      "passed": true,
+      "detail": {
+        "before": {
+          "snapshot": "(InventoryId_2_26A428304D039DE2EA403F9BB07F81E0=DABFBD714F0E5A6E0BC589B53D872914,Revision_5_7A6A954549FA4AEE39A982AD787160D2=1,Slots_10_9053D0EE480F8FBA655F689183B061D9=((ItemStack_5_779DD7EE429A896B44C7BDB5BD86E483=(StackId_2_0D9551B3432E557343037D9F83EACD2E=24E52B96412BFD8CBB8CF69D01D6060C,ItemId_5_0EBB58F84F513100A99F31938FDDB627=\"item.wood\",Quantity_8_ED3667F84EB2BC62FEA5CBAC3A2B4FAA=20),HasItem_8_D040C6944C2BC036FE49499973A601D5=True)),MaxWeight_12_D58D5FDB4818ADCB25DC5BB8839661A3=100.000000)",
+          "stack": "(StackId_2_0D9551B3432E557343037D9F83EACD2E=24E52B96412BFD8CBB8CF69D01D6060C,ItemId_5_0EBB58F84F513100A99F31938FDDB627=\"item.wood\",Quantity_8_ED3667F84EB2BC62FEA5CBAC3A2B4FAA=2,Durability_15_C5C55D564D4F0A63A3249ABD5A8DE175=0.000000,HasDurability_14_04B85ED44388002FE9EFC0A54CF893C9=False)",
+          "entity_id": "49D1BFFD42F8B406FFC158996EA7559F",
+          "consumed": false,
+          "guard": false,
+          "events": 1,
+          "alive": true
+        },
+        "after": {
+          "snapshot": "(InventoryId_2_26A428304D039DE2EA403F9BB07F81E0=DABFBD714F0E5A6E0BC589B53D872914,Revision_5_7A6A954549FA4AEE39A982AD787160D2=1,Slots_10_9053D0EE480F8FBA655F689183B061D9=((ItemStack_5_779DD7EE429A896B44C7BDB5BD86E483=(StackId_2_0D9551B3432E557343037D9F83EACD2E=24E52B96412BFD8CBB8CF69D01D6060C,ItemId_5_0EBB58F84F513100A99F31938FDDB627=\"item.wood\",Quantity_8_ED3667F84EB2BC62FEA5CBAC3A2B4FAA=20),HasItem_8_D040C6944C2BC036FE49499973A601D5=True)),MaxWeight_12_D58D5FDB4818ADCB25DC5BB8839661A3=100.000000)",
+          "stack": "(StackId_2_0D9551B3432E557343037D9F83EACD2E=24E52B96412BFD8CBB8CF69D01D6060C,ItemId_5_0EBB58F84F513100A99F31938FDDB627=\"item.wood\",Quantity_8_ED3667F84EB2BC62FEA5CBAC3A2B4FAA=2,Durability_15_C5C55D564D4F0A63A3249ABD5A8DE175=0.000000,HasDurability_14_04B85ED44388002FE9EFC0A54CF893C9=False)",
+          "entity_id": "49D1BFFD42F8B406FFC158996EA7559F",
+          "consumed": false,
+          "guard": false,
+          "events": 1,
+          "alive": true
+        },
+        "result": "(Success_1_B3A3A1D1491343D588CE508FA0E86D19=False,ErrorCode_4_F38364794D0AF487EEC2BF97EE151CA5=\"EOperationError::NewEnumerator9\",Message_7_AD3A48DD4C9CC4B9326676B69EFC5913=NSLOCTEXT(\"\", \"D555458743A7DC92D218C29D87E7B2E9\", \"Inventory rejected pickup\"))"
+      }
+    },
+    {
+      "name": "repeat rejected command rollback",
+      "passed": true,
+      "detail": {
+        "before": {
+          "snapshot": "(InventoryId_2_26A428304D039DE2EA403F9BB07F81E0=DABFBD714F0E5A6E0BC589B53D872914,Revision_5_7A6A954549FA4AEE39A982AD787160D2=1,Slots_10_9053D0EE480F8FBA655F689183B061D9=((ItemStack_5_779DD7EE429A896B44C7BDB5BD86E483=(StackId_2_0D9551B3432E557343037D9F83EACD2E=24E52B96412BFD8CBB8CF69D01D6060C,ItemId_5_0EBB58F84F513100A99F31938FDDB627=\"item.wood\",Quantity_8_ED3667F84EB2BC62FEA5CBAC3A2B4FAA=20),HasItem_8_D040C6944C2BC036FE49499973A601D5=True)),MaxWeight_12_D58D5FDB4818ADCB25DC5BB8839661A3=100.000000)",
+          "stack": "(StackId_2_0D9551B3432E557343037D9F83EACD2E=24E52B96412BFD8CBB8CF69D01D6060C,ItemId_5_0EBB58F84F513100A99F31938FDDB627=\"item.wood\",Quantity_8_ED3667F84EB2BC62FEA5CBAC3A2B4FAA=2,Durability_15_C5C55D564D4F0A63A3249ABD5A8DE175=0.000000,HasDurability_14_04B85ED44388002FE9EFC0A54CF893C9=False)",
+          "entity_id": "49D1BFFD42F8B406FFC158996EA7559F",
+          "consumed": false,
+          "guard": false,
+          "events": 1,
+          "alive": true
+        },
+        "after": {
+          "snapshot": "(InventoryId_2_26A428304D039DE2EA403F9BB07F81E0=DABFBD714F0E5A6E0BC589B53D872914,Revision_5_7A6A954549FA4AEE39A982AD787160D2=1,Slots_10_9053D0EE480F8FBA655F689183B061D9=((ItemStack_5_779DD7EE429A896B44C7BDB5BD86E483=(StackId_2_0D9551B3432E557343037D9F83EACD2E=24E52B96412BFD8CBB8CF69D01D6060C,ItemId_5_0EBB58F84F513100A99F31938FDDB627=\"item.wood\",Quantity_8_ED3667F84EB2BC62FEA5CBAC3A2B4FAA=20),HasItem_8_D040C6944C2BC036FE49499973A601D5=True)),MaxWeight_12_D58D5FDB4818ADCB25DC5BB8839661A3=100.000000)",
+          "stack": "(StackId_2_0D9551B3432E557343037D9F83EACD2E=24E52B96412BFD8CBB8CF69D01D6060C,ItemId_5_0EBB58F84F513100A99F31938FDDB627=\"item.wood\",Quantity_8_ED3667F84EB2BC62FEA5CBAC3A2B4FAA=2,Durability_15_C5C55D564D4F0A63A3249ABD5A8DE175=0.000000,HasDurability_14_04B85ED44388002FE9EFC0A54CF893C9=False)",
+          "entity_id": "49D1BFFD42F8B406FFC158996EA7559F",
+          "consumed": false,
+          "guard": false,
+          "events": 1,
+          "alive": true
+        },
+        "result": "(Success_1_B3A3A1D1491343D588CE508FA0E86D19=False,ErrorCode_4_F38364794D0AF487EEC2BF97EE151CA5=\"EOperationError::NewEnumerator9\",Message_7_AD3A48DD4C9CC4B9326676B69EFC5913=NSLOCTEXT(\"\", \"D555458743A7DC92D218C29D87E7B2E9\", \"Inventory rejected pickup\"))"
+      }
+    },
+    {
+      "name": "callback reentry no duplicate; destroy after commit",
+      "passed": true,
+      "detail": {
+        "snapshot": "(InventoryId_2_26A428304D039DE2EA403F9BB07F81E0=DABFBD714F0E5A6E0BC589B53D872914,Revision_5_7A6A954549FA4AEE39A982AD787160D2=3,Slots_10_9053D0EE480F8FBA655F689183B061D9=((ItemStack_5_779DD7EE429A896B44C7BDB5BD86E483=(StackId_2_0D9551B3432E557343037D9F83EACD2E=0A827FD14448E0207C9B559A15570F46,ItemId_5_0EBB58F84F513100A99F31938FDDB627=\"item.wood\",Quantity_8_ED3667F84EB2BC62FEA5CBAC3A2B4FAA=2),HasItem_8_D040C6944C2BC036FE49499973A601D5=True)),MaxWeight_12_D58D5FDB4818ADCB25DC5BB8839661A3=100.000000)",
+        "events": 3
+      }
+    },
+    {
+      "name": "E stock camera pickup",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "repeated E no duplicate",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "PIE actual A15 controller ready",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "isolated actual PlayerState inventory ready",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "camera still sees pickup over wall",
+      "passed": true,
+      "detail": 150.0
+    },
+    {
+      "name": "Pawn wall blocks pickup with full rollback",
+      "passed": true,
+      "detail": {
+        "before": {
+          "snapshot": "(InventoryId_2_26A428304D039DE2EA403F9BB07F81E0=CB9D6EFE40825F0296D8989162CEFF01,Revision_5_7A6A954549FA4AEE39A982AD787160D2=0,Slots_10_9053D0EE480F8FBA655F689183B061D9=(()),MaxWeight_12_D58D5FDB4818ADCB25DC5BB8839661A3=100.000000)",
+          "stack": "(StackId_2_0D9551B3432E557343037D9F83EACD2E=00000000000000000000000000000000,ItemId_5_0EBB58F84F513100A99F31938FDDB627=\"item.wood\",Quantity_8_ED3667F84EB2BC62FEA5CBAC3A2B4FAA=1,Durability_15_C5C55D564D4F0A63A3249ABD5A8DE175=0.000000,HasDurability_14_04B85ED44388002FE9EFC0A54CF893C9=False)",
+          "entity_id": "B00CE1264A25D21F89DE5EBD8003AFDA",
+          "consumed": false,
+          "guard": false,
+          "events": 0,
+          "alive": true
+        },
+        "after": {
+          "snapshot": "(InventoryId_2_26A428304D039DE2EA403F9BB07F81E0=CB9D6EFE40825F0296D8989162CEFF01,Revision_5_7A6A954549FA4AEE39A982AD787160D2=0,Slots_10_9053D0EE480F8FBA655F689183B061D9=(()),MaxWeight_12_D58D5FDB4818ADCB25DC5BB8839661A3=100.000000)",
+          "stack": "(StackId_2_0D9551B3432E557343037D9F83EACD2E=00000000000000000000000000000000,ItemId_5_0EBB58F84F513100A99F31938FDDB627=\"item.wood\",Quantity_8_ED3667F84EB2BC62FEA5CBAC3A2B4FAA=1,Durability_15_C5C55D564D4F0A63A3249ABD5A8DE175=0.000000,HasDurability_14_04B85ED44388002FE9EFC0A54CF893C9=False)",
+          "entity_id": "B00CE1264A25D21F89DE5EBD8003AFDA",
+          "consumed": false,
+          "guard": false,
+          "events": 0,
+          "alive": true
+        },
+        "result": "(Success_1_B3A3A1D1491343D588CE508FA0E86D19=False,ErrorCode_4_F38364794D0AF487EEC2BF97EE151CA5=\"\",Message_7_AD3A48DD4C9CC4B9326676B69EFC5913=NSLOCTEXT(\"\", \"E33B61794FD6A1EEDAF200911CDE040A\", \"Stale interaction\"))"
+      }
+    },
+    {
+      "name": "A13 wall clears focus",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "destroyed target was focused",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "destroyed target no mutation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "missing Controller rollback",
+      "passed": true,
+      "detail": {
+        "before": {
+          "snapshot": "(InventoryId_2_26A428304D039DE2EA403F9BB07F81E0=CB9D6EFE40825F0296D8989162CEFF01,Revision_5_7A6A954549FA4AEE39A982AD787160D2=0,Slots_10_9053D0EE480F8FBA655F689183B061D9=(()),MaxWeight_12_D58D5FDB4818ADCB25DC5BB8839661A3=100.000000)",
+          "stack": "(StackId_2_0D9551B3432E557343037D9F83EACD2E=00000000000000000000000000000000,ItemId_5_0EBB58F84F513100A99F31938FDDB627=\"item.wood\",Quantity_8_ED3667F84EB2BC62FEA5CBAC3A2B4FAA=1,Durability_15_C5C55D564D4F0A63A3249ABD5A8DE175=0.000000,HasDurability_14_04B85ED44388002FE9EFC0A54CF893C9=False)",
+          "entity_id": "435D028544BAE069293B7B88AFDE679B",
+          "consumed": false,
+          "guard": false,
+          "events": 0,
+          "alive": true
+        },
+        "after": {
+          "snapshot": "(InventoryId_2_26A428304D039DE2EA403F9BB07F81E0=CB9D6EFE40825F0296D8989162CEFF01,Revision_5_7A6A954549FA4AEE39A982AD787160D2=0,Slots_10_9053D0EE480F8FBA655F689183B061D9=(()),MaxWeight_12_D58D5FDB4818ADCB25DC5BB8839661A3=100.000000)",
+          "stack": "(StackId_2_0D9551B3432E557343037D9F83EACD2E=00000000000000000000000000000000,ItemId_5_0EBB58F84F513100A99F31938FDDB627=\"item.wood\",Quantity_8_ED3667F84EB2BC62FEA5CBAC3A2B4FAA=1,Durability_15_C5C55D564D4F0A63A3249ABD5A8DE175=0.000000,HasDurability_14_04B85ED44388002FE9EFC0A54CF893C9=False)",
+          "entity_id": "435D028544BAE069293B7B88AFDE679B",
+          "consumed": false,
+          "guard": false,
+          "events": 0,
+          "alive": true
+        },
+        "result": "(Success_1_B3A3A1D1491343D588CE508FA0E86D19=False,ErrorCode_4_F38364794D0AF487EEC2BF97EE151CA5=\"\",Message_7_AD3A48DD4C9CC4B9326676B69EFC5913=NSLOCTEXT(\"\", \"4E15F50249AC31FDDF8B3280215CEF0B\", \"Invalid controller\"))"
+      }
+    },
+    {
+      "name": "missing request Pawn rollback",
+      "passed": true,
+      "detail": {
+        "before": {
+          "snapshot": "(InventoryId_2_26A428304D039DE2EA403F9BB07F81E0=CB9D6EFE40825F0296D8989162CEFF01,Revision_5_7A6A954549FA4AEE39A982AD787160D2=0,Slots_10_9053D0EE480F8FBA655F689183B061D9=(()),MaxWeight_12_D58D5FDB4818ADCB25DC5BB8839661A3=100.000000)",
+          "stack": "(StackId_2_0D9551B3432E557343037D9F83EACD2E=00000000000000000000000000000000,ItemId_5_0EBB58F84F513100A99F31938FDDB627=\"item.wood\",Quantity_8_ED3667F84EB2BC62FEA5CBAC3A2B4FAA=1,Durability_15_C5C55D564D4F0A63A3249ABD5A8DE175=0.000000,HasDurability_14_04B85ED44388002FE9EFC0A54CF893C9=False)",
+          "entity_id": "435D028544BAE069293B7B88AFDE679B",
+          "consumed": false,
+          "guard": false,
+          "events": 0,
+          "alive": true
+        },
+        "after": {
+          "snapshot": "(InventoryId_2_26A428304D039DE2EA403F9BB07F81E0=CB9D6EFE40825F0296D8989162CEFF01,Revision_5_7A6A954549FA4AEE39A982AD787160D2=0,Slots_10_9053D0EE480F8FBA655F689183B061D9=(()),MaxWeight_12_D58D5FDB4818ADCB25DC5BB8839661A3=100.000000)",
+          "stack": "(StackId_2_0D9551B3432E557343037D9F83EACD2E=00000000000000000000000000000000,ItemId_5_0EBB58F84F513100A99F31938FDDB627=\"item.wood\",Quantity_8_ED3667F84EB2BC62FEA5CBAC3A2B4FAA=1,Durability_15_C5C55D564D4F0A63A3249ABD5A8DE175=0.000000,HasDurability_14_04B85ED44388002FE9EFC0A54CF893C9=False)",
+          "entity_id": "435D028544BAE069293B7B88AFDE679B",
+          "consumed": false,
+          "guard": false,
+          "events": 0,
+          "alive": true
+        },
+        "result": "(Success_1_B3A3A1D1491343D588CE508FA0E86D19=False,ErrorCode_4_F38364794D0AF487EEC2BF97EE151CA5=\"\",Message_7_AD3A48DD4C9CC4B9326676B69EFC5913=NSLOCTEXT(\"\", \"E33B61794FD6A1EEDAF200911CDE040A\", \"Stale interaction\"))"
+      }
+    },
+    {
+      "name": "no possessed Pawn rollback",
+      "passed": true,
+      "detail": {
+        "before": {
+          "snapshot": "(InventoryId_2_26A428304D039DE2EA403F9BB07F81E0=CB9D6EFE40825F0296D8989162CEFF01,Revision_5_7A6A954549FA4AEE39A982AD787160D2=0,Slots_10_9053D0EE480F8FBA655F689183B061D9=(()),MaxWeight_12_D58D5FDB4818ADCB25DC5BB8839661A3=100.000000)",
+          "stack": "(StackId_2_0D9551B3432E557343037D9F83EACD2E=00000000000000000000000000000000,ItemId_5_0EBB58F84F513100A99F31938FDDB627=\"item.wood\",Quantity_8_ED3667F84EB2BC62FEA5CBAC3A2B4FAA=1,Durability_15_C5C55D564D4F0A63A3249ABD5A8DE175=0.000000,HasDurability_14_04B85ED44388002FE9EFC0A54CF893C9=False)",
+          "entity_id": "435D028544BAE069293B7B88AFDE679B",
+          "consumed": false,
+          "guard": false,
+          "events": 0,
+          "alive": true
+        },
+        "after": {
+          "snapshot": "(InventoryId_2_26A428304D039DE2EA403F9BB07F81E0=CB9D6EFE40825F0296D8989162CEFF01,Revision_5_7A6A954549FA4AEE39A982AD787160D2=0,Slots_10_9053D0EE480F8FBA655F689183B061D9=(()),MaxWeight_12_D58D5FDB4818ADCB25DC5BB8839661A3=100.000000)",
+          "stack": "(StackId_2_0D9551B3432E557343037D9F83EACD2E=00000000000000000000000000000000,ItemId_5_0EBB58F84F513100A99F31938FDDB627=\"item.wood\",Quantity_8_ED3667F84EB2BC62FEA5CBAC3A2B4FAA=1,Durability_15_C5C55D564D4F0A63A3249ABD5A8DE175=0.000000,HasDurability_14_04B85ED44388002FE9EFC0A54CF893C9=False)",
+          "entity_id": "435D028544BAE069293B7B88AFDE679B",
+          "consumed": false,
+          "guard": false,
+          "events": 0,
+          "alive": true
+        },
+        "result": "(Success_1_B3A3A1D1491343D588CE508FA0E86D19=False,ErrorCode_4_F38364794D0AF487EEC2BF97EE151CA5=\"\",Message_7_AD3A48DD4C9CC4B9326676B69EFC5913=NSLOCTEXT(\"\", \"E33B61794FD6A1EEDAF200911CDE040A\", \"Stale interaction\"))"
+      }
+    },
+    {
+      "name": "stale Pawn swap 0",
+      "passed": true,
+      "detail": {
+        "before": {
+          "snapshot": "(InventoryId_2_26A428304D039DE2EA403F9BB07F81E0=CB9D6EFE40825F0296D8989162CEFF01,Revision_5_7A6A954549FA4AEE39A982AD787160D2=0,Slots_10_9053D0EE480F8FBA655F689183B061D9=(()),MaxWeight_12_D58D5FDB4818ADCB25DC5BB8839661A3=100.000000)",
+          "stack": "(StackId_2_0D9551B3432E557343037D9F83EACD2E=00000000000000000000000000000000,ItemId_5_0EBB58F84F513100A99F31938FDDB627=\"item.wood\",Quantity_8_ED3667F84EB2BC62FEA5CBAC3A2B4FAA=1,Durability_15_C5C55D564D4F0A63A3249ABD5A8DE175=0.000000,HasDurability_14_04B85ED44388002FE9EFC0A54CF893C9=False)",
+          "entity_id": "435D028544BAE069293B7B88AFDE679B",
+          "consumed": false,
+          "guard": false,
+          "events": 0,
+          "alive": true
+        },
+        "after": {
+          "snapshot": "(InventoryId_2_26A428304D039DE2EA403F9BB07F81E0=CB9D6EFE40825F0296D8989162CEFF01,Revision_5_7A6A954549FA4AEE39A982AD787160D2=0,Slots_10_9053D0EE480F8FBA655F689183B061D9=(()),MaxWeight_12_D58D5FDB4818ADCB25DC5BB8839661A3=100.000000)",
+          "stack": "(StackId_2_0D9551B3432E557343037D9F83EACD2E=00000000000000000000000000000000,ItemId_5_0EBB58F84F513100A99F31938FDDB627=\"item.wood\",Quantity_8_ED3667F84EB2BC62FEA5CBAC3A2B4FAA=1,Durability_15_C5C55D564D4F0A63A3249ABD5A8DE175=0.000000,HasDurability_14_04B85ED44388002FE9EFC0A54CF893C9=False)",
+          "entity_id": "435D028544BAE069293B7B88AFDE679B",
+          "consumed": false,
+          "guard": false,
+          "events": 0,
+          "alive": true
+        },
+        "result": "(Success_1_B3A3A1D1491343D588CE508FA0E86D19=False,ErrorCode_4_F38364794D0AF487EEC2BF97EE151CA5=\"\",Message_7_AD3A48DD4C9CC4B9326676B69EFC5913=NSLOCTEXT(\"\", \"E33B61794FD6A1EEDAF200911CDE040A\", \"Stale interaction\"))"
+      }
+    },
+    {
+      "name": "swap 0 E commits exactly once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stale Pawn swap 1",
+      "passed": true,
+      "detail": {
+        "before": {
+          "snapshot": "(InventoryId_2_26A428304D039DE2EA403F9BB07F81E0=CB9D6EFE40825F0296D8989162CEFF01,Revision_5_7A6A954549FA4AEE39A982AD787160D2=1,Slots_10_9053D0EE480F8FBA655F689183B061D9=((ItemStack_5_779DD7EE429A896B44C7BDB5BD86E483=(StackId_2_0D9551B3432E557343037D9F83EACD2E=7CD3F85E40CCA75D2C48D6899CBA2AC7,ItemId_5_0EBB58F84F513100A99F31938FDDB627=\"item.wood\",Quantity_8_ED3667F84EB2BC62FEA5CBAC3A2B4FAA=1),HasItem_8_D040C6944C2BC036FE49499973A601D5=True)),MaxWeight_12_D58D5FDB4818ADCB25DC5BB8839661A3=100.000000)",
+          "stack": "(StackId_2_0D9551B3432E557343037D9F83EACD2E=7CD3F85E40CCA75D2C48D6899CBA2AC7,ItemId_5_0EBB58F84F513100A99F31938FDDB627=\"item.wood\",Quantity_8_ED3667F84EB2BC62FEA5CBAC3A2B4FAA=1,Durability_15_C5C55D564D4F0A63A3249ABD5A8DE175=0.000000,HasDurability_14_04B85ED44388002FE9EFC0A54CF893C9=False)",
+          "entity_id": "700D0A4E47B1A73717BD66AEFFE78155",
+          "consumed": false,
+          "guard": false,
+          "events": 1,
+          "alive": true
+        },
+        "after": {
+          "snapshot": "(InventoryId_2_26A428304D039DE2EA403F9BB07F81E0=CB9D6EFE40825F0296D8989162CEFF01,Revision_5_7A6A954549FA4AEE39A982AD787160D2=1,Slots_10_9053D0EE480F8FBA655F689183B061D9=((ItemStack_5_779DD7EE429A896B44C7BDB5BD86E483=(StackId_2_0D9551B3432E557343037D9F83EACD2E=7CD3F85E40CCA75D2C48D6899CBA2AC7,ItemId_5_0EBB58F84F513100A99F31938FDDB627=\"item.wood\",Quantity_8_ED3667F84EB2BC62FEA5CBAC3A2B4FAA=1),HasItem_8_D040C6944C2BC036FE49499973A601D5=True)),MaxWeight_12_D58D5FDB4818ADCB25DC5BB8839661A3=100.000000)",
+          "stack": "(StackId_2_0D9551B3432E557343037D9F83EACD2E=7CD3F85E40CCA75D2C48D6899CBA2AC7,ItemId_5_0EBB58F84F513100A99F31938FDDB627=\"item.wood\",Quantity_8_ED3667F84EB2BC62FEA5CBAC3A2B4FAA=1,Durability_15_C5C55D564D4F0A63A3249ABD5A8DE175=0.000000,HasDurability_14_04B85ED44388002FE9EFC0A54CF893C9=False)",
+          "entity_id": "700D0A4E47B1A73717BD66AEFFE78155",
+          "consumed": false,
+          "guard": false,
+          "events": 1,
+          "alive": true
+        },
+        "result": "(Success_1_B3A3A1D1491343D588CE508FA0E86D19=False,ErrorCode_4_F38364794D0AF487EEC2BF97EE151CA5=\"\",Message_7_AD3A48DD4C9CC4B9326676B69EFC5913=NSLOCTEXT(\"\", \"E33B61794FD6A1EEDAF200911CDE040A\", \"Stale interaction\"))"
+      }
+    },
+    {
+      "name": "swap 1 E commits exactly once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "missing Inventory actor unchanged",
+      "passed": true,
+      "detail": "(Success_1_B3A3A1D1491343D588CE508FA0E86D19=False,ErrorCode_4_F38364794D0AF487EEC2BF97EE151CA5=\"\",Message_7_AD3A48DD4C9CC4B9326676B69EFC5913=NSLOCTEXT(\"\", \"105C49D34D0087A85EDEC483E8771066\", \"No inventory\"))"
+    },
+    {
+      "name": "missing Interaction rejects",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "destroyed target safe rejection without runtime errors",
+      "passed": false,
+      "detail": "Destroyed focused pickup: HandleWorldPickupRequest calls ExecuteInteraction on pending-kill BP_WorldPickup_C_1; four PIE Blueprint Runtime Error entries at frames 114-115, 2026-10-31 10:25:53 UTC. Snapshot unchanged."
+    }
+  ],
+  "passed": false,
+  "default_camera": {
+    "pawn": "<Struct 'Vector' (0x000001F19EE31820) {x: 0.000000, y: 0.000000, z: 3000.000000}>",
+    "view": "(<Struct 'Vector' (0x000001F19EE31820) {x: -400.000000, y: 0.000000, z: 3008.492264}>, <Struct 'Rotator' (0x000001F19EE33120) {pitch: 0.000000, yaw: 0.000000, roll: -0.000000}>)",
+    "focus_distance": 250.0
+  },
+  "harness_error": "Traceback (most recent call last):\n  File \"C:/Users/Denis/AppData/Local/Temp/a15_verify.py\", line 149, in tick\n    next(job)\nValueError: generator already executing\n",
+  "saved_assets": [
+    "/Game/Survival/Interaction/BPC_Interaction.BPC_Interaction",
+    "/Game/Survival/Core/BP_SurvivalPlayerController.BP_SurvivalPlayerController"
+  ],
+  "verdict": "NOT READY",
+  "product_blocker": "Destroyed focused pickup: HandleWorldPickupRequest calls ExecuteInteraction on pending-kill BP_WorldPickup_C_1; four PIE Blueprint Runtime Error entries at frames 114-115, 2026-10-31 10:25:53 UTC. Snapshot unchanged.",
+  "original_head": "fd6519f2acbd79e672915d494f8009fb0b37b943",
+  "verification_scope": "State assertions accumulated across scoped PIE sessions with identical in-memory camera fix; overall verdict additionally gates on runtime log. No full regression.",
+  "error_reason_mapping": {
+    "WeightLimit": "EOperationError::NewEnumerator8",
+    "FullSlots": "EOperationError::NewEnumerator9"
+  }
+}
