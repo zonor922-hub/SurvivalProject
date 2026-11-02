@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "purpose": "Integrity of selected historical evidence only; not new Unreal Engine test results. LF-normalized SHA-256. Changes require review.",
+  "files": [
+    {
+      "path": "Docs/Architecture/evidence/a12_automatic_summary.json",
+      "sha256": "eb84a696b35452cb58329e14ef57d86e86c70157d2b8fc10ca09ec40356184fb"
+    },
+    {
+      "path": "Docs/Architecture/evidence/a12_negative_summary.json",
+      "sha256": "402d5009cbfd113aa5028dcf06e0c09e3db30dfcd995748a63f74f5157a11354"
+    },
+    {
+      "path": "Docs/Architecture/evidence/a14_pie.json",
+      "sha256": "840f0c078ee3ecdc190abb8dfd476692645cb57d6fb28963b5b83c63f93b372d"
+    },
+    {
+      "path": "Docs/Architecture/evidence/a15_lifecycle_results.json",
+      "sha256": "ba433a0a0bfa01615df9f114f060be8aa18a9eddf3adb99a1cd6f603d6953161"
+    }
+  ]
+}
