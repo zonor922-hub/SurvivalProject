@@ -52,6 +52,10 @@ python -B -m unittest discover -s scripts/ci -p 'test_*.py' -v
 - GitHub Actions до публикации PR: **NOT RUN**. Фактическое исполнение на GitHub проверяется после публикации и сообщается отдельно; локальный PASS не означает успешный удалённый запуск.
 - Unreal Editor, Blueprint compilation, PIE, ввод, cook/package: **NOT RUN**.
 
+## Фактический GitHub Actions run после публикации
+
+[Run 41439797798](https://github.com/zonor922-hub/SurvivalProject/actions/runs/41439797798), событие `pull_request` для Draft PR №25, head `ceb490f20a5b73d1e6822a18d2cc94f711c44281`: **completed / success**. Job `Repository checks (no Unreal Engine)` и оба шага проверки metadata/evidence и временных положительных/отрицательных фикстур завершились успешно. Это первый реальный GitHub Actions PASS, отдельно от локальной проверки и исторических UE evidence. Последующее документирование результата не меняет checker или workflow; статус нового head следует проверять в PR.
+
 ## Ограничения и защита main
 
 CI не читает Blueprint-графы, не проверяет игровую логику, физику, визуальное поведение, runtime-зависимости или готовность сборки. Базовый INI-парсер проверяет структуру используемого подмножества формата, а не всю семантику Unreal Config. AST не проверяет доступность Unreal Python API.
@@ -62,4 +66,4 @@ LFS-проверка не подтверждает наличие удалённ
 
 После SEC01 и SEC02 рекомендуется отдельно включить защиту `main`: обязательный PR, review изменений workflow/скриптов и status check `Repository checks (no Unreal Engine)` после первого реального успешного запуска; запрет force push/удаления и согласованный порядок bypass. Настройки GitHub и merge в SEC02 не выполняются. Перед merge SEC02 после смены базы следует дождаться нового успешного PR-run на актуальном merge ref.
 
-Локальная реализация и самотесты готовы к ручному рассмотрению; проверка исполнения GitHub Actions до публикации остаётся NOT RUN.
+Локальная реализация, самотесты и первый реальный GitHub Actions run проверены. Вердикт: **READY для ручного рассмотрения Draft PR**. После объединения SEC01 требуется отдельная смена базы SEC02 и новый успешный PR-run; автоматический merge не выполняется.
