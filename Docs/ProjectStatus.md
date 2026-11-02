@@ -1,5 +1,9 @@
 # SurvivalProject — текущий прогресс
 
+## SEC02 — repository CI без Unreal Engine (02.11.2026)
+
+Ветка `ci/sec02-repository-checks` основана на SEC01 (`db95b1c909598828b1cb6a41eb3c9826109c8525`); Draft PR направляется в `security/sec01-disable-afs`, поскольку PR №24 ещё не объединён. После его merge базу SEC02 нужно отдельно переключить на `main`. Добавлены workflow, статический checker, evidence manifest и временные самотесты. Локально: 7 групп PASS и 14/14 самотестов PASS, включая ожидаемые отказы JSON/Python/LFS/AFS. GitHub Actions до публикации — NOT RUN; фактический результат проверяется отдельно. Unreal runtime / PIE / package — NOT RUN. Config, Blueprint, карты и прежние evidence не менялись относительно SEC01. [Отчёт SEC02](Architecture/27_SEC02_CI.md). Локальная реализация готова к ручному рассмотрению; merge не выполняется.
+
 ## SEC01 — безопасность AFS (02.11.2026)
 
 Ветка `security/sec01-disable-afs` от `main` / `aa8f7dbd25bf707a30722feee809794d61fcfbf8`: отключены неиспользуемый Android File Server и сетевое соединение, строка опубликованного SecurityToken удалена. Shipping-настройки сохранены. Статические проверки INI, области изменений, отсутствия прежнего значения в текущем рабочем дереве и `git diff --check` — PASS. Unreal Editor / PIE / package — NOT RUN. Исторический токен остаётся в Git history; при использовании где-либо ещё его необходимо заменить. **READY для ручного рассмотрения Draft PR; не объединено.** [Отчёт SEC01](Architecture/26_SEC01_AFS_SECURITY.md). Остальные статусы ниже этой записью не пересматриваются.
