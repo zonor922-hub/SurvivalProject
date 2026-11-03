@@ -2,7 +2,7 @@
   "date": "2026-11-03",
   "base_commit": "4784cb9d21f62243cf446cceafa04d73f0b77572",
   "branch": "codex/a17-inventory-audit",
-  "publication": "Draft PR not ready pending PIE retest against exact asset hashes; no push/PR",
+  "publication": "Draft PR #28 open, draft, not merged; branch codex/a17-inventory-audit; GitHub verified initial implementation commit 6f574b66f44d0f20a9f14957bc9c4f983d2128af and 12 changed files",
   "engine": "5.8.4-58902052+++UE5+Release-5.8",
   "unreal_exit_code": 0,
   "assets": [
