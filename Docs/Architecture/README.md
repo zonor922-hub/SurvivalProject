@@ -33,7 +33,7 @@ A11 (**реализована и объединена через [PR №16](http
 - [SEC02 — repository CI](27_SEC02_CI.md): PR №25 объединён, Actions на main success; это статические проверки без Unreal Engine.
 - SEC03: [активный Ruleset main](https://github.com/zonor922-hub/SurvivalProject/rules/26429234), проверен GitHub API; отдельного документа в main нет.
 
-A17 MVP по уточнённому владельцем объёму прошла ручной PIE 10/10 с совпавшими pre/post SHA и готовится к Draft PR; Split/Merge и stale Revision выделены в A17.1. A36 остаётся техническим проектом. Отчёты SEC01/SEC02 сохраняют формулировки этапа до merge; актуальный статус указан в [ProjectStatus](../ProjectStatus.md).
+A17 MVP по уточнённому владельцем объёму прошла ручной PIE 10/10 с совпавшими pre/post SHA; Draft PR №28 открыт; Split/Merge и stale Revision выделены в A17.1. A36 остаётся техническим проектом. Отчёты SEC01/SEC02 сохраняют формулировки этапа до merge; актуальный статус указан в [ProjectStatus](../ProjectStatus.md).
 
 ## Основные решения
 
