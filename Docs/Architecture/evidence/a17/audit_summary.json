@@ -1,0 +1,126 @@
+{
+  "date": "2026-11-03",
+  "base_commit": "4784cb9d21f62243cf446cceafa04d73f0b77572",
+  "branch": "codex/a17-inventory-audit",
+  "publication": "Draft PR not ready pending PIE retest against exact asset hashes; no push/PR",
+  "engine": "5.8.4-58902052+++UE5+Release-5.8",
+  "unreal_exit_code": 0,
+  "assets": [
+    {
+      "path": "Content/Survival/Core/BP_SurvivalPlayerController.uasset",
+      "bytes": 710172,
+      "sha256": "b1dcde0fa5ac87aec85dcb39a3960a20809104e599e9b73f258cd0dcb3ffe2b3",
+      "isolated_copy_identical_after_compile": true
+    },
+    {
+      "path": "Content/Survival/Input/IMC_Survival.uasset",
+      "bytes": 2825,
+      "sha256": "1203cf556ff39c51bcf54b2183bf7eb63af7a1d4436f131be4af35f9467adcae",
+      "isolated_copy_identical_after_compile": true
+    },
+    {
+      "path": "Content/Survival/UI/Inventory/WBP_Inventory.uasset",
+      "bytes": 123978,
+      "sha256": "9019e7f98dbb11d2f1beec58c2b50274083c8c1a4a014207520425c102ed650e",
+      "isolated_copy_identical_after_compile": true
+    },
+    {
+      "path": "Content/Survival/UI/Inventory/WBP_InventorySlot.uasset",
+      "bytes": 55667,
+      "sha256": "fd640b37cf5eae128df84da18af67a46c199ebf0ff82d2744ed55ccbf1c412d5",
+      "isolated_copy_identical_after_compile": true
+    }
+  ],
+  "missing_project_package_files": [],
+  "compile_statuses": {
+    "/Game/Survival/UI/Inventory/WBP_Inventory": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+    "/Game/Survival/UI/Inventory/WBP_InventorySlot": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+    "/Game/Survival/Core/BP_SurvivalPlayerController": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+    "/Game/Survival/Inventory/BPC_Inventory": "<BlueprintStatus.BS_UP_TO_DATE: 3>",
+    "/Game/Survival/UI/WBP_HUD": "<BlueprintStatus.BS_UP_TO_DATE: 3>"
+  },
+  "user_pie": {
+    "source": "ChatGPT 6ae76437-cc18-83ed-9f87-fac5280f1cdc; user assertions steps 5.27 and 5.28; also current request",
+    "a17": "PASS per user: I/cursor/input/items/quantities/weight; no Blueprint Runtime Errors",
+    "a16": "5/5 PASS per user",
+    "codex_repeated_physical_pie": false
+  },
+  "logs": {
+    "user_editor": {
+      "path": "D:\\Project\\SurvivalProject\\Saved\\Logs\\SurvivalProject.log",
+      "sha256": "25a89378fa29a82cba2e67fe6cc04c91055f72711102e1d41c8c7e62d99fbc92",
+      "matches": {
+        "Blueprint Runtime Error": 0,
+        "Accessed None": 0,
+        "LogBlueprint: Error": 0,
+        "LogScript: Error": 0
+      },
+      "note": "No full logs copied; absence of matches is not PIE functional acceptance."
+    },
+    "codex_compile": {
+      "path": "D:\\Project\\SurvivalProject\\.a17-audit-worktree\\Saved\\A17Audit\\Unreal.log",
+      "sha256": "1f8e03abb3bdab6fe7dcc01b12bae4a2456516583b5a0e2f5d78065c1e462c3d",
+      "matches": {
+        "Blueprint Runtime Error": 0,
+        "Accessed None": 0,
+        "LogBlueprint: Error": 0,
+        "LogScript: Error": 0
+      },
+      "note": "No full logs copied; absence of matches is not PIE functional acceptance."
+    }
+  },
+  "excluded": {
+    "Config/DefaultEngine.ini": "unrelated regenerated AFS SecurityToken; value excluded",
+    "Content/Survival/Maps/LV_SystemsTest.umap": "modified; task ownership and need not established; NOT COPIED",
+    "Docs/GAME_DESIGN_DOCUMENT.md": "unrelated user changes",
+    "Build/": "generated FileOpenOrder logs",
+    ".doc01-worktree/": "other worktree",
+    "Docs/Architecture/evidence/a15_followup/": "other task"
+  },
+  "checks": {
+    "fetch": "PASS",
+    "outgoing_history": "empty at audit start",
+    "lfs_version": "3.8.1",
+    "lfs_attributes": "PASS for both new widgets",
+    "lfs_fsck_objects_HEAD": "PASS; base objects only, not future staged/pushed objects",
+    "blueprint_compile": "5 BS_UP_TO_DATE",
+    "graph_export": "PASS; no error",
+    "dependency_package_presence": "PASS",
+    "A17_UI_contracts": "NOT RUN against current asset hashes; user previously reported PASS for physical PIE, but tests were not SHA-bound",
+    "A12_regression": "NOT RUN in this audit",
+    "package": "NOT RUN",
+    "mapping_key_audit": "INCONCLUSIVE: deprecated mappings property returned []; not evidence of missing runtime bindings",
+    "repository_ci": "PASS 7/7 groups; tracked/index files only, no runtime",
+    "diff_check": "PASS",
+    "new_evidence_syntax": "PASS: audit.py AST, graphs.json and audit_summary.json JSON"
+  },
+  "findings": [
+    {
+      "id": "A17-F1",
+      "severity": "RESOLVED_BY_SCOPE_CHANGE",
+      "description": "Owner confirmed Split/Merge and stale Revision are outside MVP; backlog now tracks them as A17.1. This is a documented scope split, not waived quality."
+    },
+    {
+      "id": "A17-F2",
+      "severity": "LIMITATION",
+      "description": "Refresh occurs on screen open; no InventoryChanged subscription found. No in-window inventory operation is included in read-only MVP. External mutation while window remains open is unverified."
+    },
+    {
+      "id": "A17-F3",
+      "severity": "DEFERRED_DEPENDENCY",
+      "description": "InventorySource is set when cached widget is first created. Pawn/PlayerState replacement lifecycle is tracked by A19; not an MVP acceptance scenario."
+    },
+    {
+      "id": "A17-F4",
+      "severity": "PUBLICATION_GATE",
+      "description": "Prior user PIE results are not bound to the audited asset hashes. Repeat MVP functional PIE and A16 regression on exact hashes before Draft PR."
+    }
+  ],
+  "scope_decision": {
+    "date": "2026-11-03",
+    "authority": "user scope confirmation in current task",
+    "a17_mvp": "read-only minimum inventory view; slots, quantities, weight, open/close, A16 integration",
+    "deferred_to": "A17.1 Split/Merge UI commands and stale Revision handling",
+    "agents_md_quality_rules_changed": false
+  }
+}

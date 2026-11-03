@@ -33,7 +33,7 @@ A11 (**реализована и объединена через [PR №16](http
 - [SEC02 — repository CI](27_SEC02_CI.md): PR №25 объединён, Actions на main success; это статические проверки без Unreal Engine.
 - SEC03: [активный Ruleset main](https://github.com/zonor922-hub/SurvivalProject/rules/26429234), проверен GitHub API; отдельного документа в main нет.
 
-A17 ведётся локально и не подтверждена в main. A36 остаётся техническим проектом. Отчёты SEC01/SEC02 сохраняют формулировки этапа до merge; актуальный статус указан в [ProjectStatus](../ProjectStatus.md).
+A17 MVP по уточнённому владельцем объёму прошла ручной PIE 10/10 с совпавшими pre/post SHA и готовится к Draft PR; Split/Merge и stale Revision выделены в A17.1. A36 остаётся техническим проектом. Отчёты SEC01/SEC02 сохраняют формулировки этапа до merge; актуальный статус указан в [ProjectStatus](../ProjectStatus.md).
 
 ## Основные решения
 
@@ -54,3 +54,5 @@ A17 ведётся локально и не подтверждена в main. A3
 [A11 — частичная реализация и дополнительный блокер inactive Durability](20_A11_IMPLEMENTATION_STATUS.md): ограниченный рефакторинг A09, результаты регрессии,2726 PASS/1 FAIL, полная матрица NOT RUN и SHA-256. Историческая остановка; снята вторым разрешением пользователя, текущая матрица — отчёт21.
 
 [A11 — итог реализации, приёмки и merge PR №16](21_A11_TRANSFER.md): аудитированный HEAD `957947c`, merge `6d4e854cbacc08e7f6d661eff00714c94cf974a4`, 15 093 PASS / 0 FAIL (12 Blueprint, PIE A09/A10/A11 и A24). Независимый аудит: Ready with Conditions, без Blocker/Major; [принятый риск бинарной непрозрачности Blueprint](https://github.com/zonor922-hub/SurvivalProject/pull/16#issuecomment-6488845100). Глобальная проверка GUID — A36/T15; загрузка/инвалидирование — A39 (**38a–d NOT RUN**); свежая упаковка — F04 (**не выполнена**). Отчёты 19/20 и промежуточные результаты остаются историческими свидетельствами.
+
+[A17 — независимый аудит 03.11.2026](29_A17_INVENTORY_UI_AUDIT.md): объём MVP уточнён владельцем; Split/Merge/stale Revision вынесены в A17.1. Compile 5/5 PASS; целевые PIE требуют повторения на текущих хешах перед Draft PR. Ручные PIE пользователя отделены от проверок Codex.
