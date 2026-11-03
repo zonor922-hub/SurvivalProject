@@ -1,5 +1,13 @@
 # SurvivalProject — текущий прогресс
 
+## A17 — независимый аудит 03.11.2026
+
+**A17 MVP — ручная PIE-приёмка завершена 10/10 PASS; Draft PR №28 открыт на проверку.** Владелец формально уточнил 03.11.2026, что минимальный экран — объём A17, а UI Split/Merge и stale Revision относятся к отдельной A17.1. Изменение объёма оформлено в backlog; требования AGENTS.md к проверкам и публикации сохранены. База после fetch `4784cb9d21f62243cf446cceafa04d73f0b77572`, зависимости A10/A12/A14/A16 присутствуют в main. Исходная `task/a17-inventory-ui` без исходящих коммитов; чистая копия подготовлена в `codex/a17-inventory-audit` (`.a17-audit-worktree`), резервная ссылка сохранена. Открыт Draft [PR №28](https://github.com/zonor922-hub/SurvivalProject/pull/28) из `codex/a17-inventory-audit`; исходный проверенный commit `6f574b66f44d0f20a9f14957bc9c4f983d2128af`. PR остаётся Draft и не объединён.
+
+Codex: UE 5.8.4, compile **5/5 BS_UP_TO_DATE**, exit 0; экспорт графов и наличие project package dependencies PASS; четыре кандидата ассетов побитово сохранены; LFS-атрибуты и fsck объектов базы PASS. Новые LFS upload/pre-push не проверялись. В последнем пользовательском логе и новом логе компиляции — 0 совпадений Blueprint Runtime Error/Accessed None. Пользовательские физические PIE A17 PASS и A16 5/5 PASS записаны отдельно; Codex их не повторял.
+
+**Ручная PIE:** пользователь сообщил A17 MVP 5/5 и A16 5/5 PASS, Output Log без Blueprint Runtime Error/Accessed None/Infinite Loop; сохранений/auto-fix не было. Codex повторно посчитал 4 целевых ассета + тестовую карту + 24 dependencies: 29/29 сравнений, 26 уникальных файлов, SHA совпали с preflight. Результаты пользователя отдельно от compile 5/5 Codex. Preflight, чеклист и Git state: `Architecture/evidence/a17/pie_preflight.json`. Live refresh во время внешней операции и перепривязка при смене Pawn/PlayerState не проверены; последнее остаётся зависимостью A19. A17.1 Split/Merge + stale Revision — отдельная задача. Для A17 MVP backlog не требует package; package не выполнялся. Чужие GDD/Build/A15, изменённая карта и Config с восстановленной строкой AFS SecurityToken исключены. Игровая логика не менялась. Полный состав, доказательства, ограничения, решение по объёму и следующие проверки: [отчёт A17](Architecture/29_A17_INVENTORY_UI_AUDIT.md).
+
 ## DOC01 — актуальная сводка (03.11.2026, Europe/Moscow)
 
 Проверенный HEAD `origin/main`: `04c09ce6aec359b2afaecc2ac6eddf37c495009e` (fetch и GitHub API). DOC01 меняет только этот файл, индекс архитектуры и новый [отчёт A16](Architecture/28_A16_INTERACTION_HUD.md); зависимости — объединённые A15/A16/SEC01/SEC02 и read-only проверка SEC03. Исторические FAIL/NOT RUN сохранены. Игра не объявляется готовой к выпуску.

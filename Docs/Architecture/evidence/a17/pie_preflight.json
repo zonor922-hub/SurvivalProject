@@ -1,0 +1,422 @@
+{
+  "captured_utc": "2026-11-03T13:46:17Z",
+  "project_to_open": "D:\\Project\\SurvivalProject\\SurvivalProject.uproject",
+  "tested_working_tree": {
+    "branch": "task/a17-inventory-ui",
+    "head": "4784cb9d21f62243cf446cceafa04d73f0b77572",
+    "origin_main_tracking": "4784cb9d21f62243cf446cceafa04d73f0b77572",
+    "status": "M Config/DefaultEngine.ini\n M Content/Survival/Core/BP_SurvivalPlayerController.uasset\n M Content/Survival/Input/IMC_Survival.uasset\n M Content/Survival/Maps/LV_SystemsTest.umap\n M Docs/GAME_DESIGN_DOCUMENT.md\n?? .a17-audit-worktree/\n?? .doc01-worktree/\n?? Build/\n?? Content/Survival/UI/Inventory/\n?? Docs/Architecture/evidence/a15_followup/",
+    "staged": "",
+    "outgoing_commits": "",
+    "note": "Unstaged source assets are user changes. No files were staged in this tree. The audit worktree containing the checklist and report changes is separate."
+  },
+  "audit_worktree": {
+    "path": "D:\\Project\\SurvivalProject\\.a17-audit-worktree",
+    "branch": "codex/a17-inventory-audit",
+    "head": "4784cb9d21f62243cf446cceafa04d73f0b77572",
+    "status": "M Content/Survival/Core/BP_SurvivalPlayerController.uasset\n M Content/Survival/Input/IMC_Survival.uasset\n M Docs/Architecture/03_IMPLEMENTATION_BACKLOG.md\n M Docs/Architecture/README.md\n M Docs/ProjectStatus.md\n?? Content/Survival/UI/Inventory/\n?? Docs/Architecture/29_A17_INVENTORY_UI_AUDIT.md\n?? Docs/Architecture/evidence/a17/",
+    "staged": "",
+    "outgoing_commits": ""
+  },
+  "changed_a17_mvp_assets": [
+    {
+      "path": "Content/Survival/UI/Inventory/WBP_Inventory.uasset",
+      "bytes": 123978,
+      "sha256": "9019e7f98dbb11d2f1beec58c2b50274083c8c1a4a014207520425c102ed650e",
+      "lfs": true,
+      "purpose": "MVP inventory display widget"
+    },
+    {
+      "path": "Content/Survival/UI/Inventory/WBP_InventorySlot.uasset",
+      "bytes": 55667,
+      "sha256": "fd640b37cf5eae128df84da18af67a46c199ebf0ff82d2744ed55ccbf1c412d5",
+      "lfs": true,
+      "purpose": "MVP slot display widget"
+    },
+    {
+      "path": "Content/Survival/Core/BP_SurvivalPlayerController.uasset",
+      "bytes": 710172,
+      "sha256": "b1dcde0fa5ac87aec85dcb39a3960a20809104e599e9b73f258cd0dcb3ffe2b3",
+      "lfs": true,
+      "purpose": "I input, widget lifecycle, A16 integration"
+    },
+    {
+      "path": "Content/Survival/Input/IMC_Survival.uasset",
+      "bytes": 2825,
+      "sha256": "1203cf556ff39c51bcf54b2183bf7eb63af7a1d4436f131be4af35f9467adcae",
+      "lfs": true,
+      "purpose": "Enhanced Input mapping context"
+    }
+  ],
+  "test_environment_map": {
+    "path": "Content/Survival/Maps/LV_SystemsTest.umap",
+    "sha256": "a6489d0b4986a87c164cc00ded1cc20118950b52449f2818ac24f059a7da29b0",
+    "bytes": 33643,
+    "lfs": true,
+    "purpose": "PIE test environment; dirty in user working tree and excluded from MVP change until ownership/relevance is separately established"
+  },
+  "unreal_project_dependencies": [
+    {
+      "package": "/Game/Survival/Character/BP_SurvivalCharacter",
+      "path": "Content/Survival/Character/BP_SurvivalCharacter.uasset",
+      "sha256": "315eec92639745e08b73b2ff1a0b69174b74a2e6dbb0930703fc9d9c0ff7a0aa",
+      "note": "unchanged direct/indirect package dependency; record only, not proposed as A17 change"
+    },
+    {
+      "package": "/Game/Survival/Core/BP_SurvivalGameInstance",
+      "path": "Content/Survival/Core/BP_SurvivalGameInstance.uasset",
+      "sha256": "2f98a32cf5eab388b82022c26bf1826e82893fd4a9370e5a02db5f70a8bbfbd7",
+      "note": "unchanged direct/indirect package dependency; record only, not proposed as A17 change"
+    },
+    {
+      "package": "/Game/Survival/Core/BP_SurvivalPlayerState",
+      "path": "Content/Survival/Core/BP_SurvivalPlayerState.uasset",
+      "sha256": "dc769c61a80d11ea6220670dd4efbee9ff5f036ec146c324aab1fa91c592d625",
+      "note": "unchanged direct/indirect package dependency; record only, not proposed as A17 change"
+    },
+    {
+      "package": "/Game/Survival/Input/Actions/IA_Interact",
+      "path": "Content/Survival/Input/Actions/IA_Interact.uasset",
+      "sha256": "8299ba2bd8a5137e0d33b3c65195c2ff1845d43997710a72c53176b01186e1fd",
+      "note": "unchanged direct/indirect package dependency; record only, not proposed as A17 change"
+    },
+    {
+      "package": "/Game/Survival/Input/Actions/IA_Inventory",
+      "path": "Content/Survival/Input/Actions/IA_Inventory.uasset",
+      "sha256": "b2ee9f3b4593a4e18b01f0ce0b18ceeaeca7cfc66b1aba599b03849b219eb4cd",
+      "note": "unchanged direct/indirect package dependency; record only, not proposed as A17 change"
+    },
+    {
+      "package": "/Game/Survival/Input/ESurvivalInputMode",
+      "path": "Content/Survival/Input/ESurvivalInputMode.uasset",
+      "sha256": "21a0834575da41ce095e0a2731850a8efd67d294f546e248c00f4528b365dbc1",
+      "note": "unchanged direct/indirect package dependency; record only, not proposed as A17 change"
+    },
+    {
+      "package": "/Game/Survival/Input/IMC_Survival",
+      "path": "Content/Survival/Input/IMC_Survival.uasset",
+      "sha256": "1203cf556ff39c51bcf54b2183bf7eb63af7a1d4436f131be4af35f9467adcae",
+      "note": "unchanged direct/indirect package dependency; record only, not proposed as A17 change"
+    },
+    {
+      "package": "/Game/Survival/Interaction/BPC_Interaction",
+      "path": "Content/Survival/Interaction/BPC_Interaction.uasset",
+      "sha256": "a323d0c1b9d91e7cb721b90ea03bc098d0cd2aff9e2024299eaf4cd29f5f6b0b",
+      "note": "unchanged direct/indirect package dependency; record only, not proposed as A17 change"
+    },
+    {
+      "package": "/Game/Survival/Interaction/BPI_Interactable",
+      "path": "Content/Survival/Interaction/BPI_Interactable.uasset",
+      "sha256": "d4bdd2520bf80e4edc8bedd1565fae426491ade96e0e59c951525508fb6d4545",
+      "note": "unchanged direct/indirect package dependency; record only, not proposed as A17 change"
+    },
+    {
+      "package": "/Game/Survival/Interaction/BP_WorldPickup",
+      "path": "Content/Survival/Interaction/BP_WorldPickup.uasset",
+      "sha256": "649dcd6ccc5bc3915ebf3dfc9f708c9160aeb887be29a0b92967163e29a85f12",
+      "note": "unchanged direct/indirect package dependency; record only, not proposed as A17 change"
+    },
+    {
+      "package": "/Game/Survival/Interaction/FInteractionContext",
+      "path": "Content/Survival/Interaction/FInteractionContext.uasset",
+      "sha256": "03607b007fd05ebf43a51f7a0e35c1c8cd70a82a40d76e280f7577de1bc7f7bd",
+      "note": "unchanged direct/indirect package dependency; record only, not proposed as A17 change"
+    },
+    {
+      "package": "/Game/Survival/Interaction/FInteractionOption",
+      "path": "Content/Survival/Interaction/FInteractionOption.uasset",
+      "sha256": "1795b4d9b1839e03dcd3a2009f16e41d8db8a938e253987af3512c9589c948cd",
+      "note": "unchanged direct/indirect package dependency; record only, not proposed as A17 change"
+    },
+    {
+      "package": "/Game/Survival/Interaction/FInteractionResult",
+      "path": "Content/Survival/Interaction/FInteractionResult.uasset",
+      "sha256": "c145650e119b4de71b27f9cd453c8d74fc17d74e274e961e1a7f2f4c474b2709",
+      "note": "unchanged direct/indirect package dependency; record only, not proposed as A17 change"
+    },
+    {
+      "package": "/Game/Survival/Inventory/BPC_Inventory",
+      "path": "Content/Survival/Inventory/BPC_Inventory.uasset",
+      "sha256": "d766c69cd3069f3b538d2dd1c3472effea00313a707eaa5139280e4e729fa73a",
+      "note": "unchanged direct/indirect package dependency; record only, not proposed as A17 change"
+    },
+    {
+      "package": "/Game/Survival/Items/Definitions/PDA_ItemDefinition",
+      "path": "Content/Survival/Items/Definitions/PDA_ItemDefinition.uasset",
+      "sha256": "aed834f0a193860f5c29484ab52d596547abfdfdabcb45b5091e33b004ddb6b9",
+      "note": "unchanged direct/indirect package dependency; record only, not proposed as A17 change"
+    },
+    {
+      "package": "/Game/Survival/Items/Types/EOperationError",
+      "path": "Content/Survival/Items/Types/EOperationError.uasset",
+      "sha256": "25556af5170cbc7353d4d34b7a705b47d2db6674761495aa1ae09f863ed9b5e6",
+      "note": "unchanged direct/indirect package dependency; record only, not proposed as A17 change"
+    },
+    {
+      "package": "/Game/Survival/Items/Types/FInventorySlot",
+      "path": "Content/Survival/Items/Types/FInventorySlot.uasset",
+      "sha256": "87f49ccfb69d8deafe93b718690dc7ec2bda711e7491cf9ee79380f1e5e27f1e",
+      "note": "unchanged direct/indirect package dependency; record only, not proposed as A17 change"
+    },
+    {
+      "package": "/Game/Survival/Items/Types/FInventorySnapshot",
+      "path": "Content/Survival/Items/Types/FInventorySnapshot.uasset",
+      "sha256": "e964959da9a60b3f8e4d39f73c50f779baa9ca97fe943a72a43ba406b4ce6f9b",
+      "note": "unchanged direct/indirect package dependency; record only, not proposed as A17 change"
+    },
+    {
+      "package": "/Game/Survival/Items/Types/FItemStack",
+      "path": "Content/Survival/Items/Types/FItemStack.uasset",
+      "sha256": "5672c4dfaf1c0ae08c6561afb9612315bba16bd142698c94324599481468efcf",
+      "note": "unchanged direct/indirect package dependency; record only, not proposed as A17 change"
+    },
+    {
+      "package": "/Game/Survival/Items/Types/FOperationResult",
+      "path": "Content/Survival/Items/Types/FOperationResult.uasset",
+      "sha256": "78155ae5b3ca30316541aa459322a967d800b28fd497394d48c3f1fb5199a6a5",
+      "note": "unchanged direct/indirect package dependency; record only, not proposed as A17 change"
+    },
+    {
+      "package": "/Game/Survival/UI/Inventory/WBP_Inventory",
+      "path": "Content/Survival/UI/Inventory/WBP_Inventory.uasset",
+      "sha256": "9019e7f98dbb11d2f1beec58c2b50274083c8c1a4a014207520425c102ed650e",
+      "note": "unchanged direct/indirect package dependency; record only, not proposed as A17 change"
+    },
+    {
+      "package": "/Game/Survival/UI/Inventory/WBP_InventorySlot",
+      "path": "Content/Survival/UI/Inventory/WBP_InventorySlot.uasset",
+      "sha256": "fd640b37cf5eae128df84da18af67a46c199ebf0ff82d2744ed55ccbf1c412d5",
+      "note": "unchanged direct/indirect package dependency; record only, not proposed as A17 change"
+    },
+    {
+      "package": "/Game/Survival/UI/WBP_HUD",
+      "path": "Content/Survival/UI/WBP_HUD.uasset",
+      "sha256": "bb917765712a3e50eb35abd04f58d053e8ec56138001063d8f18dafc67fb43e2",
+      "note": "unchanged direct/indirect package dependency; record only, not proposed as A17 change"
+    },
+    {
+      "package": "/Game/ThirdPerson/Blueprints/BP_ThirdPersonPlayerController",
+      "path": "Content/ThirdPerson/Blueprints/BP_ThirdPersonPlayerController.uasset",
+      "sha256": "1eea710b3f7975732b53dd245e375f39c59c1b8ca468ebacce4e31bc47e88592",
+      "note": "unchanged direct/indirect package dependency; record only, not proposed as A17 change"
+    }
+  ],
+  "sha256_policy": "Calculate again immediately after PIE; all checked files must match. Any mismatch invalidates this preflight and needs explanation before publication. Do not save packages or accept auto-fix prompts during the manual run.",
+  "checklist": [
+    {
+      "id": "A17-PIE-1",
+      "steps": [
+        "Open project_to_open and Content/Survival/Maps/LV_SystemsTest.umap",
+        "Start PIE; press I once",
+        "Verify inventory window appears, cursor appears, and WASD/mouse-look do not control the character/camera",
+        "Close with I; verify window/cursor close and gameplay movement/look return"
+      ],
+      "result": "PASS",
+      "result_source": "user-reported manual PIE; not run by Codex",
+      "step_results": [
+        "PASS",
+        "PASS",
+        "PASS"
+      ]
+    },
+    {
+      "id": "A17-PIE-2",
+      "steps": [
+        "Reopen inventory",
+        "Compare displayed occupied slots and quantities with PlayerState Inventory GetSnapshot",
+        "Verify displayed current/max weight agrees with GetCurrentWeight and MaxWeight; include fractional formatting when present",
+        "Close and reopen; verify values persist"
+      ],
+      "result": "PASS",
+      "result_source": "user-reported manual PIE; not run by Codex",
+      "step_results": [
+        "PASS",
+        "PASS",
+        "PASS"
+      ]
+    },
+    {
+      "id": "A17-PIE-3",
+      "steps": [
+        "With inventory open, aim at the A16 world pickup and press E",
+        "Verify pickup does not occur and inventory stays unchanged",
+        "Close inventory; press E once and verify pickup and A16 HUD/prompt update",
+        "Press E again; verify no duplicate item",
+        "Repeat focus/prompt disappearance and confirm no Blueprint Runtime Error or Accessed None in Output Log"
+      ],
+      "result": "PASS",
+      "result_source": "user-reported manual PIE; not run by Codex",
+      "step_results": [
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS"
+      ]
+    }
+  ],
+  "not_in_mvp": [
+    "Split/Merge UI commands",
+    "stale Revision handling",
+    "container UI",
+    "drag and drop"
+  ],
+  "capture_scope": {
+    "hashes_recorded_before_test": true,
+    "asset_changes_made_by_codex": false,
+    "editor_auto_fix_run": false,
+    "project_opened_or_pie_run_by_codex": false,
+    "root_dirty_map_committed_or_proposed": false
+  },
+  "post_pie_verification": {
+    "captured_utc": "2026-11-03T13:54:54Z",
+    "user_manual_results": "A17 MVP 5/5 PASS; A16 5/5 PASS; no Blueprint Runtime Error, Accessed None, Infinite Loop; no save; no auto-fix",
+    "tested_project_root": "D:\\Project\\SurvivalProject",
+    "tested_branch": "task/a17-inventory-ui",
+    "tested_head": "4784cb9d21f62243cf446cceafa04d73f0b77572",
+    "test_map": "Content/Survival/Maps/LV_SystemsTest.umap",
+    "git_status_after_pie": "M Content/Survival/Core/BP_SurvivalPlayerController.uasset\n M Content/Survival/Input/IMC_Survival.uasset\n M Docs/Architecture/03_IMPLEMENTATION_BACKLOG.md\n M Docs/Architecture/README.md\n M Docs/ProjectStatus.md\n?? Content/Survival/UI/Inventory/\n?? Docs/Architecture/29_A17_INVENTORY_UI_AUDIT.md\n?? Docs/Architecture/evidence/a17/",
+    "assets_saved": false,
+    "auto_fix": false,
+    "hashes": {
+      "Content/Survival/UI/Inventory/WBP_Inventory.uasset": {
+        "pre_pie": "9019e7f98dbb11d2f1beec58c2b50274083c8c1a4a014207520425c102ed650e",
+        "post_pie": "9019e7f98dbb11d2f1beec58c2b50274083c8c1a4a014207520425c102ed650e",
+        "match": true
+      },
+      "Content/Survival/UI/Inventory/WBP_InventorySlot.uasset": {
+        "pre_pie": "fd640b37cf5eae128df84da18af67a46c199ebf0ff82d2744ed55ccbf1c412d5",
+        "post_pie": "fd640b37cf5eae128df84da18af67a46c199ebf0ff82d2744ed55ccbf1c412d5",
+        "match": true
+      },
+      "Content/Survival/Core/BP_SurvivalPlayerController.uasset": {
+        "pre_pie": "b1dcde0fa5ac87aec85dcb39a3960a20809104e599e9b73f258cd0dcb3ffe2b3",
+        "post_pie": "b1dcde0fa5ac87aec85dcb39a3960a20809104e599e9b73f258cd0dcb3ffe2b3",
+        "match": true
+      },
+      "Content/Survival/Input/IMC_Survival.uasset": {
+        "pre_pie": "1203cf556ff39c51bcf54b2183bf7eb63af7a1d4436f131be4af35f9467adcae",
+        "post_pie": "1203cf556ff39c51bcf54b2183bf7eb63af7a1d4436f131be4af35f9467adcae",
+        "match": true
+      },
+      "Content/Survival/Character/BP_SurvivalCharacter.uasset": {
+        "pre_pie": "315eec92639745e08b73b2ff1a0b69174b74a2e6dbb0930703fc9d9c0ff7a0aa",
+        "post_pie": "315eec92639745e08b73b2ff1a0b69174b74a2e6dbb0930703fc9d9c0ff7a0aa",
+        "match": true
+      },
+      "Content/Survival/Core/BP_SurvivalGameInstance.uasset": {
+        "pre_pie": "2f98a32cf5eab388b82022c26bf1826e82893fd4a9370e5a02db5f70a8bbfbd7",
+        "post_pie": "2f98a32cf5eab388b82022c26bf1826e82893fd4a9370e5a02db5f70a8bbfbd7",
+        "match": true
+      },
+      "Content/Survival/Core/BP_SurvivalPlayerState.uasset": {
+        "pre_pie": "dc769c61a80d11ea6220670dd4efbee9ff5f036ec146c324aab1fa91c592d625",
+        "post_pie": "dc769c61a80d11ea6220670dd4efbee9ff5f036ec146c324aab1fa91c592d625",
+        "match": true
+      },
+      "Content/Survival/Input/Actions/IA_Interact.uasset": {
+        "pre_pie": "8299ba2bd8a5137e0d33b3c65195c2ff1845d43997710a72c53176b01186e1fd",
+        "post_pie": "8299ba2bd8a5137e0d33b3c65195c2ff1845d43997710a72c53176b01186e1fd",
+        "match": true
+      },
+      "Content/Survival/Input/Actions/IA_Inventory.uasset": {
+        "pre_pie": "b2ee9f3b4593a4e18b01f0ce0b18ceeaeca7cfc66b1aba599b03849b219eb4cd",
+        "post_pie": "b2ee9f3b4593a4e18b01f0ce0b18ceeaeca7cfc66b1aba599b03849b219eb4cd",
+        "match": true
+      },
+      "Content/Survival/Input/ESurvivalInputMode.uasset": {
+        "pre_pie": "21a0834575da41ce095e0a2731850a8efd67d294f546e248c00f4528b365dbc1",
+        "post_pie": "21a0834575da41ce095e0a2731850a8efd67d294f546e248c00f4528b365dbc1",
+        "match": true
+      },
+      "Content/Survival/Interaction/BPC_Interaction.uasset": {
+        "pre_pie": "a323d0c1b9d91e7cb721b90ea03bc098d0cd2aff9e2024299eaf4cd29f5f6b0b",
+        "post_pie": "a323d0c1b9d91e7cb721b90ea03bc098d0cd2aff9e2024299eaf4cd29f5f6b0b",
+        "match": true
+      },
+      "Content/Survival/Interaction/BPI_Interactable.uasset": {
+        "pre_pie": "d4bdd2520bf80e4edc8bedd1565fae426491ade96e0e59c951525508fb6d4545",
+        "post_pie": "d4bdd2520bf80e4edc8bedd1565fae426491ade96e0e59c951525508fb6d4545",
+        "match": true
+      },
+      "Content/Survival/Interaction/BP_WorldPickup.uasset": {
+        "pre_pie": "649dcd6ccc5bc3915ebf3dfc9f708c9160aeb887be29a0b92967163e29a85f12",
+        "post_pie": "649dcd6ccc5bc3915ebf3dfc9f708c9160aeb887be29a0b92967163e29a85f12",
+        "match": true
+      },
+      "Content/Survival/Interaction/FInteractionContext.uasset": {
+        "pre_pie": "03607b007fd05ebf43a51f7a0e35c1c8cd70a82a40d76e280f7577de1bc7f7bd",
+        "post_pie": "03607b007fd05ebf43a51f7a0e35c1c8cd70a82a40d76e280f7577de1bc7f7bd",
+        "match": true
+      },
+      "Content/Survival/Interaction/FInteractionOption.uasset": {
+        "pre_pie": "1795b4d9b1839e03dcd3a2009f16e41d8db8a938e253987af3512c9589c948cd",
+        "post_pie": "1795b4d9b1839e03dcd3a2009f16e41d8db8a938e253987af3512c9589c948cd",
+        "match": true
+      },
+      "Content/Survival/Interaction/FInteractionResult.uasset": {
+        "pre_pie": "c145650e119b4de71b27f9cd453c8d74fc17d74e274e961e1a7f2f4c474b2709",
+        "post_pie": "c145650e119b4de71b27f9cd453c8d74fc17d74e274e961e1a7f2f4c474b2709",
+        "match": true
+      },
+      "Content/Survival/Inventory/BPC_Inventory.uasset": {
+        "pre_pie": "d766c69cd3069f3b538d2dd1c3472effea00313a707eaa5139280e4e729fa73a",
+        "post_pie": "d766c69cd3069f3b538d2dd1c3472effea00313a707eaa5139280e4e729fa73a",
+        "match": true
+      },
+      "Content/Survival/Items/Definitions/PDA_ItemDefinition.uasset": {
+        "pre_pie": "aed834f0a193860f5c29484ab52d596547abfdfdabcb45b5091e33b004ddb6b9",
+        "post_pie": "aed834f0a193860f5c29484ab52d596547abfdfdabcb45b5091e33b004ddb6b9",
+        "match": true
+      },
+      "Content/Survival/Items/Types/EOperationError.uasset": {
+        "pre_pie": "25556af5170cbc7353d4d34b7a705b47d2db6674761495aa1ae09f863ed9b5e6",
+        "post_pie": "25556af5170cbc7353d4d34b7a705b47d2db6674761495aa1ae09f863ed9b5e6",
+        "match": true
+      },
+      "Content/Survival/Items/Types/FInventorySlot.uasset": {
+        "pre_pie": "87f49ccfb69d8deafe93b718690dc7ec2bda711e7491cf9ee79380f1e5e27f1e",
+        "post_pie": "87f49ccfb69d8deafe93b718690dc7ec2bda711e7491cf9ee79380f1e5e27f1e",
+        "match": true
+      },
+      "Content/Survival/Items/Types/FInventorySnapshot.uasset": {
+        "pre_pie": "e964959da9a60b3f8e4d39f73c50f779baa9ca97fe943a72a43ba406b4ce6f9b",
+        "post_pie": "e964959da9a60b3f8e4d39f73c50f779baa9ca97fe943a72a43ba406b4ce6f9b",
+        "match": true
+      },
+      "Content/Survival/Items/Types/FItemStack.uasset": {
+        "pre_pie": "5672c4dfaf1c0ae08c6561afb9612315bba16bd142698c94324599481468efcf",
+        "post_pie": "5672c4dfaf1c0ae08c6561afb9612315bba16bd142698c94324599481468efcf",
+        "match": true
+      },
+      "Content/Survival/Items/Types/FOperationResult.uasset": {
+        "pre_pie": "78155ae5b3ca30316541aa459322a967d800b28fd497394d48c3f1fb5199a6a5",
+        "post_pie": "78155ae5b3ca30316541aa459322a967d800b28fd497394d48c3f1fb5199a6a5",
+        "match": true
+      },
+      "Content/Survival/UI/WBP_HUD.uasset": {
+        "pre_pie": "bb917765712a3e50eb35abd04f58d053e8ec56138001063d8f18dafc67fb43e2",
+        "post_pie": "bb917765712a3e50eb35abd04f58d053e8ec56138001063d8f18dafc67fb43e2",
+        "match": true
+      },
+      "Content/ThirdPerson/Blueprints/BP_ThirdPersonPlayerController.uasset": {
+        "pre_pie": "1eea710b3f7975732b53dd245e375f39c59c1b8ca468ebacce4e31bc47e88592",
+        "post_pie": "1eea710b3f7975732b53dd245e375f39c59c1b8ca468ebacce4e31bc47e88592",
+        "match": true
+      },
+      "Content/Survival/Maps/LV_SystemsTest.umap": {
+        "pre_pie": "a6489d0b4986a87c164cc00ded1cc20118950b52449f2818ac24f059a7da29b0",
+        "post_pie": "a6489d0b4986a87c164cc00ded1cc20118950b52449f2818ac24f059a7da29b0",
+        "match": true,
+        "role": "test environment, excluded from A17 PR"
+      }
+    },
+    "comparisons": {
+      "entries_checked": 29,
+      "unique_files_checked": 26,
+      "matches": 26,
+      "mismatches": []
+    }
+  },
+  "publication": "Ready to prepare isolated Draft PR after final branch/file/LFS checks; do not merge"
+}
