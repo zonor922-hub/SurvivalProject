@@ -553,95 +553,85 @@
 
 **Статус:** продвинутый редактор C утверждён **без terrain tools**; BUILD-C02-A использует поэлементный ConfirmPart. Раскладка, визуал, лимиты и правила обмена чертежами ещё открыты.
 
-## Итоговый аудит BUILD01 — 2026-11-05
+## Итоговый аудит BUILD01 — актуализация 2026-11-06
 
-### Реестр утверждений
+**Актуальный результат:** шесть основных действующих решений D01–D05/D07, D06-C отозван; C03-TECH-B и C12 закрыты **как NOT APPLICABLE**, не как прошедшие тестирование. C08-B утверждён как план работ, а исторические A29–A40 и A36 SaveVersion 1 пока не менялись.
 
-| ID | Решение | GDD |
+### Реестр действующих основных решений
+
+| ID | Действующий выбор | Статус |
 |---|---|---|
-| BUILD-D01-B | Модульные Snap Points + свободные функциональные объекты | APPROVED |
-| BUILD-D02-B | Расширенный поэтапный набор модулей | APPROVED |
-| BUILD-D03-B | Поддержка, устойчивость, перерасчёт при разрушении | APPROVED |
-| BUILD-D04-B | Материалы, уровни, улучшение на месте | APPROVED |
-| BUILD-D05-B | HP, ремонт, урон, разрушение, демонтаж | APPROVED |
-| BUILD-D06-C | Ранее: выравнивание, насыпи, выемки; **отказ от терраформирования** 2026-11-06 | WITHDRAWN / HISTORICAL |
-| BUILD-D07-C | Продвинутый редактор, чертежи, шаблоны, массовое размещение | APPROVED |
+| BUILD-D01-B | Гибридное размещение по сокетам и свободная установка функциональных объектов | APPROVED |
+| BUILD-D02-B | Расширенные модули, основания, опоры, крыши и дополнительные элементы | APPROVED |
+| BUILD-D03-B | Проверяемая структурная устойчивость и каскады при разрушении опор | APPROVED |
+| BUILD-D04-B | Материалы/tier, улучшение на месте с сохранением ID | APPROVED |
+| BUILD-D05-B | HP, урон, ремонт, safe demolition без refund | APPROVED |
+| BUILD-D06-C | Бывшая механика выемки/насыпей/выравнивания | **WITHDRAWN, история в архиве** |
+| BUILD-D07-C | Продвинутый редактор, C02-A поэлементный монтаж, C06-B материалы/чертежи, **без terrain tools** | APPROVED |
 
-### Сопоставление с техническими задачами A29–A40 и Inventory
+### Реестр активных уточнений и технических зависимостей
 
-| Задача | Подтверждённая база / новая целевая норма | Итог |
+| ID | Статус | Что утверждено / остаётся |
 |---|---|---|
-| Inventory A05–A12 | При BUILD-C02-A каждый успешный Part Confirm списывает точный cost один раз; другие частичные операции и multi-inventory transfer остаются отдельными контрактами | DESIGN COMPATIBLE / SINGLE-STEP IMPLEMENTATION OPEN |
-| A17/A17.1, A14/A16 | UI Inventory/HUD и Enhanced Input: Build mode не должен создавать конфликт Gameplay/UI или повторные обработчики; фактическое состояние A17.1 не считается доказанным опубликованным контрактом | UI INTEGRATION OPEN |
-| A25–A27 | Рецепты в каталоге, валидация ресурсов и актуальный cost; новые recipe/material/terrain costs не должны подменять крафт или дублировать предметы | DESIGN COMPATIBLE; цены OPEN |
-| A29 | PDA_BuildDefinition для модулей D02: materials/tier, полный cost, footprint/slope/sockets; C06-B template сохраняет только определения и локальные связи, а не классы/actor | SCOPE EXPANSION |
-| A30 | BPC_Building preview + Confirm/Cancel; расширить для выбора шаблона, ghost-группы и terrain-preview; не сохранять preview | SCOPE EXPANSION |
-| A31 | BuildPlacement channel, range/slope/collision/NoBuildZone для воды; D06-C разрешает подготовить грунт, но НЕ отменяет запреты. Нужна новая collision/terrain validation | SCOPE EXPANSION |
-| A32 | BUILD-C02-A: один ConfirmPart = один actor + один cost; отказ без side effects, duplicate CommandId игнорировать, никаких групповыми install-команд | DESIGN APPROVED / A32 IMPLEMENTATION OPEN |
-| A33 | Поддерживать многоточечные links C04-B, сохранение storage/InventoryId и одноразовый перенос содержимого уничтоженного сундука в world drops C05-B; стартовый loot не повторять | DESIGN COMPATIBLE / EXTEND |
-| A34 | Без refund, опоры с потомками и непустой сундук не демонтируются. BUILD-C04-B требует отдельного подтверждения подкапывания и блокирует разрушение storage до проверенного C05-B pipeline, сна до C07 | DESIGN COMPATIBLE / IMPLEMENTATION OPEN |
-| A35 | Тесты C02-T01–T16: ghost-план, 32/40 с отказом на 33-м, отдельные подтверждения, duplicate Confirm, stale Revision, cancel после успеха, save/load | TEST PLAN EXPANSION |
-| A36 | v1 остаётся исходным контрактом; BUILD-C01-B v2 включает terrain/HP/tier/SLEEP и отдельные templates, а BUILD-C04-B определяет новый авторитетный массив SupportLinks + v1 migration | DESIGN APPROVED / IMPLEMENTATION GAP |
-| A37 | Snapshot должен собирать цельное состояние построек + terrain + Inventory + сна; предварительный чертёж не включать в world snapshot, не снимать снимок во время незавершённой транзакции | OPEN |
-| A38 | Применить v1→v2 migration в памяти, сохранить двухслотовый fallback/manifest и проверить реальное восстановление геометрии. Не утверждать физическую атомарность файлов без T51/T52 | OPEN |
-| A39 | По BUILD-C01-B/C07-B: version/migrate/validate → map → terrain+collision → inactive beds/bags/build actors/support → WorldClock/Needs/AssignedBedId → Activate/UI; старые команды инвалидировать | CRITICAL ORDERING / DESIGN TARGET |
-| A40 | Golden fixtures/migration: C06-B geometry+material templates без GUID/loot, последовательный build C02-A, сохранение между шагами, terrain, storage, опоры, сон и double load | TEST PLAN EXPANSION |
-| SLEEP01 | Уникальная назначенная кровать и её fallback, многократное использование спальника, защита от потерь при перемещении, безопасный сон при изменённом рельефе | COMPATIBLE; integration OPEN |
+| BUILD-C01-B | DESIGN APPROVED / IMPLEMENTATION BLOCKED | SaveVersion 2, v1→v2 миграция, HP/tier, SupportLinks, WorldDrops и SLEEP01; **нет terrain delta/terrain DTO**. Нужны DTO schema review, A36–A40 fixtures и тесты |
+| BUILD-C02-A | DESIGN APPROVED / IMPLEMENTATION BLOCKED | Один ConfirmPart = один построенный и оплаченный элемент; A32 atomics, Revision/epoch и PIE ещё не проверены |
+| BUILD-C03-TECH-B | **RETIRED / NOT APPLICABLE** | Отменена технология изменяемой земли, C03-T01–T12 не выполнять |
+| BUILD-C04-B | DESIGN APPROVED / IMPLEMENTATION BLOCKED | Многоточечные опоры, damage/cascade и v2 links; **подкапывание земли удалено**. Нужны graph/rollback/tests |
+| BUILD-C05-B | DESIGN APPROVED / IMPLEMENTATION BLOCKED | Разрушенный сундук передаёт вещи в один набор world drops; нужны atomic pipeline, Save/Load и отсутствие дублей |
+| BUILD-C06-B | DESIGN APPROVED / IMPLEMENTATION OPEN | Геометрия/материалы шаблонов, новые EntityId/InventoryId, без loot/assigned bed/HP; нужны library schema и тесты |
+| BUILD-C07-B | DESIGN APPROVED / IMPLEMENTATION OPEN | Установленная кровать/спальник, SLEEP01 interruption при damage, WorldClock и respawn; **terrain-edit часть RETIRED** |
+| BUILD-C08-B | DESIGN APPROVED / BACKLOG UPDATE PENDING | BUILD-WP01–WP07 определены в GDD. Исходный backlog A29–A40 **не изменён** |
+| BUILD-C09 | OPEN | HP при улучшении, ремонт/стоимость/материалы |
+| BUILD-C10 | OPEN | Session/Command epoch + stale Revision после загрузки |
+| BUILD-C11 | OPEN | Template limits, profiles, sharing/import и UI |
+| BUILD-C12 | **RETIRED / NOT APPLICABLE** | Без изменения земли нет экономики копания |
 
-### Конфликты и открытые решения (не пересматривают D01–D07)
+**Вердикт:** BLOCKER реализации сохраняются на техническом уровне для C01, C02, C04 и C05, а не для отменённого C03. C09–C11 — ещё открытые решения. Никакие Unreal/PIE/Windows/package проверки не проводились. Прошлые тестовые матрицы terrain C01/C04/C07 архивны в соответствующей части, не являются acceptance. Оригинальные A29–A40 остаются источником базовых контрактов.
 
-| Код | Приоритет | Обнаруженное расхождение / вопрос | Требуемое решение до реализации |
-|---|---|---|---|
-| BUILD-C01 | BLOCKER / DIRECTION APPROVED | Утверждён BUILD-C01-B: SaveVersion 2 с v1→v2 миграцией, целевыми world/terrain/HP/tier/SLEEP DTO и отдельным версионированным template storage. Двоичный terrain payload и миграция сна ещё не проверены | Выполнить C01-T01–T15 и отдельный schema change review после BUILD-C03 feasibility; сохранять v1, защитить старые поколения и не менять действующие Blueprint |
-| BUILD-C02 | DESIGN APPROVED / RUNTIME BLOCKED | Утверждён BUILD-C02-A: шаблон и ghost всей постройки, но установка только одной детали за один ConfirmPart и отдельный cost/EntityId; нет группового commit | Реализовать и проверить A32 single-piece atomic contract, CommandId/Revision/epoch, Cancel/rollback только текущего шага и C02-T01–T16; предыдущие успешные детали сохраняются |
-| BUILD-C03 | BLOCKER / DIRECTION SELECTED | Выбрано BUILD-C03-TECH-B: собственные изменяемые участки. Runtime-прототип, корректная замена исходного Landscape/collision и packaged build не проверены | Выполнить C03-T01–T12, особенно T02–T04 (углубления/старый collision), T05 (вода), T07 (save/load), T12 (package); только затем решать feasibility blocker |
-| BUILD-C04 | BLOCKER / DESIGN APPROVED | Утверждён BUILD-C04-B: несколько независимых опор, детерминированный пересчёт после terrain edit, отдельное подтверждение обрушения, защитные запреты storage/сна до C05/C07 | Реализовать и проверить v2 SupportLinks, migration v1, каскады и C04-T01–T16; сохранять BLOCKER до независимой runtime-проверки |
-| BUILD-C05 | BLOCKER / DESIGN APPROVED | Утверждён BUILD-C05-B: содержимое разрушенного сундука переходит в подбираемый world loot, однократно и без refund; безопасный demolition непустого storage по A34 не изменён | Реализовать atomic chest→drops и world-drop DTO v2, проверить C05-T01–T16, save/load и каскады; BLOCKER сохранять до runtime-подтверждения |
-| BUILD-C06 | DESIGN APPROVED / IMPLEMENTATION OPEN | Утверждён BUILD-C06-B: шаблон содержит geometry/local links и материал/tier, но не копирует runtime EntityId, StackId, InventoryId, HP, loot, PaidCost, terrain или назначенную кровать | Реализовать whitelist `SG_BuildTemplates`, полную оплату выбранного tier и новые ID при поэлементной установке C02-A; C06-T01–T16 ещё NOT RUN |
-| BUILD-C07 | DESIGN APPROVED / IMPLEMENTATION OPEN | Утверждён C07-B: запрещён terraform занятого места, свободная кровать/спальник должны сохранять поддержку и доступность, независимое разрушение прерывает фактический сон и сохраняет fallback SLEEP01 | Выполнить C07-T01–T18, защитить occupancy/terrain/bed state в v2 и проверять порядок прерывания, save/load и отсутствие двойного начисления |
-| BUILD-C08 | HIGH | Исторические A29–A35, A36–A40 не включают в объёме полноценный редактор и массовый terraform | Отдельное обновление backlog и новые work packages, затем разрешение на runtime/Blueprint |
-| BUILD-C09 | HIGH | Ремонт и улучшение требуют контрактов по повреждённому HP, costs, материалам и валидаторам | Определить расчёт HP при upgrade, формулу ремонта и числовую настройку, не объявлять готовым |
-| BUILD-C10 | HIGH | Устаревшая Revision/кешированный preview/результат после A39 load может выполнить действие по другому миру | Command/session epoch или явная инвалидизация всех подготовленных операций + повторный snapshot |
-| BUILD-C11 | OPEN | BUILD-C06-B определил формат данных geometry+materials и отдельную библиотеку, но лимиты элементов/байтов, профили, импорт/sharing и UI controls ещё не согласованы | Отдельно решить ограничения и безопасный импорт шаблонов, не переоткрывая C02-A/C06-B |
-| BUILD-C12 | OPEN | Стоимость terrain edits и выдача вынутых материалов не определены | Точные рецепты/стоимость и защита от бесконечной добычи/дублирования |
 
-**Вердикт аудита:** верхнеуровневая концепция BUILD01 **DESIGN APPROVED 7/7**; BUILD-C01-B SaveVersion 2, BUILD-C03-TECH-B, BUILD-C04-B multi-support, BUILD-C05-B chest→world drops, BUILD-C02-A (поэлементный ConfirmPart) и BUILD-C06-B (geometry+materials templates без runtime ID/loot) и BUILD-C07-B (контекстная защита сна) утверждены как направления/дизайн. C05-T01–T16 **NOT RUN**; BUILD-C05 сохраняет технический BLOCKER до runtime-подтверждения. C04-T01–T16 не выполнялись, технический C04 остаётся BLOCKER. Их миграционные/terrain проверки C01-T01–T15 и C03-T01–T12 **NOT RUN**, поэтому BUILD-C01 и BUILD-C03 пока остаются BLOCKER для реализации. Интеграционное и техническое ТЗ **NOT READY FOR IMPLEMENTATION** из-за отмеченных BLOCKER/OPEN. Это не отказ от принятых решений, а разграничение объёма согласованного GDD и ещё не созданных контрактов. Все открытые вопросы остаются в этом реестре и могут закрываться отдельно без повторного выбора D01–D07.
 
-**Проверки:** анализ текстовых документов/контрактов. Новый UE Editor, Blueprint compile, PIE, cook/package, Windows runtime и миграции **NOT RUN**. GitHub PR #35 остаётся Draft и не сливается в main.
+## Зависимости и impact analysis — актуальный scope без терраформирования
 
-## Зависимости и impact analysis
-
-| Задача | Необходимое согласование при реализации | Статус |
+| Система | Активный контракт | Статус |
 |---|---|---|
-| A29 | BuildDefinition: тип опоры, связи, допустимые размеры, cost, материал/upgrade-переходы и ссылки на классы; учесть опоры на изменяемом рельефе | DESIGN TARGET |
-| A30 | Preview показывает причину отказа и не создаёт реального объекта; BUILD-D07-C добавляет preview шаблонов/массового размещения, без Tick вне build mode и без сохранения | DESIGN TARGET / EXTEND |
-| A31 | Повторная проверка устойчивости после редактирования рельефа, geometry/range/slope/collision/no-build water; preview не мешает | DESIGN TARGET |
-| A32 | BUILD-C02-A: единичный атомарный ConfirmPart с cost+actor; каждое последующее подтверждение отдельно. Terraform/C04 cascade и C05 loot по-прежнему имеют свои атомарные контракты | SINGLE-STEP IMPLEMENTATION OPEN |
-| A33 | BUILD-C04-B: многоточечные sockets/anchors, BUILD-C05-B: одноразовый перенос storage в world drops; техническая транзакция и DTO требуют реализации | DESIGN APPROVED / IMPLEMENTATION BLOCKED |
-| A34 | Демонтаж зависимых опор и непустых хранилищ запрещён, без возврата ресурсов; физическое разрушение отдельно | COMPATIBLE |
-| A35 | C07-T01–T18: occupied/free bed/bedroll, respawn, interruption, WorldClock/Inventory; также опоры, каскады, HP, terraform/C02-A/rollback | TEST PLAN |
-| A36–A40 | BUILD-C01-B SaveVersion 2, C04-B SupportLinks и C05-B world drops; проверить terrain, HP/tier/SLEEP, Inventory quantities, сохранение/восстановление loot без изменения v1 | DIRECTION APPROVED / IMPLEMENTATION BLOCKED |
-| SLEEP01 | C07-B: защита места сна при terrain edit, фактическое прерывание при независимом damage, единственная назначенная кровать/спальник и fallback без автопереназначения | DESIGN APPROVED / IMPLEMENTATION OPEN |
-| Inventory / A25–A27 | Build/upgrade costs списывать только корректной точной операцией; сохранять craft/inventory-инварианты и не допускать дублирования/потери ресурсов | DESIGN TARGET |
+| Inventory A05–A12, A11/A17 | Exact cost per ConfirmPart, Revision/mutation guard, слоты/вес, уникальные StackId и InventoryId; A17.1 не объявлять подтверждённой в main без проверки | MUST PRESERVE |
+| A25–A27 | Каталог ItemId/крафт, cost материалов и repairs, отдельная проверка recipes | DESIGN TARGET |
+| A29 | BuildDefinition, socket/footprint/slope/material/tier, валидная класс-ссылка; исторический baseline фундамента 4 plank+2 stone | EXPAND IN NEW WP |
+| A30 | Preview/ghost-шаблон, ConfirmPart/Cancel без cost и сохранения, без terrain brush | EXPAND IN WP01/04 |
+| A31 | **Статическая** поверхность: slope/range/collision, BuildPlacement и BP_NoBuildZone воды | MUST PRESERVE |
+| A32 | Один точный cost+actor commit, уникальный EntityId, Prepare/Activate и защита double Confirm | CRITICAL IMPLEMENTATION |
+| A33 | Multiple support sockets/links и построенный сундук, единый storage; никакого повторного стартового loot | EXPAND WP01/02/03 |
+| A34 | Запрет добровольного удаления несущих опор с dependents/непустых сундуков, без refund | MUST PRESERVE |
+| A35 | PIE/regression: валидность, вода, каскады damage, loot, C02-A/C06-B, сохранение; исключить terrain-change тесты | EXPAND TESTS |
+| A36 | Утверждённая v1 остаётся нетронутой; отдельно проектировать v2 без terrain DTO | V2 DESIGN OPEN |
+| A37 | Согласованный snapshot мира/Inventory/WorldClock/SLEEP после подтверждённых операций | IMPLEMENTATION OPEN |
+| A38 | A/B slots и manifest с rollback/fallback после ошибок | IMPLEMENTATION OPEN |
+| A39 | MapId + статическая collision → inactive entities/storage/support → sleep/player → Activate; no terrain rebuild и no double load | IMPLEMENTATION OPEN |
+| A40 | Golden fixtures v1→v2, GUID/storage/loot, HP/tier/support links, SLEEP01, templates и повторный load | REGRESSION OPEN |
+| SLEEP01 | Единственная назначенная кровать, fallback PlayerStart, спальник не назначает респавн, реальный damage прерывает сон за фактически прошедшее время | DESIGN PRESERVED |
+| BUILD-C08-B | Отдельные BUILD-WP01–WP07, без переписывания A29–A40, без изменяемого рельефа | DESIGN APPROVED |
 
-**Исходный критерий backlog A29:** тестовый фундамент стоит `4 plank + 2 stone`. Эта историческая стоимость сохраняется как **технический baseline для проверки**, но экономика и числовые цены улучшений BUILD-D04-B ещё не утверждены. При их изменении потребуется формальный change control, а не молчаливая подмена требований.
+**Ограничение:** этот GDD не обновляет `Docs/Architecture/03_IMPLEMENTATION_BACKLOG.md` или технический файл A36; документирование новых WP там допускается только отдельным заданием. Blueprint, `.uasset`, runtime Save DTO и карты не изменять. Зачётов PIE за отменённые terrain tests нет.
 
-**Предупреждение:** частичная запись GDD не модифицирует `Docs/Architecture/03_IMPLEMENTATION_BACKLOG.md`, Blueprint, `.uasset` или текущую схему Save DTO; все расширения backlog необходимо внести отдельным согласованным документационным изменением.
+
 
 ## Следующие решения
 
-- **BUILD-D04-B — APPROVED:** материалы и улучшения на месте; конкретная экономика, ограничения tiers и DTO ещё открыты для реализации.
-- **BUILD-D05-B — APPROVED:** HP, повреждения, ремонт и разрушение с пересчётом устойчивости; BUILD-C05-B определяет выпадение лута из сундуков, точные HP и срок существования выпавшего лута остаются OPEN.
-- **BUILD-D06-C — APPROVED:** изменение ландшафта (выравнивание, насыпи, выемки, специальные опоры) с повторной проверкой no-build/water, collision и устойчивости; технология, экономика и terrain Save DTO пока OPEN.
-- **BUILD-D07-C — APPROVED:** продвинутый редактор и чертежи с копированием geometry+materials по C06-B и поэлементным подтверждением C02-A, terrain UI; лимиты/профили и физическое хранение templates ещё OPEN.
+- **BUILD-C09 — OPEN:** определить механику HP и ремонта, стоимость и пересчёт прочности при upgrade.
+- **BUILD-C10 — OPEN:** предотвращать stale Preview/Revision/command epoch после Save/Load.
+- **BUILD-C11 — OPEN:** лимиты, профили, хранение и импорт шаблонов.
+- **BUILD-C08-B — APPROVED:** staged plan BUILD-WP01–WP07, без редактирования первоначального backlog.
+- **BUILD-D06-C/C03-TECH-B/C12 — RETIRED:** вернуться к terraforming только по новому отдельному решению владельца.
+
+
 
 ## Разграничение статусов
 
-- GDD: D01–D05 (B), D06-C и D07-C — **APPROVED 7/7**; детальные механизмы и блокирующие зависимости указаны в реестре BUILD-C01–C12.
-- Реализация BUILD01 в UE: **NOT STARTED / NOT VERIFIED**.
-- Blueprint/карт/ресурсов: **NO CHANGES**.
-- PIE, cook/package, runtime regression: **NOT RUN**.
-- Документ: все семь базовых концептуальных решений утверждены, но из-за BUILD-C01–C12 полное implementation-ready ТЗ и слияние **не разрешены**. PR остаётся Draft.
+- GDD: **6 активных базовых решений** D01–D05/D07; D06-C отозван, C03 и C12 retired. BUILD-C08-B утверждён как документальный план.
+- Реализация BUILD01/SaveVersion 2 в UE: **NOT STARTED / NOT VERIFIED**.
+- Blueprint/карты/ресурсы, исходный backlog A29–A40, A36 v1: **NO CHANGES**.
+- PIE/cook/package/Windows runtime regression: **NOT RUN**.
+- PR #35: **DRAFT / NOT MERGED**, подробные вопросы C09–C11 остаются OPEN.
 
 
 ## Исторический архив отменённой технологии изменения земли (НЕ АКТИВНО)
