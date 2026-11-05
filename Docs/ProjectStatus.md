@@ -1,5 +1,7 @@
 # SurvivalProject — текущий прогресс
 
+> **DOC-SLEEP01 — DESIGN COMPLETE / APPROVED; IMPLEMENTATION NOT STARTED:** [дизайн сна](GDD/SLEEP01_Sleep_2026-11-05.md) фиксирует утверждённые правила усталости, восстановления, опасностей, спальника, возрождения, UI, времени и сохранений. Баланс **TUNING / NOT FINAL**. Зависимости: A20/A21/A23/A24, Inventory, TIME01, DEATH01, A36–A40. Игровые проверки NOT RUN. [Отчёт](Architecture/30_DOC_SLEEP01.md).
+
 ## A17 — независимый аудит 03.11.2026
 
 **A17 MVP — ручная PIE-приёмка завершена 10/10 PASS; Draft PR №28 открыт на проверку.** Владелец формально уточнил 03.11.2026, что минимальный экран — объём A17, а UI Split/Merge и stale Revision относятся к отдельной A17.1. Изменение объёма оформлено в backlog; требования AGENTS.md к проверкам и публикации сохранены. База после fetch `4784cb9d21f62243cf446cceafa04d73f0b77572`, зависимости A10/A12/A14/A16 присутствуют в main. Исходная `task/a17-inventory-ui` без исходящих коммитов; чистая копия подготовлена в `codex/a17-inventory-audit` (`.a17-audit-worktree`), резервная ссылка сохранена. Открыт Draft [PR №28](https://github.com/zonor922-hub/SurvivalProject/pull/28) из `codex/a17-inventory-audit`; исходный проверенный commit `6f574b66f44d0f20a9f14957bc9c4f983d2128af`. PR остаётся Draft и не объединён.
