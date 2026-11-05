@@ -46,7 +46,7 @@
 | **BUILD-WP02 — материалы и опоры** | После WP01; D02-B/D03-B/D04-B/D05-B, C04-B, C09-B, A33 | Expanded modules/tiers, C09-B percentage HP upgrade/repair-cost, multi-support/damage; PASS только после C09-T01–T18, A35 и проверки EntityId/Storage/Inventory, без изменения земли |
 | **BUILD-WP03 — разрушение хранилищ** | После WP02+A33 и Inventory exact operations; C05-B | Одноразовый атомарный переход сундук→world drops, A34 demolition guard. **PASS:** GUID/количества, отказ без потерь, двойной damage, каскады, нет клонирования; сценарии C05-T01–T16 применимые без terraforming. До завершения запрещать разрушительные операции, способные уничтожить непустой storage, если нет безопасного pipeline. |
 | **BUILD-WP04 — редактор и шаблоны** | WP01, supports WP02, A14–A17, C02-A/C06-B/C11, D07-C | Ghost целого шаблона, local links, material/tier, отдельный `SG_BuildTemplates`, поэлементный `ConfirmPart` с новым EntityId/InventoryId и полной оплатой. **PASS:** 32/40, duplicate/stale Confirm, geometry/no-build, новые GUID, шаблон без loot/HP/assigned bed. **Без bulk one-click и terrain tools.** |
-| **BUILD-WP05 — SaveVersion 2 / восстановление** | Исходная A36 v1 как эталон; A37–A40, C01-B; структурные и loot-контракты WP02–04 | Обособленная v2 schema/migration review **до кодирования**, сохранив старую A36 v1. `BuildPiecesV2` HP/tier/SupportLinks, `WorldDropsV2`, Inventory, WorldClock/SleepState и независимая библиотека templates; MapId остаётся. **Нет TerrainChunks/terrain delta.** PASS: golden v1→v2, A/B manifest fallback, fresh load без dup, stale epoch, корректный world graph. |
+| **BUILD-WP05 — SaveVersion 2 / восстановление** | Исходная A36 v1; A37–A40, C01-B, **C10-B**, WP02–04 | V2 schema/migration HP/tier/SupportLinks/WorldDrops/Inventory/SLEEP. `SessionEpoch` transient и всегда новая при A39 Load, durable Build/World Revision требуют schema review; A38 A/B fallback. PASS после golden v1→v2 + C10-T01–T20 applicable. Без TerrainChunks |
 | **BUILD-WP06 — интеграция SLEEP01** | SLEEP01 GDD, A20/A21/A23, BP01/Inventory, WP02 и WP05, C07-B | Bed/bedroll на существующей поверхности, сохранение AssignedBedEntityId и запретов сна, прерывание из-за реальных угроз/damage, fallback PlayerStart после проверки unloaded area. **PASS:** фактическое время сна, никакого двойного recovery, world→Inventory bag без dup, bed damage/respawn fixtures. Terrain-specific C07 tests исключены. |
 | **BUILD-WP07 — интеграционный acceptance** | После WP01–WP06, A35/A40, A41–A43 в существующем плане | Полная цепочка pickup→craft→build→storage→damage/repair→world-drop→save/load→sleep, вода/no-build/slope/опоры, PIE + Windows packaged build, runtime/cook/performance, multi-load и rollback. **PASS только по реальным артефактам теста**; никаких зачётов отменённых terraforming тестов. |
 
@@ -54,7 +54,7 @@
 
 **Тестовый регистр:** исходные проверки A29–A40 сохраняются; активные C02-T01–T16, C04-T01–T16 (кроме terrain-under-cut), C05-T01–T16, C06-T01–T16, C07-T01–T18 (кроме terraforming), C01-T01–T15 (кроме terrain encoding/rebuild) входят в соответствующие WP. Тесты C03-T01–T12 и все сценарии геометрического изменения земли **RETIRED**. Пересоставить точную исполняемую матрицу в будущем implementation/test plan, не отмечая архивные сценарии PASS.
 
-**Выход из C08:** `BUILD-C08-B = DESIGN APPROVED`. Сам `Docs/Architecture/03_IMPLEMENTATION_BACKLOG.md` остаётся исторически неизменным по требованию владельца. Актуализация его отдельных ссылок и создание задач work packages — будущая **отдельно разрешаемая документационная операция**. BUILD-C09-B утверждён отдельным решением. Следующее открытое решение: **BUILD-C10 — stale Revision / session epoch**.
+**Выход из C08:** `BUILD-C08-B = DESIGN APPROVED`. Сам `Docs/Architecture/03_IMPLEMENTATION_BACKLOG.md` остаётся исторически неизменным по требованию владельца. Актуализация его отдельных ссылок и создание задач work packages — будущая **отдельно разрешаемая документационная операция**. BUILD-C09-B утверждён отдельным решением. BUILD-C10-B утверждён; следующий открытый вопрос: **BUILD-C11 — лимиты/обмен чертежами**.
 
 ## BUILD-D01-B — гибридное размещение (APPROVED)
 
@@ -140,6 +140,83 @@
 
 **Не утверждено в D05-B:** численные MaxHP и цены ремонта, скорость/способ ремонта, источники и коэффициенты урона, лут прочих построек, визуальный формат/TTL лута C05-B. **C09-B утвердил сохранение доли HP при upgrade и пропорциональную цену ремонта**, без бесплатного лечения. Эти вопросы остаются предметом реализации/последующих уточнений и не отменяют утверждённую модель D05-B.
 
+## BUILD-C10-B — Session Epoch + Revision + CommandId (DESIGN APPROVED / IMPLEMENTATION NOT STARTED)
+
+**Решение владельца 2026-11-06: BUILD-C10-B APPROVED.** Каждая команда изменения мира проверяет новую runtime `SessionEpoch`, уникальный `CommandId` и ожидаемые `Inventory/Entity/World Revision`. Совпадение одного числа `Inventory.Revision` между сохранениями **никогда не позволяет** выполнить старый запрос. **Постоянный журнал операций варианта C не принят.** Терраформирование D06-C/C03/C12 отменено.
+
+### Предлагаемый контракт `FWorldMutationRequest` (не существующий Blueprint/API)
+
+| Поле | Правило |
+|---|---|
+| `SessionEpoch: Guid` | Ненулевой runtime идентификатор активированного мира; точное совпадение с текущей авторитетной эпохой обязательно |
+| `CommandId: Guid` | Уникальное намерение игрока; повторная доставка **той же** команды использует тот же ID, но не приводит к повторному исполнению |
+| `CommandKind`, `TargetEntityId/TemplatePartId` | Тип разрешённого действия, стабильный GUID цели/локальная часть чертежа; не ссылаться на прежний Actor/Widget pointer |
+| `ExpectedInventoryRevisions` | Пары `InventoryId → Revision` **для каждого** затронутого Inventory, без замены текущего A09–A12 точного контракта |
+| `ExpectedTargetRevision` | Версия выбранной постройки/сундука/world drop; для нового объекта проверять существующие sockets, опоры и актуальное состояние плана |
+| `ExpectedWorldRevision`, `ExpectedCatalogVersion` | Привязка к текущим препятствиям, поддержке и каталоговой цене, чтобы устаревший preview не мог подтвердиться |
+| `Payload` | Только запрос пользователя: BuildDefinition/MaterialId/Tier, количество ремонта, ItemId/Quantity и пр.; **не** готовый результат расхода ресурсов из UI |
+
+**Источник истины:** world coordinator и компоненты Inventory; UI только отображает snapshot и предлагает намерение. При обработке проверить `WorldReady`, текущую `SessionEpoch`, статус `CommandId`, актуальные target/inventory/world/catalog versions, ItemId/Quantity, доступность опор и все запреты A29–A35, D04/D05, SLEEP01 **повторно непосредственно перед commit**. Сохранённый список GUID объектов не равен сохранению активных команд. Точные `BuildRevision/WorldRevision` в v2, их размер, правила increment/overflow и миграционные baseline требуют отдельного DTO review; **A36 v1 не менять**.
+
+### Эпохи, OpenLevel и сбои
+
+1. **NewGame/OpenLevel:** перед выгрузкой карты пометить прежний epoch недействительным, остановить входящие mutation requests, закрыть/очистить preview и pending confirmation, снять старые UI subscriptions и callbacks. До нового `Activate` состояние `WorldReady=false`.
+2. **Load/Restore A39:** инвалидировать эпоху **при начале Load**, а не после появления новых Actor. Через `CheckVersion/Migrate/Validate → OpenLevel/статическая карта → inactive entities, storage, SupportLinks → WorldClock/SLEEP/Player → validate` создавать **новый** случайный GUID эпохи только перед успешным `Activate`; затем подписывать UI на новые snapshots. Два последовательных Load одного MapId всегда дают различные epochs даже при одинаковых EntityId, InventoryId и Revision.
+3. **Ошибка Load:** старые команды не оживают. Если fallback восстанавливает предыдущее валидное поколение, у него тоже новая эпоха; если мир не готов, оставаться в безопасном меню без gameplay mutation. Переключение Pawn/смерть должно инвалидировать Pawn-bound запросы через control epoch или новый общий world epoch и очистку preview.
+4. **Обычный Save не меняет SessionEpoch.** A37 снимает snapshot только за пределами активной мутации; команда, пришедшая во время подготовки/записи, либо сериализуется до/после snapshot, либо получает Busy. `SaveGeneration` (постоянный номер слота) и `SessionEpoch` (временная идентичность игрового мира) независимы.
+5. **SessionEpoch, CommandId-cache, pending UI/preview/callbacks/guards НЕ сохраняются** в `SG_SurvivalSave v2` или `SG_BuildTemplates`. Persisted Inventory.Revision из A36 сохраняется; совместимые `BuildRevision/WorldRevision` должны быть явно спроектированы для v2 либо безопасно установлены после Restore. Никакой скрытой замены структуры v1.
+
+### Идемпотентность и граница атомарности
+
+1. В текущем epoch хранить авторитетный реестр ключей `(SessionEpoch, CommandId)` со статусом `Pending/Applied/Rejected` и привязанным fingerprint payload. Пока Pending — повтор `Busy`; после Applied — только прежний ответ или `AlreadyApplied` **без effects**; отклонённая команда не может мутировать мир при повторе с тем же ID. Изменение payload при том же CommandId → `CommandConflict`; новое намерение требует **нового ID**.
+2. Guard/serialization: подготовка будущего эффекта и полной цены → валидация новых revisions → единое логическое `Commit(Inventory exact mutations + World/HP/Storage/SupportLinks/WorldDrops)` → increment затронутых revisions только на успехе → свежие UI snapshots. Любой отказ/ошибка spawn/loot/HP → без частичных cost, actor, HP, loot и изменения revisions. Реальный транзакционный механизм для нескольких инвентарей/actors и откат — **IMPLEMENTATION OPEN**, C10-B не утверждает готовность физической атомарности.
+3. `ConfirmPart` C02-A создаёт только один EntityId/cost. Repair/Upgrade C09-B сохраняют EntityId/Storage/links; конкурирующий damage требует новой проверки HP. C04-B каскад и C05-B одноразовая передача сундук→world drops привязаны к авторитетным event IDs; повторные damage callbacks не создают дважды drop. A34 no-refund/nonempty guards сохраняются.
+4. Inventory A05–A12: `MutationInProgress`, SlotCount/MaxWeight/MaxStack, exact ItemId/Quantity, Revision и StackId сохраняются; epoch не заменяет эти проверки. Нельзя имитировать атомарный multi-inventory transfer последовательными незащищёнными списаниями.
+5. SLEEP01: StartSleep/Wake/interrupt, назначение одной кровати, размещение/сворачивание спальника и respawn не используют UI/Actor ссылки прежней эпохи. Прерывание сна и его фактические WorldClock/needs применяются ровно один раз; автосохранение после каждого сна не добавлять.
+6. Дедупликация ограничена **текущей runtime эпохой**; при crash/restart прошлые незавершённые команды **не** переигрываются, восстанавливается последнее валидное A38 save generation. Не обещать exactly-once *между* аварийными перезапусками без отдельного durable journal (вариант C не принят). Ограничение памяти dedup и безопасное поведение при исчерпании/eviction: лучше отказать старой команде, чем принять повторный cost.
+7. **No terraforming:** все проверки geometry только для статического грунта, BuildPlacement slope/water/NoBuildZone и конструкций. Ни один новый запрос/DTO не добавляет TerrainChunk или изменение Landscape.
+
+### Impact A29–A40 и этапов BUILD-C08-B
+
+| Система | Дополнение C10-B |
+|---|---|
+| A29–A32, C02-A | Preview не авторитетен; ConfirmPart повторно проверяет цену/сокет/воду/препятствие/epoch/revision; не более одного Actor |
+| A33–A35, C04-B, C05-B | SupportLinks/HP/damage/Storage/WorldDrops валидируются атомарно; double damage не дублирует лут |
+| Inventory A05–A12 | Exact mutation и `Revision` как прежде, плюс недействительность старой `SessionEpoch` |
+| A36 / C01-B | A36 SaveVersion=1 **не изменять**; в v2 проектировать durable world/target revisions, но runtime epoch/command cache не сохранять |
+| A37/A38 | Snapshot только в согласованном состоянии; два слота/manifest fallback и запрет восстановления незавершённого command |
+| A39/A40 | Сброс старой эпохи **до** OpenLevel, новая после Restore; golden fixtures со совпадающими численными Revision и двойной загрузкой |
+| C09-B | Новый request при новом HP/tier/cost, двойной Confirm не лечит и не расходует дважды |
+| SLEEP01 | AssignedBedId/WorldClock/fatigue защищены, нет повторного sleep effect |
+| BUILD-WP01–WP07 | Внедрять guards + epoch постепенно; интеграционные C10 тесты обязательны для WP05/WP07 |
+
+### Испытания C10-T01–T20 (**все NOT RUN**)
+
+| ID | Сценарий | Ожидаемый результат |
+|---|---|---|
+| C10-T01 | NewGame, первый Confirm | Ненулевая новая эпоха, валидные revisions, одна команда |
+| C10-T02 | Два ConfirmPart через дублированные UI delegates | Один Actor/cost, второй Busy/AlreadyApplied |
+| C10-T03 | Старый CommandId с изменённым payload | CommandConflict без повторного эффекта |
+| C10-T04 | Неверная Inventory Revision при верном epoch | StaleCommand, Slots/Revision/World неизменны |
+| C10-T05 | Два мира с одинаковым Inventory.Revision | Старый epoch отвергнут даже при совпавшей численной Revision |
+| C10-T06 | Load начался во время pending Repair/Transfer/Build | Нет partial effects; команды закрыты до Restore |
+| C10-T07 | Два OpenLevel/Load того же MapId | Всякий раз новая эпоха и свежие Actor/UI references |
+| C10-T08 | Load ошибся, fallback/меню | Старый epoch не ожил, незаконных mutating requests нет |
+| C10-T09 | Обычный Save без Load | Epoch не меняется, промежуточные операции не сериализуются |
+| C10-T10 | Damage цели после preview ремонта/upgrade | Старый BuildRevision/HP → отказ, нет бесплатного HP/cost |
+| C10-T11 | Некорректный Revision/overflow и неизвестный EntityId | Validation fail до мутации |
+| C10-T12 | Double destruction callback сундука | Один WorldDrops набор, исходные Quantity/GUID без dup |
+| C10-T13 | Double SleepWake/interrupt или старый bed assignment | Один sleep effect, назначение и WorldClock согласованы |
+| C10-T14 | Смена Pawn/смерть и старый build UI | Ни старого Confirm, ни orphan preview |
+| C10-T15 | SaveCoordinator Capture одновременно с ConfirmPart | Snapshot только до или после полного commit |
+| C10-T16 | Spawn/loot preparation failure | Нет частичных списаний/мировых состояний |
+| C10-T17 | v1→v2 миграция, двойной load с теми же GUID/revisions | Стабильные GUID, но новая эпоха; старые команды отклонены |
+| C10-T18 | Библиотека C06 templates и reopen UI | Epoch/CommandId не сериализованы, callbacks не дублируются |
+| C10-T19 | Большое число команд, старый duplicate после очистки cache | Dedup не разрешает повторную мутацию; проверены лимиты памяти |
+| C10-T20 | PIE, перезапуск Editor и Windows packaged build | Одинаковые инварианты и отсутствие runtime/Blueprint ошибок |
+
+**Открытые инженерные детали:** тип/жизненный цикл durable BuildRevision/WorldRevision v2, безопасная ограниченная память dedup, транзакционный координатор нескольких Inventory и Actor, политика сбоя во время gameplay commit, технические бюджеты performance, network authority (если когда-либо потребуется). Не объявлять реализацию готовой. **Статус:** `BUILD-C10-B = DESIGN APPROVED`; тесты C10-T01–T20 и UE/PIE/build **NOT RUN**. Следующее решение — **BUILD-C11**, ограничение размеров/хранение/импорт строительных чертежей.
+
 ## BUILD-C09-B — сохранение доли HP при улучшении, пропорциональный ремонт (DESIGN APPROVED / IMPLEMENTATION NOT STARTED)
 
 **Утверждено владельцем 2026-11-06:** вариант **B**. При улучшении материала/уровня `BUILD-D04-B` сохраняется **процент оставшейся прочности**, а ремонт `BUILD-D05-B` оплачивается по фактически выбранному и восстановленному количеству HP и материалу/типу конструкции. Ни upgrade, ни repair не восстанавливают повреждённую конструкцию бесплатно. **Никакого терраформирования:** D06-C WITHDRAWN, C03-TECH-B/C12 RETIRED.
@@ -158,7 +235,7 @@
 3. Цена зависит от **текущего материала/tier**. Не использовать историю `PaidCost` для бесплатного ремонта или старый рецепт древесины для каменного модуля. При недостатке хотя бы одного предмета **весь текущий запрос** отклоняется: нет автоматического частичного ремонта; игрок может отдельно запросить меньший объём.
 4. При `ConfirmRepair` и `ConfirmUpgrade` **заново** проверять EntityId, HP/MaxHP, tier/catalog, build revision, `Inventory Revision`, ресурсы, допустимые sockets и актуальную устойчивость. Урон/смена каталога после preview заставляет отклонить запрос или получить новое явное подтверждение; нельзя провести устаревшую цену.
 5. **Одна атомарная операция:** подготовить будущий cost/HP/tier/links → захватить `MutationInProgress` и world-operation guard → согласованно списать ресурсы через точные A09–A12 контракты и обновить существующий BuildPiece → Activate/уведомить UI. При любой ошибке состояние мира, HP/tier, Inventory/Revision, storage и support links должны остаться прежними. Запрещено строить реализацию как «сначала списали, потом попробовали восстановить HP» без защищённого rollback. Механизм ещё НЕ реализован.
-6. Каждая команда использует `CommandId + SessionEpoch + target EntityId + expected BuildRevision + expected InventoryRevision`. Повторный Confirm/input binding, concurrent damage, разрушение цели, Save/Load, смена Pawn, отмена или stale UI не создают повторный cost или бесплатный HP. BUILD-C10 уточнит общий протокол epoch; это не закрывает C10.
+6. Каждая команда использует `CommandId + SessionEpoch + target EntityId + expected BuildRevision + expected InventoryRevision`. Повторный Confirm/input binding, concurrent damage, разрушение цели, Save/Load, смена Pawn, отмена или stale UI не создают повторный cost или бесплатный HP. BUILD-C10-B уточняет общий протокол epoch; реализация не проверена.
 7. После repair/upgrade пересчитать актуальную поддержку C04-B, но не воскрешать уничтоженные конструкции и не отменять уже завершённый C05-B chest→world drops, A34 safe demolition/no-refund, SLEEP01 и последствия урона. Никаких terrain edits/rebuild.
 
 **Сохранение:** `BUILD-C01-B SaveVersion 2` должен сохранять `CurrentHP`, `MaterialId/Tier`, совместимый `MaxHPAtSave` либо catalog version и прежние `EntityId/SupportLinks/Storage`. Валидировать диапазон HP, каталог и отсутствие второго источника истины. В A36 v1 **нет** этих данных и она не меняется. В `Migrate_V1_To_V2` для известного BuildId применить **только утверждённые baseline tier/HP и fixture**; при неоднозначности явный отказ без перезаписи v1. A37 не записывает промежуточный ремонт; A38 A/B+manifest и fallback; A39 создаёт BuildPiece неактивно, восстанавливает HP/tier/links до Activate; A40 проверяет golden fixtures, двойную загрузку и смену каталога. `SG_BuildTemplates` C06-B копирует выбранный tier, **но не CurrentHP/старый PaidCost**.
@@ -199,7 +276,7 @@
 | C09-T17 | NaN/Inf, нулевой MaxHP, отрицательный cost, переполнение целочисленных вычислений | Validation failure до commit |
 | C09-T18 | Upgrade/repair у склона, воды и NoBuildZone | Сохраняются проверки **статической** поверхности; никакого terraforming |
 
-**OPEN / TUNING:** MaxHP каждого модуля/tier, `FullRepairCost_i`, материалы/полные стоимости upgrade, damage/resistance, условия и длительность ремонта, точность HP/сериализации, UI шаг и ограничения рецептов, budgets производительности. **Не** считать выдуманные примеры 100/200 или 8 предметов фактическими значениями игры. `BUILD-C09-B = DESIGN APPROVED`; A32/WP02 реализации и `C09-T01–T18` **NOT RUN**. Следующее проектное решение — **BUILD-C10**.
+**OPEN / TUNING:** MaxHP каждого модуля/tier, `FullRepairCost_i`, материалы/полные стоимости upgrade, damage/resistance, условия и длительность ремонта, точность HP/сериализации, UI шаг и ограничения рецептов, budgets производительности. **Не** считать выдуманные примеры 100/200 или 8 предметов фактическими значениями игры. `BUILD-C09-B = DESIGN APPROVED`; A32/WP02 реализации и `C09-T01–T18` **NOT RUN**. Следующее проектное решение — **BUILD-C11**.
 
 ## BUILD-C04-B — динамические многоточечные опоры (DESIGN APPROVED / IMPLEMENTATION BLOCKED)
 
@@ -643,11 +720,11 @@
 | BUILD-C07-B | DESIGN APPROVED / IMPLEMENTATION OPEN | Установленная кровать/спальник, SLEEP01 interruption при damage, WorldClock и respawn; **terrain-edit часть RETIRED** |
 | BUILD-C08-B | DESIGN APPROVED / BACKLOG UPDATE PENDING | BUILD-WP01–WP07 определены в GDD. Исходный backlog A29–A40 **не изменён** |
 | BUILD-C09-B | DESIGN APPROVED / IMPLEMENTATION OPEN | Доля HP сохраняется при upgrade, ремонт за выбранное количество HP с округлением resource-cost вверх, атомарность обязательна; C09-T01–T18 NOT RUN |
-| BUILD-C10 | OPEN | Session/Command epoch + stale Revision после загрузки |
+| BUILD-C10-B | DESIGN APPROVED / IMPLEMENTATION OPEN | Новая SessionEpoch на NewGame/Load/OpenLevel, expected Inventory/Target/World Revision и CommandId; invalidation до Restore | C10-T01–T20 и durable revisions/transaction coordinator NOT RUN; A36 v1 не менять |
 | BUILD-C11 | OPEN | Template limits, profiles, sharing/import и UI |
 | BUILD-C12 | **RETIRED / NOT APPLICABLE** | Без изменения земли нет экономики копания |
 
-**Вердикт:** BLOCKER реализации сохраняются на техническом уровне для C01, C02, C04 и C05, а не для отменённого C03. C09–C11 — ещё открытые решения. Никакие Unreal/PIE/Windows/package проверки не проводились. Прошлые тестовые матрицы terrain C01/C04/C07 архивны в соответствующей части, не являются acceptance. Оригинальные A29–A40 остаются источником базовых контрактов.
+**Вердикт:** BLOCKER реализации сохраняются на техническом уровне для C01, C02, C04 и C05, а не для отменённого C03. C09-B/C10-B DESIGN APPROVED; из текущих проектных уточнений открыт C11. Никакие Unreal/PIE/Windows/package проверки не проводились. Прошлые тестовые матрицы terrain C01/C04/C07 архивны в соответствующей части, не являются acceptance. Оригинальные A29–A40 остаются источником базовых контрактов.
 
 
 
@@ -667,7 +744,7 @@
 | A36 | Утверждённая v1 остаётся нетронутой; отдельно проектировать v2 без terrain DTO | V2 DESIGN OPEN |
 | A37 | Согласованный snapshot мира/Inventory/WorldClock/SLEEP после подтверждённых операций | IMPLEMENTATION OPEN |
 | A38 | A/B slots и manifest с rollback/fallback после ошибок | IMPLEMENTATION OPEN |
-| A39 | MapId + статическая collision → inactive entities/storage/support → sleep/player → Activate; no terrain rebuild и no double load | IMPLEMENTATION OPEN |
+| A39 | При старте Load инвалидировать SessionEpoch → MapId/статическая collision → inactive entities/storage/support → SLEEP/Player/validate → новая SessionEpoch → Activate/UI; никакого исполнения старых команд | IMPLEMENTATION OPEN |
 | A40 | Golden fixtures v1→v2, GUID/storage/loot, HP/tier/support links, SLEEP01, templates и повторный load | REGRESSION OPEN |
 | SLEEP01 | Единственная назначенная кровать, fallback PlayerStart, спальник не назначает респавн, реальный damage прерывает сон за фактически прошедшее время | DESIGN PRESERVED |
 | BUILD-C08-B | Отдельные BUILD-WP01–WP07, без переписывания A29–A40, без изменяемого рельефа | DESIGN APPROVED |
@@ -679,7 +756,7 @@
 ## Следующие решения
 
 - **BUILD-C09-B — DESIGN APPROVED:** сохранение доли HP и proportional repair, численные параметры и runtime проверки OPEN.
-- **BUILD-C10 — OPEN:** предотвращать stale Preview/Revision/command epoch после Save/Load.
+- **BUILD-C10-B — DESIGN APPROVED:** Epoch/Revision/CommandId и инвалидация до Load/OpenLevel; реализация и тесты OPEN.
 - **BUILD-C11 — OPEN:** лимиты, профили, хранение и импорт шаблонов.
 - **BUILD-C08-B — APPROVED:** staged plan BUILD-WP01–WP07, без редактирования первоначального backlog.
 - **BUILD-D06-C/C03-TECH-B/C12 — RETIRED:** вернуться к terraforming только по новому отдельному решению владельца.
