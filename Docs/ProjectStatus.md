@@ -1,5 +1,8 @@
 # SurvivalProject — текущий прогресс
 
+> **BUILD01-FIX01 — документация / проверка в Draft PR #35:** исправлен активный BUILD01 GDD с сохранением архива отменённых D06-C/C03; подготовлены [спецификации BUILD-WP01–WP07 и план переноса](Architecture/31_BUILD01_WORK_PACKAGES.md). Зависимости: Inventory A05–A12, A29–A40, A36 v1 и SLEEP01; WP05 разделён на интерфейсный gate и итоговую приёмку после WP06. Игровая реализация, PIE, migration и Windows build **NOT TESTED**; исходный backlog не изменён, перенос только после отдельного прямого разрешения. Изменённые файлы: GDD BUILD01, указанный отчёт Architecture и ProjectStatus. Документальные проверки и Repository CI фиксируются в отчёте PR; это не merge и не подтверждение готовности к реализации.
+
+
 > **DOC-SLEEP01 — DESIGN COMPLETE / APPROVED; IMPLEMENTATION NOT STARTED:** [дизайн сна](GDD/SLEEP01_Sleep_2026-11-05.md) фиксирует утверждённые правила усталости, восстановления, опасностей, спальника, возрождения, UI, времени и сохранений. Баланс **TUNING / NOT FINAL**. Зависимости: A20/A21/A23/A24, Inventory, TIME01, DEATH01, A36–A40. Игровые проверки NOT RUN. [Отчёт](Architecture/30_DOC_SLEEP01.md).
 
 > **Дизайн-дополнение 05.11.2026 (NOT IMPLEMENTED):** утверждён [BP-D04 Core→EquippedBag](GDD/BP01_Backpacks_Decisions_2026-11-05.md) и дорожная карта S1→S2/P1. Будущая [DEATH01](GDD/DEATH01_LostGear_Decisions_2026-11-05.md) предполагает потерю всего носимого и возврат до исчезновения; это противоречит исторической политике A23 «сохранить inventory», а не её фактическому статусу реализации. Часы/TTL открыты. [Изменения и зависимости](GDD/CHANGE_CONTROL_2026-11-05.md). Данная редакция документа не содержит изменений runtime, Blueprint и новых тестов.
