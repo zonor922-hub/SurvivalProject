@@ -86,6 +86,13 @@
 - **INVENTORY-EXTERNAL-TRANSFER-A:** прямой Drag & Drop между **любой парой** видимых Core, надетого Bag и внешнего контейнера, без промежуточного переноса через Core. Любые move/swap/merge должны проверять оба inventories и атомарно фиксироваться либо отклоняться; не расширять A11 молча. Само открытие обычного сундука и правила доступа/дистанции ещё требуют отдельного решения.
 - BP01: полный рюкзак может быть оставлен в мире с содержимым; Core→Bag при автоматическом WorldPickup **только** при Core SlotsFull/WeightLimit, иных fallback нет. Маршрут S1 Exact→S2/P1 Exact двумя контейнерами пока roadmap, S3 partial world pickup не утверждён. Нельзя подменять это ручным Drag/transfer UX.
 
+### INV30-D09-A — граница v1.0/v1.1 (утверждено 06.11.2026)
+
+- **Inventory v1.0 = ручной перенос** между Core, надетым Bag и доступными внешними контейнерами по текущим утверждённым Drag/transfer правилам. **Автоматическая разгрузка сундуков не входит** в scope Inventory v1.0, не является blocker для его Design Gate или реализации; не добавлять кнопку/скрытый перенос/автоматическую сортировку под видом текущего поведения.
+- **Inventory v1.1 = будущая быстрая авторазгрузка** ресурсов в сундуки одной командой: scope и само перенесение в v1.1 **DESIGN SCOPE APPROVED**, детали алгоритма, получателей, фильтров предметов, безопасности/угроз, partial commits, UX, Save/Load и технических API **OPEN**. Идея документирована в отдельном [future GDD Inventory v1.1 Auto-Unload](INVENTORY_V11_AUTO_UNLOAD_FUTURE_2026-11-06.md); исторический DOC02 не подменяет новые утверждения.
+- Не изменять существующий backlog/Blueprint/A05–A12/A36 v1. Новая функция **NOT IMPLEMENTED / TESTS NOT RUN**, не считать v1.1 утверждённой целиком.
+
+
 ## 7. Ошибки, синхронизация и события
 
 - **INVENTORY-ERROR-UI-B:** краткое уведомление об отказе и временная красная подсветка проблемного слота/сетки/шкалы веса. Причины включают WeightLimit, SlotsFull, несовместимость, MaxStack, Busy/NotReady и stale Revision; без модального окна на каждую ошибку.
@@ -134,6 +141,7 @@
 - [Notion: единый реестр, INV-UX01](https://app.notion.com/p/41096ea5fa1d81228c39d49741277703) — зеркальная запись утверждённого GDD с отдельными статусами разработки и публикации.
 
 - [BP01 утверждённые решения](BP01_Backpacks_Decisions_2026-11-05.md)
+- [D09-A будущий Inventory v1.1 / авторазгрузка, scope approved](INVENTORY_V11_AUTO_UNLOAD_FUTURE_2026-11-06.md)
 - [A17 MVP PR #28](https://github.com/zonor922-hub/SurvivalProject/pull/28)
 - [DOC02: исторический черновик и design gate, PR #29](https://github.com/zonor922-hub/SurvivalProject/pull/29) — **Draft**, содержит ранние открытые вопросы и не переопределяет поздние явно утверждённые решения. Встречающиеся там устаревшие утверждения считать историческими до согласования конфликтующих реализаций.
 - [A10](../Architecture/16_A10_SPLIT_MERGE.md), [A11](../Architecture/21_A11_TRANSFER.md), [A12](../Architecture/22_A12_INVENTORY_TESTS.md), [A36 v1](../Architecture/15_A36_SAVEGAME_ARCHITECTURE.md).
