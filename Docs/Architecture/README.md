@@ -7,6 +7,10 @@
 Проект: `<PROJECT_ROOT>\SurvivalProject.uproject`.
 Этот каталог содержит документацию, а не реализованные игровые системы.
 
+## Baseline gate (07.11.2026)
+
+- [Решение владельца: PASS WITH DOCUMENTED EXCEPTIONS](32_BASELINE_GATE_DECISION_2026-11-07.md): чистый SHA `8b4b67f`, English/English → 0 startup smoke errors, USER-VERIFIED gameplay, оставшиеся предупреждения и нерасшифрованные прежние диагностические аварии. **A18 READY TO START**, **A19 BLOCKED до завершения A18**. Не является новым automated PIE или release PASS.
+
 ## DOC02 — Design Gate и исторические материалы
 
 - [Обязательный цикл проектирования до реализации](../Development/01_DESIGN_FIRST_POLICY.md) закреплён в AGENTS.md.
