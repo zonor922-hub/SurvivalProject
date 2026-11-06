@@ -2,9 +2,9 @@
 
 ## A17.1 — изолированная проверка (06.11.2026)
 
-**Статус: LOCAL VERIFICATION PASS / PUBLICATION PENDING.**
+**Статус: LOCAL VERIFICATION PASS / DRAFT PR #37 OPEN / CI PASS / MERGE PENDING.**
 
-На отдельной ветке codex/a17-1-final-verification от origin/main 2bdc279 подготовлен коммит e0e62d0.
+Ветка `codex/a17-1-final-verification` от `main` (`2bdc279`) опубликована в [Draft PR #37](https://github.com/zonor922-hub/SurvivalProject/pull/37). Игровой коммит `e0e62d0`; исходный документационный коммит `4a97f96`.
 
 В реализацию входят только WBP_Inventory и WBP_InventorySlot. Изменения BPC_Inventory, Config, .uproject и тестовой карты исключены.
 
@@ -18,11 +18,11 @@
 
 Результаты Unreal приведены по отчёту Sol. Полные машинные доказательства не опубликованы. Windows package: NOT RUN.
 
-Git LFS fsck и проверка состава игрового коммита: PASS.
+Git LFS fsck и проверка состава игрового коммита: PASS. GitHub Actions `Repository checks (no Unreal Engine)` — **PASS** ([запуск #42233452451](https://github.com/zonor922-hub/SurvivalProject/actions/runs/42233452451)). GitHub CI не проверяет Blueprint в Unreal Engine.
 
 [Финальный отчёт](Architecture/A17_1_FINAL_VERIFICATION_2026-11-06.md).
 
-A17.1 ещё не объединена в main. Draft PR и GitHub CI ожидаются. Новые механики INVENTORY-UX из PR #36 не входят в A17.1.
+A17.1 **опубликована в Draft PR #37, но не объединена в main**. Финальное review и отдельное разрешение на merge остаются открытыми. Новые механики INVENTORY-UX из PR #36 не входят в A17.1.
 
 ---
 
