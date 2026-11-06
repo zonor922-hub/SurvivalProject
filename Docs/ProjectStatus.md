@@ -1,5 +1,7 @@
 # SurvivalProject — текущий прогресс
 
+> **INVENTORY-UX 06.11.2026 — DESIGN APPROVED / IMPLEMENTATION NOT VERIFIED:** [утверждённый GDD Drag/Hotbar/Inspect/Sort/Core+Bag/External](GDD/INVENTORY_UX_DECISIONS_2026-11-06.md) описывает игровые правила, не новый Unreal-функционал. Docs-only Draft PR; исходные A05–A12 и BP01 не менялись. A17 MVP (#28) в main; A17.1 остаётся локально частичной/не подтверждённой независимым аудитом и не опубликованной. Новые Blueprint compile, PIE, package — NOT RUN. Исторические более ранние записи ниже не считать свежим статусом.
+
 > **DOC-SLEEP01 — DESIGN COMPLETE / APPROVED; IMPLEMENTATION NOT STARTED:** [дизайн сна](GDD/SLEEP01_Sleep_2026-11-05.md) фиксирует утверждённые правила усталости, восстановления, опасностей, спальника, возрождения, UI, времени и сохранений. Баланс **TUNING / NOT FINAL**. Зависимости: A20/A21/A23/A24, Inventory, TIME01, DEATH01, A36–A40. Игровые проверки NOT RUN. [Отчёт](Architecture/30_DOC_SLEEP01.md).
 
 > **Дизайн-дополнение 05.11.2026 (NOT IMPLEMENTED):** утверждён [BP-D04 Core→EquippedBag](GDD/BP01_Backpacks_Decisions_2026-11-05.md) и дорожная карта S1→S2/P1. Будущая [DEATH01](GDD/DEATH01_LostGear_Decisions_2026-11-05.md) предполагает потерю всего носимого и возврат до исчезновения; это противоречит исторической политике A23 «сохранить inventory», а не её фактическому статусу реализации. Часы/TTL открыты. [Изменения и зависимости](GDD/CHANGE_CONTROL_2026-11-05.md). Данная редакция документа не содержит изменений runtime, Blueprint и новых тестов.
