@@ -1,7 +1,7 @@
 # A17.1 — финальная проверка изолированной реализации
 
 Дата: 2026-11-06
-Статус: LOCAL VERIFICATION PASS / PUBLICATION PENDING
+Статус: LOCAL VERIFICATION PASS / DRAFT PR #37 OPEN / CI PASS / MERGE PENDING
 Проект: SurvivalProject, Unreal Engine 5.8.4
 
 ## Состав реализации
@@ -53,14 +53,14 @@ PIE остановлен.
 Результаты Unreal и PIE приведены по сообщениям Sol.
 Отдельные исходные логи и полные машинные артефакты проверок в этот документ пока не вложены.
 
-GitHub CI: NOT RUN на момент подготовки отчёта.
+GitHub CI при первоначальном составлении отчёта: NOT RUN. После публикации: **PASS**, `Repository checks (no Unreal Engine)` ([run #42233452451](https://github.com/zonor922-hub/SurvivalProject/actions/runs/42233452451), HEAD `4a97f96`). CI не компилирует Unreal Engine и не воспроизводит PIE.
 Windows package: NOT RUN.
 
 Новые механики INVENTORY-UX из Draft PR #36 не реализованы.
 Контракты A05–A12 и BP01 не изменялись.
 
-## Публикация
+## Публикация (обновление 06.11.2026)
 
-Предстоит обновить ProjectStatus, выполнить документальный коммит, push и открыть отдельный Draft PR A17.1.
+Ветка `codex/a17-1-final-verification` опубликована в [Draft PR #37](https://github.com/zonor922-hub/SurvivalProject/pull/37) с двумя исходными коммитами: `e0e62d0` (два Blueprint) и `4a97f96` (отчёт и ProjectStatus). Состав PR: два Blueprint и два Markdown-файла; без Config, `.uproject`, карты и BPC_Inventory. Применимость к main подтверждена GitHub без конфликтов.
 
-До review и merge задача не считается опубликованной или окончательно закрытой.
+На момент первого review GitHub CI успешно завершился, но независимая проверка бинарной логики Unreal через веб-интерфейс невозможна; тесты Unreal атрибутированы Sol. **Merge не выполнен; требуется отдельное разрешение владельца.**
