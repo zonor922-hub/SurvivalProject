@@ -2,6 +2,31 @@
 
 > **BUILD01-FIX01 — документация / проверка в Draft PR #35:** исправлен активный BUILD01 GDD с сохранением архива отменённых D06-C/C03; подготовлены [спецификации BUILD-WP01–WP07 и план переноса](Architecture/31_BUILD01_WORK_PACKAGES.md). Зависимости: Inventory A05–A12, A29–A40, A36 v1 и SLEEP01; WP05 разделён на интерфейсный gate и итоговую приёмку после WP06. Игровая реализация, PIE, migration и Windows build **NOT TESTED**; исходный backlog не изменён, перенос только после отдельного прямого разрешения. Изменённые файлы: GDD BUILD01, указанный отчёт Architecture и ProjectStatus. Документальные проверки и Repository CI фиксируются в отчёте PR; это не merge и не подтверждение готовности к реализации.
 
+## A17.1 — изолированная проверка (06.11.2026)
+
+**Статус: LOCAL VERIFICATION PASS / DRAFT PR #37 OPEN / CI PASS / MERGE PENDING.**
+
+Ветка `codex/a17-1-final-verification` от `main` (`2bdc279`) опубликована в [Draft PR #37](https://github.com/zonor922-hub/SurvivalProject/pull/37). Игровой коммит `e0e62d0`; исходный документационный коммит `4a97f96`.
+
+В реализацию входят только WBP_Inventory и WBP_InventorySlot. Изменения BPC_Inventory, Config, .uproject и тестовой карты исключены.
+
+По отчёту Sol на изолированном наборе:
+- Blueprint compile: 4/4 PASS.
+- UI Split/Merge/stale Revision: 15/15 PASS.
+- A12: 1644 утверждения PASS.
+- A10: 272 утверждения PASS.
+- Реальные клики Split/Merge: PASS.
+- HUD, pickup E, блокировка и восстановление управления: PASS.
+
+Результаты Unreal приведены по отчёту Sol. Полные машинные доказательства не опубликованы. Windows package: NOT RUN.
+
+Git LFS fsck и проверка состава игрового коммита: PASS. GitHub Actions `Repository checks (no Unreal Engine)` — **PASS** ([запуск #42233452451](https://github.com/zonor922-hub/SurvivalProject/actions/runs/42233452451)). GitHub CI не проверяет Blueprint в Unreal Engine.
+
+[Финальный отчёт](Architecture/A17_1_FINAL_VERIFICATION_2026-11-06.md).
+
+A17.1 **опубликована в Draft PR #37, но не объединена в main**. Финальное review и отдельное разрешение на merge остаются открытыми. Новые механики INVENTORY-UX из PR #36 не входят в A17.1.
+
+---
 
 > **DOC-SLEEP01 — DESIGN COMPLETE / APPROVED; IMPLEMENTATION NOT STARTED:** [дизайн сна](GDD/SLEEP01_Sleep_2026-11-05.md) фиксирует утверждённые правила усталости, восстановления, опасностей, спальника, возрождения, UI, времени и сохранений. Баланс **TUNING / NOT FINAL**. Зависимости: A20/A21/A23/A24, Inventory, TIME01, DEATH01, A36–A40. Игровые проверки NOT RUN. [Отчёт](Architecture/30_DOC_SLEEP01.md).
 
