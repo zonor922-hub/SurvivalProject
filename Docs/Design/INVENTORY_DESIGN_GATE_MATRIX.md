@@ -14,8 +14,8 @@
 
 ## Ниже: исторический снимок матрицы 05.11.2026
 
-**Дата:** 05.11.2026  
-**Статус снимка на 05.11:** DESIGN DRAFT / REVIEW MATERIAL. **Не текущий статус позднее утверждённых решений.**  
+**Дата:** 05.11.2026
+**Статус снимка на 05.11:** DESIGN DRAFT / REVIEW MATERIAL. **Не текущий статус позднее утверждённых решений.**
 **Назначение:** превратить предварительные идеи инвентаря в проверяемые решения до любых новых gameplay-изменений.
 
 Документы-основания: [Design First Policy](../Development/01_DESIGN_FIRST_POLICY.md), [Inventory Design v0.4](INVENTORY_DESIGN_V04_DRAFT.md), [A05](../Architecture/09_A05_ITEM_TYPES.md), [A08](../Architecture/12_A08_INVENTORY_STATE.md), [A10](../Architecture/16_A10_SPLIT_MERGE.md), [A11](../Architecture/21_A11_TRANSFER.md), [A36](../Architecture/15_A36_SAVEGAME_ARCHITECTURE.md), [A17.1 publication](../Architecture/30_A17_1_LOCAL_STATUS_AND_PUBLICATION.md).
