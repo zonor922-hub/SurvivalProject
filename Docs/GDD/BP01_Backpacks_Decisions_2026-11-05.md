@@ -42,3 +42,7 @@ Core only, fallback Bag, нет экипированного Bag, оба capacit
 [Политика смерти](DEATH01_LostGear_Decisions_2026-11-05.md) · [Управление изменениями](CHANGE_CONTROL_2026-11-05.md) · [A15](../Architecture/25_A15_WORLD_PICKUP.md) · [A11](../Architecture/21_A11_TRANSFER.md) · [A36](../Architecture/15_A36_SAVEGAME_ARCHITECTURE.md).
 
 **Никаких изменений игровых ассетов; Blueprint/PIE/CI по новой механике NOT RUN.**
+
+## Ссылка на новый UI-контракт (06.11.2026; только GDD)
+
+[INVENTORY-UX, Core + Bag и внешние контейнеры](INVENTORY_UX_DECISIONS_2026-11-06.md) утверждает layout, Drag & Drop, независимые Sort/Compact и показ лежащего Bag как внешнего контейнера. Это **дополнение к пользовательскому интерфейсу**, не изменение BP-D01–BP-D05, маршрутизации WorldPickup или текущих backend контрактов. Реализация/PIE нового UI — NOT RUN.
