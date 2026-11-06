@@ -9,6 +9,8 @@
 
 ## Очередь работ и gates
 
+> **Gate-решение 07.11.2026:** владелец утвердил [PASS WITH DOCUMENTED EXCEPTIONS](../Architecture/32_BASELINE_GATE_DECISION_2026-11-07.md) для **начала A18**. Строгие критерии полного машинного baseline не объявлены выполненными: игровой scope — USER-VERIFIED, clean-baseline automated UE/PIE NOT RUN. Исключения и триггеры повторной блокировки приведены в решении; оно не отменяет Design First и техконтракт A18. **A18 READY TO START; A19 BLOCKED until A18 accepted.** Следующие этапы без изменений.
+
 | Очередь | Рабочий срез | Gate для перехода | Что не включено |
 |---|---|---|---|
 | **0 — актуальный baseline** | Сверить текущий `main`, LFS/CI, A17/A17.1 и A12/A16 регрессии; синхронизировать ProjectStatus и реестр. | Git clean, воспроизводимый Blueprint compile/PIE по доступным сценариям; явно отделены PASS исторические и NOT RUN. | Новые gameplay-изменения. |
