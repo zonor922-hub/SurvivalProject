@@ -7,6 +7,13 @@
 Проект: `<PROJECT_ROOT>\SurvivalProject.uproject`.
 Этот каталог содержит документацию, а не реализованные игровые системы.
 
+## DOC02 — Design Gate и исторические материалы
+
+- [Обязательный цикл проектирования до реализации](../Development/01_DESIGN_FIRST_POLICY.md) закреплён в AGENTS.md.
+- [Inventory v0.4 — архивный черновик 05.11](../Design/INVENTORY_DESIGN_V04_DRAFT.md) и [историческая матрица решений/30 будущих тестов](../Design/INVENTORY_DESIGN_GATE_MATRIX.md): **не отменяют** позднее утверждённые [INVENTORY-UX](../GDD/INVENTORY_UX_DECISIONS_2026-11-06.md) и [BP01](../GDD/BP01_Backpacks_Decisions_2026-11-05.md); будущие тесты NOT RUN.
+- [A17.1: исходный локальный отчёт 05.11 и актуализация](30_A17_1_LOCAL_STATUS_AND_PUBLICATION.md): **PR #37 merged в main**, а не старое «publication pending». Отчёт с локальными результатами: [A17.1 FINAL](A17_1_FINAL_VERIFICATION_2026-11-06.md).
+- BUILD01 через PR #35 и INVENTORY-UX через PR #36 опубликованы как **дизайн**, а не готовый игровой код.
+
 ## Актуальные проектные решения от 05.11.2026 (дизайн, NOT IMPLEMENTED)
 
 - [BP-D01–D05: рюкзаки, FALLBACK, план S1→S2/P1](../GDD/BP01_Backpacks_Decisions_2026-11-05.md).
@@ -43,7 +50,7 @@ A11 (**реализована и объединена через [PR №16](http
 - [SEC02 — repository CI](27_SEC02_CI.md): PR №25 объединён, Actions на main success; это статические проверки без Unreal Engine.
 - SEC03: [активный Ruleset main](https://github.com/zonor922-hub/SurvivalProject/rules/26429234), проверен GitHub API; отдельного документа в main нет.
 
-A17 MVP по уточнённому владельцем объёму прошла ручной PIE 10/10 с совпавшими pre/post SHA; Draft PR №28 открыт; Split/Merge и stale Revision выделены в A17.1. A36 остаётся техническим проектом. Отчёты SEC01/SEC02 сохраняют формулировки этапа до merge; актуальный статус указан в [ProjectStatus](../ProjectStatus.md).
+A17 MVP по уточнённому владельцем объёму прошла ручной PIE 10/10 с совпавшими pre/post SHA; PR №28 **merged**; Split/Merge и stale Revision выделены в A17.1 и опубликованы через **merged PR #37**. A36 остаётся техническим проектом. Отчёты SEC01/SEC02 сохраняют формулировки этапа до merge; актуальный статус указан в [ProjectStatus](../ProjectStatus.md).
 
 ## Основные решения
 

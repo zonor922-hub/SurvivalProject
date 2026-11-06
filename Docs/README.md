@@ -10,6 +10,9 @@
 - [Архитектура игровых систем](Architecture/02_GAMEPLAY_ARCHITECTURE.md).
 - [План из 44 задач](Architecture/03_IMPLEMENTATION_BACKLOG.md).
 - [Инструкция следующему разработчику](Architecture/04_AI_HANDOFF.md).
+- [Design Gate: сначала GDD/утверждение, затем реализация](Development/01_DESIGN_FIRST_POLICY.md).
+- [Исторический Inventory Design v0.4](Design/INVENTORY_DESIGN_V04_DRAFT.md) и [архивная матрица 30 будущих тестов](Design/INVENTORY_DESIGN_GATE_MATRIX.md): действующий приоритет у INVENTORY-UX/BP01, тесты NOT RUN.
+- [Исторический статус A17.1 от 05.11 с актуализацией PR #37 merged](Architecture/30_A17_1_LOCAL_STATUS_AND_PUBLICATION.md).
 - [Аудит проекта](Architecture/01_PROJECT_AUDIT.md), отчёты [A01](Architecture/05_A01_EDITOR_AUDIT.md), [A02](Architecture/06_A02_BACKUP_AND_VERSIONING.md), [A03](Architecture/07_A03_GAMEPLAY_BOOTSTRAP.md), [A04](Architecture/08_A04_SYSTEMS_TEST_MAP.md).
 - [Восстановление снимка A02](Architecture/versioning/RESTORE.md).
 - [Перечень скопированных источников и контрольные суммы](SourceManifest.json).

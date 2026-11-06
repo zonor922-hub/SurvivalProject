@@ -1,6 +1,6 @@
 # SurvivalProject — единый реестр игровых механик
 
-> Обновлено: **06.11.2026** (дополнение INVENTORY-UX в PR #36 и актуальный статус A17.1 PR #37; прочие исторические статусы без пересмотра). База GitHub `main` перед синхронизацией: `16c51bc39244ca107c427777abadc033960995a4`.
+> Обновлено: **06.11.2026** (INVENTORY-UX PR #36 merged, A17.1 PR #37 merged; Design Gate PR #29 на review; остальные исторические статусы без пересмотра). База GitHub `main` перед синхронизацией: `16c51bc39244ca107c427777abadc033960995a4`.
 > **ВНИМАНИЕ:** GDD APPROVED ≠ IMPLEMENTED ≠ TESTED ≠ MERGED. Завершённый MVP означает закрытый **согласованный объём**, а не готовность полной механики или игры.
 
 ## Правило ведения
@@ -17,7 +17,7 @@
 | A05–A07 | Предметы и каталог | Утверждено | MVP в main | PASS истор. | В main | Да | Завершён MVP | Типы предметов, каталог, доставка в сборку | Новые определения и баланс по мере развития | [документ](https://github.com/zonor922-hub/SurvivalProject/blob/main/Docs/Architecture/09_A05_ITEM_TYPES.md) |
 | A08–A12 | Инвентарь: ядро и операции | Утверждено | MVP в main | PASS истор. | В main | Да | Завершён MVP | Стопки, слот/вес, split/merge, перенос, инварианты | Не менять точные контракты при внедрении BP01 | [документ](https://github.com/zonor922-hub/SurvivalProject/blob/main/Docs/Architecture/22_A12_INVENTORY_TESTS.md) |
 | A17 | Экран инвентаря MVP | Утверждено | MVP в main | PASS владелец | В main | Да | Завершён MVP | Read-only экран; пользовательская PIE 10/10; PR #28 merged | Расширенные операции отнесены к A17.1 | [документ](https://github.com/zonor922-hub/SurvivalProject/pull/28) |
-| INV-UX01 | Инвентарь UX: Drag/Hotbar/Inspect/Sort/Core+Bag/External | Утверждено | Не начато | NOT RUN | PR #36, merge pending | Нет | DESIGN APPROVED / UE OPEN | Владелец утвердил GDD правил интерфейса и операций 06.11.2026; docs-only PR #36 | Реализовать отдельно от A17.1, сохранить A05–A12/BP01 и выполнить новые PIE | [GDD](GDD/INVENTORY_UX_DECISIONS_2026-11-06.md) |
+| INV-UX01 | Инвентарь UX: Drag/Hotbar/Inspect/Sort/Core+Bag/External | Утверждено | Не начато | NOT RUN | PR #36 merged | Нет | DESIGN APPROVED / UE OPEN | Владелец утвердил GDD правил интерфейса и операций 06.11.2026; docs-only PR #36 | Реализовать отдельно от A17.1, сохранить A05–A12/BP01 и выполнить новые PIE | [GDD](GDD/INVENTORY_UX_DECISIONS_2026-11-06.md) |
 | A17.1 | UI Split/Merge + stale Revision | Утверждено | UI в main | Отчёт Sol: compile 4/4, UI 15/15, A12 1644, A10 272 PASS; Windows package NOT RUN | PR #37 merged | Да (scope A17.1) | Опубликован MVP | Изолированные WBP_Inventory/WBP_InventorySlot опубликованы; PR #37 объединён 06.11.2026 | Полные машинные доказательства и Windows package не опубликованы; новые INVENTORY-UX вне A17.1 | [PR #37](https://github.com/zonor922-hub/SurvivalProject/pull/37) |
 | A13–A16 | Взаимодействия, подбор, HUD | Утверждено | MVP в main | PASS истор. | В main | Да | Завершён MVP | Focus, Input, World Pickup, HUD | Дополнительные проверки жизненного цикла; новый BP01 pickup отдельно | [документ](https://github.com/zonor922-hub/SurvivalProject/blob/main/Docs/Architecture/25_A15_WORLD_PICKUP.md) |
 | A24 | Плавание | Утверждено | MVP в main | PASS истор. | В main | Да | Завершён MVP | Базовые переходы в воде, прохождение берегов | Анимация MVP; кислород/утопление не реализованы | [документ](https://github.com/zonor922-hub/SurvivalProject/blob/main/Docs/Architecture/13_A24_SWIMMING.md) |
@@ -61,6 +61,6 @@
 
 ## Дополнение INVENTORY-UX (06.11.2026)
 
-- [Утверждённые правила UI инвентаря и контейнеров](GDD/INVENTORY_UX_DECISIONS_2026-11-06.md): DESIGN APPROVED; новые функции НЕ реализованы и НЕ проверены. Документация в отдельном PR #36, до merge ещё не в main.
+- [Утверждённые правила UI инвентаря и контейнеров](GDD/INVENTORY_UX_DECISIONS_2026-11-06.md): DESIGN APPROVED; новые функции НЕ реализованы и НЕ проверены. Документация опубликована через merged PR #36; Unreal-реализация новых функций NOT RUN.
 - A17 MVP (#28) и A17.1 (#37) объединены в main; новый дизайн INV-UX01 не реализован в их рамках.
 - Старые DOC02 PR #29 и его Inventory v0.4 остаются историческим ранним черновиком, устаревшие рекомендации не замещают более поздние явные решения.
