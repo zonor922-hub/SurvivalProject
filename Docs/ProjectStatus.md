@@ -1,5 +1,7 @@
 # SurvivalProject — текущий прогресс
 
+> **BUILD01-FIX01 — документация / проверка в Draft PR #35:** исправлен активный BUILD01 GDD с сохранением архива отменённых D06-C/C03; подготовлены [спецификации BUILD-WP01–WP07 и план переноса](Architecture/31_BUILD01_WORK_PACKAGES.md). Зависимости: Inventory A05–A12, A29–A40, A36 v1 и SLEEP01; WP05 разделён на интерфейсный gate и итоговую приёмку после WP06. Игровая реализация, PIE, migration и Windows build **NOT TESTED**; исходный backlog не изменён, перенос только после отдельного прямого разрешения. Изменённые файлы: GDD BUILD01, указанный отчёт Architecture и ProjectStatus. Документальные проверки и Repository CI фиксируются в отчёте PR; это не merge и не подтверждение готовности к реализации.
+
 ## A17.1 — изолированная проверка (06.11.2026)
 
 **Статус: LOCAL VERIFICATION PASS / DRAFT PR #37 OPEN / CI PASS / MERGE PENDING.**
