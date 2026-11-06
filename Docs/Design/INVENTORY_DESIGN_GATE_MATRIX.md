@@ -1,7 +1,21 @@
-# SurvivalProject — Inventory Design Gate: решения, зависимости и тест-матрица
+# SurvivalProject — Inventory Design Gate: исторические решения, зависимости и тест-матрица
+
+> **АРХИВ 05.11.2026:** таблица D01–D12 ниже отражает *тогдашние* открытые вопросы; она **не должна блокировать** уже утверждённые правила [INVENTORY-UX](../GDD/INVENTORY_UX_DECISIONS_2026-11-06.md) и [BP01](../GDD/BP01_Backpacks_Decisions_2026-11-05.md). Утверждённые слоты/масса, Core+Bag, Hotbar, Drag-merge с остатком в исходной стопке и опубликованная A17.1 (PR #37) имеют приоритет. Старые альтернативы (включая неограниченный перегруз и неоднозначный «новый слот») остаются только для аудита старых предложений; новые команды/миграции требуют отдельного контракта. **I01–I30 по-прежнему NOT RUN**, они не заменяют PIE/Unreal.
+
+## Актуальное решение по конфликтам (06.11.2026)
+
+| Тема исходной матрицы | Действующий источник |
+|---|---|
+| D01/D03: вес и базовые слоты | BP01 + INVENTORY-UX: жёсткие лимиты контейнеров, Core 12/15 кг, Bag 8/15, 12/25, 18/40; комфорт 35 кг |
+| D02: место остатка после частичного Merge | INVENTORY-UX: для **Drag-merge** остаток в исходной стопке; прежний A10 TryMerge не переписывается |
+| D04/D10: физический Bag и Hotbar | BP01 и INVENTORY-UX DESIGN APPROVED; новое UX не реализовано |
+| A17.1: Split/Merge UI и stale Revision | PR #37 merged, локальные проверки в отдельном отчёте; Windows package NOT RUN |
+| Остальные D-вопросы | Решать по актуальным BP01 / INVENTORY-UX и отдельному change-control; старую таблицу не выдавать за действующий список OPEN |
+
+## Ниже: исторический снимок матрицы 05.11.2026
 
 **Дата:** 05.11.2026  
-**Статус:** DESIGN DRAFT / REVIEW MATERIAL. **Не утверждено целиком.**  
+**Статус снимка на 05.11:** DESIGN DRAFT / REVIEW MATERIAL. **Не текущий статус позднее утверждённых решений.**  
 **Назначение:** превратить предварительные идеи инвентаря в проверяемые решения до любых новых gameplay-изменений.
 
 Документы-основания: [Design First Policy](../Development/01_DESIGN_FIRST_POLICY.md), [Inventory Design v0.4](INVENTORY_DESIGN_V04_DRAFT.md), [A05](../Architecture/09_A05_ITEM_TYPES.md), [A08](../Architecture/12_A08_INVENTORY_STATE.md), [A10](../Architecture/16_A10_SPLIT_MERGE.md), [A11](../Architecture/21_A11_TRANSFER.md), [A36](../Architecture/15_A36_SAVEGAME_ARCHITECTURE.md), [A17.1 publication](../Architecture/30_A17_1_LOCAL_STATUS_AND_PUBLICATION.md).

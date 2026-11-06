@@ -1,18 +1,44 @@
 # SurvivalProject — текущий прогресс
 
-## Обновление 05.11.2026 — Design Gate, A17 и A17.1
+> **DOC02 / PR #29 — Design Gate (06.11.2026):** обязательная [Design First Policy](Development/01_DESIGN_FIRST_POLICY.md) добавлена к AGENTS.md. [Inventory v0.4](Design/INVENTORY_DESIGN_V04_DRAFT.md) и [матрица D01–D12](Design/INVENTORY_DESIGN_GATE_MATRIX.md) публикуются как **исторические черновики от 05.11**, не конкурирующие с действующими BP01 / INVENTORY-UX из merged PR #36. [Отчёт A17.1](Architecture/30_A17_1_LOCAL_STATUS_AND_PUBLICATION.md) содержит исторический BLOCKED и явно зафиксированный последующий merged PR #37. Этот PR документационный; Unreal/PIE и Windows package **NOT RUN**, backlog A29–A40 и A36 v1 не менялись. До отдельного merge PR #29 эти документы находятся только в его ветке.
 
-**Проверено по GitHub:** [A17 MVP PR №28](https://github.com/zonor922-hub/SurvivalProject/pull/28) **объединён в main 03.11.2026**, merge SHA `3bef9fc64b6e9911783e4c581871da8025769430`. Устаревшие «Draft»/«в работе локально» в исторических частях этой сводки относятся к моменту раннего аудита, а не текущему состоянию PR.
+> **INVENTORY-UX — DESIGN APPROVED / UE IMPLEMENTATION NOT STARTED (PR #36):** [GDD Drag/Hotbar/Inspect/Sort/Core+Bag/External](GDD/INVENTORY_UX_DECISIONS_2026-11-06.md) фиксирует утверждённые 06.11.2026 правила и числовой баланс Core/Bag в [BP01](GDD/BP01_Backpacks_Decisions_2026-11-05.md). A17 MVP (#28) и A17.1 (#37) уже объединены, но новый UX из #36 ещё не реализован; Blueprint/PIE/package по нему NOT RUN. Документация PR #36 объединена в main (merge SHA `b510d3e57e976cb4b2d9e04109411a58ca415b66`).
 
-**По сообщению владельца:** A17.1 локально завершена; ранее сообщались успешные ручные проверки, однако независимо проверенный состав `.uasset`, исходящая история, полная регрессия и публикация A17.1 **пока не подтверждены**. Последний доступный отчёт Terra о публикации имел статус BLOCKED из-за смешанных бинарных изменений/неподтверждённых зависимостей. Детали и критерии разблокировки: [A17.1 — локальный статус](Architecture/30_A17_1_LOCAL_STATUS_AND_PUBLICATION.md).
+> **BUILD01-FIX01 — документация объединена в main через PR #35:** исправлен активный BUILD01 GDD с сохранением архива отменённых D06-C/C03; подготовлены [спецификации BUILD-WP01–WP07 и план переноса](Architecture/31_BUILD01_WORK_PACKAGES.md). Зависимости: Inventory A05–A12, A29–A40, A36 v1 и SLEEP01; WP05 разделён на интерфейсный gate и итоговую приёмку после WP06. Игровая реализация, PIE, migration и Windows build **NOT TESTED**; исходный backlog не изменён, перенос только после отдельного прямого разрешения. Изменённые файлы: GDD BUILD01, указанный отчёт Architecture и ProjectStatus. Документальные проверки и Repository CI фиксируются в отчёте PR; это не merge и не подтверждение готовности к реализации.
 
-**Новый согласованный процесс:** сначала спецификация, проверка совместимости и явное утверждение владельцем; затем Blueprint и тесты. [Правила разработки](Development/01_DESIGN_FIRST_POLICY.md), [Inventory Design v0.4 — черновик](Design/INVENTORY_DESIGN_V04_DRAFT.md). Модель слоты+вес, добровольный перегруз без предупреждений, объединение с остатком `15+8→20+3` утверждены **как игровые требования**, но не как доказанные реализованные функции. Существующие A09/A10 контракты и A36 Save DTO пока не менялись этой задачей.
+## A17.1 — изолированная проверка (06.11.2026)
 
-**Это docs-only изменение:** без Unreal/PIE/компиляции Blueprint, без переноса локальных бинарных ресурсов и без изменения пользовательского worktree.
+**Статус: LOCAL VERIFICATION PASS / PR #37 MERGED / CI PASS / WINDOWS PACKAGE NOT RUN.**
+
+Ветка `codex/a17-1-final-verification` от `main` (`2bdc279`) опубликована в [PR #37](https://github.com/zonor922-hub/SurvivalProject/pull/37). Игровой коммит `e0e62d0`; исходный документационный коммит `4a97f96`.
+
+В реализацию входят только WBP_Inventory и WBP_InventorySlot. Изменения BPC_Inventory, Config, .uproject и тестовой карты исключены.
+
+По отчёту Sol на изолированном наборе:
+- Blueprint compile: 4/4 PASS.
+- UI Split/Merge/stale Revision: 15/15 PASS.
+- A12: 1644 утверждения PASS.
+- A10: 272 утверждения PASS.
+- Реальные клики Split/Merge: PASS.
+- HUD, pickup E, блокировка и восстановление управления: PASS.
+
+Результаты Unreal приведены по отчёту Sol. Полные машинные доказательства не опубликованы. Windows package: NOT RUN.
+
+Git LFS fsck и проверка состава игрового коммита: PASS. GitHub Actions `Repository checks (no Unreal Engine)` — **PASS** ([запуск #42233452451](https://github.com/zonor922-hub/SurvivalProject/actions/runs/42233452451)). GitHub CI не проверяет Blueprint в Unreal Engine.
+
+[Финальный отчёт](Architecture/A17_1_FINAL_VERIFICATION_2026-11-06.md).
+
+A17.1 **объединена в main через PR #37**, merge SHA `b1064c9ccbc25e02424cee82f4085bba6499eadd`. Новые механики INVENTORY-UX из PR #36 не входят в A17.1; полный машинный пакет доказательств и Windows package не опубликованы.
+
+---
+
+> **DOC-SLEEP01 — DESIGN COMPLETE / APPROVED; IMPLEMENTATION NOT STARTED:** [дизайн сна](GDD/SLEEP01_Sleep_2026-11-05.md) фиксирует утверждённые правила усталости, восстановления, опасностей, спальника, возрождения, UI, времени и сохранений. Баланс **TUNING / NOT FINAL**. Зависимости: A20/A21/A23/A24, Inventory, TIME01, DEATH01, A36–A40. Игровые проверки NOT RUN. [Отчёт](Architecture/30_DOC_SLEEP01.md).
+
+> **Дизайн-дополнение 05.11.2026 (NOT IMPLEMENTED):** утверждён [BP-D04 Core→EquippedBag](GDD/BP01_Backpacks_Decisions_2026-11-05.md) и дорожная карта S1→S2/P1. Будущая [DEATH01](GDD/DEATH01_LostGear_Decisions_2026-11-05.md) предполагает потерю всего носимого и возврат до исчезновения; это противоречит исторической политике A23 «сохранить inventory», а не её фактическому статусу реализации. Часы/TTL открыты. [Изменения и зависимости](GDD/CHANGE_CONTROL_2026-11-05.md). Данная редакция документа не содержит изменений runtime, Blueprint и новых тестов.
 
 ## A17 — независимый аудит 03.11.2026
 
-**A17 MVP — ручная PIE-приёмка завершена 10/10 PASS; PR №28 был Draft на этапе аудита и объединён 03.11.2026 (см. актуализацию выше).** Владелец формально уточнил 03.11.2026, что минимальный экран — объём A17, а UI Split/Merge и stale Revision относятся к отдельной A17.1. Изменение объёма оформлено в backlog; требования AGENTS.md к проверкам и публикации сохранены. База после fetch `4784cb9d21f62243cf446cceafa04d73f0b77572`, зависимости A10/A12/A14/A16 присутствуют в main. Исходная `task/a17-inventory-ui` без исходящих коммитов; чистая копия подготовлена в `codex/a17-inventory-audit` (`.a17-audit-worktree`), резервная ссылка сохранена. Открыт Draft [PR №28](https://github.com/zonor922-hub/SurvivalProject/pull/28) из `codex/a17-inventory-audit`; исходный проверенный commit `6f574b66f44d0f20a9f14957bc9c4f983d2128af`. На момент подготовки исходного аудита PR оставался Draft; позднее объединён 03.11.2026.
+**A17 MVP — ручная PIE-приёмка завершена 10/10 PASS; Draft PR №28 открыт на проверку.** Владелец формально уточнил 03.11.2026, что минимальный экран — объём A17, а UI Split/Merge и stale Revision относятся к отдельной A17.1. Изменение объёма оформлено в backlog; требования AGENTS.md к проверкам и публикации сохранены. База после fetch `4784cb9d21f62243cf446cceafa04d73f0b77572`, зависимости A10/A12/A14/A16 присутствуют в main. Исходная `task/a17-inventory-ui` без исходящих коммитов; чистая копия подготовлена в `codex/a17-inventory-audit` (`.a17-audit-worktree`), резервная ссылка сохранена. Открыт Draft [PR №28](https://github.com/zonor922-hub/SurvivalProject/pull/28) из `codex/a17-inventory-audit`; исходный проверенный commit `6f574b66f44d0f20a9f14957bc9c4f983d2128af`. PR остаётся Draft и не объединён.
 
 Codex: UE 5.8.4, compile **5/5 BS_UP_TO_DATE**, exit 0; экспорт графов и наличие project package dependencies PASS; четыре кандидата ассетов побитово сохранены; LFS-атрибуты и fsck объектов базы PASS. Новые LFS upload/pre-push не проверялись. В последнем пользовательском логе и новом логе компиляции — 0 совпадений Blueprint Runtime Error/Accessed None. Пользовательские физические PIE A17 PASS и A16 5/5 PASS записаны отдельно; Codex их не повторял.
 
@@ -24,7 +50,7 @@ Codex: UE 5.8.4, compile **5/5 BS_UP_TO_DATE**, exit 0; экспорт граф�
 
 - **A15 — реализована и объединена** через [PR №22](https://github.com/zonor922-hub/SurvivalProject/pull/22), merge `15b3f6d8087d850f5f156254dd757bd616b469df`. [Отчёт](Architecture/25_A15_WORLD_PICKUP.md): целевой lifecycle 10/0 закрыл прежний BLOCKER; полная регрессия и свежая упаковка не повторялись.
 - **A16 — реализована и объединена**, [PR №23](https://github.com/zonor922-hub/SurvivalProject/pull/23), merge `aa8f7dbd25bf707a30722feee809794d61fcfbf8`. Минимальный HUD взаимодействия; ручные проверки PR и пользовательские 6/6 PASS описаны отдельно в [отчёте A16](Architecture/28_A16_INTERACTION_HUD.md). Независимая инспекция графов и полный lifecycle подписок не доказаны.
-- **A17 — исторический статус DOC01:** в тот момент реализация не была подтверждена в main; позднее PR №28 объединён 03.11.2026. Локальные незакоммиченные файлы не включались в DOC01.
+- **A17 — в работе локально**; реализация в main не подтверждена. Локальные незакоммиченные файлы не включены в DOC01.
 - **A36 SaveGame — технический проект**, реализация не подтверждена; наличие ТЗ не означает готовую систему сохранения.
 - **SEC03 — активирована защита main и обязательный CI**. GitHub API подтвердил [Ruleset 26429234](https://github.com/zonor922-hub/SurvivalProject/rules/26429234): active, default branch main, обязательный PR, запрет удаления/force push, strict status check `Repository checks (no Unreal Engine)` (integration 15368), bypass отсутствует. Отдельного документа SEC03 в main нет; настройки в DOC01 не изменялись.
 
@@ -61,7 +87,7 @@ Codex: UE 5.8.4, compile **5/5 BS_UP_TO_DATE**, exit 0; экспорт граф�
 | A14 — Enhanced Input | **Завершена, PR №20 объединён в main** (`a8e8fcaea27ed39852c25d5ac912aa5b62a1434f`) | [Отчёт](Architecture/24_A14_ENHANCED_INPUT.md): 8 Blueprint compile PASS, PIE 274/0, Jump 4/0, регрессия A12 548/0 (до Jump fix); физические E/Tab и UI-политика подтверждены пользователем после merge (E через breakpoint). Полная A13/A24, package, multiplayer — NOT RUN |
 | A15 — World Pickup | Реализована, PR №22 объединён | [Отчёт и исторические проверки](Architecture/25_A15_WORLD_PICKUP.md); ограничения сохранены |
 | A16 — Interaction HUD | Реализована, PR №23 объединён; ограничения проверки открыты | [Отчёт](Architecture/28_A16_INTERACTION_HUD.md); ручные результаты не равны независимому автоматическому аудиту |
-| A17 — экран inventory | **A17 MVP merged в main через PR №28** (03.11.2026); A17.1 заявлена владельцем завершённой локально, публикация не подтверждена | [Отчёт A17](Architecture/29_A17_INVENTORY_UI_AUDIT.md), [статус A17.1](Architecture/30_A17_1_LOCAL_STATUS_AND_PUBLICATION.md) |
+| A17 — экран inventory | В работе локально; реализация в main не подтверждена | Вне DOC01 |
 | A18–A23, A25–A35, A37–A44 | Реализация в main не подтверждена | [План и критерии](Architecture/03_IMPLEMENTATION_BACKLOG.md) |
 
 В main объединены реализации A01–A16 и A24 (17 пунктов из 44); объём проверок и ограничения различаются, см. отчёты. Полная независимая проверка A16 не завершена. F01/F02 — исправления существующих задач, не новые пункты из 44. Это не процент готовности игры. Свежий package A09 не проверен; историческая A07 проверяла каталог отдельно.

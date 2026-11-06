@@ -7,6 +7,23 @@
 Проект: `<PROJECT_ROOT>\SurvivalProject.uproject`.
 Этот каталог содержит документацию, а не реализованные игровые системы.
 
+## DOC02 — Design Gate и исторические материалы
+
+- [Обязательный цикл проектирования до реализации](../Development/01_DESIGN_FIRST_POLICY.md) закреплён в AGENTS.md.
+- [Inventory v0.4 — архивный черновик 05.11](../Design/INVENTORY_DESIGN_V04_DRAFT.md) и [историческая матрица решений/30 будущих тестов](../Design/INVENTORY_DESIGN_GATE_MATRIX.md): **не отменяют** позднее утверждённые [INVENTORY-UX](../GDD/INVENTORY_UX_DECISIONS_2026-11-06.md) и [BP01](../GDD/BP01_Backpacks_Decisions_2026-11-05.md); будущие тесты NOT RUN.
+- [A17.1: исходный локальный отчёт 05.11 и актуализация](30_A17_1_LOCAL_STATUS_AND_PUBLICATION.md): **PR #37 merged в main**, а не старое «publication pending». Отчёт с локальными результатами: [A17.1 FINAL](A17_1_FINAL_VERIFICATION_2026-11-06.md).
+- BUILD01 через PR #35 и INVENTORY-UX через PR #36 опубликованы как **дизайн**, а не готовый игровой код.
+
+## Актуальные проектные решения от 05.11.2026 (дизайн, NOT IMPLEMENTED)
+
+- [BP-D01–D05: рюкзаки, FALLBACK, план S1→S2/P1](../GDD/BP01_Backpacks_Decisions_2026-11-05.md).
+- [DEATH01: потеря носимого и возврат до истечения](../GDD/DEATH01_LostGear_Decisions_2026-11-05.md).
+- [CHANGE-CONTROL-01: управление межсистемными изменениями](../GDD/CHANGE_CONTROL_2026-11-05.md).
+- [TIME-D01: нормальный ход мирового времени, пропуск только через сон](../GDD/TIME01_WorldClock_2026-11-05.md) (проектное правило, реализация NOT RUN).
+- [GDD-SLEEP01: утверждённый дизайн сна](../GDD/SLEEP01_Sleep_2026-11-05.md) и [DOC-SLEEP01](30_DOC_SLEEP01.md) — **DESIGN COMPLETE / APPROVED; IMPLEMENTATION NOT STARTED**. Единственный источник правил сна; числа TUNING / NOT FINAL. Системы BP01, TIME01 и DEATH01 описаны отдельно.
+
+Новый GDD приоритетен как **проектная цель**; фактические Blueprint, A23, A15 и схема A36 не обновлены. Исторические результаты тестов остаются историческими.
+
 ## Порядок чтения
 
 Текущий прогресс — [Docs/ProjectStatus.md](../ProjectStatus.md). Итог A09 и исправления независимого аудита F01/F02: [отчёт и воспроизводимый запуск](14_A09_F01_F02_VALIDATION.md). Проект сохранения A36 (не реализован): [схема SaveGame, DTO, версии и ТЗ](15_A36_SAVEGAME_ARCHITECTURE.md). Исторические формулировки ниже описывают прежние этапы.
@@ -33,14 +50,7 @@ A11 (**реализована и объединена через [PR №16](http
 - [SEC02 — repository CI](27_SEC02_CI.md): PR №25 объединён, Actions на main success; это статические проверки без Unreal Engine.
 - SEC03: [активный Ruleset main](https://github.com/zonor922-hub/SurvivalProject/rules/26429234), проверен GitHub API; отдельного документа в main нет.
 
-A17 MVP по уточнённому владельцем объёму прошла ручной PIE 10/10 с совпавшими pre/post SHA; PR №28 был создан как Draft и позже **объединён в main 03.11.2026**. Split/Merge и stale Revision выделены в A17.1. A36 остаётся техническим проектом. Отчёты SEC01/SEC02 сохраняют формулировки этапа до merge; актуальный статус указан в [ProjectStatus](../ProjectStatus.md).
-
-## Обновление 05.11.2026 — процесс и инвентарь
-
-- **Design Gate принят владельцем:** [обязательный цикл проектирования и утверждения](../Development/01_DESIGN_FIRST_POLICY.md). В `AGENTS.md` добавлено требование явного утверждения до gameplay-правок.
-- [Inventory Design v0.4 (DRAFT)](../Design/INVENTORY_DESIGN_V04_DRAFT.md) — принятые игровые правила отдельно от ещё обсуждаемых механик; ничего из новых восьми расширений не объявлено реализованным. [Матрица Design Gate](../Design/INVENTORY_DESIGN_GATE_MATRIX.md) фиксирует 12 открытых решений, конфликты A09/A10/A11/A36 и 30 будущих тестов (NOT RUN).
-- [A17.1: локальный статус и условия публикации](30_A17_1_LOCAL_STATUS_AND_PUBLICATION.md). Владелец сообщает о завершении локальной реализации; независимая проверка полного состава и публикация в GitHub ещё не подтверждены.
-- [A17 MVP: PR №28](https://github.com/zonor922-hub/SurvivalProject/pull/28) фактически **merged** 03.11.2026, merge SHA `3bef9fc64b6e9911783e4c581871da8025769430`. Старые записи «Draft PR» ниже относятся к более раннему этапу отчёта и не являются актуальным статусом.
+A17 MVP по уточнённому владельцем объёму прошла ручной PIE 10/10 с совпавшими pre/post SHA; PR №28 **merged**; Split/Merge и stale Revision выделены в A17.1 и опубликованы через **merged PR #37**. A36 остаётся техническим проектом. Отчёты SEC01/SEC02 сохраняют формулировки этапа до merge; актуальный статус указан в [ProjectStatus](../ProjectStatus.md).
 
 ## Основные решения
 
@@ -62,4 +72,4 @@ A17 MVP по уточнённому владельцем объёму прошл
 
 [A11 — итог реализации, приёмки и merge PR №16](21_A11_TRANSFER.md): аудитированный HEAD `957947c`, merge `6d4e854cbacc08e7f6d661eff00714c94cf974a4`, 15 093 PASS / 0 FAIL (12 Blueprint, PIE A09/A10/A11 и A24). Независимый аудит: Ready with Conditions, без Blocker/Major; [принятый риск бинарной непрозрачности Blueprint](https://github.com/zonor922-hub/SurvivalProject/pull/16#issuecomment-6488845100). Глобальная проверка GUID — A36/T15; загрузка/инвалидирование — A39 (**38a–d NOT RUN**); свежая упаковка — F04 (**не выполнена**). Отчёты 19/20 и промежуточные результаты остаются историческими свидетельствами.
 
-[A17 — независимый аудит 03.11.2026](29_A17_INVENTORY_UI_AUDIT.md): объём MVP уточнён владельцем; Split/Merge/stale Revision вынесены в A17.1. Compile 5/5 PASS; ручная PIE-приёмка пользователя 10/10 PASS с отдельной проверкой неизменности SHA 29/29. Codex самостоятельно физические PIE не повторял. Последующий PR №28 объединён в main 03.11.2026. Статусы NOT RUN в предварительном [audit_summary.json](evidence/a17/audit_summary.json) отражают ранний этап аудита, не финальную ручную приёмку; исторический JSON сохранён без изменений.
+[A17 — независимый аудит 03.11.2026](29_A17_INVENTORY_UI_AUDIT.md): объём MVP уточнён владельцем; Split/Merge/stale Revision вынесены в A17.1. Compile 5/5 PASS; целевые PIE требуют повторения на текущих хешах перед Draft PR. Ручные PIE пользователя отделены от проверок Codex.
