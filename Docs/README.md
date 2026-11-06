@@ -2,6 +2,8 @@
 
 Начните с [текущего статуса](ProjectStatus.md).
 
+- [INVENTORY-UX — утверждённые правила Drag, Hotbar, сортировки, Core+Bag и внешних контейнеров (GDD, не реализация)](GDD/INVENTORY_UX_DECISIONS_2026-11-06.md).
+
 **Концепция игры:** [Game Design Document — «Земли Отголосков»](GAME_DESIGN_DOCUMENT.md). GDD описывает желаемый игровой опыт и планы развития; техническая реализация и статусы задач отражаются в архитектуре и ProjectStatus.
 
 - [Архитектура и навигация по отчётам](Architecture/README.md).

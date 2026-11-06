@@ -1,12 +1,14 @@
 # SurvivalProject — текущий прогресс
 
-> **BUILD01-FIX01 — документация / проверка в Draft PR #35:** исправлен активный BUILD01 GDD с сохранением архива отменённых D06-C/C03; подготовлены [спецификации BUILD-WP01–WP07 и план переноса](Architecture/31_BUILD01_WORK_PACKAGES.md). Зависимости: Inventory A05–A12, A29–A40, A36 v1 и SLEEP01; WP05 разделён на интерфейсный gate и итоговую приёмку после WP06. Игровая реализация, PIE, migration и Windows build **NOT TESTED**; исходный backlog не изменён, перенос только после отдельного прямого разрешения. Изменённые файлы: GDD BUILD01, указанный отчёт Architecture и ProjectStatus. Документальные проверки и Repository CI фиксируются в отчёте PR; это не merge и не подтверждение готовности к реализации.
+> **INVENTORY-UX — DESIGN APPROVED / UE IMPLEMENTATION NOT STARTED (PR #36):** [GDD Drag/Hotbar/Inspect/Sort/Core+Bag/External](GDD/INVENTORY_UX_DECISIONS_2026-11-06.md) фиксирует утверждённые 06.11.2026 правила и числовой баланс Core/Bag в [BP01](GDD/BP01_Backpacks_Decisions_2026-11-05.md). A17 MVP (#28) и A17.1 (#37) уже объединены, но новый UX из #36 ещё не реализован; Blueprint/PIE/package по нему NOT RUN. Документация PR #36 до merge остаётся вне main.
+
+> **BUILD01-FIX01 — документация объединена в main через PR #35:** исправлен активный BUILD01 GDD с сохранением архива отменённых D06-C/C03; подготовлены [спецификации BUILD-WP01–WP07 и план переноса](Architecture/31_BUILD01_WORK_PACKAGES.md). Зависимости: Inventory A05–A12, A29–A40, A36 v1 и SLEEP01; WP05 разделён на интерфейсный gate и итоговую приёмку после WP06. Игровая реализация, PIE, migration и Windows build **NOT TESTED**; исходный backlog не изменён, перенос только после отдельного прямого разрешения. Изменённые файлы: GDD BUILD01, указанный отчёт Architecture и ProjectStatus. Документальные проверки и Repository CI фиксируются в отчёте PR; это не merge и не подтверждение готовности к реализации.
 
 ## A17.1 — изолированная проверка (06.11.2026)
 
-**Статус: LOCAL VERIFICATION PASS / DRAFT PR #37 OPEN / CI PASS / MERGE PENDING.**
+**Статус: LOCAL VERIFICATION PASS / PR #37 MERGED / CI PASS / WINDOWS PACKAGE NOT RUN.**
 
-Ветка `codex/a17-1-final-verification` от `main` (`2bdc279`) опубликована в [Draft PR #37](https://github.com/zonor922-hub/SurvivalProject/pull/37). Игровой коммит `e0e62d0`; исходный документационный коммит `4a97f96`.
+Ветка `codex/a17-1-final-verification` от `main` (`2bdc279`) опубликована в [PR #37](https://github.com/zonor922-hub/SurvivalProject/pull/37). Игровой коммит `e0e62d0`; исходный документационный коммит `4a97f96`.
 
 В реализацию входят только WBP_Inventory и WBP_InventorySlot. Изменения BPC_Inventory, Config, .uproject и тестовой карты исключены.
 
@@ -24,7 +26,7 @@ Git LFS fsck и проверка состава игрового коммита:
 
 [Финальный отчёт](Architecture/A17_1_FINAL_VERIFICATION_2026-11-06.md).
 
-A17.1 **опубликована в Draft PR #37, но не объединена в main**. Финальное review и отдельное разрешение на merge остаются открытыми. Новые механики INVENTORY-UX из PR #36 не входят в A17.1.
+A17.1 **объединена в main через PR #37**, merge SHA `b1064c9ccbc25e02424cee82f4085bba6499eadd`. Новые механики INVENTORY-UX из PR #36 не входят в A17.1; полный машинный пакет доказательств и Windows package не опубликованы.
 
 ---
 
