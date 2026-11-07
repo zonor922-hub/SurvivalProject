@@ -1,0 +1,2162 @@
+{
+  "task": "A18-ID01",
+  "design_version": "1.0",
+  "design_approved": true,
+  "date": "2026-11-07",
+  "timezone": "Europe/Moscow",
+  "branch": "task/a18-storage-container",
+  "head": "3cc9e8ea80cff6ac936aa48cbaf586f31839cccd",
+  "overall": "READY_FOR_REVIEW_LOCAL_ID01_15_PASS_NATIVE_DIAGNOSTIC_RISK_UNKNOWN",
+  "matrix": {
+    "C01": {
+      "result": "PASS",
+      "detail": "6/6 strict compile; no new compile repeated.",
+      "evidence": "PrimaryPostRestore/recovery_check_results.json"
+    },
+    "P01": {
+      "result": "PASS",
+      "detail": "Post-restore real E/exact quantity/one Revision/event/repeat PASS. Pre-refactor working Pickup is USER-VERIFIED baseline from original user report, not independent measured pre-change run.",
+      "evidence": "PrimaryPostRestore/session1.json; session2.json"
+    },
+    "P02": {
+      "result": "PASS",
+      "detail": "BP callback reentry guards/one event; fresh-live-pickup oversized rollback. session2 freed-wrapper harness error superseded by session3, retained.",
+      "evidence": "PrimaryPostRestore/session2.json; session3.json"
+    },
+    "H01": {
+      "result": "PASS",
+      "detail": "Actual trace/focus prompts and range/LoS, different Actor classes.",
+      "evidence": "PrimaryPostRestore/trace_pickup.json; trace_storage.json; session2.json"
+    },
+    "H02": {
+      "result": "PASS",
+      "detail": "Read-only fixture Context empty; prompt and no inventory mutation/events.",
+      "evidence": "PrimaryPostRestore/session2.json"
+    },
+    "H03": {
+      "result": "PASS",
+      "detail": "Empty options, reasons explicit/fallback, non-interface/null/range/LoS hide.",
+      "evidence": "PrimaryPostRestore/session1.json; session2.json"
+    },
+    "H04": {
+      "result": "PASS",
+      "detail": "Destroyed/null focus, missing Pawn/HUD restored; BP focus events counted.",
+      "evidence": "PrimaryPostRestore/session1.json; session2.json"
+    },
+    "I01": {
+      "result": "PASS",
+      "detail": "Missing authored same-class case closed in isolated editor-world; both references reported; PIE validator rejects both, player and two storage snapshots unchanged, inventory events 0/0/0. Previous different-class case retained.",
+      "evidence": "MissingCasesIsolated/i01_final.json; cleanup.json; verification_summary.json"
+    },
+    "I02": {
+      "result": "PASS",
+      "detail": "Unique/missing/mismatch/malformed IDs/raw duplicates; no snapshot/event mutation.",
+      "evidence": "PrimaryPostRestore/session1.json; session2.json; session3.json"
+    },
+    "I03": {
+      "result": "PASS",
+      "detail": "Two authored IDs stable across PIE; repeated BeginPlay/deferred fixture; getter/static assignment preservation.",
+      "evidence": "PrimaryPostRestore/session2.json; session3.json; preservation_summary.json"
+    },
+    "I04": {
+      "result": "PASS",
+      "detail": "Assigned ID before deferred spawn; loaded authored IDs preserved. Save/Load subsystem outside criterion.",
+      "evidence": "PrimaryPostRestore/session3.json; recovery_check_results.json"
+    },
+    "I05": {
+      "result": "PASS",
+      "detail": "Direct mismatch ExecuteInteraction refused; full snapshot same, zero events, pickup alive/flags unchanged. Empty-ID Controller path and destroyed-focus safe. Open not implemented.",
+      "evidence": "direct_negative_context_results.json; PrimaryPostRestore/session1.json; session2.json"
+    },
+    "R01": {
+      "result": "PASS",
+      "detail": "Six actual I open/close cycles in SAME PIE: same widget, snapshots/events/binding exports unchanged; InventoryChanged/Split/Merge bindings remain one. Single native Split and Merge afterwards: +1 revision/event each, total quantity two; previous UI/stale checks retained.",
+      "evidence": "MissingCasesIsolated/r01_final.json; verification_summary.json"
+    },
+    "L01": {
+      "result": "PASS",
+      "detail": "Blueprint Runtime Error / Accessed None absent. Native crash+prior ensure classified UNKNOWN separately, not Blueprint error nor clean overall UE PASS.",
+      "evidence": "PrimaryPostRestore/EditorPostRestore.log; DirectNegativeContextEditor.log; EditorCrash_2026-11-07.log"
+    },
+    "S01": {
+      "result": "PASS",
+      "detail": "Preservation comparison recomputed; only HUD EventGraph and added getters change. Current six hashes match frozen restored files; original backups and unchanged BPC_Interaction retained. Existing Config/.uproject edits excluded; no new broad post-restore graph dump.",
+      "evidence": "preservation_summary.json; live_raw_before.json; live_raw_after.json; live_defaults.json; disk_defaults.json; primary_restore_manifest.json; RecoverySources/manifest.json"
+    }
+  },
+  "precrash_sessions": {
+    "1": {
+      "file": "D:\\Project\\SurvivalProject_A18\\Saved\\Verification\\A18-ID01\\runtime_session1_results.json",
+      "sha256": "4edc246c2ffb5c5f1fe0c06bc9062bde37915405f5942097a346d6ac0a47423a",
+      "rows": 53,
+      "counts": {
+        "PASS": 45,
+        "FAIL": 2,
+        "HARNESS_ERROR": 2,
+        "NOT RUN": 4
+      }
+    },
+    "2": {
+      "file": "D:\\Project\\SurvivalProject_A18\\Saved\\Verification\\A18-ID01\\runtime_session2_results.json",
+      "sha256": "5c5732602347198163a0c9ef91f93e24ffa0e0a4198dbc8ccab81872890726ce",
+      "rows": 26,
+      "counts": {
+        "PASS": 23,
+        "FAIL": 1,
+        "HARNESS_ERROR": 2,
+        "NOT RUN": 0
+      }
+    },
+    "3": {
+      "file": "D:\\Project\\SurvivalProject_A18\\Saved\\Verification\\A18-ID01\\runtime_session3_results.json",
+      "sha256": "a33f30aff7fee5328b493d57add4be3e00206dee8a6af308047ad080637d816f",
+      "rows": 18,
+      "counts": {
+        "PASS": 17,
+        "FAIL": 0,
+        "HARNESS_ERROR": 1,
+        "NOT RUN": 0
+      }
+    },
+    "4": {
+      "file": "D:\\Project\\SurvivalProject_A18\\Saved\\Verification\\A18-ID01\\runtime_session4_results.json",
+      "sha256": "5080978d137a0c8a3e64bf91602a9d065c82dfa303ef1bdde69cb05381683e23",
+      "rows": 14,
+      "counts": {
+        "PASS": 14,
+        "FAIL": 0,
+        "HARNESS_ERROR": 0,
+        "NOT RUN": 0
+      }
+    }
+  },
+  "protected_original_files": [
+    {
+      "file": "Content/Survival/Core/BP_SurvivalPlayerController.uasset",
+      "sha256_before": "B1DCDE0FA5AC87AEC85DCB39A3960A20809104E599E9B73F258CD0DCB3FFE2B3",
+      "sha256_now": "B1DCDE0FA5AC87AEC85DCB39A3960A20809104E599E9B73F258CD0DCB3FFE2B3",
+      "unchanged": true,
+      "sha256_current": "5D12E59CC81AED3FCBE9474C8713C28C0D7869B34E7D3E52FB35D7DCC2ABD371",
+      "unchanged_since_preflight": false
+    },
+    {
+      "file": "Content/Survival/Interaction/BPI_Interactable.uasset",
+      "sha256_before": "D4BDD2520BF80E4EDC8BEDD1565FAE426491ADE96E0E59C951525508FB6D4545",
+      "sha256_now": "D4BDD2520BF80E4EDC8BEDD1565FAE426491ADE96E0E59C951525508FB6D4545",
+      "unchanged": true,
+      "sha256_current": "F55982F29B34F34794B57768D7814D9D9AA928157703A18BEB003B23DD0B3358",
+      "unchanged_since_preflight": false
+    },
+    {
+      "file": "Content/Survival/Interaction/BP_WorldPickup.uasset",
+      "sha256_before": "649DCD6CCC5BC3915EBF3DFC9F708C9160AEB887BE29A0B92967163E29A85F12",
+      "sha256_now": "649DCD6CCC5BC3915EBF3DFC9F708C9160AEB887BE29A0B92967163E29A85F12",
+      "unchanged": true,
+      "sha256_current": "B51DD60114869F106CCCDB6AA6B355A16DBEDB892C329D1EC1C1F256A96F377C",
+      "unchanged_since_preflight": false
+    },
+    {
+      "file": "Content/Survival/Interaction/BP_StorageContainer.uasset",
+      "sha256_before": "D01496C6999A16D9B7AAE5C4A7BC77F8DAC171421818D8FC6B83A7D1328A0AE4",
+      "sha256_now": "D01496C6999A16D9B7AAE5C4A7BC77F8DAC171421818D8FC6B83A7D1328A0AE4",
+      "unchanged": true,
+      "sha256_current": "10CDABF622EAD39182160E7A35A4804BC318BE179600D2F4BC652CF95273EE8F",
+      "unchanged_since_preflight": false
+    },
+    {
+      "file": "Content/Survival/Interaction/BPC_Interaction.uasset",
+      "sha256_before": "A323D0C1B9D91E7CB721B90EA03BC098D0CD2AFF9E2024299EAF4CD29F5F6B0B",
+      "sha256_now": "A323D0C1B9D91E7CB721B90EA03BC098D0CD2AFF9E2024299EAF4CD29F5F6B0B",
+      "unchanged": true,
+      "sha256_current": "A323D0C1B9D91E7CB721B90EA03BC098D0CD2AFF9E2024299EAF4CD29F5F6B0B",
+      "unchanged_since_preflight": true
+    },
+    {
+      "file": "Content/Survival/Maps/LV_SystemsTest.umap",
+      "sha256_before": "F28E78C156F7CF50DCAC976262994A6245FA33FB94418E95FACBF057ACAD3DBE",
+      "sha256_now": "F28E78C156F7CF50DCAC976262994A6245FA33FB94418E95FACBF057ACAD3DBE",
+      "unchanged": true,
+      "sha256_current": "431B917BF1EE2C063650B58432C5DBD6F379884726541142B3DA2CF928EC8D03",
+      "unchanged_since_preflight": false
+    }
+  ],
+  "preservation": {
+    "/Game/Survival/Core/BP_SurvivalPlayerController": {
+      "changed_graphs": [
+        "/Game/Survival/Core/BP_SurvivalPlayerController.BP_SurvivalPlayerController:EventGraph"
+      ],
+      "added_graphs": []
+    },
+    "/Game/Survival/Interaction/BPI_Interactable": {
+      "changed_graphs": [],
+      "added_graphs": [
+        "/Game/Survival/Interaction/BPI_Interactable.BPI_Interactable:GetInteractionTargetId"
+      ]
+    },
+    "/Game/Survival/Interaction/BP_WorldPickup": {
+      "changed_graphs": [],
+      "added_graphs": [
+        "/Game/Survival/Interaction/BP_WorldPickup.BP_WorldPickup:GetInteractionTargetId"
+      ]
+    },
+    "/Game/Survival/Interaction/BP_StorageContainer": {
+      "changed_graphs": [],
+      "added_graphs": [
+        "/Game/Survival/Interaction/BP_StorageContainer.BP_StorageContainer:GetInteractionTargetId"
+      ]
+    },
+    "/Game/Survival/Interaction/BPC_Interaction": {
+      "changed_graphs": [],
+      "added_graphs": []
+    }
+  },
+  "log_pattern_counts": {
+    "accessed_none": 0,
+    "blueprint_runtime_error": 0,
+    "pie_error": 0,
+    "native_access_violation": 1
+  },
+  "crash": {
+    "time_moscow": "2026-11-07 11:33:02 +03:00",
+    "operation": "final_graph_audit.py through SlateInspector Type",
+    "exception": "EXCEPTION_ACCESS_VIOLATION reading address 0xffffffffffffffff",
+    "root_cause": "NOT ESTABLISHED",
+    "log": "D:\\Project\\SurvivalProject_A18\\Saved\\Verification\\A18-ID01\\EditorCrash_2026-11-07.log"
+  },
+  "recovery": {
+    "frozen_manifest": "D:\\Project\\SurvivalProject_A18\\Saved\\Verification\\A18-ID01\\RecoverySources\\manifest.json",
+    "files": [
+      {
+        "Target": "Content/Survival/Interaction/BPI_Interactable.uasset",
+        "Autosave": "Saved/Autosaves/Game/Survival/Interaction/BPI_Interactable_Auto5.uasset",
+        "RecoveryFile": "D:\\Project\\SurvivalProject_A18\\Saved\\Verification\\A18-ID01\\RecoverySources\\Content\\Survival\\Interaction\\BPI_Interactable.uasset",
+        "SHA256": "F55982F29B34F34794B57768D7814D9D9AA928157703A18BEB003B23DD0B3358",
+        "Bytes": 22219
+      },
+      {
+        "Target": "Content/Survival/Interaction/BP_WorldPickup.uasset",
+        "Autosave": "Saved/Autosaves/Game/Survival/Interaction/BP_WorldPickup_Auto5.uasset",
+        "RecoveryFile": "D:\\Project\\SurvivalProject_A18\\Saved\\Verification\\A18-ID01\\RecoverySources\\Content\\Survival\\Interaction\\BP_WorldPickup.uasset",
+        "SHA256": "B51DD60114869F106CCCDB6AA6B355A16DBEDB892C329D1EC1C1F256A96F377C",
+        "Bytes": 210509
+      },
+      {
+        "Target": "Content/Survival/Interaction/BP_StorageContainer.uasset",
+        "Autosave": "Saved/Autosaves/Game/Survival/Interaction/BP_StorageContainer_Auto5.uasset",
+        "RecoveryFile": "D:\\Project\\SurvivalProject_A18\\Saved\\Verification\\A18-ID01\\RecoverySources\\Content\\Survival\\Interaction\\BP_StorageContainer.uasset",
+        "SHA256": "10CDABF622EAD39182160E7A35A4804BC318BE179600D2F4BC652CF95273EE8F",
+        "Bytes": 123864
+      },
+      {
+        "Target": "Content/Survival/Interaction/BPFL_InteractionIdentity.uasset",
+        "Autosave": "Saved/Autosaves/Game/Survival/Interaction/BPFL_InteractionIdentity_Auto6.uasset",
+        "RecoveryFile": "D:\\Project\\SurvivalProject_A18\\Saved\\Verification\\A18-ID01\\RecoverySources\\Content\\Survival\\Interaction\\BPFL_InteractionIdentity.uasset",
+        "SHA256": "1713059BBE5EC75D88633E2A2815632FDD409693A7FB67FF0B076172E737BF59",
+        "Bytes": 199197
+      },
+      {
+        "Target": "Content/Survival/Core/BP_SurvivalPlayerController.uasset",
+        "Autosave": "Saved/Autosaves/Game/Survival/Core/BP_SurvivalPlayerController_Auto6.uasset",
+        "RecoveryFile": "D:\\Project\\SurvivalProject_A18\\Saved\\Verification\\A18-ID01\\RecoverySources\\Content\\Survival\\Core\\BP_SurvivalPlayerController.uasset",
+        "SHA256": "5D12E59CC81AED3FCBE9474C8713C28C0D7869B34E7D3E52FB35D7DCC2ABD371",
+        "Bytes": 713472
+      },
+      {
+        "Target": "Content/Survival/Maps/LV_SystemsTest.umap",
+        "Autosave": "Saved/Autosaves/Game/Survival/Maps/LV_SystemsTest_Auto6.umap",
+        "RecoveryFile": "D:\\Project\\SurvivalProject_A18\\Saved\\Verification\\A18-ID01\\RecoverySources\\Content\\Survival\\Maps\\LV_SystemsTest.umap",
+        "SHA256": "431B917BF1EE2C063650B58432C5DBD6F379884726541142B3DA2CF928EC8D03",
+        "Bytes": 34672
+      }
+    ],
+    "check_result": "D:\\Project\\SurvivalProject_A18\\Saved\\Verification\\A18-ID01\\recovery_check_results.json",
+    "scoped_checks_pass": true,
+    "blueprints_compiled": [
+      "/Game/Survival/Interaction/BPI_Interactable",
+      "/Game/Survival/Interaction/BP_WorldPickup",
+      "/Game/Survival/Interaction/BP_StorageContainer",
+      "/Game/Survival/Interaction/BPFL_InteractionIdentity",
+      "/Game/Survival/Core/BP_SurvivalPlayerController",
+      "/Game/Survival/Interaction/BPC_Interaction"
+    ],
+    "identity_audit": {
+      "status": "PASS",
+      "scope": "loaded actors in one world only; unloaded levels/cells and other maps NOT VERIFIED",
+      "world": "/Game/Survival/Maps/LV_SystemsTest.LV_SystemsTest",
+      "records": [
+        {
+          "actor": "/Game/Survival/Maps/LV_SystemsTest.LV_SystemsTest:PersistentLevel.BP_WorldPickup_C_1",
+          "class": "/Game/Survival/Interaction/BP_WorldPickup.BP_WorldPickup_C",
+          "target_id": "6128CE4A49BBF079957923AE403CCABB",
+          "has_stable_id": true,
+          "valid_guid": true,
+          "permanent": true
+        },
+        {
+          "actor": "/Game/Survival/Maps/LV_SystemsTest.LV_SystemsTest:PersistentLevel.BP_StorageContainer_C_1",
+          "class": "/Game/Survival/Interaction/BP_StorageContainer.BP_StorageContainer_C",
+          "target_id": "3B404DA0C1514B738B0EA4F116338F43",
+          "has_stable_id": true,
+          "valid_guid": true,
+          "permanent": true
+        }
+      ],
+      "duplicate_ids": {},
+      "errors": []
+    },
+    "validations": {
+      "/Game/Survival/Maps/LV_SystemsTest.LV_SystemsTest:PersistentLevel.BP_WorldPickup_C_1": {
+        "guid": "6128CE4A49BBF079957923AE403CCABB",
+        "stable": true,
+        "valid": true,
+        "reason": "None"
+      },
+      "/Game/Survival/Maps/LV_SystemsTest.LV_SystemsTest:PersistentLevel.BP_StorageContainer_C_1": {
+        "guid": "3B404DA0C1514B738B0EA4F116338F43",
+        "stable": true,
+        "valid": true,
+        "reason": "None"
+      }
+    },
+    "process_exit_code": 1,
+    "process_limit": "Two GameFeatureData primary asset scan startup errors also occurred during preflight commandlets. No clean overall process PASS.",
+    "applied_to_original_content": true,
+    "save_approval": "Explicit user approval: Разрешаю сохранить эти шесть ресурсов; restored exactly six with verified SHA256 and additional pre-restore backup",
+    "primary_restore_manifest": "Saved/Verification/A18-ID01/primary_restore_manifest.json"
+  },
+  "not_run": [
+    "Cook/Windows package (outside local ID01 gate)",
+    "Real Save/Load subsystem (outside ID01 scope)",
+    "Open / external storage session / transfer (separate contract)",
+    "Project-wide GUID uniqueness including unloaded maps/cells/A36",
+    "Full historical A10/A11/A12 suites"
+  ],
+  "publication": {
+    "commit": false,
+    "push": false,
+    "pr": false,
+    "merge": false
+  },
+  "secrets": "Original Config/DefaultEngine.ini untouched by agent; token value not included. Safe SEC01 return required separately before future publication.",
+  "postrestore": {
+    "project": "D:\\Project\\SurvivalProject_A18\\SurvivalProject.uproject",
+    "compile_and_ids": {
+      "project": "D:/Project/SurvivalProject_A18/SurvivalProject.uproject",
+      "compiled": [
+        "/Game/Survival/Interaction/BPI_Interactable",
+        "/Game/Survival/Interaction/BP_WorldPickup",
+        "/Game/Survival/Interaction/BP_StorageContainer",
+        "/Game/Survival/Interaction/BPFL_InteractionIdentity",
+        "/Game/Survival/Core/BP_SurvivalPlayerController",
+        "/Game/Survival/Interaction/BPC_Interaction"
+      ],
+      "errors": [],
+      "identity_audit": {
+        "status": "PASS",
+        "scope": "loaded actors in one world only; unloaded levels/cells and other maps NOT VERIFIED",
+        "world": "/Game/Survival/Maps/LV_SystemsTest.LV_SystemsTest",
+        "records": [
+          {
+            "actor": "/Game/Survival/Maps/LV_SystemsTest.LV_SystemsTest:PersistentLevel.BP_WorldPickup_C_1",
+            "class": "/Game/Survival/Interaction/BP_WorldPickup.BP_WorldPickup_C",
+            "target_id": "6128CE4A49BBF079957923AE403CCABB",
+            "has_stable_id": true,
+            "valid_guid": true,
+            "permanent": true
+          },
+          {
+            "actor": "/Game/Survival/Maps/LV_SystemsTest.LV_SystemsTest:PersistentLevel.BP_StorageContainer_C_1",
+            "class": "/Game/Survival/Interaction/BP_StorageContainer.BP_StorageContainer_C",
+            "target_id": "3B404DA0C1514B738B0EA4F116338F43",
+            "has_stable_id": true,
+            "valid_guid": true,
+            "permanent": true
+          }
+        ],
+        "duplicate_ids": {},
+        "errors": []
+      },
+      "validations": {
+        "/Game/Survival/Maps/LV_SystemsTest.LV_SystemsTest:PersistentLevel.BP_WorldPickup_C_1": {
+          "guid": "6128CE4A49BBF079957923AE403CCABB",
+          "stable": true,
+          "valid": true,
+          "reason": "None"
+        },
+        "/Game/Survival/Maps/LV_SystemsTest.LV_SystemsTest:PersistentLevel.BP_StorageContainer_C_1": {
+          "guid": "3B404DA0C1514B738B0EA4F116338F43",
+          "stable": true,
+          "valid": true,
+          "reason": "None"
+        }
+      },
+      "specific_checks_pass": true
+    },
+    "sessions": {
+      "session1": [
+        {
+          "test": "PIE_context",
+          "status": "PASS",
+          "detail": null
+        },
+        {
+          "test": "PIE_authored_identity_audit",
+          "status": "PASS",
+          "detail": null
+        },
+        {
+          "test": "unique_storage_identity",
+          "status": "PASS",
+          "detail": null
+        },
+        {
+          "test": "missing_expected_id",
+          "status": "PASS",
+          "detail": null
+        },
+        {
+          "test": "mismatched_context_id",
+          "status": "PASS",
+          "detail": null
+        },
+        {
+          "test": "invalid_actor_guard",
+          "status": "PASS",
+          "detail": null
+        },
+        {
+          "test": "empty_storage_getter",
+          "status": "PASS",
+          "detail": null
+        },
+        {
+          "test": "empty_storage_guard",
+          "status": "PASS",
+          "detail": null
+        },
+        {
+          "test": "duplicate_storage_guard",
+          "status": "PASS",
+          "detail": null
+        },
+        {
+          "test": "duplicate_audit_contains_both_actors",
+          "status": "PASS",
+          "detail": [
+            "/Game/Survival/Maps/UEDPIE_0_LV_SystemsTest.LV_SystemsTest:PersistentLevel.BP_StorageContainer_C_1",
+            "/Game/Survival/Maps/UEDPIE_0_LV_SystemsTest.LV_SystemsTest:PersistentLevel.BP_StorageContainer_C_0"
+          ]
+        },
+        {
+          "test": "identity_recovers_after_duplicate_destroy",
+          "status": "PASS",
+          "detail": null
+        },
+        {
+          "test": "deferred_spawn_keeps_assigned_id",
+          "status": "PASS",
+          "detail": null
+        },
+        {
+          "test": "repeated_beginplay_keeps_id",
+          "status": "PASS",
+          "detail": null
+        },
+        {
+          "test": "identity_validation_does_not_mutate_player_inventory",
+          "status": "PASS",
+          "detail": null
+        },
+        {
+          "test": "actual_trace_focus_storage",
+          "status": "PASS",
+          "detail": {
+            "target": "/Game/Survival/Maps/UEDPIE_0_LV_SystemsTest.LV_SystemsTest:PersistentLevel.BP_StorageContainer_C_1",
+            "focus": "/Game/Survival/Maps/UEDPIE_0_LV_SystemsTest.LV_SystemsTest:PersistentLevel.BP_StorageContainer_C_1",
+            "hit": "(FaceIndex=-1,Time=0.270876,Distance=162.525589,Location=(X=-698.729387,Y=-820.000000,Z=42.203346),ImpactPoint=(X=-698.729389,Y=-820.000000,Z=42.203347),Normal=(X=-1.000000,Y=0.000000,Z=0.000000),ImpactNormal=(X=-1.000000,Y=0.000000,Z=0.000000),TraceStart=(X=-850.204000,Y=-820.000000,Z=101.110140),TraceEnd=(X=-291.001198,Y=-820.000000,Z=-116.357617),PenetrationDepth=0.000000,MyItem=-1,Item=-1,ElementIndex=0,bBlockingHit=True,bStartPenetrating=False,PhysMaterial=\"/Script/PhysicsCore.PhysicalMaterial'/Game/StylizedEnvironment/Materials/WoodPhysics.WoodPhysics'\",HitObjectHandle=(ReferenceObject=\"/Script/Engine.StaticMeshComponent'/Game/Survival/Maps/UEDPIE_0_LV_SystemsTest.LV_SystemsTest:PersistentLevel.BP_StorageContainer_C_1.StorageMesh'\"),Component=\"/Script/Engine.StaticMeshComponent'/Game/Survival/Maps/UEDPIE_0_LV_SystemsTest.LV_SystemsTest:PersistentLevel.BP_StorageContainer_C_1.StorageMesh'\",BoneName=\"\",MyBoneName=\"\")",
+            "hit_dict": "{'blocking_hit': True, 'initial_overlap': False, 'time': 0.2708759903907776, 'distance': 162.5255889892578, 'location': <Struct 'Vector' (0x00000200F9E41B90) {x: -698.729387, y: -820.000000, z: 42.203346}>, 'impact_point': <Struct 'Vector' (0x00000200DE123D50) {x: -698.729389, y: -820.000000, z: 42.203347}>, 'normal': <Struct 'Vector' (0x00000200DE164100) {x: -1.000000, y: 0.000000, z: 0.000000}>, 'impact_normal': <Struct 'Vector' (0x00000200DE164330) {x: -1.000000, y: 0.000000, z: 0.000000}>, 'phys_mat': <Object '/Game/StylizedEnvironment/Materials/WoodPhysics.WoodPhysics' (0x0000020061CB7BC0) Class 'PhysicalMaterial'>, 'hit_actor': <Object '/Game/Survival/Maps/UEDPIE_0_LV_SystemsTest.LV_SystemsTest:PersistentLevel.BP_StorageContainer_C_1' (0x000001FF9731F000) Class 'BP_StorageContainer_C'>, 'hit_component': <Object '/Game/Survival/Maps/UEDPIE_0_LV_SystemsTest.LV_SystemsTest:PersistentLevel.BP_StorageContainer_C_1.StorageMesh' (0x0000020090C63C00) Class 'StaticMeshComponent'>, 'hit_bone_name': Name(\"None\"), 'bone_name': Name(\"None\"), 'hit_item': -1, 'element_index': 0, 'face_index': -1, 'trace_start': <Struct 'Vector' (0x00000200DE164380) {x: -850.204000, y: -820.000000, z: 101.110140}>, 'trace_end': <Struct 'Vector' (0x00000200DE1643D0) {x: -291.001198, y: -820.000000, z: -116.357617}>}",
+            "pawn_location": "<Struct 'Vector' (0x00000200DE123D50) {x: -820.204000, y: -820.000000, z: 92.150000}>",
+            "hud": {
+              "PromptText": {
+                "text": "Open Chest",
+                "visibility": "<SlateVisibility.VISIBLE: 0>"
+              },
+              "DisabledReasonText": {
+                "text": "Взаимодействие недоступно",
+                "visibility": "<SlateVisibility.COLLAPSED: 1>"
+              },
+              "ResultText": {
+                "text": "Предмет получен",
+                "visibility": "<SlateVisibility.COLLAPSED: 1>"
+              }
+            }
+          }
+        },
+        {
+          "test": "hud_prompt_storage",
+          "status": "PASS",
+          "detail": {
+            "PromptText": {
+              "text": "Open Chest",
+              "visibility": "<SlateVisibility.VISIBLE: 0>"
+            },
+            "DisabledReasonText": {
+              "text": "Взаимодействие недоступно",
+              "visibility": "<SlateVisibility.COLLAPSED: 1>"
+            },
+            "ResultText": {
+              "text": "Предмет получен",
+              "visibility": "<SlateVisibility.COLLAPSED: 1>"
+            }
+          }
+        },
+        {
+          "test": "empty_id_readonly_prompt",
+          "status": "PASS",
+          "detail": {
+            "PromptText": {
+              "text": "Open Chest",
+              "visibility": "<SlateVisibility.VISIBLE: 0>"
+            },
+            "DisabledReasonText": {
+              "text": "Взаимодействие недоступно",
+              "visibility": "<SlateVisibility.COLLAPSED: 1>"
+            },
+            "ResultText": {
+              "text": "Предмет получен",
+              "visibility": "<SlateVisibility.COLLAPSED: 1>"
+            }
+          }
+        },
+        {
+          "test": "empty_id_prompt_no_player_mutation",
+          "status": "PASS",
+          "detail": null
+        },
+        {
+          "test": "null_focus_hides_prompt",
+          "status": "PASS",
+          "detail": {
+            "PromptText": {
+              "text": "Open Chest",
+              "visibility": "<SlateVisibility.COLLAPSED: 1>"
+            },
+            "DisabledReasonText": {
+              "text": "Взаимодействие недоступно",
+              "visibility": "<SlateVisibility.COLLAPSED: 1>"
+            },
+            "ResultText": {
+              "text": "Предмет получен",
+              "visibility": "<SlateVisibility.COLLAPSED: 1>"
+            }
+          }
+        },
+        {
+          "test": "non_interface_actor_hides_prompt",
+          "status": "PASS",
+          "detail": null
+        },
+        {
+          "test": "destroyed_focus_hides_prompt",
+          "status": "PASS",
+          "detail": null
+        },
+        {
+          "test": "destroyed_identity_guard",
+          "status": "PASS",
+          "detail": null
+        },
+        {
+          "test": "missing_pawn_hides_prompt",
+          "status": "PASS",
+          "detail": null
+        },
+        {
+          "test": "pawn_restored",
+          "status": "PASS",
+          "detail": null
+        },
+        {
+          "test": "actual_trace_focus_pickup",
+          "status": "PASS",
+          "detail": {
+            "target": "/Game/Survival/Maps/UEDPIE_0_LV_SystemsTest.LV_SystemsTest:PersistentLevel.BP_WorldPickup_C_1",
+            "focus": "/Game/Survival/Maps/UEDPIE_0_LV_SystemsTest.LV_SystemsTest:PersistentLevel.BP_WorldPickup_C_1",
+            "hit": "(FaceIndex=-1,Time=0.232474,Distance=139.484283,Location=(X=-889.999996,Y=-570.000000,Z=39.444443),ImpactPoint=(X=-890.000000,Y=-570.000000,Z=39.444444),Normal=(X=-1.000000,Y=0.000000,Z=0.000000),ImpactNormal=(X=-1.000000,Y=0.000000,Z=0.000000),TraceStart=(X=-1020.000000,Y=-570.000000,Z=90.000000),TraceEnd=(X=-460.797197,Y=-570.000000,Z=-127.467757),PenetrationDepth=0.000000,MyItem=-1,Item=-1,ElementIndex=0,bBlockingHit=True,bStartPenetrating=False,PhysMaterial=\"/Script/PhysicsCore.PhysicalMaterial'/Engine/EngineMaterials/DefaultPhysicalMaterial.DefaultPhysicalMaterial'\",HitObjectHandle=(ReferenceObject=\"/Script/Engine.StaticMeshComponent'/Game/Survival/Maps/UEDPIE_0_LV_SystemsTest.LV_SystemsTest:PersistentLevel.BP_WorldPickup_C_1.StaticMeshComponent0'\"),Component=\"/Script/Engine.StaticMeshComponent'/Game/Survival/Maps/UEDPIE_0_LV_SystemsTest.LV_SystemsTest:PersistentLevel.BP_WorldPickup_C_1.StaticMeshComponent0'\",BoneName=\"\",MyBoneName=\"\")",
+            "hit_dict": "{'blocking_hit': True, 'initial_overlap': False, 'time': 0.23247380554676056, 'distance': 139.48428344726562, 'location': <Struct 'Vector' (0x00000200DE167BC0) {x: -889.999996, y: -570.000000, z: 39.444443}>, 'impact_point': <Struct 'Vector' (0x00000200DE167C60) {x: -890.000000, y: -570.000000, z: 39.444444}>, 'normal': <Struct 'Vector' (0x00000200DE167E90) {x: -1.000000, y: 0.000000, z: 0.000000}>, 'impact_normal': <Struct 'Vector' (0x00000200DE167F30) {x: -1.000000, y: 0.000000, z: 0.000000}>, 'phys_mat': <Object '/Engine/EngineMaterials/DefaultPhysicalMaterial.DefaultPhysicalMaterial' (0x0000020033413600) Class 'PhysicalMaterial'>, 'hit_actor': <Object '/Game/Survival/Maps/UEDPIE_0_LV_SystemsTest.LV_SystemsTest:PersistentLevel.BP_WorldPickup_C_1' (0x000001FF97319600) Class 'BP_WorldPickup_C'>, 'hit_component': <Object '/Game/Survival/Maps/UEDPIE_0_LV_SystemsTest.LV_SystemsTest:PersistentLevel.BP_WorldPickup_C_1.StaticMeshComponent0' (0x0000020090C6E600) Class 'StaticMeshComponent'>, 'hit_bone_name': Name(\"None\"), 'bone_name': Name(\"None\"), 'hit_item': -1, 'element_index': 0, 'face_index': -1, 'trace_start': <Struct 'Vector' (0x00000200DE1673F0) {x: -1020.000000, y: -570.000000, z: 90.000000}>, 'trace_end': <Struct 'Vector' (0x00000200DE167800) {x: -460.797197, y: -570.000000, z: -127.467757}>}",
+            "pawn_location": "<Struct 'Vector' (0x00000200DE167800) {x: -990.000000, y: -570.000000, z: 92.150000}>",
+            "hud": {
+              "PromptText": {
+                "text": "Pick up",
+                "visibility": "<SlateVisibility.VISIBLE: 0>"
+              },
+              "DisabledReasonText": {
+                "text": "Взаимодействие недоступно",
+                "visibility": "<SlateVisibility.COLLAPSED: 1>"
+              },
+              "ResultText": {
+                "text": "Предмет получен",
+                "visibility": "<SlateVisibility.COLLAPSED: 1>"
+              }
+            }
+          }
+        },
+        {
+          "test": "hud_prompt_pickup",
+          "status": "PASS",
+          "detail": {
+            "PromptText": {
+              "text": "Pick up",
+              "visibility": "<SlateVisibility.VISIBLE: 0>"
+            },
+            "DisabledReasonText": {
+              "text": "Взаимодействие недоступно",
+              "visibility": "<SlateVisibility.COLLAPSED: 1>"
+            },
+            "ResultText": {
+              "text": "Предмет получен",
+              "visibility": "<SlateVisibility.COLLAPSED: 1>"
+            }
+          }
+        },
+        {
+          "test": "E_pickup_destroyed",
+          "status": "PASS",
+          "detail": null
+        },
+        {
+          "test": "E_exact_quantity",
+          "status": "PASS",
+          "detail": {
+            "before": {
+              "revision": 0,
+              "slots": [
+                {
+                  "slotIndex": 0,
+                  "itemStack": {
+                    "stackId": "00000000-0000-0000-0000-000000000000",
+                    "itemId": "None",
+                    "quantity": 0,
+                    "durability": 0,
+                    "hasDurability": false
+                  },
+                  "hasItem": false
+                },
+                {
+                  "slotIndex": 1,
+                  "itemStack": {
+                    "stackId": "00000000-0000-0000-0000-000000000000",
+                    "itemId": "None",
+                    "quantity": 0,
+                    "durability": 0,
+                    "hasDurability": false
+                  },
+                  "hasItem": false
+                },
+                {
+                  "slotIndex": 2,
+                  "itemStack": {
+                    "stackId": "00000000-0000-0000-0000-000000000000",
+                    "itemId": "None",
+                    "quantity": 0,
+                    "durability": 0,
+                    "hasDurability": false
+                  },
+                  "hasItem": false
+                },
+                {
+                  "slotIndex": 3,
+                  "itemStack": {
+                    "stackId": "00000000-0000-0000-0000-000000000000",
+                    "itemId": "None",
+                    "quantity": 0,
+                    "durability": 0,
+                    "hasDurability": false
+                  },
+                  "hasItem": false
+                }
+              ]
+            },
+            "after": {
+              "revision": 1,
+              "slots": [
+                {
+                  "slotIndex": 0,
+                  "itemStack": {
+                    "stackId": "E5FF6BD3-487D-69A5-A93B-7FBDC42A4157",
+                    "itemId": "item.wood",
+                    "quantity": 1,
+                    "durability": 0.5,
+                    "hasDurability": false
+                  },
+                  "hasItem": true
+                },
+                {
+                  "slotIndex": 1,
+                  "itemStack": {
+                    "stackId": "00000000-0000-0000-0000-000000000000",
+                    "itemId": "None",
+                    "quantity": 0,
+                    "durability": 0,
+                    "hasDurability": false
+                  },
+                  "hasItem": false
+                },
+                {
+                  "slotIndex": 2,
+                  "itemStack": {
+                    "stackId": "00000000-0000-0000-0000-000000000000",
+                    "itemId": "None",
+                    "quantity": 0,
+                    "durability": 0,
+                    "hasDurability": false
+                  },
+                  "hasItem": false
+                },
+                {
+                  "slotIndex": 3,
+                  "itemStack": {
+                    "stackId": "00000000-0000-0000-0000-000000000000",
+                    "itemId": "None",
+                    "quantity": 0,
+                    "durability": 0,
+                    "hasDurability": false
+                  },
+                  "hasItem": false
+                }
+              ]
+            }
+          }
+        },
+        {
+          "test": "E_single_revision",
+          "status": "PASS",
+          "detail": null
+        },
+        {
+          "test": "E_single_inventory_event",
+          "status": "NOT RUN",
+          "detail": "Python delegate observer unavailable; no event count inferred from Revision"
+        },
+        {
+          "test": "reentrant_guard_observed",
+          "status": "NOT RUN",
+          "detail": "runtime delegate observer unavailable"
+        },
+        {
+          "test": "postrestore_repeat_E_and_request_snapshot_unchanged",
+          "status": "PASS",
+          "detail": null
+        }
+      ],
+      "session2": [
+        {
+          "test": "PIE_context",
+          "status": "PASS",
+          "detail": null
+        },
+        {
+          "test": "PIE_authored_identity_audit",
+          "status": "PASS",
+          "detail": null
+        },
+        {
+          "test": "BP_stable_focus_one_event",
+          "status": "PASS",
+          "detail": {
+            "FocusEvents": 1
+          }
+        },
+        {
+          "test": "BP_focus_loss_one_event",
+          "status": "PASS",
+          "detail": {
+            "FocusEvents": 2
+          }
+        },
+        {
+          "test": "second_PIE_keeps_authored_storage_id",
+          "status": "PASS",
+          "detail": null
+        },
+        {
+          "test": "second_PIE_keeps_authored_pickup_id",
+          "status": "PASS",
+          "detail": null
+        },
+        {
+          "test": "missing_id_mutating_pickup_rejected",
+          "status": "PASS",
+          "detail": null
+        },
+        {
+          "test": "BP_E_pickup_destroyed",
+          "status": "PASS",
+          "detail": null
+        },
+        {
+          "test": "BP_E_exact_quantity",
+          "status": "PASS",
+          "detail": {
+            "before": {
+              "revision": 0,
+              "slots": [
+                {
+                  "slotIndex": 0,
+                  "itemStack": {
+                    "stackId": "00000000-0000-0000-0000-000000000000",
+                    "itemId": "None",
+                    "quantity": 0,
+                    "durability": 0,
+                    "hasDurability": false
+                  },
+                  "hasItem": false
+                },
+                {
+                  "slotIndex": 1,
+                  "itemStack": {
+                    "stackId": "00000000-0000-0000-0000-000000000000",
+                    "itemId": "None",
+                    "quantity": 0,
+                    "durability": 0,
+                    "hasDurability": false
+                  },
+                  "hasItem": false
+                },
+                {
+                  "slotIndex": 2,
+                  "itemStack": {
+                    "stackId": "00000000-0000-0000-0000-000000000000",
+                    "itemId": "None",
+                    "quantity": 0,
+                    "durability": 0,
+                    "hasDurability": false
+                  },
+                  "hasItem": false
+                },
+                {
+                  "slotIndex": 3,
+                  "itemStack": {
+                    "stackId": "00000000-0000-0000-0000-000000000000",
+                    "itemId": "None",
+                    "quantity": 0,
+                    "durability": 0,
+                    "hasDurability": false
+                  },
+                  "hasItem": false
+                }
+              ]
+            },
+            "after": {
+              "revision": 1,
+              "slots": [
+                {
+                  "slotIndex": 0,
+                  "itemStack": {
+                    "stackId": "F80AE9A0-403C-AE55-6901-7593FAF27F4C",
+                    "itemId": "item.wood",
+                    "quantity": 1,
+                    "durability": 0.5,
+                    "hasDurability": false
+                  },
+                  "hasItem": true
+                },
+                {
+                  "slotIndex": 1,
+                  "itemStack": {
+                    "stackId": "00000000-0000-0000-0000-000000000000",
+                    "itemId": "None",
+                    "quantity": 0,
+                    "durability": 0,
+                    "hasDurability": false
+                  },
+                  "hasItem": false
+                },
+                {
+                  "slotIndex": 2,
+                  "itemStack": {
+                    "stackId": "00000000-0000-0000-0000-000000000000",
+                    "itemId": "None",
+                    "quantity": 0,
+                    "durability": 0,
+                    "hasDurability": false
+                  },
+                  "hasItem": false
+                },
+                {
+                  "slotIndex": 3,
+                  "itemStack": {
+                    "stackId": "00000000-0000-0000-0000-000000000000",
+                    "itemId": "None",
+                    "quantity": 0,
+                    "durability": 0,
+                    "hasDurability": false
+                  },
+                  "hasItem": false
+                }
+              ]
+            }
+          }
+        },
+        {
+          "test": "BP_E_one_revision",
+          "status": "PASS",
+          "detail": null
+        },
+        {
+          "test": "BP_E_one_inventory_event",
+          "status": "PASS",
+          "detail": {
+            "InventoryEvents": 1,
+            "ReentryCalls": 1,
+            "GuardProgress": true,
+            "GuardConsumed": false,
+            "LastRevision": 1
+          }
+        },
+        {
+          "test": "BP_reentrant_pickup_guard",
+          "status": "PASS",
+          "detail": {
+            "InventoryEvents": 1,
+            "ReentryCalls": 1,
+            "GuardProgress": true,
+            "GuardConsumed": false,
+            "LastRevision": 1
+          }
+        },
+        {
+          "test": "BP_repeat_E_and_requests_no_duplication",
+          "status": "PASS",
+          "detail": null
+        },
+        {
+          "test": "BP_repeat_E_and_requests_no_events",
+          "status": "PASS",
+          "detail": null
+        },
+        {
+          "test": "A17_UI_split",
+          "status": "PASS",
+          "detail": null
+        },
+        {
+          "test": "A17_UI_split_one_event",
+          "status": "PASS",
+          "detail": null
+        },
+        {
+          "test": "A17_UI_merge",
+          "status": "PASS",
+          "detail": null
+        },
+        {
+          "test": "A17_UI_merge_one_event",
+          "status": "PASS",
+          "detail": null
+        },
+        {
+          "test": "A17_UI_stale_split_rejected",
+          "status": "PASS",
+          "detail": {
+            "error": "Инвентарь изменился. Выберите предмет заново"
+          }
+        },
+        {
+          "test": "A17_UI_stale_merge_rejected",
+          "status": "PASS",
+          "detail": {
+            "message": "Инвентарь изменился. Выберите стопки заново"
+          }
+        },
+        {
+          "test": "range_350_clears_focus",
+          "status": "PASS",
+          "detail": null
+        },
+        {
+          "test": "empty_options_hides_previous_prompt",
+          "status": "PASS",
+          "detail": null
+        },
+        {
+          "test": "disabled_explicit_reason",
+          "status": "PASS",
+          "detail": {
+            "PromptText": {
+              "text": "Open Chest",
+              "visibility": "<SlateVisibility.COLLAPSED: 1>"
+            },
+            "DisabledReasonText": {
+              "text": "A18 test blocked",
+              "visibility": "<SlateVisibility.VISIBLE: 0>"
+            },
+            "ResultText": {
+              "text": "Предмет получен",
+              "visibility": "<SlateVisibility.COLLAPSED: 1>"
+            }
+          }
+        },
+        {
+          "test": "disabled_fallback_reason",
+          "status": "PASS",
+          "detail": {
+            "PromptText": {
+              "text": "Open Chest",
+              "visibility": "<SlateVisibility.COLLAPSED: 1>"
+            },
+            "DisabledReasonText": {
+              "text": "Взаимодействие недоступно",
+              "visibility": "<SlateVisibility.VISIBLE: 0>"
+            },
+            "ResultText": {
+              "text": "Предмет получен",
+              "visibility": "<SlateVisibility.COLLAPSED: 1>"
+            }
+          }
+        },
+        {
+          "test": "readonly_empty_id_prompt_and_empty_context",
+          "status": "PASS",
+          "detail": null
+        },
+        {
+          "test": "contradictory_true_empty_guid_hud_safe",
+          "status": "PASS",
+          "detail": null
+        },
+        {
+          "test": "contradictory_true_empty_guid_validator_rejected",
+          "status": "PASS",
+          "detail": null
+        },
+        {
+          "test": "hasstable_false_valid_guid_context_is_empty",
+          "status": "PASS",
+          "detail": null
+        },
+        {
+          "test": "hasstable_false_valid_guid_validator_rejected",
+          "status": "PASS",
+          "detail": null
+        },
+        {
+          "test": "stable_target_context_id_matches_actor",
+          "status": "PASS",
+          "detail": null
+        },
+        {
+          "test": "duplicate_raw_guid_rejected_even_when_other_unstable",
+          "status": "PASS",
+          "detail": null
+        },
+        {
+          "test": "readonly_cases_no_inventory_mutation_or_events",
+          "status": "PASS",
+          "detail": null
+        },
+        {
+          "test": "missing_HUD_safe_no_inventory_mutation",
+          "status": "PASS",
+          "detail": null
+        },
+        {
+          "test": "HUD_reference_restored",
+          "status": "PASS",
+          "detail": null
+        },
+        {
+          "test": "los_wall_mesh_created",
+          "status": "PASS",
+          "detail": null
+        },
+        {
+          "test": "camera_sees_chest_over_low_wall",
+          "status": "PASS",
+          "detail": "(FaceIndex=-1,Time=0.421337,Distance=252.802078,Location=(X=-689.635318,Y=-820.000000,Z=54.739687),ImpactPoint=(X=-689.635317,Y=-820.000000,Z=54.739685),Normal=(X=-0.707107,Y=0.000000,Z=0.707107),ImpactNormal=(X=-0.707107,Y=0.000000,Z=0.707107),TraceStart=(X=-850.204000,Y=-820.000000,Z=250.000000),TraceEnd=(X=-469.110580,Y=-820.000000,Z=-213.430475),PenetrationDepth=0.000000,MyItem=-1,Item=-1,ElementIndex=0,bBlockingHit=True,bStartPenetrating=False,PhysMaterial=\"/Script/PhysicsCore.PhysicalMaterial'/Game/StylizedEnvironment/Materials/WoodPhysics.WoodPhysics'\",HitObjectHandle=(ReferenceObject=\"/Script/Engine.StaticMeshComponent'/Game/Survival/Maps/UEDPIE_0_LV_SystemsTest.LV_SystemsTest:PersistentLevel.BP_StorageContainer_C_1.StorageMesh'\"),Component=\"/Script/Engine.StaticMeshComponent'/Game/Survival/Maps/UEDPIE_0_LV_SystemsTest.LV_SystemsTest:PersistentLevel.BP_StorageContainer_C_1.StorageMesh'\",BoneName=\"\",MyBoneName=\"\")"
+        },
+        {
+          "test": "pawn_los_wall_clears_focus",
+          "status": "PASS",
+          "detail": null
+        },
+        {
+          "test": "removing_wall_restores_focus",
+          "status": "PASS",
+          "detail": null
+        },
+        {
+          "test": "oversized_rejection",
+          "status": "HARNESS_ERROR",
+          "detail": "Traceback (most recent call last):\n  File \"<string>\", line 146, in run\n  File \"<string>\", line 216, in oversized_rejection\n  File \"<string>\", line 8, in props\nTypeError: ToolsetLibrary: Failed to convert parameter 'object' when calling function 'ToolsetLibrary.GetObjectProperties' on 'Default__ToolsetLibrary'\n  TypeError: NativizeProperty: Cannot nativize 'StaticMeshActor' as 'Object' (ObjectProperty)\n    TypeError: NativizeObject: Cannot nativize 'StaticMeshActor' as 'Object' (allowed Class type: 'Object')\n"
+        },
+        {
+          "test": "postrestore_I_opens_UI",
+          "status": "PASS",
+          "detail": null
+        },
+        {
+          "test": "postrestore_UI_E_and_close_no_mutation",
+          "status": "PASS",
+          "detail": null
+        },
+        {
+          "test": "postrestore_I_restores_gameplay",
+          "status": "PASS",
+          "detail": null
+        }
+      ],
+      "session3": [
+        {
+          "test": "PIE_context",
+          "status": "PASS",
+          "detail": null
+        },
+        {
+          "test": "PIE_authored_identity_audit",
+          "status": "PASS",
+          "detail": null
+        },
+        {
+          "test": "unique_storage_identity",
+          "status": "PASS",
+          "detail": null
+        },
+        {
+          "test": "missing_expected_id",
+          "status": "PASS",
+          "detail": null
+        },
+        {
+          "test": "mismatched_context_id",
+          "status": "PASS",
+          "detail": null
+        },
+        {
+          "test": "invalid_actor_guard",
+          "status": "PASS",
+          "detail": null
+        },
+        {
+          "test": "empty_storage_getter",
+          "status": "PASS",
+          "detail": null
+        },
+        {
+          "test": "empty_storage_guard",
+          "status": "PASS",
+          "detail": null
+        },
+        {
+          "test": "duplicate_storage_guard",
+          "status": "PASS",
+          "detail": null
+        },
+        {
+          "test": "duplicate_audit_contains_both_actors",
+          "status": "PASS",
+          "detail": [
+            "/Game/Survival/Maps/UEDPIE_0_LV_SystemsTest.LV_SystemsTest:PersistentLevel.BP_StorageContainer_C_1",
+            "/Game/Survival/Maps/UEDPIE_0_LV_SystemsTest.LV_SystemsTest:PersistentLevel.BP_StorageContainer_C_0"
+          ]
+        },
+        {
+          "test": "identity_recovers_after_duplicate_destroy",
+          "status": "PASS",
+          "detail": null
+        },
+        {
+          "test": "deferred_spawn_keeps_assigned_id",
+          "status": "PASS",
+          "detail": null
+        },
+        {
+          "test": "repeated_beginplay_keeps_id",
+          "status": "PASS",
+          "detail": null
+        },
+        {
+          "test": "identity_validation_does_not_mutate_player_inventory",
+          "status": "PASS",
+          "detail": null
+        },
+        {
+          "test": "inventory_rejection_full_rollback",
+          "status": "PASS",
+          "detail": {
+            "pickup_after": {
+              "Stack": {
+                "stackId": "00000000-0000-0000-0000-000000000000",
+                "itemId": "item.wood",
+                "quantity": 100000,
+                "durability": 0.5,
+                "hasDurability": false
+              },
+              "Consumed": false,
+              "PickupInProgress": false
+            },
+            "hud": {
+              "PromptText": {
+                "text": "[E] Подобрать",
+                "visibility": "<SlateVisibility.COLLAPSED: 1>"
+              },
+              "DisabledReasonText": {
+                "text": "Взаимодействие недоступно",
+                "visibility": "<SlateVisibility.COLLAPSED: 1>"
+              },
+              "ResultText": {
+                "text": "Предмет получен",
+                "visibility": "<SlateVisibility.COLLAPSED: 1>"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "written_hashes_match_frozen_six": true,
+    "test_fixture_persistence": "Loaded existing autosaves into /Temp only; no fixture in Content",
+    "log_pattern_counts": {
+      "Accessed None": 0,
+      "Blueprint Runtime Error": 0,
+      "PIE Error": 0,
+      "native access violation": 0,
+      "GameFeatures Error": 1
+    },
+    "limitations": [
+      "session2 oversized used destroyed pickup wrapper; HARNESS_ERROR retained; session3 on fresh live pickup PASS",
+      "session1 event counters NOT RUN; session2 Blueprint observer confirms counts",
+      "Previous native crash not diagnosed; no broad graph export repeated",
+      "Direct pickup supplied mismatch Context NOT RUN"
+    ]
+  },
+  "documentation_verification": {
+    "status": "PASS",
+    "local_links": 87,
+    "checks": [
+      "Markdown whitespace",
+      "audit script syntax",
+      "evidence JSON",
+      "six SHA256 after PIE",
+      "BPC_Interaction unchanged",
+      "empty index",
+      "HEAD unchanged",
+      "no persisted temporary fixtures",
+      "git diff --check"
+    ],
+    "first_attempt": "UnicodeDecodeError in verifier default cp1251; corrected explicit UTF-8 and repeated PASS"
+  },
+  "native_crash_followup": {
+    "result": "UNKNOWN",
+    "evidence": [
+      {
+        "file": "Saved\\Crashes\\UECC-Windows-515BFC8E432300DC7774ABA1EC3955CE_0000\\CrashContext.runtime-xml",
+        "sha256": "8edbcfac7cda20343a09a1cc688195d7f7e6c20bf4f5c4b50e6b95d35e85240e",
+        "crash_type": "Ensure",
+        "guid": "UECC-Windows-515BFC8E432300DC7774ABA1EC3955CE_0000",
+        "engine": "5.8.4-58902052+++UE5+Release-5.8",
+        "seconds_since_start": "6895",
+        "error": "Ensure condition failed: UE::Private::FMTAccessDetectorOptions::bSuppressCheckFailure [File:D:\\build\\++UE5\\Sync\\Engine\\Source\\Runtime\\Core\\Public\\Misc\\MTAccessDetector.h] [Line: 624] \nEither a race detected (65654 reader(s) on another thread(s) while acquiring write access on the current thread) or the access detector was trivially relocated:\nCurrent thread 19144 callstack:\n0x000002664f50b437 UnrealEditor-PythonScriptPlugin.dll!UnknownFunction []\n0x000002664f65e089 UnrealEditor-PythonScriptPlugin.dll!UnknownFunction []\n0x000002664f4f3895 UnrealEditor-PythonScriptPlugin.dll!UnknownFunction []\n0x000002664f514467 UnrealEditor-PythonScriptPlugin.dll!UnknownFunction []\n0x000002664f56d75d UnrealEditor-PythonScriptPlugin.dll!UnknownFunction []\n0x000002664f56d60d UnrealEditor-PythonScriptPlugin.dll!UnknownFunction []\n0x000002664f5a1921 UnrealEditor-PythonScriptPlugin.dll!UnknownFunction []\n0x000002664f59d339 UnrealEditor-PythonScriptPlugin.dll!UnknownFunction []\n0x000002664f580ec9 UnrealEditor-PythonScriptPlugin.dll!UnknownFunction []\n0x00007ffdc5b27065 UnrealEditor-UnrealEd.dll!UnknownFunction []\n0x00007ffdc5b36cbc UnrealEditor-UnrealEd.dll!UnknownFunction []\n0x00007ffdc54bde3f UnrealEditor-UnrealEd.dll!UnknownFunction []\n0x00007ffdc6027596 UnrealEditor-UnrealEd.dll!UnknownFunction []\n0x00007ff6007327f9 UnrealEditor.exe!UnknownFunction []\n0x00007ff60071c4ac UnrealEditor.exe!UnknownFunction []\n0x00007ff60071c5ba UnrealEditor.exe!UnknownFunction []\n0x00007ff6007212d6 UnrealEditor.exe!UnknownFunction []\n0x00007ff600735cf4 UnrealEditor.exe!UnknownFunction []\n0x00007ff6007390ba UnrealEditor.exe!UnknownFunction []\n0x00007ffea85edda7 KERNEL32.DLL!UnknownFunction []\n0x00007ffeaa33ee4c ntdll.dll!UnknownFunction []\n\nStack: \n0x000002664f65e0d4 UnrealEditor-PythonScriptPlugin.dll!UnknownFunction []\n0x000002664f4f3895 UnrealEditor-PythonScriptPlugin.dll!UnknownFunction []\n0x000002664f514467 UnrealEditor-PythonScriptPlugin.dll!UnknownFunction []\n0x000002664f56d75d UnrealEditor-PythonScriptPlugin.dll!Unkno",
+        "callstack": "UnrealEditor_PythonScriptPlugin\nUnrealEditor_PythonScriptPlugin\nUnrealEditor_PythonScriptPlugin\nUnrealEditor_PythonScriptPlugin\nUnrealEditor_PythonScriptPlugin\nUnrealEditor_PythonScriptPlugin\nUnrealEditor_PythonScriptPlugin\nUnrealEditor_PythonScriptPlugin\nUnrealEditor_UnrealEd\nUnrealEditor_UnrealEd\nUnrealEditor_UnrealEd\nUnrealEditor_UnrealEd\nUnrealEditor\nUnrealEditor\nUnrealEditor\nUnrealEditor\nUnrealEditor\nUnrealEditor\nkernel32\nntdll",
+        "portable_callstack": "\n\nUnrealEditor-PythonScriptPlugin 0x000002664f4c0000 + 19e0d4 \nUnrealEditor-PythonScriptPlugin 0x000002664f4c0000 + 33895 \nUnrealEditor-PythonScriptPlugin 0x000002664f4c0000 + 54467 \nUnrealEditor-PythonScriptPlugin 0x000002664f4c0000 + ad75d \nUnrealEditor-PythonScriptPlugin 0x000002664f4c0000 + ad60d \nUnrealEditor-PythonScriptPlugin 0x000002664f4c0000 + e1921 \nUnrealEditor-PythonScriptPlugin 0x000002664f4c0000 + dd339 \nUnrealEditor-PythonScriptPlugin 0x000002664f4c0000 + c0ec9 \nUnrealEditor-UnrealEd 0x00007ffdc4d10000 + e17065 \nUnrealEditor-UnrealEd 0x00007ffdc4d10000 + e26cbc \nUnrealEditor-UnrealEd 0x00007ffdc4d10000 + 7ade3f \nUnrealEditor-UnrealEd 0x00007ffdc4d10000 + 1317596 \nUnrealEditor 0x00007ff600700000 + 327f9 \nUnrealEditor 0x00007ff600700000 + 1c4ac \nUnrealEditor 0x00007ff600700000 + 1c5ba \nUnrealEditor 0x00007ff600700000 + 212d6 \nUnrealEditor 0x00007ff600700000 + 35cf4 \nUnrealEditor 0x00007ff600700000 + 390ba \nKERNEL32 0x00007ffea85c0000 + 2dda7 \nntdll 0x00007ffeaa2c0000 + 7ee4c \n"
+      },
+      {
+        "file": "Saved\\Crashes\\UECC-Windows-515BFC8E432300DC7774ABA1EC3955CE_0001\\CrashContext.runtime-xml",
+        "sha256": "7b67530404aaaec4f2295cbe61a0f9d27001ab937d4e79707b9d1dfb957de3f4",
+        "crash_type": "Crash",
+        "guid": "UECC-Windows-515BFC8E432300DC7774ABA1EC3955CE_0001",
+        "engine": "5.8.4-58902052+++UE5+Release-5.8",
+        "seconds_since_start": "7096",
+        "error": "Unhandled Exception: EXCEPTION_ACCESS_VIOLATION reading address 0xffffffffffffffff",
+        "callstack": "python311\npython311\npython311\npython311\npython311\npython311\npython311\npython311\npython311\npython311\npython311\npython311\npython311\npython311\npython311\nUnrealEditor_PythonScriptPlugin\nUnrealEditor_PythonScriptPlugin\nUnrealEditor_PythonScriptPlugin\nUnrealEditor_PythonScriptPlugin\nUnrealEditor_Core\nUnrealEditor_Core\nUnrealEditor_CoreUObject\nUnrealEditor_Engine\nUnrealEditor_UnrealEd\nUnrealEditor_UnrealEd\nUnrealEditor_UnrealEd\nUnrealEditor_OutputLog\nUnrealEditor_OutputLog\nUnrealEditor_Slate\nUnrealEditor_Slate\nUnrealEditor_Slate\nUnrealEditor_Slate\nUnrealEditor_Slate\nUnrealEditor_Slate\nUnrealEditor_Slate\nUnrealEditor_Slate\nUnrealEditor_Slate\nUnrealEditor_SlateInspectorToolset\nUnrealEditor_SlateInspectorToolset\nUnrealEditor_CoreUObject\nUnrealEditor_ToolsetRegistry\nUnrealEditor_ToolsetRegistry\nUnrealEditor_ToolsetRegistry\nUnrealEditor_ToolsetRegistry\nUnrealEditor_ModelContextProtocolEditor\nUnrealEditor_ModelContextProtocolEditor\nUnrealEditor_ModelContextProtocol\nUnrealEditor_ModelContextProtocol\nUnrealEditor_ModelContextProtocol\nUnrealEditor_ModelContextProtocol\nUnrealEditor_HTTPServer\nUnrealEditor_HTTPServer\nUnrealEditor_HTTPServer\nUnrealEditor_HTTPServer\nUnrealEditor_HTTPServer\nUnrealEditor_HTTPServer\nUnrealEditor_HTTPServer\nUnrealEditor_HTTPServer\nUnrealEditor_Core\nUnrealEditor_Core\nUnrealEditor_Core\nUnrealEditor\nUnrealEditor\nUnrealEditor\nUnrealEditor\nUnrealEditor\nUnrealEditor\nkernel32\nntdll",
+        "portable_callstack": "\n\npython311 0x00007ffdad720000 + 67865 \npython311 0x00007ffdad720000 + 4db28 \npython311 0x00007ffdad720000 + 19cec \npython311 0x00007ffdad720000 + 756bf \npython311 0x00007ffdad720000 + 770bf \npython311 0x00007ffdad720000 + 1003c6 \npython311 0x00007ffdad720000 + 100342 \npython311 0x00007ffdad720000 + ff8eb \npython311 0x00007ffdad720000 + 100f21 \npython311 0x00007ffdad720000 + 100d20 \npython311 0x00007ffdad720000 + 4a86c \npython311 0x00007ffdad720000 + 14c2c \npython311 0x00007ffdad720000 + 160b2 \npython311 0x00007ffdad720000 + 756bf \npython311 0x00007ffdad720000 + 770bf \nUnrealEditor-PythonScriptPlugin 0x000002664f4c0000 + bfa58 \nUnrealEditor-PythonScriptPlugin 0x000002664f4c0000 + ed595 \nUnrealEditor-PythonScriptPlugin 0x000002664f4c0000 + bfec3 \nUnrealEditor-PythonScriptPlugin 0x000002664f4c0000 + c0127 \nUnrealEditor-Core 0x00007ffdcc1d0000 + 55e132 \nUnrealEditor-Core 0x00007ffdcc1d0000 + 5814ca \nUnrealEditor-CoreUObject 0x00007ffdcf4d0000 + 3c09fb \nUnrealEditor-Engine 0x00007ffdc6f10000 + 299b287 \nUnrealEditor-UnrealEd 0x00007ffdc4d10000 + 12a50ad \nUnrealEditor-UnrealEd 0x00007ffdc4d10000 + 12a79ee \nUnrealEditor-UnrealEd 0x00007ffdc4d10000 + 12a4f1d \nUnrealEditor-OutputLog 0x00007ffd885d0000 + 862e5 \nUnrealEditor-OutputLog 0x00007ffd885d0000 + 65592 \nUnrealEditor-Slate 0x00007ffdcba90000 + 2cfbde \nUnrealEditor-Slate 0x00007ffdcba90000 + 304ce7 \nUnrealEditor-Slate 0x00007ffdcba90000 + 2d57c2 \nUnrealEditor-Slate 0x00007ffdcba90000 + 433d55 \nUnrealEditor-Slate 0x00007ffdcba90000 + 41f0cb \nUnrealEditor-Slate 0x00007ffdcba90000 + 4202ee \nUnrealEditor-Slate 0x00007ffdcba90000 + 42b09c \nUnrealEditor-Slate 0x00007ffdcba90000 + f5ef \nUnrealEditor-Slate 0x00007ffdcba90000 + 4b4eb \nUnrealEditor-SlateInspectorToolset 0x000002666db40000 + 1951f \nUnrealEditor-SlateInspectorToolset 0x000002666db40000 + 1b2e2 \nUnrealEditor-CoreUObject 0x00007ffdcf4d0000 + 1d7b2c \nUnrealEditor-ToolsetRegistry 0x0000026664b40000 + dae1e \nUnrealEditor-ToolsetRegistry 0x0000026664b40000 + dc659 \nUnrealEditor-ToolsetRegistry 0x0000026664b40000 + db7fd \nUnrealEditor-ToolsetRegistry 0x0000026664b40000 + dbad0 \nUnrealEditor-ModelContextProtocolEditor 0x0000026664d30000 + 13d93 \nUnrealEditor-ModelContextProtocolEditor 0x0000026664d30000 + 1c9f9 \nUnrealEditor-ModelContextProtocol 0x00000266649c0000 + 2cfa4 \nUnrealEditor-ModelContextProtocol 0x00000266649c0000 + 29dba \nUnrealEditor-ModelContextProtocol 0x00000266649c0000 + 2b6e8 \nUnrealEditor-ModelContextProtocol 0x00000266649c0000 + 23ce0 \nUnrealEditor-HTTPServer 0x0000026664960000 + 1e87e \nUnrealEditor-HTTPServer 0x0000026664960000 + 17cbf \nUnrealEditor-HTTPServer 0x0000026664960000 + 1853a \nUnrealEditor-HTTPServer 0x0000026664960000 + 15bbf \nUnrealEditor-HTTPServer 0x0000026664960000 + 2303b \nUnrealEditor-HTTPServer 0x0000026664960000 + 23b70 \nUnrealEditor-HTTPServer 0x0000026664960000 + 2316e \nUnrealEditor-HTTPServer 0x0000026664960000 + 236cf \nUnrealEditor-Core 0x00007ffdcc1d0000 + 213805 \nUnrealEditor-Core 0x00007ffdcc1d0000 + 1e7e8b \nUnrealEditor-Core 0x00007ffdcc1d0000 + 255a5f \nUnrealEditor 0x00007ff600700000 + 33a91 \nUnrealEditor 0x00007ff600700000 + 1c4ac \nUnrealEditor 0x00007ff600700000 + 1c5ba \nUnrealEditor 0x00007ff600700000 + 212d6 \nUnrealEditor 0x00007ff600700000 + 35cf4 \nUnrealEditor 0x00007ff600700000 + 390ba \nKERNEL32 0x00007ffea85c0000 + 2dda7 \nntdll 0x00007ffeaa2c0000 + 7ee4c \n"
+      }
+    ],
+    "conditions": [
+      "MTAccessDetector.h:624 ensure at 08:29:38 UTC in PythonScriptPlugin; race OR trivially relocated access detector, not proof of race",
+      "Final PIE stopped 08:32:16 UTC; audit started 08:33:00.504 UTC; native crash 08:33:02.151 UTC",
+      "final_graph_audit.py traversed eight Blueprint graphs and pin wrappers plus CDO variables after PIE; writes only at end; no per-node progress",
+      "Top native frame python311.dll+0x67865; PythonScriptPlugin, OutputLog, SlateInspector and MCP lower in stack; no symbolized Python source line or failing asset/node",
+      "Prior graph-inspection hidden self pin issue is not proof of this crash cause"
+    ],
+    "hypothesis": "Python wrapper lifetime/refcount or memory corruption after PIE is plausible; concurrent access is unproven; no causal link to gameplay BPI/HUD established",
+    "dangerous_export_repeated": false,
+    "next_diagnostic": "Offline minidump analysis with matching Python/UE PDBs to identify the native frame and wrapper; do not repeat broad export against unsaved project"
+  },
+  "direct_pickup_context_negative": {
+    "test": "Direct BP_WorldPickup.ExecuteInteraction with substituted Context.TargetId",
+    "status": "PASS",
+    "errors": [],
+    "preconditions": {
+      "pickup": "/Game/Survival/Maps/UEDPIE_0_LV_SystemsTest.LV_SystemsTest:PersistentLevel.BP_WorldPickup_C_1",
+      "focus": "/Game/Survival/Maps/UEDPIE_0_LV_SystemsTest.LV_SystemsTest:PersistentLevel.BP_WorldPickup_C_1",
+      "actual_id": "6128CE4A49BBF079957923AE403CCABB",
+      "supplied_id": "3B404DA0C1514B738B0EA4F116338F43",
+      "context": "(Interactor_2_60A489074E466737287FD8A066D8F587=\"/Game/Survival/Core/BP_SurvivalPlayerController.BP_SurvivalPlayerController_C'/Game/Survival/Maps/UEDPIE_0_LV_SystemsTest.LV_SystemsTest:PersistentLevel.BP_SurvivalPlayerController_C_0'\",InteractorPawn_5_197C346A47849875D5B3F1BA17C815DC=\"/Game/Survival/Character/BP_SurvivalCharacter.BP_SurvivalCharacter_C'/Game/Survival/Maps/UEDPIE_0_LV_SystemsTest.LV_SystemsTest:PersistentLevel.BP_SurvivalCharacter_C_0'\",TargetId_8_E5A823114BD24DF3A235359F42FD2531=3B404DA0C1514B738B0EA4F116338F43)",
+      "pawn": "/Game/Survival/Maps/UEDPIE_0_LV_SystemsTest.LV_SystemsTest:PersistentLevel.BP_SurvivalCharacter_C_0",
+      "action": "Pickup"
+    },
+    "result": "(Success_1_B3A3A1D1491343D588CE508FA0E86D19=False,ErrorCode_4_F38364794D0AF487EEC2BF97EE151CA5=\"\",Message_7_AD3A48DD4C9CC4B9326676B69EFC5913=NSLOCTEXT(\"\", \"EB8585BE428076053D3C8C89927CC4D4\", \"Invalid target ID\"))",
+    "success": false,
+    "error_code": "None",
+    "snapshot_before": "(InventoryId_2_26A428304D039DE2EA403F9BB07F81E0=451160E54CE94B2F8720939E5ED29D6B,Revision_5_7A6A954549FA4AEE39A982AD787160D2=0,Slots_10_9053D0EE480F8FBA655F689183B061D9=((),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=1),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=2),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=3)),MaxWeight_12_D58D5FDB4818ADCB25DC5BB8839661A3=10.000000)",
+    "snapshot_after": "(InventoryId_2_26A428304D039DE2EA403F9BB07F81E0=451160E54CE94B2F8720939E5ED29D6B,Revision_5_7A6A954549FA4AEE39A982AD787160D2=0,Slots_10_9053D0EE480F8FBA655F689183B061D9=((),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=1),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=2),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=3)),MaxWeight_12_D58D5FDB4818ADCB25DC5BB8839661A3=10.000000)",
+    "pickup_before": {
+      "Stack": {
+        "stackId": "00000000-0000-0000-0000-000000000000",
+        "itemId": "item.wood",
+        "quantity": 1,
+        "durability": 0.5,
+        "hasDurability": false
+      },
+      "WorldEntityId": "6128CE4A-49BB-F079-9579-23AE403CCABB",
+      "Consumed": false,
+      "PickupInProgress": false
+    },
+    "pickup_after": {
+      "Stack": {
+        "stackId": "00000000-0000-0000-0000-000000000000",
+        "itemId": "item.wood",
+        "quantity": 1,
+        "durability": 0.5,
+        "hasDurability": false
+      },
+      "WorldEntityId": "6128CE4A-49BB-F079-9579-23AE403CCABB",
+      "Consumed": false,
+      "PickupInProgress": false
+    },
+    "inventory_events_before": 0,
+    "inventory_events_after": 0,
+    "assertions": {
+      "refused": true,
+      "inventory_exactly_unchanged": true,
+      "no_inventory_event": true,
+      "pickup_alive": true,
+      "pickup_stack_id_and_guards_unchanged": true,
+      "invalid_target_id_message": true
+    },
+    "harness_correction": "No additional game call: removed unsupported expectation ErrorCode=TargetIdMismatch. Existing A15 returns Success=False, ErrorCode=None, Message=Invalid target ID; selected contract does not require a new ErrorCode."
+  },
+  "continuation_three_steps": {
+    "step1": "UNKNOWN",
+    "step2": "PASS",
+    "step3": "PASS: report/evidence/status updated; local links and whitespace checked; six production hashes unchanged; index empty",
+    "production_assets_modified": false,
+    "six_asset_hashes_match": true,
+    "SEC01_restored": false,
+    "publication_performed": false,
+    "known_harness_issues": [
+      "Tried editing CDO-owned Context: template edit refused; used independent Struct.copy()",
+      "Initial setup before camera frame update failed precondition before any ExecuteInteraction; preserved attempt1",
+      "Expected TargetIdMismatch ErrorCode was an unsupported harness assumption; original result preserved attempt2; recomputed verdict from existing result without another game call"
+    ]
+  },
+  "final_acceptance_matrix": {
+    "task": "A18-ID01",
+    "head": "3cc9e8ea80cff6ac936aa48cbaf586f31839cccd",
+    "rows": [
+      {
+        "id": "C01",
+        "result": "PASS",
+        "evidence": "PrimaryPostRestore/recovery_check_results.json",
+        "basis": "6/6 strict compile; no new compile repeated."
+      },
+      {
+        "id": "P01",
+        "result": "PASS",
+        "evidence": "PrimaryPostRestore/session1.json; session2.json",
+        "basis": "Post-restore real E/exact quantity/one Revision/event/repeat PASS. Pre-refactor working Pickup is USER-VERIFIED baseline from original user report, not independent measured pre-change run."
+      },
+      {
+        "id": "P02",
+        "result": "PASS",
+        "evidence": "PrimaryPostRestore/session2.json; session3.json",
+        "basis": "BP callback reentry guards/one event; fresh-live-pickup oversized rollback. session2 freed-wrapper harness error superseded by session3, retained."
+      },
+      {
+        "id": "H01",
+        "result": "PASS",
+        "evidence": "PrimaryPostRestore/trace_pickup.json; trace_storage.json; session2.json",
+        "basis": "Actual trace/focus prompts and range/LoS, different Actor classes."
+      },
+      {
+        "id": "H02",
+        "result": "PASS",
+        "evidence": "PrimaryPostRestore/session2.json",
+        "basis": "Read-only fixture Context empty; prompt and no inventory mutation/events."
+      },
+      {
+        "id": "H03",
+        "result": "PASS",
+        "evidence": "PrimaryPostRestore/session1.json; session2.json",
+        "basis": "Empty options, reasons explicit/fallback, non-interface/null/range/LoS hide."
+      },
+      {
+        "id": "H04",
+        "result": "PASS",
+        "evidence": "PrimaryPostRestore/session1.json; session2.json",
+        "basis": "Destroyed/null focus, missing Pawn/HUD restored; BP focus events counted."
+      },
+      {
+        "id": "I01",
+        "result": "PASS",
+        "evidence": "MissingCasesIsolated/i01_final.json; cleanup.json; verification_summary.json",
+        "basis": "Missing authored same-class case closed in isolated editor-world; both references reported; PIE validator rejects both, player and two storage snapshots unchanged, inventory events 0/0/0. Previous different-class case retained."
+      },
+      {
+        "id": "I02",
+        "result": "PASS",
+        "evidence": "PrimaryPostRestore/session1.json; session2.json; session3.json",
+        "basis": "Unique/missing/mismatch/malformed IDs/raw duplicates; no snapshot/event mutation."
+      },
+      {
+        "id": "I03",
+        "result": "PASS",
+        "evidence": "PrimaryPostRestore/session2.json; session3.json; preservation_summary.json",
+        "basis": "Two authored IDs stable across PIE; repeated BeginPlay/deferred fixture; getter/static assignment preservation."
+      },
+      {
+        "id": "I04",
+        "result": "PASS",
+        "evidence": "PrimaryPostRestore/session3.json; recovery_check_results.json",
+        "basis": "Assigned ID before deferred spawn; loaded authored IDs preserved. Save/Load subsystem outside criterion."
+      },
+      {
+        "id": "I05",
+        "result": "PASS",
+        "evidence": "direct_negative_context_results.json; PrimaryPostRestore/session1.json; session2.json",
+        "basis": "Direct mismatch ExecuteInteraction refused; full snapshot same, zero events, pickup alive/flags unchanged. Empty-ID Controller path and destroyed-focus safe. Open not implemented."
+      },
+      {
+        "id": "R01",
+        "result": "PASS",
+        "evidence": "MissingCasesIsolated/r01_final.json; verification_summary.json",
+        "basis": "Six actual I open/close cycles in SAME PIE: same widget, snapshots/events/binding exports unchanged; InventoryChanged/Split/Merge bindings remain one. Single native Split and Merge afterwards: +1 revision/event each, total quantity two; previous UI/stale checks retained."
+      },
+      {
+        "id": "L01",
+        "result": "PASS",
+        "evidence": "PrimaryPostRestore/EditorPostRestore.log; DirectNegativeContextEditor.log; EditorCrash_2026-11-07.log",
+        "basis": "Blueprint Runtime Error / Accessed None absent. Native crash+prior ensure classified UNKNOWN separately, not Blueprint error nor clean overall UE PASS."
+      },
+      {
+        "id": "S01",
+        "result": "PASS",
+        "evidence": "preservation_summary.json; live_raw_before.json; live_raw_after.json; live_defaults.json; disk_defaults.json; primary_restore_manifest.json; RecoverySources/manifest.json",
+        "basis": "Preservation comparison recomputed; only HUD EventGraph and added getters change. Current six hashes match frozen restored files; original backups and unchanged BPC_Interaction retained. Existing Config/.uproject edits excluded; no new broad post-restore graph dump."
+      }
+    ],
+    "totals": {
+      "PASS": 15,
+      "PARTIAL": 0
+    },
+    "native_crash_classification": "UNKNOWN",
+    "decision": "READY FOR REVIEW",
+    "decision_basis": [
+      "All 15 ID01 criteria now supported; P01 pre-refactor baseline remains USER-VERIFIED as explicitly recorded",
+      "L01 is Blueprint Runtime Error/Accessed None/pending-kill gate; stored full logs and new isolated interval pass. No approved requirement to solve native diagnostic crash root cause before review",
+      "Prior native crash occurred during broad read-only export after PIE; actual fault in CPython runtime; responsible writer/component UNKNOWN. Tracked separately as diagnostic-execution risk for owner review, not declared proven tooling defect, fixed crash or game defect",
+      "READY FOR REVIEW is local review readiness, not DONE/release/publish authorization"
+    ],
+    "production_hashes_match": {
+      "Content/Survival/Interaction/BPI_Interactable.uasset": true,
+      "Content/Survival/Interaction/BP_WorldPickup.uasset": true,
+      "Content/Survival/Interaction/BP_StorageContainer.uasset": true,
+      "Content/Survival/Interaction/BPFL_InteractionIdentity.uasset": true,
+      "Content/Survival/Core/BP_SurvivalPlayerController.uasset": true,
+      "Content/Survival/Maps/LV_SystemsTest.umap": true
+    },
+    "git_status": "## task/a18-storage-container...origin/main\n M Config/DefaultEngine.ini\n M Content/Survival/Core/BP_SurvivalPlayerController.uasset\n M Content/Survival/Interaction/BPI_Interactable.uasset\n M Content/Survival/Interaction/BP_WorldPickup.uasset\n M Content/Survival/Maps/LV_SystemsTest.umap\n M Docs/ProjectStatus.md\n M SurvivalProject.uproject\n?? Content/Survival/Interaction/BPFL_InteractionIdentity.uasset\n?? Content/Survival/Interaction/BP_StorageContainer.uasset\n?? Docs/Architecture/33_A18_ID01_INTERACTION_IDENTITY_SPEC.md\n?? Docs/Architecture/34_A18_ID01_LOCAL_IMPLEMENTATION_REPORT.md\n?? Docs/Architecture/evidence/a18_id01_local_verification_2026-11-07.json\n?? scripts/a18_id01_validate_ids.py\n",
+    "publication": "None; SEC01/outgoing history review remain separate mandatory prepublication stages"
+  },
+  "offline_crash_followup": {
+    "result": "UNKNOWN",
+    "fault_site": "CPython runtime python311.dll+0x67865",
+    "instruction": "mov rcx,qword ptr [r8]",
+    "r8": "0x7000000265b73de8",
+    "pool_next_pointer_at_rax_plus_8": "0x7000000265b73de8",
+    "local_dll_match": "Local python311.dll matches minidump timestamp 0x65C2AD06 and CodeView GUID 0A53B3B3-C6F6-4F54-B771-AD15EFDA80D8 age 1",
+    "likely_area": "Internal Python small-block allocator-like routine (disassembly inference, not symbolized name)",
+    "responsible_component": "UNKNOWN: PythonScriptPlugin/SlateInspector/MCP/gameplay cannot be assigned from these frames; transport frames are callers only",
+    "tools_used": [
+      "Windows dbghelp.dll MiniDumpReadDumpStream",
+      "MSVC dumpbin 14.29.30159.0 headers/exports/disassembly",
+      "LLVM symbolizer (attempt failed to load PDB)"
+    ],
+    "missing_artifacts": [
+      {
+        "module": "python311.dll",
+        "pdb": "python311.pdb",
+        "guid": "0A53B3B3-C6F6-4F54-B771-AD15EFDA80D8",
+        "age": 1
+      },
+      {
+        "module": "F:\\UE_5.8\\Engine\\Plugins\\Experimental\\PythonScriptPlugin\\Binaries\\Win64\\UnrealEditor-PythonScriptPluginPreload.dll",
+        "pdb": {
+          "guid": "7d5c7bb6-c6b0-417e-99b5-dda7d5d9a701",
+          "age": 1,
+          "path": "UnrealEditor-PythonScriptPluginPreload.pdb"
+        }
+      },
+      {
+        "module": "F:\\UE_5.8\\Engine\\Plugins\\Experimental\\PythonScriptPlugin\\Binaries\\Win64\\UnrealEditor-PythonScriptPlugin.dll",
+        "pdb": {
+          "guid": "0e8336f4-81fd-4dc2-bbe0-0132aa5ad31f",
+          "age": 1,
+          "path": "UnrealEditor-PythonScriptPlugin.pdb"
+        }
+      },
+      {
+        "module": "F:\\UE_5.8\\Engine\\Plugins\\Experimental\\ModelContextProtocol\\Binaries\\Win64\\UnrealEditor-ModelContextProtocolEditor.dll",
+        "pdb": {
+          "guid": "6bba9ab6-9721-4c78-886c-0d76f333c088",
+          "age": 1,
+          "path": "UnrealEditor-ModelContextProtocolEditor.pdb"
+        }
+      },
+      {
+        "module": "F:\\UE_5.8\\Engine\\Plugins\\Experimental\\ModelContextProtocol\\Binaries\\Win64\\UnrealEditor-ModelContextProtocolEditorTests.dll",
+        "pdb": {
+          "guid": "2ba3948a-3689-45eb-b7eb-708703e8cc2e",
+          "age": 1,
+          "path": "UnrealEditor-ModelContextProtocolEditorTests.pdb"
+        }
+      },
+      {
+        "module": "F:\\UE_5.8\\Engine\\Plugins\\Experimental\\Toolsets\\SlateInspectorToolset\\Binaries\\Win64\\UnrealEditor-SlateInspectorToolset.dll",
+        "pdb": {
+          "guid": "ad7207e0-0c6d-42ac-ab84-49c251fd9278",
+          "age": 1,
+          "path": "UnrealEditor-SlateInspectorToolset.pdb"
+        }
+      },
+      {
+        "module": "F:\\UE_5.8\\Engine\\Plugins\\Experimental\\Toolsets\\SlateInspectorToolset\\Binaries\\Win64\\UnrealEditor-SlateInspectorToolsetTests.dll",
+        "pdb": {
+          "guid": "4ccea621-a8a8-42c8-972e-c7ef9b3c0504",
+          "age": 1,
+          "path": "UnrealEditor-SlateInspectorToolsetTests.pdb"
+        }
+      }
+    ],
+    "missing_environment": "No WinDbg/CDB in searched installed tool paths; LLVM failed DIA/NoRegCoCreate HRESULT 0x8007007E. Need compatible x64 debugger/DIA and matching PDBs; if minidump heap coverage cannot locate writer, full dump/diagnostic trace of an authorized future occurrence, without repeating broad export.",
+    "dump_analysis": "offline_minidump_analysis.json",
+    "disassembly": "python311_fault_disassembly.txt",
+    "causal_writer_unidentified": true
+  },
+  "matrix_current": {
+    "C01": {
+      "result": "PASS",
+      "detail": "6/6 strict compile; no new compile repeated.",
+      "evidence": "PrimaryPostRestore/recovery_check_results.json"
+    },
+    "P01": {
+      "result": "PASS",
+      "detail": "Post-restore real E/exact quantity/one Revision/event/repeat PASS. Pre-refactor working Pickup is USER-VERIFIED baseline from original user report, not independent measured pre-change run.",
+      "evidence": "PrimaryPostRestore/session1.json; session2.json"
+    },
+    "P02": {
+      "result": "PASS",
+      "detail": "BP callback reentry guards/one event; fresh-live-pickup oversized rollback. session2 freed-wrapper harness error superseded by session3, retained.",
+      "evidence": "PrimaryPostRestore/session2.json; session3.json"
+    },
+    "H01": {
+      "result": "PASS",
+      "detail": "Actual trace/focus prompts and range/LoS, different Actor classes.",
+      "evidence": "PrimaryPostRestore/trace_pickup.json; trace_storage.json; session2.json"
+    },
+    "H02": {
+      "result": "PASS",
+      "detail": "Read-only fixture Context empty; prompt and no inventory mutation/events.",
+      "evidence": "PrimaryPostRestore/session2.json"
+    },
+    "H03": {
+      "result": "PASS",
+      "detail": "Empty options, reasons explicit/fallback, non-interface/null/range/LoS hide.",
+      "evidence": "PrimaryPostRestore/session1.json; session2.json"
+    },
+    "H04": {
+      "result": "PASS",
+      "detail": "Destroyed/null focus, missing Pawn/HUD restored; BP focus events counted.",
+      "evidence": "PrimaryPostRestore/session1.json; session2.json"
+    },
+    "I01": {
+      "result": "PASS",
+      "detail": "Missing authored same-class case closed in isolated editor-world; both references reported; PIE validator rejects both, player and two storage snapshots unchanged, inventory events 0/0/0. Previous different-class case retained.",
+      "evidence": "MissingCasesIsolated/i01_final.json; cleanup.json; verification_summary.json"
+    },
+    "I02": {
+      "result": "PASS",
+      "detail": "Unique/missing/mismatch/malformed IDs/raw duplicates; no snapshot/event mutation.",
+      "evidence": "PrimaryPostRestore/session1.json; session2.json; session3.json"
+    },
+    "I03": {
+      "result": "PASS",
+      "detail": "Two authored IDs stable across PIE; repeated BeginPlay/deferred fixture; getter/static assignment preservation.",
+      "evidence": "PrimaryPostRestore/session2.json; session3.json; preservation_summary.json"
+    },
+    "I04": {
+      "result": "PASS",
+      "detail": "Assigned ID before deferred spawn; loaded authored IDs preserved. Save/Load subsystem outside criterion.",
+      "evidence": "PrimaryPostRestore/session3.json; recovery_check_results.json"
+    },
+    "I05": {
+      "result": "PASS",
+      "detail": "Direct mismatch ExecuteInteraction refused; full snapshot same, zero events, pickup alive/flags unchanged. Empty-ID Controller path and destroyed-focus safe. Open not implemented.",
+      "evidence": "direct_negative_context_results.json; PrimaryPostRestore/session1.json; session2.json"
+    },
+    "R01": {
+      "result": "PASS",
+      "detail": "Six actual I open/close cycles in SAME PIE: same widget, snapshots/events/binding exports unchanged; InventoryChanged/Split/Merge bindings remain one. Single native Split and Merge afterwards: +1 revision/event each, total quantity two; previous UI/stale checks retained.",
+      "evidence": "MissingCasesIsolated/r01_final.json; verification_summary.json"
+    },
+    "L01": {
+      "result": "PASS",
+      "detail": "Blueprint Runtime Error / Accessed None absent. Native crash+prior ensure classified UNKNOWN separately, not Blueprint error nor clean overall UE PASS.",
+      "evidence": "PrimaryPostRestore/EditorPostRestore.log; DirectNegativeContextEditor.log; EditorCrash_2026-11-07.log"
+    },
+    "S01": {
+      "result": "PASS",
+      "detail": "Preservation comparison recomputed; only HUD EventGraph and added getters change. Current six hashes match frozen restored files; original backups and unchanged BPC_Interaction retained. Existing Config/.uproject edits excluded; no new broad post-restore graph dump.",
+      "evidence": "preservation_summary.json; live_raw_before.json; live_raw_after.json; live_defaults.json; disk_defaults.json; primary_restore_manifest.json; RecoverySources/manifest.json"
+    }
+  },
+  "matrix_legacy_scope": "Historical results retained only in matrix_legacy_before_final_gate and precrash_sessions. matrix/matrix_current/final_acceptance_matrix are authoritative current gate.",
+  "final_readiness_validation": {
+    "result": "PASS",
+    "decision": "READY FOR REVIEW",
+    "criteria_pass": 15,
+    "partial": 0,
+    "local_links": 86,
+    "six_source_hashes_unchanged": true,
+    "git_status_paths_unchanged": true,
+    "index_empty": true,
+    "new_tests": "Only missing I01/R01 in isolated copy; existing PASS not rerun",
+    "residual_risk": "Native diagnostic crash root UNKNOWN; owner review required",
+    "no_publication": true,
+    "own_bytecode_cleanup": "Only generated a18_id01_validate_ids.cpython-311.pyc removed; no user files removed"
+  },
+  "matrix_legacy_before_final_gate": {
+    "C01": {
+      "result": "PASS_SCOPED",
+      "detail": "6/6 strict Blueprint compiles in live editor and isolated recovery. Whole commandlet exit 1 is not PASS. Primary editor post-restore strict compile 6/6 PASS."
+    },
+    "P01": {
+      "result": "PASS_PRECRASH",
+      "detail": "Actual E via Slate/game viewport; exact quantity, one Revision and one Blueprint inventory callback; repeat E and requests unchanged. Independent pre-change baseline NOT RUN."
+    },
+    "P02": {
+      "result": "PASS_PRECRASH",
+      "detail": "Oversized pickup full rollback; reentrant request in actual Blueprint callback, PickupInProgress=True/Consumed=False, one commit/event."
+    },
+    "H01": {
+      "result": "PASS_PRECRASH",
+      "detail": "Real HitActor/ImpactPoint exported for pickup and chest; chest focus/prompt, 350 cm rejection, low-wall Pawn LoS rejection while camera sees chest."
+    },
+    "H02": {
+      "result": "PASS_PRECRASH",
+      "detail": "Empty ID prompt; read-only Context checked by fixture; no player inventory mutation/events."
+    },
+    "H03": {
+      "result": "PASS_PRECRASH",
+      "detail": "Empty options, explicit disabled reason and fallback via temporary read-only interface fixture. Earlier guard-property injection attempt was invalid harness."
+    },
+    "H04": {
+      "result": "PASS_PRECRASH",
+      "detail": "Null/noninterface/destroyed focus, missing Pawn and HUD; HUD ref and Pawn restored. Blueprint focus observer: one event per change, stable focus no repeats."
+    },
+    "I01": {
+      "result": "PASS_PRECRASH",
+      "detail": "Two authored Actor references with duplicate GUID reported; duplicate validator failure; actor list restored. Runtime duplicate tested too."
+    },
+    "I02": {
+      "result": "PASS_PRECRASH",
+      "detail": "Invalid actor, missing/mismatch IDs, contradictory getter, unstable valid raw ID, duplicate raw ID despite unstable flag, matching Context verified."
+    },
+    "I03": {
+      "result": "PASS_PRECRASH",
+      "detail": "Assigned ID survives deferred spawn, repeated ReceiveBeginPlay on fixture and repeated PIE starts. Cold-loaded recovery preserves both authored IDs."
+    },
+    "I04": {
+      "result": "PASS_INITIALIZATION_SCOPE_ONLY",
+      "detail": "ID injected before deferred spawn/BeginPlay; identity restored from saved map in isolated check. Real Save/Load subsystem NOT RUN/out of ID01 scope."
+    },
+    "I05": {
+      "result": "PASS",
+      "detail": "Direct pickup ExecuteInteraction(Context with valid Controller/Pawn and storage GUID, ActionId=Pickup) rejects: Success=False, Invalid target ID; full inventory snapshot/Revision unchanged, zero BP inventory callbacks, pickup stack/ID/guards unchanged and actor alive. Existing ErrorCode=None retained."
+    },
+    "R01": {
+      "result": "PASS_TARGETED_PRECRASH",
+      "detail": "Actual I -> UI, E blocked and gameplay restored; native UI OnClicked Split/Merge and stale Split/Merge; one event per successful Split/Merge. Full historical A10/A11/A12 suite and real mouse clicks NOT RUN."
+    },
+    "L01": {
+      "result": "FAIL_OVERALL_EDITOR_STABILITY",
+      "detail": "0 Accessed None/Blueprint Runtime Error/PIE: Error matched, but main editor crashed natively during final read-only graph export; root cause unknown. New primary post-restore log: zero Accessed None, Blueprint Runtime Error, PIE Error or native access violation; existing GameFeatures startup error remains. Previous native crash unresolved."
+    },
+    "S01": {
+      "result": "PASS_SCOPED",
+      "detail": "Explicit six-resource restoration in original A18 Content; prewrite original hashes unchanged; backup made; all written and post-PIE hashes match frozen recovery; no BPC_Interaction save."
+    }
+  },
+  "missing_cases_isolated": {
+    "I01": {
+      "project": "D:/Project/SurvivalProject_A18/Saved/verification/a18-id01/RecoveryCheck01/SurvivalProject.uproject",
+      "input": {
+        "source": "/Game/Survival/Maps/LV_SystemsTest.LV_SystemsTest:PersistentLevel.BP_StorageContainer_C_1",
+        "duplicate": "/Game/Survival/Maps/LV_SystemsTest.LV_SystemsTest:PersistentLevel.BP_StorageContainer_C_0",
+        "same_class": true,
+        "guid": "3B404DA0C1514B738B0EA4F116338F43"
+      },
+      "expected": "audit FAIL lists both editor/authored actors; validator DuplicateTargetId; no inventory mutation/events",
+      "audit": {
+        "status": "FAIL",
+        "scope": "loaded actors in one world only; unloaded levels/cells and other maps NOT VERIFIED",
+        "world": "/Game/Survival/Maps/LV_SystemsTest.LV_SystemsTest",
+        "records": [
+          {
+            "actor": "/Game/Survival/Maps/LV_SystemsTest.LV_SystemsTest:PersistentLevel.BP_WorldPickup_C_1",
+            "class": "/Game/Survival/Interaction/BP_WorldPickup.BP_WorldPickup_C",
+            "target_id": "6128CE4A49BBF079957923AE403CCABB",
+            "has_stable_id": true,
+            "valid_guid": true,
+            "permanent": true
+          },
+          {
+            "actor": "/Game/Survival/Maps/LV_SystemsTest.LV_SystemsTest:PersistentLevel.BP_StorageContainer_C_1",
+            "class": "/Game/Survival/Interaction/BP_StorageContainer.BP_StorageContainer_C",
+            "target_id": "3B404DA0C1514B738B0EA4F116338F43",
+            "has_stable_id": true,
+            "valid_guid": true,
+            "permanent": true
+          },
+          {
+            "actor": "/Game/Survival/Maps/LV_SystemsTest.LV_SystemsTest:PersistentLevel.BP_StorageContainer_C_0",
+            "class": "/Game/Survival/Interaction/BP_StorageContainer.BP_StorageContainer_C",
+            "target_id": "3B404DA0C1514B738B0EA4F116338F43",
+            "has_stable_id": true,
+            "valid_guid": true,
+            "permanent": true
+          }
+        ],
+        "duplicate_ids": {
+          "3B404DA0C1514B738B0EA4F116338F43": [
+            "/Game/Survival/Maps/LV_SystemsTest.LV_SystemsTest:PersistentLevel.BP_StorageContainer_C_1",
+            "/Game/Survival/Maps/LV_SystemsTest.LV_SystemsTest:PersistentLevel.BP_StorageContainer_C_0"
+          ]
+        },
+        "errors": []
+      },
+      "validation": {
+        "valid": false,
+        "reason": "DuplicateTargetId"
+      },
+      "editor_checks_pass": true,
+      "pie": {
+        "checks": [
+          {
+            "actor": "/Game/Survival/Maps/UEDPIE_0_LV_SystemsTest.LV_SystemsTest:PersistentLevel.BP_StorageContainer_C_1",
+            "valid": false,
+            "reason": "DuplicateTargetId"
+          },
+          {
+            "actor": "/Game/Survival/Maps/UEDPIE_0_LV_SystemsTest.LV_SystemsTest:PersistentLevel.BP_StorageContainer_C_0",
+            "valid": false,
+            "reason": "DuplicateTargetId"
+          }
+        ],
+        "inventory_before": [
+          "(InventoryId_2_26A428304D039DE2EA403F9BB07F81E0=C6528F1B4EAA0A3D5842B6B85C3DAB00,Revision_5_7A6A954549FA4AEE39A982AD787160D2=0,Slots_10_9053D0EE480F8FBA655F689183B061D9=((),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=1),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=2),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=3)),MaxWeight_12_D58D5FDB4818ADCB25DC5BB8839661A3=10.000000)",
+          "(InventoryId_2_26A428304D039DE2EA403F9BB07F81E0=B3EC3F694E2B41F9C724DFBE12D86D44,Revision_5_7A6A954549FA4AEE39A982AD787160D2=0,Slots_10_9053D0EE480F8FBA655F689183B061D9=((),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=1),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=2),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=3),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=4),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=5),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=6),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=7),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=8),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=9),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=10),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=11),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=12),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=13),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=14),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=15)),MaxWeight_12_D58D5FDB4818ADCB25DC5BB8839661A3=100.000000)",
+          "(InventoryId_2_26A428304D039DE2EA403F9BB07F81E0=5A7EB39D49DB5DAE46BC45B128163277,Revision_5_7A6A954549FA4AEE39A982AD787160D2=0,Slots_10_9053D0EE480F8FBA655F689183B061D9=((),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=1),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=2),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=3),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=4),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=5),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=6),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=7),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=8),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=9),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=10),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=11),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=12),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=13),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=14),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=15)),MaxWeight_12_D58D5FDB4818ADCB25DC5BB8839661A3=100.000000)"
+        ],
+        "inventory_after": [
+          "(InventoryId_2_26A428304D039DE2EA403F9BB07F81E0=C6528F1B4EAA0A3D5842B6B85C3DAB00,Revision_5_7A6A954549FA4AEE39A982AD787160D2=0,Slots_10_9053D0EE480F8FBA655F689183B061D9=((),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=1),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=2),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=3)),MaxWeight_12_D58D5FDB4818ADCB25DC5BB8839661A3=10.000000)",
+          "(InventoryId_2_26A428304D039DE2EA403F9BB07F81E0=B3EC3F694E2B41F9C724DFBE12D86D44,Revision_5_7A6A954549FA4AEE39A982AD787160D2=0,Slots_10_9053D0EE480F8FBA655F689183B061D9=((),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=1),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=2),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=3),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=4),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=5),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=6),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=7),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=8),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=9),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=10),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=11),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=12),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=13),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=14),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=15)),MaxWeight_12_D58D5FDB4818ADCB25DC5BB8839661A3=100.000000)",
+          "(InventoryId_2_26A428304D039DE2EA403F9BB07F81E0=5A7EB39D49DB5DAE46BC45B128163277,Revision_5_7A6A954549FA4AEE39A982AD787160D2=0,Slots_10_9053D0EE480F8FBA655F689183B061D9=((),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=1),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=2),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=3),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=4),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=5),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=6),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=7),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=8),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=9),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=10),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=11),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=12),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=13),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=14),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=15)),MaxWeight_12_D58D5FDB4818ADCB25DC5BB8839661A3=100.000000)"
+        ],
+        "events_before": [
+          0,
+          0,
+          0
+        ],
+        "events_after": [
+          0,
+          0,
+          0
+        ]
+      },
+      "status": "PASS"
+    },
+    "R01": {
+      "project": "D:/Project/SurvivalProject_A18/Saved/verification/a18-id01/RecoveryCheck01/SurvivalProject.uproject",
+      "expected": "Repeated open/close does not mutate inventory/events; one native button click after each reopening gives one revision/commit/event; no duplicate UI error callbacks",
+      "cycles": [
+        {
+          "cycle": 1,
+          "before": {
+            "snapshot": "(InventoryId_2_26A428304D039DE2EA403F9BB07F81E0=C6528F1B4EAA0A3D5842B6B85C3DAB00,Revision_5_7A6A954549FA4AEE39A982AD787160D2=1,Slots_10_9053D0EE480F8FBA655F689183B061D9=((ItemStack_5_779DD7EE429A896B44C7BDB5BD86E483=(StackId_2_0D9551B3432E557343037D9F83EACD2E=425A1CF04A59AD7967829D91D5A472DE,ItemId_5_0EBB58F84F513100A99F31938FDDB627=\"item.wood\",Quantity_8_ED3667F84EB2BC62FEA5CBAC3A2B4FAA=2,Durability_15_C5C55D564D4F0A63A3249ABD5A8DE175=0.500000),HasItem_8_D040C6944C2BC036FE49499973A601D5=True),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=1),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=2),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=3)),MaxWeight_12_D58D5FDB4818ADCB25DC5BB8839661A3=10.000000)",
+            "events": 1,
+            "bindings": {
+              "InventoryChanged": "(/Game/Survival/Maps/UEDPIE_0_LV_SystemsTest.LV_SystemsTest:PersistentLevel.BP_A18_ID01_TestObserver_C_0.ObserveInventory)",
+              "Split": "(/Engine/Transient.UnrealEdEngine_0:BP_SurvivalGameInstance_C_0.WBP_Inventory_C_0.BndEvt__WBP_Inventory_BTN_Split_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature)",
+              "Merge": "(/Engine/Transient.UnrealEdEngine_0:BP_SurvivalGameInstance_C_0.WBP_Inventory_C_0.BndEvt__WBP_Inventory_BTN_MergeConfirm_K2Node_ComponentBoundEvent_4_OnButtonClickedEvent__DelegateSignature)"
+            }
+          },
+          "open": {
+            "mode": "UI",
+            "widget": "/Engine/Transient.UnrealEdEngine_0:BP_SurvivalGameInstance_C_0.WBP_Inventory_C_0",
+            "bindings": {
+              "InventoryChanged": "(/Game/Survival/Maps/UEDPIE_0_LV_SystemsTest.LV_SystemsTest:PersistentLevel.BP_A18_ID01_TestObserver_C_0.ObserveInventory)",
+              "Split": "(/Engine/Transient.UnrealEdEngine_0:BP_SurvivalGameInstance_C_0.WBP_Inventory_C_0.BndEvt__WBP_Inventory_BTN_Split_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature)",
+              "Merge": "(/Engine/Transient.UnrealEdEngine_0:BP_SurvivalGameInstance_C_0.WBP_Inventory_C_0.BndEvt__WBP_Inventory_BTN_MergeConfirm_K2Node_ComponentBoundEvent_4_OnButtonClickedEvent__DelegateSignature)"
+            },
+            "snapshot": "(InventoryId_2_26A428304D039DE2EA403F9BB07F81E0=C6528F1B4EAA0A3D5842B6B85C3DAB00,Revision_5_7A6A954549FA4AEE39A982AD787160D2=1,Slots_10_9053D0EE480F8FBA655F689183B061D9=((ItemStack_5_779DD7EE429A896B44C7BDB5BD86E483=(StackId_2_0D9551B3432E557343037D9F83EACD2E=425A1CF04A59AD7967829D91D5A472DE,ItemId_5_0EBB58F84F513100A99F31938FDDB627=\"item.wood\",Quantity_8_ED3667F84EB2BC62FEA5CBAC3A2B4FAA=2,Durability_15_C5C55D564D4F0A63A3249ABD5A8DE175=0.500000),HasItem_8_D040C6944C2BC036FE49499973A601D5=True),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=1),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=2),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=3)),MaxWeight_12_D58D5FDB4818ADCB25DC5BB8839661A3=10.000000)",
+            "events": 1
+          },
+          "closed": {
+            "mode": "Gameplay",
+            "bindings": {
+              "InventoryChanged": "(/Game/Survival/Maps/UEDPIE_0_LV_SystemsTest.LV_SystemsTest:PersistentLevel.BP_A18_ID01_TestObserver_C_0.ObserveInventory)",
+              "Split": "(/Engine/Transient.UnrealEdEngine_0:BP_SurvivalGameInstance_C_0.WBP_Inventory_C_0.BndEvt__WBP_Inventory_BTN_Split_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature)",
+              "Merge": "(/Engine/Transient.UnrealEdEngine_0:BP_SurvivalGameInstance_C_0.WBP_Inventory_C_0.BndEvt__WBP_Inventory_BTN_MergeConfirm_K2Node_ComponentBoundEvent_4_OnButtonClickedEvent__DelegateSignature)"
+            },
+            "binding_counts": {
+              "InventoryChanged": 1,
+              "Split": 1,
+              "Merge": 1
+            },
+            "snapshot": "(InventoryId_2_26A428304D039DE2EA403F9BB07F81E0=C6528F1B4EAA0A3D5842B6B85C3DAB00,Revision_5_7A6A954549FA4AEE39A982AD787160D2=1,Slots_10_9053D0EE480F8FBA655F689183B061D9=((ItemStack_5_779DD7EE429A896B44C7BDB5BD86E483=(StackId_2_0D9551B3432E557343037D9F83EACD2E=425A1CF04A59AD7967829D91D5A472DE,ItemId_5_0EBB58F84F513100A99F31938FDDB627=\"item.wood\",Quantity_8_ED3667F84EB2BC62FEA5CBAC3A2B4FAA=2,Durability_15_C5C55D564D4F0A63A3249ABD5A8DE175=0.500000),HasItem_8_D040C6944C2BC036FE49499973A601D5=True),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=1),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=2),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=3)),MaxWeight_12_D58D5FDB4818ADCB25DC5BB8839661A3=10.000000)",
+            "events": 1
+          },
+          "pass": true
+        },
+        {
+          "cycle": 2,
+          "before": {
+            "snapshot": "(InventoryId_2_26A428304D039DE2EA403F9BB07F81E0=C6528F1B4EAA0A3D5842B6B85C3DAB00,Revision_5_7A6A954549FA4AEE39A982AD787160D2=1,Slots_10_9053D0EE480F8FBA655F689183B061D9=((ItemStack_5_779DD7EE429A896B44C7BDB5BD86E483=(StackId_2_0D9551B3432E557343037D9F83EACD2E=425A1CF04A59AD7967829D91D5A472DE,ItemId_5_0EBB58F84F513100A99F31938FDDB627=\"item.wood\",Quantity_8_ED3667F84EB2BC62FEA5CBAC3A2B4FAA=2,Durability_15_C5C55D564D4F0A63A3249ABD5A8DE175=0.500000),HasItem_8_D040C6944C2BC036FE49499973A601D5=True),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=1),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=2),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=3)),MaxWeight_12_D58D5FDB4818ADCB25DC5BB8839661A3=10.000000)",
+            "events": 1,
+            "bindings": {
+              "InventoryChanged": "(/Game/Survival/Maps/UEDPIE_0_LV_SystemsTest.LV_SystemsTest:PersistentLevel.BP_A18_ID01_TestObserver_C_0.ObserveInventory)",
+              "Split": "(/Engine/Transient.UnrealEdEngine_0:BP_SurvivalGameInstance_C_0.WBP_Inventory_C_0.BndEvt__WBP_Inventory_BTN_Split_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature)",
+              "Merge": "(/Engine/Transient.UnrealEdEngine_0:BP_SurvivalGameInstance_C_0.WBP_Inventory_C_0.BndEvt__WBP_Inventory_BTN_MergeConfirm_K2Node_ComponentBoundEvent_4_OnButtonClickedEvent__DelegateSignature)"
+            }
+          },
+          "open": {
+            "mode": "UI",
+            "widget": "/Engine/Transient.UnrealEdEngine_0:BP_SurvivalGameInstance_C_0.WBP_Inventory_C_0",
+            "bindings": {
+              "InventoryChanged": "(/Game/Survival/Maps/UEDPIE_0_LV_SystemsTest.LV_SystemsTest:PersistentLevel.BP_A18_ID01_TestObserver_C_0.ObserveInventory)",
+              "Split": "(/Engine/Transient.UnrealEdEngine_0:BP_SurvivalGameInstance_C_0.WBP_Inventory_C_0.BndEvt__WBP_Inventory_BTN_Split_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature)",
+              "Merge": "(/Engine/Transient.UnrealEdEngine_0:BP_SurvivalGameInstance_C_0.WBP_Inventory_C_0.BndEvt__WBP_Inventory_BTN_MergeConfirm_K2Node_ComponentBoundEvent_4_OnButtonClickedEvent__DelegateSignature)"
+            },
+            "snapshot": "(InventoryId_2_26A428304D039DE2EA403F9BB07F81E0=C6528F1B4EAA0A3D5842B6B85C3DAB00,Revision_5_7A6A954549FA4AEE39A982AD787160D2=1,Slots_10_9053D0EE480F8FBA655F689183B061D9=((ItemStack_5_779DD7EE429A896B44C7BDB5BD86E483=(StackId_2_0D9551B3432E557343037D9F83EACD2E=425A1CF04A59AD7967829D91D5A472DE,ItemId_5_0EBB58F84F513100A99F31938FDDB627=\"item.wood\",Quantity_8_ED3667F84EB2BC62FEA5CBAC3A2B4FAA=2,Durability_15_C5C55D564D4F0A63A3249ABD5A8DE175=0.500000),HasItem_8_D040C6944C2BC036FE49499973A601D5=True),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=1),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=2),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=3)),MaxWeight_12_D58D5FDB4818ADCB25DC5BB8839661A3=10.000000)",
+            "events": 1
+          },
+          "closed": {
+            "mode": "Gameplay",
+            "bindings": {
+              "InventoryChanged": "(/Game/Survival/Maps/UEDPIE_0_LV_SystemsTest.LV_SystemsTest:PersistentLevel.BP_A18_ID01_TestObserver_C_0.ObserveInventory)",
+              "Split": "(/Engine/Transient.UnrealEdEngine_0:BP_SurvivalGameInstance_C_0.WBP_Inventory_C_0.BndEvt__WBP_Inventory_BTN_Split_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature)",
+              "Merge": "(/Engine/Transient.UnrealEdEngine_0:BP_SurvivalGameInstance_C_0.WBP_Inventory_C_0.BndEvt__WBP_Inventory_BTN_MergeConfirm_K2Node_ComponentBoundEvent_4_OnButtonClickedEvent__DelegateSignature)"
+            },
+            "binding_counts": {
+              "InventoryChanged": 1,
+              "Split": 1,
+              "Merge": 1
+            },
+            "snapshot": "(InventoryId_2_26A428304D039DE2EA403F9BB07F81E0=C6528F1B4EAA0A3D5842B6B85C3DAB00,Revision_5_7A6A954549FA4AEE39A982AD787160D2=1,Slots_10_9053D0EE480F8FBA655F689183B061D9=((ItemStack_5_779DD7EE429A896B44C7BDB5BD86E483=(StackId_2_0D9551B3432E557343037D9F83EACD2E=425A1CF04A59AD7967829D91D5A472DE,ItemId_5_0EBB58F84F513100A99F31938FDDB627=\"item.wood\",Quantity_8_ED3667F84EB2BC62FEA5CBAC3A2B4FAA=2,Durability_15_C5C55D564D4F0A63A3249ABD5A8DE175=0.500000),HasItem_8_D040C6944C2BC036FE49499973A601D5=True),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=1),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=2),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=3)),MaxWeight_12_D58D5FDB4818ADCB25DC5BB8839661A3=10.000000)",
+            "events": 1
+          },
+          "pass": true
+        },
+        {
+          "cycle": 3,
+          "before": {
+            "snapshot": "(InventoryId_2_26A428304D039DE2EA403F9BB07F81E0=C6528F1B4EAA0A3D5842B6B85C3DAB00,Revision_5_7A6A954549FA4AEE39A982AD787160D2=1,Slots_10_9053D0EE480F8FBA655F689183B061D9=((ItemStack_5_779DD7EE429A896B44C7BDB5BD86E483=(StackId_2_0D9551B3432E557343037D9F83EACD2E=425A1CF04A59AD7967829D91D5A472DE,ItemId_5_0EBB58F84F513100A99F31938FDDB627=\"item.wood\",Quantity_8_ED3667F84EB2BC62FEA5CBAC3A2B4FAA=2,Durability_15_C5C55D564D4F0A63A3249ABD5A8DE175=0.500000),HasItem_8_D040C6944C2BC036FE49499973A601D5=True),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=1),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=2),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=3)),MaxWeight_12_D58D5FDB4818ADCB25DC5BB8839661A3=10.000000)",
+            "events": 1,
+            "bindings": {
+              "InventoryChanged": "(/Game/Survival/Maps/UEDPIE_0_LV_SystemsTest.LV_SystemsTest:PersistentLevel.BP_A18_ID01_TestObserver_C_0.ObserveInventory)",
+              "Split": "(/Engine/Transient.UnrealEdEngine_0:BP_SurvivalGameInstance_C_0.WBP_Inventory_C_0.BndEvt__WBP_Inventory_BTN_Split_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature)",
+              "Merge": "(/Engine/Transient.UnrealEdEngine_0:BP_SurvivalGameInstance_C_0.WBP_Inventory_C_0.BndEvt__WBP_Inventory_BTN_MergeConfirm_K2Node_ComponentBoundEvent_4_OnButtonClickedEvent__DelegateSignature)"
+            }
+          },
+          "open": {
+            "mode": "UI",
+            "widget": "/Engine/Transient.UnrealEdEngine_0:BP_SurvivalGameInstance_C_0.WBP_Inventory_C_0",
+            "bindings": {
+              "InventoryChanged": "(/Game/Survival/Maps/UEDPIE_0_LV_SystemsTest.LV_SystemsTest:PersistentLevel.BP_A18_ID01_TestObserver_C_0.ObserveInventory)",
+              "Split": "(/Engine/Transient.UnrealEdEngine_0:BP_SurvivalGameInstance_C_0.WBP_Inventory_C_0.BndEvt__WBP_Inventory_BTN_Split_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature)",
+              "Merge": "(/Engine/Transient.UnrealEdEngine_0:BP_SurvivalGameInstance_C_0.WBP_Inventory_C_0.BndEvt__WBP_Inventory_BTN_MergeConfirm_K2Node_ComponentBoundEvent_4_OnButtonClickedEvent__DelegateSignature)"
+            },
+            "snapshot": "(InventoryId_2_26A428304D039DE2EA403F9BB07F81E0=C6528F1B4EAA0A3D5842B6B85C3DAB00,Revision_5_7A6A954549FA4AEE39A982AD787160D2=1,Slots_10_9053D0EE480F8FBA655F689183B061D9=((ItemStack_5_779DD7EE429A896B44C7BDB5BD86E483=(StackId_2_0D9551B3432E557343037D9F83EACD2E=425A1CF04A59AD7967829D91D5A472DE,ItemId_5_0EBB58F84F513100A99F31938FDDB627=\"item.wood\",Quantity_8_ED3667F84EB2BC62FEA5CBAC3A2B4FAA=2,Durability_15_C5C55D564D4F0A63A3249ABD5A8DE175=0.500000),HasItem_8_D040C6944C2BC036FE49499973A601D5=True),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=1),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=2),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=3)),MaxWeight_12_D58D5FDB4818ADCB25DC5BB8839661A3=10.000000)",
+            "events": 1
+          },
+          "closed": {
+            "mode": "Gameplay",
+            "bindings": {
+              "InventoryChanged": "(/Game/Survival/Maps/UEDPIE_0_LV_SystemsTest.LV_SystemsTest:PersistentLevel.BP_A18_ID01_TestObserver_C_0.ObserveInventory)",
+              "Split": "(/Engine/Transient.UnrealEdEngine_0:BP_SurvivalGameInstance_C_0.WBP_Inventory_C_0.BndEvt__WBP_Inventory_BTN_Split_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature)",
+              "Merge": "(/Engine/Transient.UnrealEdEngine_0:BP_SurvivalGameInstance_C_0.WBP_Inventory_C_0.BndEvt__WBP_Inventory_BTN_MergeConfirm_K2Node_ComponentBoundEvent_4_OnButtonClickedEvent__DelegateSignature)"
+            },
+            "binding_counts": {
+              "InventoryChanged": 1,
+              "Split": 1,
+              "Merge": 1
+            },
+            "snapshot": "(InventoryId_2_26A428304D039DE2EA403F9BB07F81E0=C6528F1B4EAA0A3D5842B6B85C3DAB00,Revision_5_7A6A954549FA4AEE39A982AD787160D2=1,Slots_10_9053D0EE480F8FBA655F689183B061D9=((ItemStack_5_779DD7EE429A896B44C7BDB5BD86E483=(StackId_2_0D9551B3432E557343037D9F83EACD2E=425A1CF04A59AD7967829D91D5A472DE,ItemId_5_0EBB58F84F513100A99F31938FDDB627=\"item.wood\",Quantity_8_ED3667F84EB2BC62FEA5CBAC3A2B4FAA=2,Durability_15_C5C55D564D4F0A63A3249ABD5A8DE175=0.500000),HasItem_8_D040C6944C2BC036FE49499973A601D5=True),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=1),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=2),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=3)),MaxWeight_12_D58D5FDB4818ADCB25DC5BB8839661A3=10.000000)",
+            "events": 1
+          },
+          "pass": true
+        },
+        {
+          "cycle": 4,
+          "before": {
+            "snapshot": "(InventoryId_2_26A428304D039DE2EA403F9BB07F81E0=C6528F1B4EAA0A3D5842B6B85C3DAB00,Revision_5_7A6A954549FA4AEE39A982AD787160D2=1,Slots_10_9053D0EE480F8FBA655F689183B061D9=((ItemStack_5_779DD7EE429A896B44C7BDB5BD86E483=(StackId_2_0D9551B3432E557343037D9F83EACD2E=425A1CF04A59AD7967829D91D5A472DE,ItemId_5_0EBB58F84F513100A99F31938FDDB627=\"item.wood\",Quantity_8_ED3667F84EB2BC62FEA5CBAC3A2B4FAA=2,Durability_15_C5C55D564D4F0A63A3249ABD5A8DE175=0.500000),HasItem_8_D040C6944C2BC036FE49499973A601D5=True),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=1),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=2),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=3)),MaxWeight_12_D58D5FDB4818ADCB25DC5BB8839661A3=10.000000)",
+            "events": 1,
+            "bindings": {
+              "InventoryChanged": "(/Game/Survival/Maps/UEDPIE_0_LV_SystemsTest.LV_SystemsTest:PersistentLevel.BP_A18_ID01_TestObserver_C_0.ObserveInventory)",
+              "Split": "(/Engine/Transient.UnrealEdEngine_0:BP_SurvivalGameInstance_C_0.WBP_Inventory_C_0.BndEvt__WBP_Inventory_BTN_Split_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature)",
+              "Merge": "(/Engine/Transient.UnrealEdEngine_0:BP_SurvivalGameInstance_C_0.WBP_Inventory_C_0.BndEvt__WBP_Inventory_BTN_MergeConfirm_K2Node_ComponentBoundEvent_4_OnButtonClickedEvent__DelegateSignature)"
+            }
+          },
+          "open": {
+            "mode": "UI",
+            "widget": "/Engine/Transient.UnrealEdEngine_0:BP_SurvivalGameInstance_C_0.WBP_Inventory_C_0",
+            "bindings": {
+              "InventoryChanged": "(/Game/Survival/Maps/UEDPIE_0_LV_SystemsTest.LV_SystemsTest:PersistentLevel.BP_A18_ID01_TestObserver_C_0.ObserveInventory)",
+              "Split": "(/Engine/Transient.UnrealEdEngine_0:BP_SurvivalGameInstance_C_0.WBP_Inventory_C_0.BndEvt__WBP_Inventory_BTN_Split_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature)",
+              "Merge": "(/Engine/Transient.UnrealEdEngine_0:BP_SurvivalGameInstance_C_0.WBP_Inventory_C_0.BndEvt__WBP_Inventory_BTN_MergeConfirm_K2Node_ComponentBoundEvent_4_OnButtonClickedEvent__DelegateSignature)"
+            },
+            "snapshot": "(InventoryId_2_26A428304D039DE2EA403F9BB07F81E0=C6528F1B4EAA0A3D5842B6B85C3DAB00,Revision_5_7A6A954549FA4AEE39A982AD787160D2=1,Slots_10_9053D0EE480F8FBA655F689183B061D9=((ItemStack_5_779DD7EE429A896B44C7BDB5BD86E483=(StackId_2_0D9551B3432E557343037D9F83EACD2E=425A1CF04A59AD7967829D91D5A472DE,ItemId_5_0EBB58F84F513100A99F31938FDDB627=\"item.wood\",Quantity_8_ED3667F84EB2BC62FEA5CBAC3A2B4FAA=2,Durability_15_C5C55D564D4F0A63A3249ABD5A8DE175=0.500000),HasItem_8_D040C6944C2BC036FE49499973A601D5=True),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=1),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=2),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=3)),MaxWeight_12_D58D5FDB4818ADCB25DC5BB8839661A3=10.000000)",
+            "events": 1
+          },
+          "closed": {
+            "mode": "Gameplay",
+            "bindings": {
+              "InventoryChanged": "(/Game/Survival/Maps/UEDPIE_0_LV_SystemsTest.LV_SystemsTest:PersistentLevel.BP_A18_ID01_TestObserver_C_0.ObserveInventory)",
+              "Split": "(/Engine/Transient.UnrealEdEngine_0:BP_SurvivalGameInstance_C_0.WBP_Inventory_C_0.BndEvt__WBP_Inventory_BTN_Split_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature)",
+              "Merge": "(/Engine/Transient.UnrealEdEngine_0:BP_SurvivalGameInstance_C_0.WBP_Inventory_C_0.BndEvt__WBP_Inventory_BTN_MergeConfirm_K2Node_ComponentBoundEvent_4_OnButtonClickedEvent__DelegateSignature)"
+            },
+            "binding_counts": {
+              "InventoryChanged": 1,
+              "Split": 1,
+              "Merge": 1
+            },
+            "snapshot": "(InventoryId_2_26A428304D039DE2EA403F9BB07F81E0=C6528F1B4EAA0A3D5842B6B85C3DAB00,Revision_5_7A6A954549FA4AEE39A982AD787160D2=1,Slots_10_9053D0EE480F8FBA655F689183B061D9=((ItemStack_5_779DD7EE429A896B44C7BDB5BD86E483=(StackId_2_0D9551B3432E557343037D9F83EACD2E=425A1CF04A59AD7967829D91D5A472DE,ItemId_5_0EBB58F84F513100A99F31938FDDB627=\"item.wood\",Quantity_8_ED3667F84EB2BC62FEA5CBAC3A2B4FAA=2,Durability_15_C5C55D564D4F0A63A3249ABD5A8DE175=0.500000),HasItem_8_D040C6944C2BC036FE49499973A601D5=True),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=1),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=2),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=3)),MaxWeight_12_D58D5FDB4818ADCB25DC5BB8839661A3=10.000000)",
+            "events": 1
+          },
+          "pass": true
+        },
+        {
+          "cycle": 5,
+          "before": {
+            "snapshot": "(InventoryId_2_26A428304D039DE2EA403F9BB07F81E0=C6528F1B4EAA0A3D5842B6B85C3DAB00,Revision_5_7A6A954549FA4AEE39A982AD787160D2=1,Slots_10_9053D0EE480F8FBA655F689183B061D9=((ItemStack_5_779DD7EE429A896B44C7BDB5BD86E483=(StackId_2_0D9551B3432E557343037D9F83EACD2E=425A1CF04A59AD7967829D91D5A472DE,ItemId_5_0EBB58F84F513100A99F31938FDDB627=\"item.wood\",Quantity_8_ED3667F84EB2BC62FEA5CBAC3A2B4FAA=2,Durability_15_C5C55D564D4F0A63A3249ABD5A8DE175=0.500000),HasItem_8_D040C6944C2BC036FE49499973A601D5=True),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=1),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=2),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=3)),MaxWeight_12_D58D5FDB4818ADCB25DC5BB8839661A3=10.000000)",
+            "events": 1,
+            "bindings": {
+              "InventoryChanged": "(/Game/Survival/Maps/UEDPIE_0_LV_SystemsTest.LV_SystemsTest:PersistentLevel.BP_A18_ID01_TestObserver_C_0.ObserveInventory)",
+              "Split": "(/Engine/Transient.UnrealEdEngine_0:BP_SurvivalGameInstance_C_0.WBP_Inventory_C_0.BndEvt__WBP_Inventory_BTN_Split_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature)",
+              "Merge": "(/Engine/Transient.UnrealEdEngine_0:BP_SurvivalGameInstance_C_0.WBP_Inventory_C_0.BndEvt__WBP_Inventory_BTN_MergeConfirm_K2Node_ComponentBoundEvent_4_OnButtonClickedEvent__DelegateSignature)"
+            }
+          },
+          "open": {
+            "mode": "UI",
+            "widget": "/Engine/Transient.UnrealEdEngine_0:BP_SurvivalGameInstance_C_0.WBP_Inventory_C_0",
+            "bindings": {
+              "InventoryChanged": "(/Game/Survival/Maps/UEDPIE_0_LV_SystemsTest.LV_SystemsTest:PersistentLevel.BP_A18_ID01_TestObserver_C_0.ObserveInventory)",
+              "Split": "(/Engine/Transient.UnrealEdEngine_0:BP_SurvivalGameInstance_C_0.WBP_Inventory_C_0.BndEvt__WBP_Inventory_BTN_Split_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature)",
+              "Merge": "(/Engine/Transient.UnrealEdEngine_0:BP_SurvivalGameInstance_C_0.WBP_Inventory_C_0.BndEvt__WBP_Inventory_BTN_MergeConfirm_K2Node_ComponentBoundEvent_4_OnButtonClickedEvent__DelegateSignature)"
+            },
+            "snapshot": "(InventoryId_2_26A428304D039DE2EA403F9BB07F81E0=C6528F1B4EAA0A3D5842B6B85C3DAB00,Revision_5_7A6A954549FA4AEE39A982AD787160D2=1,Slots_10_9053D0EE480F8FBA655F689183B061D9=((ItemStack_5_779DD7EE429A896B44C7BDB5BD86E483=(StackId_2_0D9551B3432E557343037D9F83EACD2E=425A1CF04A59AD7967829D91D5A472DE,ItemId_5_0EBB58F84F513100A99F31938FDDB627=\"item.wood\",Quantity_8_ED3667F84EB2BC62FEA5CBAC3A2B4FAA=2,Durability_15_C5C55D564D4F0A63A3249ABD5A8DE175=0.500000),HasItem_8_D040C6944C2BC036FE49499973A601D5=True),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=1),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=2),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=3)),MaxWeight_12_D58D5FDB4818ADCB25DC5BB8839661A3=10.000000)",
+            "events": 1
+          },
+          "closed": {
+            "mode": "Gameplay",
+            "bindings": {
+              "InventoryChanged": "(/Game/Survival/Maps/UEDPIE_0_LV_SystemsTest.LV_SystemsTest:PersistentLevel.BP_A18_ID01_TestObserver_C_0.ObserveInventory)",
+              "Split": "(/Engine/Transient.UnrealEdEngine_0:BP_SurvivalGameInstance_C_0.WBP_Inventory_C_0.BndEvt__WBP_Inventory_BTN_Split_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature)",
+              "Merge": "(/Engine/Transient.UnrealEdEngine_0:BP_SurvivalGameInstance_C_0.WBP_Inventory_C_0.BndEvt__WBP_Inventory_BTN_MergeConfirm_K2Node_ComponentBoundEvent_4_OnButtonClickedEvent__DelegateSignature)"
+            },
+            "binding_counts": {
+              "InventoryChanged": 1,
+              "Split": 1,
+              "Merge": 1
+            },
+            "snapshot": "(InventoryId_2_26A428304D039DE2EA403F9BB07F81E0=C6528F1B4EAA0A3D5842B6B85C3DAB00,Revision_5_7A6A954549FA4AEE39A982AD787160D2=1,Slots_10_9053D0EE480F8FBA655F689183B061D9=((ItemStack_5_779DD7EE429A896B44C7BDB5BD86E483=(StackId_2_0D9551B3432E557343037D9F83EACD2E=425A1CF04A59AD7967829D91D5A472DE,ItemId_5_0EBB58F84F513100A99F31938FDDB627=\"item.wood\",Quantity_8_ED3667F84EB2BC62FEA5CBAC3A2B4FAA=2,Durability_15_C5C55D564D4F0A63A3249ABD5A8DE175=0.500000),HasItem_8_D040C6944C2BC036FE49499973A601D5=True),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=1),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=2),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=3)),MaxWeight_12_D58D5FDB4818ADCB25DC5BB8839661A3=10.000000)",
+            "events": 1
+          },
+          "pass": true
+        },
+        {
+          "cycle": 6,
+          "before": {
+            "snapshot": "(InventoryId_2_26A428304D039DE2EA403F9BB07F81E0=C6528F1B4EAA0A3D5842B6B85C3DAB00,Revision_5_7A6A954549FA4AEE39A982AD787160D2=1,Slots_10_9053D0EE480F8FBA655F689183B061D9=((ItemStack_5_779DD7EE429A896B44C7BDB5BD86E483=(StackId_2_0D9551B3432E557343037D9F83EACD2E=425A1CF04A59AD7967829D91D5A472DE,ItemId_5_0EBB58F84F513100A99F31938FDDB627=\"item.wood\",Quantity_8_ED3667F84EB2BC62FEA5CBAC3A2B4FAA=2,Durability_15_C5C55D564D4F0A63A3249ABD5A8DE175=0.500000),HasItem_8_D040C6944C2BC036FE49499973A601D5=True),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=1),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=2),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=3)),MaxWeight_12_D58D5FDB4818ADCB25DC5BB8839661A3=10.000000)",
+            "events": 1,
+            "bindings": {
+              "InventoryChanged": "(/Game/Survival/Maps/UEDPIE_0_LV_SystemsTest.LV_SystemsTest:PersistentLevel.BP_A18_ID01_TestObserver_C_0.ObserveInventory)",
+              "Split": "(/Engine/Transient.UnrealEdEngine_0:BP_SurvivalGameInstance_C_0.WBP_Inventory_C_0.BndEvt__WBP_Inventory_BTN_Split_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature)",
+              "Merge": "(/Engine/Transient.UnrealEdEngine_0:BP_SurvivalGameInstance_C_0.WBP_Inventory_C_0.BndEvt__WBP_Inventory_BTN_MergeConfirm_K2Node_ComponentBoundEvent_4_OnButtonClickedEvent__DelegateSignature)"
+            }
+          },
+          "open": {
+            "mode": "UI",
+            "widget": "/Engine/Transient.UnrealEdEngine_0:BP_SurvivalGameInstance_C_0.WBP_Inventory_C_0",
+            "bindings": {
+              "InventoryChanged": "(/Game/Survival/Maps/UEDPIE_0_LV_SystemsTest.LV_SystemsTest:PersistentLevel.BP_A18_ID01_TestObserver_C_0.ObserveInventory)",
+              "Split": "(/Engine/Transient.UnrealEdEngine_0:BP_SurvivalGameInstance_C_0.WBP_Inventory_C_0.BndEvt__WBP_Inventory_BTN_Split_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature)",
+              "Merge": "(/Engine/Transient.UnrealEdEngine_0:BP_SurvivalGameInstance_C_0.WBP_Inventory_C_0.BndEvt__WBP_Inventory_BTN_MergeConfirm_K2Node_ComponentBoundEvent_4_OnButtonClickedEvent__DelegateSignature)"
+            },
+            "snapshot": "(InventoryId_2_26A428304D039DE2EA403F9BB07F81E0=C6528F1B4EAA0A3D5842B6B85C3DAB00,Revision_5_7A6A954549FA4AEE39A982AD787160D2=1,Slots_10_9053D0EE480F8FBA655F689183B061D9=((ItemStack_5_779DD7EE429A896B44C7BDB5BD86E483=(StackId_2_0D9551B3432E557343037D9F83EACD2E=425A1CF04A59AD7967829D91D5A472DE,ItemId_5_0EBB58F84F513100A99F31938FDDB627=\"item.wood\",Quantity_8_ED3667F84EB2BC62FEA5CBAC3A2B4FAA=2,Durability_15_C5C55D564D4F0A63A3249ABD5A8DE175=0.500000),HasItem_8_D040C6944C2BC036FE49499973A601D5=True),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=1),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=2),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=3)),MaxWeight_12_D58D5FDB4818ADCB25DC5BB8839661A3=10.000000)",
+            "events": 1
+          },
+          "closed": {
+            "mode": "Gameplay",
+            "bindings": {
+              "InventoryChanged": "(/Game/Survival/Maps/UEDPIE_0_LV_SystemsTest.LV_SystemsTest:PersistentLevel.BP_A18_ID01_TestObserver_C_0.ObserveInventory)",
+              "Split": "(/Engine/Transient.UnrealEdEngine_0:BP_SurvivalGameInstance_C_0.WBP_Inventory_C_0.BndEvt__WBP_Inventory_BTN_Split_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature)",
+              "Merge": "(/Engine/Transient.UnrealEdEngine_0:BP_SurvivalGameInstance_C_0.WBP_Inventory_C_0.BndEvt__WBP_Inventory_BTN_MergeConfirm_K2Node_ComponentBoundEvent_4_OnButtonClickedEvent__DelegateSignature)"
+            },
+            "binding_counts": {
+              "InventoryChanged": 1,
+              "Split": 1,
+              "Merge": 1
+            },
+            "snapshot": "(InventoryId_2_26A428304D039DE2EA403F9BB07F81E0=C6528F1B4EAA0A3D5842B6B85C3DAB00,Revision_5_7A6A954549FA4AEE39A982AD787160D2=1,Slots_10_9053D0EE480F8FBA655F689183B061D9=((ItemStack_5_779DD7EE429A896B44C7BDB5BD86E483=(StackId_2_0D9551B3432E557343037D9F83EACD2E=425A1CF04A59AD7967829D91D5A472DE,ItemId_5_0EBB58F84F513100A99F31938FDDB627=\"item.wood\",Quantity_8_ED3667F84EB2BC62FEA5CBAC3A2B4FAA=2,Durability_15_C5C55D564D4F0A63A3249ABD5A8DE175=0.500000),HasItem_8_D040C6944C2BC036FE49499973A601D5=True),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=1),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=2),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=3)),MaxWeight_12_D58D5FDB4818ADCB25DC5BB8839661A3=10.000000)",
+            "events": 1
+          },
+          "pass": true
+        }
+      ],
+      "input": {
+        "cycles": 5,
+        "one_pie_world": "/Game/Survival/Maps/UEDPIE_0_LV_SystemsTest.LV_SystemsTest",
+        "widget": "/Engine/Transient.UnrealEdEngine_0:BP_SurvivalGameInstance_C_0.WBP_Inventory_C_0",
+        "inventory": "(InventoryId_2_26A428304D039DE2EA403F9BB07F81E0=C6528F1B4EAA0A3D5842B6B85C3DAB00,Revision_5_7A6A954549FA4AEE39A982AD787160D2=1,Slots_10_9053D0EE480F8FBA655F689183B061D9=((ItemStack_5_779DD7EE429A896B44C7BDB5BD86E483=(StackId_2_0D9551B3432E557343037D9F83EACD2E=425A1CF04A59AD7967829D91D5A472DE,ItemId_5_0EBB58F84F513100A99F31938FDDB627=\"item.wood\",Quantity_8_ED3667F84EB2BC62FEA5CBAC3A2B4FAA=2,Durability_15_C5C55D564D4F0A63A3249ABD5A8DE175=0.500000),HasItem_8_D040C6944C2BC036FE49499973A601D5=True),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=1),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=2),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=3)),MaxWeight_12_D58D5FDB4818ADCB25DC5BB8839661A3=10.000000)",
+        "events": 1,
+        "bindings": {
+          "InventoryChanged": "(/Game/Survival/Maps/UEDPIE_0_LV_SystemsTest.LV_SystemsTest:PersistentLevel.BP_A18_ID01_TestObserver_C_0.ObserveInventory)",
+          "Split": "(/Engine/Transient.UnrealEdEngine_0:BP_SurvivalGameInstance_C_0.WBP_Inventory_C_0.BndEvt__WBP_Inventory_BTN_Split_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature)",
+          "Merge": "(/Engine/Transient.UnrealEdEngine_0:BP_SurvivalGameInstance_C_0.WBP_Inventory_C_0.BndEvt__WBP_Inventory_BTN_MergeConfirm_K2Node_ComponentBoundEvent_4_OnButtonClickedEvent__DelegateSignature)"
+        },
+        "binding_counts": {
+          "InventoryChanged": 1,
+          "Split": 1,
+          "Merge": 1
+        }
+      },
+      "actions_after_reopening": [
+        {
+          "action": "Split",
+          "before": {
+            "snapshot": "(InventoryId_2_26A428304D039DE2EA403F9BB07F81E0=C6528F1B4EAA0A3D5842B6B85C3DAB00,Revision_5_7A6A954549FA4AEE39A982AD787160D2=1,Slots_10_9053D0EE480F8FBA655F689183B061D9=((ItemStack_5_779DD7EE429A896B44C7BDB5BD86E483=(StackId_2_0D9551B3432E557343037D9F83EACD2E=425A1CF04A59AD7967829D91D5A472DE,ItemId_5_0EBB58F84F513100A99F31938FDDB627=\"item.wood\",Quantity_8_ED3667F84EB2BC62FEA5CBAC3A2B4FAA=2,Durability_15_C5C55D564D4F0A63A3249ABD5A8DE175=0.500000),HasItem_8_D040C6944C2BC036FE49499973A601D5=True),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=1),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=2),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=3)),MaxWeight_12_D58D5FDB4818ADCB25DC5BB8839661A3=10.000000)",
+            "revision": 1,
+            "events": 1,
+            "bindings": {
+              "InventoryChanged": "(/Game/Survival/Maps/UEDPIE_0_LV_SystemsTest.LV_SystemsTest:PersistentLevel.BP_A18_ID01_TestObserver_C_0.ObserveInventory)",
+              "Split": "(/Engine/Transient.UnrealEdEngine_0:BP_SurvivalGameInstance_C_0.WBP_Inventory_C_0.BndEvt__WBP_Inventory_BTN_Split_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature)",
+              "Merge": "(/Engine/Transient.UnrealEdEngine_0:BP_SurvivalGameInstance_C_0.WBP_Inventory_C_0.BndEvt__WBP_Inventory_BTN_MergeConfirm_K2Node_ComponentBoundEvent_4_OnButtonClickedEvent__DelegateSignature)"
+            }
+          },
+          "after": {
+            "snapshot": "(InventoryId_2_26A428304D039DE2EA403F9BB07F81E0=C6528F1B4EAA0A3D5842B6B85C3DAB00,Revision_5_7A6A954549FA4AEE39A982AD787160D2=2,Slots_10_9053D0EE480F8FBA655F689183B061D9=((ItemStack_5_779DD7EE429A896B44C7BDB5BD86E483=(StackId_2_0D9551B3432E557343037D9F83EACD2E=425A1CF04A59AD7967829D91D5A472DE,ItemId_5_0EBB58F84F513100A99F31938FDDB627=\"item.wood\",Quantity_8_ED3667F84EB2BC62FEA5CBAC3A2B4FAA=1,Durability_15_C5C55D564D4F0A63A3249ABD5A8DE175=0.500000),HasItem_8_D040C6944C2BC036FE49499973A601D5=True),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=1,ItemStack_5_779DD7EE429A896B44C7BDB5BD86E483=(StackId_2_0D9551B3432E557343037D9F83EACD2E=71C4B69F46613B639C8E008280CC9678,ItemId_5_0EBB58F84F513100A99F31938FDDB627=\"item.wood\",Quantity_8_ED3667F84EB2BC62FEA5CBAC3A2B4FAA=1,Durability_15_C5C55D564D4F0A63A3249ABD5A8DE175=0.500000),HasItem_8_D040C6944C2BC036FE49499973A601D5=True),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=2),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=3)),MaxWeight_12_D58D5FDB4818ADCB25DC5BB8839661A3=10.000000)",
+            "revision": 2,
+            "events": 2,
+            "bindings": {
+              "InventoryChanged": "(/Game/Survival/Maps/UEDPIE_0_LV_SystemsTest.LV_SystemsTest:PersistentLevel.BP_A18_ID01_TestObserver_C_0.ObserveInventory)",
+              "Split": "(/Engine/Transient.UnrealEdEngine_0:BP_SurvivalGameInstance_C_0.WBP_Inventory_C_0.BndEvt__WBP_Inventory_BTN_Split_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature)",
+              "Merge": "(/Engine/Transient.UnrealEdEngine_0:BP_SurvivalGameInstance_C_0.WBP_Inventory_C_0.BndEvt__WBP_Inventory_BTN_MergeConfirm_K2Node_ComponentBoundEvent_4_OnButtonClickedEvent__DelegateSignature)"
+            },
+            "quantity": 2,
+            "occupied_slots": 2,
+            "displayed_revision": 2
+          },
+          "pass": true
+        },
+        {
+          "action": "Merge",
+          "before": {
+            "snapshot": "(InventoryId_2_26A428304D039DE2EA403F9BB07F81E0=C6528F1B4EAA0A3D5842B6B85C3DAB00,Revision_5_7A6A954549FA4AEE39A982AD787160D2=2,Slots_10_9053D0EE480F8FBA655F689183B061D9=((ItemStack_5_779DD7EE429A896B44C7BDB5BD86E483=(StackId_2_0D9551B3432E557343037D9F83EACD2E=425A1CF04A59AD7967829D91D5A472DE,ItemId_5_0EBB58F84F513100A99F31938FDDB627=\"item.wood\",Quantity_8_ED3667F84EB2BC62FEA5CBAC3A2B4FAA=1,Durability_15_C5C55D564D4F0A63A3249ABD5A8DE175=0.500000),HasItem_8_D040C6944C2BC036FE49499973A601D5=True),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=1,ItemStack_5_779DD7EE429A896B44C7BDB5BD86E483=(StackId_2_0D9551B3432E557343037D9F83EACD2E=71C4B69F46613B639C8E008280CC9678,ItemId_5_0EBB58F84F513100A99F31938FDDB627=\"item.wood\",Quantity_8_ED3667F84EB2BC62FEA5CBAC3A2B4FAA=1,Durability_15_C5C55D564D4F0A63A3249ABD5A8DE175=0.500000),HasItem_8_D040C6944C2BC036FE49499973A601D5=True),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=2),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=3)),MaxWeight_12_D58D5FDB4818ADCB25DC5BB8839661A3=10.000000)",
+            "revision": 2,
+            "events": 2,
+            "bindings": {
+              "InventoryChanged": "(/Game/Survival/Maps/UEDPIE_0_LV_SystemsTest.LV_SystemsTest:PersistentLevel.BP_A18_ID01_TestObserver_C_0.ObserveInventory)",
+              "Split": "(/Engine/Transient.UnrealEdEngine_0:BP_SurvivalGameInstance_C_0.WBP_Inventory_C_0.BndEvt__WBP_Inventory_BTN_Split_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature)",
+              "Merge": "(/Engine/Transient.UnrealEdEngine_0:BP_SurvivalGameInstance_C_0.WBP_Inventory_C_0.BndEvt__WBP_Inventory_BTN_MergeConfirm_K2Node_ComponentBoundEvent_4_OnButtonClickedEvent__DelegateSignature)"
+            }
+          },
+          "after": {
+            "snapshot": "(InventoryId_2_26A428304D039DE2EA403F9BB07F81E0=C6528F1B4EAA0A3D5842B6B85C3DAB00,Revision_5_7A6A954549FA4AEE39A982AD787160D2=3,Slots_10_9053D0EE480F8FBA655F689183B061D9=((),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=1,ItemStack_5_779DD7EE429A896B44C7BDB5BD86E483=(StackId_2_0D9551B3432E557343037D9F83EACD2E=71C4B69F46613B639C8E008280CC9678,ItemId_5_0EBB58F84F513100A99F31938FDDB627=\"item.wood\",Quantity_8_ED3667F84EB2BC62FEA5CBAC3A2B4FAA=2,Durability_15_C5C55D564D4F0A63A3249ABD5A8DE175=0.500000),HasItem_8_D040C6944C2BC036FE49499973A601D5=True),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=2),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=3)),MaxWeight_12_D58D5FDB4818ADCB25DC5BB8839661A3=10.000000)",
+            "revision": 3,
+            "events": 3,
+            "bindings": {
+              "InventoryChanged": "(/Game/Survival/Maps/UEDPIE_0_LV_SystemsTest.LV_SystemsTest:PersistentLevel.BP_A18_ID01_TestObserver_C_0.ObserveInventory)",
+              "Split": "(/Engine/Transient.UnrealEdEngine_0:BP_SurvivalGameInstance_C_0.WBP_Inventory_C_0.BndEvt__WBP_Inventory_BTN_Split_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature)",
+              "Merge": "(/Engine/Transient.UnrealEdEngine_0:BP_SurvivalGameInstance_C_0.WBP_Inventory_C_0.BndEvt__WBP_Inventory_BTN_MergeConfirm_K2Node_ComponentBoundEvent_4_OnButtonClickedEvent__DelegateSignature)"
+            },
+            "quantity": 2,
+            "occupied_slots": 1,
+            "displayed_revision": 3
+          },
+          "pass": true
+        }
+      ],
+      "final_inventory": "(InventoryId_2_26A428304D039DE2EA403F9BB07F81E0=C6528F1B4EAA0A3D5842B6B85C3DAB00,Revision_5_7A6A954549FA4AEE39A982AD787160D2=3,Slots_10_9053D0EE480F8FBA655F689183B061D9=((),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=1,ItemStack_5_779DD7EE429A896B44C7BDB5BD86E483=(StackId_2_0D9551B3432E557343037D9F83EACD2E=71C4B69F46613B639C8E008280CC9678,ItemId_5_0EBB58F84F513100A99F31938FDDB627=\"item.wood\",Quantity_8_ED3667F84EB2BC62FEA5CBAC3A2B4FAA=2,Durability_15_C5C55D564D4F0A63A3249ABD5A8DE175=0.500000),HasItem_8_D040C6944C2BC036FE49499973A601D5=True),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=2),(SlotIndex_2_EE847EC142190357759538999ABDFBDC=3)),MaxWeight_12_D58D5FDB4818ADCB25DC5BB8839661A3=10.000000)",
+      "final_events": 3,
+      "final_bindings": {
+        "InventoryChanged": "(/Game/Survival/Maps/UEDPIE_0_LV_SystemsTest.LV_SystemsTest:PersistentLevel.BP_A18_ID01_TestObserver_C_0.ObserveInventory)",
+        "Split": "(/Engine/Transient.UnrealEdEngine_0:BP_SurvivalGameInstance_C_0.WBP_Inventory_C_0.BndEvt__WBP_Inventory_BTN_Split_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature)",
+        "Merge": "(/Engine/Transient.UnrealEdEngine_0:BP_SurvivalGameInstance_C_0.WBP_Inventory_C_0.BndEvt__WBP_Inventory_BTN_MergeConfirm_K2Node_ComponentBoundEvent_4_OnButtonClickedEvent__DelegateSignature)"
+      },
+      "status": "PASS"
+    },
+    "cleanup": {
+      "actor_list_restored": true,
+      "audit_after_cleanup": {
+        "status": "PASS",
+        "scope": "loaded actors in one world only; unloaded levels/cells and other maps NOT VERIFIED",
+        "world": "/Game/Survival/Maps/LV_SystemsTest.LV_SystemsTest",
+        "records": [
+          {
+            "actor": "/Game/Survival/Maps/LV_SystemsTest.LV_SystemsTest:PersistentLevel.BP_WorldPickup_C_1",
+            "class": "/Game/Survival/Interaction/BP_WorldPickup.BP_WorldPickup_C",
+            "target_id": "6128CE4A49BBF079957923AE403CCABB",
+            "has_stable_id": true,
+            "valid_guid": true,
+            "permanent": true
+          },
+          {
+            "actor": "/Game/Survival/Maps/LV_SystemsTest.LV_SystemsTest:PersistentLevel.BP_StorageContainer_C_1",
+            "class": "/Game/Survival/Interaction/BP_StorageContainer.BP_StorageContainer_C",
+            "target_id": "3B404DA0C1514B738B0EA4F116338F43",
+            "has_stable_id": true,
+            "valid_guid": true,
+            "permanent": true
+          }
+        ],
+        "duplicate_ids": {},
+        "errors": []
+      }
+    },
+    "log_counts": {
+      "Accessed None": 0,
+      "Blueprint Runtime Error": 0,
+      "PIE Error": 0,
+      "native access violation": 0,
+      "pending-kill errors": 0
+    },
+    "source_and_isolation_six_hashes_unchanged": true,
+    "scope": "only missing authored same-class duplicate and callback accumulation repeated UI opening; no existing suites rerun",
+    "native_crash": "prior root cause UNKNOWN, no recurrence in these checks; not proof of corrected crash",
+    "harness_limitations": [
+      "Isolated startup initially opened another map; map assertion stopped before mutations, then own LV_SystemsTest loaded",
+      "Initial console Type false corrected by selecting isolated main window",
+      "Native Split/Merge button delegate broadcast after six open/close cycles; not physical mouse clicks"
+    ],
+    "production_blueprints_changed": false,
+    "SEC01_touched": false
+  },
+  "native_crash_acceptance_disposition": {
+    "classification": "UNKNOWN root cause; diagnostic-execution risk, not proven tooling-only defect",
+    "blocks_local_ID01_review": false,
+    "basis": "L01 exact wording only Blueprint Runtime Error/Accessed None/pending-kill; native crash after PIE during independent broad export does not establish one of those failures. No contract expanded or waived. Owner review explicitly required for residual UNKNOWN risk.",
+    "does_not_mean": "Crash fixed, runtime root cause excluded, release gate passed or permission to publish"
+  }
+}
